@@ -1,25 +1,54 @@
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: stretch;
+  position: relative;
+  max-height: 500px;
+
+  .for-mobile {
+    display: none;
+
+    @media screen and (max-width: 39.9375em) {
+      display: block;
+    }
+  }
+
+  .for-desktop {
+    display: none;
+
+    @media screen and (min-width: 39.9375em) {
+      display: block;
+    }
+  }
 
   .hero-img {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 33.489473% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 33.489473% 100%);
     object-fit: cover;
+    flex-basis: 50%;
 
     @media screen and (max-width: 39.9375em) {
       display: none;
     }
   }
 
+  .hero-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+  }
+
   .hero-logo {
     margin: auto;
+    margin-left: calc(-10% - 32px);
 
     @media screen and (max-width: 39.9375em) {
       padding: 5%;
       box-sizing: border-box;
       width: 100%;
+      margin-left: 0;
 
       img {
         object-fit: cover;
