@@ -9,3 +9,7 @@ Repo for managing the microsite for AFCT.
 - `bundle install`
 - `bundle exec jekyll s`
 - Visit http://localhost:4000/
+
+## Deploy
+
+Just push to master and the site will be automatically deployed.
