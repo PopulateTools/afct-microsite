@@ -16,13 +16,10 @@
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
 
-{% css main %}
+{% css app %}
 
 {% seo %}
-<script src="https://use.typekit.net/omf7tur.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 {% if jekyll.environment == "production" %}
 <script>
@@ -33,15 +30,6 @@
 
   ga('create', '{{site.ga_id}}', 'auto');
   ga('send', 'pageview');
-</script>
-
-<script type="text/javascript" id="inspectletjs">
-  window.__insp = window.__insp || [];
-  __insp.push(['wid', {{site.inspectlet_id}}]);
-  (function() {
-  function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
-  setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
-  })();
 </script>
 {% endif %}
 

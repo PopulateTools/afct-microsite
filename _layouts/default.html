@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body class="{{ page.layout }} {% if page.url == '/' %}section_home{% endif %} {{ page.class }}">
+<body>
 
 {{ content }}
 
-{% include footer.html %}
-{% js main %}
 </body>
 </html>
