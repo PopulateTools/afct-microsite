@@ -42,7 +42,8 @@
 
   .hero-logo {
     margin: auto;
-    margin-left: calc(-10% - 32px);
+    // margin-left: -140px;
+    margin-left: calc(-140px - 32px);
 
     @media screen and (max-width: 39.9375em) {
       padding: 5%;
