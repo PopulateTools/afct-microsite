@@ -1,5 +1,5 @@
-<div style="display: flex">
-  <aside style="flex-basis: 33%;">
+<div style="display: flex; max-width: 1280px; margin: 0 auto;">
+  <aside style="flex-basis: 33%;background-color: aliceblue;">
     Menu
   </aside>
   <div>
@@ -15,36 +15,48 @@
         <div>Social, employee and human rights</div>
         <div>Anticorruption</div>
       </li>
-      <li chart-group style="display: flex; margin-bottom: 30px">
-        <div style="flex: 1">
-          <canvas id="bar-0"></canvas>
+      <li style="display: flex; margin-bottom: 30px">
+        <div label style="width: 120px; display: flex; flex-direction: column; justify-content: space-around"></div>
+        <div>
+          <canvas id="policies-0"></canvas>
         </div>
-        <div style="flex: 1">
-          <canvas id="bar-1"></canvas>
+        <div>
+          <canvas id="policies-1"></canvas>
         </div>
-        <div style="flex: 1">
-          <canvas id="bar-2"></canvas>
+        <div>
+          <canvas id="policies-2"></canvas>
         </div>
       </li>
-      <li chart-group style="display: flex; margin-bottom: 30px">
-        <div style="flex: 1">
+      <li style="display: flex; margin-bottom: 30px">
+        <div>
           <canvas id="bar-3"></canvas>
         </div>
-        <div style="flex: 1">
+        <div>
           <canvas id="bar-4"></canvas>
         </div>
-        <div style="flex: 1">
+        <div>
           <canvas id="bar-5"></canvas>
         </div>
       </li>
-      <li chart-group style="display: flex; margin-bottom: 30px">
-        <div style="flex: 1">
+      <li style="display: flex; margin-bottom: 30px">
+        <div>
           <canvas id="bar-6"></canvas>
         </div>
-        <div style="flex: 1">
+        <div>
           <canvas id="bar-7"></canvas>
         </div>
-        <div style="flex: 1">
+        <div>
+          <canvas id="bar-8"></canvas>
+        </div>
+      </li>
+      <li style="display: flex; margin-bottom: 30px">
+        <div>
+          <canvas id="bar-6"></canvas>
+        </div>
+        <div>
+          <canvas id="bar-7"></canvas>
+        </div>
+        <div>
           <canvas id="bar-8"></canvas>
         </div>
       </li>
@@ -52,60 +64,61 @@
   </div>
 </div>
 
+
 <script>
-  var sample = [{
-    title: 'Policies',
-    columns: ['Not described', 'Described', 'Key issues and targets specified'],
-    dataset: [{
-      name: 'Environment',
-      data: [4, 48, 53]
-    }, {
-      name: 'Social, employee and human rights',
-      data: [14, 8, 44]
-    }, {
-      name: 'Anti-corruption',
-      data: [34, 20, 39]
-    }]
+  var datasets = [{
+    id: 'policies-0',
+    data: [
+      ["Wheel", 20],
+      ["Door", 15],
+      ["Engine", 100],
+      ["Totals", 135]
+    ]
   }, {
-    title: 'Due dilligence process',
-    columns: ['Not described', 'Described'],
-    dataset: [{
-      name: 'Environment',
-      data: [4, 48]
-    }, {
-      name: 'Social, employee and human rights',
-      data: [14, 44]
-    }, {
-      name: 'Anti-corruption',
-      data: [20, 39]
-    }]
+    id: 'policies-1',
+    data: [
+      ["Wheel", 50],
+      ["Door", 45],
+      ["Engine", 87],
+      ["Totals", 42]
+    ]
   }, {
-    title: 'KPIs',
-    columns: ['Lorem', 'Ipsum'],
-    dataset: [{
-      name: 'Environment',
-      data: [54, 48]
-    }, {
-      name: 'Social, employee and human rights',
-      data: [74, 24]
-    }, {
-      name: 'Anti-corruption',
-      data: [60, 59]
-    }]
+    id: 'policies-2',
+    data: [
+      ["Wheel", 50],
+      ["Door", 45],
+      ["Engine", 87],
+      ["Totals", 42]
+    ]
   }]
 
-  var bargroups = document.querySelectorAll('[chart-group]')
+  Chart.defaults.global.tooltips = {
+    enabled: false
+  }
 
-  bargroups.forEach((group, groupIndex) => {
-    const canvas = group.querySelectorAll("canvas")
+  const canvas = document.querySelectorAll("canvas")
 
-    canvas.forEach((chart, chartIndex) => {
+  canvas.forEach((chart, chartIndex) => {
+    const dataset = datasets.find(set => set.id === chart.id)
+
+    if (dataset) {
       // prepare data
-      var ctx = chart.id
-      var columnNames = sample[groupIndex].columns
-      var data = sample[groupIndex].dataset[chartIndex].data    
+      const columnNames = dataset.data.map(a => a[0])
+      const data = dataset.data.map(a => a[1])
 
-      chart.height = columnNames.length * 17.5      
+      const labels = document.querySelector("[label]")
+
+      if (!labels.innerHTML) {        
+        let markup = ''
+        columnNames.forEach(column => markup += `<div>${column}</div>`)
+        labels.innerHTML = markup
+      }
+
+      const barThickness = 30
+      chart.height = columnNames.length * barThickness + 8
+
+      // const maxValue = Math.max.apply(Math, data) * 1.05
+      // const inverseData = data.map(e => maxValue - e)
 
       // options
       var opts = {
@@ -113,11 +126,14 @@
         data: {
           labels: columnNames,
           datasets: [{
-            data: data
+            data: data,
+            backgroundColor: 'rgba(255, 99, 132)'
           }]
         },
         plugins: [ChartDataLabels],
         options: {
+          responsive: true,
+          maintainAspectRatio: false,
           legend: {
             display: false,
           },
@@ -130,11 +146,13 @@
               },
               ticks: {
                 display: false,
-                beginAtZero: true
+                beginAtZero: true,
+                precision: 0,
+                // max: maxValue
               }
             }],
             yAxes: [{
-              barThickness: 30,
+              barThickness: barThickness,
               stacked: true,
               gridLines: {
                 display: false
@@ -154,7 +172,7 @@
         }
       };
 
-      new Chart(ctx, opts)
-    })
-  });
+      new Chart(chart, opts)
+    }
+  })
 </script>
