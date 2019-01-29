@@ -4,3 +4,4 @@ _site
 .asset-cache
 .ruby-version
 .env
+.jekyll-cache
