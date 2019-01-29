@@ -1,0 +1,160 @@
+<div style="display: flex">
+  <aside style="flex-basis: 33%;">
+    Menu
+  </aside>
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto error non nesciunt ratione magnam ipsa eos
+    earum debitis cumque. Iure eum repellendus ea debitis facilis non dolorum tempora iste? Lorem ipsum dolor sit, amet
+    consectetur adipisicing elit. Tempore quam doloremque veritatis odio provident ipsam sit omnis aliquid laboriosam
+    quia, officiis hic sint perspiciatis sequi cupiditate! Placeat aut atque quos?
+
+    <ul>
+      <li style="display: flex; margin-bottom: 30px">
+        <div></div>
+        <div>Entertainment</div>
+        <div>Social, employee and human rights</div>
+        <div>Anticorruption</div>
+      </li>
+      <li chart-group style="display: flex; margin-bottom: 30px">
+        <div style="flex: 1">
+          <canvas id="bar-0"></canvas>
+        </div>
+        <div style="flex: 1">
+          <canvas id="bar-1"></canvas>
+        </div>
+        <div style="flex: 1">
+          <canvas id="bar-2"></canvas>
+        </div>
+      </li>
+      <li chart-group style="display: flex; margin-bottom: 30px">
+        <div style="flex: 1">
+          <canvas id="bar-3"></canvas>
+        </div>
+        <div style="flex: 1">
+          <canvas id="bar-4"></canvas>
+        </div>
+        <div style="flex: 1">
+          <canvas id="bar-5"></canvas>
+        </div>
+      </li>
+      <li chart-group style="display: flex; margin-bottom: 30px">
+        <div style="flex: 1">
+          <canvas id="bar-6"></canvas>
+        </div>
+        <div style="flex: 1">
+          <canvas id="bar-7"></canvas>
+        </div>
+        <div style="flex: 1">
+          <canvas id="bar-8"></canvas>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  var sample = [{
+    title: 'Policies',
+    columns: ['Not described', 'Described', 'Key issues and targets specified'],
+    dataset: [{
+      name: 'Environment',
+      data: [4, 48, 53]
+    }, {
+      name: 'Social, employee and human rights',
+      data: [14, 8, 44]
+    }, {
+      name: 'Anti-corruption',
+      data: [34, 20, 39]
+    }]
+  }, {
+    title: 'Due dilligence process',
+    columns: ['Not described', 'Described'],
+    dataset: [{
+      name: 'Environment',
+      data: [4, 48]
+    }, {
+      name: 'Social, employee and human rights',
+      data: [14, 44]
+    }, {
+      name: 'Anti-corruption',
+      data: [20, 39]
+    }]
+  }, {
+    title: 'KPIs',
+    columns: ['Lorem', 'Ipsum'],
+    dataset: [{
+      name: 'Environment',
+      data: [54, 48]
+    }, {
+      name: 'Social, employee and human rights',
+      data: [74, 24]
+    }, {
+      name: 'Anti-corruption',
+      data: [60, 59]
+    }]
+  }]
+
+  var bargroups = document.querySelectorAll('[chart-group]')
+
+  bargroups.forEach((group, groupIndex) => {
+    const canvas = group.querySelectorAll("canvas")
+
+    canvas.forEach((chart, chartIndex) => {
+      // prepare data
+      var ctx = chart.id
+      var columnNames = sample[groupIndex].columns
+      var data = sample[groupIndex].dataset[chartIndex].data    
+
+      chart.height = columnNames.length * 17.5      
+
+      // options
+      var opts = {
+        type: 'horizontalBar',
+        data: {
+          labels: columnNames,
+          datasets: [{
+            data: data
+          }]
+        },
+        plugins: [ChartDataLabels],
+        options: {
+          legend: {
+            display: false,
+          },
+          scales: {
+            xAxes: [{
+              stacked: true,
+              gridLines: {
+                drawBorder: false,
+                drawTicks: false,
+              },
+              ticks: {
+                display: false,
+                beginAtZero: true
+              }
+            }],
+            yAxes: [{
+              barThickness: 30,
+              stacked: true,
+              gridLines: {
+                display: false
+              },
+              ticks: {
+                display: false
+              }
+            }]
+          },
+          plugins: {
+            datalabels: {
+              color: '#fff',
+              anchor: 'end',
+              align: 'start'
+            }
+          }
+        }
+      };
+
+      new Chart(ctx, opts)
+    })
+  });
+</script>
