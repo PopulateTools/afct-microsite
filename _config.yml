@@ -20,6 +20,8 @@ collections:
   report-2018:
     output: true
     permalink: /report-2018/:path
+  static_data:
+    output: true
 
 # Analytics
 ga_id:
@@ -38,7 +40,7 @@ assets:
   features:
     automatic_img_size: false
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-assets
