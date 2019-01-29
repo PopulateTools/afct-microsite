@@ -9,23 +9,21 @@
 title: ACFT
 description: ACFT
 baseurl: "" # the subpath of your site, e.g. /blog
-email: 
-handle: 
-long_handle: 
+email:
+handle:
+long_handle:
 
 # default permalink for blog posts
 permalink: blog/:title
 
-defaults:
-  - scope:
-      path: ""
-      type: projects
-    values:
-      weight: 100
+collections:
+  report-2018:
+    output: true
+    permalink: /report-2018/:path
 
 # Analytics
-ga_id: 
-inspectlet_id: 
+ga_id:
+inspectlet_id:
 
 # Social handlers
 twitter_url: https://twitter.com/
@@ -34,7 +32,7 @@ github_url: https://github.com/
 # Build settings
 markdown: kramdown
 highlighter: rouge
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '_posts']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_posts', 'bin']
 
 assets:
   features:
