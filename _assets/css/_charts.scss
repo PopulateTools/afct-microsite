@@ -15,7 +15,7 @@
   }
 
   [group-label] {
-    width: 120px;
+    flex: 0 0 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -39,6 +39,14 @@
 
   .color-2 {
     background-color: #5890AB;
+  }
+
+  .color-3 {
+    background-color: #E4C293;
+  }
+
+  .color-4 {
+    background-color: #A8A5D0;
   }
 
   #hidden-chart-colors span {
