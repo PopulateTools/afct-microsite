@@ -1,53 +1,37 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-{% include head.html %}
+<main class="column">
+  <div class="report-header">
 
-<body>
+    <p class="pre_title">{{ page.pre_title }}</p>
+    <h1>{{ page.title }}</h1>
 
-  {% include header.html %}
+  </div>
 
-  <main class="column">
-    <div class="report-header">
+  <div class="report-container">
 
-      <p class="pre_title">{{ page.pre_title }}</p>
-      <h1>{{ page.title }}</h1>
+    <aside class="report-sidebar">
 
-    </div>
+      <ul>
+        {% assign report_sections = site.report-2018 | sort: 'order' %}
 
-    <div class="report-container">
+        {% for section in report_sections %}
+        <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
+        {% endfor %}
+      </ul>
 
-      <aside class="report-sidebar">
+    </aside>
 
-        <ul>
-          {% assign report_sections = site.report-2018 | sort: 'order' %}
+    <div class="report-content">
 
-          {% for section in report_sections %}
-          <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
-          {% endfor %}
-        </ul>
-
-      </aside>
-
-      <div class="report-content">
-
-        {{ content }}
-
-      </div>
+      {{ content }}
 
     </div>
 
-    {% include navigation.html %}
+  </div>
 
-  </main>
+  {% include navigation.html %}
 
-  {% include footer.html %}
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
-
-  {% asset charts.js %}
-
-</body>
-
-</html>
+</main>
