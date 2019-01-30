@@ -22,6 +22,10 @@ collections:
     permalink: /report-2018/:path
   static_data:
     output: true
+  pages:
+    permalink: /pages/:path
+    output: true
+
 
 # Analytics
 ga_id:
