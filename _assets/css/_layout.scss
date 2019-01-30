@@ -25,6 +25,12 @@ main {
   margin: auto;
 }
 
+.column-single {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
 .column-inner {
   margin: 0 10%;
 }
@@ -34,4 +40,92 @@ main {
   height: 1px;
   opacity: 0.2;
   background-color: #508CA7;
+}
+
+
+section.intro-hero {
+  background: #777;
+  // background-image: asset_url("teaser_home_image_x1");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  padding: 5em 0;
+  color: #FFF;
+  text-align: center;
+  font-size: $fsXLarge;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+section.initial-results {
+
+}
+
+section.color-negative {
+  background: $cLink;
+  color: #FFF;
+  a {
+    color: #FFF;
+  }
+}
+
+.post-list-compact {
+  display: flex;
+  justify-content: space-between;
+
+  .post {
+    width: 45%;
+
+    .post-img {
+      img {
+        width: 100%;
+      }
+    }
+    .post-text-content {
+      margin: 1em 0;
+
+      a {
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+}
+
+a {
+  color: $cLink;
+}
+
+.button, a.button {
+  background: $cLinkSecondary;
+  padding: 1em 2em;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFF;
+  transition: background-color 0.2s ease;
+}
+.button:hover, a.button:hover {
+  background: darken($cLinkSecondary, 10%);
+}
+
+.button.button-negative {
+  background: #FFF;
+  border: 1px solid $cLinkSecondary;
+  color: $cLinkSecondary;
+}
+.button.button-negative:hover {
+  color: #FFF;
 }

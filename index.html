@@ -3,74 +3,78 @@ layout: default
 description: meta description
 ---
 
-<main>
-  <section class="hero">
-    <div class="hero-wrapper for-desktop section">
-      <div class="column">
-        <div class="column-inner">
-          <div class="hero-logo">
-            <img src="{% asset logos/logo-ACT @path %}" alt="">
-            <div class="hero-sub">
-              <div class="line"></div>
-              <p>
-                Promoting the development of the EU sustainability reporting framework
-              </p>
-            </div>
+<main class="home">
+
+  <section class="intro-hero">
+
+    <div class="column-single">
+
+      <p>The Alliance for Corporate Transparency project analyses how European companies disclose information necessary for understanding their impact on society and the environment, as required by the EU Non-financial Reporting Directive. It serves as guidance to companies and regulators, and provides data to substantiate the discussion on the standardisation of sustainability disclosure, which is in turn also a prerequisite for sustainable finance.</p>
+
+    </div>
+
+  </section>
+
+
+  <section class="initial-results">
+
+    <div class="column-single ">
+
+      <div class="intro-text">
+
+        <h2>Initial results</h2>
+
+        <p>The project has assessed the reports of 105 European companies from the Energy, ICT and Health Care sectors in the initial round held in 2018. The main results are summarised in this website. You may also download the "2018 Research Report" PDF where you will find all the results and conclusions from the initial research in a detailed briefing.</p>
+        <p>The Alliance for Corporate Transparency is three-year research project that brings together leading civil society organisations and experts with the aim of analysing the corporate disclosure on sustainability issues by the 1000 largest companies operating in the EU and providing evidence-based recommendations for legislative changes. </p>
+
+      </div>
+
+      <div class="ctas">
+
+        <a href="{{ site.url_report2018 }}" class="button">See initial results</a>
+        <a href="" class="button button-negative">Download full report here</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="color-negative">
+
+    <div class="column-single ">
+
+      <h2>News</h2>
+
+      <div class="post-list-compact">
+
+        {% for post in site.posts %}
+        <div class="post">
+
+          <div class="post-img">
+            <a href="{{ post.url }}"><img src="{% asset '{{ post.image }}' @path %}"></a>
           </div>
+
+          <div class="post-text-content">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="intro">{{ post.intro }}</p>
+            <a class="read-more-link" href="{{ post.url }}">Read more</a>
+          </div>
+
         </div>
+        {% endfor %}
+
       </div>
+
     </div>
-    <div class="hero-logo for-mobile">
-      <img src="{% asset logos/logo-ACT @path %}" alt="">
-      <div class="hero-sub">
-        <div class="line"></div>
-        <p>
-          Promoting the development of the EU sustainability reporting framework
-        </p>
-      </div>
-    </div>
-    <img class="hero-img" src="{% asset teaser_home_image_x1 @path %}" alt="">
+
   </section>
-  <section id="about" class="section">
-    <div class="column">
-      <div class="column-inner">
-        <h2>About</h2>
-        <div class="line"></div>
-        <p class="section-main">The <strong>Alliance for Corporate Transparency</strong> is a three-year research project that brings together leading civil society organisations and experts with the <strong>aim of analysing the corporate disclosure on environmental, social and governance (ESG) issues by the 1000 largest companies</strong> operating in the EU and recommending legislative changes.</p>
-        <ul>
-          <li>Corporate reporting on ESG issues is crucial for achieving a sustainable economic and financial system. However, <strong>the current framework of corporate ESG disclosure is not fit for purpose</strong>. The <strong>challenge lies in defining what companies and financial actors need to disclose</strong> to promote long-term sustainable investment and support a transparent corporate governance framework.</li>
-          <li>The project will <strong>assess if companies are disclosing key information necessary for understanding their risks and impacts on the environment and society</strong>, as required by the EU Non-financial Reporting Directive. For this, the project will <strong>draw from international standards</strong> and existing reporting frameworks in order to <strong>determine what information is commonly understood to be essential and material</strong>.</li>
-          <li>The results will <strong>help companies</strong> to make their ESG disclosure more meaningful and <strong>will provide crucial missing information</strong> that policy-makers need for the <strong>development of the EU legislative framework for corporate reporting and the creation of a sustainable finance system</strong>. The project also collaborates with experts from leading business and investor organisations throughout consultation rounds.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="info" class="section">
-    <div class="column">
-      <div class="column-inner">
-        <h2>Get info</h2>
-        <div class="line"></div>
-        <p class="section-main">The official website of the project will be launched later this year. If you wish to receive further information and updates on the project, please register for our <a class="link" href="http://eepurl.com/dJPBjQ">newsletter here</a> or <a class="link" href="mailto:susanna.arus@frankbold.org">contact us by email here</a>.</p>
-        <ul style="display: none">
-          <li class="section-form">
-            <div class="section-input">
-              <input type="text" name="" value="">
-              <label for="">
-                <input type="checkbox" name="" value="">
-                I accept terms and conditions
-              </label>
-            </div>
-            <button type="button" name="button">Subscribe</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="partners" class="section">
-    <div class="column">
-      <div class="column-inner">
+
+
+  <section class="partners">
+    <div class="column-single">
         <h2>Partners</h2>
-        <div class="line"></div>
         <p class="section-main">Partners and advisors of the project include:</p>
         <ul class="section-wrap">
           <li><div class="partner"><img src="{% asset logos/logo-frankbold @path %}" alt=""></div></li>
@@ -89,6 +93,7 @@ description: meta description
           <li><div class="partner"><img src="{% asset logos/logo-themis @path %}" alt=""></div></li>
         </ul>
       </div>
-    </div>
   </section>
+
+
 </main>
