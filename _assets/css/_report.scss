@@ -3,6 +3,13 @@ $gutter: 16px;
 .report-header {
   text-align: center;
   background-color: bisque;
+  
+  h1 {
+    font-family: "Muli Black";
+    font-size: $fsHero;
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 .report-container {
