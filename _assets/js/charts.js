@@ -28,7 +28,7 @@
 
         const isGroupLabel = (chart.dataset.labels === undefined)
         if (isGroupLabel) {
-          const datasetLabel = chartData.id.match(/^[\d]-[\w]+/)[0]
+          const datasetLabel = chartData.id.match(/^[\d]-[\w]*-[\d]+/)[0]
           const labels = document.querySelector(`[group-label='${datasetLabel}']`)
 
           if (!labels.innerHTML) {
