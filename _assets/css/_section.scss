@@ -3,9 +3,9 @@ section:nth-child(even) {
 }
 
 .section {
-  > * {
-    padding: 5%;
-  }
+  // > * {
+  //   padding: 5%;
+  // }
 
   h2 {
     text-transform: uppercase;
