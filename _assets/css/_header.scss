@@ -1,5 +1,5 @@
 header {
-  height: 100px;
+  padding: 1em 2em;
 
   > * {
     display: flex;
@@ -9,8 +9,8 @@ header {
     height: 100%;
   }
 
-  img {
-    max-height: 90%;
+  .logo {
+    max-height: 62px;
   }
 
   nav {
@@ -25,11 +25,11 @@ header {
         display: inline-block;
 
         &:not(:last-child) {
-          margin-right: 1vw;
+          margin-right: 1.5vw;
         }
 
         a {
-          font-size: $fsLarge;
+          font-size: $fsBig;
           color: $cLink;
           font-weight: 600;
           text-decoration: none;
