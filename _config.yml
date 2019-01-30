@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: ACFT
+title: Alliance for Corporate Transparency
 description: ACFT
 baseurl: "" # the subpath of your site, e.g. /blog
 email:
@@ -38,7 +38,7 @@ github_url: https://github.com/
 # Build settings
 markdown: kramdown
 highlighter: rouge
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_posts', 'bin']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', 'bin']
 
 assets:
   features:
