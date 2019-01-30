@@ -8,16 +8,16 @@
   {% include header.html %}
 
   <main>
-    <div class="report_header">
+    <div class="report-header">
 
       <p class="pre_title">{{ page.pre_title }}</p>
       <h1>{{ page.title }}</h1>
 
     </div>
 
-    <div class="report_container">
+    <div class="report-container">
 
-      <div class="report_sidebar">
+      <aside class="report-sidebar">
 
         <ul>
           {% assign report_sections = site.report-2018 | sort: 'order' %}
@@ -27,9 +27,9 @@
           {% endfor %}
         </ul>
 
-      </div>
+      </aside>
 
-      <div class="report_content">
+      <div class="report-content">
 
         {{ content }}
 

@@ -1,16 +1,43 @@
-.report_header {
+$gutter: 16px;
+
+.report-header {
   text-align: center;
 }
 
-.report_container {
+.report-container {
   display: flex;
   flex: 1;
 }
 
-.report_sidebar {
+.report-sidebar {
   width: 25%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin: 0 2 * $gutter $gutter 0;
+    padding: 2px 0 2px 2 * $gutter;
+
+    &.active {
+      font-weight: 600;
+      background-color: $cBackground;
+      -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: $fsMedium;
+    color: $cLink;
+  }
 }
 
-.report_content {
+.report-content {
   width: 75%;
 }

@@ -13,7 +13,7 @@
       if (chartData) {
         // prepare data
         const columnNames = chartData.data.map(a => a[0])
-        const data = chartData.data.map(a => a[1])
+        const data = chartData.data.map(a => parseFloat(a[1]))
         
         const isGroupLabel = (chart.dataset.labels === undefined)
         if (isGroupLabel) {
