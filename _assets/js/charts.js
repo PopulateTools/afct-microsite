@@ -30,8 +30,8 @@
         const barThickness = 30
         chart.height = columnNames.length * barThickness + 8
   
-        // const maxValue = Math.max.apply(Math, data) * 1.05
-        // const inverseData = data.map(e => maxValue - e)
+        const maxValue = Math.max.apply(Math, data) * 1.05
+        const inverseData = data.map(e => maxValue - e)
   
         // options
         var opts = {
@@ -41,6 +41,9 @@
             datasets: [{
               data: data,
               backgroundColor: 'rgba(255, 99, 132)'
+            },{
+              data: inverseData,
+              hiddenLabel: true,
             }]
           },
           plugins: [ChartDataLabels],
@@ -79,7 +82,14 @@
               datalabels: {
                 color: '#fff',
                 anchor: 'end',
-                align: 'start'
+                align: 'start',
+                formatter: (value, ctx) => {
+                  if (ctx.dataset.hiddenLabel) {
+                    return null
+                  }
+                  
+                  return value
+                },
               }
             }
           }
