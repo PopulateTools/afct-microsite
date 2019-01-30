@@ -23,4 +23,22 @@
       align-items: center;
     }
   }
+
+  .color-0 {
+    background-color: #3C915A;
+  }
+
+  .color-1 {
+    background-color: #A45A4F;
+  }
+
+  .color-2 {
+    background-color: #5890AB;
+  }
+
+  #hidden-chart-colors span {
+    width: 10px;
+    height: 10px;
+    display: none;
+  }
 }
