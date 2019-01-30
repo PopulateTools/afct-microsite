@@ -24,3 +24,7 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+p:first-of-type {
+  margin-top: 0;
+}
