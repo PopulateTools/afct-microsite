@@ -7,34 +7,41 @@
 
   {% include header.html %}
 
-  <div class="report_header">
+  <main>
+    <div class="report_header">
 
-    <p class="pre_title">{{ page.pre_title }}</p>
-    <h1>{{ page.title }}</h1>
-
-  </div>
-
-  <div class="report_container">
-
-    <div class="report_sidebar">
-
-      <ul>
-        {% assign report_sections = site.report-2018 | sort: 'order' %}
-
-        {% for section in report_sections %}
-        <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
-        {% endfor %}
-      </ul>
+      <p class="pre_title">{{ page.pre_title }}</p>
+      <h1>{{ page.title }}</h1>
 
     </div>
 
-    <div class="report_content">
+    <div class="report_container">
 
-      {{ content }}
+      <div class="report_sidebar">
+
+        <ul>
+          {% assign report_sections = site.report-2018 | sort: 'order' %}
+
+          {% for section in report_sections %}
+          <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
+          {% endfor %}
+        </ul>
+
+      </div>
+
+      <div class="report_content">
+
+        {{ content }}
+
+      </div>
 
     </div>
 
-  </div>
+    {% include navigation.html %}
+
+  </main>
+
+  {% include footer.html %}
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>

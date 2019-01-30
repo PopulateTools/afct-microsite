@@ -1,0 +1,16 @@
+.report_header {
+  text-align: center;
+}
+
+.report_container {
+  display: flex;
+  flex: 1;
+}
+
+.report_sidebar {
+  width: 25%;
+}
+
+.report_content {
+  width: 75%;
+}

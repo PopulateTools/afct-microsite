@@ -9,33 +9,6 @@
   "section",
   "footer",
   "navigation",
+  "report",
   "charts"
 ;
-
-
-
-/** PROTOTYPE **/
-
-.report_header,
-.report_sidebar,
-.report_content {
-  border: 1px solid #CCC;
-  padding: 1em;
-  margin: 1em;
-}
-
-.report_header {
-  text-align: center;
-}
-
-.report_container {
-  display: flex;
-}
-
-.report_sidebar {
-  width: 25%;
-}
-
-.report_content {
-  width: 75%;
-}
