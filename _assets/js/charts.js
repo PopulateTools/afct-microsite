@@ -3,6 +3,9 @@
     enabled: false
   }
 
+  Chart.defaults.global.defaultFontFamily = 'Avenir Next';
+  Chart.defaults.global.defaultFontSize = 11;
+
   var elem = document.getElementById("hidden-chart-colors");
   var objColors = {}
   if (elem) {
