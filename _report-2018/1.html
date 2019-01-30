@@ -7,10 +7,54 @@ order: 1
 categories:
 ---
 
-<h2>Report intro</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quod nesciunt laudantium, necessitatibus voluptatum
+  illum, modi cumque placeat, voluptatibus est architecto? Quam a non, voluptates placeat cum dolorem ipsa iste?</p>
 
-<h2>MAP</h2>
+<div style="height:300px;background-color: gainsboro; line-height: 300px; text-align:center;">MAP</div>
 
 <h2>NUMBERS</h2>
 
-<h2>GRAPHS</h2>
+<h4>Distribution of revenues and employees</h4>
+<div class="barcharts">
+  <div id="hidden-chart-colors">
+    <span class="color-0"></span>
+    <span class="color-1"></span>
+    <span class="color-2"></span>
+  </div>
+  <ul>
+    <li>
+      <div>
+        <p>Number of companies per revenue range</p>
+        <div>
+          <canvas id="0-General-1-Revenues" data-labels></canvas>
+        </div>
+        <small>Graph #3 - Revenues</small>
+      </div>
+      <div>
+        <p>Number of companies per employees</p>
+        <div>
+          <canvas id="0-General-2-Employees" data-labels></canvas>
+        </div>
+        <small>Graph #4 - Distribution of employees</small>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="flex-container">
+  <div>
+    Piechart
+  </div>
+  <div class="barcharts">
+    <ul>
+      <li>
+        <div>
+          <p>Clarity</p> 
+          <div>
+            <canvas id="0-General-3-Clarity" data-labels></canvas>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

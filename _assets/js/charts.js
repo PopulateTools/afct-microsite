@@ -5,9 +5,11 @@
 
   var elem = document.getElementById("hidden-chart-colors");
   var objColors = {}
-  for (let span of elem.children) {
-    objColors[span.className] = window.getComputedStyle(span, null).getPropertyValue("background-color");
-  }  
+  if (elem) {
+    for (let span of elem.children) {
+      objColors[span.className] = window.getComputedStyle(span, null).getPropertyValue("background-color");
+    }  
+  }
 
   getJSON("../static_data/datasets.json", (data) => {
     const jsonData = JSON.parse(data);
@@ -34,12 +36,12 @@
         }
 
         const barThickness = 30
-        chart.height = columnNames.length * barThickness + 8
+        chart.height = columnNames.length * (barThickness + 12)
 
         const maxValue = Math.max.apply(Math, data) * 1.05
         const inverseData = data.map(e => maxValue - e)
 
-        const defaultColor = objColors[Object.keys(objColors)[Object.keys(objColors).length - 1]]
+        const defaultColor = objColors[Object.keys(objColors)[Object.keys(objColors).length - 1]]       
 
         // options
         var opts = {
