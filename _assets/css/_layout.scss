@@ -1,4 +1,4 @@
-html {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -10,9 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 main {
@@ -22,18 +19,19 @@ main {
   justify-content: space-between;
 }
 
-.line {
-  width: 270px;
-  height: 1px;
-  opacity: 0.2;
-  background-color: #508CA7;
-}
-
 .column {
   max-width: 1440px;
+  width: 100%;
   margin: auto;
 }
 
 .column-inner {
   margin: 0 10%;
+}
+
+.line {
+  width: 270px;
+  height: 1px;
+  opacity: 0.2;
+  background-color: #508CA7;
 }

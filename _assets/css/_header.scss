@@ -1,26 +1,19 @@
 header {
-  background-image: linear-gradient(-180deg, #336A7D 0%, #548CA7 100%);
-  box-shadow: 0 0 7px 0 rgba(0,0,0,0.50);
-  height: 80px;
+  height: 100px;
 
   > * {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
     text-transform: uppercase;
     height: 100%;
   }
 
-  h3 {
-    opacity: 0.5;
-    font-size: 18px;
-    color: #FFFFFF;
-    font-weight: 400;
+  img {
+    max-height: 90%;
   }
 
   nav {
-
     @media screen and (max-width: 39.9375em) {
       display: none;
     }
@@ -36,7 +29,9 @@ header {
         }
 
         a {
-          color: #FFFFFF;
+          font-size: $fsLarge;
+          color: $cLink;
+          font-weight: 600;
           text-decoration: none;
         }
       }
