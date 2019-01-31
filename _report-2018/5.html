@@ -16,19 +16,41 @@ img: 'report-2018/bg-5-specific.jpg'
 </p>
 
 <div class="barcharts">
-  <h2 class="font-color-2">01.<br />Human rights in supply chains</h2>
+  <h2 class="font-color-dark2">01.<br />Human rights in supply chains</h2>
   <div id="hidden-chart-colors">
     <span class="color-0"></span>
+    <span class="color-dark0"></span>
+    <span class="color-light0"></span>
+    <span class="color-lightest0"></span>
     <span class="color-1"></span>
+    <span class="color-dark1"></span>
+    <span class="color-light1"></span>
+    <span class="color-lightest1"></span>
     <span class="color-2"></span>
+    <span class="color-dark2"></span>
+    <span class="color-light2"></span>
+    <span class="color-lightest2"></span>
+    <span class="color-3"></span>
+    <span class="color-dark3"></span>
+    <span class="color-light3"></span>
+    <span class="color-lightest3"></span>
+    <span class="color-4"></span>
+    <span class="color-dark4"></span>
+    <span class="color-light4"></span>
+    <span class="color-lightest4"></span>
   </div>
   <ul>
     <li>
       <div group-label></div>
-      <div class="font-color-2 border-2">All sectors<div class="subtitle">{{ site.companies_all }} companies</div></div>
-      <div class="font-color-2 border-2">Energy & Mining<div class="subtitle">{{ site.companies_energy }} companies</div></div>
-      <div class="font-color-2 border-2">Health Care<div class="subtitle">{{ site.companies_health }} companies</div></div>
-      <div class="font-color-2 border-2">ICT<div class="subtitle">{{ site.companies_ict }} companies</div></div>
+      <div class="font-color-dark2 border-dark2">All sectors<div class="subtitle">{{ site.companies_all }} companies</div>
+      </div>
+      <div class="font-color-2 border-2">Energy & Mining<div class="subtitle">{{ site.companies_energy }} companies</div>
+      </div>
+      <div class="font-color-light2 border-light2">Health Care<div class="subtitle">{{ site.companies_health }}
+          companies</div>
+      </div>
+      <div class="font-color-lightest2 border-lightest2">ICT<div class="subtitle">{{ site.companies_ict }} companies</div>
+      </div>
     </li>
     <li class="title">
       <div>Policy</div>
@@ -37,23 +59,23 @@ img: 'report-2018/bg-5-specific.jpg'
     <li>
       <div group-label="2-Specific-0"></div>
       <div>
-        <canvas id="2-Specific-0-1-Human-All"></canvas>
+        <canvas id="2-Specific-0-1-Human-All" class="_dark2"></canvas>
       </div>
       <div>
-        <canvas id="2-Specific-0-2-Human-Energy"></canvas>
+        <canvas id="2-Specific-0-2-Human-Energy" class="_2"></canvas>
       </div>
       <div>
-        <canvas id="2-Specific-0-3-Human-Health"></canvas>
+        <canvas id="2-Specific-0-3-Human-Health" class="_light2"></canvas>
       </div>
       <div>
-        <canvas id="2-Specific-0-4-Human-ICT"></canvas>
+        <canvas id="2-Specific-0-4-Human-ICT" class="_lightest2"></canvas>
       </div>
     </li>
     <li class="title">Supply chain transparency</li>
     <li>
       <div group-label="2-Specific-1"></div>
       <div>
-        <canvas id="2-Specific-1-1-Supply-All"></canvas>
+        <canvas id="2-Specific-1-1-Supply-All" class="_dark2"></canvas>
       </div>
       <div></div>
       <div></div>
@@ -63,7 +85,7 @@ img: 'report-2018/bg-5-specific.jpg'
     <li>
       <div group-label="2-Specific-2"></div>
       <div>
-        <canvas id="2-Specific-2-1-Complaints-All"></canvas>
+        <canvas id="2-Specific-2-1-Complaints-All" class="_dark2"></canvas>
       </div>
       <div></div>
       <div></div>
@@ -73,7 +95,7 @@ img: 'report-2018/bg-5-specific.jpg'
     <li>
       <div group-label="2-Specific-3"></div>
       <div>
-        <canvas id="2-Specific-3-1-Audits-All"></canvas>
+        <canvas id="2-Specific-3-1-Audits-All" class="_dark2"></canvas>
       </div>
       <div></div>
       <div></div>
@@ -83,7 +105,7 @@ img: 'report-2018/bg-5-specific.jpg'
     <li>
       <div group-label="2-Specific-4"></div>
       <div>
-        <canvas id="2-Specific-4-1-Specific-All"></canvas>
+        <canvas id="2-Specific-4-1-Specific-All" class="_dark2"></canvas>
       </div>
       <div></div>
       <div></div>
@@ -94,7 +116,7 @@ img: 'report-2018/bg-5-specific.jpg'
       <div group-label="2-Specific-5"></div>
       <div></div>
       <div>
-        <canvas id="2-Specific-5-1-Land-Energy"></canvas>
+        <canvas id="2-Specific-5-1-Land-Energy" class="_2"></canvas>
       </div>
       <div></div>
       <div></div>
@@ -104,7 +126,7 @@ img: 'report-2018/bg-5-specific.jpg'
       <div group-label="2-Specific-6"></div>
       <div></div>
       <div>
-        <canvas id="2-Specific-6-1-Indigenous-Energy"></canvas>
+        <canvas id="2-Specific-6-1-Indigenous-Energy" class="_2"></canvas>
       </div>
       <div></div>
       <div></div>
@@ -114,7 +136,7 @@ img: 'report-2018/bg-5-specific.jpg'
       <div group-label="2-Specific-7"></div>
       <div></div>
       <div>
-        <canvas id="2-Specific-7-1-High-Energy"></canvas>
+        <canvas id="2-Specific-7-1-High-Energy" class="_2"></canvas>
       </div>
       <div></div>
       <div></div>
@@ -126,7 +148,7 @@ img: 'report-2018/bg-5-specific.jpg'
       <div></div>
       <div></div>
       <div>
-        <canvas id="2-Specific-8-1-Conflict-ICT"></canvas>
+        <canvas id="2-Specific-8-1-Conflict-ICT" class="_lightest2"></canvas>
       </div>
     </li>
     <li class="title">6. Digital rights / privacy</li>
@@ -136,7 +158,7 @@ img: 'report-2018/bg-5-specific.jpg'
       <div></div>
       <div></div>
       <div>
-        <canvas id="2-Specific-9-1-Digital-ICT"></canvas>
+        <canvas id="2-Specific-9-1-Digital-ICT" class="_lightest2"></canvas>
       </div>
     </li>
   </ul>

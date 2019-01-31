@@ -19,8 +19,8 @@ $cDarkPurple: #403C6A;
 
 $cScale: $cGreen $cRed $cBlue $cYellow $cPurple;
 $cScaleDark: $cDarkGreen $cDarkRed $cDarkBlue $cDarkYellow $cDarkPurple;
-$cScaleLight: rgba($cGreen, .7) rgba($cRed, .7) rgba($cBlue, .7) rgba($cYellow, .7) rgba($cPurple, .7);
-$cScaleLightest: rgba($cGreen, .4) rgba($cRed, .4) rgba($cBlue, .4) rgba($cYellow, .4) rgba($cPurple, .4);
+$cScaleLight: mix($cGreen, #fff, 70%) mix($cRed, #fff, 70%) mix($cBlue, #fff, 70%) mix($cYellow, #fff, 70%) mix($cPurple, #fff, 70%);
+$cScaleLightest: mix($cGreen, #fff, 40%) mix($cRed, #fff, 40%) mix($cBlue, #fff, 40%) mix($cYellow, #fff, 40%) mix($cPurple, #fff, 40%);
 
 // Fonts
 $fsHero: 44px;
