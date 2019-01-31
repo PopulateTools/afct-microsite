@@ -39,6 +39,10 @@ $gutter: 12px;
 .report-sidebar {
   width: 18%;
   margin: 0 5% 0 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 2 * $gutter;
+  height: 0;
 
   ul {
     margin: 0;
