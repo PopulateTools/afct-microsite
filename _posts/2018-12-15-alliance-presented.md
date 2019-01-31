@@ -2,8 +2,7 @@
 layout: post
 title: "The Alliance for Corporate Transparency project presented at major events"
 date: 2018-12-15
-author: Wadus
-image: teaser_home_image_x1.jpg
+img: teaser_home_image_x1.jpg
 intro: On 18 October, the European Commission hosted an open stakeholder meeting on non-financial disclosures organised by DG FISMA (Financial Stability, Financial Services and Capital Markets Union)
 # main_photo: path/to/image/url
 ---
