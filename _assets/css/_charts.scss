@@ -1,5 +1,4 @@
 .barcharts {
-  
   ul {
     margin: 0;
     padding: 0;
@@ -76,6 +75,14 @@
     }
   }
 
+  .avenir {
+    font-family: 'Avenir Next';
+  }
+
+  small {
+    margin-top: 24px;
+    opacity: 0.4;
+  }
 
   @each $color in $cScale {
     $i: index($cScale, $color) - 1;
