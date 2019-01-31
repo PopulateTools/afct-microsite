@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<main class="column">
-
 {% if assets[page.img] %}
   <div class="report-header" style="background-image: url('{% asset '{{ page.img }}' @path %}')">
 {% else %}
@@ -16,6 +14,8 @@ layout: default
     </div>
 
   </div>
+
+<main class="column">
 
   <div class="report-container">
 
@@ -44,8 +44,6 @@ layout: default
 
   </div>
 
-
-  {% include navigation.html %}
-
-
 </main>
+
+{% include navigation.html %}

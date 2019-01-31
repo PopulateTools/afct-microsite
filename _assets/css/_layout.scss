@@ -27,7 +27,7 @@ main {
 
 .column-single {
   max-width: 900px;
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
@@ -51,12 +51,16 @@ section.intro-hero {
   position: relative;
   background-image: asset_url('bg-0-home');
   background-size: cover;
-  padding: 5em 0;
   color: #FFF;
   text-align: center;
   font-size: $fsXLarge;
   font-weight: 600;
   line-height: 36px;
+
+  p {
+    margin: 0;
+  }
+
 }
 
 section.initial-results {
