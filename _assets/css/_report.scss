@@ -78,3 +78,75 @@ $gutter: 12px;
     margin-bottom: 2em;
   }
 }
+
+.report-indicators {
+  font-family: 'Muli';
+  margin: 0 0 4 * $gutter;
+
+  > :first-child {
+    margin: 0 0 $gutter;
+
+    strong {
+      font-weight: 900;
+    }
+  }
+
+  .flex-indicators {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+    > * {
+      flex: 0 0 20%;
+    }
+  }
+
+  .indicator-value {
+    font-size: 49px;
+    font-weight: 900;
+  }
+
+  .indicator-desc {
+    font-size: $fsBig;
+    font-weight: 900;
+  }
+}
+
+.report-companies {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: 'Muli';
+  font-weight: 900;
+  margin: 3 * $gutter 0;
+
+  h5 {
+    margin: 0;
+  }
+
+  > :not(:first-child) {
+    display: flex;
+    align-items: flex-start;
+
+    > * {
+      padding: 0 12px;
+    }
+
+    > :last-child {
+      border-left: 1px solid #979797;
+    }
+  }
+
+  i {
+    font-size: 32px;
+  }
+
+  .companies-number {
+    font-size: 42px;
+    margin-top: -12px;
+  }
+
+  .companies-text {
+    font-size: 24px;
+  }
+}

@@ -27,3 +27,7 @@ $units: 1px !default;
    @content;
  }
 }
+
+.text-uppercase {
+  text-transform: uppercase;
+}
