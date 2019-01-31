@@ -1,11 +1,12 @@
 .barcharts {
-  font-family: 'Muli Black';
-
+  
   ul {
     margin: 0;
     padding: 0;
-
+    
     &.no-grid li {
+      font-family: 'Muli Black';
+      
       > :first-child {
         margin-right: 16px;
       }
