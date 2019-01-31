@@ -26,13 +26,11 @@ layout: default
         {% assign report_sections = site.report-2018  %}
 
         {% for section in report_sections %}
-          <li>
           {% if current == section.url %}
-            {{ section.pre_title }} {{ section.title }}
+            <li class="active">{{ section.pre_title }} {{ section.title }}</li>
           {% else %}
-            <a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
+            <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
           {% endif %}
-
         {% endfor %}
       </ul>
 
