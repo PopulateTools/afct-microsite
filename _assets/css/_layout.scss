@@ -56,11 +56,16 @@ section.intro-hero {
   font-size: $fsXLarge;
   font-weight: 600;
   line-height: 36px;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 97%, 0% 100%);
 
   p {
     margin: 0;
   }
 
+}
+
+.clipped-diag-top-bottom {
+  clip-path: polygon(0 3%, 100% 0px, 100% 97%, 0% 100%);
 }
 
 section.initial-results {
@@ -102,6 +107,7 @@ section.color-negative {
 
   .post {
     width: 45%;
+    transition: opacity 0.2s ease;
 
     .post-img {
       img {
@@ -117,6 +123,9 @@ section.color-negative {
 
     }
 
+  }
+  .post:hover {
+    opacity: .8;
   }
 
 }
