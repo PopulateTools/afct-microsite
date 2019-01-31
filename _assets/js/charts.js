@@ -41,9 +41,8 @@
         const barThickness = 30
         chart.height = columnNames.length * (barThickness + 12)
 
-        const maxValue = Math.max.apply(Math, data) * 1.05
+        const maxValue = nice(Math.max.apply(Math, data))
         const inverseData = data.map(e => maxValue - e)
-
         const defaultColor = objColors[Object.keys(objColors)[Object.keys(objColors).length - 1]]       
 
         // options
@@ -77,7 +76,7 @@
                   display: false,
                   beginAtZero: true,
                   precision: 0,
-                  // max: maxValue
+                  max: maxValue
                 }
               }],
               yAxes: [{
@@ -150,6 +149,17 @@
       }
     };
     xobj.send(null);
+  }
+
+  const nice = (number) => {
+    const digits = Math.abs(Math.trunc(number)).toString().length - 1
+    let base = Math.pow(10, digits) / 20
+    
+    while (base < 1) {
+      base *= 10
+    }
+    
+    return Math.ceil(number / base) * base
   }
 
 })();
