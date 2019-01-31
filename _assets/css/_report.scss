@@ -9,6 +9,7 @@ $gutter: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   h1 {
     font-size: $fsHero;
