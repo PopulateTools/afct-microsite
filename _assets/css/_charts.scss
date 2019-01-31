@@ -132,6 +132,54 @@
     }
   }
 
+  @each $dark in $cScaleDark {
+    $j: index($cScaleDark, $dark) - 1;
+
+    .color-dark#{$j} {
+      background-color: $dark;
+    }
+
+    .font-color-dark#{$j} {
+      color: $dark !important;
+    }
+
+    .border-dark#{$j} {
+      border-bottom-color: $dark !important;
+    }
+  }
+
+  @each $light in $cScaleLight {
+    $j: index($cScaleLight, $light) - 1;
+
+    .color-light#{$j} {
+      background-color: $light;
+    }
+
+    .font-color-light#{$j} {
+      color: $light !important;
+    }
+
+    .border-light#{$j} {
+      border-bottom-color: $light !important;
+    }
+  }
+
+  @each $lightest in $cScaleLightest {
+    $j: index($cScaleLightest, $lightest) - 1;
+
+    .color-lightest#{$j} {
+      background-color: $lightest;
+    }
+
+    .font-color-lightest#{$j} {
+      color: $lightest !important;
+    }
+
+    .border-lightest#{$j} {
+      border-bottom-color: $lightest !important;
+    }
+  }
+
   #hidden-chart-colors span {
     width: 10px;
     height: 10px;

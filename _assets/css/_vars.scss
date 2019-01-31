@@ -5,7 +5,22 @@ $cLinkSecondary: #5890AB;
 $cDecorator: #365F44;
 $cMutedText: #6F6F6F;
 $cBackground: #A8C4D2;
-$cScale: #3C915A #A45A4F $cLinkSecondary #E4C293 #A8A5D0;
+
+$cRed: #A45A4F;
+$cDarkRed: #6B4742;
+$cGreen: #3C915A;
+$cDarkGreen: $cDecorator;
+$cBlue: $cLinkSecondary;
+$cDarkBlue: $cLink;
+$cYellow: #D08C2F;
+$cDarkYellow: #845B22;
+$cPurple: #5953A8;
+$cDarkPurple: #403C6A;
+
+$cScale: $cGreen $cRed $cBlue $cYellow $cPurple;
+$cScaleDark: $cDarkGreen $cDarkRed $cDarkBlue $cDarkYellow $cDarkPurple;
+$cScaleLight: rgba($cGreen, .7) rgba($cRed, .7) rgba($cBlue, .7) rgba($cYellow, .7) rgba($cPurple, .7);
+$cScaleLightest: rgba($cGreen, .4) rgba($cRed, .4) rgba($cBlue, .4) rgba($cYellow, .4) rgba($cPurple, .4);
 
 // Fonts
 $fsHero: 44px;

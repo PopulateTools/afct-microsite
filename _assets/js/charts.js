@@ -12,7 +12,7 @@
     for (let span of elem.children) {
       objColors[span.className] = window.getComputedStyle(span, null).getPropertyValue("background-color");
     }  
-  }
+  }  
 
   getJSON("../static_data/datasets.json", (data) => {
     const jsonData = JSON.parse(data);
