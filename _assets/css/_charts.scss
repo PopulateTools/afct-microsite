@@ -1,7 +1,23 @@
 .barcharts {
+  font-family: 'Muli Black';
+
   ul {
     margin: 0;
     padding: 0;
+
+    &.no-grid li {
+      > :first-child {
+        margin-right: 16px;
+      }
+
+      > :last-child {
+        margin-left: 16px;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        border-bottom: 0;
+      }
+    }
   }
 
   li {
