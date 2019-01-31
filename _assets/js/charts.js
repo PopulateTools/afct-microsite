@@ -24,7 +24,7 @@
       if (chartData) {
         // prepare data
         const columnNames = chartData.data.map(a => a[0])
-        const data = chartData.data.map(a => parseFloat(a[1]))
+        const data = chartData.data.map(a => parseFloat(a[1]) || 0)
 
         const isGroupLabel = (chart.dataset.labels === undefined)
         if (isGroupLabel) {
@@ -42,7 +42,7 @@
         chart.height = columnNames.length * (barThickness + 12)
 
         const maxValue = nice(Math.max.apply(Math, data))
-        const inverseData = data.map(e => maxValue - e)
+        const inverseData = data.map(e => (e) ? maxValue - e : 0)
         const defaultColor = objColors[Object.keys(objColors)[Object.keys(objColors).length - 1]]       
 
         // options
@@ -125,7 +125,10 @@
                   },
                   ticks: {
                     display: true
-                  }
+                  },
+                  // afterFit: function(scaleInstance) {                  
+                  //   scaleInstance.width = 250;
+                  // }
                 }]
               }
             }

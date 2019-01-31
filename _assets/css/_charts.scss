@@ -1,6 +1,6 @@
 .barcharts {
   ul {
-    margin: 0;
+    margin: 0 0 30px;
     padding: 0;
     
     &.no-grid li {
@@ -31,6 +31,16 @@
     > *:not([group-label]) {
       flex: 1;
       min-width: 0;
+    }
+
+    &.title {
+      border-bottom: 0 !important;
+      font-family: 'Muli Black';
+      font-size: 16px;
+      padding: 0;
+      margin: 20px 0 -20px;
+      color: $cLink;
+      max-width: 220px;
     }
 
     &:not(:first-child):not(:last-child) {
@@ -92,7 +102,7 @@
     }
 
     .font-color-#{$i} {
-      color: $color;
+      color: $color !important;
     }
 
     .border-#{$i} {
