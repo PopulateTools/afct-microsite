@@ -73,6 +73,27 @@ section.color-negative {
   a {
     color: #FFF;
   }
+  .read-more-link:before {
+    background-color: #FFF;
+  }
+
+}
+
+.read-more-link {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+}
+
+.read-more-link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 0px;
+  width: 30px;
+  height: 1px;
+  background-color: $cLink;
 }
 
 .post-list-compact {
@@ -98,6 +119,12 @@ section.color-negative {
 
   }
 
+}
+
+.content-page {
+  .post {
+    font-size: 1.15em;
+  }
 }
 
 h1,
