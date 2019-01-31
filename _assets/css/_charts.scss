@@ -86,6 +86,10 @@
     .font-color-#{$i} {
       color: $color;
     }
+
+    .border-#{$i} {
+      border-bottom-color: $color !important;
+    }
   }
 
   #hidden-chart-colors span {
