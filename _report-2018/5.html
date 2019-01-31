@@ -24,12 +24,15 @@ order: 5
   <ul>
     <li>
       <div group-label></div>
-      <div class="font-color-2 border-2">All sectors</div>
-      <div class="font-color-2 border-2">Energy & Mining</div>
-      <div class="font-color-2 border-2">Health Care</div>
-      <div class="font-color-2 border-2">ICT</div>
+      <div class="font-color-2 border-2">All sectors<div class="subtitle">{{ site.companies_all }} companies</div></div>
+      <div class="font-color-2 border-2">Energy & Mining<div class="subtitle">{{ site.companies_energy }} companies</div></div>
+      <div class="font-color-2 border-2">Health Care<div class="subtitle">{{ site.companies_health }} companies</div></div>
+      <div class="font-color-2 border-2">ICT<div class="subtitle">{{ site.companies_ict }} companies</div></div>
     </li>
-    <li class="title">Policy</li>
+    <li class="title">
+      <div>Policy</div>
+      <small>Percentage of total</small>
+    </li>
     <li>
       <div group-label="2-Specific-0"></div>
       <div>

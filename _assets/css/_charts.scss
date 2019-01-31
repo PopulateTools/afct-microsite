@@ -35,12 +35,19 @@
 
     &.title {
       border-bottom: 0 !important;
+      margin: 20px 0 -20px;
+      max-width: 250px;
+      padding: 0;
       font-family: 'Muli Black';
       font-size: 16px;
-      padding: 0;
-      margin: 20px 0 -20px;
       color: $cLink;
-      max-width: 220px;
+      
+      small {
+        padding: 0 0 0 10px;
+        margin: 0;
+        font-family: 'Avenir Next';
+        opacity: .5;
+      }
     }
 
     &:not(:first-child):not(:last-child) {
@@ -87,6 +94,12 @@
 
   .avenir {
     font-family: 'Avenir Next';
+  }
+
+  .subtitle {
+    font-family: 'Avenir Next';
+    color: $cMutedText;
+    margin-bottom: -20px;
   }
 
   small {

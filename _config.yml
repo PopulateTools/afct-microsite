@@ -33,6 +33,10 @@ inspectlet_id:
 
 # report URLS
 url_report2018: /report-2018/
+companies_all: 105
+companies_energy: 38
+companies_health: 33
+companies_ict: 34
 
 # Social handlers
 twitter_url: https://twitter.com/
