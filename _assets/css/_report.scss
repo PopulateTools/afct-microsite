@@ -1,8 +1,10 @@
 $gutter: 16px;
 
 .report-header {
-  padding: 3em 0;
+  padding: 0 2em;
+  height: 266px;
   text-align: center;
+<<<<<<< HEAD
   color: #fff;
   margin: 0 0 2em 0;
   font-family: "Muli";
@@ -10,6 +12,12 @@ $gutter: 16px;
   height: 271px;
   display: flex;
   flex-direction: column;
+=======
+  margin: 0 0 2em 0;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+>>>>>>> Styles and headings
   justify-content: center;
 
   h1 {
@@ -62,4 +70,5 @@ $gutter: 16px;
 
 .report-content {
   width: 70%;
+  padding-bottom: 5em;
 }

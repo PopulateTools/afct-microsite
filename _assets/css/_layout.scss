@@ -7,9 +7,9 @@ html, body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
 }
 
 main {
@@ -44,11 +44,9 @@ main {
 
 
 section.intro-hero {
-  background: #777;
-  // background-image: asset_url("teaser_home_image_x1");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  position: relative;
+  background-image: asset_url('bg-0-home');
+  background-size: cover;
   padding: 5em 0;
   color: #FFF;
   text-align: center;
