@@ -3,13 +3,18 @@ $gutter: 16px;
 .report-header {
   padding: 3em 0;
   text-align: center;
-  background-color: bisque;
+  color: #fff;
   margin: 0 0 2em 0;
+  font-family: "Muli";
 
   h1 {
-    font-family: "Muli";
     font-size: $fsHero;
     margin: 0 auto;
+  }
+  
+  p {
+    font-size: $fsLarge;
+    text-transform: uppercase;
   }
 }
 
