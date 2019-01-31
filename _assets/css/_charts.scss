@@ -5,12 +5,8 @@
 
     &.no-grid li {
       font-family: 'Muli';
-<<<<<<< HEAD
       font-weight: 900;
-      
-=======
 
->>>>>>> Fonts
       > :first-child {
         margin-right: 16px;
       }
@@ -71,10 +67,6 @@
 
     &:first-child > *:not(:first-child) {
       font-family: 'Muli';
-<<<<<<< HEAD
-=======
-      font-weight: 900;
->>>>>>> Fonts
       font-size: $fsMedium;
       font-weight: 900;
       border-bottom: 4px solid $cDecorator;
