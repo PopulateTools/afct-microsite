@@ -1,8 +1,15 @@
 <nav class="footer-nav">
-  <a href="{{ include.prevLink }}" class="nav-prev" style="background-image: url('{% asset '{{ include.prevImg }}' @path %}')">
-    <i><</i><h2>{{ include.prevTitle }}</h2>
+
+  {% if page.previous %}
+  <a href="{{ page.previous.url }}" class="nav-prev" style="background-image: url('{% asset 'report-2018/bg-1-general-info.jpg' @path %}')">
+    <i><</i><h2>{{ page.previous.title }}</h2>
   </a>
-  <a href="{{ include.nextLink }}" class="nav-next" style="background-image: url('{% asset '{{ include.nextImg }}' @path %}')">
-    <h2>{{ include.nextTitle }}</h2><i>></i>
+  {% endif %}
+
+  {% if page.next %}
+  <a href="{{ page.next.url }}" class="nav-next" style="background-image: url('{% asset 'report-2018/bg-1-general-info.jpg' @path %}')">
+    <h2>{{ page.next.title }}</h2><i>></i>
   </a>
+  {% endif %}
+
 </nav>

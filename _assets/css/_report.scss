@@ -1,15 +1,13 @@
 $gutter: 16px;
 
 .report-header {
-  padding: 3em 0;
+  padding: 0 2em;
+  height: 266px;
   text-align: center;
-  color: #fff;
   margin: 0 0 2em 0;
-  font-family: "Muli";
-  background-size: cover;
-  height: 271px;
+  color: #FFF;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
   h1 {
@@ -17,7 +15,7 @@ $gutter: 16px;
     margin: 0 auto;
     width: 70%;
   }
-  
+
   p {
     font-size: $fsLarge;
     text-transform: uppercase;
@@ -62,4 +60,5 @@ $gutter: 16px;
 
 .report-content {
   width: 70%;
+  padding-bottom: 5em;
 }

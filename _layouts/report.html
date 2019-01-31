@@ -21,7 +21,7 @@ layout: default
     <aside class="report-sidebar">
 
       <ul>
-        {% assign report_sections = site.report-2018 | sort: 'order' %}
+        {% assign report_sections = site.report-2018  %}
 
         {% for section in report_sections %}
         <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
@@ -38,19 +38,8 @@ layout: default
 
   </div>
 
-  {% if assets[page.prevImg] 
-      and assets[page.nextImg] 
-      and page.prevTitle 
-      and page.nextTitle 
-      and page.prevLink 
-      and page.nextLink %}
-    {% include navigation.html 
-        prevLink=page.prevLink
-        nextLink=page.nextLink
-        prevTitle=page.prevTitle
-        nextTitle=page.nextTitle
-        prevImg=page.prevImg
-        nextImg=page.nextImg %}
-  {% endif %}
+
+  {% include navigation.html %}
+
 
 </main>
