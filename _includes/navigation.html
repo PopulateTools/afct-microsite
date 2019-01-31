@@ -1,8 +1,8 @@
-<nav>
-  <div class="nav-prev" style="background-color: gainsboro">
-    <i><</i><h2>Most relevant findings</h2>
-  </div>
-  <div class="nav-next" style="background-color: lightcyan">
-    <h2>Level 2: Key environmental</h2><i>></i>
-  </div>
+<nav class="footer-nav">
+  <a href="{{ include.prevLink }}" class="nav-prev" style="background-image: url('{% asset '{{ include.prevImg }}' @path %}')">
+    <i><</i><h2>{{ include.prevTitle }}</h2>
+  </a>
+  <a href="{{ include.nextLink }}" class="nav-next" style="background-image: url('{% asset '{{ include.nextImg }}' @path %}')">
+    <h2>{{ include.nextTitle }}</h2><i>></i>
+  </a>
 </nav>

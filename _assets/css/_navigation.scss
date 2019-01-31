@@ -1,11 +1,19 @@
-nav {
+nav.footer-nav {
   display: flex;
-
+  height: 271px;
+  
   .nav-prev,
   .nav-next {
+    text-decoration: none;
     flex-basis: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-size: cover;
+    color: #fff;
+  }
+
+  i {
+    font-size: 200px;
   }
 }

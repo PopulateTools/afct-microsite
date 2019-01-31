@@ -6,10 +6,16 @@ $gutter: 16px;
   color: #fff;
   margin: 0 0 2em 0;
   font-family: "Muli";
+  background-size: cover;
+  height: 271px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h1 {
     font-size: $fsHero;
     margin: 0 auto;
+    width: 70%;
   }
   
   p {

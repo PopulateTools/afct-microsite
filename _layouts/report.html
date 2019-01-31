@@ -38,6 +38,19 @@ layout: default
 
   </div>
 
-  {% include navigation.html %}
+  {% if assets[page.prevImg] 
+      and assets[page.nextImg] 
+      and page.prevTitle 
+      and page.nextTitle 
+      and page.prevLink 
+      and page.nextLink %}
+    {% include navigation.html 
+        prevLink=page.prevLink
+        nextLink=page.nextLink
+        prevTitle=page.prevTitle
+        nextTitle=page.nextTitle
+        prevImg=page.prevImg
+        nextImg=page.nextImg %}
+  {% endif %}
 
 </main>
