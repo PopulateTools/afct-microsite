@@ -10,9 +10,10 @@ layout: default
   <div class="report-header">
 {% endif %}
 
-
-    <p class="pre_title">{{ page.pre_title }}</p>
-    <h1>{{ page.title }}</h1>
+    <div class="report-header-content">
+      <p class="pre-title">{{ page.pre_title }}</p>
+      <h1>{{ page.title }}</h1>
+    </div>
 
   </div>
 
@@ -21,10 +22,15 @@ layout: default
     <aside class="report-sidebar">
 
       <ul>
+        {% assign current = page.url | downcase %}
         {% assign report_sections = site.report-2018  %}
 
         {% for section in report_sections %}
-        <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
+          {% if current == section.url %}
+            <li class="active">{{ section.pre_title }} {{ section.title }}</li>
+          {% else %}
+            <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
+          {% endif %}
         {% endfor %}
       </ul>
 
