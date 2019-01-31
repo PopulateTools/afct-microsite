@@ -1,7 +1,7 @@
 nav.footer-nav {
   display: flex;
   height: 271px;
-  
+
   .nav-prev,
   .nav-next {
     text-decoration: none;
@@ -11,9 +11,19 @@ nav.footer-nav {
     background-size: cover;
     color: #fff;
     flex: 1 0 50%;
+    transition: opacity 0.2s ease;
+  }
+
+  .nav-prev:hover,
+  .nav-next:hover {
+    opacity: .8;
   }
 
   i {
-    font-size: 200px;
+    font-size: 50px;
+    padding: 0 .5em;
+  }
+  h2 {
+    padding: 0 1em;
   }
 }
