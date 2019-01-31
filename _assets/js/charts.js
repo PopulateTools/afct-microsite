@@ -11,8 +11,8 @@
   if (elem) {
     for (let span of elem.children) {
       objColors[span.className] = window.getComputedStyle(span, null).getPropertyValue("background-color");
-    }  
-  }  
+    }
+  }
 
   getJSON("../static_data/datasets.json", (data) => {
     const jsonData = JSON.parse(data);
@@ -41,9 +41,15 @@
         const barThickness = 30
         chart.height = columnNames.length * (barThickness + 12)
 
+        columnNames.forEach((column, i) => {
+          if (column.length > 20) {
+            columnNames[i] = wrap(column, 20)
+          }
+        })
+
         const maxValue = nice(Math.max.apply(Math, data))
         const inverseData = data.map(e => (e) ? maxValue - e : 0)
-        const defaultColor = objColors[Object.keys(objColors)[Object.keys(objColors).length - 1]]       
+        const defaultColor = objColors[Object.keys(objColors)[Object.keys(objColors).length - 1]]
 
         // options
         var opts = {
@@ -126,9 +132,9 @@
                   ticks: {
                     display: true
                   },
-                  // afterFit: function(scaleInstance) {                  
-                  //   scaleInstance.width = 250;
-                  // }
+                  afterFit: function (scaleInstance) {
+                    scaleInstance.width = 200;
+                  }
                 }]
               }
             }
@@ -157,12 +163,33 @@
   const nice = (number) => {
     const digits = Math.abs(Math.trunc(number)).toString().length - 1
     let base = Math.pow(10, digits) / 20
-    
+
     while (base < 1) {
       base *= 10
     }
-    
+
     return Math.ceil(number / base) * base
+  }
+
+  const wrap = (str, limit) => {
+    const words = str.split(" ");
+    let aux = []
+    let concat = []
+
+    for (let i = 0; i < words.length; i++) {
+      concat.push(words[i])
+      let join = concat.join(' ')
+      if (join.length > limit) {
+        aux.push(join)
+        concat = []
+      }
+    }
+
+    if (concat.length) {
+      aux.push(concat.join(' ').trim())
+    }
+
+    return aux
   }
 
 })();
