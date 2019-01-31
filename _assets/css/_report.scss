@@ -4,7 +4,7 @@ $gutter: 16px;
   padding: 0 2em;
   height: 266px;
   text-align: center;
-  margin: 0 0 2em 0;
+  margin: 0 0 4em 0;
   color: #FFF;
   display: flex;
   align-items: center;
@@ -17,11 +17,17 @@ $gutter: 16px;
     width: 70%;
   }
 
-  p {
+  p.pre-title {
     font-size: $fsLarge;
     text-transform: uppercase;
-    font-weight: 900;
+    margin: 0;
   }
+
+  .report-header-content {
+    display: block;
+    width: 100%;
+  }
+
 }
 
 .report-container {
