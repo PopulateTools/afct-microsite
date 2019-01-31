@@ -58,6 +58,11 @@ section.intro-hero {
   line-height: 36px;
   clip-path: polygon(0px 0px, 100% 0px, 100% 97%, 0% 100%);
 
+  @include screen(740) {
+    font-size: $fsMedium;
+    line-height: 24px;
+  }
+
   p {
     margin: 0;
   }
@@ -105,9 +110,17 @@ section.color-negative {
   display: flex;
   justify-content: space-between;
 
+  @include screen(740) {
+    display: block;
+  }
+
   .post {
     width: 45%;
     transition: opacity 0.2s ease;
+
+    @include screen(740) {
+      width: 100%;
+    }
 
     .post-img {
       img {
