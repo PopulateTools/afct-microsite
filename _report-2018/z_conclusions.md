@@ -1,8 +1,8 @@
 ---
 title: Conclusions
-date: 2019-01-10
+date: 2019-01-10 00:00:00 Z
 layout: report
-pre_title:
+pre_title: 
 img: report-2018/bg-7-opportunities.jpg
 ---
 
