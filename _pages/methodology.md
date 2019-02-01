@@ -1,6 +1,6 @@
 ---
+title: Methodology
 layout: page
-title: "Methodology"
 ---
 
 <h3>The Alliance project unfolded</h3>

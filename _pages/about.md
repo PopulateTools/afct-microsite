@@ -1,6 +1,6 @@
 ---
+title: About
 layout: page
-title: "About"
 ---
 
 This three-year research project brings together leading civil society organisations and experts with the aim of analysing the corporate disclosure on sustainability issues by the 1000 largest companies operating in the EU and providing evidence-based recommendations for legislative changes.

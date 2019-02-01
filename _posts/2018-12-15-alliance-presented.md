@@ -1,10 +1,11 @@
 ---
+title: The Alliance for Corporate Transparency project presented at major events
+date: 2018-12-15 00:00:00 Z
 layout: post
-title: "The Alliance for Corporate Transparency project presented at major events"
-date: 2018-12-15
 img: posts/1901-brussels.jpg
-intro: On 18 October, the European Commission hosted an open stakeholder meeting on non-financial disclosures organised by DG FISMA (Financial Stability, Financial Services and Capital Markets Union)
-# main_photo: path/to/image/url
+intro: On 18 October, the European Commission hosted an open stakeholder meeting on
+  non-financial disclosures organised by DG FISMA (Financial Stability, Financial
+  Services and Capital Markets Union)
 ---
 
 On 18 October, the European Commission hosted an open stakeholder meeting on non-financial disclosures organised by DG FISMA (Financial Stability, Financial Services and Capital Markets Union), and Frank Bold’s Filip Gregor spoke at the event in order to present the Alliance for Corporate Transparency. The event was organised by the European Commission in order to gather feedback and advice from a wide variety of actors from both the corporate world and civil society and to allow key players such as regulators and members of civil society to share their views on the future of corporate reporting, gathering senior representatives from the financial sector, civil society, public administrations and universities. It provided the perfect opportunity to present the Alliance to a wide range of experts and legislators, as well as to gather feedback on the project itself. All the slides from Filip’s presentation at the meeting are available to view at the following link: http://bit.ly/2Pu65qW.
