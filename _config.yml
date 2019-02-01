@@ -14,7 +14,7 @@ handle:
 long_handle:
 
 # default permalink for blog posts
-permalink: blog/:title
+permalink: news/:title
 
 collections:
   report-2018:
