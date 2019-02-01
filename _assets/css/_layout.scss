@@ -143,12 +143,6 @@ section.color-negative {
 
 }
 
-.content-page {
-  .post {
-    font-size: 1.15em;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -183,4 +177,35 @@ a {
 }
 .button.button-negative:hover {
   color: #FFF;
+}
+
+
+.content-page {
+  color: $cLink;
+  font-size: 1.15em;
+
+  h2,
+  h3,
+  h4 {
+    margin: 2em 0 1em 0;
+  }
+
+  table, tr, td {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-collapse: inherit;
+    border-spacing: 0;
+  }
+  th {
+    width: 35%;
+    padding-right: 10%;
+    font-size: 1.25em;
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal;
+  }
+  td {
+    padding-bottom: 3em;
+  }
 }

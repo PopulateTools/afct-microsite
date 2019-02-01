@@ -11,6 +11,7 @@ $gutter: 12px;
   justify-content: center;
   flex-direction: column;
   background-size: cover;
+  background-position: center center;
 
   h1 {
     font-size: $fsHero;
@@ -95,7 +96,7 @@ $gutter: 12px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  
+
     > * {
       flex: 0 0 20%;
     }
@@ -112,13 +113,39 @@ $gutter: 12px;
   }
 }
 
+.report-countries {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  font-family: 'Muli';
+  font-weight: 900;
+  margin: 6 * $gutter 0;
+
+  h5 {
+    margin: 0;
+    min-width: 26%;
+  }
+
+  table, tr, td {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-collapse: inherit;
+    border-spacing: 0;
+  }
+  td {
+    padding: 0 .75em .75em;
+    font-size: 22px;
+  }
+}
+
 .report-companies {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   font-family: 'Muli';
   font-weight: 900;
-  margin: 3 * $gutter 0;
+  margin: 8 * $gutter 0;
 
   h5 {
     margin: 0;
@@ -149,4 +176,9 @@ $gutter: 12px;
   .companies-text {
     font-size: 24px;
   }
+}
+
+.pie-presentation-info {
+  display: block;
+  margin: auto;
 }
