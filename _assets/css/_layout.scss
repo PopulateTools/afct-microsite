@@ -126,8 +126,16 @@ section.color-negative {
     }
 
     .post-img {
+      display: flex;
+      height: 200px;
+      justify-content: space-evenly;
+      align-items: center;
+      overflow: hidden;
+      background: $cLinkSecondary;
+
       img {
-        width: 100%;
+        width: auto;
+        height: 100%;
       }
     }
     .post-text-content {
