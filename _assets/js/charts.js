@@ -47,7 +47,7 @@
           }
         })
 
-        const maxValue = nice(Math.max.apply(Math, data))
+        const maxValue = 100
         const inverseData = data.map(e => (e) ? maxValue - e : 0)
         const defaultColor = objColors[Object.keys(objColors)[Object.keys(objColors).length - 1]]
 
@@ -98,12 +98,13 @@
             },
             plugins: {
               datalabels: {
-                color: '#fff',
                 anchor: 'end',
-                align: 'start',
+                color: (context) => context.dataset.data[context.dataIndex] < 12 ? '#3B5360' : '#fff',
+                align: (context) => context.dataset.data[context.dataIndex] < 12 ? 'end' : 'start',
                 font: {
                   weight: 'bold'
                 },
+                clip: true,
                 formatter: (value, ctx) => {
                   if (ctx.dataset.hiddenLabel) {
                     return null
@@ -158,17 +159,6 @@
       }
     };
     xobj.send(null);
-  }
-
-  const nice = (number) => {
-    const digits = Math.abs(Math.trunc(number)).toString().length - 1
-    let base = Math.pow(10, digits) / 20
-
-    while (base < 1) {
-      base *= 10
-    }
-
-    return Math.ceil(number / base) * base
   }
 
   const wrap = (str, limit) => {
