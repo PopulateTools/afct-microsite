@@ -89,7 +89,7 @@ layout: page
 <tr>
   <th><strong>Documentation:</strong> Which company resources have been analysed?</th>
   <td>
-    <p>The project analysed the information disclosed in the corporate annual or sustainability reports as well as any document or set of information clearly linked in these statements. The rationale behind this decision follows the principles of the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0095&from=EN>EU NFR Directive</a> and <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017XC0705(01)&from=EN">accompanying guidance</a>, in which it is stated that the information should be easily accessible (i.e. “Cross referencing and signposting should be smart and user-friendly, for instance, by applying a practical rule of maximum one “click” out of the report”)</p>
+    <p>The project analysed the information disclosed in the corporate annual or sustainability reports as well as any document or set of information clearly linked in these statements. The rationale behind this decision follows the principles of the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0095&from=EN">EU NFR Directive</a> and <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017XC0705(01)&from=EN">accompanying guidance</a>, in which it is stated that the information should be easily accessible (i.e. “Cross referencing and signposting should be smart and user-friendly, for instance, by applying a practical rule of maximum one “click” out of the report”)</p>
   </td>
 </tr>
 <tr>
@@ -99,7 +99,9 @@ layout: page
   </td>
 </tr>
 <tr>
-  <th>Companies feedback</th>
+  <th><strong>Companies feedback</strong></th>
   <td>
-    <p>Companies assessed have received their individual assessment and have been invited to provide comments. Their input will be taken into account and addressed in the second round of analysis in 2019. Similarly, all stakeholders are welcome to provide feedback on the project’s research methodology and results. A specific form has been set up for this purpose here. </p>
+    <p>Companies assessed have received their individual assessment and have been invited to provide comments. Their input will be taken into account and addressed in the second round of analysis in 2019. Similarly, all stakeholders are welcome to provide feedback on the project’s research methodology and results. <a href="https://goo.gl/forms/kcNSuNVsTZMKLzZD2">A specific form has been set up for this purpose here</a>. </p>
+  </td>
+</tr>
 </table>
