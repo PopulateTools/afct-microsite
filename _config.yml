@@ -33,6 +33,7 @@ inspectlet_id:
 
 # report URLS
 url_report2018: /report-2018/
+url_report2018_pdf: PENDING
 companies_all: 105
 companies_energy: 38
 companies_health: 33
