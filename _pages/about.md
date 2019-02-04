@@ -3,6 +3,10 @@ title: About
 layout: page
 ---
 
+<div class="aside">
+  <a class="twitter-timeline" data-height="800" data-dnt="true" href="https://twitter.com/EUCorpReporting?ref_src=twsrc%5Etfw">Tweets by EUCorpReporting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
 This three-year research project brings together leading civil society organisations and experts with the aim of analysing the corporate disclosure on sustainability issues by the 1000 largest companies operating in the EU and providing evidence-based recommendations for legislative changes.
 
 The project is framed within the EU Non-Financial Reporting Directive, which came into effect in 2018 and requires large companies and financial corporations to disclose information necessary for understanding their impacts on society and environment. The Directive is a first step in the good direction but failed to specify what concrete information must be disclosed. This severely undermines the legislation’s objective to increase the relevance, consistency and comparability of corporate sustainability data, which is crucial for investors to help inform their decisions as well as for civil society and public authorities to assess and monitor corporate responsibility.
