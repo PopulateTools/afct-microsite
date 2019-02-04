@@ -13,10 +13,19 @@ $gutter: 12px;
   background-size: cover;
   background-position: center center;
 
+  @include screen($wMobile) {
+    margin: 0 0 2em 0;
+  }
+
   h1 {
     font-size: $fsHero;
     margin: 0 auto;
     width: 70%;
+    
+    @include screen($wMobile) {
+      font-size: $fsHero * .75;
+      width: 100%;
+    }
   }
 
   p.pre-title {
@@ -35,6 +44,10 @@ $gutter: 12px;
 .report-container {
   display: flex;
   flex: 1;
+
+  @include screen($wMobile) {
+    flex-direction: column;
+  }
 }
 
 .report-sidebar {
@@ -44,6 +57,13 @@ $gutter: 12px;
   position: sticky;
   top: 2 * $gutter;
   height: 100vh;
+
+  @include screen($wMobile) {
+    width: 100%;
+    top: 0;
+    position: relative;
+    height: auto;
+  }
 
   ul {
     margin: 0;
@@ -74,6 +94,12 @@ $gutter: 12px;
 .report-content {
   width: 72%;
   padding-bottom: 5em;
+  
+  @include screen($wMobile) {
+    padding: 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   p {
     margin-bottom: 2em;
@@ -100,6 +126,14 @@ $gutter: 12px;
     > * {
       flex: 0 0 20%;
     }
+
+    @include screen($wMobile) {
+      flex-wrap: wrap;
+
+      > * {
+        flex: 0 0 50%;
+      }
+    }
   }
 
   .indicator-value {
@@ -120,6 +154,10 @@ $gutter: 12px;
   font-family: 'Muli';
   font-weight: 900;
   margin: 6 * $gutter 0;
+
+  @include screen($wMobile) {
+    margin: 2 * $gutter 0;
+  }
 
   h5 {
     margin: 0;
@@ -147,13 +185,28 @@ $gutter: 12px;
   font-weight: 900;
   margin: 8 * $gutter 0;
 
+  @include screen($wMobile) {
+    margin: 3 * $gutter 0;
+    flex-wrap: wrap;
+  }
+
   h5 {
     margin: 0;
+
+    @include screen($wMobile) {
+      flex-basis: 100%;
+      margin: 0 0 $gutter;
+    }
   }
 
   > :not(:first-child) {
     display: flex;
     align-items: flex-start;
+
+    @include screen($wMobile) {
+      margin: 0 0 $gutter;
+    }
+
 
     > * {
       padding: 0 12px;

@@ -6,13 +6,15 @@
     &.no-grid li {
       font-family: 'Muli';
       font-weight: 900;
-
-      > :first-child {
-        margin-right: 16px;
-      }
-
-      > :last-child {
-        margin-left: 16px;
+      
+      @include min-screen($wMobile) {
+        > :first-child {
+          margin-right: 16px;
+        }
+  
+        > :last-child {
+          margin-left: 16px;
+        }
       }
 
       &:not(:first-child):not(:last-child) {

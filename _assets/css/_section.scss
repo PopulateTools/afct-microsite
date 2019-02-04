@@ -44,7 +44,7 @@ section {
   .section-form {
     display: flex;
 
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: $wMobile) {
       display: block;
     }
   }
@@ -53,7 +53,7 @@ section {
     margin-right: 10px;
     display: inline-block;
 
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: $wMobile) {
       margin-right: 0;
     }
   }
@@ -68,7 +68,7 @@ section {
     padding: 0 10px;
     box-sizing: border-box;
 
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: $wMobile) {
       width: 100%;
     }
   }
@@ -90,7 +90,7 @@ section {
     font-weight: 600;
     cursor: pointer;
 
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: $wMobile) {
       width: 100%;
     }
   }
@@ -132,7 +132,7 @@ section.partners {
     li {
       flex-basis: 33%;
 
-      @media screen and (max-width: 39.9375em) {
+      @media screen and (max-width: $wMobile) {
         flex-basis: 100%;
       }
 
