@@ -24,7 +24,7 @@
       if (chartData) {
         // prepare data
         const columnNames = chartData.data.map(a => a[0])
-        const data = chartData.data.map(a => parseFloat(a[1]) || 0)
+        const data = chartData.data.map(a => parseFloat(a[1]))
 
         const isGroupLabel = (chart.dataset.labels === undefined)
         if (isGroupLabel) {
@@ -33,7 +33,11 @@
 
           if (!labels.innerHTML) {
             let markup = ''
-            columnNames.forEach(column => markup += `<div><span>${column}</span></div>`)
+            const especiaisDoCaralho = ["Policy on workers' rights", "Policy on community rights", "Policy on environmental issues"]            
+            columnNames.forEach(column => markup += 
+              (especiaisDoCaralho.includes(column))
+              ? `<div><strong>${column}</strong></div>`
+              : `<div><span>${column}</span></div>`)
             labels.innerHTML = markup
           }
         }
@@ -48,7 +52,7 @@
         })
 
         const maxValue = 100
-        const inverseData = data.map(e => (e) ? maxValue - e : 0)
+        const inverseData = data.map(e => maxValue - e)
         const defaultColor = objColors[Object.keys(objColors)[Object.keys(objColors).length - 1]]
 
         // options
