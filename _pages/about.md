@@ -30,3 +30,5 @@ Content and advisory partners have provided strategic input throughout the proje
 Test partners engaged in constructive discussions concerning the assessment criteria and the initial tests performed on their corporate reports - this collaboration has been carried out completely pro-bono. Project content partners have veto power on strategic decisions and final results. Similarly, we have also engaged external experts from business and investor organisations in a consultation round hosted in Q3 2018.
 
 <strong>Contact</strong>: For any queries, please contact Susanna Arus, Project Coordinator at <a href="mailto:susanna.arus@frankbold.org">susanna.arus@frankbold.org</a>
+
+<strong>Newsletter:</strong> You can register for our <a class="link" href="http://eepurl.com/dJPBjQ">newsletter here</a> to receive updates on the project.
