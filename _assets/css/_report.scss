@@ -235,3 +235,18 @@ $gutter: 12px;
   display: block;
   margin: auto;
 }
+
+.line-separator {
+  border-top: 1px solid $cBackground;
+  width: 100%;
+  margin: 3em 0;
+}
+.center {
+  text-align: center;
+}
+
+.aside {
+  float: right;
+  margin: 0 0 2em 2em;
+  width: 25%;
+}

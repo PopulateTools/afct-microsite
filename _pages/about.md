@@ -3,6 +3,10 @@ title: About
 layout: page
 ---
 
+<div class="aside">
+  <a class="twitter-timeline" data-height="800" data-dnt="true" href="https://twitter.com/EUCorpReporting?ref_src=twsrc%5Etfw">Tweets by EUCorpReporting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
 This three-year research project brings together leading civil society organisations and experts with the aim of analysing the corporate disclosure on sustainability issues by the 1000 largest companies operating in the EU and providing evidence-based recommendations for legislative changes.
 
 The project is framed within the EU Non-Financial Reporting Directive, which came into effect in 2018 and requires large companies and financial corporations to disclose information necessary for understanding their impacts on society and environment. The Directive is a first step in the good direction but failed to specify what concrete information must be disclosed. This severely undermines the legislation’s objective to increase the relevance, consistency and comparability of corporate sustainability data, which is crucial for investors to help inform their decisions as well as for civil society and public authorities to assess and monitor corporate responsibility.
@@ -30,3 +34,5 @@ Content and advisory partners have provided strategic input throughout the proje
 Test partners engaged in constructive discussions concerning the assessment criteria and the initial tests performed on their corporate reports - this collaboration has been carried out completely pro-bono. Project content partners have veto power on strategic decisions and final results. Similarly, we have also engaged external experts from business and investor organisations in a consultation round hosted in Q3 2018.
 
 <strong>Contact</strong>: For any queries, please contact Susanna Arus, Project Coordinator at <a href="mailto:susanna.arus@frankbold.org">susanna.arus@frankbold.org</a>
+
+<strong>Newsletter:</strong> You can register for our <a class="link" href="http://eepurl.com/dJPBjQ">newsletter here</a> to receive updates on the project.
