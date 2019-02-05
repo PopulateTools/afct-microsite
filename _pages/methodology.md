@@ -25,7 +25,7 @@ layout: page
 
   <p>The initial scope of <strong>105 companies</strong> includes some of the biggest companies by market capitalisation as well as other companies from the lower tier falling under the scope of the EU NFR Directive. The logic behind this decision is that even if the largest companies have a bigger effect on society and the planet, smaller companies must also fulfil their obligation to report on ESG issues to their stakeholders.</p>
 
-  <p>The full list of companies assessed in 2018 is available here.</p>
+  <p><a href="{% asset '{{ site.url_report2018_pdf }}' @path %}">The full list of companies assessed in 2018 is available here</a> (PDF, 10MB).</p>
   </td>
 </tr>
 <tr>
@@ -46,7 +46,7 @@ layout: page
 
   <p>For each of these issues, the project concretised reporting criteria for the disclosure of policies & procedures, risk management, KPIs and/or qualitative indicators for specific sub-issues. The structure of these criteria vary across issues, reflecting their inherent differences. </p>
 
-  <p>Some of these specific issues are applicable to companies in all sectors (e.g. information related to workforce and general human rights and anti-corruption policies), while others are attributed to sectors according to their materiality (e.g. specific environmental impacts and human rights risks). <strong>The overview of the allocation of issues to sectors in the form of a materiality matrix is provided here</strong>.</p>
+  <p>Some of these specific issues are applicable to companies in all sectors (e.g. information related to workforce and general human rights and anti-corruption policies), while others are attributed to sectors according to their materiality (e.g. specific environmental impacts and human rights risks). <strong><a href="{% asset '{{ site.url_report2018_pdf }}' @path %}">The overview of the allocation of issues to sectors in the form of a materiality matrix is provided here</a></strong> (PDF, 10MB).</p>
 
   <p><strong>3rd level: Information on the company’s engagement with opportunities related to the transition to a sustainable economy</strong>. </p>
 

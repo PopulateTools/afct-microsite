@@ -11,7 +11,7 @@ This three-year research project brings together leading civil society organisat
 
 The project is framed within the EU Non-Financial Reporting Directive, which came into effect in 2018 and requires large companies and financial corporations to disclose information necessary for understanding their impacts on society and environment. The Directive is a first step in the good direction but failed to specify what concrete information must be disclosed. This severely undermines the legislation’s objective to increase the relevance, consistency and comparability of corporate sustainability data, which is crucial for investors to help inform their decisions as well as for civil society and public authorities to assess and monitor corporate responsibility.
 
-To fill this gap, the project draws from EU law, international standards and leading reporting frameworks in order to determine what information is commonly understood to be essential and material for each industrial sector. More details concerning the methodology of the project are available here.
+To fill this gap, the project draws from EU law, international standards and leading reporting frameworks in order to determine what information is commonly understood to be essential and material for each industrial sector. <a href="{% asset '{{ site.url_report2018_pdf }}' @path %}">More details concerning the methodology of the project are available here (PDF, 10MB)</a>.
 
 <h3>Partners</h3>
 
