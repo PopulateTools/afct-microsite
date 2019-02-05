@@ -33,7 +33,7 @@ inspectlet_id:
 
 # report URLS
 url_report2018: /report-2018/
-url_report2018_pdf: PENDING
+url_report2018_pdf: 2018_Research_Report_Alliance_Corporate_Transparency.pdf
 companies_all: 105
 companies_energy: 38
 companies_health: 33
@@ -51,6 +51,9 @@ exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'co
 assets:
   features:
     automatic_img_size: false
+
+sources:
+  - _assets/pdf
 
 plugins:
   - jekyll-seo-tag
