@@ -14,16 +14,16 @@ handle:
 long_handle:
 
 # default permalink for blog posts
-permalink: news/:title
+permalink: news/:title.html
 
 collections:
   report-2018:
     output: true
-    permalink: /report-2018/:path
+    permalink: /report-2018/:path.html
   static_data:
     output: true
   pages:
-    permalink: /pages/:path
+    permalink: /pages/:path.html
     output: true
 
 
