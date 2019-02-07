@@ -2,8 +2,16 @@
 
 @import
   "reset",
-  "body",
+  "vars",
+  "helpers",
+  "colors",
+  "layout",
   "header",
-  "hero",
-  "section"
+  "section",
+  "footer",
+  "navigation",
+  "report",
+  "charts"
 ;
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900');

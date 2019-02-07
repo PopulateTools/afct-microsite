@@ -6,26 +6,38 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: ACFT
+title: Alliance for Corporate Transparency
 description: ACFT
 baseurl: "" # the subpath of your site, e.g. /blog
-email: 
-handle: 
-long_handle: 
+email:
+handle:
+long_handle:
 
 # default permalink for blog posts
-permalink: blog/:title
+permalink: news/:title.html
 
-defaults:
-  - scope:
-      path: ""
-      type: projects
-    values:
-      weight: 100
+collections:
+  report-2018:
+    output: true
+    permalink: /report-2018/:path.html
+  static_data:
+    output: true
+  pages:
+    permalink: /pages/:path.html
+    output: true
+
 
 # Analytics
-ga_id: 
-inspectlet_id: 
+ga_id:
+inspectlet_id:
+
+# report URLS
+url_report2018: /report-2018/
+url_report2018_pdf: 2018_Research_Report_Alliance_Corporate_Transparency.pdf
+companies_all: 105
+companies_energy: 38
+companies_health: 33
+companies_ict: 34
 
 # Social handlers
 twitter_url: https://twitter.com/
@@ -34,13 +46,16 @@ github_url: https://github.com/
 # Build settings
 markdown: kramdown
 highlighter: rouge
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '_posts']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', 'bin']
 
 assets:
   features:
     automatic_img_size: false
 
-gems:
+sources:
+  - _assets/pdf
+
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-assets

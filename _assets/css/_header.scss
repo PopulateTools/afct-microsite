@@ -1,27 +1,20 @@
 header {
-  background-image: linear-gradient(-180deg, #336A7D 0%, #548CA7 100%);
-  box-shadow: 0 0 7px 0 rgba(0,0,0,0.50);
-  height: 80px;
+  padding: 1em 2em;
 
   > * {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
     text-transform: uppercase;
     height: 100%;
   }
 
-  h3 {
-    opacity: 0.5;
-    font-size: 18px;
-    color: #FFFFFF;
-    font-weight: 400;
+  .logo {
+    max-height: 62px;
   }
 
   nav {
-
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: $wMobile) {
       display: none;
     }
 
@@ -32,11 +25,13 @@ header {
         display: inline-block;
 
         &:not(:last-child) {
-          margin-right: 1vw;
+          margin-right: 1.5vw;
         }
 
         a {
-          color: #FFFFFF;
+          font-size: 17px;
+          color: $cLink;
+          font-weight: 600;
           text-decoration: none;
         }
       }

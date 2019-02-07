@@ -1,0 +1,127 @@
+.barcharts {
+  ul {
+    margin: 0 0 30px;
+    padding: 0;
+
+    &.no-grid li {
+      font-family: 'Muli';
+      font-weight: 900;
+      
+      @include min-screen($wMobile) {
+        > :first-child {
+          margin-right: 16px;
+        }
+  
+        > :last-child {
+          margin-left: 16px;
+        }
+      }
+
+      &:not(:first-child):not(:last-child) {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+      padding: 20px 0;
+    }
+
+    > *:not([group-label]) {
+      flex: 1;
+      min-width: 0;
+    }
+
+    &.title {
+      border-bottom: 0 !important;
+      margin: 20px 0 0;
+      padding: 0;
+      font-family: 'Muli';
+      font-size: 16px;
+      font-weight: 900;
+      color: $cLink;
+      align-items: flex-end;
+
+      > :first-child {
+        flex: 0 0 120px;
+        max-width: 250px;
+      }
+
+      > * {
+        margin: 0;
+        padding: 0;
+      }
+
+      small {
+        padding: 0 0 0 10px;
+        margin: 0;
+        font-family: 'Avenir Next';
+        font-weight: 600;
+        opacity: .5;
+      }
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-bottom: 1px solid rgba($cLinkSecondary, .5);
+    }
+
+    &:first-child > *:not(:first-child) {
+      font-family: 'Muli';
+      font-size: $fsMedium;
+      font-weight: 900;
+      border-bottom: 4px solid $cDecorator;
+    }
+
+    &:first-child > *:first-child {
+      flex: 0 0 130px;
+    }
+
+    &:first-child > :nth-child(3) {
+      padding-left: 5px;
+    }
+
+    &:first-child > :nth-child(4) {
+      padding-left: 10px;
+    }
+
+    &:first-child > :nth-child(5) {
+      padding-left: 15px;
+    }
+  }
+
+  [group-label] {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $cMutedText;
+    font-size: $fsSmall;
+
+    > * {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .avenir {
+    font-family: 'Avenir Next';
+    font-weight: 400;
+  }
+
+  .subtitle {
+    font-family: 'Avenir Next';
+    font-weight: 400;
+    color: $cMutedText;
+    margin-bottom: -20px;
+  }
+
+  small {
+    margin-top: 24px;
+    opacity: 0.4;
+  }
+}

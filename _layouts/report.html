@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% if assets[page.img] %}
+  <div class="report-header" style="background-image: url('{% asset '{{ page.img }}' @path %}')">
+{% else %}
+  <div class="report-header">
+{% endif %}
+
+    <div class="report-header-content">
+      <p class="pre-title">{{ page.pre_title }}</p>
+      <h1>{{ page.title }}</h1>
+    </div>
+
+  </div>
+
+<main class="column">
+
+  <div class="report-container">
+
+    <aside class="report-sidebar">
+
+      <ul>
+        {% assign current = page.url | downcase %}
+        {% assign report_sections = site.report-2018  %}
+
+        {% for section in report_sections %}
+          {% if current == section.url %}
+            <li class="active">{{ section.pre_title }} {{ section.title }}</li>
+          {% else %}
+            <li><a href="{{ section.url }}">{{ section.pre_title }} {{ section.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+    </aside>
+
+    <div class="report-content">
+
+      {{ content }}
+
+    </div>
+
+  </div>
+
+</main>
+
+{% include navigation.html %}

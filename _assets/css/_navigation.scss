@@ -1,0 +1,38 @@
+nav.footer-nav {
+  display: flex;
+  height: 271px;
+
+  .nav-prev,
+  .nav-next {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    color: #fff;
+    flex: 1 0 50%;
+    transition: opacity 0.2s ease;
+    background-position: center center;
+  }
+
+  .nav-prev:hover,
+  .nav-next:hover {
+    opacity: .8;
+  }
+
+  i {
+    font-size: $fsHero;
+
+    @include screen($wMobile) {
+      font-size: $fsHero / 2;
+    }
+  }
+
+  h2 {
+    flex: 0 0 60%;
+
+    @include screen($wMobile) {
+      font-size: $fsLarge;
+    }
+  }
+}

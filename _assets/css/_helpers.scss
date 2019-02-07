@@ -1,0 +1,51 @@
+$units: 1px !default;
+
+@mixin screen($res-first, $res-last: $res-first) {
+ @if $res-first == $res-last {
+   @media screen and ( max-width: if(unitless($res-first), $res-first*$units, $res-first) ) {
+     @content;
+   }
+ } @else if $res-first < $res-last {
+   @media screen and ( min-width: if(unitless($res-first), $res-first*$units, $res-first) ) and ( max-width: if(unitless($res-last), $res-last*$units, $res-last) ) {
+     @content;
+   }
+ }
+}
+
+@mixin min-screen($res) {
+ @media screen and ( min-width: if(unitless($res), $res*$units, $res) ) {
+   @content;
+ }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include screen($wMobile) {
+    flex-direction: column;
+  }
+
+  > * {
+    flex: 1;
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.flex-column-on-mobile {
+  @include screen($wMobile) {
+    flex-direction: column;
+  }
+}
+
+#fix-margin-top-250-on-desktop{
+  margin-top: -250px;
+
+  @include screen($wMobile) {
+    margin-top: auto;
+  }
+}

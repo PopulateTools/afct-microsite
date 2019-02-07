@@ -1,0 +1,35 @@
+// Colors
+$cText: #313131;
+$cLink: #3B5360;
+$cLinkSecondary: #5890AB;
+$cDecorator: #365F44;
+$cMutedText: #6F6F6F;
+$cBackground: #A8C4D2;
+
+$cRed: #A45A4F;
+$cDarkRed: #6B4742;
+$cGreen: #3C915A;
+$cDarkGreen: $cDecorator;
+$cBlue: $cLinkSecondary;
+$cDarkBlue: $cLink;
+$cYellow: #D08C2F;
+$cDarkYellow: #845B22;
+$cPurple: #5953A8;
+$cDarkPurple: #403C6A;
+
+$cScale: $cGreen $cRed $cBlue $cYellow $cPurple;
+$cScaleDark: $cDarkGreen $cDarkRed $cDarkBlue $cDarkYellow $cDarkPurple;
+$cScaleLight: mix($cGreen, #fff, 70%) mix($cRed, #fff, 70%) mix($cBlue, #fff, 70%) mix($cYellow, #fff, 70%) mix($cPurple, #fff, 70%);
+$cScaleLightest: mix($cGreen, #fff, 40%) mix($cRed, #fff, 40%) mix($cBlue, #fff, 40%) mix($cYellow, #fff, 40%) mix($cPurple, #fff, 40%);
+
+// Fonts
+$fsHero: 44px;
+$fsXLarge: 25px;
+$fsLarge: 20px;
+$fsBig: 18px;
+$fsMedium: 15px;
+$fsSmall: 13px;
+
+// Breakpoints
+$wMobile: 39.9375em;
+$wDesktop: 74.9375em;

@@ -1,0 +1,15 @@
+<nav class="footer-nav">
+
+  {% if page.previous %}
+  <a href="{{ page.previous.url }}" class="nav-prev" style="background-image:  url('{% asset '{{ page.previous.img }}' @path %}')">
+    <i><</i><h2>{{ page.previous.title }}</h2>
+  </a>
+  {% endif %}
+
+  {% if page.next %}
+  <a href="{{ page.next.url }}" class="nav-next" style="background-image: url('{% asset '{{ page.next.img }}' @path %}')">
+    <h2>{{ page.next.title }}</h2><i>></i>
+  </a>
+  {% endif %}
+
+</nav>
