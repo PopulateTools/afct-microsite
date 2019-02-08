@@ -12,4 +12,4 @@ Repo for managing the microsite for AFCT.
 
 ## Deploy
 
-Just push to master and the site will be automatically deployed.
+Use the deploy-bot: https://deploy-bot.populate.tools/recipes/afct_microsite/deploys
