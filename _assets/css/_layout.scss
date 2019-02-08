@@ -33,6 +33,13 @@ main {
 
 .content-page {
   padding: 6em 0;
+
+  ul {
+    li {
+      margin: 0 0 1em 0;
+    }
+  }
+
 }
 .content-page.blog {
   padding: 2em 0 6em 0;
@@ -112,13 +119,15 @@ section.color-negative {
 .post-list-compact {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @include screen(740) {
     display: block;
   }
 
   .post {
-    width: 45%;
+    width: calc(100% * (1/2) - 5% - 1px);
+    margin-bottom: 3em;
     transition: opacity 0.2s ease;
 
     @include screen(740) {
