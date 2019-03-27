@@ -21,7 +21,7 @@ To fill this gap, the project draws from EU law, international standards and lea
 
 <strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam
 
-<strong>Funders</strong>: Future Provident Foundation, True Cost Initiative, Sigrid Rausing Trust, Charles leopold mayer foundation, Wallace Global Fund
+<strong>Funders</strong>: Future Provident Foundation, Sigrid Rausing Trust, Charles leopold mayer foundation, Wallace Global Fund
 
 <strong>Test partners</strong>: NovoNordisk, Repsol, SAP, Vodafone
 
