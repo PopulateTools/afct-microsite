@@ -11,9 +11,10 @@ The Alliance for Corporate Transparency published its initial results on Februar
 The findings of the initial round of research have been included in the following articles and newsletters:
 
 * EU Observer “[Could Finnish presidency fix labour-chain abuse?](https://euobserver.com/opinion/144180)”
-* Board Agenda “[EU non-financial reporting: Good start, could do much better](https://boardagenda.com/2019/02/11/eu-non-financial-reporting-good-start-could-do-better/)” and “[Legal & Regulatory roundup](https://boardagenda.com/2019/04/18/legal-regulatory-roundup-3/)”
+* Board Agenda “[EU non-financial reporting: Good start, could do much better](https://boardagenda.com/2019/02/11/eu-non-financial-reporting-good-start-could-do-better/)”; “[Legal & Regulatory roundup](https://boardagenda.com/2019/04/18/legal-regulatory-roundup-3/)” and [New approach aims to improve transparency of ESG information](https://boardagenda.com/2019/05/24/new-approach-aims-improve-transparency-esg-information/)
 * IPE “[Corporate reporting ‘fails to provide meaningful impact information’](https://www.ipe.com/news/esg/corporate-reporting-fails-to-provide-meaningful-impact-information/10029398.article)”
 * Ethical Corporation “[CSR Cheat Sheet: Half of companies ‘failing to report action on climate’](http://www.ethicalcorp.com/csr-cheat-sheet-half-companies-failing-report-action-climate)”
+* Environmental Finance [“EU's non-binding guidelines adopt TCFD framework”](https://www.environmental-finance.com/content/news/eus-non-binding-guidelines-adopt-tcfd-framework.html)
 * Politico’s [EU influence newsletter](https://www.politico.eu/newsletter/politico-eu-influence/politico-eu-influence-finnish-transparency-push-french-influence-in-freefall-easy-advising-gigs/?utm_source=POLITICO.EU&utm_campaign=6280901a81-EMAIL_CAMPAIGN_2019_02_15_11_38&utm_medium=email&utm_term=0_10959edeb5-6280901a81-189792757)
 * ENDS Europe “[Campaigners call for corporate reporting rules on sustainability to be tightened](https://www.endseurope.com/article/54832/campaigners-call-for-corporate-reporting-rules-on-sustainability-to-be-tightened)”
 * Dagens Industri “[Vanligt att företagen saknar mål och risk](https://www.di.se/hallbart-naringsliv/vanligt-att-foretagen-saknar-mal-och-risk/)”. Source: Aktuell Hållbarhet.
@@ -27,11 +28,17 @@ The findings of the initial round of research have been included in the followin
 * Deloitte IAS+ “[Recent sustainability and integrated reporting developments](https://www.iasplus.com/en/news/2019/04/sustainability-and-integrated)”
 * Sustainbili “[European companies need more transparency on high-risk supply chains](https://sustainabill.io/2019/03/european-companies-need-more-transparency-on-high-risk-supply-chains-2/)”
 * EcoDa [newsletter](http://www.nedcommunity.com/Contents/Documents/ECODA/Week%20Alert%202019/EU_Alert_Week_6.pdf)
+* The CPA Journal [“Sustainability Reporting”](https://www.cpajournal.com/2019/08/16/sustainability-reporting/)
 
 The objective of the project is to provide extensive data to substantiate the discussion on the standardisation of sustainability disclosure and put forward evidence-based recommendations for legislative changes. The results of our initial research have been cited in the following policy-related publications:
 
 * European Commission’s [targeted consultation on the update of the non-binding guidelines on non-financial reporting](https://ec.europa.eu/info/sites/info/files/business_economy_euro/banking_and_finance/documents/2019-non-financial-reporting-guidelines-consultation-document_en.pdf#chapter-3-1).
 * OECD report for the G7 French presidency “[Financer la biodiversité, agir pour l’économie et les entreprises](http://www.oecd.org/environment/resources/biodiversity/Rapport-G7-financer-la-biodiversite-agir-pour-l'economie-et%20les-entreprises.pdf)”
+* European Commission's presentation at the ["Stakeholder dialogue on sustainable finance"](https://ec.europa.eu/info/sites/info/files/business_economy_euro/events/documents/finance-events-190624-presentation-report-climate-information_en.pdf)
+* Report submitted to the Minister for the Economy and Finance By Patrick de Cambourg, President of the Autorité des Normes Comptables ["Ensuring the relevance and reliability of non-financial corporate information: an ambition and a competitive advantage for a sustainable Europe"](http://www.anc.gouv.fr/files/live/sites/anc/files/contributed/ANC/4.%20Qui%20sommes-nous/Communique_de_presse/Report-de-Cambourg_extra-financial-informations_May2019_EN.pdf)
+* [2019 Ranking Digital Rights Corporate Accountability Index](https://rankingdigitalrights.org/index2019/report/governance/)
+* EFAMA's response to ESMA's [survey on collection of evidence on undue short-term pressure from the financial sector on corporations](https://www.efama.org/Publications/Public/19-4068.pdf)
+* EFRAG’s European Reporting Lab [consultation on future projects](https://www.efrag.org/Assets/Download?assetUrl=/sites/webpublishing/SiteAssets/European%2520Lab%2520future%2520agenda%2520consultation%25202019.pdf)
 
 Lastly, the project leader has been invited to speak at various events including:
 

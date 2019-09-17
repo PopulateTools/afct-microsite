@@ -19,7 +19,7 @@ To fill this gap, the project draws from EU law, international standards and lea
 
 <strong>Content partners</strong>: Business and Human Rights Resource Centre, CORE Coalition, Future-Fit Foundation, Transparency International, WWF
 
-<strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam
+<strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam, ShareAction and SOMO
 
 <strong>Funders</strong>: Future Provident Foundation, Sigrid Rausing Trust, Charles leopold mayer foundation, Wallace Global Fund
 
