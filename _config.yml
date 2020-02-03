@@ -25,7 +25,9 @@ collections:
   pages:
     permalink: /pages/:path.html
     output: true
-
+  database:
+    output: true
+    permalink: /database
 
 # Analytics
 ga_id:

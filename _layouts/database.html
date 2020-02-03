@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include hero.html %}
+
+<main class="column">
+
+  {{ content }}
+
+</main>
+
+{% include navigation.html %}
+
+<script src="https://unpkg.com/deepmerge@4.2.2/dist/umd.js"></script>
+
+{% asset database.js %}
