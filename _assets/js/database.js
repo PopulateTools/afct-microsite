@@ -1,15 +1,24 @@
 (function() {
+  const DEBUG = location.href === "http://0.0.0.0:4000/database";
+  
   window.addEventListener("DOMContentLoaded", () => {
-    // TODO: refactor this method, don't call it after DOMContentLoaded, but before
-    getJSON("https://act-export.frankbold.org/dictionary.json", dictionary => {
-      getJSON("https://act-export.frankbold.org/reports.json", data => {
+    const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : "https://act-export.frankbold.org/dictionary.json";
+    const reportsUrl = DEBUG ? "../static_data/mock_reports.json" : "https://act-export.frankbold.org/reports.json";
+
+    getJSON(dictionaryUrl, dictionary => {
+      getJSON(reportsUrl, data => {
         // Update sector names using the dictionary keys
         data.forEach(d => {
           d.company.sectors = d.company.sectors.map(d => dictionary[d]);
         });
 
         // The list of sections is the first level of the JSON
-        const tree = getTree(data);
+        let tree = null;
+        if (DEBUG) {
+          tree = {}; //getTree(data);
+        } else {
+          tree = getTree(data);
+        }
 
         // Load sidebar
         const sidebar = document.querySelector(".js-database-sidebar");
@@ -31,21 +40,24 @@
           }
         });
 
-        // If there's no hash, set default one
-        const { hash = "#general" } = window.location;
+        const { hash } = window.location;
 
         // Search the anchor-hash who matches with the location-hash
-        const i = [...lis].findIndex(d =>
-          [...d.children].find(d => d.hash === hash)
-        );
+        const i = hash
+          ? [...lis].findIndex(d => [...d.children].find(d => d.hash === hash))
+          : 0; // If there's no hash, set default one
+
         lis.item(i).classList.add(activeClass);
 
-        renderSection(hash.slice(1), data, tree, dictionary);
+        const section = hash ? hash.slice(1) : "general";
+        renderSection(section, data, tree, dictionary);
       });
     });
   });
 
-  const mainColor = getComputedStyle(document.documentElement).getPropertyValue("--green");
+  const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
+    "--green"
+  );
   const maxValue = 100;
   const revenueRange0 = 3e8;
   const revenueRange1 = 1e9;
@@ -53,6 +65,11 @@
   const revenueRange3 = 2e10;
   const countriesPath = "company.country_incorporation";
   const sectorsPath = "company.sectors";
+  const filters = {
+    country: null,
+    sector: null,
+    revenues: null
+  };
 
   // Private functions
   function getJSON(url, callback) {
@@ -71,6 +88,7 @@
 
   function getTree(data) {
     let tree = deepmerge.all(data);
+
     // section C keys are not sorted, we need to sort them
     // in the final tree
     let sectionC = {};
@@ -135,7 +153,8 @@
     }
 
     if (section === "general") {
-      document.getElementById("sections").innerHTML = renderGeneralSection();
+      const content = document.getElementById("sections");
+      content.innerHTML = renderGeneralSection();
 
       loadHorizontalChart(
         "chart-summary_companies_per_revenue_range",
@@ -146,23 +165,60 @@
         employeesSummary(data)
       );
 
-      renderSummaryTable("summary-table");
-      assignTableBehaviour("summary-table");
-      fillFilterValues(data);
+      // TODO: mirar si el display:none puede sustituirse por clase animada
+      const activeClass = "active";
+      const rowTypes = content.querySelectorAll("[data-row-type]");
+      rowTypes.forEach(element => {
+        if (element.dataset.rowType !== "policies") {
+          element.style.display = "none";
+        }
+      });
 
-      // // Assign behaviour to filters
-      // document.querySelectorAll("[data-filter]").forEach((element) => {
-      //   return element.addEventListener('input', (event) => {
-      //     onFilterSelected(event, () => {
-      //       renderSummaryTable(data, "summary-table");
-      //       assignTableBehaviour("summary-table");
+      const tableSelectors = content.querySelectorAll("[data-table-selector]");
+      tableSelectors.forEach((element, index) => {
+        if (index === 0) {
+          element.classList.add(activeClass);
+        }
 
-      //       document.querySelectorAll("[data-path]").forEach((element) => {
-      //         return onChartLoad(element, data, dictionary);
-      //       });
-      //     });
-      //   });
-      // });
+        return element.addEventListener("click", event => {
+          const { target } = event;
+          const selectedRowType = target.dataset.tableSelector;
+
+          tableSelectors.forEach(e => e.classList.remove(activeClass));
+          target.classList.add(activeClass);
+
+          rowTypes.forEach(element => {
+            if (element.dataset.rowType === selectedRowType) {
+              element.style.display = "";
+
+              const charts = element.querySelectorAll("[data-path]");
+              if (charts.length) {
+                renderCharts(charts, data, dictionary);
+              }
+            } else {
+              element.style.display = "none";
+            }
+          });
+        });
+      });
+
+      fillCountriesFilter(data);
+      fillSectorsFilter(data);
+      fillRevenuesFilter(data);
+
+      // Assign behaviour to filters
+      content.querySelectorAll("[data-filter]").forEach(element => {
+        return element.addEventListener("input", event => {
+          onFilterSelected(event, () => {
+            rowTypes.forEach(r => {
+              const charts = r.querySelectorAll("[data-path]");
+              if (charts.length) {
+                renderCharts(charts, data, dictionary);
+              }
+            });
+          });
+        });
+      });
     } else {
       //   let renderedTemplate = "";
       //   let text = dictionary[section] !== undefined ? dictionary[section].text : section;
@@ -186,9 +242,8 @@
     }
 
     // render charts
-    document.querySelectorAll("[data-path]").forEach(element => {
-      return onChartLoad(element, data, dictionary);
-    });
+    const charts = document.querySelectorAll("[data-path]");
+    renderCharts(charts, data, dictionary);
 
     // // Assign behaviour to drilldown buttons
     // document.querySelectorAll("[data-drilldown]").forEach((element) => {
@@ -198,83 +253,281 @@
     // });
   }
 
+  function renderCharts(charts, data, dictionary) {
+    charts.forEach(element => onChartLoad(element, data, dictionary));
+  }
+
   function renderGeneralSection() {
     return `
-<section id="general_results-companies-per" class="database-section">
-  <h4 class="database-section__h4">Summary - Companies per</h4>
-  <div class="database-section__col-3">
-    <div>
-      <span class="database-section__span-underline">Country</span>
-      <div>
-        <canvas data-path="company.country_incorporation"></canvas>
-      </div>
-    </div>
-    <div>
-      <span class="database-section__span-underline">Sector</span>
-      <div>
-        <canvas data-path="company.sectors"></canvas>
-      </div>
-    </div>
-    <div>
-      <span class="database-section__span-underline">Revenue range</span>
-      <div>
-        <canvas id="chart-summary_companies_per_revenue_range"></canvas>
-      </div>
-      <span class="database-section__span-underline">Employees</span>
-      <div>
-        <canvas id="chart-summary_companies_per_employees"></canvas>
-      </div>
-    </div>
-  </div>
-</section>
+      <section id="general_results-companies-per" class="database-section">
+        ${getCompaniesPerHTML()}
+      </section>
 
-<section class="database-section">
-  <div class="database-section__flex">
-    <h4 class="database-section__h4">Summary - Compliance</h4>
-  
-    <div class="database-section__col-3">
-      <div>
-        <select data-filter="sector" id="filter-sector">
-        </select>
-      </div>
-      <div>
-        <select data-filter="revenues" id="filter-revenues">
-        </select>
-      </div>
-      <div>
-        <select data-filter="country" id="filter-country">
-        </select>
-      </div>
-    </div>
-  </div>
-  
-  <div class="act-main-section-group">
-    <div class="act-main-groups-charts">
-      <table id="summary-table"></table>
-    </div>
-  </div>
+      <section class="database-section">
+        ${getFiltersHTML()}
+        ${getTabLinksHTML()}
+        ${getTabContentHTML()}
+      </section>
+    `;
+  }
 
-</section>
-`;
+  function getCompaniesPerHTML() {
+    return `
+      <h4 class="database-section__h4">Summary - Companies per</h4>
+      <div class="database-section__col-3 gutter-l">
+        <div>
+          <span class="database-section__span-underline">Country</span>
+          <div>
+            <canvas data-path="company.country_incorporation"></canvas>
+          </div>
+        </div>
+        <div>
+          <span class="database-section__span-underline">Sector</span>
+          <div>
+            <canvas data-path="company.sectors"></canvas>
+          </div>
+        </div>
+        <div>
+          <span class="database-section__span-underline">Revenue range</span>
+          <div>
+            <canvas id="chart-summary_companies_per_revenue_range"></canvas>
+          </div>
+          <span class="database-section__span-underline">Employees</span>
+          <div>
+            <canvas id="chart-summary_companies_per_employees"></canvas>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function getFiltersHTML() {
+    return `
+      <div class="database-section__flex">
+        <h4 class="database-section__h4">Summary - Compliance</h4>
+      
+        <div class="database-section__col-3 gutter-xl">
+          <div>
+            <select data-filter="sector" id="filter-sector">
+            </select>
+          </div>
+          <div>
+            <select data-filter="revenues" id="filter-revenues">
+            </select>
+          </div>
+          <div>
+            <select data-filter="country" id="filter-country">
+            </select>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function getTabLinksHTML() {
+    const tabs = [
+      {
+        selector: "policies",
+        label: "Policies & Procedures"
+      },
+      {
+        selector: "risks",
+        label: "Risks management"
+      },
+      {
+        selector: "outcomes",
+        label: "Outcomes"
+      }
+    ];
+
+    const template = t =>
+      `<div><button class="database-tablinks" data-table-selector="${t.selector}">${t.label}</button></div>`;
+
+    return `
+      <div class="database-tabs database-section__col-3 gutter-l">
+        ${tabs.map(t => template(t)).join("")}
+      </div>
+    `;
+  }
+
+  function getTabContentHTML() {
+    return `
+      <div class="database-tabcontent">
+        <ul>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__captions-light"> 
+              <p>% Percentage of total</p>
+            </div>
+            <div class="database-tabcontent__captions database-section__col-3 gutter-xl" data-row-type="policies">
+              <div>No information provided</div>
+              <div>Policy is described or referenced</div>
+              <div>Policy description specifies key issues and objectives</div>
+            </div>
+            <div class="database-tabcontent__captions database-section__col-3 gutter-xl" data-row-type="risks">
+              <div>No risks identification</div>
+              <div>Vague risks identification</div>
+              <div>Description of specific risk</div>
+            </div>
+            <div class="database-tabcontent__captions database-section__col-3 gutter-xl" data-row-type="outcomes">
+              <div>No description</div>
+              <div>Description provided</div>
+              <div>Outcomes in terms of meeting policy targets</div>
+            </div>
+          </li>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__heading"> 
+              <p><span>A</span> Enviroment</p>
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </li>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__label">
+              <p><span>A.1</span> Climate change</p>
+              <p><span>A.2</span> Use of natural resources</p>
+              <p><span>A.3</span> Polluting discharges</p>
+              <p><span>A.4</span> Waste</p>
+              <p><span>A.5</span> Biodiversity and ecosystem conservation</p>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="policies">
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="risks">
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="outcomes">
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
+            </div>
+          </li>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__heading"> 
+              <p><span>B</span> Employee and social matters</p>
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </li>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__label">
+              <p><span>B.1</span> Employee and workforce matters</p>
+              <p>&nbsp;</p>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="policies">
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="risks">
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="outcomes">
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
+            </div>
+          </li>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__heading"> 
+              <p><span>C</span> Human Rights</p>
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </li>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__label">
+              <p><span>C.1</span> General Human Rights Reporting Criteria</p>
+              <p><span>C.2</span> Supply Chains Management</p>
+              <p><span>C.3</span> Impacts on indigenous and/or local communities rights</p>
+              <p><span>C.4</span> Hight risk areas for Civil & Political rights</p>
+              <p><span>C.5</span> Conflict resources (minerals, timber, etc.)</p>
+              <p><span>C.6</span> Data protection / Digital rights</p>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="policies">
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="risks">
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="outcomes">
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
+            </div>
+          </li>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__heading"> 
+              <p><span>D</span> Anti-corruption & Whistleblowing</p>
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </li>
+          <li class="database-tabcontent__row">
+            <div class="database-tabcontent__label">
+              <p><span>D.1</span> Anti-corruption</p>
+              <p><span>D.2</span> Whistleblowing channel</p>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="policies">
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
+              <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="risks">
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
+              <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
+            </div>
+            <div class="database-section__col-3 gutter-xl" data-row-type="outcomes">
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
+              <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    `;
   }
 
   function onChartLoad(element, data, dictionary) {
     // Add question titles dynamically from the data-path and the dictionary value
-    const parents = getParents(
-      element,
-      ".act-main-section-group-charts-elements"
-    );
-    if (parents.length) {
-      const parent = parents[0];
-      const title = parent.querySelector(
-        ".act-main-section-group-charts-elements-title"
-      );
-      // If there's already a question title, ignore it
-      if (title !== undefined && title !== null && title.innerHTML === "") {
-        const key = element.dataset.path.split(".").pop() + ".text";
-        title.innerHTML = resolve(dictionary, key);
-      }
-    }
+    // const parents = getParents(
+    //   element,
+    //   ".act-main-section-group-charts-elements"
+    // );
+    // if (parents.length) {
+    //   const parent = parents[0];
+    //   const title = parent.querySelector(
+    //     ".act-main-section-group-charts-elements-title"
+    //   );
+    //   // If there's already a question title, ignore it
+    //   if (title !== undefined && title !== null && title.innerHTML === "") {
+    //     const key = element.dataset.path.split(".").pop() + ".text";
+    //     title.innerHTML = resolve(dictionary, key);
+    //   }
+    // }
+
     // Get summarized data for chart and render it
     if (element.dataset.type === "summary") {
       return loadSummaryChart(
@@ -307,12 +560,9 @@
       chart = idOrElement;
     }
 
-    console.log(chart.parentElement.getBoundingClientRect().width);
-    
-
     const columnNames = chartData.data.map(a => wrap(a[0], 20));
     const data = chartData.data.map(a => parseFloat(a[1]));
-    const inverseData = data.map(e => maxValue - e)
+    const inverseData = data.map(e => maxValue - e);
 
     let barThickness = options.barThickness || 20;
     chart.height = columnNames.length * (barThickness + 12);
@@ -332,7 +582,7 @@
           },
           {
             data: inverseData,
-            hiddenLabel: true,
+            hiddenLabel: true
           }
         ]
       },
@@ -353,7 +603,7 @@
               },
               ticks: {
                 display: false,
-                beginAtZero: true,
+                beginAtZero: false,
                 precision: 0,
                 max: maxValue,
                 callback: value => `${value} %`
@@ -409,10 +659,10 @@
     }
 
     const columnNames = chartData.data.map(a => a[0].slice(3));
-    let data = chartData.data.map(a => parseFloat(a[1]));
+    const data = chartData.data.map(a => parseFloat(a[1]));
     const inverseData = data.map(e => maxValue - e + 0.1);
 
-    let barThickness = options.barThickness || 20;
+    let barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 6);
 
     let opts = {
@@ -423,23 +673,28 @@
           {
             data: data,
             backgroundColor: mainColor,
-            barThickness: barThickness,
-            maxBarThickness: barThickness
+            barThickness: barThickness
           },
           {
             data: inverseData,
-            hiddenLabel: true,
-            barThickness: barThickness,
-            maxBarThickness: barThickness
+            hiddenLabel: true
           }
         ]
       },
       plugins: [ChartDataLabels],
       options: {
         responsive: false,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         legend: {
           display: false
+        },
+        layout: {
+          padding: {
+            left: -10,
+            right: 0,
+            top: 0,
+            bottom: 0
+          }
         },
         scales: {
           xAxes: [
@@ -450,7 +705,10 @@
                 drawTicks: false
               },
               ticks: {
-                display: false
+                display: false,
+                beginAtZero: false,
+                precision: 0,
+                max: maxValue
               }
             }
           ],
@@ -828,233 +1086,13 @@
     };
   }
 
-  function renderSummaryTable(selector) {
-    const template = `
-  <thead>
-    <tr>
-      <th></th>
-      <th data-row-type="policies" class="heading-selected" data-table-selector="policies">Policies & Procedures</th>
-      <th data-row-type="policies" class="heading-no-selected" data-table-selector="risks">Risks management</th>
-      <th data-row-type="policies" class="heading-no-selected" data-table-selector="outcomes">Outcomes</th>
-      <th data-row-type="risks"    class="heading-no-selected" data-table-selector="policies">Policies & Procedures</th>
-      <th data-row-type="risks"    class="heading-selected" data-table-selector="risks">Risks management</th>
-      <th data-row-type="risks"    class="heading-no-selected" data-table-selector="outcomes">Outcomes</th>
-      <th data-row-type="outcomes" class="heading-no-selected" data-table-selector="policies">Policies & Procedures</th>
-      <th data-row-type="outcomes" class="heading-no-selected" data-table-selector="risks">Risks management</th>
-      <th data-row-type="outcomes" class="heading-selected" data-table-selector="outcomes">Outcomes</th>
-    </tr>
-    <tr>
-      <th></th>
-      <!-- Policies & procedures -->
-      <th data-row-type="policies">No information provided</th>
-      <th data-row-type="policies">Policy is described or referenced</th>
-      <th data-row-type="policies">Policy description specifies key issues and objectives</th>
-      <!-- Risks Management -->
-      <th data-row-type="risks">No risks identification</th>
-      <th data-row-type="risks">Vague risks identification</th>
-      <th data-row-type="risks">Description of specific risk</th>
-      <!-- Outcomes -->
-      <th data-row-type="outcomes">No description</th>
-      <th data-row-type="outcomes">Description provided</th>
-      <th data-row-type="outcomes">Outcomes in terms of meeting policy targets</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="heading">A - Enviroment</td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="outcomes"></td>
-      <td data-row-type="outcomes"></td>
-      <td data-row-type="outcomes"></td>
-    </tr>
-    <tr>
-      <td>
-        <p>A.1 Climate change</p>
-        <p>A.2 Use of natural resources</p>
-        <p>A.3 Polluting discharges</p>
-        <p>A.4 Waste</p>
-        <p>A.5 Biodiversity and ecosystem conservation</p>
-      </td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="1"></canvas></td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="2"></canvas></td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="3"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="1"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="2"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="3"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="1"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="2"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></td>
-    </tr>
-    <tr>
-      <td class="heading">B - Employee and social matters</td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="outcomes"></td>
-      <td data-row-type="outcomes"></td>
-      <td data-row-type="outcomes"></td>
-    </tr>
-    <tr>
-      <td>
-        <p>B.1 Employee and workforce matters</p>
-      </td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="1"></canvas></td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="2"></canvas></td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="3"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="1"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="2"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="3"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="1"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="2"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></td>
-    </tr>
-    <tr>
-      <td class="heading">C - Human Rights</td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="outcomes"></td>
-      <td data-row-type="outcomes"></td>
-      <td data-row-type="outcomes"></td>
-    </tr>
-    <tr>
-      <td>
-        <p>C. General Human Rights Reporting Criteria</p>
-        <p>C1. Supply Chains Management</p>
-        <p>C2. Impacts on indigenous and/or local communities rights</p>
-        <p>C3. Hight risk areas for Civil & Political rights</p>
-        <p>C4. Conflict resources (minerals, timber, etc.)</p>
-        <p>C5. Data protection / Digital rights</p>
-      </td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="1"></canvas></td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="2"></canvas></td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="3"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="1"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="2"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="3"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="1"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="2"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></td>
-    </tr>
-    <tr>
-      <td class="heading">D - Anti-corruption & Whistleblowing</td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="policies"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="risks"></td>
-      <td data-row-type="outcomes"></td>
-      <td data-row-type="outcomes"></td>
-      <td data-row-type="outcomes"></td>
-    </tr>
-    <tr>
-      <td>
-        <p>D1. Anti-corruption</p>
-        <p>D2. Whistleblowing channel</p>
-      </td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="1"></canvas></td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="2"></canvas></td>
-      <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="3"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="1"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="2"></canvas></td>
-      <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="3"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="1"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="2"></canvas></td>
-      <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></td>
-    </tr>
-    <!--
-      <tr>
-        <td class="heading">E - General positive impacts by products / sources of opportunity</td>
-        <td data-row-type="policies"></td>
-        <td data-row-type="policies"></td>
-        <td data-row-type="policies"></td>
-        <td data-row-type="risks"></td>
-        <td data-row-type="risks"></td>
-        <td data-row-type="risks"></td>
-        <td data-row-type="outcomes"></td>
-        <td data-row-type="outcomes"></td>
-        <td data-row-type="outcomes"></td>
-      </tr>
-      <tr>
-        <td>
-          <p>General</p>
-          <p>E1. Infrastructure</p>
-          <p>E2. Food & Beverages</p>
-          <p>E3. Technology & Communications</p>
-          <p>E4. Transportation</p>
-          <p>E5. Health Care</p>
-          <p>E6. Energy & Resource Extraction</p>
-          <p>E7. Consumption</p>
-          <p>E8. Final Services</p>
-        </td>
-        <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_E" data-option="1"></canvas></td>
-        <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_E" data-option="2"></canvas></td>
-        <td data-row-type="policies"><canvas data-path="policies.policy" data-type="summary" data-parent="s_E" data-option="3"></canvas></td>
-        <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_E" data-option="1"></canvas></td>
-        <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_E" data-option="2"></canvas></td>
-        <td data-row-type="risks"   ><canvas data-path="risks.risk" data-type="summary" data-parent="s_E" data-option="3"></canvas></td>
-        <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_E" data-option="1"></canvas></td>
-        <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_E" data-option="2"></canvas></td>
-        <td data-row-type="outcomes"><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_E" data-option="3"></canvas></td>
-      </tr>
-    -->
-  </tbody>`;
-    document.getElementById(selector).innerHTML = template;
-  }
-
-  function assignTableBehaviour(id) {
-    let table = document.getElementById(id);
-
-    table.querySelectorAll("[data-row-type]").forEach(element => {
-      if (element.dataset.rowType !== "policies") {
-        element.style.display = "none";
-      }
-    });
-
-    document.querySelectorAll("[data-table-selector]").forEach(element => {
-      return element.addEventListener("click", event => {
-        const selectedRowType = event.target.dataset.tableSelector;
-        table.querySelectorAll("[data-row-type]").forEach(element => {
-          if (element.dataset.rowType !== selectedRowType) {
-            element.style.display = "none";
-          } else {
-            element.style.display = "";
-          }
-        });
-      });
-    });
-  }
-
-  function fillFilterValues(data) {
-    window.filters = {
-      country: null,
-      sector: null,
-      revenues: null
-    };
-
-    fillCountriesFilter(data);
-    fillSectorsFilter(data);
-    fillRevenuesFilter(data);
-  }
-
   function fillCountriesFilter(data) {
     let element = document.getElementById("filter-country");
     const option = document.createElement("option");
     option.text = "Select a country";
     option.value = "";
     element.appendChild(option);
+
     getCountries(data).forEach(country => {
       const option = document.createElement("option");
       option.text = country;
@@ -1143,17 +1181,27 @@
   function filterData(data) {
     let filteredCompanies = [];
     data.forEach(company => {
-      if(window.filters !== undefined) {
-        if(window.filters.country !== null && company.company.country_incorporation !== window.filters.country) {
+      if (filters !== undefined) {
+        if (
+          filters.country !== null &&
+          company.company.country_incorporation !== filters.country
+        ) {
           return;
         }
-        if(window.filters.sector !== null && company.company.sectors !== undefined && company.company.sectors.indexOf(window.filters.sector) === -1) {
+        if (
+          filters.sector !== null &&
+          company.company.sectors !== undefined &&
+          company.company.sectors.indexOf(filters.sector) === -1
+        ) {
           return;
         }
-        if(window.filters.revenues !== null && company.company.revenues !== undefined) {
-          let revenues = parseFloat(company.company.revenues.replace(/,/g, ''));
-          let range = window.filters.revenues.split("-").map(d => parseFloat(d));
-          if(!(revenues >= range[0] && revenues <= range[1])) {
+        if (
+          filters.revenues !== null &&
+          company.company.revenues !== undefined
+        ) {
+          let revenues = parseFloat(company.company.revenues.replace(/,/g, ""));
+          let range = filters.revenues.split("-").map(d => parseFloat(d));
+          if (!(revenues >= range[0] && revenues <= range[1])) {
             return;
           }
         }
@@ -1163,5 +1211,19 @@
       }
     });
     return filteredCompanies;
+  }
+
+  function onFilterSelected(event, callback) {
+    let sel = event.target;
+    let filterType = sel.dataset.filter;
+    let selected = sel.options[sel.selectedIndex].value;
+
+    if (selected === "" || filters[filterType] === selected) {
+      filters[filterType] = null;
+    } else {
+      filters[filterType] = selected;
+    }
+    callback();
+    return true;
   }
 })();

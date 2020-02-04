@@ -1,3 +1,60 @@
+.database-container {
+  display: flex;
+  justify-content: space-between;
+
+  canvas {
+    width: 100% !important;
+  }
+}
+
+.database-sidebar {
+  $gutter: 12px;
+
+  flex: 0 1 20%;
+  padding-right: 1rem;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 2 * $gutter;
+  height: 100vh;
+
+  @include screen($wMobile) {
+    width: 100%;
+    top: 0;
+    position: relative;
+    height: auto;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin: 0 2 * $gutter $gutter 0;
+    font-size: 14px;
+
+    &.active {
+      font-weight: 600;
+      background-color: $cBackground;
+      -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $cLink;
+    display: block;
+    padding: 6px 10px 6px 2 * $gutter;
+  }
+}
+
+.database-content {
+  flex: 0 1 80%;
+}
+
 .database-section {
   padding: 0;
   margin: 0 0 10rem;
@@ -7,11 +64,15 @@
   display: flex;
 
   > * {
-    flex: 1 0 calc(100% / 3);
+    flex: 0 1 calc(100% / 3);
   }
 
-  > :not(:first-child) {
-    margin-left: 24px;
+  $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
+
+  @each $name, $size in $sizes {
+    &.gutter-#{$name} > *:not(:first-child) {
+      margin-left: $size;
+    }
   }
 }
 
@@ -42,8 +103,95 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: $cLink;
+    background-color: $cBlue;
     opacity: 0.1;
     bottom: 0;
   }
+}
+
+.database-tabs {
+  border-bottom: 1px solid $cBlue;
+  margin: 10px 0 100px;
+}
+
+.database-tablinks {
+  text-align: center;
+  background-color: mix($cBlue, #fff, 20%);
+  color: $cBlue;
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  padding: .5rem;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 250ms;
+
+  &:hover,
+  &.active {
+    color: #fff;
+    background-color: $cBlue;
+  }
+}
+
+.database-tabcontent {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.database-tabcontent__row {
+  display: flex;
+  margin: .25rem 0;
+
+  > :first-child {
+    flex: 0 0 calc(100% / 3)
+  }
+
+  > :last-child {
+    flex: 0 0 calc(100% * (2 / 3))
+  }
+}
+
+%database-tabcontent__label,
+.database-tabcontent__label {
+  font-size: 14px;
+  color: $cDarkBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  p {
+    display: flex;
+    margin: 0;
+    align-items: center;
+  }
+
+  span {
+    opacity: 0.5;
+    display: inline-block;
+    flex: 0 0 30px;
+  }
+}
+
+.database-tabcontent__heading {
+  @extend %database-tabcontent__label;
+
+  font-weight: bold;
+}
+
+%database-tabcontent__captions,
+.database-tabcontent__captions {
+  font-size: 16px;
+  color: $cDarkBlue;
+  font-weight: bold;
+}
+
+.database-tabcontent__captions-light {
+  @extend %database-tabcontent__captions;
+
+  opacity: 0.4;
+  font-weight: normal;
 }
