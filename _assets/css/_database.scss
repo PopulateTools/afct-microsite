@@ -1,3 +1,36 @@
+$sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
+
+@mixin gutters() {
+  @each $name, $size in $sizes {
+    &.gutter-#{$name} > *:not(:first-child) {
+      margin-left: $size;
+    }
+  }
+}
+
+@mixin grid($gap: 0, $columns: 3) {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(100% / #{$columns});
+    max-width: calc(100% / #{$columns});
+  }
+
+  @each $name, $size in $sizes {
+    &.gutter-#{$name} {
+      margin: calc((-1 * #{$size}) / 2);
+
+      > * {
+        padding: calc(#{$size} / 2);
+      }
+    }
+  }
+}
+
 .database-container {
   display: flex;
   justify-content: space-between;
@@ -60,35 +93,135 @@
   margin: 0 0 10rem;
 }
 
-.database-section__col-3 {
+/* Layouts */
+.database-layout__col-3 {
   display: flex;
+
+  @include gutters();
 
   > * {
     flex: 0 1 calc(100% / 3);
   }
 
-  $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
+  &.align-center {
+    align-items: center;
+  }
+}
 
-  @each $name, $size in $sizes {
-    &.gutter-#{$name} > *:not(:first-child) {
-      margin-left: $size;
+%layout__flex,
+.database-layout__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @include gutters();
+}
+
+.database-layout__flex-column {
+  @extend %layout__flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+
+  > span {
+    flex: 0 0 50px;
+  }
+}
+
+%layout-2-3,
+.database-layout__col-2-3 {
+  display: flex;
+
+  @include gutters();
+
+  > :first-child {
+    flex: 0 0 calc(100% / 3)
+  }
+
+  > :last-child {
+    flex: 0 0 calc(100% * (2 / 3))
+  }
+}
+
+.database-layout__grid-3 {
+  @include grid(3)
+}
+
+/* Headings */
+.database-heading__h1 {
+  margin: 0 0 2rem;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  color: $cLink;
+
+  &.with-decorator {
+    position: relative;
+    padding-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      top: 0;
+      background-color: $cDecorator;
     }
   }
 }
 
-.database-section__flex {
-  display: flex;
-  justify-content: space-between;
+.database-heading__h2 {
+  margin: 0 0 2rem;
+  font-weight: 900;
+  font-size: $fsXLarge;
+  font-style: normal;
+  color: $cLink;
+
+  &.with-decorator {
+    position: relative;
+    padding-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      top: 0;
+      background-color: $cBlue;
+      opacity: 0.1;
+    }
+  }
+
+  > :first-child {
+    padding-left: 1rem;
+  }
 }
 
-.database-section__h4 {
+.database-heading__h4 {
   margin: 0 0 1rem;
   font-weight: 900;
   font-size: $fsBig;
+  font-style: normal;
   color: $cLink;
 }
 
-.database-section__span-underline {
+.database-heading__h6 {
+  margin: 0 0 .5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  font-style: normal;
+  color: $cLink;
+}
+
+.database-heading__span {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  font-family: Avenir;
+  color: $cMutedText;
+}
+
+.database-heading__span-underline {
   color: $cLink;
   font-weight: 600;
   font-size: 1rem;
@@ -109,6 +242,7 @@
   }
 }
 
+/* Tabs */
 .database-tabs {
   border-bottom: 1px solid $cBlue;
   margin: 10px 0 100px;
@@ -134,25 +268,16 @@
   }
 }
 
-.database-tabcontent {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
+.database-tabcontent__table {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .database-tabcontent__row {
-  display: flex;
+  @extend %layout-2-3;
+
   margin: .25rem 0;
-
-  > :first-child {
-    flex: 0 0 calc(100% / 3)
-  }
-
-  > :last-child {
-    flex: 0 0 calc(100% * (2 / 3))
-  }
 }
 
 %database-tabcontent__label,
@@ -194,4 +319,33 @@
 
   opacity: 0.4;
   font-weight: normal;
+}
+
+/* Tags */
+.database-tag__title {
+  font-size: 12px;
+  color: $cMutedText;
+  opacity: 0.5;
+  font-weight: normal;
+}
+
+.database-tag {
+  border-radius: 2px;
+  font-weight: normal;
+  background-color: #efefef;
+  color: $cMutedText;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  white-space: nowrap;
+  padding: .25rem .5rem;
+  box-sizing: border-box;
+  transition: all 250ms;
+
+  &.active,
+  &:hover {
+    background-color: $cGreen;
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+  }
 }
