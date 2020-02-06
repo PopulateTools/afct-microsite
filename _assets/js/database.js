@@ -55,6 +55,15 @@
 
         const section = hash ? hash.slice(1) : "general";
         renderSection(section, data, tree, dictionary);
+
+        // downloads
+        document.addEventListener('click', ({ target }) => {
+          const { download: path } = target.dataset
+
+          if (path) {
+            downloadCanvas(path, data, dictionary)
+          }
+        })
       });
     });
   });
@@ -284,6 +293,24 @@
     const charts = document.querySelectorAll("[data-path]");
     renderCharts(charts, data, dictionary);
 
+    // wrap all canvas with button
+    document.querySelectorAll("canvas").forEach(d => {
+      const { path } = d.dataset
+      
+      const div = document.createElement('div')
+      const btn = document.createElement('button')
+      
+      div.className = "database-canvas__wrapper"
+      
+      btn.className = "database-canvas__button"
+      btn.innerHTML = "Download PNG"
+      btn.setAttribute('data-download', path)
+      
+      wrapNodeHTML(d, div)
+
+      div.appendChild(btn)
+    })
+
     // Assign behaviour to drilldown buttons
     content.querySelectorAll("[data-drilldown-container]").forEach((element) => {
       const buttons = element.querySelectorAll("[data-drilldown]")
@@ -305,6 +332,11 @@
         });
       })
     });
+  }
+
+  function wrapNodeHTML(el, wrapper) {
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
   }
 
   function renderCharts(charts, data, dictionary) {
@@ -682,7 +714,7 @@
     `
   }
 
-  function onChartLoad(element, data, dictionary) {
+  function onChartLoad(element, data, dictionary, options) {
     // Get summarized data for chart and render it
     if (element.dataset.type === "summary") {
       return loadSummaryChart(
@@ -692,7 +724,8 @@
           element.dataset.path,
           element.dataset.parent,
           element.dataset.option
-        )
+        ),
+        options
       );
     } else {
       return loadHorizontalChart(
@@ -702,7 +735,8 @@
           element.dataset.path,
           element.dataset.dictionary,
           dictionary
-        )
+        ),
+        options
       );
     }
   }
@@ -711,10 +745,13 @@
     // Rough calculation of max chars on a line based on the width
     const container = element.closest("[data-path]")
     let maxWidth = element.width
-    
+
     if (container) {
       const { width } = container.getBoundingClientRect()
-      maxWidth = width
+
+      if (width) {
+        maxWidth = width
+      }
     }
 
     return Math.floor(maxWidth / 11)
@@ -728,7 +765,8 @@
       chart = idOrElement;
     }
 
-    const columnNames = chartData.data.map(a => wrap(a[0], estimateMaxLengthLabel(chart)));
+    const maxLength = estimateMaxLengthLabel(chart)
+    const columnNames = chartData.data.map(a => wrap(a[0], maxLength));
     const data = chartData.data.map(a => parseFloat(a[1]));
     const inverseData = data.map(e => maxValue - e);
 
@@ -759,7 +797,7 @@
         responsive: false,
         maintainAspectRatio: false,
         legend: {
-          display: false
+          display: false,
         },
         scales: {
           xAxes: [
@@ -1661,5 +1699,39 @@
       )}`,
       `> ${parseMoney(revenueRange3, true, true)}`
     ];
+  }
+
+  function downloadCanvas(path, data, dictionary) {
+    const element = document.createElement('a');
+
+    const fakeCanvas = document.createElement('canvas')
+    fakeCanvas.setAttribute('data-path', path)
+    
+    onChartLoad(fakeCanvas, data, dictionary)
+
+    const scale = 4
+
+    fakeCanvas.width = scale * fakeCanvas.width
+    fakeCanvas.height = scale * fakeCanvas.height
+    
+    const ctx = fakeCanvas.getContext("2d")
+
+    ctx.scale(scale, scale)
+
+    setTimeout(() => {
+      element.setAttribute('href', fakeCanvas.toDataURL());
+      element.setAttribute('download', `${path}.png`);
+    
+      element.style.display = 'none';
+  
+      document.body.appendChild(element);
+      document.body.appendChild(fakeCanvas);
+      
+      element.click();
+      
+      document.body.removeChild(element);
+      document.body.removeChild(fakeCanvas);
+    }, 100);
+
   }
 })();
