@@ -360,3 +360,32 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
     text-shadow: 1px 0 0 currentColor;
   }
 }
+
+.database-canvas__wrapper {
+  position: relative;
+}
+
+.database-canvas__wrapper:hover > .database-canvas__button {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.database-canvas__button {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: $cLink;
+  border: none;
+  color: white;
+  padding: .25rem .5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all 250ms;
+  visibility: hidden;
+  opacity: 0;
+}
