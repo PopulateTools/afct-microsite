@@ -1,76 +1,74 @@
 ---
 title: Methodology
 layout: page
+column-width: full
 ---
 
-<h3>The Alliance project unfolded</h3>
-
-<strong>Phase 1</strong>: The Alliance is formed by leading civil society organisations working in corporate sustainability and transparency that bring in specific expertise on the different areas covered by the EU Non-Financial Reporting Directive.
-
-<strong>Phase 2</strong>: The design of the research methodology is developed by the project partners, identifying the most essential ESG issues as well as the reporting criteria to analyse the information disclosed by companies in different sectors. The methodology is consulted on with external stakeholders and a trial run is carried out with partner companies to ensure the coherence of the methodology. Specific information concerning the research methodology and criteria is provided below.
-
-<strong>Phase 3</strong>: Initial analysis of the reports of 105 companies from three sectors (ICT, Healthcare and Energy) is carried out. The project simultaneously develops an online database that stores the results and visualises the aggregated data resulting from the research as well as individual company assessments. A review mechanism is set in place. The results of this initial research are presented in Brussels on February 8, 2019.
-
-<strong>Phase 4</strong>: The project prepares for the scale up phase by consulting, reviewing and calibrating the research methodology. The analysis in 2019-2020 aims to cover 1000 companies from all the main industrial sectors and European countries and provide all research data to the public in an open database.
-
-<h3>Research methodology: key questions</h3>
+<h1>Methodology</h1>
 
 <table>
 <tr>
-  <th><strong>Scope of the research</strong>: sectors, countries and companies </th>
+  <th><strong>Structure</strong></th>
   <td>
-  <p>The <strong>countries</strong> included in the scope of the analysis in 2018 have been selected in order to accurately represent the diversity of economic regions in Europe.</p>
+  
+    <p>The research methodology was designed drawing from the leading reporting standards and frameworks and putting them in relation with the requirements introduced by the EU Non-Financial Reporting Directive and related guidance. The research methodology is built on six elements:</p>
 
-  <p>The <strong>sectors</strong> covered in 2018 include Health Care, ICT and Energy. They have been selected for their relevance and representativity in the countries and markets assessed in order to ensure the comparability of the project results. Similarly, the project decided to focus on sectors that were widely dissimilar concerning the nature of their activities.</p>
+    <ol>
+      <li>Assessment of sustainability-related disclosures concerning company overall business models and governance.</li>
+      <li>For the four broad sustainability areas outlined in the Directive, the methodology identifies concrete issues for which there exists specific-enough guidance in international standards. These include:
+        <ol type="a">
+          <li>Climate Change</li>
+          <li>Use of Natural Resources</li>
+          <li>Pollution</li>
+          <li>Waste</li>
+          <li>Biodiversity and Ecosystem Conservation</li>
+          <li>Employee and Workforce</li>
+          <li>Tax Transparency</li>
+          <li>General Human Rights Disclosures with additional criteria for:
+            <ol type="i">
+              <li>Supply Chain Management</li>
+              <li>Impacts on indigenous rights and communities</li>
+              <li>High Risk Areas for Civil and Political Rights</li>
+              <li>Conflict Resources </li>
+              <li>Data Protection</li>
+            </ol>
+          </li>
+          <li>Anticorruption Policies</li>
+          <li>Whistleblowing</li>
+        </ol>
+      </li>
+      <li>For each issue, the methodology provides an assessment of whether the information provided on policies, their outcomes, risks and KPIs (which is the type of information required by the Directive) allow understanding of the individual situation of companies.</li>
+      <li>Within these categories  the methodology provides additional qualitative assessment criteria derived from leading reporting standards. For example, in the climate change section, the methodology looks into the alignment of company policies with the goals of the Paris Agreement, of risk descriptions with the Recommendations of the Task Force on Climate-Related Financial Disclosures, and of KPIs with the Greenhouse Gas Protocol methodology. </li>
+      <li>Individual sectors are assigned relevant sustainability issues by means of a materiality matrix. Key elements concerning disclosures on climate change, employee and workforce matters, general human rights matters, and anti-corruption matters were examined in each sector.</li>
+      <li>A separate set of questions is provided to examine information on sustainable business activities and sources of opportunity. This inquiry is aligned with the objectives and approach of the EU Sustainability Taxonomy. </li>
+    </ol>
 
-  <p>The initial scope of <strong>105 companies</strong> includes some of the biggest companies by market capitalisation as well as other companies from the lower tier falling under the scope of the EU NFR Directive. The logic behind this decision is that even if the largest companies have a bigger effect on society and the planet, smaller companies must also fulfil their obligation to report on ESG issues to their stakeholders.</p>
 
-  <p><a href="{% asset '{{ site.url_report2018_pdf }}' @path %}">The full list of companies assessed in 2018 is available here</a> (PDF, 10MB).</p>
   </td>
 </tr>
 <tr>
-  <th><strong>Structure of the research</strong>: three levels of analysis</th>
+  <th>
+    <strong>Basis for the assessment criteria </strong><br>
+    List of standards, frameworks, guidance and resources considered in the development of the research methodology
+  </th>
   <td>
-  <p>The research methodology allows analysts to gather extensive data from corporate reports in order to assess the quality of sustainability disclosures. The analysis is divided into three levels that focus on the following aspects:</p>
 
-  <p><strong>1st level: Formal requirements</strong>. Based on the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0095&from=EN">EU NFR Directive</a> and related guidance. This level includes an analysis of:</p>
-
-  <ul>
-    <li>a) existence of non-financial statement </li>
-    <li>b) description of business model </li>
-    <li>c) for each area (environment; social (integrating also employee and human rights matters); and anti-corruption): information about
-  policies, their outcomes, risks; and KPIs.</li>
-  </ul>
-
-  <p><strong>2nd level: Information necessary for understanding the company’s impact on salient ESG issues specific to its sector</strong>. These issues were derived from a juxtaposition of international standards and reporting frameworks referred to in the Directive and related guidance.</p>
-
-  <p>For each of these issues, the project concretised reporting criteria for the disclosure of policies & procedures, risk management, KPIs and/or qualitative indicators for specific sub-issues. The structure of these criteria vary across issues, reflecting their inherent differences. </p>
-
-  <p>Some of these specific issues are applicable to companies in all sectors (e.g. information related to workforce and general human rights and anti-corruption policies), while others are attributed to sectors according to their materiality (e.g. specific environmental impacts and human rights risks). <strong><a href="{% asset '{{ site.url_report2018_pdf }}' @path %}">The overview of the allocation of issues to sectors in the form of a materiality matrix is provided here</a></strong> (PDF, 10MB).</p>
-
-  <p><strong>3rd level: Information on the company’s engagement with opportunities related to the transition to a sustainable economy</strong>. </p>
-
-  <p>This level of analysis examines if the company provides information on business strategies, products or services focused on sustainable development, and if it substantiates this information with quantified economic data, targets and investments in R&D. In addition to general information, this section also asks these questions for selected sector specific opportunities. While a strict interpretation of the NFR Directive does not require the disclosure of this type of information, it is important for investors’ assessment of companies’ long-term plans and impacts. Hence, it is important for achieving the goals of the EU Commission’s Action Plan on Financing Sustainable Growth.</p>
-
-  </td>
-</tr>
-<tr>
-  <th><strong>Basis for the assessment criteria</strong>: list of standards, frameworks, guidance and resources considered in the development of the research methodology</th>
-  <td>
-    <p><strong>European legislation and guidance:</strong></p>
+    <p>European legislation and guidance:</p>
 
     <ul>
       <li>EU Non-Financial Reporting Directive</li>
       <li>European Commission’s guidelines on non-financial reporting</li>
+      <li>European Commission’s updated guidelines on reporting climate-related information</li>
       <li>EU Eco-Management and Audit Scheme (EMAS)</li>
       <li>Conflict minerals or supply chain transparency regulation</li>
     </ul>
 
-    <p><strong>Standards and reporting frameworks</strong>:</p>
+    <p>Standards and reporting frameworks:</p>
 
     <ul>
       <li>FSB’s Task Force on Climate-related Financial Disclosures recommendations (TCFD)</li>
       <li>UN Guiding Principles on Business and Human Rights (UNGP)</li>
+      <li>UN Guiding Principles Reporting Framework</li>
       <li>Global Reporting Initiative Standards</li>
       <li>SASB standards</li>
       <li>UN Global Compact</li>
@@ -79,7 +77,6 @@ layout: page
       <li>NASDAQ ESG Reporting Guide</li>
       <li>ILO Tripartite declaration</li>
       <li>OECD Guidelines for Multinational Enterprises and associated OECD Guidances for general and sectoral due diligence</li>
-      <li>UN Guiding Principles Reporting Framework </li>
       <li>Corporate Human Rights Benchmark</li>
       <li>Future-Fit Business Benchmark</li>
     </ul>
@@ -87,21 +84,96 @@ layout: page
   </td>
 </tr>
 <tr>
+  <th>
+    <strong>Scope of the research</strong>
+  </th>
+  <td>
+    
+    <p>The countries included in the scope of the analysis represent the diversity of economic regions in Europe.</p>
+
+    <p>The 1000 companies included in the scope of the research have been selected from 11 sectors to ensure the relevance and representativity in the countries and markets assessed. </p>
+
+    <p>Similarly, the scope includes some of the biggest companies by market capitalisation as well as other companies from the lower tier falling under the scope of the EU NFR Directive. The logic behind this decision is that even if the largest companies have a bigger effect on society and the planet, smaller companies must also fulfil their obligation to report on sustainability issues to their stakeholders.</p>
+
+    <p>All companies received their individual assessment and were invited to provide feedback. Their comments were taken into account if the information provided was correct and followed the methodology designed for the project’s research.</p>
+
+  </td>
+</tr>
+<tr>
   <th><strong>Documentation:</strong> Which company resources have been analysed?</th>
   <td>
-    <p>The project analysed the information disclosed in the corporate annual or sustainability reports as well as any document or set of information clearly linked in these statements. The rationale behind this decision follows the principles of the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0095&from=EN">EU NFR Directive</a> and <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017XC0705(01)&from=EN">accompanying guidance</a>, in which it is stated that the information should be easily accessible (i.e. “Cross referencing and signposting should be smart and user-friendly, for instance, by applying a practical rule of maximum one “click” out of the report”)</p>
+    <p>The project analysed the information disclosed in the corporate annual or sustainability reports as well as any document or set of information clearly linked in these statements.</p>
+
+    <p>The rationale behind this decision follows the principles of the EU NFR Directive and accompanying guidance, in which it is stated that the information should be easily accessible (i.e. “Cross referencing and signposting should be smart and user-friendly, for instance, by applying a practical rule of maximum one “click” out of the report”)</p>
+
+    <p>The project has assessed the information and reports covering a substantial part of the year 2018. In the majority of EU countries, the corporate reporting period corresponds with the calendar year, but in some other countries the reporting year at a different date. In some countries, the 2018 reports may be published as late as the end of September 2019. Therefore, in order to ensure the comparability of information, the project did not take into account reports from companies who have already published information covering 2019. </p>
+
   </td>
+</tr>
+
+</table>
+
+
+<h2>Disclaimer</h2>
+
+<p>A majority of sustainability-related disclosures require predominantly a qualitative assessment which is inherently subjective. Furthermore, despite the project’s rigorous review mechanism, the complexity of the research implies inevitable errors and oversights. The scale of the research ensures that such errors do not significantly affect the aggregated data, but we do not recommend the use of assessment of individual companies to inform the decision-making of any stakeholders other than the companies themselves. The research has not been designed for this purpose.</p>
+
+<p>We would like to thank those companies who have kindly responded to our request for feedback and helped us to correct errors in our assessment of their reports.</p>
+
+<p>Frank Bold and Sustentia take responsibility for any error or inaccuracy in the research and presentation of results. The organisations forming part of the Alliance for Corporate Transparency have engaged in the project on a pro-bono basis contributing to the design of the research methodology and overall strategy. The assessment criteria employed in this research do not intend to represent a definitive or final model of best practices or legislation. They were designed to provide a general overview of how companies in specific sectors reported on some of the most important environmental and social issues. </p>
+
+<p>For any questions, complaints or suggestions, please contact us at <a href="mailto:susanna.arus@frankbold.org">susanna.arus@frankbold.org</a>.</p>
+
+
+
+<h2>Project development</h2>
+
+
+<table class="time-line">
+<tr>
+  <th><strong>2018</strong></th>
+  <th class="month">Jan-March</th>
+  <td>The Alliance is formed by leading civil society organisations working in corporate sustainability and transparency that bring in specific expertise on the different areas covered by the EU Non-Financial Reporting Directive.</td>
 </tr>
 <tr>
-  <th><strong>Project review mechanism</strong></th>
-  <td>
-    <p>An in-house team of researchers carried out the individual company assessments. The project’s technical partner held capacity building session with the analysts and initially tested the research methodology on a sample of companies. A second workshop was organised to refine the analysis and identify contentious issues. Lastly, the project set up a review mechanism designating team leaders to re-examine individual company assessments. The objective is to ensure an harmonised application of the research methodology and guarantee the consistency of our analyses.</p>
-  </td>
+  <th><strong></strong></th>
+  <th class="month">March - April</th>
+  <td>The research methodology is developed by project partners, identifying the most essential ESG issues as well as the reporting criteria to analyse the information disclosed by companies in different sectors. </td>
 </tr>
 <tr>
-  <th><strong>Companies feedback</strong></th>
-  <td>
-    <p>Companies assessed have received their individual assessment and have been invited to provide comments. Their input will be taken into account and addressed in the second round of analysis in 2019. Similarly, all stakeholders are welcome to provide feedback on the project’s research methodology and results. <a href="https://goo.gl/forms/kcNSuNVsTZMKLzZD2">A specific form has been set up for this purpose here</a>. </p>
-  </td>
+  <th><strong></strong></th>
+  <th class="month">April - June</th>
+  <td>The methodology is consulted on with external stakeholders and a trial run is carried out with partner companies.</td>
 </tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">June - December</th>
+  <td>An initial analysis of the reports of 105 companies from three sectors (ICT, Healthcare and Energy) is carried out. The project simultaneously develops an online database. A review mechanism is set in place. The results of this initial research <a href="/news/companies-failing.html">are presented in Brussels</a> and submitted to the EU Commission for their review of the framework on public reporting (Fitness Check)</td>
+</tr>
+<tr>
+  <th><strong>2019</strong></th>
+  <th class="month">Feb - March</th>
+  <td>The project prepares for the scale up phase by consulting, reviewing and calibrating the research methodology, which is updated and simplified (further details provided below)</td>
+</tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">March - May</th>
+  <td>Project partners and key external stakeholders such as standard-setters, trade unions and investor/corporate representatives provide feedback on the methodology via consultation</td>
+</tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">May - December</th>
+  <td>Assessment of the information disclosed in the annual and sustainability reports of 1000 companies from 11 industrial sectors covering all EU regions </td>
+</tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">December - January</th>
+  <td>Development of the front-end database</td>
+</tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">December - February 2020</th>
+  <td>Analysis of results and drafting research report. Key findings are presented in Brussels. </td>
+</tr>
+
 </table>

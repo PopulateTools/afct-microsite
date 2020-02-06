@@ -2,10 +2,18 @@
 layout: default
 ---
 
+{% if page.column-width == 'full' %}
+  {% assign column = 'column-full' %}
+{% else %}
+  {% assign column = 'column-single' %}
+{% endif %}
+
+
 {% include intro-hero.html %}
 
 <main class="column content-page">
-  <div class="column-single ">
+
+  <div class="{{ column }}">
 
       {{ content }}
 
