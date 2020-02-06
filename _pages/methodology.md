@@ -1,7 +1,7 @@
 ---
 title: Methodology
 layout: page
-column-width: full
+column-width: single
 ---
 
 <h1>Methodology</h1>

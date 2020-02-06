@@ -3,6 +3,8 @@ title: About
 layout: page
 ---
 
+<h1>About</h1>
+
 <div class="aside">
   <a class="twitter-timeline" data-height="800" data-dnt="true" href="https://twitter.com/EUCorpReporting?ref_src=twsrc%5Etfw">Tweets by EUCorpReporting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>

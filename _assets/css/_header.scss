@@ -1,5 +1,6 @@
 header {
   padding: 1em 2em;
+  border-bottom: 1px solid transparentize($cBlue, .8);
 
   > * {
     display: flex;
