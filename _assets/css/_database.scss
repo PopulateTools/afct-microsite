@@ -8,7 +8,7 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   }
 }
 
-@mixin grid($gap: 0, $columns: 3) {
+@mixin grid($columns: 3) {
   display: flex;
   flex-wrap: wrap;
 
@@ -43,7 +43,7 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
 .database-sidebar {
   $gutter: 12px;
 
-  flex: 0 1 20%;
+  flex: 0 0 20%;
   padding-right: 1rem;
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -85,12 +85,19 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
 }
 
 .database-content {
-  flex: 0 1 80%;
+  flex: 0 0 80%;
 }
 
+%section,
 .database-section {
   padding: 0;
   margin: 0 0 10rem;
+}
+
+.database-section__no-margin {
+  @extend %section;
+
+  margin: 0 0 1rem;
 }
 
 /* Layouts */
@@ -141,6 +148,10 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   > :last-child {
     flex: 0 0 calc(100% * (2 / 3))
   }
+}
+
+.database-layout__grid-2 {
+  @include grid(2)
 }
 
 .database-layout__grid-3 {

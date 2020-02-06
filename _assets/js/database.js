@@ -574,14 +574,15 @@
 
       // Special scenario where the chart doesn't have a title, it's not duplicated from the below one
       if (level < 2) {
+        const className = "database-layout__col-2-3 gutter-l"
 
         const template = `
           <section class="database-section">
 
             ${getDrilldownButtonsHTML({ text })}
 
-            <div class="database-layout__col-2-3 gutter-l" data-charts-container>
-              ${getChartsContainerHTML({ dataPath, subSection })}
+            <div data-charts-container>
+              ${getChartsContainerHTML({ dataPath, subSection, className })}
             </div>
 
           </section>
@@ -605,8 +606,8 @@
       // Issues subsection has a special section title named Specific issues & impacts
       if (level === 2 && subSection === "issues") {
         issueTemplate += `
-          <section class="act-main-section xxact-main-section-grey">
-            <h3 class="act-main-title">Specific issues & impacts</h3>
+          <section class="database-section__no-margin">
+            <h2 class="database-heading__h2">Specific issues & impacts</h2>
           </section>
           `;
       }
@@ -624,12 +625,20 @@
         );
       });
 
+      // Specific wrap for section 2
+      if (section === "s_2b") {
+        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
+      }
+
       // In this specific conditions include the drilldown
       if (
         (level === 2 && subSection !== "issues") ||
         (level === 3 && section === "issues") ||
         (level === 1 && subSection === "general")
       ) {
+
+        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
+
         const template = `
           <section class="database-section">
 
@@ -663,17 +672,13 @@
     `;
   }
 
-  function getChartsContainerHTML({ text, dataPath, subSection }) {
-    let title = ''
-
-    if (text) {
-      title = `<h6 class="database-heading__h6">${text}</h6>`
-    }
-
+  function getChartsContainerHTML({ text = '&nbsp;', dataPath, subSection, className = '' }) {
     return `
-        ${title}
+      <h6 class="database-heading__h6">${text}</h6>
+      <div data-charts ${className ? `data-s_1 class="${className}"` : '' }>
         <div><canvas data-path="${dataPath}.${subSection}" data-dictionary="${subSection}"></canvas></div>
-        <div class="database-layout__grid-3 gutter-m" data-subcharts-container></div>
+        <div class="database-layout__grid-2 gutter-m" data-subcharts-container></div>
+      </div>
     `
   }
 
@@ -702,6 +707,19 @@
     }
   }
 
+  function estimateMaxLengthLabel(element) {
+    // Rough calculation of max chars on a line based on the width
+    const container = element.closest("[data-path]")
+    let maxWidth = element.width
+    
+    if (container) {
+      const { width } = container.getBoundingClientRect()
+      maxWidth = width
+    }
+
+    return Math.floor(maxWidth / 11)
+  }
+
   function loadHorizontalChart(idOrElement, chartData, options = {}) {
     let chart;
     if (isString(idOrElement)) {
@@ -710,17 +728,14 @@
       chart = idOrElement;
     }
 
-    const columnNames = chartData.data.map(a => wrap(a[0], 20));
+    const columnNames = chartData.data.map(a => wrap(a[0], estimateMaxLengthLabel(chart)));
     const data = chartData.data.map(a => parseFloat(a[1]));
     const inverseData = data.map(e => maxValue - e);
 
-    let barThickness = options.barThickness || 20;
-    chart.height = columnNames.length * (barThickness + 12);
-    if (chart.height < 180) {
-      chart.height = 180;
-    }
+    const barThickness = options.barThickness || 30;
+    chart.height = columnNames.length * (barThickness + 20);
 
-    let opts = {
+    const opts = {
       type: "horizontalBar",
       data: {
         labels: columnNames,
@@ -728,17 +743,20 @@
           {
             data: data,
             backgroundColor: mainColor,
-            barThickness: barThickness
+            barThickness: barThickness,
+            maxBarThickness: barThickness
           },
           {
             data: inverseData,
-            hiddenLabel: true
+            hiddenLabel: true,
+            barThickness: barThickness,
+            maxBarThickness: barThickness
           }
         ]
       },
       plugins: [ChartDataLabels],
       options: {
-        responsive: true,
+        responsive: false,
         maintainAspectRatio: false,
         legend: {
           display: false
@@ -767,7 +785,7 @@
                 display: false
               },
               afterFit: scaleInstance => {
-                scaleInstance.width = chart.width / 2;
+                scaleInstance.width = chart.width * (2 / 3);
               }
             }
           ]
@@ -823,18 +841,21 @@
           {
             data: data,
             backgroundColor: mainColor,
-            barThickness: barThickness
+            barThickness: barThickness,
+            maxBarThickness: barThickness
           },
           {
             data: inverseData,
-            hiddenLabel: true
+            hiddenLabel: true,
+            barThickness: barThickness,
+            maxBarThickness: barThickness
           }
         ]
       },
       plugins: [ChartDataLabels],
       options: {
         responsive: false,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         legend: {
           display: false
         },
@@ -900,6 +921,116 @@
     };
 
     new Chart(chart, opts);
+  }
+
+  function loadDrillDownChart(container, chartsData, options = {}) {
+    chartsData.forEach((chartDataInfo, index) => {
+      let newChart = document.createElement("div");
+
+      newChart.className = "database-layout__flex-column"
+      newChart.innerHTML = `
+        <span class="database-heading__span">${chartDataInfo[0] || "-"}</span>
+        <canvas></canvas>
+      `;
+
+      container.appendChild(newChart);
+
+      const chart = newChart.querySelector("canvas");
+      const chartData = chartDataInfo[1];
+
+      const columnNames = chartData.map(a => wrap(a[0], estimateMaxLengthLabel(chart)));
+      const data = chartData.map(a => parseFloat(a[1]));
+
+      const inverseData = data.map(e => maxValue - e + 0.1);
+
+      const barThickness = options.barThickness || 20;
+      chart.height = columnNames.length * (barThickness + 8);
+
+      const opts = {
+        type: "horizontalBar",
+        data: {
+          labels: columnNames,
+          datasets: [
+            {
+              data: data,
+              backgroundColor: mainColor,
+              barThickness: barThickness,
+              maxBarThickness: barThickness
+            },
+            {
+              data: inverseData,
+              hiddenLabel: true,
+              barThickness: barThickness,
+              maxBarThickness: barThickness
+            }
+          ]
+        },
+        plugins: [ChartDataLabels],
+        options: {
+          responsive: false,
+          maintainAspectRatio: false,
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [
+              {
+                stacked: true,
+                gridLines: {
+                  display: false,
+                  drawBorder: false,
+                  drawTicks: false
+                },
+                ticks: {
+                  display: false,
+                  beginAtZero: true,
+                  precision: 0,
+                  max: maxValue
+                }
+              }
+            ],
+            yAxes: [
+              {
+                stacked: true,
+                gridLines: {
+                  display: false
+                },
+                ticks: {
+                  display: true
+                },
+                afterFit: scaleInstance => {
+                  scaleInstance.width = chart.width * (2 / 3);
+                }
+              }
+            ]
+          },
+          plugins: {
+            datalabels: {
+              anchor: "end",
+              clamp: true,
+              color: context =>
+                context.dataset.data[context.dataIndex] < 40
+                  ? "#3B5360"
+                  : "#fff",
+              align: context =>
+                context.dataset.data[context.dataIndex] < 40 ? "end" : "start",
+              font: {
+                weight: "bold"
+              },
+              clip: true,
+              formatter: (value, ctx) => {
+                if (ctx.dataset.hiddenLabel) {
+                  return null;
+                } else {
+                  return value;
+                }
+              }
+            }
+          }
+        }
+      };
+      new Chart(chart, opts);
+    });
   }
 
   function summaryChartData(data, path, parent, option, dictionary) {
@@ -1048,41 +1179,6 @@
     }
 
     return [total, values];
-  }
-
-  function getParents(elem, selector) {
-    // Element.matches() polyfill
-    if (!Element.prototype.matches) {
-      Element.prototype.matches =
-        Element.prototype.matchesSelector ||
-        Element.prototype.mozMatchesSelector ||
-        Element.prototype.msMatchesSelector ||
-        Element.prototype.oMatchesSelector ||
-        Element.prototype.webkitMatchesSelector ||
-        function(s) {
-          var matches = (this.document || this.ownerDocument).querySelectorAll(
-              s
-            ),
-            i = matches.length;
-          while (--i >= 0 && matches.item(i) !== this) {}
-          return i > -1;
-        };
-    }
-
-    // Setup parents array
-    var parents = [];
-    // Get matching parent elements
-    for (; elem && elem !== document; elem = elem.parentNode) {
-      // Add matching parents to array
-      if (selector) {
-        if (elem.matches(selector)) {
-          parents.push(elem);
-        }
-      } else {
-        parents.push(elem);
-      }
-    }
-    return parents;
   }
 
   function flatten(arr) {
@@ -1395,11 +1491,27 @@
 
     // Run through all containers inside element
     chartsContainers.forEach(chartsContainer => {
+
+      const charts = chartsContainer.querySelector("[data-charts]")
+      const isS1 = chartsContainer.querySelector("[data-s_1]")
+      // distinguish between different markups to toggle properly the CSS classes
+      if (isActive) {
+        if (!isS1) {
+          chartsContainer.parentElement.classList.remove("database-layout__grid-3")
+          charts.classList.add("database-layout__col-2-3", "gutter-l")
+        }
+      } else {
+        if (!isS1) {
+          chartsContainer.parentElement.classList.add("database-layout__grid-3")
+          charts.classList.remove("database-layout__col-2-3", "gutter-l")
+        }
+      }
+
       const chart = chartsContainer.querySelector("[data-path]");
       const subchartsContainer = chartsContainer.querySelector("[data-subcharts-container]");
 
       // Remove all drilldown charts for that subchart
-      subchartsContainer.innerHTML = null
+      subchartsContainer.innerHTML = ''
 
       if (chart && isActive) {
         const { path, dictionary: datasetDictionary } = chart.dataset
@@ -1549,112 +1661,5 @@
       )}`,
       `> ${parseMoney(revenueRange3, true, true)}`
     ];
-  }
-
-  function loadDrillDownChart(container, chartsData, options = {}) {
-    chartsData.forEach((chartDataInfo, index) => {
-      let newChart = document.createElement("div");
-
-      newChart.className = "database-layout__flex-column"
-      newChart.innerHTML = `
-        <span class="database-heading__span">${chartDataInfo[0] || "-"}</span>
-        <canvas></canvas>
-      `;
-
-      container.appendChild(newChart);
-
-      const chart = newChart.querySelector("canvas");
-      const chartData = chartDataInfo[1];
-
-      const columnNames = chartData.map(a => wrap(a[0], 10));
-      const data = chartData.map(a => parseFloat(a[1]));
-
-      const inverseData = data.map(e => maxValue - e + 0.1);
-
-      const barThickness = options.barThickness || 20;
-      chart.height = columnNames.length * (barThickness + 8);
-
-      const opts = {
-        type: "horizontalBar",
-        data: {
-          labels: columnNames,
-          datasets: [
-            {
-              data: data,
-              backgroundColor: mainColor,
-              barThickness: barThickness,
-              maxBarThickness: barThickness
-            },
-            {
-              data: inverseData,
-              hiddenLabel: true,
-              barThickness: barThickness,
-              maxBarThickness: barThickness
-            }
-          ]
-        },
-        plugins: [ChartDataLabels],
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          legend: {
-            display: false
-          },
-          scales: {
-            xAxes: [
-              {
-                stacked: true,
-                gridLines: {
-                  display: false,
-                  drawBorder: false,
-                  drawTicks: false
-                },
-                ticks: {
-                  display: false,
-                  beginAtZero: true,
-                  precision: 0,
-                  max: maxValue
-                }
-              }
-            ],
-            yAxes: [
-              {
-                stacked: true,
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  display: true
-                }
-              }
-            ]
-          },
-          plugins: {
-            datalabels: {
-              anchor: "end",
-              clamp: true,
-              color: context =>
-                context.dataset.data[context.dataIndex] < 40
-                  ? "#3B5360"
-                  : "#fff",
-              align: context =>
-                context.dataset.data[context.dataIndex] < 40 ? "end" : "start",
-              font: {
-                weight: "bold"
-              },
-              clip: true,
-              formatter: (value, ctx) => {
-                if (ctx.dataset.hiddenLabel) {
-                  return null;
-                } else {
-                  return value;
-                }
-              }
-            }
-          }
-        }
-      };
-      new Chart(chart, opts);
-    });
   }
 })();
