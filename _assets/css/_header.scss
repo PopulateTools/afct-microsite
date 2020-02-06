@@ -6,7 +6,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-transform: uppercase;
     height: 100%;
   }
 
@@ -14,28 +13,54 @@ header {
     max-height: 62px;
   }
 
-  nav {
+  .nav-container {
+    text-align: right;
     @media screen and (max-width: $wMobile) {
       display: none;
     }
 
-    ul {
-      list-style-type: none;
-
-      li {
-        display: inline-block;
-
-        &:not(:last-child) {
-          margin-right: 1.5vw;
-        }
-
-        a {
-          font-size: 17px;
-          color: $cLink;
-          font-weight: 600;
-          text-decoration: none;
+    nav.main {
+      ul {
+        list-style-type: none;
+  
+        li {
+          display: inline-block;
+  
+          &:not(:last-child) {
+            margin-right: 2vw;
+          }
+  
+          a {
+            font-size: 17px;
+            text-transform: uppercase;
+            color: $cLink;
+            font-weight: 600;
+            text-decoration: none;
+          }
         }
       }
+    }
+
+    nav.secondary {
+      ul {
+        list-style-type: none;
+    
+        li {
+          display: inline-block;
+  
+          &:not(:last-child) {
+            margin-right: 2vw;
+          }
+  
+          a {
+            font-size: 14px;
+            color: transparentize($cLink, .5);
+            font-weight: 600;
+            text-decoration: none;
+          }
+        }
+      }
+      
     }
   }
 }
