@@ -74,9 +74,12 @@ section.intro-hero {
   color: #FFF;
   text-align: left;
   font-size: $fsMedium;
-  @include screen(740) {
-    font-size: $fsMedium;
+
+  @include screen(1250) {
+    padding-left: 1em;
+    padding-right: 1em;
   }
+
   p {
     margin: 0;
   }
