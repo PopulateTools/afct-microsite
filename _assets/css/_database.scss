@@ -34,10 +34,6 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
 .database-container {
   display: flex;
   justify-content: space-between;
-
-  canvas {
-    width: 100% !important;
-  }
 }
 
 .database-sidebar {

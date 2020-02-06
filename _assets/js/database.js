@@ -630,6 +630,9 @@
         (level === 3 && section === "issues") ||
         (level === 1 && subSection === "general")
       ) {
+
+        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
+
         const template = `
           <section class="database-section">
 
@@ -664,16 +667,20 @@
   }
 
   function getChartsContainerHTML({ text, dataPath, subSection }) {
-    let title = ''
+    let template = `
+      <div><canvas data-path="${dataPath}.${subSection}" data-dictionary="${subSection}"></canvas></div>
+      <div class="database-layout__grid-3 gutter-m" data-subcharts-container></div>
+    `;
 
+    let title = ''
     if (text) {
       title = `<h6 class="database-heading__h6">${text}</h6>`
+      template = `<div>${template}</div>`
     }
 
     return `
         ${title}
-        <div><canvas data-path="${dataPath}.${subSection}" data-dictionary="${subSection}"></canvas></div>
-        <div class="database-layout__grid-3 gutter-m" data-subcharts-container></div>
+        ${template}
     `
   }
 
@@ -738,7 +745,7 @@
       },
       plugins: [ChartDataLabels],
       options: {
-        responsive: true,
+        responsive: false,
         maintainAspectRatio: false,
         legend: {
           display: false
@@ -834,7 +841,7 @@
       plugins: [ChartDataLabels],
       options: {
         responsive: false,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         legend: {
           display: false
         },
@@ -1395,6 +1402,27 @@
 
     // Run through all containers inside element
     chartsContainers.forEach(chartsContainer => {
+
+      const h6 = chartsContainer.querySelector("h6")
+
+      if (isActive) {
+        if (h6) {
+          chartsContainer.parentElement.classList.remove("database-layout__grid-3")
+          h6.nextElementSibling.classList.add("database-layout__col-2-3", "gutter-l")
+        } else {
+          chartsContainer.classList.remove("database-layout__grid-3")
+          chartsContainer.classList.add("database-layout__col-2-3", "gutter-l")
+        }
+      } else {
+        if (h6) {
+          chartsContainer.parentElement.classList.add("database-layout__grid-3")
+          h6.nextElementSibling.classList.remove("database-layout__col-2-3", "gutter-l")
+        } else {
+          chartsContainer.classList.add("database-layout__grid-3")
+          chartsContainer.classList.remove("database-layout__col-2-3", "gutter-l")
+        }
+      }
+
       const chart = chartsContainer.querySelector("[data-path]");
       const subchartsContainer = chartsContainer.querySelector("[data-subcharts-container]");
 
@@ -1596,7 +1624,7 @@
         plugins: [ChartDataLabels],
         options: {
           responsive: true,
-          maintainAspectRatio: false,
+          maintainAspectRatio: true,
           legend: {
             display: false
           },
