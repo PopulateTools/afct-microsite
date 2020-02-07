@@ -58,7 +58,7 @@
             if (["#s_2", "#s_3"].includes(hash)) {
               hash_ = "#s_2b"
             }
-            
+
             renderSection(hash_.slice(1), data, tree, dictionary);
           }
         });
@@ -277,7 +277,7 @@
         });
       });
     } else {
-      let renderedTemplate = `<div id="${section}" class="database-filters">${getFiltersBlock()}</div>`;
+      let renderedTemplate = `<div id="${section}"></div><div class="database-filters">${getFiltersBlock()}</div>`;
 
       Object.keys(tree[section] || {}).forEach(subSection => {
         const sectionText = dictionary[subSection]
