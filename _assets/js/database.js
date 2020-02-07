@@ -56,12 +56,17 @@
         const section = hash ? hash.slice(1) : "general";
         renderSection(section, data, tree, dictionary);
 
-        // downloads
+        // download button handler
         document.addEventListener('click', ({ target }) => {
-          const { download: path } = target.dataset
+          const { nodeName } = target.previousElementSibling
+          
+          // Check if the previous sibling is a canvas
+          if (nodeName && nodeName === "CANVAS") {
+            const { dataset } = target.previousElementSibling
 
-          if (path) {
-            downloadCanvas(path, data, dictionary)
+            if (dataset) {
+              downloadCanvas(dataset, data, dictionary)
+            }
           }
         })
       });
@@ -294,22 +299,7 @@
     renderCharts(charts, data, dictionary);
 
     // wrap all canvas with button
-    document.querySelectorAll("canvas").forEach(d => {
-      const { path } = d.dataset
-      
-      const div = document.createElement('div')
-      const btn = document.createElement('button')
-      
-      div.className = "database-canvas__wrapper"
-      
-      btn.className = "database-canvas__button"
-      btn.innerHTML = "Download PNG"
-      btn.setAttribute('data-download', path)
-      
-      wrapNodeHTML(d, div)
-
-      div.appendChild(btn)
-    })
+    wrapCanvas()
 
     // Assign behaviour to drilldown buttons
     content.querySelectorAll("[data-drilldown-container]").forEach((element) => {
@@ -337,6 +327,29 @@
   function wrapNodeHTML(el, wrapper) {
     el.parentNode.insertBefore(wrapper, el);
     wrapper.appendChild(el);
+  }
+
+  function wrapCanvas() {
+    document.querySelectorAll("canvas").forEach(d => {
+      const { classList } = d.parentElement
+
+      if (!classList.contains("database-canvas__wrapper")) {
+        const { path } = d.dataset
+
+        const div = document.createElement('div')
+        const btn = document.createElement('button')
+
+        div.className = "database-canvas__wrapper"
+
+        btn.className = "database-canvas__button"
+        btn.innerHTML = "Download PNG"
+        btn.setAttribute('data-download', path)
+
+        wrapNodeHTML(d, div)
+
+        div.appendChild(btn)
+      }
+    })
   }
 
   function renderCharts(charts, data, dictionary) {
@@ -1521,6 +1534,9 @@
   }
 
   function onDrillDownButtonClick(event, data, dictionary) {
+    // wrap all canvas with button
+    wrapCanvas()
+
     const { target } = event;
 
     const isActive = target.classList.contains(activeClass);
@@ -1701,25 +1717,33 @@
     ];
   }
 
-  function downloadCanvas(path, data, dictionary) {
+  function downloadCanvas(dataset, data, dictionary) {
     const element = document.createElement('a');
-
     const fakeCanvas = document.createElement('canvas')
-    fakeCanvas.setAttribute('data-path', path)
-    
-    onChartLoad(fakeCanvas, data, dictionary)
-
+    const ctx = fakeCanvas.getContext("2d")
     const scale = 4
 
+    for (const key in dataset) {
+      if (dataset.hasOwnProperty(key)) {
+        const element = dataset[key];
+        fakeCanvas.setAttribute(`data-${key}`, element)
+      }
+    }
+
+    // Call to render chart on a fake canvas
+    onChartLoad(fakeCanvas, data, dictionary)
     fakeCanvas.width = scale * fakeCanvas.width
     fakeCanvas.height = scale * fakeCanvas.height
-    
-    const ctx = fakeCanvas.getContext("2d")
-
     ctx.scale(scale, scale)
+
+    // fakeCanvas.width = canvas.width * scale
+    // fakeCanvas.height = canvas.height * scale
+    // ctx.drawImage(canvas, 0, 0, canvas.width, canvas.height, 0 , 0, fakeCanvas.width, fakeCanvas.height);
 
     setTimeout(() => {
       element.setAttribute('href', fakeCanvas.toDataURL());
+
+      const { path = 'chart'} = dataset
       element.setAttribute('download', `${path}.png`);
     
       element.style.display = 'none';
@@ -1731,7 +1755,7 @@
       
       document.body.removeChild(element);
       document.body.removeChild(fakeCanvas);
-    }, 100);
+    }, 250);
 
   }
 })();
