@@ -236,7 +236,11 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   }
 
   > :first-child {
-    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  span::first-letter {
+    text-transform: uppercase;
   }
 }
 

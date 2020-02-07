@@ -758,7 +758,7 @@
   function getDrilldownButtonsHTML({ text }) {
     return `
       <h2 class="database-heading__h2 with-decorator database-layout__flex">
-        ${text}
+        <span>${text}</span>
         <div class="database-layout__col-3 align-center gutter-l" data-drilldown-container>
           <span class="database-tag__title">Filter</span>
           <button class="database-tag" data-drilldown="country">By country</button>
