@@ -388,4 +388,5 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   transition: all 250ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
 }
