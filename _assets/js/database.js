@@ -58,14 +58,18 @@
 
         // download button handler
         document.addEventListener('click', ({ target }) => {
-          const { nodeName } = target.previousElementSibling
+          const { previousElementSibling } = target
           
-          // Check if the previous sibling is a canvas
-          if (nodeName && nodeName === "CANVAS") {
-            const { dataset } = target.previousElementSibling
-
-            if (dataset) {
-              downloadCanvas({ dataset, data, dictionary })
+          if (previousElementSibling) {
+            const { nodeName } = previousElementSibling
+            
+            // Check if the previous sibling is a canvas
+            if (nodeName && nodeName === "CANVAS") {
+              const { dataset } = previousElementSibling
+  
+              if (dataset) {
+                downloadCanvas({ dataset, data, dictionary })
+              }
             }
           }
         })
@@ -198,19 +202,9 @@
     if (section === "general") {
       content.innerHTML = renderGeneralSection();
 
-      // loadHorizontalChart(
-      //   "chart-summary_companies_per_revenue_range",
-      //   revenueSummary(data)
-      // );
-      // loadHorizontalChart(
-      //   "chart-summary_companies_per_employees",
-      //   employeesSummary(data)
-      // );
-
       renderSpecialCharts("chart-summary_companies_per_revenue_range", data)
       renderSpecialCharts("chart-summary_companies_per_employees", data)
 
-      // TODO: mirar si el display:none puede sustituirse por clase animada
       const rowTypes = content.querySelectorAll("[data-row-type]");
       rowTypes.forEach(element => {
         if (element.dataset.rowType !== "policies") {
@@ -245,26 +239,8 @@
           });
         });
       });
-
-      fillCountriesFilter(data);
-      fillSectorsFilter(data);
-      fillRevenuesFilter(data);
-
-      // Assign behaviour to filters
-      content.querySelectorAll("[data-filter]").forEach(element => {
-        return element.addEventListener("input", event => {
-          onFilterSelected(event, () => {
-            rowTypes.forEach(r => {
-              const charts = r.querySelectorAll("[data-path]");
-              if (charts.length) {
-                renderCharts(charts, data, dictionary);
-              }
-            });
-          });
-        });
-      });
     } else {
-      let renderedTemplate = "";
+      let renderedTemplate = `<div class="database-filters">${getFiltersBlock()}</div>`;
 
       Object.keys(tree[section]).forEach(subSection => {
         const sectionText = dictionary[subSection]
@@ -324,6 +300,22 @@
           onDrillDownButtonClick(event, data, dictionary);
         });
       })
+    });
+
+    fillCountriesFilter(data);
+    fillSectorsFilter(data);
+    fillRevenuesFilter(data);
+
+    // Assign behaviour to filters
+    content.querySelectorAll("[data-filter]").forEach(element => {
+      return element.addEventListener("input", event => {
+        onFilterSelected(event, () => {
+            const charts = content.querySelectorAll("[data-path]");
+            if (charts.length) {
+              renderCharts(charts, data, dictionary);
+            }
+        });
+      });
     });
   }
 
@@ -420,23 +412,28 @@
     return `
       <div class="database-layout__flex">
         <h4 class="database-heading__h4">Summary - Compliance</h4>
-      
-        <div class="database-layout__col-3 gutter-xl">
-          <div>
-            <select data-filter="sector" id="filter-sector">
-            </select>
-          </div>
-          <div>
-            <select data-filter="revenues" id="filter-revenues">
-            </select>
-          </div>
-          <div>
-            <select data-filter="country" id="filter-country">
-            </select>
-          </div>
-        </div>
+        ${getFiltersBlock()}
       </div>
     `;
+  }
+
+  function getFiltersBlock() {
+    return `
+      <div class="database-layout__col-3 gutter-xl">
+        <div>
+          <select data-filter="sector" id="filter-sector">
+          </select>
+        </div>
+        <div>
+          <select data-filter="revenues" id="filter-revenues">
+          </select>
+        </div>
+        <div>
+          <select data-filter="country" id="filter-country">
+          </select>
+        </div>
+      </div>
+    `
   }
 
   function getTabLinksHTML() {
@@ -667,7 +664,7 @@
       // Issues subsection has a special section title named Specific issues & impacts
       if (level === 2 && subSection === "issues") {
         issueTemplate += `
-          <section class="database-section__no-margin">
+          <section class="database-section__margin-s">
             <h2 class="database-heading__h2">Specific issues & impacts</h2>
           </section>
           `;
@@ -760,7 +757,7 @@
       return loadHorizontalChart(
         element,
         summarizeDataFromPath(
-          data,
+          filterData(data),
           element.dataset.path,
           element.dataset.dictionary,
           dictionary
@@ -1103,6 +1100,7 @@
   function summaryChartData(data, path, parent, option, dictionary) {
     let result = {};
     let total = {};
+
     filterData(data).forEach(company => {
       Object.keys(company[parent]).forEach(question => {
         let value = resolve(company[parent][question], path);

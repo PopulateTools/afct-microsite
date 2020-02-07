@@ -94,7 +94,7 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   margin: 0 0 10rem;
 }
 
-.database-section__no-margin {
+.database-section__margin-s {
   @extend %section;
 
   margin: 0 0 1rem;
@@ -388,5 +388,16 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   transition: all 250ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
+}
+
+.database-filters {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #fff;
   z-index: 1;
 }
