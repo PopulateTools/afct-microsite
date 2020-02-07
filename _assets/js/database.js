@@ -65,7 +65,7 @@
             const { dataset } = target.previousElementSibling
 
             if (dataset) {
-              downloadCanvas(dataset, data, dictionary)
+              downloadCanvas({ dataset, data, dictionary })
             }
           }
         })
@@ -198,14 +198,17 @@
     if (section === "general") {
       content.innerHTML = renderGeneralSection();
 
-      loadHorizontalChart(
-        "chart-summary_companies_per_revenue_range",
-        revenueSummary(data)
-      );
-      loadHorizontalChart(
-        "chart-summary_companies_per_employees",
-        employeesSummary(data)
-      );
+      // loadHorizontalChart(
+      //   "chart-summary_companies_per_revenue_range",
+      //   revenueSummary(data)
+      // );
+      // loadHorizontalChart(
+      //   "chart-summary_companies_per_employees",
+      //   employeesSummary(data)
+      // );
+
+      renderSpecialCharts("chart-summary_companies_per_revenue_range", data)
+      renderSpecialCharts("chart-summary_companies_per_employees", data)
 
       // TODO: mirar si el display:none puede sustituirse por clase animada
       const rowTypes = content.querySelectorAll("[data-row-type]");
@@ -356,6 +359,19 @@
     charts.forEach(element => onChartLoad(element, data, dictionary));
   }
 
+  function renderSpecialCharts(id, data) {
+    let dataFn = null
+    if (id.match(/chart-summary_companies_per_revenue_range/)) {
+      dataFn = revenueSummary(data)
+    } else if (id.match(/chart-summary_companies_per_employees/)) {
+      dataFn = employeesSummary(data)
+    }
+
+    if (dataFn) {
+      loadHorizontalChart(id, dataFn);
+    }
+  }
+
   function renderGeneralSection() {
     return `
       <section id="general_results-companies-per" class="database-section">
@@ -389,11 +405,11 @@
         <div>
           <span class="database-heading__span-underline">Revenue range</span>
           <div>
-            <canvas id="chart-summary_companies_per_revenue_range"></canvas>
+            <canvas id="chart-summary_companies_per_revenue_range" data-special="chart-summary_companies_per_revenue_range"></canvas>
           </div>
           <span class="database-heading__span-underline">Employees</span>
           <div>
-            <canvas id="chart-summary_companies_per_employees"></canvas>
+            <canvas id="chart-summary_companies_per_employees" data-special="chart-summary_companies_per_employees"></canvas>
           </div>
         </div>
       </div>
@@ -1717,45 +1733,49 @@
     ];
   }
 
-  function downloadCanvas(dataset, data, dictionary) {
+  function downloadCanvas({ dataset, data, dictionary }) {
     const element = document.createElement('a');
     const fakeCanvas = document.createElement('canvas')
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    document.body.appendChild(fakeCanvas);
+
     const ctx = fakeCanvas.getContext("2d")
     const scale = 4
 
-    for (const key in dataset) {
-      if (dataset.hasOwnProperty(key)) {
-        const element = dataset[key];
-        fakeCanvas.setAttribute(`data-${key}`, element)
+    const { special } = dataset
+    if (special) {
+      fakeCanvas.id = `${special}-fake`
+      renderSpecialCharts(`${special}-fake`, data)
+    } else {
+      for (const key in dataset) {
+        if (dataset.hasOwnProperty(key)) {
+          const element = dataset[key];
+          fakeCanvas.setAttribute(`data-${key}`, element)
+        }
       }
+  
+      // Call to render chart on a fake canvas
+      onChartLoad(fakeCanvas, data, dictionary)
     }
 
-    // Call to render chart on a fake canvas
-    onChartLoad(fakeCanvas, data, dictionary)
     fakeCanvas.width = scale * fakeCanvas.width
     fakeCanvas.height = scale * fakeCanvas.height
     ctx.scale(scale, scale)
 
-    // fakeCanvas.width = canvas.width * scale
-    // fakeCanvas.height = canvas.height * scale
-    // ctx.drawImage(canvas, 0, 0, canvas.width, canvas.height, 0 , 0, fakeCanvas.width, fakeCanvas.height);
-
+    // Wait for the chartjs-animation finishes
     setTimeout(() => {
       element.setAttribute('href', fakeCanvas.toDataURL());
 
       const { path = 'chart'} = dataset
       element.setAttribute('download', `${path}.png`);
     
-      element.style.display = 'none';
-  
-      document.body.appendChild(element);
-      document.body.appendChild(fakeCanvas);
       
       element.click();
       
       document.body.removeChild(element);
       document.body.removeChild(fakeCanvas);
-    }, 250);
-
+    }, 500);
   }
 })();
