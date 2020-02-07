@@ -1,7 +1,5 @@
 (function() {
   const DEBUG = (location.origin === "http://0.0.0.0:4000") || false;
-  console.log(DEBUG, location.origin);
-  
 
   let mockTree = null;
   if (DEBUG) {
@@ -11,8 +9,6 @@
   window.addEventListener("DOMContentLoaded", () => {
     const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : "https://act-export.frankbold.org/dictionary.json";
     const reportsUrl = DEBUG ? "../static_data/mock_reports.json" : "https://act-export.frankbold.org/reports.json";
-    // const dictionaryUrl = "https://act-export.frankbold.org/dictionary.json"
-    // const reportsUrl = "https://act-export.frankbold.org/reports.json"
 
     getJSON(dictionaryUrl, dictionary => {
       getJSON(reportsUrl, data => {
@@ -441,7 +437,7 @@
         const template = `
           <section class="database-section">
 
-            ${getDrilldownButtonsHTML({ text: sentenceCase(text) })}
+            ${getDrilldownButtonsHTML({ text })}
 
             ${issueTemplate}
 
@@ -1624,6 +1620,7 @@
       str = str.split('-').join(' ').split('_').join(' ');
       return str[0].toUpperCase() + str.slice(1).toLowerCase();
     } catch {
+      
       return str;
     }
   }
