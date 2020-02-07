@@ -1404,10 +1404,18 @@
     option.value = "";
     element.appendChild(option);
 
+    const { country: countrySelected } = JSON.parse(localStorage.getItem('filters'))
+    filters.country = countrySelected
+
     getCountries(data).forEach(country => {
       const option = document.createElement("option");
       option.text = country;
       option.value = country;
+
+      if (country === countrySelected) {
+        option.selected = true
+      }
+
       element.appendChild(option);
     });
   }
@@ -1418,10 +1426,19 @@
     option.text = "Select a sector";
     option.value = "";
     element.appendChild(option);
-    getSectors(data).forEach(country => {
+
+    const { sector: sectorSelected } = JSON.parse(localStorage.getItem('filters'))
+    filters.sector = sectorSelected
+
+    getSectors(data).forEach(sector => {
       const option = document.createElement("option");
-      option.text = country;
-      option.value = country;
+      option.text = sector;
+      option.value = sector;
+
+      if (sector === sectorSelected) {
+        option.selected = true
+      }
+
       element.appendChild(option);
     });
   }
@@ -1432,10 +1449,19 @@
     option.text = "Select a revenue range";
     option.value = "";
     element.appendChild(option);
+
+    const { revenues: revenuesSelected } = JSON.parse(localStorage.getItem('filters'))
+    filters.revenues = revenuesSelected
+
     getRevenuesFilters().forEach(range => {
       const option = document.createElement("option");
       option.text = range[0];
       option.value = range[1];
+
+      if (range[1] === revenuesSelected) {
+        option.selected = true
+      }
+
       element.appendChild(option);
     });
   }
@@ -1534,6 +1560,9 @@
     } else {
       filters[filterType] = selected;
     }
+
+    localStorage.setItem('filters', JSON.stringify(filters))
+
     callback();
     return true;
   }
