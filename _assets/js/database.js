@@ -1404,15 +1404,18 @@
     option.value = "";
     element.appendChild(option);
 
-    const { country: countrySelected } = JSON.parse(localStorage.getItem('filters'))
-    filters.country = countrySelected
+    const storedFilters = localStorage.getItem('filters')
+    if (storedFilters) {
+      const { country } = JSON.parse(storedFilters)
+      filters.country = country
+    }
 
     getCountries(data).forEach(country => {
       const option = document.createElement("option");
       option.text = country;
       option.value = country;
 
-      if (country === countrySelected) {
+      if (country === filters.country) {
         option.selected = true
       }
 
@@ -1427,15 +1430,18 @@
     option.value = "";
     element.appendChild(option);
 
-    const { sector: sectorSelected } = JSON.parse(localStorage.getItem('filters'))
-    filters.sector = sectorSelected
+    const storedFilters = localStorage.getItem('filters')
+    if (storedFilters) {
+      const { sector } = JSON.parse(storedFilters)
+      filters.sector = sector
+    }
 
     getSectors(data).forEach(sector => {
       const option = document.createElement("option");
       option.text = sector;
       option.value = sector;
 
-      if (sector === sectorSelected) {
+      if (sector === filters.sector) {
         option.selected = true
       }
 
@@ -1450,15 +1456,18 @@
     option.value = "";
     element.appendChild(option);
 
-    const { revenues: revenuesSelected } = JSON.parse(localStorage.getItem('filters'))
-    filters.revenues = revenuesSelected
+    const storedFilters = localStorage.getItem('filters')
+    if (storedFilters) {
+      const { revenues } = JSON.parse(storedFilters)
+      filters.revenues = revenues
+    }
 
     getRevenuesFilters().forEach(range => {
       const option = document.createElement("option");
       option.text = range[0];
       option.value = range[1];
 
-      if (range[1] === revenuesSelected) {
+      if (range[1] === filters.revenues) {
         option.selected = true
       }
 
