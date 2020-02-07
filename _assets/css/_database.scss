@@ -67,7 +67,7 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
     margin: 0 2 * $gutter $gutter 0;
     font-size: 14px;
 
-    &.active {
+    &.active > a {
       font-weight: 600;
       background-color: $cBackground;
       -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
@@ -82,6 +82,30 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
     display: block;
     padding: 6px 10px 6px 2 * $gutter;
   }
+
+  ul ul {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 250ms;
+    transform: translateY(-100%);
+    height: 0;
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      height: auto;
+    }
+  }
+
+  ul ul li {
+    margin: 0 2 * $gutter 0 0;
+  }
+
+  ul ul a {
+    padding-left: 4 * $gutter;
+    font-size: 12px;
+  }
 }
 
 .database-content {
@@ -92,12 +116,19 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
 .database-section {
   padding: 0;
   margin: 0 0 10rem;
+  position: relative;
 }
 
 .database-section__margin-s {
   @extend %section;
 
   margin: 0 0 1rem;
+}
+
+.database-section__anchor {
+  position: absolute;
+  top: -4rem;
+  opacity: 0;
 }
 
 /* Layouts */

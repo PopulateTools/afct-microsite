@@ -30,17 +30,36 @@
         sidebar.innerHTML = loadTOC(tree, dictionary);
 
         const lis = sidebar.querySelectorAll("li");
+        const submenus = sidebar.querySelectorAll("li ul");
 
         // Event delegation to the parent (avoid multiple listeners)
-        sidebar.addEventListener("click", event => {
-          const { target } = event;
+        sidebar.addEventListener("click", ({ target }) => {
+          const { nextElementSibling: ul } = target
 
+          // remove all active states, and close all submenus
           lis.forEach(li => li.classList.remove(activeClass));
+          submenus.forEach(ul => ul.classList.remove(openClass));
+
+          // set active class for the clicked item
           target.parentElement.classList.add(activeClass);
+
+          // open submenu if there is
+          if (ul) {
+            ul.classList.add(openClass)
+          }
+
+          target.closest("ul").classList.add(openClass)
 
           const { hash } = target;
           if (hash) {
-            renderSection(hash.slice(1), data, tree, dictionary);
+
+            // You will tell me why parent section is called "s_2b" and its children s_2, s_3
+            let hash_ = hash
+            if (["#s_2", "#s_3"].includes(hash)) {
+              hash_ = "#s_2b"
+            }
+            
+            renderSection(hash_.slice(1), data, tree, dictionary);
           }
         });
 
@@ -83,6 +102,7 @@
     "--green"
   );
   const activeClass = "active";
+  const openClass = "is-open";
   const maxValue = 100;
   const revenueRange0 = 3e8;
   const revenueRange1 = 1e9;
@@ -159,27 +179,44 @@
   function loadTOC(tree, dictionary) {
     let result = "";
 
-    const template = (section, text) => `
-<li>
-  <a href="#${section}">${text}</a>
-</li>
-`;
+    const ul = html => `<ul>${html}</ul>`
+    const li = html => `<li>${html}</li>`
+    const a = (section, text) => `<a href="#${section}">${text}</a>`;
 
-    result += template("general", "General Results");
+    result += li(a("general", "General Results"));
 
     Object.keys(tree).forEach(section => {
       let text =
         dictionary[section] !== undefined ? dictionary[section].text : section;
 
+      let block = "";
       if (section !== "company") {
-        result += template(section, text);
+        block += a(section, text);
+        block += loadChildrenTOC(tree, section, dictionary)
+        result += li(block)
       }
     });
 
-    return `
-<ul>
-  ${result}
-</ul>`;
+    return ul(result);
+  }
+
+  function loadChildrenTOC(tree, section, dictionary) {
+    let result = "";
+
+    const ul = html => `<ul>${html}</ul>`
+    const li = html => `<li>${html}</li>`
+    const a = (section, text) => `<a href="#${section}">${text}</a>`;
+
+    Object.keys(tree[section]).forEach((subSection) => {
+      if(!isObject(tree[section][subSection])){
+        return;
+      }
+      
+      let text = dictionary[subSection] !== undefined ? dictionary[subSection].text : subSection;
+      result += li(a(subSection, text));
+    });
+  
+    return ul(result);
   }
 
   function isObject(value) {
@@ -240,9 +277,9 @@
         });
       });
     } else {
-      let renderedTemplate = `<div class="database-filters">${getFiltersBlock()}</div>`;
+      let renderedTemplate = `<div id="${section}" class="database-filters">${getFiltersBlock()}</div>`;
 
-      Object.keys(tree[section]).forEach(subSection => {
+      Object.keys(tree[section] || {}).forEach(subSection => {
         const sectionText = dictionary[subSection]
           ? dictionary[subSection].text
           : sentenceCase(subSection);
@@ -259,7 +296,8 @@
 
         if (isObject(tree[section][subSection])) {
           renderedTemplate += `
-            <section id="${section}-${subSection}" class="database-section">
+            <section class="database-section">
+              <span id="${subSection}" class="database-section__anchor"></span>
               <h1 class="database-heading__h1 with-decorator">${sectionText}</h1>
               ${block}
             </section>
@@ -319,6 +357,102 @@
     });
   }
 
+  function renderSubsection(tree, section, subSection, data, level, dataPath, dictionary) {
+    let renderedTemplate = "";
+
+    const text = dictionary[subSection]
+      ? dictionary[subSection].text
+      : subSection;
+
+    // If is not object it means that there are not sub-levels and the question needs to be rendered
+    if (!isObject(tree[section][subSection])) {
+
+      // Special scenario where the chart doesn't have a title, it's not duplicated from the below one
+      if (level < 2) {
+        const className = "database-layout__col-2-3 gutter-l"
+
+        const template = `
+          <section class="database-section">
+
+            ${getDrilldownButtonsHTML({ text })}
+
+            <div data-charts-container>
+              ${getChartsContainerHTML({ dataPath, subSection, className })}
+            </div>
+
+          </section>
+        `;
+
+        renderedTemplate += template + "\n\n";
+      } else {
+
+        const template = `
+          <div data-charts-container>
+            ${getChartsContainerHTML({ text, dataPath, subSection })}
+          </div>
+        `;
+
+        renderedTemplate += template + "\n\n";
+      }
+    } else {
+
+      let issueTemplate = "";
+
+      // Issues subsection has a special section title named Specific issues & impacts
+      if (level === 2 && subSection === "issues") {
+        issueTemplate += `
+          <section class="database-section__margin-s">
+            <h2 class="database-heading__h2">Specific issues & impacts</h2>
+          </section>
+          `;
+      }
+
+      // Recursive call to a deeper level (level + 1) and a deeper data path (dataPath + subSection)
+      Object.keys(tree[section][subSection]).forEach(question => {
+        issueTemplate += renderSubsection(
+          tree[section],
+          subSection,
+          question,
+          data,
+          level + 1,
+          `${dataPath}.${subSection}`,
+          dictionary
+        );
+      });
+
+      // Specific wrap for section 2
+      if (section === "s_2b") {
+        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
+      }
+
+      // In this specific conditions include the drilldown
+      if (
+        (level === 2 && subSection !== "issues") ||
+        (level === 3 && section === "issues") ||
+        (level === 1 && subSection === "general")
+      ) {
+
+        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
+
+        const template = `
+          <section class="database-section">
+
+            ${getDrilldownButtonsHTML({ text: sentenceCase(text) })}
+
+            ${issueTemplate}
+
+          </section>
+        `;
+
+        renderedTemplate += template + "\n\n";
+      } else {
+        renderedTemplate += issueTemplate + "\n\n";
+      }
+    }
+  
+    return renderedTemplate;
+  }
+
   function wrapNodeHTML(el, wrapper) {
     el.parentNode.insertBefore(wrapper, el);
     wrapper.appendChild(el);
@@ -367,6 +501,7 @@
   function renderGeneralSection() {
     return `
       <section id="general_results-companies-per" class="database-section">
+        <span id="general" class="database-section__anchor"></span>
         ${getCompaniesPerHTML()}
       </section>
 
@@ -618,102 +753,6 @@
         </li>
       </ul>
     `;
-  }
-
-  function renderSubsection(tree, section, subSection, data, level, dataPath, dictionary) {
-    let renderedTemplate = "";
-
-    const text = dictionary[subSection]
-      ? dictionary[subSection].text
-      : subSection;
-
-    // If is not object it means that there are not sub-levels and the question needs to be rendered
-    if (!isObject(tree[section][subSection])) {
-
-      // Special scenario where the chart doesn't have a title, it's not duplicated from the below one
-      if (level < 2) {
-        const className = "database-layout__col-2-3 gutter-l"
-
-        const template = `
-          <section class="database-section">
-
-            ${getDrilldownButtonsHTML({ text })}
-
-            <div data-charts-container>
-              ${getChartsContainerHTML({ dataPath, subSection, className })}
-            </div>
-
-          </section>
-        `;
-
-        renderedTemplate += template + "\n\n";
-      } else {
-
-        const template = `
-          <div data-charts-container>
-            ${getChartsContainerHTML({ text, dataPath, subSection })}
-          </div>
-        `;
-
-        renderedTemplate += template + "\n\n";
-      }
-    } else {
-
-      let issueTemplate = "";
-
-      // Issues subsection has a special section title named Specific issues & impacts
-      if (level === 2 && subSection === "issues") {
-        issueTemplate += `
-          <section class="database-section__margin-s">
-            <h2 class="database-heading__h2">Specific issues & impacts</h2>
-          </section>
-          `;
-      }
-
-      // Recursive call to a deeper level (level + 1) and a deeper data path (dataPath + subSection)
-      Object.keys(tree[section][subSection]).forEach(question => {
-        issueTemplate += renderSubsection(
-          tree[section],
-          subSection,
-          question,
-          data,
-          level + 1,
-          `${dataPath}.${subSection}`,
-          dictionary
-        );
-      });
-
-      // Specific wrap for section 2
-      if (section === "s_2b") {
-        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
-      }
-
-      // In this specific conditions include the drilldown
-      if (
-        (level === 2 && subSection !== "issues") ||
-        (level === 3 && section === "issues") ||
-        (level === 1 && subSection === "general")
-      ) {
-
-        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
-
-        const template = `
-          <section class="database-section">
-
-            ${getDrilldownButtonsHTML({ text: sentenceCase(text) })}
-
-            ${issueTemplate}
-
-          </section>
-        `;
-
-        renderedTemplate += template + "\n\n";
-      } else {
-        renderedTemplate += issueTemplate + "\n\n";
-      }
-    }
-  
-    return renderedTemplate;
   }
 
   function getDrilldownButtonsHTML({ text }) {
