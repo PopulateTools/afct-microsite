@@ -114,7 +114,7 @@
         "5": "Corruption & ethics"
     },
     "l_01_02_004_01": {
-        "text": "The above information on business model is provided:",
+        "text": "The information on business model is provided:",
         "1": "Not provided",
         "2": "In a separate document",
         "3": "In the same document but separately",
@@ -187,7 +187,7 @@
         "3": "Outcomes in terms of meeting the climate targets",
         "4": "Company's climate target is science-based \/ aligned with Paris Agreement",
         "5": "Board oversight of climate-related risks and opportunities",
-        "6": "Description of engagement with upstream and downstream value chain to reduce impacts"
+        "6": "Engagement with upstream & downstream value chain to reduce impacts described"
     },
     "l_02_A_01_002_02_info": {
         "4": "(i.e. well below 2\u00b0C)"
@@ -252,7 +252,7 @@
         "1": "Describes company's targets",
         "2": "Actions taken to achieve targets",
         "3": "Board oversight of risks and opportunities",
-        "4": "Description of engagement with upstream and downstream value chain to reduce impacts"
+        "4": "Engagement with upstream & downstream value chain to reduce impacts described"
     },
     "l_02_A_02_003_02": {
         "text": "",
@@ -291,7 +291,7 @@
         "1": "Describes company\u2019s targets",
         "2": "Actions taken to achieve the targets",
         "3": "Board oversight of risks and opportunities",
-        "4": "Description of engagement with upstream and downstream value chain to reduce impacts"
+        "4": "Engagement with upstream & downstream value chain to reduce impacts described"
     },
     "l_02_A_03_003_02": {
         "text": "",
@@ -319,7 +319,7 @@
         "2": "Company's targets are framed by circular economy goal",
         "3": "Action taken to achieve the targets",
         "4": "Boards oversight of risks and opportunities",
-        "5": "Description of engagement with upstream and downstream value chain to reduce impacts"
+        "5": "Engagement with upstream & downstream value chain to reduce impacts described"
     },
     "l_02_A_04_003_02": {
         "text": "",
@@ -338,7 +338,7 @@
         "2": "Company's commitment\/target to zero adverse impact on Biodiversity",
         "3": "Action taken to achieve the targets",
         "4": "Boards oversight of risks and opportunities",
-        "5": "Description of engagement with upstream and downstream value chain to reduce impacts"
+        "5": "Engagement with upstream & downstream value chain to reduce impacts described"
     },
     "l_02_A_05_003_02": {
         "text": "",
@@ -411,11 +411,12 @@
         "3": "Board oversight of risks and salient issues",
         "4": "Explains how human rights are integrated in day-to-day practices",
         "1": "Human Rights due diligence process is described",
-        "6": "Description of engagement with upstream and downstream value chain to reduce impacts",
+        "6": "Engagement with upstream & downstream value chain to reduce impacts described",
         "8": "Explicit commitment to provide remedy to harmed people"
     },
     "l_02_C_00_002_02_fin": {
         "text": "Only for financial companies",
+        "7": "Discloses how the financial institution ensures that its human rights-related strategy is aligned with the preferences of its clients",
         "9": "Policy applies to investment or lending activities",
         "10": "Describes implementation in investment or lending activities",
         "11": "Describes outcomes of implementation in investment or lending activities"
@@ -453,6 +454,9 @@
         "text": "",
         "1": "Data \/ KPI provided for outcomes",
         "2": "Description of outcomes of grievance mechanisms"
+    },
+    "scht": {
+        "text": "Supply chain transparency"
     },
     "l_02_C_01_001_04": {
         "text": "Did the company identify this as a salient human rights issue",
@@ -607,7 +611,7 @@
     },
     "l_02_C_07_002_02": {
         "text": "",
-        "1": "Description of engagement with upstream and downstream value chain to reduce impacts"
+        "1": "Engagement with upstream & downstream value chain to reduce impacts described"
     },
     "l_02_C_07_003_02": {
         "text": "Identification of the affected communities",
@@ -641,7 +645,7 @@
         "1": "Targets\/goals",
         "2": "Action described",
         "3": "Company's criteria of supplier selection",
-        "4": "Description of engagement with upstream and downstream value chain to reduce impacts"
+        "4": "Engagement with upstream & downstream value chain to reduce impacts described"
     },
     "l_02_C_04_004_01": {
         "text": "Supply chain transparency",
@@ -741,7 +745,7 @@
         "10": "Risk assessment of potential areas of corruption",
         "11": "Internal check & balances to ensure consistency with the A-C committment",
         "12": "Actions taken to encourage business partners to implement A-C commitment",
-        "13": "Provides info on all current public investigations, prosecutions or closed cases"
+        "13": "Info on all current public investigations, prosecutions or closed cases"
     },
     "id_dc2_b_info": {
         "7": "(suitability, adequacy, and implementation of improvements)",
@@ -1163,6 +1167,12 @@
     "s_1": {
         "text": "1. Presentation of non-financial statements"
     },
+    "nested": {
+        "text": ""
+    },
+    "s_4": {
+        "text": "Accessibility of the information provided"
+    },
     "s_2b": {
         "text": "2. Strategic perspective"
     },
@@ -1171,6 +1181,9 @@
     },
     "s_3": {
         "text": "Governance"
+    },
+    "only_fin": {
+        "text": "Only for financial companies"
     },
     "s_A": {
         "text": "A - Environment"

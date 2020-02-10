@@ -1633,9 +1633,6 @@
   }
 
   function onDrillDownButtonClick(event, data, dictionary) {
-    // wrap all canvas with button
-    wrapCanvas()
-
     const { target } = event;
 
     const isActive = target.classList.contains(activeClass);
@@ -1853,8 +1850,7 @@
 
       const { path = 'chart'} = dataset
       element.setAttribute('download', `${path}.png`);
-    
-      
+
       element.click();
       
       document.body.removeChild(element);
