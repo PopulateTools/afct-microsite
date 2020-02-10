@@ -391,7 +391,8 @@
         `;
 
         renderedTemplate += template + "\n\n";
-      } else {
+      // } else if (level >= 2) {
+      } else if (level >= 2 && level < 5) {
 
         const template = `
           <div data-charts-container>
@@ -407,7 +408,6 @@
 
       // Issues subsection has a special section title named Specific issues & impacts
       if (level === 2 && subSection === "issues") {
-        debugger
         issueTemplate += `
           <section class="database-section__margin-s">
             <h2 class="database-heading__h2">Specific issues & impacts</h2>
@@ -415,7 +415,6 @@
           `;
       }
 
-      // Recursive call to a deeper level (level + 1) and a deeper data path (dataPath + subSection)
       Object.keys(tree[section][subSection]).forEach(question => {
         issueTemplate += renderSubsection(
           tree[section],
@@ -457,7 +456,27 @@
         renderedTemplate += issueTemplate + "\n\n";
       }
     }
-  
+
+    if (level === 2 && section === "s_E_products") {
+      renderedTemplate += `
+        <section class="database-section__margin-s">
+          <h2 class="database-heading__h2">Specific issues & impacts</h2>
+        </section>
+      `;
+
+      Object.keys(tree[section][subSection]["issues"]).forEach(question => {
+        renderedTemplate += renderSubsection(
+          tree[section][subSection],
+          "issues",
+          question,
+          data,
+          3,
+          `${dataPath}.${subSection}.issues`,
+          dictionary
+        );
+      });
+    }
+    
     return renderedTemplate;
   }
 
