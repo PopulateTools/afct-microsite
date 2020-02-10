@@ -6,6 +6,8 @@
     getJSON("../static_data/mock_tree.json", d => { mockTree = d })
   }
 
+  let GLOBAL_TREE = null;
+
   window.addEventListener("DOMContentLoaded", () => {
     const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : "https://act-export.frankbold.org/dictionary.json";
     const reportsUrl = DEBUG ? "../static_data/mock_reports.json" : "https://act-export.frankbold.org/reports.json";
@@ -24,6 +26,8 @@
         } else {
           tree = getTree(data);
         }
+
+        GLOBAL_TREE = tree
 
         // Load sidebar
         const sidebar = document.querySelector("[data-sidebar]");
@@ -1169,7 +1173,7 @@
     let total = {};
 
     filterData(data).forEach(company => {
-      Object.keys(company[parent]).forEach(question => {
+      Object.keys(GLOBAL_TREE[parent]).forEach(question => {
         let value = resolve(company[parent][question], path);
         // This is a dirty hack, but necessary
         // Sometimes the path of a question has the suffix 2 or 3
@@ -1189,6 +1193,7 @@
         if (String(value) === String(option)) {
           result[question]++;
         }
+
         // Only count the total if the value is present
         if (value !== undefined && value !== null) {
           total[question]++;
@@ -1604,7 +1609,7 @@
         if (
           filters.sector !== null &&
           company.company.sectors !== undefined &&
-          company.company.sectors.indexOf(filters.sector) === -1
+          !company.company.sectors.includes(filters.sector)
         ) {
           return;
         }
