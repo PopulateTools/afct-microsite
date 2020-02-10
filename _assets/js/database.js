@@ -808,11 +808,12 @@
 
   function onChartLoad(element, data, dictionary, options) {
     // Get summarized data for chart and render it
+
     if (element.dataset.type === "summary") {
       return loadSummaryChart(
         element,
         summaryChartData(
-          data,
+          filterData(data),
           element.dataset.path,
           element.dataset.parent,
           element.dataset.option
