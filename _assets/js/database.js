@@ -522,7 +522,7 @@
 
   function getCompaniesPerHTML() {
     return `
-      <h4 class="database-heading__h4">Summary - Companies per</h4>
+      <h4 class="database-heading__h4">Companies included in the research</h4>
       <div class="database-layout__col-3 gutter-l">
         <div>
           <span class="database-heading__span-underline">Country</span>
@@ -553,7 +553,7 @@
   function getFiltersHTML() {
     return `
       <div class="database-layout__flex">
-        <h4 class="database-heading__h4">Summary - Compliance</h4>
+        <h4 class="database-heading__h4">Summary</h4>
         ${getFiltersBlock()}
       </div>
     `;
