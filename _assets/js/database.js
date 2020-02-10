@@ -507,12 +507,12 @@
 
   function renderGeneralSection() {
     return `
-      <section id="general_results-companies-per" class="database-section">
+      <section id="general_results-companies-per" class="database-section database-canvas__fit">
         <span id="general" class="database-section__anchor"></span>
         ${getCompaniesPerHTML()}
       </section>
 
-      <section class="database-section">
+      <section class="database-section database-canvas__fit">
         ${getFiltersHTML()}
         ${getTabLinksHTML()}
         ${getTabContentHTML()}

@@ -35,10 +35,10 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+}
 
-  canvas {
-    width: 100% !important;
-  }
+.database-canvas__fit canvas {
+  width: 100% !important;
 }
 
 .database-sidebar {
