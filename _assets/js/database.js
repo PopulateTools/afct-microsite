@@ -98,6 +98,13 @@
 
   closestPolyfill()
 
+  // Chart.defaults.global.tooltips = {
+  //   enabled: true
+  // }
+
+  // Chart.defaults.global.defaultFontFamily = 'Avenir Next';
+  Chart.defaults.global.defaultFontSize = 11;
+
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
     "--green"
   );

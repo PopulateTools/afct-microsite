@@ -50,6 +50,7 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   position: sticky;
   top: 2 * $gutter;
   height: 100vh;
+  overflow-y: auto;
 
   @include screen($wMobile) {
     width: 100%;
@@ -325,6 +326,10 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   @extend %layout-2-3;
 
   margin: .25rem 0;
+
+  > :not(:first-child) {
+    flex: 1;
+  }
 }
 
 %database-tabcontent__label,

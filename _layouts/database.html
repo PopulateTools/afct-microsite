@@ -1,15 +1,26 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<main class="column">
+{% include head.html %}
 
-  {{ content }}
+<body>
 
-</main>
+  {% include header.html %}
 
-{% include navigation.html %}
+  <main class="column">
 
+    {{ content }}
+  
+  </main>
+
+  {% include footer.html %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
 <script src="https://unpkg.com/deepmerge@4.2.2/dist/umd.js"></script>
 
+{% asset charts.js %}
 {% asset database.js %}
+
+</body>
+</html>
