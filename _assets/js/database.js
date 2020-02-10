@@ -1825,7 +1825,7 @@
     document.body.appendChild(fakeCanvas);
 
     const ctx = fakeCanvas.getContext("2d")
-    const scale = 6
+    const scale = 8
 
     const { special } = dataset
     if (special) {
