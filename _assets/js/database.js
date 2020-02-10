@@ -98,9 +98,9 @@
 
   closestPolyfill()
 
-  // Chart.defaults.global.tooltips = {
-  //   enabled: true
-  // }
+  Chart.defaults.global.tooltips = {
+    enabled: false
+  }
 
   // Chart.defaults.global.defaultFontFamily = 'Avenir Next';
   Chart.defaults.global.defaultFontSize = 11;
@@ -1825,7 +1825,7 @@
     document.body.appendChild(fakeCanvas);
 
     const ctx = fakeCanvas.getContext("2d")
-    const scale = 4
+    const scale = 6
 
     const { special } = dataset
     if (special) {
