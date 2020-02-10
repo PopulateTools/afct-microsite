@@ -904,11 +904,11 @@
           datalabels: {
             anchor: "end",
             offset: context =>
-              context.dataset.data[context.dataIndex] < 40 ? 0 : 10,
+              context.dataset.data[context.dataIndex] < 50 ? 0 : 10,
             color: context =>
-              context.dataset.data[context.dataIndex] < 40 ? "#3B5360" : "#fff",
+              context.dataset.data[context.dataIndex] < 50 ? "#3B5360" : "#fff",
             align: context =>
-              context.dataset.data[context.dataIndex] < 40 ? "end" : "start",
+              context.dataset.data[context.dataIndex] < 50 ? "end" : "start",
             font: {
               weight: "bold"
             },
@@ -1009,11 +1009,11 @@
           datalabels: {
             anchor: "end",
             offset: context =>
-              context.dataset.data[context.dataIndex] < 40 ? 0 : 10,
+              context.dataset.data[context.dataIndex] < 50 ? 0 : 10,
             color: context =>
-              context.dataset.data[context.dataIndex] < 40 ? "#3B5360" : "#fff",
+              context.dataset.data[context.dataIndex] < 50 ? "#3B5360" : "#fff",
             align: context =>
-              context.dataset.data[context.dataIndex] < 40 ? "end" : "start",
+              context.dataset.data[context.dataIndex] < 50 ? "end" : "start",
             font: {
               weight: "bold"
             },
@@ -1119,11 +1119,11 @@
               anchor: "end",
               clamp: true,
               color: context =>
-                context.dataset.data[context.dataIndex] < 40
+                context.dataset.data[context.dataIndex] < 50
                   ? "#3B5360"
                   : "#fff",
               align: context =>
-                context.dataset.data[context.dataIndex] < 40 ? "end" : "start",
+                context.dataset.data[context.dataIndex] < 50 ? "end" : "start",
               font: {
                 weight: "bold"
               },
