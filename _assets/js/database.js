@@ -406,7 +406,8 @@
       let issueTemplate = "";
 
       // Issues subsection has a special section title named Specific issues & impacts
-      if ((level === 2 && subSection === "issues") || (level === 1 && subSection === "s_E_products")) {
+      if (level === 2 && subSection === "issues") {
+        debugger
         issueTemplate += `
           <section class="database-section__margin-s">
             <h2 class="database-heading__h2">Specific issues & impacts</h2>
@@ -1626,8 +1627,7 @@
     try {
       str = str.split('-').join(' ').split('_').join(' ');
       return str[0].toUpperCase() + str.slice(1).toLowerCase();
-    } catch {
-      
+    } catch (e) {
       return str;
     }
   }
