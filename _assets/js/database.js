@@ -64,7 +64,20 @@
           ? [...lis].findIndex(d => [...d.children].find(d => d.hash === hash))
           : 0; // If there's no hash, set default one
 
-        lis.item(i).classList.add(activeClass);
+        // set active the matching item
+        const currentItem = lis.item(i)
+        currentItem.classList.add(activeClass);
+
+        const parentLi = currentItem.parentElement.closest("li")
+        if (parentLi) {
+          parentLi.querySelector("ul").classList.add(openClass)
+        }
+        
+        // open submenu if there are
+        const submenu = currentItem.querySelector("ul")
+        if (submenu) {
+          submenu.classList.add(openClass)
+        }
 
         const section = hash ? hash.slice(1) : "general";
         renderSection(section, data, tree, dictionary);
@@ -86,6 +99,32 @@
             }
           }
         })
+
+        // scroll listener
+        document.addEventListener('scroll', (e) => {
+          const submenu = document.querySelector("[data-sidebar] > ul > li > ul.is-open")
+
+          if (submenu) {
+            const anchors = submenu.querySelectorAll("a")
+            const hashes = [...anchors].map(d => d.hash)
+
+            hashes.forEach(hash => {
+              const element = document.getElementById(hash.slice(1)).parentElement
+              const { top, height } = element.getBoundingClientRect()
+
+              if ((top > -300 && top < 300) || (top + height < 300 && top + height > -300)) {
+                const parentActive = document.querySelector("[data-sidebar] > ul > li.active")
+                if (parentActive) {
+                  parentActive.classList.remove(activeClass)
+                }
+
+                anchors.forEach(a => a.parentElement.classList.remove(activeClass));
+                const sidebarAnchor = [...anchors].find(d => d.hash === hash)
+                sidebarAnchor.parentElement.classList.add(activeClass)
+              }
+            })
+          }
+        })
       });
     });
   });
@@ -104,6 +143,7 @@
   );
   const activeClass = "active";
   const openClass = "is-open";
+
   const maxValue = 100;
   const revenueRange0 = 3e8;
   const revenueRange1 = 1e9;
