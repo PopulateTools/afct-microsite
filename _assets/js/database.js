@@ -1175,6 +1175,7 @@
     filterData(data).forEach(company => {
       Object.keys(GLOBAL_TREE[parent]).forEach(question => {
         let value = resolve(company[parent][question], path);
+
         // This is a dirty hack, but necessary
         // Sometimes the path of a question has the suffix 2 or 3
         // Example: policies.policy, policies.policy2 and policies.policy3
@@ -1195,9 +1196,7 @@
         }
 
         // Only count the total if the value is present
-        if (value !== undefined && value !== null) {
-          total[question]++;
-        }
+        total[question]++;
       });
     });
 
