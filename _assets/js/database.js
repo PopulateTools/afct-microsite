@@ -22,7 +22,7 @@
 
         // The list of sections is the first level of the JSON
         let tree = null;
-        if (DEBUG) {
+        if (!DEBUG) {
           tree = mockTree || {};
         } else {
           tree = getTree(data);
@@ -123,7 +123,7 @@
   const countriesPath = "company.country_incorporation";
   const sectorsPath = "company.sectors";
 
-  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters'))
+  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters')) || {}
   const filters = {
     country,
     sector,
@@ -166,7 +166,26 @@
   }
 
   function getTree(data) {
-    let tree = deepmerge.all(data);
+    console.time("deep");
+
+    const chunks = 50;
+    const part = [];
+    for (let index = 0; index < chunks; index++) {
+      // split the data into minor parts to speed up the merge
+      part.push(
+        deepmerge.all(
+          data.slice(
+            index * (data.length / chunks),
+            index * (data.length / chunks) + data.length / chunks - 1
+          )
+        )
+      );
+    }
+
+    let tree = deepmerge.all(part);
+
+    // let tree = deepmerge.all(data)
+    console.timeEnd("deep");
 
     // section C keys are not sorted, we need to sort them
     // in the final tree

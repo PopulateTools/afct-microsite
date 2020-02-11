@@ -13,7 +13,7 @@
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
     "--green"
   );
-  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters'))
+  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters')) || {}
   const filters = {
     country,
     sector,
@@ -41,44 +41,48 @@
     fillSectorsFilter(data);
     fillRevenuesFilter(data);
 
-    // Assign behaviour to filters
-    summaryTable.querySelectorAll("[data-filter]").forEach(element => {
-      return element.addEventListener("input", event => {
-        onFilterSelected(event, () => {
-            const charts = summaryTable.querySelectorAll("[data-path]");
-            if (charts.length) {
-              renderCharts(charts, data);
-            }
+    if (summaryTable.length) {
+      // Assign behaviour to filters
+      summaryTable.querySelectorAll("[data-filter]").forEach(element => {
+        return element.addEventListener("input", event => {
+          onFilterSelected(event, () => {
+              const charts = summaryTable.querySelectorAll("[data-path]");
+              if (charts.length) {
+                renderCharts(charts, data);
+              }
+          });
         });
       });
-    });
+    }
 
-    tableSelectors.forEach((element, index) => {
-      if (index === 0) {
-        element.classList.add(activeClass);
-      }
+    if (tableSelectors.length) {
+      tableSelectors.forEach((element, index) => {
+        if (index === 0) {
+          element.classList.add(activeClass);
+        }
+    
+        element.addEventListener("click", event => {
+          const { target } = event;
+          const selectedRowType = target.dataset.tableSelector;
+    
+          tableSelectors.forEach(e => e.classList.remove(activeClass));
+          target.classList.add(activeClass);
+    
+          rowTypes.forEach(element => {
+            if (element.dataset.rowType === selectedRowType) {
+              element.style.display = "";
   
-      element.addEventListener("click", event => {
-        const { target } = event;
-        const selectedRowType = target.dataset.tableSelector;
-  
-        tableSelectors.forEach(e => e.classList.remove(activeClass));
-        target.classList.add(activeClass);
-  
-        rowTypes.forEach(element => {
-          if (element.dataset.rowType === selectedRowType) {
-            element.style.display = "";
-
-            const charts = element.querySelectorAll("[data-path]");
-            if (charts.length) {
-              renderCharts(charts, data);
+              const charts = element.querySelectorAll("[data-path]");
+              if (charts.length) {
+                renderCharts(charts, data);
+              }
+            } else {
+              element.style.display = "none";
             }
-          } else {
-            element.style.display = "none";
-          }
+          });
         });
       });
-    });
+    }
   });
 
   function renderSummaryTable() {
