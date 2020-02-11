@@ -6,6 +6,7 @@
     getJSON("../static_data/mock_tree.json", d => { mockTree = d })
   }
 
+  // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
 
   window.addEventListener("DOMContentLoaded", () => {
@@ -121,10 +122,12 @@
   const revenueRange3 = 2e10;
   const countriesPath = "company.country_incorporation";
   const sectorsPath = "company.sectors";
+
+  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters'))
   const filters = {
-    country: null,
-    sector: null,
-    revenues: null
+    country,
+    sector,
+    revenues
   };
 
   // Private functions
@@ -1255,6 +1258,11 @@
     let result = {};
     let total, values;
 
+    if (path === "s_A.s_A1.issues.id_ah.GHG_1") {
+      debugger
+      
+    }
+    
     [total, values] = getValues(data, path, { flatten: true });
 
     values.forEach(value => {
@@ -1597,6 +1605,7 @@
 
   function filterData(data) {
     let filteredCompanies = [];
+
     data.forEach(company => {
       if (filters !== undefined) {
         if (
