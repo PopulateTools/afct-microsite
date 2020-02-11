@@ -149,7 +149,7 @@
 
   function getTabContentHTML() {
     return `
-      <ul class="database-tabcontent__table">
+      <ul class="database-tabcontent__table database-canvas__fit">
         <li class="database-tabcontent__row">
           <div class="database-tabcontent__captions-light"> 
             <p>% Percentage of total</p>
