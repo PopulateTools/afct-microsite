@@ -834,7 +834,8 @@
           filterData(data),
           element.dataset.path,
           element.dataset.dictionary,
-          dictionary
+          dictionary,
+          data
         ),
         options
       );
@@ -1254,15 +1255,10 @@
     return ((value / total) * 100).toFixed(1);
   }
 
-  function summarizeDataFromPath(data, path, dictionaryKey, dictionary) {
+  function summarizeDataFromPath(data, path, dictionaryKey, dictionary, originalData) {
     let result = {};
     let total, values;
 
-    if (path === "s_A.s_A1.issues.id_ah.GHG_1") {
-      debugger
-      
-    }
-    
     [total, values] = getValues(data, path, { flatten: true });
 
     values.forEach(value => {
@@ -1272,8 +1268,16 @@
       result[value]++;
     });
 
+    const [_, values1] = getValues(originalData, path, { flatten: true });
+    let result1 = {}
+    values1.forEach(value => {
+      result1[value] = 0;
+    });
+
+    const combined = { ...result1, ...result }
+
     return {
-      data: calculatePercentage(result, total, dictionaryKey, dictionary)
+      data: calculatePercentage(combined, total, dictionaryKey, dictionary)
     };
   }
 
