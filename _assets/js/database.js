@@ -22,7 +22,7 @@
 
         // The list of sections is the first level of the JSON
         let tree = null;
-        if (!DEBUG) {
+        if (DEBUG) {
           tree = mockTree || {};
         } else {
           tree = getTree(data);
