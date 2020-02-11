@@ -1,11 +1,6 @@
 (function() {
   const DEBUG = (location.origin === "http://0.0.0.0:4000") || false;
 
-  let mockTree = null;
-  if (DEBUG) {
-    getJSON("../static_data/mock_tree.json", d => { mockTree = d })
-  }
-
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
 
@@ -20,13 +15,7 @@
           d.company.sectors = d.company.sectors.map(d => dictionary[d]);
         });
 
-        // The list of sections is the first level of the JSON
-        let tree = null;
-        if (DEBUG) {
-          tree = mockTree || {};
-        } else {
-          tree = getTree(data);
-        }
+        tree = getTree(data);
 
         GLOBAL_TREE = tree
 
@@ -166,12 +155,11 @@
   }
 
   function getTree(data) {
-    console.time("deep");
 
+    // split the data array into minor chunks to speed up the merge
     const chunks = 50;
     const part = [];
     for (let index = 0; index < chunks; index++) {
-      // split the data into minor parts to speed up the merge
       part.push(
         deepmerge.all(
           data.slice(
@@ -185,7 +173,7 @@
     let tree = deepmerge.all(part);
 
     // let tree = deepmerge.all(data)
-    console.timeEnd("deep");
+
 
     // section C keys are not sorted, we need to sort them
     // in the final tree
@@ -327,6 +315,21 @@
           dictionary
         );
 
+        if (section === "s_2b") {
+
+          const template = `
+            <section class="database-section">
+              <span id="${subSection}" class="database-section__anchor"></span>
+              
+              ${getDrilldownButtonsHTML({ text: sectionText })}
+
+              ${block}
+
+            </section>
+          `;
+
+          renderedTemplate += template;
+        } else 
         if (isObject(tree[section][subSection])) {
           renderedTemplate += `
             <section class="database-section">
@@ -336,7 +339,7 @@
             </section>
           `;
         } else {
-          renderedTemplate += block
+          renderedTemplate += block;
         }
 
       });
@@ -417,7 +420,6 @@
         `;
 
         renderedTemplate += template + "\n\n";
-      // } else if (level >= 2) {
       } else if (level >= 2 && level < 5) {
 
         const template = `
@@ -455,7 +457,7 @@
 
       // Specific wrap for section 2
       if (section === "s_2b") {
-        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
+        issueTemplate = `<div class="database-layout__grid-3 gutter-xl">${issueTemplate}</div>`
       }
 
       // In this specific conditions include the drilldown
@@ -465,7 +467,7 @@
         (level === 1 && subSection === "general")
       ) {
 
-        issueTemplate = `<div class="database-layout__grid-3 gutter-l">${issueTemplate}</div>`
+        issueTemplate = `<div class="database-layout__grid-3 gutter-xl">${issueTemplate}</div>`
 
         const template = `
           <section class="database-section">
