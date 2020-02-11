@@ -13,17 +13,23 @@
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
     "--green"
   );
+  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters'))
   const filters = {
-    country: null,
-    sector: null,
-    revenues: null
+    country,
+    sector,
+    revenues
   };
+
+  // Store it in a global var, instead of passing through functions
+  let GLOBAL_TREE = null;
 
   renderSummaryTable()
 
   const charts = document.querySelectorAll("[data-path]");
 
   getJSON(reportsUrl, data => {
+    GLOBAL_TREE = getTree(data)
+    
     // render charts
     renderCharts(charts, data);
 
@@ -199,9 +205,9 @@
             <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
           </div>
         </li>
         <li class="database-tabcontent__row">
@@ -230,9 +236,9 @@
             <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
           </div>
         </li>
         <li class="database-tabcontent__row">
@@ -265,9 +271,9 @@
             <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
           </div>
         </li>
         <li class="database-tabcontent__row">
@@ -296,9 +302,9 @@
             <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
           </div>
         </li>
       </ul>
@@ -341,8 +347,9 @@
     let total = {};
 
     filterData(data).forEach(company => {
-      Object.keys(company[parent]).forEach(question => {
+      Object.keys(GLOBAL_TREE[parent]).forEach(question => {
         let value = resolve(company[parent][question], path);
+
         // This is a dirty hack, but necessary
         // Sometimes the path of a question has the suffix 2 or 3
         // Example: policies.policy, policies.policy2 and policies.policy3
@@ -361,10 +368,9 @@
         if (String(value) === String(option)) {
           result[question]++;
         }
+
         // Only count the total if the value is present
-        if (value !== undefined && value !== null) {
-          total[question]++;
-        }
+        total[question]++;
       });
     });
 
@@ -747,6 +753,31 @@
 
     callback();
     return true;
+  }
+
+  function getTree(data) {
+    let tree = deepmerge.all(data);
+
+    // section C keys are not sorted, we need to sort them
+    // in the final tree
+    let sectionC = {};
+    Object.keys(tree["s_C"])
+      .sort()
+      .forEach(key => {
+        sectionC[key] = tree["s_C"][key];
+      });
+    tree["s_C"] = sectionC;
+
+    // section E keys are not sorted, we need to sort them
+    // in the final tree
+    let sectionEProducts = {};
+    Object.keys(tree["s_E"]["s_E_products"])
+      .sort()
+      .forEach(key => {
+        sectionEProducts[key] = tree["s_E"]["s_E_products"][key];
+      });
+    tree["s_E"]["s_E_products"] = sectionEProducts;
+    return tree;
   }
 
 })();

@@ -683,9 +683,9 @@
             <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
           </div>
         </li>
         <li class="database-tabcontent__row">
@@ -714,9 +714,9 @@
             <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
           </div>
         </li>
         <li class="database-tabcontent__row">
@@ -749,9 +749,9 @@
             <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
           </div>
         </li>
         <li class="database-tabcontent__row">
@@ -780,9 +780,9 @@
             <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
+            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
           </div>
         </li>
       </ul>
