@@ -8,8 +8,12 @@
     const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : "https://act-export.frankbold.org/dictionary.json";
     const reportsUrl = DEBUG ? "../static_data/mock_reports.json" : "https://act-export.frankbold.org/reports.json";
 
+    const spinner = document.querySelector("[data-spinner]")
+
     getJSON(dictionaryUrl, dictionary => {
       getJSON(reportsUrl, data => {
+        spinner.style.display = 'none'
+
         // Update sector names using the dictionary keys
         data.forEach(d => {
           d.company.sectors = d.company.sectors.map(d => dictionary[d]);
@@ -144,7 +148,7 @@
   const activeClass = "active";
   const openClass = "is-open";
 
-  const maxValue = 100;
+  const MAXVALUE = 100;
   const revenueRange0 = 3e8;
   const revenueRange1 = 1e9;
   const revenueRange2 = 3e9;
@@ -595,15 +599,14 @@
 
   function renderGeneralSection() {
     return `
-      <section id="general_results-companies-per" class="database-section database-canvas__fit">
-        <span id="general" class="database-section__anchor"></span>
-        ${getCompaniesPerHTML()}
-      </section>
-
       <section class="database-section database-canvas__fit">
         ${getFiltersHTML()}
         ${getTabLinksHTML()}
         ${getTabContentHTML()}
+      </section>
+      <section id="general_results-companies-per" class="database-section database-canvas__fit">
+        <span id="general" class="database-section__anchor"></span>
+        ${getCompaniesPerHTML()}
       </section>
     `;
   }
@@ -615,13 +618,13 @@
         <div>
           <span class="database-heading__span-underline">Country</span>
           <div>
-            <canvas data-path="company.country_incorporation"></canvas>
+            <canvas data-path="company.country_incorporation" data-absolute></canvas>
           </div>
         </div>
         <div>
           <span class="database-heading__span-underline">Sector</span>
           <div>
-            <canvas data-path="company.sectors"></canvas>
+            <canvas data-path="company.sectors" data-absolute></canvas>
           </div>
         </div>
         <div>
@@ -874,31 +877,39 @@
     `
   }
 
-  function onChartLoad(element, data, dictionary, options) {
+  function onChartLoad(element, data, dictionary, options = {}) {
     // Get summarized data for chart and render it
+    const { dataset } = element
+
+    let opts = options
+    
+    if (dataset.absolute !== undefined) {
+      opts.absolute = true
+    }
 
     if (element.dataset.type === "summary") {
       return loadSummaryChart(
         element,
         summaryChartData(
           filterData(data),
-          element.dataset.path,
-          element.dataset.parent,
-          element.dataset.option
+          dataset.path,
+          dataset.parent,
+          dataset.option
         ),
-        options
+        opts
       );
     } else {
       return loadHorizontalChart(
         element,
         summarizeDataFromPath(
           filterData(data),
-          element.dataset.path,
-          element.dataset.dictionary,
+          dataset.path,
+          dataset.dictionary,
           dictionary,
-          data
+          data,
+          opts
         ),
-        options
+        opts
       );
     }
   }
@@ -930,6 +941,7 @@
     const maxLength = estimateMaxLengthLabel(chart)
     const columnNames = chartData.data.map(a => wrap(a[0], maxLength));
     const data = chartData.data.map(a => parseFloat(a[1]));
+    const maxValue = options.absolute ? Math.max(...data) : MAXVALUE
     const inverseData = data.map(e => maxValue - e);
 
     const barThickness = options.barThickness || 30;
@@ -1028,7 +1040,7 @@
 
     const columnNames = chartData.data.map(a => a[0].slice(3));
     const data = chartData.data.map(a => parseFloat(a[1]));
-    const inverseData = data.map(e => maxValue - e + 0.1);
+    const inverseData = data.map(e => MAXVALUE - e + 0.1);
 
     let barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 6);
@@ -1079,7 +1091,7 @@
                 display: false,
                 beginAtZero: false,
                 precision: 0,
-                max: maxValue
+                max: MAXVALUE
               }
             }
           ],
@@ -1141,7 +1153,7 @@
       const columnNames = chartData.map(a => wrap(a[0], estimateMaxLengthLabel(chart)));
       const data = chartData.map(a => parseFloat(a[1]));
 
-      const inverseData = data.map(e => maxValue - e + 0.1);
+      const inverseData = data.map(e => MAXVALUE - e + 0.1);
 
       const barThickness = options.barThickness || 20;
       chart.height = columnNames.length * (barThickness + 8);
@@ -1185,7 +1197,7 @@
                   display: false,
                   beginAtZero: true,
                   precision: 0,
-                  max: maxValue
+                  max: MAXVALUE
                 }
               }
             ],
@@ -1297,9 +1309,12 @@
       if (keyTxt === null || keyTxt === "null") {
         keyTxt = "no value";
       }
+
+      const { absolute: isAbsolute = false } = options
+      const value = isAbsolute ? data[key] : percentage(data[key], isObject(total) ? total[key] : total)
       return [
         keyTxt,
-        percentage(data[key], isObject(total) ? total[key] : total)
+        value
       ];
     });
     if (options.sort) {
@@ -1316,7 +1331,7 @@
     return ((value / total) * 100).toFixed(1);
   }
 
-  function summarizeDataFromPath(data, path, dictionaryKey, dictionary, originalData) {
+  function summarizeDataFromPath(data, path, dictionaryKey, dictionary, originalData, options) {
     let result = {};
     let total, values;
 
@@ -1335,10 +1350,11 @@
       result1[value] = 0;
     });
 
+    // first merge the original data with 0, and then the real object, to be updated
     const combined = { ...result1, ...result }
 
     return {
-      data: calculatePercentage(combined, total, dictionaryKey, dictionary)
+      data: calculatePercentage(combined, total, dictionaryKey, dictionary, options)
     };
   }
 

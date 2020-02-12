@@ -35,10 +35,18 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem );
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  position: relative;
 }
 
 .database-canvas__fit canvas {
   width: 100% !important;
+}
+
+.database-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .database-sidebar {
