@@ -12,7 +12,9 @@
 
     getJSON(dictionaryUrl, dictionary => {
       getJSON(reportsUrl, data => {
-        spinner.style.display = 'none'
+        if (spinner) {
+          spinner.style.display = 'none'
+        }
 
         // Update sector names using the dictionary keys
         data.forEach(d => {
@@ -25,110 +27,184 @@
 
         // Load sidebar
         const sidebar = document.querySelector("[data-sidebar]");
-        sidebar.innerHTML = loadTOC(tree, dictionary);
-
-        const lis = sidebar.querySelectorAll("li");
-        const submenus = sidebar.querySelectorAll("li ul");
-
-        // Event delegation to the parent (avoid multiple listeners)
-        sidebar.addEventListener("click", ({ target }) => {
-          const { nextElementSibling: ul } = target
-
-          // remove all active states, and close all submenus
-          lis.forEach(li => li.classList.remove(activeClass));
-          submenus.forEach(ul => ul.classList.remove(openClass));
-
-          // set active class for the clicked item
-          target.parentElement.classList.add(activeClass);
-
-          // open submenu if there is
-          if (ul) {
-            ul.classList.add(openClass)
-          }
-
-          target.closest("ul").classList.add(openClass)
-
-          const { hash } = target;
-          if (hash) {
-
-            // You will tell me why parent section is called "s_2b" and its children s_2, s_3
-            let hash_ = hash
-            if (["#s_2", "#s_3"].includes(hash)) {
-              hash_ = "#s_2b"
-            }
-
-            renderSection(hash_.slice(1), data, tree, dictionary);
-          }
-        });
-
-        const { hash } = window.location;
-
-        // Search the anchor-hash who matches with the location-hash
-        const i = hash
-          ? [...lis].findIndex(d => [...d.children].find(d => d.hash === hash))
-          : 0; // If there's no hash, set default one
-
-        // set active the matching item
-        const currentItem = lis.item(i)
-        currentItem.classList.add(activeClass);
-
-        const parentLi = currentItem.parentElement.closest("li")
-        if (parentLi) {
-          parentLi.querySelector("ul").classList.add(openClass)
-        }
-        
-        // open submenu if there are
-        const submenu = currentItem.querySelector("ul")
-        if (submenu) {
-          submenu.classList.add(openClass)
-        }
-
-        const section = hash ? hash.slice(1) : "general";
-        renderSection(section, data, tree, dictionary);
-
-        // download button handler
-        document.addEventListener('click', ({ target }) => {
-          const { previousElementSibling } = target
-          
-          if (previousElementSibling) {
-            const { nodeName } = previousElementSibling
-            
-            // Check if the previous sibling is a canvas
-            if (nodeName && nodeName === "CANVAS") {
-              const { dataset } = previousElementSibling
+        if (sidebar) {
+          sidebar.innerHTML = loadTOC(tree, dictionary);
   
-              if (dataset) {
-                downloadCanvas({ dataset, data, dictionary })
+          const lis = sidebar.querySelectorAll("li");
+          const submenus = sidebar.querySelectorAll("li ul");
+  
+          // Event delegation to the parent (avoid multiple listeners)
+          sidebar.addEventListener("click", ({ target }) => {
+            const { nextElementSibling: ul } = target
+  
+            // remove all active states, and close all submenus
+            lis.forEach(li => li.classList.remove(activeClass));
+            submenus.forEach(ul => ul.classList.remove(openClass));
+  
+            // set active class for the clicked item
+            target.parentElement.classList.add(activeClass);
+  
+            // open submenu if there is
+            if (ul) {
+              ul.classList.add(openClass)
+            }
+  
+            target.closest("ul").classList.add(openClass)
+  
+            const { hash } = target;
+            if (hash) {
+  
+              // You will tell me why parent section is called "s_2b" and its children s_2, s_3
+              let hash_ = hash
+              if (["#s_2", "#s_3"].includes(hash)) {
+                hash_ = "#s_2b"
+              }
+  
+              renderSection(hash_.slice(1), data, tree, dictionary);
+            }
+          });
+
+          const { hash } = window.location;
+  
+          // Search the anchor-hash who matches with the location-hash
+          const i = hash
+            ? [...lis].findIndex(d => [...d.children].find(d => d.hash === hash))
+            : 0; // If there's no hash, set default one
+  
+          // set active the matching item
+          const currentItem = lis.item(i)
+          currentItem.classList.add(activeClass);
+  
+          const parentLi = currentItem.parentElement.closest("li")
+          if (parentLi) {
+            parentLi.querySelector("ul").classList.add(openClass)
+          }
+          
+          // open submenu if there are
+          const submenu = currentItem.querySelector("ul")
+          if (submenu) {
+            submenu.classList.add(openClass)
+          }
+  
+          const section = hash ? hash.slice(1) : "general";
+          renderSection(section, data, tree, dictionary);
+
+          // download button handler
+          document.addEventListener('click', ({ target }) => {
+            const { previousElementSibling } = target
+            
+            if (previousElementSibling) {
+              const { nodeName } = previousElementSibling
+              
+              // Check if the previous sibling is a canvas
+              if (nodeName && nodeName === "CANVAS") {
+                const { dataset } = previousElementSibling
+    
+                if (dataset) {
+                  downloadCanvas({ dataset, data, dictionary })
+                }
               }
             }
-          }
-        })
-
-        // scroll listener
-        document.addEventListener('scroll', (e) => {
-          const submenu = document.querySelector("[data-sidebar] > ul > li > ul.is-open")
-
-          if (submenu) {
-            const anchors = submenu.querySelectorAll("a")
-            const hashes = [...anchors].map(d => d.hash)
-
-            hashes.forEach(hash => {
-              const element = document.getElementById(hash.slice(1)).parentElement
-              const { top, height } = element.getBoundingClientRect()
-
-              if ((top > -300 && top < 300) || (top + height < 300 && top + height > -300)) {
-                const parentActive = document.querySelector("[data-sidebar] > ul > li.active")
-                if (parentActive) {
-                  parentActive.classList.remove(activeClass)
+          })
+  
+          // scroll listener
+          document.addEventListener('scroll', (e) => {
+            const submenu = document.querySelector("[data-sidebar] > ul > li > ul.is-open")
+  
+            if (submenu) {
+              const anchors = submenu.querySelectorAll("a")
+              const hashes = [...anchors].map(d => d.hash)
+  
+              hashes.forEach(hash => {
+                const element = document.getElementById(hash.slice(1)).parentElement
+                const { top, height } = element.getBoundingClientRect()
+  
+                if ((top > -300 && top < 300) || (top + height < 300 && top + height > -300)) {
+                  const parentActive = document.querySelector("[data-sidebar] > ul > li.active")
+                  if (parentActive) {
+                    parentActive.classList.remove(activeClass)
+                  }
+  
+                  anchors.forEach(a => a.parentElement.classList.remove(activeClass));
+                  const sidebarAnchor = [...anchors].find(d => d.hash === hash)
+                  sidebarAnchor.parentElement.classList.add(activeClass)
                 }
+              })
+            }
+          })
+        }
 
-                anchors.forEach(a => a.parentElement.classList.remove(activeClass));
-                const sidebarAnchor = [...anchors].find(d => d.hash === hash)
-                sidebarAnchor.parentElement.classList.add(activeClass)
+        // Load summaryTable
+        const summaryTable = document.querySelector("[data-summary-table]");
+        if (summaryTable) {
+          let template = "";
+          template += getFiltersHTML()
+          template += getTabLinksHTML()
+          template += getTabContentHTML()
+      
+          summaryTable.innerHTML = template
+      
+          const rowTypes = summaryTable.querySelectorAll("[data-row-type]");
+          rowTypes.forEach(element => {
+            if (element.dataset.rowType !== "policies") {
+              element.style.display = "none";
+            }
+          });
+
+          const charts = document.querySelectorAll("[data-path]");
+          // render charts
+          renderCharts(charts, data);
+
+          const tableSelectors = summaryTable.querySelectorAll(
+            "[data-table-selector]"
+          );
+
+          fillCountriesFilter(data);
+          fillSectorsFilter(data);
+          fillRevenuesFilter(data);
+
+          // Assign behaviour to filters
+          summaryTable.querySelectorAll("[data-filter]").forEach(element => {
+            return element.addEventListener("input", event => {
+              onFilterSelected(event, () => {
+                const charts = document.querySelectorAll("[data-path]");
+                if (charts.length) {
+                  renderCharts(charts, data);
+                }
+              });
+            });
+          });
+
+          if (tableSelectors) {
+            tableSelectors.forEach((element, index) => {
+              if (index === 0) {
+                element.classList.add(activeClass);
               }
-            })
+
+              element.addEventListener("click", event => {
+                const { target } = event;
+                const selectedRowType = target.dataset.tableSelector;
+
+                tableSelectors.forEach(e => e.classList.remove(activeClass));
+                target.classList.add(activeClass);
+
+                rowTypes.forEach(element => {
+                  if (element.dataset.rowType === selectedRowType) {
+                    element.style.display = "";
+
+                    const charts = element.querySelectorAll("[data-path]");
+                    if (charts.length) {
+                      renderCharts(charts, data);
+                    }
+                  } else {
+                    element.style.display = "none";
+                  }
+                });
+              });
+            });
           }
-        })
+        }
+
       });
     });
   });
@@ -378,7 +454,7 @@
           renderedTemplate += `
             <section class="database-section">
               <span id="${subSection}" class="database-section__anchor"></span>
-              <h1 class="database-heading__h1 with-decorator">${sectionText}</h1>
+              <h1 class="heading__h1 with-decorator">${sectionText}</h1>
               ${block}
             </section>
           `;
@@ -613,7 +689,7 @@
 
   function getCompaniesPerHTML() {
     return `
-      <h4 class="database-heading__h4">Companies included in the research</h4>
+      <h4 class="heading__h4">Companies included in the research</h4>
       <div class="database-layout__col-3 gutter-l">
         <div>
           <span class="database-heading__span-underline">Country</span>
@@ -644,7 +720,7 @@
   function getFiltersHTML() {
     return `
       <div class="database-layout__flex">
-        <h4 class="database-heading__h4">Summary</h4>
+        <h4 class="heading__h4">Summary</h4>
         ${getFiltersBlock()}
       </div>
     `;
@@ -869,7 +945,7 @@
 
   function getChartsContainerHTML({ text = '&nbsp;', dataPath, subSection, className = '' }) {
     return `
-      <h6 class="database-heading__h6">${text}</h6>
+      <h6 class="heading__h6">${text}</h6>
       <div data-charts ${className ? `data-s_1 class="${className}"` : '' }>
         <div><canvas data-path="${dataPath}.${subSection}" data-dictionary="${subSection}"></canvas></div>
         <div class="database-layout__grid-2 gutter-m" data-subcharts-container></div>
@@ -1141,7 +1217,7 @@
 
       newChart.className = "database-layout__flex-column"
       newChart.innerHTML = `
-        <span class="database-heading__span">${chartDataInfo[0] || "-"}</span>
+        <span class="heading__span muted">${chartDataInfo[0] || "-"}</span>
         <canvas></canvas>
       `;
 

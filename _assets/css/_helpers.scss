@@ -18,6 +18,39 @@ $units: 1px !default;
  }
 }
 
+$sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
+
+@mixin gutters() {
+  @each $name, $size in $sizes {
+    &.gutter-#{$name} > *:not(:first-child) {
+      margin-left: $size;
+    }
+  }
+}
+
+@mixin grid($columns: 3) {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(100% / #{$columns});
+    max-width: calc(100% / #{$columns});
+  }
+
+  @each $name, $size in $sizes {
+    &.gutter-#{$name} {
+      margin: calc((-1 * #{$size}) / 2);
+
+      > * {
+        padding: calc(#{$size} / 2);
+      }
+    }
+  }
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -27,8 +60,14 @@ $units: 1px !default;
     flex-direction: column;
   }
 
-  > * {
+  @include gutters();
+
+  &:not(.no-expand) > * {
     flex: 1;
+  }
+
+  &.start {
+    justify-content: flex-start;
   }
 }
 

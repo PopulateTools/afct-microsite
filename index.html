@@ -8,47 +8,120 @@ description: ""
 
   {% include intro-hero.html %}
 
-  <section class="initial-results">
-
-    <div class="column-single ">
-
-      <div class="intro-text">
-
-        <h2>Initial results</h2>
-
-        <p>The project has assessed the reports of 105 European companies from the Energy, ICT and Health Care sectors in the initial round held in 2018. The main results are summarised in this website. You may also download the "2018 Research Report" PDF where you will find all the results and conclusions from the initial research in a detailed briefing.</p>
-        <p>The Alliance for Corporate Transparency is three-year research project that brings together leading civil society organisations and experts with the aim of analysing the corporate disclosure on sustainability issues by the 1000 largest companies operating in the EU and providing evidence-based recommendations for legislative changes. </p>
-
+  <section>
+    <div class="column">
+      <div class="flex-container gutter-xxl">
+        <div>
+          <h1 class="hero__h1">2019 Research</h1>
+          <p class="hero__subtitle">The <strong>largest study on companies sustainability</strong> disclosures to date.</p>
+        </div>
+        <div class="hero__box">
+          <p class="hero__p">The project has assessed how 1000 European companies disclose information on their environmental and societal risks and impacts, as required by the EU Non-financial Reporting Directive.</p>
+        </div>
       </div>
-
-      <div class="ctas">
-
-        <a href="{{ site.url_report2018 }}" class="button">See initial results</a>
-        <a href="{% asset '{{ site.url_report2018_pdf }}' @path %}" class="button button-negative">Download full report here</a>
-
-
-      </div>
-
     </div>
-
   </section>
 
-
-  <section class="color-negative clipped-diag-top-bottom">
-
-    <div class="column-single ">
-
-      <h2>News</h2>
-
-      {% include posts.html %}
-
+  <section>
+    <div class="column">
+      <p class="heading__span link fs-16">Explore results</p>
+      <div class="flex-container start no-expand gutter-xl">
+        <a href="" class="button">Industry highlights</a>
+        <a href="/database" class="button">Database with full results</a>
+        <a href="{% asset '{{ site.url_report2018_pdf }}' @path %}" class="button">2019 Research Report (PDF)</a>
+      </div>
     </div>
-
   </section>
 
+  <section>
+    <div class="column">
+      <h1 class="heading__hero with-decorator">General results</h1>
+      <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive overview of general and sector-specific results is provided in the Database and Research Report.</p>
+
+      <div class="database-container">
+        <section class="database-section database-canvas__fit" data-summary-table></section>
+      </div>
+
+      <div>
+        <h2 class="heading__h2 with-decorator">Companies analyzed</h2>
+        <div class="database-layout__col-2-3 gutter-xl">
+          <div>
+            <span class="database-heading__span-underline">Sector</span>
+            <div>
+              <canvas data-path="company.sectors" data-absolute></canvas>
+            </div>
+          </div>
+          <div>
+            <iframe title="cDjdt" aria-label="Europe eu choropleth map" id="datawrapper-chart-cDjdt" src="//datawrapper.dwcdn.net/cDjdt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="column">
+      <h1 class="heading__hero with-decorator">Research highlights</h1>
+      
+      <div class="database-layout__col-2-3 gutter-xxl database-section">
+        <h3 class="heading__h1">General transparency</h3>
+        <div>
+          <div class="flex-container gutter-xxl">
+            <div class="heading__span muted fs-18">KPI provided in a summarized statement</div>
+            <div>svg</div>
+          </div>
+          <div class="flex-container gutter-xxl">
+            <div class="heading__span muted fs-18">Identification of sustainability matters addressed by the Board in the previous year and decisions</div>
+            <div>svg</div>
+          </div>
+          <div class="flex-container gutter-xxl">
+            <div class="heading__span muted fs-18">Key issues in the description of policies and risks in the main non-financial statement correspond with the overview of sustainability issues in the business model description</div>
+            <div>svg</div>
+          </div>
+          <div class="flex-container gutter-xxl">
+            <div class="heading__span muted fs-18">KPI provided in a summarized statement</div>
+            <div>svg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="database-layout__col-2-3 gutter-xxl database-section">
+        <h3 class="heading__h1">Climate</h3>
+      </div>
+
+      <div class="database-layout__col-2-3 gutter-xxl database-section">
+        <h3 class="heading__h1">Human rights</h3>
+        <div>
+          <div class="flex-container gutter-xxl">
+            <div class="heading__span muted fs-18">Human Rights due diligence process is described</div>
+            <div>svg</div>
+          </div>
+          <div class="flex-container gutter-xxl">
+            <div class="heading__span muted fs-18">Human Rights due diligence process is described</div>
+            <div>svg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="database-layout__col-2-3 gutter-xxl database-section">
+        <div>
+          <h3 class="heading__h1">Supply chain transparency</h3>
+          <span class="heading__span muted fs-16">Data for consumer goods : apparel, food & beverages + other consumption goods</span>
+        </div>
+        <div>
+          svg
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <a href="" class="button">Database with full results</a>
+      </div>
+    </div>
+  </section>
 
   <section class="partners">
-    <div class="column-single">
+    <div class="column">
         <h2>Partners</h2>
         <p class="section-main">Partners and advisors of the project include:</p>
         <ul class="section-wrap">
@@ -81,15 +154,16 @@ description: ""
   </section>
 
   <section>
-    <div class="column-single">
-        <h2>Get updates</h2>
-        <p>You can register for our <a class="link" href="{{ url_newsletter }}">newsletter here</a> to receive updates on the project.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="column-single database-container">
-      <section class="database-section" data-summary-table></section>
+    <div class="column">
+      <div class="database-layout__col-2-3 gutter-xxl  database-section">
+        <div>
+          <h3 class="heading__h1">Transparency</h3>
+          <span class="heading__span muted fs-16">Expert views on the future of corporate sustainability reporting</span>
+        </div>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLwkylO8KA7t6k731Efoea7KKbdQcZQOMb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </section>
 

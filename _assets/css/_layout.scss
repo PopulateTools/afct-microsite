@@ -4,14 +4,8 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", sans-serif;
   scroll-behavior: smooth;
-}
-
-body {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
 }
 
 main {
@@ -90,8 +84,6 @@ section.intro-hero {
   clip-path: polygon(0 3%, 100% 0px, 100% 97%, 0% 100%);
 }
 
-section.initial-results {}
-
 section.color-negative {
   background: $cLink;
   color: #FFF;
@@ -169,33 +161,6 @@ h5 {
 
 a {
   color: $cLink;
-}
-
-.button,
-a.button {
-  background: $cLinkSecondary;
-  padding: 1em 2em;
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  color: #FFF;
-  transition: background-color 0.2s ease;
-}
-
-.button:hover,
-a.button:hover {
-  background: darken($cLinkSecondary, 10%);
-}
-
-.button.button-negative {
-  background: #FFF;
-  border: 1px solid $cLinkSecondary;
-  color: $cLinkSecondary;
-}
-
-.button.button-negative:hover {
-  color: #FFF;
 }
 
 .content-page {
