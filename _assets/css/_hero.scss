@@ -16,20 +16,20 @@
   line-height: 45px;
   color: $cBlue;
   margin: 0;
-
-  strong {
-    font-weight: 600;
-  }
 }
 
 .hero__p {
   font-family: Muli;
   font-style: normal;
-  font-weight: 600;
   font-size: 22px;
   line-height: 151%;
   color: $cDarkBlue;
   margin: 0;
+}
+
+.hero__p strong,
+.hero__subtitle strong {
+  font-weight: 600;
 }
 
 .hero__box {
