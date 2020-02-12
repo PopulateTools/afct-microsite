@@ -356,3 +356,11 @@
   background-color: #fff;
   z-index: 1;
 }
+
+.database-note {
+  padding: 2em; 
+  margin: 2em 0;
+  text-align: center; 
+  background: lighten($cBackground, 20%);
+  border-radius: 4px;
+}
