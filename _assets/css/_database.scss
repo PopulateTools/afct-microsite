@@ -104,6 +104,12 @@
   margin: 0 0 1rem;
 }
 
+.database-section__margin-l {
+  @extend %section;
+
+  margin: 0 0 3rem;
+}
+
 .database-section__anchor {
   position: absolute;
   top: -4rem;

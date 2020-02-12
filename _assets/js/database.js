@@ -154,6 +154,9 @@
           const charts = document.querySelectorAll("[data-path]");
           // render charts
           renderCharts(charts, data);
+          
+          const staticCharts = document.querySelectorAll("[data-static-path]");
+          renderStaticCharts(staticCharts);
 
           const tableSelectors = summaryTable.querySelectorAll(
             "[data-table-selector]"
@@ -231,6 +234,66 @@
   const revenueRange3 = 2e10;
   const countriesPath = "company.country_incorporation";
   const sectorsPath = "company.sectors";
+  const STATIC_DATA = {
+    "general-transparency-key-issues": {
+      data: [
+        ["No", 52.1],
+        ["Partially", 28.9],
+        ["Fully", 19],
+      ],
+      opts: {
+        labelWidth: () => 50
+      }
+    },
+    "climate-target": {
+      data: [
+        ["Apparel & Textiles", 26.4],
+        ["Consumption", 29.4],
+        ["Energy & Resource Extraction", 36.4],
+        ["Financials", 20.5],
+        ["Food & Beverages", 48.4],
+        ["Health Care", 32.9],
+        ["Hospitality & Recreation", 26.2],
+        ["Infrastructure", 46.1],
+        ["Resource Transformation", 44.3],
+        ["Technology & Communications", 40],
+        ["Transportation", 47.6]
+      ],
+      opts: {
+        labelWidth: () => 0
+      }
+    },
+    "company-climate-target": {
+      data: [
+        ["Apparel & Textiles", 9.1],
+        ["Consumption", 4.4],
+        ["Energy & Resource Extraction", 23.5],
+        ["Financials", 10.2],
+        ["Food & Beverages", 20],
+        ["Health Care", 6.8],
+        ["Hospitality & Recreation", 9.5],
+        ["Infrastructure", 17.1],
+        ["Resource Transformation", 13.4],
+        ["Technology & Communications", 20],
+        ["Transportation", 12.48]
+      ],
+      opts: {
+        labelWidth: () => 0
+      }
+    },
+    "supply-chain": {
+      data: [
+        ["No information on the structure of the supply chain", 67.2],
+        ["General Description of high risk supply chains", 24.7],
+        ["List of suppliers in high-risk supply chains", 1.7],
+        ["List of individual ultimate factories was published + List of individual ultimate factories is available for download", 3.7]
+      ],
+      opts: {
+        labelWidth: chart => chart.width / 2,
+        maxLength: 80
+      }
+    }
+  }
 
   const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters')) || {}
   const filters = {
@@ -660,6 +723,14 @@
     charts.forEach(element => onChartLoad(element, data, dictionary));
   }
 
+  function renderStaticCharts(charts) {
+    charts.forEach(chart => {
+      const { staticPath } = chart.dataset
+      const { data, opts } = STATIC_DATA[staticPath]
+      loadHorizontalChart(chart, { data }, opts);
+    })
+  }
+
   function renderSpecialCharts(id, data) {
     let dataFn = null
     if (id.match(/chart-summary_companies_per_revenue_range/)) {
@@ -963,6 +1034,14 @@
       opts.absolute = true
     }
 
+    if (dataset.sort !== undefined) {
+      opts.sort = true
+    }
+
+    if (dataset.barThickness !== undefined) {
+      opts.barThickness = Number(dataset.barThickness)
+    }
+
     if (element.dataset.type === "summary") {
       return loadSummaryChart(
         element,
@@ -1014,7 +1093,7 @@
       chart = idOrElement;
     }
 
-    const maxLength = estimateMaxLengthLabel(chart)
+    const maxLength = options.maxLength || estimateMaxLengthLabel(chart)
     const columnNames = chartData.data.map(a => wrap(a[0], maxLength));
     const data = chartData.data.map(a => parseFloat(a[1]));
     const maxValue = options.absolute ? Math.max(...data) : MAXVALUE
@@ -1022,6 +1101,8 @@
 
     const barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 20);
+
+    const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => chart.width * (2 / 3))
 
     const opts = {
       type: "horizontalBar",
@@ -1052,6 +1133,8 @@
         scales: {
           xAxes: [
             {
+              categoryPercentage: 1.0,
+              barPercentage: 1.0,
               stacked: true,
               gridLines: {
                 drawBorder: false,
@@ -1073,7 +1156,7 @@
                 display: false
               },
               afterFit: scaleInstance => {
-                scaleInstance.width = chart.width * (2 / 3);
+                scaleInstance.width = labelWidth(chart);
               }
             }
           ]

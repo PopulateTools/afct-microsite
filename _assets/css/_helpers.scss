@@ -51,6 +51,25 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
   }
 }
 
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -68,6 +87,22 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
 
   &.start {
     justify-content: flex-start;
+  }
+
+  &.left {
+    align-items: flex-start;
+  }
+
+  &.right {
+    align-items: flex-end;
+  }
+
+  &.stretch {
+    align-items: stretch;
+  }
+
+  &.column {
+    flex-direction: column;
   }
 }
 
@@ -87,4 +122,8 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
   @include screen($wMobile) {
     margin-top: auto;
   }
+}
+
+.aspect-ratio-16-9 {
+  @include aspect-ratio(16, 9)
 }
