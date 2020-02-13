@@ -281,6 +281,21 @@
         labelWidth: () => 0
       }
     },
+    "human-rights": {
+      data: [
+        ["Identified concrete operations and/or business partners associated with salient issues & impacts", 9.7],
+        ["Specific examples and appropriate indicators illustrate each salient issue is being managed effectively", 3.6],
+        ["Board oversight of risks and salient issues", 16],
+        ["Changes in the nature of each salient human rights issue (trend & patterns in impacts) over time", 1.3],
+        ["Actions that company has taken to prevent or mitigate impacts related to each salient issue", 19.4],
+        ["Explicit commitment to provide remedy to harmed people", 6.9],
+        ["Grievance mechanism and its application", 11]
+      ],
+      opts: {
+        labelWidth: chart => chart.width / 2,
+        maxLength: 60
+      }
+    },
     "supply-chain": {
       data: [
         ["No information on the structure of the supply chain", 67.2],

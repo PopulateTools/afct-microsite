@@ -51,7 +51,7 @@ description: ""
               <canvas data-path="company.sectors" data-absolute data-sort data-bar-thickness="15"></canvas>
             </div>
           </div>
-          <div>
+          <div style="flex-shrink: 1;">
             <iframe title="cDjdt" aria-label="Europe eu choropleth map" id="datawrapper-chart-cDjdt" src="//datawrapper.dwcdn.net/cDjdt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
             </script>
           </div>
@@ -62,16 +62,16 @@ description: ""
 
   <section>
     <div class="column">
-      <h1 class="heading__hero with-decorator">Research highlights</h1>
+      <h1 class="heading__hero with-decorator" style="margin-bottom: 3rem">Research highlights</h1>
       
       <div class="database-layout__col-2-3 gutter-xxl database-section">
-        <h3 class="heading__h1">General transparency</h3>
+        <h3 class="heading__h1" style="flex-shrink: 1">General transparency</h3>
         <div style="flex-shrink: 1">
-          <div class="flex-container gutter-xxl database-section__margin-l">
+          <div class="flex-container gutter-xxl left no-expand database-section__margin-l">
             <div class="heading__span muted fs-18">KPI provided in a summarized statement</div>
             <div>{% asset report-2019/dots_1 %}</div>
           </div>
-          <div class="flex-container gutter-xxl database-section__margin-l">
+          <div class="flex-container gutter-xxl left no-expand database-section__margin-l">
             <div class="heading__span muted fs-18">Identification of sustainability matters addressed by the Board in the previous year and decisions</div>
             <div>{% asset report-2019/dots_2 %}</div>
           </div>
@@ -122,21 +122,16 @@ description: ""
       <div class="database-layout__col-2-3 gutter-xxl database-section">
         <h3 class="heading__h1">Human rights</h3>
         <div style="flex-shrink: 1">
-          <div class="flex-container gutter-xxl database-section__margin-l">
+          <div class="flex-container gutter-xxl left no-expand database-section__margin-l">
             <div class="heading__span muted fs-18">Human Rights due diligence process is described</div>
             <div>{% asset report-2019/dots_3 %}</div>
           </div>
-          <div class="flex-container gutter-xxl database-section__margin-l">
+          <div class="flex-container gutter-xxl left no-expand database-section__margin-l">
             <div class="heading__span muted fs-18">Description of most significant human rights impacts</div>
             <div>{% asset report-2019/dots_4 %}</div>
           </div>
-          <div class="flex-container gutter-xxl database-section__margin-l">
-            <div class="heading__span muted fs-18">Identified concrete operations and/or business partners associated with salient issues & impacts</div>
-            <div>svg</div>
-          </div>
-          <div class="flex-container gutter-xxl database-section__margin-l">
-            <div class="heading__span muted fs-18">Specific examples and appropriate indicators illustrate each salient issue is being managed effectively</div>
-            <div>svg</div>
+          <div class="database-canvas__fit">
+            <canvas data-static-path="human-rights"></canvas>
           </div>
         </div>
       </div>
