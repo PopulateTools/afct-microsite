@@ -531,8 +531,7 @@
           `;
 
           renderedTemplate += template;
-        } else 
-        if (isObject(tree[section][subSection])) {
+        } else if (isObject(tree[section][subSection]) && section !== "s_1") {
           renderedTemplate += `
             <section class="database-section">
               <span id="${subSection}" class="database-section__anchor"></span>
@@ -813,7 +812,10 @@
   function getFiltersHTML() {
     return `
       <div class="database-layout__flex">
-        <h4 class="heading__h4">Summary</h4>
+        <h4 class="heading__h4">
+          Summary
+          <a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>
+        </h4>
         ${getFiltersBlock()}
       </div>
     `;
