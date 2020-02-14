@@ -1136,7 +1136,7 @@
     chart.height = columnNames.length * (barThickness + 20);
 
     const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => {
-      const { width = 150 } = chart.getBoundingClientRect()
+      const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
       return width * (2 / 3)
     })
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
