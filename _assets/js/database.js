@@ -538,8 +538,6 @@
 
           renderedTemplate += template;
         } else if (isObject(tree[section][subSection]) && section !== "s_1") {
-          console.log(materialityMatrixURL);
-          
           renderedTemplate += `
             <section class="database-section">
               <span id="${subSection}" class="database-section__anchor"></span>
