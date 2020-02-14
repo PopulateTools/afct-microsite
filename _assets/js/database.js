@@ -929,7 +929,6 @@
         <li class="database-tabcontent__row">
           <div class="database-tabcontent__label">
             <p><span>B.1</span> Employee and workforce matters</p>
-            <p>&nbsp;</p>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
             <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
@@ -963,7 +962,7 @@
             <p><span>C.2</span> Supply Chains Management</p>
             <p><span>C.3</span> Impacts on indigenous and/or local communities rights</p>
             <p><span>C.4</span> Hight risk areas for Civil & Political rights</p>
-            <p><span>C.5</span> Conflict resources (minerals, timber, etc.)</p>
+            <p data-row-type="policies" data-row-type="outcomes"><span>C.5</span> Conflict resources (minerals, timber, etc.)</p>
             <p><span>C.6</span> Data protection / Digital rights</p>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
@@ -995,7 +994,7 @@
         <li class="database-tabcontent__row">
           <div class="database-tabcontent__label">
             <p><span>D.1</span> Anti-corruption</p>
-            <p><span>D.2</span> Whistleblowing channel</p>
+            <p data-row-type="policies" data-row-type="outcomes"><span>D.2</span> Whistleblowing channel</p>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
             <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
@@ -1223,9 +1222,6 @@
     const data = chartData.data.map(a => parseFloat(a[1]));
     const inverseData = data.map(e => MAXVALUE - e + 0.1);
 
-
-    console.log(data);
-    
     let barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 6);
 
@@ -1435,6 +1431,15 @@
 
     filterData(data).forEach(company => {
       Object.keys(GLOBAL_TREE[parent]).forEach(question => {
+        // Exceptions
+        if (
+          (path === "risks.risk" && parent === "s_D" && question === "s_D2") ||
+          (path === "risks.risk" && parent === "s_C" && question === "s_C5") ||
+          (parent === "s_B" && question === "s_B2")
+        ) {
+          return;
+        }
+
         let value = resolve(company[parent][question], path);
 
         // This is a dirty hack, but necessary
