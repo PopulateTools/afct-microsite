@@ -24,11 +24,11 @@ Sustainability reporting is indispensable for companies’ strategic planning as
 
 <strong>Content partners</strong>: Business and Human Rights Resource Centre, CORE Coalition, Future-Fit Foundation, Transparency International, WWF
 
-<strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam, ShareAction and SOMO
+<strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam, ShareAction, SOMO and Climate Disclosure Standards Board
 
 <strong>Academic support provide by</strong>: Cass Business School and Nyenrode Business School
 
-<strong>Organisations involved in consultation rounds:</strong> Climate Disclosure Standards Board, Principles for Responsible Investment, Global Reporting Initiative, European Trade Union Institute, FERN, ActionAid, E3G, Clean Clothes Campaign
+<strong>Organisations involved in consultation rounds:</strong> Principles for Responsible Investment, Global Reporting Initiative, European Trade Union Institute, FERN, ActionAid, E3G, Clean Clothes Campaign
 
 The project has also engaged external experts from business and investor organisations in consultation rounds. These organisations have engaged in the project on a pro-bono basis. Frank Bold and Sustentia take responsibility for any error or inaccuracy in the research and presentation of results.
 
