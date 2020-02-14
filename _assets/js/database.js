@@ -971,12 +971,12 @@
         </li>
         <li class="database-tabcontent__row">
           <div class="database-tabcontent__label">
-            <p><span>C.1</span> General Human Rights Reporting Criteria</p>
-            <p><span>C.2</span> Supply Chains Management</p>
-            <p><span>C.3</span> Impacts on indigenous and/or local communities rights</p>
-            <p><span>C.4</span> Hight risk areas for Civil & Political rights</p>
-            <p data-row-type="policies" data-row-type="outcomes"><span>C.5</span> Conflict resources (minerals, timber, etc.)</p>
-            <p><span>C.6</span> Data protection / Digital rights</p>
+            <p><span></span> General Human Rights Reporting Criteria</p>
+            <p><span>C.1</span> Supply Chains Management</p>
+            <p><span>C.2</span> Impacts on indigenous and/or local communities rights</p>
+            <p><span>C.3</span> Hight risk areas for Civil & Political rights</p>
+            <p data-row-type="policies" data-row-type="outcomes"><span>C.4</span> Conflict resources (minerals, timber, etc.)</p>
+            <p><span>C.5</span> Data protection / Digital rights</p>
           </div>
           <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
             <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
