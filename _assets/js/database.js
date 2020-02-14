@@ -1,5 +1,5 @@
 (function() {
-  const DEBUG = (location.origin === "http://0.0.0.0:4000") || false;
+  const DEBUG = true; //(location.origin === "http://0.0.0.0:4000") || false;
 
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
