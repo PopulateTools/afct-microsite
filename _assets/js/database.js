@@ -292,8 +292,9 @@
         ["Grievance mechanism and its application", 11]
       ],
       opts: {
-        labelWidth: chart => chart.width / 2,
-        maxLength: 60
+        labelWidth: chart => chart.width * 0.6,
+        maxLength: 60,
+        fontSize: 15
       }
     },
     "supply-chain": {
@@ -304,8 +305,9 @@
         ["List of individual ultimate factories was published + List of individual ultimate factories is available for download", 3.7]
       ],
       opts: {
-        labelWidth: chart => chart.width / 2,
-        maxLength: 80
+        labelWidth: chart => chart.width * 0.6,
+        maxLength: 60,
+        fontSize: 15
       }
     }
   }
@@ -778,13 +780,13 @@
       <h4 class="heading__h4">Companies included in the research</h4>
       <div class="database-layout__col-3 gutter-l">
         <div>
-          <span class="database-heading__span-underline">Country</span>
+          <span class="database-heading__span-underline">Country (absolute numbers)</span>
           <div>
             <canvas data-path="company.country_incorporation" data-absolute></canvas>
           </div>
         </div>
         <div>
-          <span class="database-heading__span-underline">Sector</span>
+          <span class="database-heading__span-underline">Sector (absolute numbers)</span>
           <div>
             <canvas data-path="company.sectors" data-absolute></canvas>
           </div>
@@ -1118,6 +1120,7 @@
     chart.height = columnNames.length * (barThickness + 20);
 
     const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => chart.width * (2 / 3))
+    const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
     const opts = {
       type: "horizontalBar",
@@ -1169,6 +1172,10 @@
               stacked: true,
               gridLines: {
                 display: false
+              },
+              ticks: {
+                fontSize: fontSize,
+                fontStyle: 200
               },
               afterFit: scaleInstance => {
                 scaleInstance.width = labelWidth(chart);
