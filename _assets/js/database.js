@@ -3,6 +3,7 @@
 
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
+  let materialityMatrixURL = null;
 
   window.addEventListener("DOMContentLoaded", () => {
     const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : "https://act-export.frankbold.org/dictionary.json";
@@ -28,6 +29,9 @@
         // Load sidebar
         const sidebar = document.querySelector("[data-sidebar]");
         if (sidebar) {
+          // set url for PDF
+          materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
+
           sidebar.innerHTML = loadTOC(tree, dictionary);
   
           const lis = sidebar.querySelectorAll("li");
@@ -215,7 +219,7 @@
   closestPolyfill()
 
   Chart.defaults.global.tooltips = {
-    enabled: false
+    enabled: true
   }
 
   // Chart.defaults.global.defaultFontFamily = 'Avenir Next';
@@ -318,8 +322,6 @@
     sector,
     revenues
   };
-
-  const { value: materialityMatrixURL } = document.querySelector("input[type='hidden'][name='materiality_matrix']")
 
   // Private functions
   function closestPolyfill() {
@@ -532,6 +534,8 @@
 
           renderedTemplate += template;
         } else if (isObject(tree[section][subSection]) && section !== "s_1") {
+          console.log(materialityMatrixURL);
+          
           renderedTemplate += `
             <section class="database-section">
               <span id="${subSection}" class="database-section__anchor"></span>
@@ -1195,6 +1199,19 @@
             }
           ]
         },
+      //   tooltips: {
+      //     callbacks: {
+      //         label: function(tooltipItem, data) {
+      //             var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+      //             if (label) {
+      //                 label += ': ';
+      //             }
+      //             label += Math.round(tooltipItem.yLabel * 100) / 100;
+      //             return label;
+      //         }
+      //     }
+      // },
         plugins: {
           datalabels: {
             anchor: "end",
