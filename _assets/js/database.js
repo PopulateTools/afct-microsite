@@ -1542,7 +1542,7 @@
       const element = [keyTxt, value];
 
       // Has label
-      if (dictionary[`${dictionaryKey}_info`]) {
+      if (dictionary && dictionaryKey && dictionary[`${dictionaryKey}_info`]) {
         const { text } = dictionary[`${dictionaryKey}_info`]
         element.push(text)
       }
