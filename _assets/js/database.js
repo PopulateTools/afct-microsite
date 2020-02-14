@@ -816,7 +816,7 @@
 
   function getFiltersBlock() {
     return `
-      <div class="database-layout__col-3 gutter-xl">
+      <div class="database-layout__col-3 gutter-xl" style="position: relative;">
         <div>
           <select data-filter="sector" id="filter-sector">
           </select>
@@ -828,6 +828,12 @@
         <div>
           <select data-filter="country" id="filter-country">
           </select>
+        </div>
+        <div class="database-filters__info">
+          <i class="fa fa-info-circle"></i>
+          <div class="database-filters__info-text">
+            These filters will enable you to view the results for the option selected across the whole database. Please note that individual drilldowns are also included in each section. For aggregated data, please make sure no sector is selected in the main filter
+          </div>
         </div>
       </div>
     `
