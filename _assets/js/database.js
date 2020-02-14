@@ -417,7 +417,11 @@
       let block = "";
       if (section !== "company") {
         block += a(section, text);
-        block += loadChildrenTOC(tree, section, dictionary)
+
+        if (section !== "s_1") {
+          block += loadChildrenTOC(tree, section, dictionary)
+        }
+
         result += li(block)
       }
     });
