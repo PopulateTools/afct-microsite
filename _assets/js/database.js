@@ -223,7 +223,7 @@
 
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
     "--green"
-  ) || "#ff0000"; // test
+  );
   const activeClass = "active";
   const openClass = "is-open";
 
@@ -292,7 +292,10 @@
         ["Grievance mechanism and its application", 11]
       ],
       opts: {
-        labelWidth: chart => chart.width * 0.6,
+        labelWidth: chart => {
+          const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
+          return width * 0.6
+        },
         maxLength: 60,
         fontSize: 15
       }
@@ -305,7 +308,10 @@
         ["List of individual ultimate factories was published + List of individual ultimate factories is available for download", 3.7]
       ],
       opts: {
-        labelWidth: chart => chart.width * 0.6,
+        labelWidth: chart => {
+          const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
+          return width * 0.6
+        },
         maxLength: 60,
         fontSize: 15
       }
@@ -1431,7 +1437,8 @@
                   display: true
                 },
                 afterFit: scaleInstance => {
-                  scaleInstance.width = chart.width * (2 / 3);
+                  const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
+                  scaleInstance.width = width * (2 / 3);
                 }
               }
             ]
