@@ -1215,7 +1215,9 @@
                 fontStyle: 200
               },
               afterFit: scaleInstance => {
-                scaleInstance.width = labelWidth(chart);
+                console.log(labelWidth(chart));
+                
+                scaleInstance.width = labelWidth(chart) || 150;
               }
             }
           ]
