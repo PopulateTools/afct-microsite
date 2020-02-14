@@ -196,6 +196,10 @@
                 target.classList.add(activeClass);
 
                 rowTypes.forEach(element => {
+                  element.style.display = "none";
+                });
+
+                rowTypes.forEach(element => {
                   if (element.dataset.rowType === selectedRowType) {
                     element.style.display = "";
 
@@ -203,8 +207,6 @@
                     if (charts.length) {
                       renderCharts(charts, data);
                     }
-                  } else {
-                    element.style.display = "none";
                   }
                 });
               });
@@ -494,6 +496,10 @@
           target.classList.add(activeClass);
 
           rowTypes.forEach(element => {
+            element.style.display = "none";
+          });
+
+          rowTypes.forEach(element => {
             if (element.dataset.rowType === selectedRowType) {
               element.style.display = "";
 
@@ -501,8 +507,6 @@
               if (charts.length) {
                 renderCharts(charts, data, dictionary);
               }
-            } else {
-              element.style.display = "none";
             }
           });
         });
