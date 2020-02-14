@@ -1434,7 +1434,7 @@
         // Exceptions
         if (
           (path === "risks.risk" && parent === "s_D" && question === "s_D2") ||
-          (path === "risks.risk" && parent === "s_C" && question === "s_C5") ||
+          (path === "risks.risk" && parent === "s_C" && question === "s_C4") ||
           (parent === "s_B" && question === "s_B2")
         ) {
           return;
