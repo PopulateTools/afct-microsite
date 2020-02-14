@@ -1135,7 +1135,10 @@
     const barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 20);
 
-    const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => chart.width * (2 / 3))
+    const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => {
+      const { width = 150 } = chart.getBoundingClientRect()
+      return width * (2 / 3)
+    })
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
     let tooltipConf = {
@@ -1215,9 +1218,7 @@
                 fontStyle: 200
               },
               afterFit: scaleInstance => {
-                console.log(labelWidth(chart));
-                
-                scaleInstance.width = labelWidth(chart) || 150;
+                scaleInstance.width = labelWidth(chart);
               }
             }
           ]
