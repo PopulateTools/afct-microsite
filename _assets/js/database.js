@@ -1221,7 +1221,7 @@
                 fontSize: fontSize,
                 fontStyle: 200
               },
-              afterFit: scaleInstance => {
+              beforeFit: scaleInstance => {
                 scaleInstance.width = labelWidth(chart);
               }
             }
