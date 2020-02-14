@@ -764,12 +764,12 @@
   function renderGeneralSection() {
     return `
       <section class="database-section database-canvas__fit">
+        <span id="general" class="database-section__anchor"></span>
         ${getFiltersHTML()}
         ${getTabLinksHTML()}
         ${getTabContentHTML()}
       </section>
       <section id="general_results-companies-per" class="database-section database-canvas__fit">
-        <span id="general" class="database-section__anchor"></span>
         ${getCompaniesPerHTML()}
       </section>
     `;
@@ -1223,6 +1223,9 @@
     const data = chartData.data.map(a => parseFloat(a[1]));
     const inverseData = data.map(e => MAXVALUE - e + 0.1);
 
+
+    console.log(data);
+    
     let barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 6);
 
