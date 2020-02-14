@@ -208,6 +208,13 @@
   }
 }
 
+.database-heading__h1-link {
+  display: block;
+  color: $cBlue;
+  font-size: $fsSmall;
+  font-weight: 200;
+}
+
 /* Tabs */
 .database-tabs {
   border-bottom: 1px solid $cBlue;

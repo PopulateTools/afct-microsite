@@ -319,6 +319,8 @@
     revenues
   };
 
+  const { value: materialityMatrixURL } = document.querySelector("input[type='hidden'][name='materiality_matrix']")
+
   // Private functions
   function closestPolyfill() {
     if (!Element.prototype.matches) {
@@ -534,7 +536,10 @@
           renderedTemplate += `
             <section class="database-section">
               <span id="${subSection}" class="database-section__anchor"></span>
-              <h1 class="heading__h1 with-decorator">${sectionText}</h1>
+              <h1 class="heading__h1 with-decorator">
+                ${sectionText}
+                <a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>
+              </h1>
               ${block}
             </section>
           `;
