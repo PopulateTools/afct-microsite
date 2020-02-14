@@ -218,10 +218,6 @@
 
   closestPolyfill()
 
-  Chart.defaults.global.tooltips = {
-    enabled: false
-  }
-
   // Chart.defaults.global.defaultFontFamily = 'Avenir Next';
   Chart.defaults.global.defaultFontSize = 11;
 
@@ -1140,6 +1136,27 @@
     const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => chart.width * (2 / 3))
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
+    let tooltipConf = {
+      enabled: false
+    };
+    if (chartData.data.some(d => d.length > 2)) {
+      tooltipConf = {
+        enabled: true,
+        position: "nearest",
+        mode: "nearest",
+        intersect: true,
+        callbacks: {
+          title: (data) => {
+            const [element] = data;
+            const { label: id } = element;
+            const [, , text] = chartData.data.find(arr => arr[0] === id);
+            return wrap(text, maxLength * 1.4, false);
+          },
+          label: () => null
+        }
+      };
+    }
+
     const opts = {
       type: "horizontalBar",
       data: {
@@ -1201,19 +1218,7 @@
             }
           ]
         },
-      //   tooltips: {
-      //     callbacks: {
-      //         label: function(tooltipItem, data) {
-      //             var label = data.datasets[tooltipItem.datasetIndex].label || '';
-
-      //             if (label) {
-      //                 label += ': ';
-      //             }
-      //             label += Math.round(tooltipItem.yLabel * 100) / 100;
-      //             return label;
-      //         }
-      //     }
-      // },
+        tooltips: tooltipConf,
         plugins: {
           datalabels: {
             anchor: "end",
@@ -1533,10 +1538,16 @@
 
       const { absolute: isAbsolute = false } = options
       const value = isAbsolute ? data[key] : percentage(data[key], isObject(total) ? total[key] : total)
-      return [
-        keyTxt,
-        value
-      ];
+
+      const element = [keyTxt, value];
+
+      // Has label
+      if (dictionary[`${dictionaryKey}_info`]) {
+        const { text } = dictionary[`${dictionaryKey}_info`]
+        element.push(text)
+      }
+
+      return element;
     });
     if (options.sort) {
       result = result.sort((b, a) => a[1] - b[1]);
@@ -1639,7 +1650,7 @@
     return Object.prototype.toString.call(x) === "[object String]";
   }
 
-  function wrap(str, limit) {
+  function wrap(str, limit, ellipsis = true) {
     if (str.length <= limit) {
       return str;
     }
@@ -1653,7 +1664,7 @@
       if (join.length > limit) {
         aux.push(concat.join(" "));
         concat = [words[i]];
-        if (aux.length === 3) {
+        if (aux.length === 3 && ellipsis) {
           if (i < words.length - 1) {
             aux[2] = aux[2] + "...";
           }
