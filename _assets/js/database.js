@@ -1271,6 +1271,7 @@
 
     let barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 6);
+    chart.width = chart.getBoundingClientRect().width
 
     let opts = {
       type: "horizontalBar",
@@ -1384,6 +1385,7 @@
 
       const barThickness = options.barThickness || 20;
       chart.height = columnNames.length * (barThickness + 8);
+      chart.width = chart.getBoundingClientRect().width
 
       const opts = {
         type: "horizontalBar",
