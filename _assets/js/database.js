@@ -219,7 +219,7 @@
   closestPolyfill()
 
   Chart.defaults.global.tooltips = {
-    enabled: true
+    enabled: false
   }
 
   // Chart.defaults.global.defaultFontFamily = 'Avenir Next';
