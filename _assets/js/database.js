@@ -1138,7 +1138,7 @@
 
     const barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 20);
-    chart.width = chart.getAttribute("width") ? chart.getAttribute("width") : chart.getBoundingClientRect().width
+    chart.width = chart.getBoundingClientRect().width
 
     const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => {
       const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
@@ -1271,9 +1271,7 @@
 
     let barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 6);
-
-    const attrWidth = chart.getAttribute("width")
-    chart.width = attrWidth && attrWidth > 0 ? attrWidth : chart.getBoundingClientRect().width
+    chart.width = chart.getBoundingClientRect().width
 
     let opts = {
       type: "horizontalBar",
@@ -1387,7 +1385,7 @@
 
       const barThickness = options.barThickness || 20;
       chart.height = columnNames.length * (barThickness + 8);
-      chart.width = chart.getAttribute("width") ? chart.getAttribute("width") : chart.getBoundingClientRect().width
+      chart.width = chart.getBoundingClientRect().width
 
       const opts = {
         type: "horizontalBar",
