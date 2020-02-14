@@ -220,7 +220,6 @@
 
   // Chart.defaults.global.defaultFontFamily = 'Avenir Next';
   Chart.defaults.global.defaultFontSize = 11;
-  Chart.defaults.global.animation.duration = 0
   Chart.defaults.global.tooltips.enabled = false
 
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
