@@ -33,3 +33,9 @@ $fsSmall: 13px;
 // Breakpoints
 $wMobile: 39.9375em;
 $wDesktop: 74.9375em;
+
+:root {
+  --red: #{$cRed};
+  --green: #{$cGreen};
+  --blue: #{$cBlue};
+}

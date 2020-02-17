@@ -3,36 +3,46 @@ title: About
 layout: page
 ---
 
+<h1>About</h1>
+
 <div class="aside">
-  <a class="twitter-timeline" data-height="800" data-dnt="true" href="https://twitter.com/EUCorpReporting?ref_src=twsrc%5Etfw">Tweets by EUCorpReporting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/EUCorpReporting?ref_src=twsrc%5Etfw">Tweets by EUCorpReporting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-This three-year research project brings together leading civil society organisations and experts with the aim of analysing the corporate disclosure on sustainability issues by the 1000 largest companies operating in the EU and providing evidence-based recommendations for legislative changes.
+The Alliance for Corporate Transparency brought together leading civil society organisations and experts to carry out the largest study on corporate sustainability reporting to date. The objective of the project is to provide evidence-based recommendations to improve and develop the EU Non-Financial Reporting Directive (NFRD). 
 
-The project is framed within the EU Non-Financial Reporting Directive, which came into effect in 2018 and requires large companies and financial corporations to disclose information necessary for understanding their impacts on society and environment. The Directive is a first step in the good direction but failed to specify what concrete information must be disclosed. This severely undermines the legislation’s objective to increase the relevance, consistency and comparability of corporate sustainability data, which is crucial for investors to help inform their decisions as well as for civil society and public authorities to assess and monitor corporate responsibility.
+Since 2018, large companies and financial corporations are required to disclose information necessary for understanding their societal and environmental risks and impacts. The NFRD failed to specify what concrete information must be disclosed, severely undermining the legislation’s objective to increase the relevance, consistency and comparability of corporate sustainability data. 
 
-To fill this gap, the project draws from EU law, international standards and leading reporting frameworks in order to determine what information is commonly understood to be essential and material for each industrial sector. <a href="{% asset '{{ site.url_report2018_pdf }}' @path %}">More details concerning the methodology of the project are available here (PDF, 10MB)</a>.
+Sustainability reporting is indispensable for companies’ strategic planning as well as to support the implementation of the sustainable finance agenda in the EU, as investors and financial actors need high quality and comparable data to inform their decisions and engagement with companies. Similarly, civil society and public authorities need access to this information to assess and monitor compliance and corporate responsibility. 
 
-<h3>Partners</h3>
+<img src="{% asset posts/2001-diagram @path %}" alt="">
+
+
+<h3>Governance</h3>
 
 <strong>Project coordinator</strong>: Frank Bold  //  <strong>Technical partner</strong>: Sustentia
 
 <strong>Content partners</strong>: Business and Human Rights Resource Centre, CORE Coalition, Future-Fit Foundation, Transparency International, WWF
 
-<strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam, ShareAction and SOMO
+<strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam, ShareAction, SOMO and Climate Disclosure Standards Board
 
-<strong>Funders</strong>: Future Provident Foundation, Sigrid Rausing Trust, Charles leopold mayer foundation, Wallace Global Fund
+<strong>Academic support provide by</strong>: Cass Business School and Nyenrode Business School
 
-<strong>Test partners</strong>: NovoNordisk, Repsol, SAP, Vodafone
+<strong>Organisations involved in consultation rounds:</strong> Principles for Responsible Investment, Global Reporting Initiative, European Trade Union Institute, FERN, ActionAid, E3G, Clean Clothes Campaign
 
-<strong>Academic support</strong> provided by Cass Business School
+The project has also engaged external experts from business and investor organisations in consultation rounds. These organisations have engaged in the project on a pro-bono basis. Frank Bold and Sustentia take responsibility for any error or inaccuracy in the research and presentation of results.
 
-<strong>Governance</strong>: The project coordinator and technical partner led the overall development of the project including a) Alliance set up, b) elaboration of the research methodology c) analysis of corporate reports and d) communication and outreach strategy.
 
-Content and advisory partners have provided strategic input throughout the project and contributed to the design of the research methodology and key communication activities. These organisations have engaged in the project on a pro-bono basis. Frank Bold and Sustentia take responsibility for any error or inaccuracy in the research and presentation of results.
+<strong>Test partners</strong>: They engaged in constructive discussions concerning the assessment criteria and the initial tests performed in the first round of research - this collaboration was carried out completely pro-bono.
 
-Test partners engaged in constructive discussions concerning the assessment criteria and the initial tests performed on their corporate reports - this collaboration has been carried out completely pro-bono. Project content partners have veto power on strategic decisions and final results. Similarly, we have also engaged external experts from business and investor organisations in a consultation round hosted in Q3 2018.
+<strong>Funders</strong>: Friends Provident Foundation, Joseph Rowntree Charitable Trust, Sigrid Rausing Trust, Charles Leopold Mayer Foundation, Wallace Global Fund, Laudes Foundation
+
+This project is part of the European Climate Initiative (EUKI) of the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMU).
+
+<img src="{% asset logos/logo-EUKI @path %}" style="max-width: 600px" alt="">
 
 <strong>Contact</strong>: For any queries, please contact Susanna Arus, Project Coordinator at <a href="mailto:susanna.arus@frankbold.org">susanna.arus@frankbold.org</a>
 
 <strong>Newsletter:</strong> You can register for our <a class="link" href="http://eepurl.com/dJPBjQ">newsletter here</a> to receive updates on the project.
+
+

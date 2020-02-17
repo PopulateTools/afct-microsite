@@ -25,19 +25,28 @@ collections:
   pages:
     permalink: /pages/:path.html
     output: true
-
+  database:
+    output: true
+    permalink: /database
 
 # Analytics
 ga_id:
 inspectlet_id:
 
-# report URLS
+# report URLS 2018
 url_report2018: /report-2018/
 url_report2018_pdf: 2018_Research_Report_Alliance_Corporate_Transparency.pdf
 companies_all: 105
 companies_energy: 38
 companies_health: 33
 companies_ict: 34
+
+# report URLS 2019
+url_report2019: /database/
+url_report2019_pdf: "#PENDING"
+
+url_materiality_matrix: 2019_Materiality-matrix.pdf
+url_newsletter: http://eepurl.com/dJPBjQ
 
 # Social handlers
 twitter_url: https://twitter.com/

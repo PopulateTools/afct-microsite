@@ -4,13 +4,8 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: "Avenir Next";
-}
-
-body {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
+  font-family: "Avenir Next", sans-serif;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -32,9 +27,17 @@ main {
   margin: auto;
 }
 
+@include screen(1250) {
+  .column-full {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
 .content-page {
-  padding: 6em 0;
-  ul {
+  padding: 2em 0;
+  ul, ol {
+    margin-bottom: 2em;
     li {
       margin: 0 0 1em 0;
     }
@@ -60,19 +63,18 @@ main {
 }
 
 section.intro-hero {
+  padding: 1.5em 0;
   position: relative;
-  background-image: asset_url('bg-0-home');
-  background-size: cover;
+  background-color: $cBlue;
   color: #FFF;
-  text-align: center;
-  font-size: $fsXLarge;
-  font-weight: 600;
-  line-height: 36px;
-  clip-path: polygon(0px 0px, 100% 0px, 100% 97%, 0% 100%);
-  @include screen(740) {
-    font-size: $fsMedium;
-    line-height: 24px;
+  text-align: left;
+  font-size: $fsMedium;
+
+  @include screen(1250) {
+    padding-left: 1em;
+    padding-right: 1em;
   }
+
   p {
     margin: 0;
   }
@@ -81,8 +83,6 @@ section.intro-hero {
 .clipped-diag-top-bottom {
   clip-path: polygon(0 3%, 100% 0px, 100% 97%, 0% 100%);
 }
-
-section.initial-results {}
 
 section.color-negative {
   background: $cLink;
@@ -163,33 +163,6 @@ a {
   color: $cLink;
 }
 
-.button,
-a.button {
-  background: $cLinkSecondary;
-  padding: 1em 2em;
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  color: #FFF;
-  transition: background-color 0.2s ease;
-}
-
-.button:hover,
-a.button:hover {
-  background: darken($cLinkSecondary, 10%);
-}
-
-.button.button-negative {
-  background: #FFF;
-  border: 1px solid $cLinkSecondary;
-  color: $cLinkSecondary;
-}
-
-.button.button-negative:hover {
-  color: #FFF;
-}
-
 .content-page {
   color: $cLink;
   font-size: 1.15em;
@@ -208,7 +181,7 @@ a.button:hover {
     border-spacing: 0;
   }
   th {
-    width: 35%;
+    width: 33%;
     padding-right: 10%;
     font-size: 1.25em;
     vertical-align: top;
@@ -217,5 +190,14 @@ a.button:hover {
   }
   td {
     padding-bottom: 3em;
+  }
+
+  table.time-line {
+    th {
+      width: 15%;
+    }
+    th.month {
+      width: 30%;
+    }
   }
 }

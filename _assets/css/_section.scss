@@ -1,17 +1,8 @@
-section:nth-child(even) {
-  // background-image: linear-gradient(-224deg, rgba(#003548, .1) 0%, rgba(#77D3FF, .1) 100%);
-}
-
 section {
   padding: 4em 1em;
 }
 
 .section {
-
-  // > * {
-  //   padding: 5%;
-  // }
-
   h2 {
     text-transform: uppercase;
     margin: 0 0 0.75rem;
@@ -25,7 +16,7 @@ section {
       position: absolute;
       width: 11px;
       height: 110px;
-      background-color: #548BA7;
+      background-color: #548ba7;
       left: -32px;
     }
   }
@@ -35,11 +26,9 @@ section {
     margin-bottom: 100px;
 
     .link {
-      color: #5F96B0;
+      color: #5f96b0;
     }
   }
-
-
 
   .section-form {
     display: flex;
@@ -59,8 +48,8 @@ section {
   }
 
   input[type="text"] {
-    background-color: #EBF1F4;
-    border: 1px solid #548BA7;
+    background-color: #ebf1f4;
+    border: 1px solid #548ba7;
     border-radius: 3px;
     height: 50px;
     width: 380px;
@@ -75,12 +64,12 @@ section {
 
   input[type="checkbox"] {
     font-size: 16px;
-    opacity: .9;
+    opacity: 0.9;
     margin-top: 12px;
   }
 
   button {
-    background: #548BA7;
+    background: #548ba7;
     border-radius: 3px;
     height: 50px;
     width: 150px;
@@ -94,31 +83,17 @@ section {
       width: 100%;
     }
   }
-
-
 }
 
 section.partners {
-
   ul {
     list-style-type: none;
     font-size: 18px;
-    margin-left: 5%;
   }
 
   li {
     position: relative;
-    color: rgba(0,0,0,.6);
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 5px;
-      background-color: #548BA7;
-      left: calc(-5% - 40px);
-      top: 8px;
-    }
+    color: rgba(0, 0, 0, 0.6);
 
     &:not(:last-child) {
       margin-bottom: 5rem;
@@ -128,6 +103,7 @@ section.partners {
   .section-wrap {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
 
     li {
       flex-basis: 33%;
@@ -137,16 +113,36 @@ section.partners {
       }
 
       .partner {
-        background: #FFFFFF;
-        border: 1px solid #EFEFEF;
-        box-shadow: 0 0 23px 0 rgba(0,0,0,0.15);
+        background: #ffffff;
+        border: 1px solid #efefef;
+        box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.15);
         max-width: 70%;
+        position: relative;
+        margin-left: 50px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 5px;
+          background-color: #548ba7;
+          left: -50px;
+          top: 8px;
+        }
 
         img {
           width: 100%;
         }
       }
     }
-  }
 
+    &__span {
+      @extend %heading__span;
+
+      font-size: 16px;
+      color: $cMutedText;
+      margin: 0 0 2rem;
+      display: block;
+    }
+  }
 }

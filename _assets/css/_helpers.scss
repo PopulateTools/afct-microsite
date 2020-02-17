@@ -18,6 +18,58 @@ $units: 1px !default;
  }
 }
 
+$sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
+
+@mixin gutters() {
+  @each $name, $size in $sizes {
+    &.gutter-#{$name} > *:not(:first-child) {
+      margin-left: $size;
+    }
+  }
+}
+
+@mixin grid($columns: 3) {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(100% / #{$columns});
+    max-width: calc(100% / #{$columns});
+  }
+
+  @each $name, $size in $sizes {
+    &.gutter-#{$name} {
+      margin: calc((-1 * #{$size}) / 2);
+
+      > * {
+        padding: calc(#{$size} / 2);
+      }
+    }
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -27,8 +79,30 @@ $units: 1px !default;
     flex-direction: column;
   }
 
-  > * {
+  @include gutters();
+
+  &:not(.no-expand) > * {
     flex: 1;
+  }
+
+  &.start {
+    justify-content: flex-start;
+  }
+
+  &.left {
+    align-items: flex-start;
+  }
+
+  &.right {
+    align-items: flex-end;
+  }
+
+  &.stretch {
+    align-items: stretch;
+  }
+
+  &.column {
+    flex-direction: column;
   }
 }
 
@@ -48,4 +122,8 @@ $units: 1px !default;
   @include screen($wMobile) {
     margin-top: auto;
   }
+}
+
+.aspect-ratio-16-9 {
+  @include aspect-ratio(16, 9)
 }

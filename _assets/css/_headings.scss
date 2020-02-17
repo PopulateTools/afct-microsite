@@ -1,0 +1,94 @@
+%heading__h1,
+.heading__h1 {
+  margin: 0 0 2rem;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  color: $cLink;
+
+  &.with-decorator {
+    position: relative;
+    padding-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      top: 0;
+      background-color: $cDecorator;
+    }
+  }
+}
+
+%heading__h2,
+.heading__h2 {
+  margin: 0 0 2rem;
+  font-weight: 900;
+  font-size: $fsXLarge;
+  font-style: normal;
+  color: $cLink;
+
+  &.with-decorator {
+    position: relative;
+    padding-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      top: 0;
+      background-color: $cBlue;
+      opacity: 0.1;
+    }
+  }
+}
+
+%heading__h4,
+.heading__h4 {
+  margin: 0 0 1rem;
+  font-weight: 900;
+  font-size: $fsBig;
+  font-style: normal;
+  color: $cLink;
+}
+
+%heading__h6,
+.heading__h6 {
+  margin: 0 0 .5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  font-style: normal;
+  color: $cLink;
+}
+
+%heading__span,
+.heading__span {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  font-family: 'Avenir Next', sans-serif;
+
+  &.fs-16 {
+    font-size: 16px;
+  }
+
+  &.fs-18 {
+    font-size: 18px;
+  }
+
+  &.link {
+    color: $cLink;
+  }
+
+  &.muted {
+    color: $cMutedText;
+  }
+}
+
+.heading__hero {
+  @extend %heading__h1;
+
+  font-size: 48px;
+}

@@ -59,7 +59,7 @@
       small {
         padding: 0 0 0 10px;
         margin: 0;
-        font-family: 'Avenir Next';
+        font-family: 'Avenir Next', sans-serif;
         font-weight: 600;
         opacity: .5;
       }
@@ -109,12 +109,12 @@
   }
 
   .avenir {
-    font-family: 'Avenir Next';
+    font-family: 'Avenir Next', sans-serif;
     font-weight: 400;
   }
 
   .subtitle {
-    font-family: 'Avenir Next';
+    font-family: 'Avenir Next', sans-serif;
     font-weight: 400;
     color: $cMutedText;
     margin-bottom: -20px;
