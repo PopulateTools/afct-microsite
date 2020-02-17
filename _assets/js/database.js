@@ -26,11 +26,13 @@
 
         GLOBAL_TREE = tree
 
+        // set url for PDF
+        materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
+        
         // Load sidebar
         const sidebar = document.querySelector("[data-sidebar]");
         if (sidebar) {
-          // set url for PDF
-          materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
+          
 
           sidebar.innerHTML = loadTOC(tree, dictionary);
   
