@@ -27,7 +27,7 @@ collections:
     output: true
   database:
     output: true
-    permalink: /database
+    permalink: /database/
 
 # Analytics
 ga_id:
