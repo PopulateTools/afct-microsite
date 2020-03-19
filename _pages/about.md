@@ -24,7 +24,7 @@ Sustainability reporting is indispensable for companies’ strategic planning as
 
 <strong>Content partners</strong>: Business and Human Rights Resource Centre, CORE Coalition, Future-Fit Foundation, Transparency International, WWF
 
-<strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam, ShareAction, SOMO and Climate Disclosure Standards Board
+<strong>Advisory Group</strong>: ClientEarth, CDP Europe, Germanwatch, Shift Project, Stockholm Environment Institute, Themis Research, Oxfam, ShareAction, SOMO and Climate Disclosure Standards Board and Global Witness.
 
 <strong>Academic support provide by</strong>: Cass Business School and Nyenrode Business School
 
