@@ -24,7 +24,7 @@ You can find the summary of discussions, as well as the programme and list of re
 <!-- INTEGRATE WIDGET 4 PLAYLIST https://www.youtube.com/watch?v=kzwY10TkFmQ&list=PLwkylO8KA7t6n0mG8DwomVNETuQz4eZQi&index=1 -->
 
 <div class="aspect-ratio-16-9" style="flex-shrink: 1">
-  <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/videoseries?list=PLwkylO8KA7t6k731Efoea7KKbdQcZQOMb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/videoseries?list=PLwkylO8KA7t6n0mG8DwomVNETuQz4eZQi" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 The launch of the research has been covered by [Reuters](https://www.reuters.com/article/us-climate-change-europe-companies-data/sustainability-disclosures-by-european-companies-generally-poor-study-idUSKBN20B0CJ), [AlJazeera](https://www.aljazeera.com/ajimpact/eu-firms-fall-short-environmental-social-impact-data-200214210813382.html), [Business Insider](https://www.businessinsider.com/sustainability-disclosures-by-european-companies-generally-poor-study-2020-2?r=US&IR=T), [Responsible Investor](https://www.responsible-investor.com/articles/Widespread-failure-of-EU-firms-on-human-rights-tax-biodiversity-and-climate-disclosuresays-study) among others and included in [Politico](https://www.politico.com/news/2020/02/21/is-jeff-bezos-part-of-the-climate-solution-or-the-problem-116535)'s Global Translations. All media and policy impacts of the project’s research can be consulted [here](/news/media-coverage.html). 
