@@ -322,7 +322,8 @@
     }
   }
 
-  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters')) || {}
+  const path = location.pathname.replace(/\//g,'')
+  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem(`filters-${path}`)) || {}
   const filters = {
     country,
     sector,
@@ -1085,11 +1086,16 @@
       opts.barThickness = Number(dataset.barThickness)
     }
 
+    let filter = true
+    if (dataset.excludeFilter !== undefined) {
+      filter = false
+    }
+
     if (element.dataset.type === "summary") {
       return loadSummaryChart(
         element,
         summaryChartData(
-          filterData(data),
+          filter ? filterData(data) : data,
           dataset.path,
           dataset.parent,
           dataset.option
@@ -1100,7 +1106,7 @@
       return loadHorizontalChart(
         element,
         summarizeDataFromPath(
-          filterData(data),
+          filter ? filterData(data) : data,
           dataset.path,
           dataset.dictionary,
           dictionary,
@@ -1815,7 +1821,7 @@
     option.value = "";
     element.appendChild(option);
 
-    const storedFilters = localStorage.getItem('filters')
+    const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
       const { country } = JSON.parse(storedFilters)
       filters.country = country
@@ -1841,7 +1847,7 @@
     option.value = "";
     element.appendChild(option);
 
-    const storedFilters = localStorage.getItem('filters')
+    const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
       const { sector } = JSON.parse(storedFilters)
       filters.sector = sector
@@ -1867,7 +1873,7 @@
     option.value = "";
     element.appendChild(option);
 
-    const storedFilters = localStorage.getItem('filters')
+    const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
       const { revenues } = JSON.parse(storedFilters)
       filters.revenues = revenues
@@ -1982,7 +1988,7 @@
       filters[filterType] = selected;
     }
 
-    localStorage.setItem('filters', JSON.stringify(filters))
+    localStorage.setItem(`filters-${path}`, JSON.stringify(filters))
 
     callback();
     return true;
