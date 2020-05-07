@@ -322,7 +322,8 @@
     }
   }
 
-  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem('filters')) || {}
+  const path = location.pathname.replace(/\//g,'')
+  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem(`filters-${path}`)) || {}
   const filters = {
     country,
     sector,
@@ -1815,7 +1816,7 @@
     option.value = "";
     element.appendChild(option);
 
-    const storedFilters = localStorage.getItem('filters')
+    const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
       const { country } = JSON.parse(storedFilters)
       filters.country = country
@@ -1841,7 +1842,7 @@
     option.value = "";
     element.appendChild(option);
 
-    const storedFilters = localStorage.getItem('filters')
+    const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
       const { sector } = JSON.parse(storedFilters)
       filters.sector = sector
@@ -1867,7 +1868,7 @@
     option.value = "";
     element.appendChild(option);
 
-    const storedFilters = localStorage.getItem('filters')
+    const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
       const { revenues } = JSON.parse(storedFilters)
       filters.revenues = revenues
@@ -1982,7 +1983,7 @@
       filters[filterType] = selected;
     }
 
-    localStorage.setItem('filters', JSON.stringify(filters))
+    localStorage.setItem(`filters-${path}`, JSON.stringify(filters))
 
     callback();
     return true;
