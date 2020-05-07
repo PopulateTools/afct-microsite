@@ -1086,11 +1086,16 @@
       opts.barThickness = Number(dataset.barThickness)
     }
 
+    let filter = true
+    if (dataset.excludeFilter !== undefined) {
+      filter = false
+    }
+
     if (element.dataset.type === "summary") {
       return loadSummaryChart(
         element,
         summaryChartData(
-          filterData(data),
+          filter ? filterData(data) : data,
           dataset.path,
           dataset.parent,
           dataset.option
@@ -1101,7 +1106,7 @@
       return loadHorizontalChart(
         element,
         summarizeDataFromPath(
-          filterData(data),
+          filter ? filterData(data) : data,
           dataset.path,
           dataset.dictionary,
           dictionary,
