@@ -1,13 +1,16 @@
 (function() {
-  const DEBUG = true; //(location.origin === "http://0.0.0.0:4000") || false;
+  const DEBUG = false;(location.origin === "http://0.0.0.0:4000") || false;
 
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
   let materialityMatrixURL = null;
 
+  let [, reportYear] = location.pathname.match(/\/database\/(.*).html/)
+  reportYear = reportYear === '2020' ? '2020' : ''
+
   window.addEventListener("DOMContentLoaded", () => {
-    const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : "https://act-export.frankbold.org/dictionary.json";
-    const reportsUrl = DEBUG ? "../static_data/mock_reports.json" : "https://act-export.frankbold.org/reports.json";
+    const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : `https://act-export.frankbold.org/dictionary${reportYear}.json`;
+    const reportsUrl = DEBUG ? "../static_data/mock_reports.json" : `https://act-export.frankbold.org/reports${reportYear}.json`;
 
     const spinner = document.querySelector("[data-spinner]")
 
@@ -32,7 +35,6 @@
         // Load sidebar
         const sidebar = document.querySelector("[data-sidebar]");
         if (sidebar) {
-          
 
           sidebar.innerHTML = loadTOC(tree, dictionary);
   
@@ -383,28 +385,30 @@
 
     let tree = deepmerge.all(part);
 
-    // let tree = deepmerge.all(data)
-
-
     // section C keys are not sorted, we need to sort them
     // in the final tree
-    let sectionC = {};
-    Object.keys(tree["s_C"])
-      .sort()
-      .forEach(key => {
-        sectionC[key] = tree["s_C"][key];
-      });
-    tree["s_C"] = sectionC;
+    if (tree.hasOwnProperty("s_C")) {
+      let sectionC = {};
+      Object.keys(tree["s_C"])
+        .sort()
+        .forEach(key => {
+          sectionC[key] = tree["s_C"][key];
+        });
+      tree["s_C"] = sectionC;
+    }
 
     // section E keys are not sorted, we need to sort them
     // in the final tree
-    let sectionEProducts = {};
-    Object.keys(tree["s_E"]["s_E_products"])
-      .sort()
-      .forEach(key => {
-        sectionEProducts[key] = tree["s_E"]["s_E_products"][key];
-      });
-    tree["s_E"]["s_E_products"] = sectionEProducts;
+    if (tree.hasOwnProperty("s_E") && tree["s_E"].hasOwnProperty("s_E_products")) {
+      let sectionEProducts = {};
+      Object.keys(tree["s_E"]["s_E_products"])
+        .sort()
+        .forEach(key => {
+          sectionEProducts[key] = tree["s_E"]["s_E_products"][key];
+        });
+      tree["s_E"]["s_E_products"] = sectionEProducts;
+    }
+
     return tree;
   }
 
@@ -1492,40 +1496,44 @@
     let total = {};
 
     filterData(data).forEach(company => {
-      Object.keys(GLOBAL_TREE[parent]).forEach(question => {
-        // Exceptions
-        if (
-          (path === "risks.risk" && parent === "s_D" && question === "s_D2") ||
-          (path === "risks.risk" && parent === "s_C" && question === "s_C4") ||
-          (parent === "s_B" && question === "s_B2")
-        ) {
-          return;
-        }
+      const element = GLOBAL_TREE[parent];
 
-        let value = resolve(company[parent][question], path);
-
-        // This is a dirty hack, but necessary
-        // Sometimes the path of a question has the suffix 2 or 3
-        // Example: policies.policy, policies.policy2 and policies.policy3
-        if (value === undefined || value === null) {
-          value = resolve(company[parent][question], path + "2");
-        }
-        if (value === undefined || value === null) {
-          value = resolve(company[parent][question], path + "3");
-        }
-        if (result[question] === undefined) {
-          result[question] = 0;
-        }
-        if (total[question] === undefined) {
-          total[question] = 0;
-        }
-        if (String(value) === String(option)) {
-          result[question]++;
-        }
-
-        // Only count the total if the value is present
-        total[question]++;
-      });
+      if (element) {
+        Object.keys(element).forEach(question => {
+          // Exceptions
+          if (
+            (path === "risks.risk" && parent === "s_D" && question === "s_D2") ||
+            (path === "risks.risk" && parent === "s_C" && question === "s_C4") ||
+            (parent === "s_B" && question === "s_B2")
+          ) {
+            return;
+          }
+  
+          let value = resolve(company[parent][question], path);
+  
+          // This is a dirty hack, but necessary
+          // Sometimes the path of a question has the suffix 2 or 3
+          // Example: policies.policy, policies.policy2 and policies.policy3
+          if (value === undefined || value === null) {
+            value = resolve(company[parent][question], path + "2");
+          }
+          if (value === undefined || value === null) {
+            value = resolve(company[parent][question], path + "3");
+          }
+          if (result[question] === undefined) {
+            result[question] = 0;
+          }
+          if (total[question] === undefined) {
+            total[question] = 0;
+          }
+          if (String(value) === String(option)) {
+            result[question]++;
+          }
+  
+          // Only count the total if the value is present
+          total[question]++;
+        });
+      }
     });
 
     return {
