@@ -1,0 +1,459 @@
+{
+    "issue_addressed": {
+        "text": "Issue addressed",
+        "1": "Yes",
+        "2": "No",
+        "null": "no value"
+    },
+    "issue_not_addressed": {
+        "text": "If not addressed",
+        "1": "Argues a lack of risks",
+        "2": "Different explanation",
+        "3": "No explanation",
+        "null": "no value"
+    },
+    "qoi": {
+        "text": "Quality of the information",
+        "1": "No information provided",
+        "2": "Isolated examples \/ Qualitative description",
+        "3": "KPI aggregated",
+        "4": "KPI disaggregated for country"
+    },
+    "qoi2": {
+        "text": "Scope of the information",
+        "1": "No information provided",
+        "2": "Isolated examples \/ Qualitative description",
+        "3": "KPI aggregated",
+        "4": "KPI disaggregated for country"
+    },
+    "kpi_c": {
+        "text": "KPI disaggregated for country?",
+        "0": "no",
+        "1": "yes"
+    },
+    "quality": {
+        "text": "Quality of the information",
+        "1": "Not explicity addressed",
+        "2": "General commitment is expressed",
+        "3": "Specific policies and procedures are described"
+    },
+    "risk": {
+        "text": "Statement of risks",
+        "1": "No risks identified",
+        "2": "Vague risks identification",
+        "3": "Description of specific risks"
+    },
+    "risk2": {
+        "text": "Statement of risks",
+        "1": "No risks identified",
+        "2": "Vague risks identification",
+        "3": "Description of specific risks"
+    },
+    "risk3": {
+        "text": "Risks management",
+        "1": "No risks identified",
+        "2": "Vague risks identification",
+        "3": "Description of specific risks"
+    },
+    "policies": {
+        "text": "Policies and Procedures"
+    },
+    "policy": {
+        "text": "How well is the policy communicated?",
+        "1": "No information provided",
+        "2": "Policy is described or referenced",
+        "3": "Policy description specifies key issues and objectives"
+    },
+    "policy2": {
+        "text": "Quality of the information?",
+        "1": "No information provided",
+        "2": "Policy is described or referenced",
+        "3": "Policy description specifies key issues and objectives"
+    },
+    "outcomes_wrapper": {
+        "text": "Outcomes"
+    },
+    "outcomes": {
+        "text": "Outcomes description",
+        "1": "No description",
+        "2": "Description provided",
+        "3": "Outcomes in terms of meeting policy targets"
+    },
+    "l_01_04_001": {
+        "text": "Non-financial statement specifies that it relies on:",
+        "1": "National standards",
+        "2": "GRI - Global Reporting Initiative",
+        "3": "IIRC - International Integrated Reporting Council",
+        "4": "SASB - Sustainability Accounting Standards Board",
+        "5": "UNGP - United Nations Guiding Principles Reporting Framework",
+        "6": "UNGC \u2013 UN Global Compact",
+        "7": "OECD Guidelines \/ General or sectoral due diligence guidances",
+        "8": "SDG - United Nations Sustainable Development Goals",
+        "9": "Future-Fit Business Benchmark",
+        "10": "ISO 26000",
+        "11": "Climate Dislosure Standards Board Framework",
+        "12": "CDP environmental reporting system and framework",
+        "14": "ILO - International Labour Organization standards",
+        "15": "European Commission Guidelines on Non-Financial Reporting",
+        "13": "Others"
+    },
+    "l_01_02_002_01": {
+        "text": "The Company describes specific risks that may affect its business model, strategy and financial planning ",
+        "1": "Environmental challenges (in general)",
+        "2": "Climate change",
+        "3": "The Company explains opportunities related to sustainability challenges",
+        "8": "Sustainability challenges & plans to mitigate reflected in core business strategy"
+    },
+    "l_01_03_001_01": {
+        "text": "Description of how executive compensation is affected by their performance against ESG criteria",
+        "0": "Not included",
+        "1": "Included"
+    },
+    "l_01_03_002_01": {
+        "text": "Information on engagement of workforce representatives in setting sustainability strategy",
+        "0": "Not included",
+        "1": "Included"
+    },
+    "l_01_03_003_01": {
+        "text": "Description of corporate governance arrangements to support sustainability",
+        "0": "Not included",
+        "1": "Included"
+    },
+    "l_01_03_004_01": {
+        "text": "Identification of sustainability matters addressed by the Board in the previous year and decisions",
+        "0": "Not included",
+        "1": "Included"
+    },
+    "l_02_A_01_002_02": {
+        "text": "",
+        "1": "The Company has a climate target",
+        "2": "Actions taken to achieve the climate target",
+        "3": "Outcomes in terms of meeting the climate targets",
+        "4": "Company's climate target is science-based \/ aligned with Paris Agreement",
+        "5": "Board oversight of climate-related risks and opportunities"
+    },
+    "l_02_A_01_002_02_info": {
+        "4": "(i.e. well below 2\u00b0C)"
+    },
+    "l_02_A_01_002_02_fin": {
+        "text": "Only for financial companies",
+        "7": "Describes how climate strategy is aligned with clients preferences"
+    },
+    "l_02_A_01_003_02": {
+        "text": "",
+        "1": "Risks & opportunities is provided for each time horizon",
+        "2": "Physical risks are addressed ",
+        "3": "Transition to a low-carbon economy risks are addressed",
+        "9": "Breakdown of risks by activity or region",
+        "5": "Effects of climate risks\/opportunities on strategy, financial planning, performance",
+        "6": "Clear management approach for the identified risks and impacts",
+        "8": "Climate-related scenarios used for risk assessment including a 1.5\u00b0C\/well below 2\u00b0C scenario"
+    },
+    "l_02_A_01_003_02_fin": {
+        "text": "Only for financial companies",
+        "16": "How risk management processes, including internal stress testing, consider climate-related risks",
+        "10": "Amount or percentage of carbon-related assets in each portfolio or exposure of assets to climate risks",
+        "11": "Degree of alignment of the different portfolios against the Paris Agreement target"
+    },
+    "l_02_A_01_004_02": {
+        "text": "",
+        "1": "Data \/ KPI provided for outcomes"
+    },
+    "l_02_A_01_005_02": {
+        "text": "",
+        "3": "Energy efficiency target",
+        "2": "Renewable energy production\/consumption target",
+        "1": "Data is independently assured"
+    },
+    "l_02_A_01_012_02": {
+        "text": "",
+        "1": "Data is independently assured"
+    },
+    "l_02_A_01_013_02": {
+        "text": "",
+        "1": "Amount\/percentage of carbon-related assets in each portfolio",
+        "2": "Degree of alignment of the different portfolios against the Paris Agreement target",
+        "3": "Breakdown of assets under management by business sector across asset classes",
+        "4": "Credit risk exposures & volumes of collateral",
+        "5": "Breakdown of underwriting exposure by lines of business to economic sectors",
+        "6": "Maximum Expected Loss from natural catastrophes caused by climate change"
+    },
+    "GHG_1": {
+        "text": "",
+        "2": "GHG emission target",
+        "1": "Data is independently assured"
+    },
+    "GHG_2": {
+        "text": "",
+        "2": "GHG intensity target",
+        "1": "Data is independently assured"
+    },
+    "l_02_A_02_002_02": {
+        "text": "",
+        "1": "Describes company's targets",
+        "2": "Actions taken to achieve targets",
+        "3": "Board oversight of risks and opportunities",
+        "4": "Engagement with upstream & downstream value chain to reduce impacts described"
+    },
+    "l_02_A_02_003_02": {
+        "text": "",
+        "1": "States risks for the environment",
+        "2": "Effects of risks & opportunities on the organization\u2019s business model, financial planning or performance",
+        "3": "Clear management approach for the identified risks and impacts",
+        "4": "Breakdown of risks by activity or region",
+        "5": "Identification of locations that are critical to value chains, including operations, suppliers and markets",
+        "8": "Identification of locations that are critical to value chains"
+    },
+    "outcomes incl": {
+        "text": "",
+        "1": "Data \/ KPI provided for outcomes"
+    },
+    "l_02_A_02_004_02": {
+        "text": "",
+        "1": "Data includes impacts in supply chain",
+        "2": "Risks to local water stress are addressed",
+        "3": "Water consumption in water scarce and borderline areas"
+    },
+    "l_02_A_03_002_02": {
+        "text": "",
+        "1": "Describes company\u2019s targets",
+        "2": "Actions taken to achieve the targets",
+        "3": "Board oversight of risks and opportunities",
+        "4": "Engagement with upstream & downstream value chain to reduce impacts described"
+    },
+    "l_02_A_03_003_02": {
+        "text": "",
+        "1": "States risks for the environment or human health",
+        "2": "Effects of risks & opportunities on the organization\u2019s business model, financial planning or performance",
+        "3": "Clear management approach for the identified risks and impacts",
+        "4": "Breakdown of risks by activity or region",
+        "5": "Identification of locations that are critical to value chains, including operations, suppliers and markets",
+        "8": "Identification of locations that are critical to value chains"
+    },
+    "supply_chain": {
+        "text": "",
+        "1": "Data includes impacts in supply chain"
+    },
+    "supply_chain_spills": {
+        "text": "",
+        "1": "Data includes impacts in supply chain",
+        "2": "Data provided on spills"
+    },
+    "l_02_A_04_002_02": {
+        "text": "",
+        "1": "Describes company's targets",
+        "2": "Company's targets are framed by circular economy goal",
+        "3": "Actions taken to achieve the targets",
+        "4": "Boards oversight of risks and opportunities",
+        "5": "Engagement with upstream & downstream value chain to reduce impacts described"
+    },
+    "l_02_A_04_003_02": {
+        "text": "",
+        "1": "States risks for the environment or human health",
+        "2": "Risks for the environment or human health provided for long-term horizons",
+        "3": "Effects of risks on the organisation\u2019s business",
+        "4": "Effects of risks on financial planning and performance",
+        "5": "Organisation\u2019s strategy to manage risks and impacts",
+        "6": "Breakdown of risks by activity or region",
+        "7": "Risks in value chains",
+        "8": "Identification of locations that are critical to value chains"
+    },
+    "l_02_A_05_002_02": {
+        "text": "",
+        "1": "Describes company's targets",
+        "2": "Company's commitment\/target to zero adverse impact on Biodiversity",
+        "3": "Actions taken to achieve the targets",
+        "4": "Boards oversight of risks and opportunities",
+        "5": "Engagement with upstream & downstream value chain to reduce impacts described"
+    },
+    "l_02_A_05_002_02_fin": {
+        "text": "Only for financial companies",
+        "6": "Discloses how the financial institution ensures that its biodiversity-related strategy is aligned with the biodiveristy preferences of its clients"
+    },
+    "l_02_A_05_003_02": {
+        "text": "",
+        "1": "Includes a clear description of actual impacts",
+        "2": "Concrete operations and\/or business partners associated with salient issues and impacts are identified",
+        "3": "Identification of concrete operations\/business partners associated with salient issues\/impacts",
+        "4": "Breakdown of risks by activity or region",
+        "5": "Clear management approach for the identified risks and impacts",
+        "6": "Identification of locations that are critical to value chains, including operations, suppliers and markets"
+    },
+    "l_02_A_05_qoi": {
+        "text": "",
+        "1": "Company\u2019s policy",
+        "2": "Outcomes (KPIs or management of concrete cases)"
+    },
+    "l_03_00_001_01_wrapper": {
+        "text": "Climate change mitigation and adaptation"
+    },
+    "l_03_00_001_01": {
+        "text": "",
+        "0": "no",
+        "1": "yes"
+    },
+    "l_03_00_001_02": {
+        "text": "Information included",
+        "1": "Turnover",
+        "2": "Capital expenditure (investment)",
+        "3": "Alignment with EU Sustainability Taxonomy",
+        "4": "Green Bonds\/Green debt"
+    },
+    "l_03_00_002_01_wrapper": {
+        "text": "Other Environmental issues"
+    },
+    "l_03_00_002_01": {
+        "text": "",
+        "0": "no",
+        "1": "yes"
+    },
+    "l_03_00_002_02": {
+        "text": "",
+        "1": "Turnover",
+        "2": "Capital expenditure (investment)",
+        "3": "Alignment with EU Sustainability Taxonomy",
+        "4": "Green Bonds\/Green debt"
+    },
+    "id_11": {
+        "text": "Does the company publish a non-financial statement?",
+        "0": "No",
+        "1": "Refers to its parent company's report",
+        "2": "Included within the annual report",
+        "3": "Publishes a separate non-financial report"
+    },
+    "l_01_01_003": {
+        "text": "Traceability of the information provided",
+        "1": "Not traceable",
+        "2": "Some information is traced",
+        "3": "Good"
+    },
+    "l_01_01_005": {
+        "text": "The company includes links to other documents in order to offer broader information",
+        "0": "no",
+        "1": "yes"
+    },
+    "l_01_01_006": {
+        "text": "KPIs presentation",
+        "1": "No KPIs provided",
+        "2": "KPIs provided in different parts of the report(s)",
+        "3": "KPIs provided in a summarized statement(s)"
+    },
+    "l_01_01_007": {
+        "text": "Information on policies, outcomes, risks, and KPIs are provided in a clear structure",
+        "0": "no",
+        "1": "yes"
+    },
+    "l_01_01_008": {
+        "text": "The report enables an understanding of the undertaking\u2019s development, performance, position and impact of its activity.",
+        "0": "no",
+        "1": "yes"
+    },
+    "l_01_01_012": {
+        "text": "The approach taken to determining the materiality is clearly articulated.",
+        "0": "no",
+        "1": "yes"
+    },
+    "l_01_01_013": {
+        "text": "The disclosure omits info the reviewer would expect to be material for a company operating in this sector.",
+        "0": "no",
+        "1": "yes"
+    },
+    "l_01_01_014": {
+        "text": "The report contains immaterial environment and climate-related disclosure which reduces the decision-usefulness of the information.",
+        "0": "no",
+        "1": "yes"
+    },
+    "id_ae": {
+        "text": "Renewable vs non-renewable energy"
+    },
+    "id_af": {
+        "text": "GHG emission total Scope 1"
+    },
+    "id_ag": {
+        "text": "GHG emission total Scope 2"
+    },
+    "id_ah": {
+        "text": "GHG emission total Scope 3"
+    },
+    "id_ai": {
+        "text": "GHG emission intensity Scope 1"
+    },
+    "id_an": {
+        "text": "Use of water"
+    },
+    "id_as": {
+        "text": "Discharges to air"
+    },
+    "id_at": {
+        "text": "Discharges to water"
+    },
+    "id_au": {
+        "text": "Discharges to soil"
+    },
+    "id_az": {
+        "text": "Operations in ecosystems of high ecological importance, notably internationally or nationally recognised\/protected areas "
+    },
+    "id_aaa": {
+        "text": "Habitat, landscape or environmental functions conversion (incl. deforestation)"
+    },
+    "id_abb": {
+        "text": "Marine (notably fisheries and aquaculture)"
+    },
+    "s_1": {
+        "text": "1. Presentation of non-financial statements"
+    },
+    "nested": {
+        "text": ""
+    },
+    "s_4": {
+        "text": "Accessibility of the information provided"
+    },
+    "s_2b": {
+        "text": "2. Strategic perspective"
+    },
+    "s_2": {
+        "text": "Business model description"
+    },
+    "s_3": {
+        "text": "Governance"
+    },
+    "only_fin": {
+        "text": "Only for financial companies"
+    },
+    "s_A": {
+        "text": "A - Environment"
+    },
+    "s_A1": {
+        "text": "A.1 Climate change"
+    },
+    "s_A2": {
+        "text": "A.2 Use of natural resources"
+    },
+    "s_A3": {
+        "text": "A.3 Polluting discharges"
+    },
+    "s_A4": {
+        "text": "A.4 Biodiversity and ecosystem conservation"
+    },
+    "s_B": {
+        "text": "B. General Positive Impacts by products \/ sources of opportunity"
+    },
+    "s_B_general": {
+        "text": "Strategy\/initiatives for products\/services focusing on sustainable development opportunities"
+    },
+    "s_B_products": {
+        "text": "Sectorial Positive Impacts by products \/ sources of opportunity"
+    },
+    "apparel": "Apparel & Textiles",
+    "consumption": "Consumption",
+    "energy": "Energy & Resource Extraction",
+    "financials": "Financials",
+    "food": "Food & Beverages",
+    "health": "Health Care",
+    "hospitality": "Hospitality & Recreation",
+    "infrastructure": "Infrastructure",
+    "resource": "Resource Transformation",
+    "services": "Services",
+    "technology": "Technology & Communications",
+    "transportation": "Transportation"
+}

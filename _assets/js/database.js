@@ -1,5 +1,5 @@
 (function() {
-  const DEBUG = false;(location.origin === "http://0.0.0.0:4000") || false;
+  const DEBUG = (location.origin === "http://0.0.0.0:4000") || false;
 
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
@@ -9,8 +9,8 @@
   reportYear = reportYear === '2020' ? '2020' : ''
 
   window.addEventListener("DOMContentLoaded", () => {
-    const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : `https://act-export.frankbold.org/dictionary${reportYear}.json`;
-    const reportsUrl = DEBUG ? "../static_data/mock_reports.json" : `https://act-export.frankbold.org/reports${reportYear}.json`;
+    const dictionaryUrl = DEBUG ? `../static_data/mock_dictionary${reportYear}.json` : `https://act-export.frankbold.org/dictionary${reportYear}.json`;
+    const reportsUrl = DEBUG ? `../static_data/mock_reports${reportYear}.json` : `https://act-export.frankbold.org/reports${reportYear}.json`;
 
     const spinner = document.querySelector("[data-spinner]")
 
