@@ -2016,14 +2016,18 @@
   function onFilterSelected(event, callback) {
     const { val, filter } = event.dataset;
     const arr = filters[filter]
-    const ix = arr.indexOf(val)
-    
-    ix > -1 ? arr.splice(ix, 1) : arr.push(val);
-    filters[filter] = arr
 
-    localStorage.setItem(`filters-${path}`, JSON.stringify(filters))
+    if (arr) {
+      const ix = arr.indexOf(val)
+      
+      ix > -1 ? arr.splice(ix, 1) : arr.push(val);
+      filters[filter] = arr
+  
+      localStorage.setItem(`filters-${path}`, JSON.stringify(filters))
+  
+      callback();
+    }
 
-    callback();
     return true;
   }
 
