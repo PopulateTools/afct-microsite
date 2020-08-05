@@ -1,0 +1,28 @@
+.multiselect-wrapper {
+  width: auto;
+}
+
+.multiselect-wrapper .multiselect-input {
+  padding-right: inherit;
+  margin: 0;
+}
+
+.multiselect-list span {
+  cursor: pointer;
+}
+
+.multiselect-list > span:first-child,
+.multiselect-list > hr {
+  display: none !important;
+}
+
+.multiselect-count,
+.multiselect-dropdown-arrow {
+  top: 50%;
+  transform: translateY(-75%);
+  margin-top: 0;
+}
+
+.multiselect-input-div {
+  position: relative;
+}

@@ -375,6 +375,7 @@
 .database-filters__info {
   color: $cBlue;
   cursor: pointer;
+  flex: 0;
 }
 
 .database-filters__info:hover .database-filters__info-text {

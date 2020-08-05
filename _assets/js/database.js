@@ -4,10 +4,13 @@
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
 
-  const [, reportYear] = location.pathname.match(/\/database\/(.*).html/)
-  const reportYearParsed = reportYear === '2020' ? '2020' : ''
+  let reportYear = null;
 
   window.addEventListener("DOMContentLoaded", () => {
+    const { dataset: { year } = {} } = document.querySelector("[data-year]") || {}
+    reportYear = year
+    const reportYearParsed = reportYear === '2020' ? '2020' : ''
+
     const dictionaryUrl = DEBUG ? `../static_data/mock_dictionary${reportYearParsed}.json` : `https://act-export.frankbold.org/dictionary${reportYearParsed}.json`;
     const reportsUrl = DEBUG ? `../static_data/mock_reports${reportYearParsed}.json` : `https://act-export.frankbold.org/reports${reportYearParsed}.json`;
 
@@ -166,21 +169,17 @@
             "[data-table-selector]"
           );
 
-          fillCountriesFilter(data);
-          fillSectorsFilter(data);
-          fillRevenuesFilter(data);
+          const callback = event => {
+            onFilterSelected(event, () => {
+              const charts = document.querySelectorAll("[data-path]");
+              if (charts.length) {
+                renderCharts(charts, data);
+              }
+            });
+          }
 
           // Assign behaviour to filters
-          summaryTable.querySelectorAll("[data-filter]").forEach(element => {
-            return element.addEventListener("input", event => {
-              onFilterSelected(event, () => {
-                const charts = document.querySelectorAll("[data-path]");
-                if (charts.length) {
-                  renderCharts(charts, data);
-                }
-              });
-            });
-          });
+          fillFilters(data, callback)
 
           if (tableSelectors) {
             tableSelectors.forEach((element, index) => {
@@ -321,7 +320,7 @@
   }
 
   const path = location.pathname.replace(/\//g,'')
-  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem(`filters-${path}`)) || {}
+  const { country = [], sector = [], revenues = [] } = JSON.parse(localStorage.getItem(`filters-${path}`)) || {}
   const filters = {
     country,
     sector,
@@ -598,21 +597,17 @@
       })
     });
 
-    fillCountriesFilter(data);
-    fillSectorsFilter(data);
-    fillRevenuesFilter(data);
-
-    // Assign behaviour to filters
-    content.querySelectorAll("[data-filter]").forEach(element => {
-      return element.addEventListener("input", event => {
-        onFilterSelected(event, () => {
-            const charts = content.querySelectorAll("[data-path]");
-            if (charts.length) {
-              renderCharts(charts, data, dictionary);
-            }
-        });
+    const callback = event => {
+      onFilterSelected(event, () => {
+          const charts = content.querySelectorAll("[data-path]");
+          if (charts.length) {
+            renderCharts(charts, data, dictionary);
+          }
       });
-    });
+    };
+    
+    // Assign behaviour to filters
+    fillFilters(data, callback)
   }
 
   function renderSubsection(tree, section, subSection, data, level, dataPath, dictionary) {
@@ -840,15 +835,15 @@
     return `
       <div class="database-layout__col-3 gutter-xl" style="position: relative;">
         <div>
-          <select data-filter="sector" id="filter-sector">
+          <select data-filter="sector" id="filter-sector" multiple>
           </select>
         </div>
         <div>
-          <select data-filter="revenues" id="filter-revenues">
+          <select data-filter="revenues" id="filter-revenues" multiple>
           </select>
         </div>
         <div>
-          <select data-filter="country" id="filter-country">
+          <select data-filter="country" id="filter-country" multiple>
           </select>
         </div>
         <div class="database-filters__info">
@@ -888,28 +883,10 @@
   }
 
   function getTabContentHTML() {
-    return `
-      <ul class="database-tabcontent__table">
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__captions-light"> 
-            <p>% Percentage of total</p>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div>No information provided</div>
-            <div>Policy is described or referenced</div>
-            <div>Policy description specifies key issues and objectives</div>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div>No risks identification</div>
-            <div>Vague risks identification</div>
-            <div>Description of specific risk</div>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div>No description</div>
-            <div>Description provided</div>
-            <div>Outcomes in terms of meeting policy targets</div>
-          </div>
-        </li>
+    let sectionA, sectionB, sectionC, sectionD;
+
+    if (GLOBAL_TREE.hasOwnProperty("s_A")) {
+      sectionA = `
         <li class="database-tabcontent__row">
           <div class="database-tabcontent__heading"> 
             <p><span>A</span> Enviroment</p>
@@ -944,6 +921,11 @@
             <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
           </div>
         </li>
+      `
+    }
+
+    if (GLOBAL_TREE.hasOwnProperty("s_B")) {
+      sectionB = `
         <li class="database-tabcontent__row">
           <div class="database-tabcontent__heading"> 
             <p><span>B</span> Employee and social matters</p>
@@ -974,6 +956,11 @@
             <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
           </div>
         </li>
+      `
+    }
+
+    if (GLOBAL_TREE.hasOwnProperty("s_C")) {
+      sectionC = `
         <li class="database-tabcontent__row">
           <div class="database-tabcontent__heading"> 
             <p><span>C</span> Human Rights</p>
@@ -1009,6 +996,11 @@
             <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
           </div>
         </li>
+      `
+    }
+
+    if (GLOBAL_TREE.hasOwnProperty("s_D")) {
+      sectionD = `
         <li class="database-tabcontent__row">
           <div class="database-tabcontent__heading"> 
             <p><span>D</span> Anti-corruption & Whistleblowing</p>
@@ -1040,6 +1032,35 @@
             <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
           </div>
         </li>
+      `
+    }
+
+    return `
+      <ul class="database-tabcontent__table">
+        <li class="database-tabcontent__row">
+          <div class="database-tabcontent__captions-light"> 
+            <p>% Percentage of total</p>
+          </div>
+          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="policies">
+            <div>No information provided</div>
+            <div>Policy is described or referenced</div>
+            <div>Policy description specifies key issues and objectives</div>
+          </div>
+          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="risks">
+            <div>No risks identification</div>
+            <div>Vague risks identification</div>
+            <div>Description of specific risk</div>
+          </div>
+          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="outcomes">
+            <div>No description</div>
+            <div>Description provided</div>
+            <div>Outcomes in terms of meeting policy targets</div>
+          </div>
+        </li>
+        ${sectionA ? sectionA : ''}
+        ${sectionB ? sectionB : ''}
+        ${sectionC ? sectionC : ''}
+        ${sectionD ? sectionD : ''}
       </ul>
     `;
   }
@@ -1818,12 +1839,33 @@
     };
   }
 
+  function fillFilters(data, callback) {
+    fillSectorsFilter(data);
+    fillRevenuesFilter(data);
+    fillCountriesFilter(data);
+
+    const filters = [
+      { id: "sector", placeholder: "Select a sector..." },
+      { id: "revenues", placeholder: "Select a revenue..." },
+      { id: "country", placeholder: "Select a country..." },
+    ];
+
+    filters.forEach(({ id, placeholder }) => {
+      // Run multiselect.js
+      const element = document.multiselect(`#filter-${id}`);
+
+      element._items.forEach(({ id: itemId, multiselectElement }) => {
+        multiselectElement.setAttribute("data-filter", id)
+        element.setCheckBoxClick(itemId, callback)
+      })
+  
+      // add the placeholder to the new input field
+      document.getElementById(`filter-${id}_input`).setAttribute("placeholder", placeholder)
+    })
+  }
+
   function fillCountriesFilter(data) {
     let element = document.getElementById("filter-country");
-    const option = document.createElement("option");
-    option.text = "Select a country";
-    option.value = "";
-    element.appendChild(option);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
@@ -1836,7 +1878,7 @@
       option.text = country;
       option.value = country;
 
-      if (country === filters.country) {
+      if (filters.country.includes(country)) {
         option.selected = true
       }
 
@@ -1846,10 +1888,6 @@
 
   function fillSectorsFilter(data) {
     let element = document.getElementById("filter-sector");
-    const option = document.createElement("option");
-    option.text = "Select a sector";
-    option.value = "";
-    element.appendChild(option);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
@@ -1862,7 +1900,7 @@
       option.text = sector;
       option.value = sector;
 
-      if (sector === filters.sector) {
+      if (filters.sector.includes(sector)) {
         option.selected = true
       }
 
@@ -1872,10 +1910,6 @@
 
   function fillRevenuesFilter() {
     let element = document.getElementById("filter-revenues");
-    const option = document.createElement("option");
-    option.text = "Select a revenue range";
-    option.value = "";
-    element.appendChild(option);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
@@ -1888,7 +1922,7 @@
       option.text = range[0];
       option.value = range[1];
 
-      if (range[1] === filters.revenues) {
+      if (filters.revenues.includes(range[1])) {
         option.selected = true
       }
 
@@ -1950,47 +1984,42 @@
 
     data.forEach(company => {
       if (filters !== undefined) {
-        if (
-          filters.country !== null &&
-          company.company.country_incorporation !== filters.country
-        ) {
+        if (filters.country.length && !filters.country.includes(company.company.country_incorporation)) {
           return;
         }
-        if (
-          filters.sector !== null &&
-          company.company.sectors !== undefined &&
-          !company.company.sectors.includes(filters.sector)
-        ) {
+
+        if (filters.sector.length && company.company.sectors !== undefined && !filters.sector.some(d => company.company.sectors.includes(d))) {
           return;
         }
+
         if (
-          filters.revenues !== null &&
+          filters.revenues.length &&
           company.company.revenues !== undefined
         ) {
-          let revenues = parseFloat(company.company.revenues.replace(/,/g, ""));
-          let range = filters.revenues.split("-").map(d => parseFloat(d));
-          if (!(revenues >= range[0] && revenues <= range[1])) {
+          const revenues = parseFloat(company.company.revenues.replace(/,/g, ""));
+          const ranges = filters.revenues.map(a => a.split("-").map(d => parseFloat(d)))
+
+          if (!ranges.some(([min, max]) => revenues >= min && revenues <= max)) {
             return;
           }
         }
+
         filteredCompanies.push(company);
       } else {
         filteredCompanies.push(company);
       }
     });
+
     return filteredCompanies;
   }
 
   function onFilterSelected(event, callback) {
-    let sel = event.target;
-    let filterType = sel.dataset.filter;
-    let selected = sel.options[sel.selectedIndex].value;
-
-    if (selected === "" || filters[filterType] === selected) {
-      filters[filterType] = null;
-    } else {
-      filters[filterType] = selected;
-    }
+    const { val, filter } = event.dataset;
+    const arr = filters[filter]
+    const ix = arr.indexOf(val)
+    
+    ix > -1 ? arr.splice(ix, 1) : arr.push(val);
+    filters[filter] = arr
 
     localStorage.setItem(`filters-${path}`, JSON.stringify(filters))
 
