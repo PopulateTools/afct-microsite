@@ -304,6 +304,8 @@
   color: $cMutedText;
   opacity: 0.5;
   font-weight: normal;
+  white-space: nowrap;
+  text-align: right;
 }
 
 .database-tag {

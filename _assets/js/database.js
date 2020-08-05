@@ -3,7 +3,6 @@
 
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
-  let materialityMatrixURL = null;
 
   let [, reportYear] = location.pathname.match(/\/database\/(.*).html/)
   reportYear = reportYear === '2020' ? '2020' : ''
@@ -29,9 +28,6 @@
 
         GLOBAL_TREE = tree
 
-        // set url for PDF
-        materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
-        
         // Load sidebar
         const sidebar = document.querySelector("[data-sidebar]");
         if (sidebar) {
@@ -556,7 +552,6 @@
               <span id="${subSection}" class="database-section__anchor"></span>
               <h1 class="heading__h1 with-decorator">
                 ${sectionText}
-                <a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>
               </h1>
               ${block}
             </section>
@@ -831,10 +826,7 @@
   function getFiltersHTML() {
     return `
       <div class="database-layout__flex">
-        <h4 class="heading__h4">
-          Summary
-          <a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>
-        </h4>
+        <h4 class="heading__h4">Summary</h4>
         ${getFiltersBlock()}
       </div>
     `;
@@ -1053,7 +1045,7 @@
       <h2 class="database-heading__h2 with-decorator database-layout__flex">
         <span>${text}</span>
         <div class="database-layout__col-3 align-center gutter-l" data-drilldown-container>
-          <span class="database-tag__title">Filter</span>
+          <span class="database-tag__title">Comparative results</span>
           <button class="database-tag" data-drilldown="country">By country</button>
           <button class="database-tag" data-drilldown="sector">By sector</button>
           <button class="database-tag" data-drilldown="revenue">By revenue</button>
