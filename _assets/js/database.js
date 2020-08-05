@@ -4,12 +4,12 @@
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
 
-  let [, reportYear] = location.pathname.match(/\/database\/(.*).html/)
-  reportYear = reportYear === '2020' ? '2020' : ''
+  const [, reportYear] = location.pathname.match(/\/database\/(.*).html/)
+  const reportYearParsed = reportYear === '2020' ? '2020' : ''
 
   window.addEventListener("DOMContentLoaded", () => {
-    const dictionaryUrl = DEBUG ? `../static_data/mock_dictionary${reportYear}.json` : `https://act-export.frankbold.org/dictionary${reportYear}.json`;
-    const reportsUrl = DEBUG ? `../static_data/mock_reports${reportYear}.json` : `https://act-export.frankbold.org/reports${reportYear}.json`;
+    const dictionaryUrl = DEBUG ? `../static_data/mock_dictionary${reportYearParsed}.json` : `https://act-export.frankbold.org/dictionary${reportYearParsed}.json`;
+    const reportsUrl = DEBUG ? `../static_data/mock_reports${reportYearParsed}.json` : `https://act-export.frankbold.org/reports${reportYearParsed}.json`;
 
     const spinner = document.querySelector("[data-spinner]")
 
@@ -414,6 +414,7 @@
     const ul = html => `<ul>${html}</ul>`
     const li = html => `<li>${html}</li>`
     const a = (section, text) => `<a href="#${section}">${text}</a>`;
+    const url = (url, text) => `<a href="${url}" target="_blank">${text}</a>`;
 
     result += li(a("general", "General Results"));
 
@@ -432,6 +433,9 @@
         result += li(block)
       }
     });
+
+    const reportURL = document.querySelector(`input[type='hidden'][name='report-${reportYear}']`).value
+    result += li(url(reportURL, "Research Report (PDF)"))
 
     return ul(result);
   }
