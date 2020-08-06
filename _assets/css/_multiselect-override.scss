@@ -3,8 +3,9 @@
 }
 
 .multiselect-wrapper .multiselect-input {
-  padding-right: inherit;
+  padding-right: 25px !important;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .multiselect-list span {
@@ -16,13 +17,23 @@
   display: none !important;
 }
 
-.multiselect-count,
-.multiselect-dropdown-arrow {
+.multiselect-dropdown-arrow,
+.multiselect-count {
   top: 50%;
-  transform: translateY(-75%);
-  margin-top: 0;
+  margin: 0 !important;
+  left: auto !important;
+  position: absolute;
+}
+
+.multiselect-count {
+  transform: translate(-175%, -50%);
+}
+
+.multiselect-dropdown-arrow {
+  transform: translate(-150%, -50%);
 }
 
 .multiselect-input-div {
   position: relative;
+  height: 100%;
 }
