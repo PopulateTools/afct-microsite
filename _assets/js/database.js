@@ -478,8 +478,8 @@
     if (section === "general") {
       content.innerHTML = renderGeneralSection();
 
-      renderSpecialCharts("chart-summary_companies_per_revenue_range", data)
-      renderSpecialCharts("chart-summary_companies_per_employees", data)
+      // renderSpecialCharts("chart-summary_companies_per_revenue_range", data)
+      // renderSpecialCharts("chart-summary_companies_per_employees", data)
 
       const rowTypes = content.querySelectorAll("[data-row-type]");
       rowTypes.forEach(element => {
@@ -795,28 +795,16 @@
   function getCompaniesPerHTML() {
     return `
       <h4 class="heading__h4">Companies included in the research</h4>
-      <div class="database-layout__col-3 gutter-l">
-        <div>
-          <span class="database-heading__span-underline">Country (absolute numbers)</span>
-          <div>
-            <canvas data-path="company.country_incorporation" data-absolute></canvas>
-          </div>
-        </div>
+      <div class="database-layout__col-2-3 align-center gutter-l">
         <div>
           <span class="database-heading__span-underline">Sector (absolute numbers)</span>
           <div>
-            <canvas data-path="company.sectors" data-absolute></canvas>
+            <canvas data-path="company.sectors" data-exclude-filter data-absolute data-sort></canvas>
           </div>
         </div>
-        <div>
-          <span class="database-heading__span-underline">Revenue range</span>
-          <div>
-            <canvas id="chart-summary_companies_per_revenue_range" data-special="chart-summary_companies_per_revenue_range"></canvas>
-          </div>
-          <span class="database-heading__span-underline">Employees</span>
-          <div>
-            <canvas id="chart-summary_companies_per_employees" data-special="chart-summary_companies_per_employees"></canvas>
-          </div>
+        <div style="flex-shrink: 1;">
+          <iframe title="cDjdt" aria-label="Europe eu choropleth map" id="datawrapper-chart-cDjdt" src="//datawrapper.dwcdn.net/cDjdt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+          <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
         </div>
       </div>
     `;

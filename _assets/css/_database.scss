@@ -164,6 +164,10 @@
   > :last-child {
     flex: 0 0 calc(100% * (2 / 3))
   }
+
+  &.align-center {
+    align-items: center;
+  }
 }
 
 .database-layout__grid-2 {
