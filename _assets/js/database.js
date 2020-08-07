@@ -225,6 +225,7 @@
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
     "--green"
   );
+  const SUMMARYCOLORS = ["#b5725d", "#c5d8d9", "#0b2740"]
   const activeClass = "active";
   const openClass = "is-open";
 
@@ -776,6 +777,92 @@
   }
 
   function renderGeneralSection() {
+    return `
+      <section class="database-section database-canvas__fit">
+        <span id="general" class="database-section__anchor"></span>
+        ${getFiltersHTML()}
+        ${getGeneralSectionLegendHTML()}
+        ${getGeneralSectionChartsHTML()}
+      </section>
+      <section id="general_results-companies-per" class="database-section database-canvas__fit">
+        ${getCompaniesPerHTML()}
+      </section>
+    `;
+  }
+
+  function getGeneralSectionLegendHTML() {
+    const option = (option, color) => `
+      <div class="database-summary__legend--option">
+        <span style="background: ${color}"></span>
+        <span class="database-summary__legend--label">${option}</span>
+      </div>
+    `
+    const o = (titles, color) => {
+      let options = ''
+      for (let i = 0; i < titles.length; i++) {
+        const opt = titles[i];
+        options += option(opt, color)
+      }
+      return `<div class="database-summary__legend--column">${options}</div>`
+    };
+
+    const t = title => `<div class="database-summary__legend--title">${title}</div>`
+
+    const items = {
+      titles: ["Policies", "Risks", "Outcomes"],
+      options: [
+        {
+          titles: [
+            "No information provided",
+            "No risks identification",
+            "No description",
+          ],
+          color: SUMMARYCOLORS[0],
+        },
+        {
+          titles: [
+            "Policy is described or referenced",
+            "Vague risks identification",
+            "Description provided",
+          ],
+          color: SUMMARYCOLORS[1],
+        },
+        {
+          titles: [
+            "Policy description specifies key issues and objectives",
+            "Description of specific risks",
+            "Outcomes in terms of meeting policy targets",
+          ],
+          color: SUMMARYCOLORS[2],
+        },
+      ],
+    };
+
+    let titles = ''
+    for (let i = 0; i < items.titles.length; i++) {
+      const element = items.titles[i];
+      titles += t(element)
+    }
+
+    let options = ''
+    for (let i = 0; i < items.options.length; i++) {
+      const { titles, color } = items.options[i];
+      options += o(titles, color)
+    }
+
+    return `
+      <div class="database-summary__legend">
+        <div>
+          <div class="database-summary__legend--column">
+            ${titles}
+          </div>
+        </div>
+        <div>${options}</div>
+      </div>
+    `
+  }
+
+  function getGeneralSectionChartsHTML() {
     const template = (index, title, path) => `
       <div class="database-tabcontent__label">
         <p><span>${index}</span> ${title}</p>
@@ -802,7 +889,7 @@
       { index: "D.2", title: "Whistleblowing channel", parent: "s_D", child: "s_D2" },
     ]
 
-    // different first-level section
+    // different first-level sections
     const parents = unique(topics.map(({ parent }) => parent))
 
     let sections = '';
@@ -822,16 +909,7 @@
       }
     }
 
-    return `
-      <section class="database-section database-canvas__fit">
-        <span id="general" class="database-section__anchor"></span>
-        ${getFiltersHTML()}
-        ${sections}
-      </section>
-      <section id="general_results-companies-per" class="database-section database-canvas__fit">
-        ${getCompaniesPerHTML()}
-      </section>
-    `;
+    return sections
   }
 
   function getCompaniesPerHTML() {
@@ -1329,6 +1407,7 @@
     const columnNames = ["Policies", "Risks", "Outcomes"];
     const data = chartData.data;
     const barThickness = options.barThickness || 40;
+    const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
     chart.height = columnNames.length * (barThickness + 6);
     chart.width = chart.getBoundingClientRect().width
@@ -1343,19 +1422,19 @@
         datasets: [
           {
             data: data[0],
-            backgroundColor: "#b5725d",
+            backgroundColor: SUMMARYCOLORS[0],
             barPercentage: 0.9,
             maxBarThickness: barThickness,
           },
           {
             data: data[1],
-            backgroundColor: "#c5d8d9",
+            backgroundColor: SUMMARYCOLORS[1],
             barPercentage: 0.9,
             maxBarThickness: barThickness,
           },
           {
             data: data[2],
-            backgroundColor: "#0b2740",
+            backgroundColor: SUMMARYCOLORS[2],
             barPercentage: 0.9,
             maxBarThickness: barThickness,
           },
@@ -1399,7 +1478,8 @@
                 display: false,
               },
               ticks: {
-                display: true,
+                fontSize: fontSize,
+                fontStyle: 200
               },
               afterFit: (scaleInstance) => {
                 const { width = 150 } = chart.getBoundingClientRect(); // enforce minimun label size
@@ -1419,7 +1499,7 @@
                 return 0;
               if (
                 context.datasetIndex !== 0 &&
-                context.dataset.data[context.dataIndex] < 10
+                context.dataset.data[context.dataIndex] < 5
               )
                 return 2;
               return 8;

@@ -413,3 +413,50 @@
   background: lighten($cBackground, 20%);
   border-radius: 4px;
 }
+
+.database-summary__legend {
+  margin: 1em 0;
+  display: flex;
+
+  > :first-child {
+    flex: 0 0 10%;
+    text-align: right;
+    padding-right: 1em;
+  }
+
+  > :last-child {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  &--option {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    > :not(:first-child) {
+      margin-left: 8px;
+    }
+
+    > :first-child {
+      flex: 0 0 auto;
+      width: 15px;
+      height: 15px;
+      display: block;
+    }
+  }
+
+  &--title,
+  &--label {
+    font-size: 14px;
+    color: $cDarkBlue;
+  }
+}
