@@ -146,17 +146,10 @@
         if (summaryTable) {
           let template = "";
           template += getFiltersHTML()
-          template += getTabLinksHTML()
-          template += getTabContentHTML()
-      
+          template += getGeneralSectionLegendHTML()
+          template += getGeneralSectionChartsHTML()
+
           summaryTable.innerHTML = template
-      
-          const rowTypes = summaryTable.querySelectorAll("[data-row-type]");
-          rowTypes.forEach(element => {
-            if (element.dataset.rowType !== "policies") {
-              element.style.display = "none";
-            }
-          });
 
           const charts = document.querySelectorAll("[data-path]");
           // render charts
@@ -225,7 +218,6 @@
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
     "--green"
   );
-  const SUMMARYCOLORS = ["#b5725d", "#c5d8d9", "#0b2740"]
   const activeClass = "active";
   const openClass = "is-open";
 
@@ -317,6 +309,33 @@
         maxLength: 60,
         fontSize: 15
       }
+    }
+  }
+  const SUMMARY = {
+    COLORS: ["#b5725d", "#c5d8d9", "#0b2740"],
+    TOPICS: {
+      2019: [
+        { index: "A.1", title: "Climate change", parent: "s_A", child: "s_A1" },
+        { index: "A.2", title: "Use of natural resources", parent: "s_A", child: "s_A2" },
+        { index: "A.3", title: "Polluting discharges", parent: "s_A", child: "s_A3" },
+        { index: "A.4", title: "Waste", parent: "s_A", child: "s_A4" },
+        { index: "A.5", title: "Biodiversity and ecosystem conservation", parent: "s_A", child: "s_A5" },
+        { index: "B.1", title: "Employee and workforce matters", parent: "s_B", child: "s_B1" },
+        { index: "C.0", title: "General Human Rights Reporting Criteria", parent: "s_C", child: "s_C0" },
+        { index: "C.1", title: "Supply Chains Management", parent: "s_C", child: "s_C1" },
+        { index: "C.2", title: "Impacts on indigenous and/or local communities rights", parent: "s_C", child: "s_C2" },
+        { index: "C.3", title: "Hight risk areas for Civil & Political rights", parent: "s_C", child: "s_C3" },
+        { index: "C.4", title: "Conflict resources (minerals, timber, etc.)", parent: "s_C", child: "s_C4" },
+        { index: "C.5", title: "Data protection / Digital rights", parent: "s_C", child: "s_C5" },
+        { index: "D.1", title: "Anti-corruption", parent: "s_D", child: "s_D1" },
+        { index: "D.2", title: "Whistleblowing channel", parent: "s_D", child: "s_D2" },
+      ],
+      2020: [
+        { index: "A.1", title: "Climate change", parent: "s_A", child: "s_A1" },
+        { index: "A.2", title: "Use of natural resources", parent: "s_A", child: "s_A2" },
+        { index: "A.3", title: "Polluting discharges", parent: "s_A", child: "s_A3" },
+        { index: "A.4", title: "Biodiversity and ecosystem conservation", parent: "s_A", child: "s_A4" },
+      ]
     }
   }
 
@@ -478,13 +497,6 @@
 
     if (section === "general") {
       content.innerHTML = renderGeneralSection();
-
-      const rowTypes = content.querySelectorAll("[data-row-type]");
-      rowTypes.forEach(element => {
-        if (element.dataset.rowType !== "policies") {
-          element.style.display = "none";
-        }
-      });
 
       const tableSelectors = content.querySelectorAll("[data-table-selector]");
       tableSelectors.forEach((element, index) => {
@@ -817,7 +829,7 @@
             "No risks identification",
             "No description",
           ],
-          color: SUMMARYCOLORS[0],
+          color: SUMMARY.COLORS[0],
         },
         {
           titles: [
@@ -825,7 +837,7 @@
             "Vague risks identification",
             "Description provided",
           ],
-          color: SUMMARYCOLORS[1],
+          color: SUMMARY.COLORS[1],
         },
         {
           titles: [
@@ -833,7 +845,7 @@
             "Description of specific risks",
             "Outcomes in terms of meeting policy targets",
           ],
-          color: SUMMARYCOLORS[2],
+          color: SUMMARY.COLORS[2],
         },
       ],
     };
@@ -872,22 +884,8 @@
       </div>
     `
 
-    const topics = [
-      { index: "A.1", title: "Climate change", parent: "s_A", child: "s_A1" },
-      { index: "A.2", title: "Use of natural resources", parent: "s_A", child: "s_A2" },
-      { index: "A.3", title: "Polluting discharges", parent: "s_A", child: "s_A3" },
-      { index: "A.4", title: "Waste", parent: "s_A", child: "s_A4" },
-      { index: "A.5", title: "Biodiversity and ecosystem conservation", parent: "s_A", child: "s_A5" },
-      { index: "B.1", title: "Employee and workforce matters", parent: "s_B", child: "s_B1" },
-      { index: "C.0", title: "General Human Rights Reporting Criteria", parent: "s_C", child: "s_C0" },
-      { index: "C.1", title: "Supply Chains Management", parent: "s_C", child: "s_C1" },
-      { index: "C.2", title: "Impacts on indigenous and/or local communities rights", parent: "s_C", child: "s_C2" },
-      { index: "C.3", title: "Hight risk areas for Civil & Political rights", parent: "s_C", child: "s_C3" },
-      { index: "C.4", title: "Conflict resources (minerals, timber, etc.)", parent: "s_C", child: "s_C4" },
-      { index: "C.5", title: "Data protection / Digital rights", parent: "s_C", child: "s_C5" },
-      { index: "D.1", title: "Anti-corruption", parent: "s_D", child: "s_D1" },
-      { index: "D.2", title: "Whistleblowing channel", parent: "s_D", child: "s_D2" },
-    ]
+    // global variable
+    const topics = SUMMARY.TOPICS[reportYear || 2019];
 
     // different first-level sections
     const parents = unique(topics.map(({ parent }) => parent))
@@ -962,215 +960,6 @@
         </div>
       </div>
     `
-  }
-
-  function getTabLinksHTML() {
-    const tabs = [
-      {
-        selector: "policies",
-        label: "Policies & Procedures"
-      },
-      {
-        selector: "risks",
-        label: "Risks management"
-      },
-      {
-        selector: "outcomes",
-        label: "Outcomes"
-      }
-    ];
-
-    const template = t =>
-      `<div><button class="database-tablinks" data-table-selector="${t.selector}">${t.label}</button></div>`;
-
-    return `
-      <div class="database-tabs database-layout__col-3 gutter-l">
-        ${tabs.map(t => template(t)).join("")}
-      </div>
-    `;
-  }
-
-  function getTabContentHTML() {
-    let sectionA, sectionB, sectionC, sectionD;
-
-    if (GLOBAL_TREE.hasOwnProperty("s_A")) {
-      sectionA = `
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__heading"> 
-            <p><span>A</span> Enviroment</p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__label">
-            <p><span>A.1</span> Climate change</p>
-            <p><span>A.2</span> Use of natural resources</p>
-            <p><span>A.3</span> Polluting discharges</p>
-            <p><span>A.4</span> Waste</p>
-            <p><span>A.5</span> Biodiversity and ecosystem conservation</p>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
-          </div>
-        </li>
-      `
-    }
-
-    if (GLOBAL_TREE.hasOwnProperty("s_B")) {
-      sectionB = `
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__heading"> 
-            <p><span>B</span> Employee and social matters</p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__label">
-            <p><span>B.1</span> Employee and workforce matters</p>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
-          </div>
-        </li>
-      `
-    }
-
-    if (GLOBAL_TREE.hasOwnProperty("s_C")) {
-      sectionC = `
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__heading"> 
-            <p><span>C</span> Human Rights</p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__label">
-            <p><span></span> General Human Rights Reporting Criteria</p>
-            <p><span>C.1</span> Supply Chains Management</p>
-            <p><span>C.2</span> Impacts on indigenous and/or local communities rights</p>
-            <p><span>C.3</span> Hight risk areas for Civil & Political rights</p>
-            <p data-row-type="policies" data-row-type="outcomes"><span>C.4</span> Conflict resources (minerals, timber, etc.)</p>
-            <p><span>C.5</span> Data protection / Digital rights</p>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
-          </div>
-        </li>
-      `
-    }
-
-    if (GLOBAL_TREE.hasOwnProperty("s_D")) {
-      sectionD = `
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__heading"> 
-            <p><span>D</span> Anti-corruption & Whistleblowing</p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__label">
-            <p><span>D.1</span> Anti-corruption</p>
-            <p data-row-type="policies" data-row-type="outcomes"><span>D.2</span> Whistleblowing channel</p>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
-          </div>
-        </li>
-      `
-    }
-
-    return `
-      <ul class="database-tabcontent__table">
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__captions-light"> 
-            <p>% Percentage of total</p>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div>No information provided</div>
-            <div>Policy is described or referenced</div>
-            <div>Policy description specifies key issues and objectives</div>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div>No risks identification</div>
-            <div>Vague risks identification</div>
-            <div>Description of specific risk</div>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div>No description</div>
-            <div>Description provided</div>
-            <div>Outcomes in terms of meeting policy targets</div>
-          </div>
-        </li>
-        ${sectionA ? sectionA : ''}
-        ${sectionB ? sectionB : ''}
-        ${sectionC ? sectionC : ''}
-        ${sectionD ? sectionD : ''}
-      </ul>
-    `;
   }
 
   function getDrilldownButtonsHTML({ text }) {
@@ -1422,19 +1211,19 @@
         datasets: [
           {
             data: data[0],
-            backgroundColor: SUMMARYCOLORS[0],
+            backgroundColor: SUMMARY.COLORS[0],
             barPercentage: 0.9,
             maxBarThickness: barThickness,
           },
           {
             data: data[1],
-            backgroundColor: SUMMARYCOLORS[1],
+            backgroundColor: SUMMARY.COLORS[1],
             barPercentage: 0.9,
             maxBarThickness: barThickness,
           },
           {
             data: data[2],
-            backgroundColor: SUMMARYCOLORS[2],
+            backgroundColor: SUMMARY.COLORS[2],
             barPercentage: 0.9,
             maxBarThickness: barThickness,
           },
