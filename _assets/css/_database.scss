@@ -252,13 +252,10 @@
 }
 
 .database-tabcontent__row {
-  @extend %layout-2-3;
-
+  display: flex;
   margin: .25rem 0;
 
-  > :not(:first-child) {
-    flex: 1;
-  }
+  @include gutters();
 }
 
 %database-tabcontent__label,

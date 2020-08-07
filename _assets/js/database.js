@@ -478,9 +478,6 @@
     if (section === "general") {
       content.innerHTML = renderGeneralSection();
 
-      // renderSpecialCharts("chart-summary_companies_per_revenue_range", data)
-      // renderSpecialCharts("chart-summary_companies_per_employees", data)
-
       const rowTypes = content.querySelectorAll("[data-row-type]");
       rowTypes.forEach(element => {
         if (element.dataset.rowType !== "policies") {
@@ -779,12 +776,57 @@
   }
 
   function renderGeneralSection() {
+    const template = (index, title, path) => `
+      <div class="database-tabcontent__label">
+        <p><span>${index}</span> ${title}</p>
+      </div>
+      <div class="database-tabcontent__row">
+        <canvas data-path="${path}" data-type="summary"></canvas>
+      </div>
+    `
+
+    const topics = [
+      { index: "A.1", title: "Climate change", parent: "s_A", child: "s_A1" },
+      { index: "A.2", title: "Use of natural resources", parent: "s_A", child: "s_A2" },
+      { index: "A.3", title: "Polluting discharges", parent: "s_A", child: "s_A3" },
+      { index: "A.4", title: "Waste", parent: "s_A", child: "s_A4" },
+      { index: "A.5", title: "Biodiversity and ecosystem conservation", parent: "s_A", child: "s_A5" },
+      { index: "B.1", title: "Employee and workforce matters", parent: "s_B", child: "s_B1" },
+      { index: "C.0", title: "General Human Rights Reporting Criteria", parent: "s_C", child: "s_C0" },
+      { index: "C.1", title: "Supply Chains Management", parent: "s_C", child: "s_C1" },
+      { index: "C.2", title: "Impacts on indigenous and/or local communities rights", parent: "s_C", child: "s_C2" },
+      { index: "C.3", title: "Hight risk areas for Civil & Political rights", parent: "s_C", child: "s_C3" },
+      { index: "C.4", title: "Conflict resources (minerals, timber, etc.)", parent: "s_C", child: "s_C4" },
+      { index: "C.5", title: "Data protection / Digital rights", parent: "s_C", child: "s_C5" },
+      { index: "D.1", title: "Anti-corruption", parent: "s_D", child: "s_D1" },
+      { index: "D.2", title: "Whistleblowing channel", parent: "s_D", child: "s_D2" },
+    ]
+
+    // different first-level section
+    const parents = unique(topics.map(({ parent }) => parent))
+
+    let sections = '';
+    for (let i = 0; i < parents.length; i++) {
+      const parent = parents[i];
+
+      if (GLOBAL_TREE.hasOwnProperty(parent)) {
+        const topic = topics.filter(d => d.parent === parent)
+
+        for (let j = 0; j < topic.length; j++) {
+          const { index, title, child } = topic[j];
+          
+          if (GLOBAL_TREE[parent].hasOwnProperty(child)) {
+            sections += template(index, title, `${parent}.${child}`)
+          }
+        }
+      }
+    }
+
     return `
       <section class="database-section database-canvas__fit">
         <span id="general" class="database-section__anchor"></span>
         ${getFiltersHTML()}
-        ${getTabLinksHTML()}
-        ${getTabContentHTML()}
+        ${sections}
       </section>
       <section id="general_results-companies-per" class="database-section database-canvas__fit">
         ${getCompaniesPerHTML()}
@@ -1105,9 +1147,7 @@
         element,
         summaryChartData(
           filter ? filterData(data) : data,
-          dataset.path,
-          dataset.parent,
-          dataset.option
+          dataset.path
         ),
         opts
       );
@@ -1286,47 +1326,55 @@
       chart = idOrElement;
     }
 
-    const columnNames = chartData.data.map(a => a[0].slice(3));
-    const data = chartData.data.map(a => parseFloat(a[1]));
-    const inverseData = data.map(e => MAXVALUE - e + 0.1);
+    const columnNames = ["Policies", "Risks", "Outcomes"];
+    const data = chartData.data;
+    const barThickness = options.barThickness || 40;
 
-    let barThickness = options.barThickness || 30;
     chart.height = columnNames.length * (barThickness + 6);
     chart.width = chart.getBoundingClientRect().width
 
-    let opts = {
+    const less3 = ctx => ctx.dataset.data[ctx.dataIndex] < 3
+    const nextLess3 = ctx => (data[ctx.datasetIndex + 1] || [])[ctx.dataIndex] < 3
+
+    const opts = {
       type: "horizontalBar",
       data: {
         labels: columnNames,
         datasets: [
           {
-            data: data,
-            backgroundColor: mainColor,
-            barThickness: barThickness,
-            maxBarThickness: barThickness
+            data: data[0],
+            backgroundColor: "#b5725d",
+            barPercentage: 0.9,
+            maxBarThickness: barThickness,
           },
           {
-            data: inverseData,
-            hiddenLabel: true,
-            barThickness: barThickness,
-            maxBarThickness: barThickness
-          }
-        ]
+            data: data[1],
+            backgroundColor: "#c5d8d9",
+            barPercentage: 0.9,
+            maxBarThickness: barThickness,
+          },
+          {
+            data: data[2],
+            backgroundColor: "#0b2740",
+            barPercentage: 0.9,
+            maxBarThickness: barThickness,
+          },
+        ],
       },
       plugins: [ChartDataLabels],
       options: {
         responsive: false,
         maintainAspectRatio: false,
         legend: {
-          display: false
+          display: false,
         },
         layout: {
           padding: {
             left: -10,
             right: 0,
             top: 0,
-            bottom: 0
-          }
+            bottom: 0,
+          },
         },
         scales: {
           xAxes: [
@@ -1334,39 +1382,68 @@
               stacked: true,
               gridLines: {
                 drawBorder: false,
-                drawTicks: false
+                drawTicks: false,
               },
               ticks: {
                 display: false,
                 beginAtZero: false,
                 precision: 0,
-                max: MAXVALUE
-              }
-            }
+                max: MAXVALUE,
+              },
+            },
           ],
           yAxes: [
             {
               stacked: true,
               gridLines: {
-                display: false
+                display: false,
               },
               ticks: {
-                display: false
-              }
-            }
-          ]
+                display: true,
+              },
+              afterFit: (scaleInstance) => {
+                const { width = 150 } = chart.getBoundingClientRect(); // enforce minimun label size
+                scaleInstance.width = width * (1 / 4);
+              },
+            },
+          ],
         },
         plugins: {
           datalabels: {
-            anchor: "end",
-            offset: context =>
-              context.dataset.data[context.dataIndex] < 50 ? 0 : 10,
-            color: context =>
-              context.dataset.data[context.dataIndex] < 50 ? "#3B5360" : "#fff",
-            align: context =>
-              context.dataset.data[context.dataIndex] < 50 ? "end" : "start",
+            anchor: "start",
+            offset: (context) => {
+              if (
+                context.datasetIndex !== 0 &&
+                (less3(context) || nextLess3(context))
+              )
+                return 0;
+              if (
+                context.datasetIndex !== 0 &&
+                context.dataset.data[context.dataIndex] < 10
+              )
+                return 2;
+              return 8;
+            },
+            color: (context) => {
+              if (
+                (context.datasetIndex === 1 &&
+                  !less3(context) &&
+                  !nextLess3(context)) ||
+                (context.datasetIndex === 2 && less3(context))
+              )
+                return "#3B5360";
+              return "#fff";
+            },
+            align: (context) => {
+              if (
+                context.datasetIndex !== 0 &&
+                (less3(context) || nextLess3(context))
+              )
+                return "start";
+              return "end";
+            },
             font: {
-              weight: "bold"
+              weight: "bold",
             },
             clip: true,
             formatter: (value, ctx) => {
@@ -1375,10 +1452,10 @@
               } else {
                 return value;
               }
-            }
-          }
-        }
-      }
+            },
+          },
+        },
+      },
     };
 
     new Chart(chart, opts);
@@ -1496,26 +1573,29 @@
     });
   }
 
-  function summaryChartData(data, path, parent, option, dictionary) {
-    let result = {};
+  function summaryChartData(data, chart) {
+    // Differenciate the possible options
+    let resultByOptions = { 1: {}, 2: {}, 3: {}};
     let total = {};
 
-    filterData(data).forEach(company => {
-      const element = GLOBAL_TREE[parent];
+    const paths = ["policies.policy", "risks.risk", "outcomes_wrapper.outcomes"]
+    const [parent, question] = chart.split(".") || []
+    const element = (GLOBAL_TREE[parent] || {})[question];
 
-      if (element) {
-        Object.keys(element).forEach(question => {
-          // Exceptions
-          if (
-            (path === "risks.risk" && parent === "s_D" && question === "s_D2") ||
-            (path === "risks.risk" && parent === "s_C" && question === "s_C4") ||
-            (parent === "s_B" && question === "s_B2")
-          ) {
-            return;
-          }
-  
+    if (element) {
+      for (let i = 0; i < paths.length; i++) {
+        const path = paths[i];
+        // init counters
+        total[path] = 0
+        resultByOptions[1][path] = 0
+        resultByOptions[2][path] = 0
+        resultByOptions[3][path] = 0
+
+        for (let j = 0; j < data.length; j++) {
+          const company = data[j];
+
           let value = resolve(company[parent][question], path);
-  
+
           // This is a dirty hack, but necessary
           // Sometimes the path of a question has the suffix 2 or 3
           // Example: policies.policy, policies.policy2 and policies.policy3
@@ -1525,25 +1605,24 @@
           if (value === undefined || value === null) {
             value = resolve(company[parent][question], path + "3");
           }
-          if (result[question] === undefined) {
-            result[question] = 0;
+
+          if (value) {
+            // Only count if the value is present
+            resultByOptions[value][path]++;
+            total[path]++;
           }
-          if (total[question] === undefined) {
-            total[question] = 0;
-          }
-          if (String(value) === String(option)) {
-            result[question]++;
-          }
-  
-          // Only count the total if the value is present
-          total[question]++;
-        });
+        }
       }
-    });
+    }
 
     return {
-      data: calculatePercentage(result, total, dictionary)
+      data: Object.values(resultByOptions).map(x => Object.keys(x).map(y => decimalRound(100 * x[y] / total[y]))),
     };
+  }
+
+  function decimalRound(num, decimals) {
+    const pow = Math.pow(10, decimals || 1)
+    return Math.round((num + Number.EPSILON) * pow) / pow
   }
 
   function resolve(obj, path) {
@@ -1587,6 +1666,7 @@
 
       return element;
     });
+
     if (options.sort) {
       result = result.sort((b, a) => a[1] - b[1]);
     }
