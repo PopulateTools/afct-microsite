@@ -144,10 +144,10 @@
   @extend %layout__flex;
 
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   > span {
-    flex: 0 0 50px;
+    flex: 0 0 auto;
   }
 }
 
