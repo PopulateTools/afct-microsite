@@ -61,6 +61,7 @@
   font-size: 1rem;
   font-style: normal;
   color: $cLink;
+  min-height: 25px;
 }
 
 %heading__span,
@@ -84,6 +85,10 @@
 
   &.muted {
     color: $cMutedText;
+  }
+
+  &.thick {
+    font-weight: 600;
   }
 }
 

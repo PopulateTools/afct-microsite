@@ -5,6 +5,7 @@
   let GLOBAL_TREE = null;
 
   let reportYear = null;
+  let materialityMatrixURL = null;
 
   window.addEventListener("DOMContentLoaded", () => {
     const { dataset: { year } = {} } = document.querySelector("[data-year]") || {}
@@ -30,6 +31,12 @@
         tree = getTree(data);
 
         GLOBAL_TREE = tree
+
+        // if (DEBUG) 
+        window.GLOBAL_TREE = tree
+
+        // set url for PDF
+        materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
 
         // Load sidebar
         const sidebar = document.querySelector("[data-sidebar]");
@@ -212,7 +219,7 @@
 
   closestPolyfill()
 
-  Chart.defaults.global.defaultFontSize = 11;
+  Chart.defaults.global.defaultFontSize = 13;
   Chart.defaults.global.tooltips.enabled = false
 
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
@@ -548,7 +555,7 @@
         if (section === "s_2b") {
 
           const template = `
-            <section class="database-section">
+            <section class="database-section database-section__margin-xl">
               <span id="${subSection}" class="database-section__anchor"></span>
               
               ${getDrilldownButtonsHTML({ text: sectionText })}
@@ -560,11 +567,18 @@
 
           renderedTemplate += template;
         } else if (isObject(tree[section][subSection]) && section !== "s_1") {
+          let materiality = '';
+
+          if (reportYear === '2019') {
+            materiality = `<a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>`
+          }
+
           renderedTemplate += `
             <section class="database-section">
               <span id="${subSection}" class="database-section__anchor"></span>
               <h1 class="heading__h1 with-decorator">
                 ${sectionText}
+                ${materiality}
               </h1>
               ${block}
             </section>
@@ -635,7 +649,7 @@
         const className = "database-layout__col-2-3 gutter-l"
 
         const template = `
-          <section class="database-section">
+          <section class="database-section database-section__margin-xl">
 
             ${getDrilldownButtonsHTML({ text })}
 
@@ -697,7 +711,7 @@
         issueTemplate = `<div class="database-layout__grid-3 gutter-xl">${issueTemplate}</div>`
 
         const template = `
-          <section class="database-section">
+          <section class="database-section database-section__margin-xl">
 
             ${getDrilldownButtonsHTML({ text })}
 
@@ -790,7 +804,7 @@
 
   function renderGeneralSection() {
     return `
-      <section class="database-section database-canvas__fit">
+      <section class="database-section database-section__margin-xl database-canvas__fit">
         <span id="general" class="database-section__anchor"></span>
         ${getFiltersHTML()}
         ${getGeneralSectionLegendHTML()}
@@ -871,6 +885,9 @@
         </div>
         <div>${options}</div>
       </div>
+      <div class="database-tabcontent__label">
+        <span style="margin-left: auto">% percentage of total</span>
+      </div>
     `
   }
 
@@ -929,9 +946,18 @@
   }
 
   function getFiltersHTML() {
+    let materiality = '';
+
+    if (reportYear === '2019') {
+      materiality = `<a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>`
+    }
+
     return `
       <div class="database-layout__flex">
-        <h4 class="heading__h4">Summary</h4>
+        <h4 class="heading__h4">
+          Summary
+          ${materiality}
+        </h4>
         ${getFiltersBlock()}
       </div>
     `;
@@ -1064,7 +1090,7 @@
     const maxValue = options.absolute ? Math.max(...data) : MAXVALUE
     const inverseData = data.map(e => maxValue - e);
 
-    const barThickness = options.barThickness || 30;
+    const barThickness = options.barThickness || 40;
     chart.height = columnNames.length * (barThickness + 20);
     chart.width = chart.getBoundingClientRect().width
 
@@ -1148,10 +1174,13 @@
               },
               ticks: {
                 fontSize: fontSize,
-                fontStyle: 200
+                fontStyle: 200,
+                mirror: true
               },
               afterFit: scaleInstance => {
-                scaleInstance.width = labelWidth(chart);
+                const width = labelWidth(chart);
+                scaleInstance.width = width;
+                scaleInstance.options.ticks.padding = width;
               }
             }
           ]
@@ -1193,10 +1222,43 @@
       chart = idOrElement;
     }
 
-    const columnNames = ["Policies", "Risks", "Outcomes"];
     const data = chartData.data;
-    const barThickness = options.barThickness || 40;
+    const barThickness = options.barThickness || 50;
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
+
+    let columnNames = ["Policies", "Risks", "Outcomes"];
+    let datasets = [
+      {
+        data: data[0],
+        backgroundColor: SUMMARY.COLORS[0],
+        barPercentage: 0.9,
+        maxBarThickness: barThickness,
+      },
+      {
+        data: data[1],
+        backgroundColor: SUMMARY.COLORS[1],
+        barPercentage: 0.9,
+        maxBarThickness: barThickness,
+      },
+      {
+        data: data[2],
+        backgroundColor: SUMMARY.COLORS[2],
+        barPercentage: 0.9,
+        maxBarThickness: barThickness,
+      },
+    ];
+
+    const nullIndexes = data.map(d => d.findIndex(f => Number.isNaN(f)))
+    const indexToDelete = nullIndexes.every(d => d > -1 && d === nullIndexes[0]) ? nullIndexes[0] : null;
+
+    if (indexToDelete !== null) {
+      columnNames.splice(indexToDelete, 1)
+      datasets.map(d => {
+        const { data } = d
+        data.splice(indexToDelete, 1)
+        return { ...d, data }
+      })
+    }
 
     chart.height = columnNames.length * (barThickness + 6);
     chart.width = chart.getBoundingClientRect().width
@@ -1208,26 +1270,7 @@
       type: "horizontalBar",
       data: {
         labels: columnNames,
-        datasets: [
-          {
-            data: data[0],
-            backgroundColor: SUMMARY.COLORS[0],
-            barPercentage: 0.9,
-            maxBarThickness: barThickness,
-          },
-          {
-            data: data[1],
-            backgroundColor: SUMMARY.COLORS[1],
-            barPercentage: 0.9,
-            maxBarThickness: barThickness,
-          },
-          {
-            data: data[2],
-            backgroundColor: SUMMARY.COLORS[2],
-            barPercentage: 0.9,
-            maxBarThickness: barThickness,
-          },
-        ],
+        datasets,
       },
       plugins: [ChartDataLabels],
       options: {
@@ -1268,11 +1311,13 @@
               },
               ticks: {
                 fontSize: fontSize,
-                fontStyle: 200
+                fontStyle: 200,
+                mirror: true
               },
               afterFit: (scaleInstance) => {
                 const { width = 150 } = chart.getBoundingClientRect(); // enforce minimun label size
                 scaleInstance.width = width * (1 / 4);
+                scaleInstance.options.ticks.padding = width * (1 / 4) - 40
               },
             },
           ],
@@ -1336,7 +1381,7 @@
 
       newChart.className = "database-layout__flex-column"
       newChart.innerHTML = `
-        <span class="heading__span muted">${chartDataInfo[0] || "-"}</span>
+        <span class="heading__span thick muted">${chartDataInfo[0] || "-"}</span>
         <canvas></canvas>
       `;
 
@@ -1404,11 +1449,13 @@
                   display: false
                 },
                 ticks: {
-                  display: true
+                  display: true,
+                  mirror: true
                 },
                 afterFit: scaleInstance => {
                   const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
                   scaleInstance.width = width * (2 / 3);
+                  scaleInstance.options.ticks.padding = width * (2 / 3);
                 }
               }
             ]
