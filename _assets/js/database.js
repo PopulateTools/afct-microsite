@@ -1091,7 +1091,7 @@
     const inverseData = data.map(e => maxValue - e);
 
     const barThickness = options.barThickness || 40;
-    chart.height = columnNames.length * (barThickness + 20);
+    chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 20));
     chart.width = chart.getBoundingClientRect().width
 
     const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => {
