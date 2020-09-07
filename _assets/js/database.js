@@ -1,5 +1,5 @@
 (function() {
-  const DEBUG = false //(location.origin === "http://0.0.0.0:4000") || false;
+  const DEBUG = (location.origin === "http://0.0.0.0:4000") || false;
 
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
@@ -1393,9 +1393,10 @@
       const inverseData = data.map(e => MAXVALUE - e + 0.1);
 
       const barThickness = options.barThickness || 20;
-      chart.height = columnNames.length * (barThickness + 8);
-      // chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 8)); // force a minimal height
+      chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 8)); // force a minimal height
       chart.width = chart.getBoundingClientRect().width
+
+      const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
       const opts = {
         type: "horizontalBar",
@@ -1448,6 +1449,8 @@
                 },
                 ticks: {
                   display: true,
+                  fontSize: fontSize,
+                  fontStyle: 200,
                   mirror: true
                 },
                 afterFit: scaleInstance => {
@@ -1921,11 +1924,11 @@
   }
 
   function getCountries(data) {
-    return unique(data.map(d => resolve(d, countriesPath))).sort();
+    return unique(data.map(d => resolve(d, countriesPath))).filter(Boolean).sort();
   }
 
   function getSectors(data) {
-    return unique(flatten(data.map(d => resolve(d, sectorsPath)))).sort();
+    return unique(flatten(data.map(d => resolve(d, sectorsPath)))).filter(Boolean).sort();
   }
 
   function unique(array) {
@@ -2119,26 +2122,28 @@
         const key = array[0];
         const groupBykey = array[1];
 
-        let keys = key;
-        if (!Array.isArray(key)) {
-          keys = [key];
-        }
-        keys.forEach(key => {
-          if (result[key] === undefined) {
-            result[key] = {};
+        if (groupBykey) {
+          let keys = key;
+          if (!Array.isArray(key)) {
+            keys = [key];
           }
-          items.forEach(item => {
-            if (result[key][item] === undefined) {
-              result[key][item] = 0;
+          keys.forEach(key => {
+            if (result[key] === undefined) {
+              result[key] = {};
             }
+            items.forEach(item => {
+              if (result[key][item] === undefined) {
+                result[key][item] = 0;
+              }
+            });
+            result[key][groupBykey]++;
           });
-          result[key][groupBykey]++;
-        });
 
-        if (total[groupBykey] === undefined) {
-          total[groupBykey] = 0;
+          if (total[groupBykey] === undefined) {
+            total[groupBykey] = 0;
+          }
+          total[groupBykey]++;
         }
-        total[groupBykey]++;
       }
     });
 
@@ -2152,6 +2157,7 @@
       ) {
         keyTxt = dictionary[dictionaryKey][question];
       }
+
       return [
         keyTxt,
         calculatePercentage(result[question], total, dictionaryKey, dictionary)
