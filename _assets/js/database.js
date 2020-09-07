@@ -1,5 +1,5 @@
 (function() {
-  const DEBUG = (location.origin === "http://0.0.0.0:4000") || false;
+  const DEBUG = false //(location.origin === "http://0.0.0.0:4000") || false;
 
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
@@ -31,9 +31,6 @@
         tree = getTree(data);
 
         GLOBAL_TREE = tree
-
-        // if (DEBUG) 
-        window.GLOBAL_TREE = tree
 
         // set url for PDF
         materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
@@ -1091,7 +1088,7 @@
     const inverseData = data.map(e => maxValue - e);
 
     const barThickness = options.barThickness || 40;
-    chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 20));
+    chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 20)); // force a minimal height
     chart.width = chart.getBoundingClientRect().width
 
     const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => {
@@ -1397,6 +1394,7 @@
 
       const barThickness = options.barThickness || 20;
       chart.height = columnNames.length * (barThickness + 8);
+      // chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 8)); // force a minimal height
       chart.width = chart.getBoundingClientRect().width
 
       const opts = {
@@ -1556,8 +1554,7 @@
     dictionary,
     options = {}
   ) {
-
-    let result = Object.keys(dictionary[dictionaryKey]).filter(Number).map(key => {
+    let result = Object.keys(data).map(key => {
       let keyTxt = key;
       if (
         dictionaryKey !== undefined &&
@@ -1618,7 +1615,15 @@
     });
 
     // first merge the original data with 0, and then the real object, to be updated
-    const combined = { ...result1, ...result }
+    let combined = { ...result1, ...result }
+
+    // In case, some data values are null/undefined/non-existant, but they do in dictionary
+    const availableOptions = Object.keys(dictionary[dictionaryKey]).filter(Number);
+    const currentOptions = Object.keys(combined);
+    if (availableOptions.length > currentOptions.length) {
+      const intersection = (a, b) => a.filter((value) => !b.includes(value));
+      combined = intersection(availableOptions, currentOptions).reduce((acc, item) => ({ ...acc, [item]: 0 }), combined)
+    }
 
     return {
       data: calculatePercentage(combined, total, dictionaryKey, dictionary, options)
