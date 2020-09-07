@@ -1556,7 +1556,8 @@
     dictionary,
     options = {}
   ) {
-    let result = Object.keys(data).map(key => {
+
+    let result = Object.keys(dictionary[dictionaryKey]).filter(Number).map(key => {
       let keyTxt = key;
       if (
         dictionaryKey !== undefined &&
