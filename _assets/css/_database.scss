@@ -110,6 +110,12 @@
   margin: 0 0 3rem;
 }
 
+.database-section__margin-xl {
+  @extend %section;
+
+  margin: 0 0 5rem;
+}
+
 .database-section__anchor {
   position: absolute;
   top: -4rem;
@@ -254,6 +260,7 @@
 .database-tabcontent__row {
   display: flex;
   margin: .25rem 0;
+  max-width: 60%;
 
   @include gutters();
 }
@@ -415,13 +422,14 @@
 }
 
 .database-summary__legend {
-  margin: 1em 0;
+  margin: 2em 0;
   display: flex;
 
   > :first-child {
     flex: 0 0 10%;
     text-align: right;
     padding-right: 1em;
+    font-weight: bold;
   }
 
   > :last-child {
