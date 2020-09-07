@@ -260,6 +260,7 @@
 .database-tabcontent__row {
   display: flex;
   margin: .25rem 0;
+  max-width: 60%;
 
   @include gutters();
 }

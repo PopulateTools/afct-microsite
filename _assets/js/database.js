@@ -1620,12 +1620,14 @@
     // first merge the original data with 0, and then the real object, to be updated
     let combined = { ...result1, ...result }
 
-    // In case, some data values are null/undefined/non-existant, but they do in dictionary
-    const availableOptions = Object.keys(dictionary[dictionaryKey]).filter(Number);
-    const currentOptions = Object.keys(combined);
-    if (availableOptions.length > currentOptions.length) {
-      const intersection = (a, b) => a.filter((value) => !b.includes(value));
-      combined = intersection(availableOptions, currentOptions).reduce((acc, item) => ({ ...acc, [item]: 0 }), combined)
+    // In case of some data values are null/undefined/non-existant, but they do in dictionary
+    if (dictionary[dictionaryKey]) {
+      const availableOptions = Object.keys(dictionary[dictionaryKey]).filter(Number);
+      const currentOptions = Object.keys(combined);
+      if (availableOptions.length > currentOptions.length) {
+        const intersection = (a, b) => a.filter((value) => !b.includes(value));
+        combined = intersection(availableOptions, currentOptions).reduce((acc, item) => ({ ...acc, [item]: 0 }), combined)
+      }
     }
 
     return {
