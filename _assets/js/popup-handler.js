@@ -35,16 +35,24 @@
     }
   });
 
+  let REPORT_URL;
+
   window.onclick = (e) => {
-    const { dataset: { triggerModal } = {} } = e.target
+    const { dataset: { triggerModal, action } = {}, href } = e.target
+
     if (triggerModal !== undefined) {
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
 
       if (widget) {
         e.preventDefault()
+        REPORT_URL = href
         widget.style.opacity = null;
         widget.style.transform = null;
       }
+    }
+
+    if (action !== undefined && action === "close-mc-modal" && REPORT_URL) {
+      window.open(REPORT_URL, "_blank");
     }
   }
 })();
