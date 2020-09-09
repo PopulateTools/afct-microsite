@@ -28,9 +28,10 @@
   observeDOM(document.body, function () {
     const widget = document.querySelector("[widgetid^='PopupSignupForm']");
   
-    if (!IS_WIDGET_INITIALIZED && widget) {
+    if (widget && !IS_WIDGET_INITIALIZED) {
       IS_WIDGET_INITIALIZED = true
-      widget.style.display = 'none';
+      widget.style.opacity = 0;
+      widget.style.transform = "translate(-9999px)";
     }
   });
 
@@ -40,7 +41,8 @@
       e.preventDefault()
 
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
-      widget.style.display = 'block';
+      widget.style.opacity = null;
+      widget.style.transform = null;
     }
   }
 })();
