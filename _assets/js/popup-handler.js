@@ -1,7 +1,7 @@
 (function() {
   console.log('load');
 
-  document.addEventListener('DOMContentLoader', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     console.log(1, 'document');
     const widget = document.querySelector("[widgetid^='PopupSignupForm']")
     
@@ -16,7 +16,7 @@
     }
   })
 
-  window.addEventListener('DOMContentLoader', () => {
+  window.addEventListener('DOMContentLoaded', () => {
     console.log(2, 'window');
   })
 
