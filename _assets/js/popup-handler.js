@@ -24,6 +24,7 @@
   })();
 
   let IS_WIDGET_INITIALIZED = false
+  let REPORT_URL = null
 
   observeDOM(document.body, function () {
     const widget = document.querySelector("[widgetid^='PopupSignupForm']");
@@ -33,9 +34,12 @@
       widget.style.opacity = 0;
       widget.style.transform = "translate(-9999px)";
     }
-  });
 
-  let REPORT_URL;
+    if (!widget && REPORT_URL) {
+      window.open(REPORT_URL, "_blank");
+      REPORT_URL = null
+    }
+  });
 
   window.onclick = (e) => {
     const { dataset: { triggerModal, action } = {}, href } = e.target
@@ -49,10 +53,6 @@
         widget.style.opacity = null;
         widget.style.transform = null;
       }
-    }
-
-    if (action !== undefined && action === "close-mc-modal" && REPORT_URL) {
-      window.open(REPORT_URL, "_blank");
     }
   }
 })();
