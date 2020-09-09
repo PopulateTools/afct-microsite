@@ -34,9 +34,11 @@
     }
   });
 
-  window.onclick = ({ target }) => {
-    const { dataset: { triggerModal } = {} } = target
-    if (triggerModal) {
+  window.onclick = (e) => {
+    const { dataset: { triggerModal } = {} } = e.target
+    if (triggerModal !== undefined) {
+      e.preventDefault()
+
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
       widget.style.display = 'block';
     }
