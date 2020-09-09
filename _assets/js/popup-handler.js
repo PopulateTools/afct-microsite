@@ -1,4 +1,6 @@
 (function() {
+  console.log('load');
+  
   document.addEventListener('DOMContentLoader', () => {
     console.log(1);
     const widget = document.querySelector("[widgetid^='PopupSignupForm']")
