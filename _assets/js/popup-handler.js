@@ -1,8 +1,8 @@
 (function() {
   console.log('load');
-  
+
   document.addEventListener('DOMContentLoader', () => {
-    console.log(1);
+    console.log(1, 'document');
     const widget = document.querySelector("[widgetid^='PopupSignupForm']")
     
     if (widget) {
@@ -15,4 +15,12 @@
       document.body.style.background = 'black'
     }
   })
+
+  window.addEventListener('DOMContentLoader', () => {
+    console.log(2, 'window');
+  })
+
+  const widget = document.querySelector("[widgetid^='PopupSignupForm']")
+
+  console.log(0, widget);
 })();
