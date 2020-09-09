@@ -1621,7 +1621,7 @@
     let combined = { ...result1, ...result }
 
     // In case of some data values are null/undefined/non-existant, but they do in dictionary
-    if (dictionary[dictionaryKey]) {
+    if (dictionary && dictionary[dictionaryKey]) {
       const availableOptions = Object.keys(dictionary[dictionaryKey]).filter(Number);
       const currentOptions = Object.keys(combined);
       if (availableOptions.length > currentOptions.length) {
