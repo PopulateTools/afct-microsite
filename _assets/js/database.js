@@ -258,7 +258,8 @@
         ["Transportation", 47.6]
       ],
       opts: {
-        labelWidth: () => 0
+        labelWidth: () => 0,
+        mirrorY: false
       }
     },
     "company-climate-target": {
@@ -276,7 +277,8 @@
         ["Transportation", 12.48]
       ],
       opts: {
-        labelWidth: () => 0
+        labelWidth: () => 0,
+        mirrorY: false
       }
     },
     "human-rights": {
@@ -295,7 +297,8 @@
           return width * 0.6
         },
         maxLength: 60,
-        fontSize: 15
+        fontSize: 15,
+        mirrorY: false
       }
     },
     "supply-chain": {
@@ -311,7 +314,8 @@
           return width * 0.6
         },
         maxLength: 60,
-        fontSize: 15
+        fontSize: 15,
+        mirrorY: false
       }
     }
   }
@@ -1027,6 +1031,14 @@
       opts.barThickness = Number(dataset.barThickness)
     }
 
+    if (dataset.mirrorX !== undefined) {
+      opts.mirrorX = dataset.mirrorY === '' || dataset.mirrorX === 'true'
+    }
+
+    if (dataset.mirrorY !== undefined) {
+      opts.mirrorY = dataset.mirrorY === '' || dataset.mirrorY === 'true'
+    }
+
     let filter = true
     if (dataset.excludeFilter !== undefined) {
       filter = false
@@ -1088,6 +1100,9 @@
     const inverseData = data.map(e => maxValue - e);
 
     const barThickness = options.barThickness || 40;
+    const mirrorX = options.mirrorX !== undefined ? options.mirrorX : false;
+    const mirrorY = options.mirrorY !== undefined ? options.mirrorY : true;
+
     chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 20)); // force a minimal height
     chart.width = chart.getBoundingClientRect().width
 
@@ -1159,6 +1174,7 @@
                 beginAtZero: false,
                 precision: 0,
                 max: maxValue,
+                mirror: mirrorX,
                 callback: value => `${value} %`
               }
             }
@@ -1172,7 +1188,7 @@
               ticks: {
                 fontSize: fontSize,
                 fontStyle: 200,
-                mirror: true
+                mirror: mirrorY,
               },
               afterFit: scaleInstance => {
                 const width = labelWidth(chart);
