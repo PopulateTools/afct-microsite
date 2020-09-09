@@ -23,24 +23,22 @@
     };
   })();
 
+  let IS_WIDGET_INITIALIZED = false
+
   observeDOM(document.body, function () {
-    console.log("dom changed");
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log(1, "document");
     const widget = document.querySelector("[widgetid^='PopupSignupForm']");
-
-    if (widget) {
-      console.log(2, "wiii-dget");
-
-      widget.style.opacity = 0.25;
+  
+    if (!IS_WIDGET_INITIALIZED && widget) {
+      IS_WIDGET_INITIALIZED = true
+      widget.style.display = 'none';
     }
   });
 
-  window.addEventListener("DOMContentLoaded", () => {
-    const widget = document.querySelector("[widgetid^='PopupSignupForm']");
-
-    console.log("window", widget);
-  });
+  window.onclick = ({ target }) => {
+    const { dataset: { triggerModal } = {} } = target
+    if (triggerModal) {
+      const widget = document.querySelector("[widgetid^='PopupSignupForm']");
+      widget.style.display = 'block';
+    }
+  }
 })();

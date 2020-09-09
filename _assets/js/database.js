@@ -441,7 +441,7 @@
     const ul = html => `<ul>${html}</ul>`
     const li = html => `<li>${html}</li>`
     const a = (section, text) => `<a href="#${section}">${text}</a>`;
-    const url = (url, text) => `<a href="${url}" target="_blank">${text}</a>`;
+    const url = (url, text) => `<a href="${url}" target="_blank" data-trigger-modal>${text}</a>`;
 
     result += li(a("general", "General Results"));
 
