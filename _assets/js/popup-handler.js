@@ -87,8 +87,8 @@
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
 
       // https://talk.jekyllrb.com/t/solved-anyone-made-a-mailchimp-subscribe-pop-up-work-on-click/1706/3
-      setCookie("MCPopupClosed", null, { expires: new Date(0)})
-      setCookie("MCPopupSubscribed", null, { expires: new Date(0)})
+      // setCookie("MCPopupClosed", null, { expires: new Date(0)})
+      // setCookie("MCPopupSubscribed", null, { expires: new Date(0)})
 
       if (widget) {
         e.preventDefault()
