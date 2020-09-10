@@ -21,5 +21,15 @@
 {% asset multiselect.min.js %}
 {% asset database.js %}
 
+{% if jekyll.environment == "production" %}
+  <!-- mailchimp for allianceforcorporatetransparency.org -->
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/66bafd0ef0d33f5bf8fbe1e87/a61ae72d994dfb2673a0fba24.js");</script>
+{% else %}
+  <!-- mailchimp for afct.populate.tools -->
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/66bafd0ef0d33f5bf8fbe1e87/cb941f970f5ba8f4a4006a23e.js");</script>
+{% endif %}
+
+{% asset popup-handler.js %}
+
 </body>
 </html>
