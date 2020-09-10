@@ -81,7 +81,7 @@
   });
 
   window.onclick = (e) => {
-    const { dataset: { triggerModal, action } = {}, href } = e.target
+    const { dataset: { triggerModal } = {}, href } = e.target
 
     if (triggerModal !== undefined) {
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
