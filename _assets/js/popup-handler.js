@@ -24,23 +24,41 @@
   })();
 
   function getCookie(name) {
-    // Split cookie string and get all individual name=value pairs in an array
-    var cookieArr = document.cookie.split(";");
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  }
 
-    // Loop through the array elements
-    for (var i = 0; i < cookieArr.length; i++) {
-      var cookiePair = cookieArr[i].split("=");
+  function setCookie(name, value, options = {}) {
 
-      /* Removing whitespace at the beginning of the cookie name
-        and compare it with the given string */
-      if (name == cookiePair[0].trim()) {
-        // Decode the cookie value and return
-        return decodeURIComponent(cookiePair[1]);
+    options = {
+      path: '/',
+      // add other defaults here if necessary
+      ...options
+    };
+  
+    if (options.expires instanceof Date) {
+      options.expires = options.expires.toUTCString();
+    }
+  
+    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+  
+    for (let optionKey in options) {
+      updatedCookie += "; " + optionKey;
+      let optionValue = options[optionKey];
+      if (optionValue !== true) {
+        updatedCookie += "=" + optionValue;
       }
     }
+  
+    document.cookie = updatedCookie;
+  }
 
-    // Return null if not found
-    return null;
+  function deleteCookie(name) {
+    setCookie(name, "", {
+      'max-age': -1
+    })
   }
 
   let IS_WIDGET_INITIALIZED = false
@@ -67,7 +85,11 @@
     if (triggerModal !== undefined) {
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
 
-      if (widget && getCookie("MCPopupClosed") !== "yes") {
+      if (getCookie("MCPopupClosed") !== "yes") {
+        deleteCookie("MCPopupClosed")
+      }
+
+      if (widget) {
         e.preventDefault()
         REPORT_URL = href
         widget.style.opacity = null;
