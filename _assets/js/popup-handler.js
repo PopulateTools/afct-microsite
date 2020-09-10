@@ -85,7 +85,7 @@
     if (triggerModal !== undefined) {
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
 
-      if (getCookie("MCPopupClosed") !== "yes") {
+      if (getCookie("MCPopupClosed") === "yes") {
         deleteCookie("MCPopupClosed")
       }
 
