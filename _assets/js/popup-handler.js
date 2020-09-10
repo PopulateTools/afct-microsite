@@ -47,6 +47,13 @@
     if (triggerModal !== undefined) {
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
 
+      require(
+        ["mojo/signup-forms/Loader"],
+        function(L) {
+          L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"66bafd0ef0d33f5bf8fbe1e87","lid":"113ab4bd34","uniqueMethods":true})
+        }
+      );
+
       // https://talk.jekyllrb.com/t/solved-anyone-made-a-mailchimp-subscribe-pop-up-work-on-click/1706/3
       document.cookie = "MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
       document.cookie = "MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
