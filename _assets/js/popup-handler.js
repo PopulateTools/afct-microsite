@@ -23,6 +23,45 @@
     };
   })();
 
+  // https://javascript.info/cookie
+  function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  }
+
+  function setCookie(name, value, options = {}) {
+
+    options = {
+      path: '/',
+      // add other defaults here if necessary
+      ...options
+    };
+  
+    if (options.expires instanceof Date) {
+      options.expires = options.expires.toUTCString();
+    }
+  
+    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+  
+    for (let optionKey in options) {
+      updatedCookie += "; " + optionKey;
+      let optionValue = options[optionKey];
+      if (optionValue !== true) {
+        updatedCookie += "=" + optionValue;
+      }
+    }
+  
+    document.cookie = updatedCookie;
+  }
+
+  function deleteCookie(name) {
+    setCookie(name, "", {
+      'max-age': -1
+    })
+  }
+
   let IS_WIDGET_INITIALIZED = false
   let REPORT_URL = null
 
@@ -47,16 +86,9 @@
     if (triggerModal !== undefined) {
       const widget = document.querySelector("[widgetid^='PopupSignupForm']");
 
-      require(
-        ["mojo/signup-forms/Loader"],
-        function(L) {
-          L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"66bafd0ef0d33f5bf8fbe1e87","lid":"113ab4bd34","uniqueMethods":true})
-        }
-      );
-
       // https://talk.jekyllrb.com/t/solved-anyone-made-a-mailchimp-subscribe-pop-up-work-on-click/1706/3
-      document.cookie = "MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-      document.cookie = "MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+      setCookie("MCPopupClosed", null, { expires: new Date(0)})
+      setCookie("MCPopupSubscribed", null, { expires: new Date(0)})
 
       if (widget) {
         e.preventDefault()
