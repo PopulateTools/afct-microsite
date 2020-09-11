@@ -115,7 +115,7 @@ column-width: single
 
     <p>The rationale behind this decision follows the principles of the EU NFR Directive and accompanying guidance, in which it is stated that the information should be easily accessible (i.e. “Cross referencing and signposting should be smart and user-friendly, for instance, by applying a practical rule of maximum one “click” out of the report”)</p>
 
-    <p>In 2019 EU Research the project has assessed the information and reports covering a substantial part of the year 2018. In the majority of EU countries, the corporate reporting period corresponds with the calendar year, but in some other countries the reporting year at a different date. In some countries, the 2018 reports may be published as late as the end of September 2019. Therefore, in order to ensure the comparability of information, the project did not take into account reports from companies who have already published information covering 2019. </p>
+    <p>In the 2019 EU Research the project has assessed the information and reports covering a substantial part of the year 2018. In the majority of EU countries, the corporate reporting period corresponds with the calendar year, but in some other countries the reporting year at a different date. In some countries, the 2018 reports may be published as late as the end of September 2019. Therefore, in order to ensure the comparability of information, the project did not take into account reports from companies who have already published information covering 2019. </p>
 
   </td>
 </tr>

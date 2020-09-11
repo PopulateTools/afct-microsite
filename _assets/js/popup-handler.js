@@ -92,7 +92,7 @@
       }
 
       if (getCookie("MCPopupSubscribed") !== undefined) {
-        deleteCookie("MCPopupClosed")
+        deleteCookie("MCPopupSubscribed")
       }
 
       if (widget && (getCookie("MCPopupClosed") !== "yes" || getCookie("MCPopupSubscribed") !== "yes")) {

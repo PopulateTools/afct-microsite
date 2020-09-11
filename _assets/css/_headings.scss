@@ -61,7 +61,9 @@
   font-size: 1rem;
   font-style: normal;
   color: $cLink;
-  min-height: 25px;
+  min-height: 88px;
+  display: flex;
+  align-items: flex-end;
 }
 
 %heading__span,

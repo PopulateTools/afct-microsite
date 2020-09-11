@@ -29,8 +29,8 @@ Frank Bold and Sustentia take responsibility for any error or inaccuracy in the 
 
 The Alliance for Corporate Transparency has carried out the following studies: 
 - Initial research on 105 companies in 2018 (research report [here](http://www.allianceforcorporatetransparency.org/assets/2018_Research_Report_Alliance_Corporate_Transparency-66d0af6a05f153119e7cffe6df2f11b094affe9aaf4b13ae14db04e395c54a84.pdf))
-- Research 2019 on 1000 European companies 
-- EUKI research 2020 on 300 companies in Central, Eastern and Southern Europe
+- Research 2019 on 1000 European companies (database and research report <a href="../database/2019.html">here</a>)
+- EUKI research 2020 on 300 companies in Central, Eastern and Southern Europe (database and research report <a href="../database/2020.html">here</a>)
 
 <h1>Funders</h1>
 
@@ -43,11 +43,3 @@ This project is part of the European Climate Initiative (EUKI) of the German Fed
 <strong>Contact</strong>: For any queries, please contact Susanna Arus, Project Coordinator at <a href="mailto:susanna.arus@frankbold.org">susanna.arus@frankbold.org</a>
 
 <strong>Newsletter:</strong> You can register for our <a class="link" href="http://eepurl.com/dJPBjQ">newsletter here</a> to receive updates on the project.
-
-<h1>Context</h1>
-
-Since 2018, large companies and financial corporations are required to disclose information necessary for understanding their societal and environmental risks and impacts. The NFRD failed to specify what concrete information must be disclosed, severely undermining the legislation’s objective to increase the relevance, consistency and comparability of corporate sustainability data. 
-
-Sustainability reporting is indispensable for companies’ strategic planning as well as to support the implementation of the sustainable finance agenda in the EU, as investors and financial actors need high quality and comparable data to inform their decisions and engagement with companies. Similarly, civil society and public authorities need access to this information to assess and monitor compliance and corporate responsibility.
-
-<img src="{% asset posts/2001-diagram @path %}" alt="">
