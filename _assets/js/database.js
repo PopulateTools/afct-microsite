@@ -887,7 +887,7 @@
         <div>${options}</div>
       </div>
       <div class="database-tabcontent__label">
-        <span style="margin-left: auto">% percentage of total</span>
+        <span>% percentage of total</span>
       </div>
     `
   }

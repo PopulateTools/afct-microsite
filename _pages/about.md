@@ -29,8 +29,8 @@ Frank Bold and Sustentia take responsibility for any error or inaccuracy in the 
 
 The Alliance for Corporate Transparency has carried out the following studies: 
 - Initial research on 105 companies in 2018 (research report [here](http://www.allianceforcorporatetransparency.org/assets/2018_Research_Report_Alliance_Corporate_Transparency-66d0af6a05f153119e7cffe6df2f11b094affe9aaf4b13ae14db04e395c54a84.pdf))
-- Research 2019 on 1000 European companies 
-- EUKI research 2020 on 300 companies in Central, Eastern and Southern Europe
+- Research 2019 on 1000 European companies (database and research report <a href="../database/2019.html">here</a>)
+- EUKI research 2020 on 300 companies in Central, Eastern and Southern Europe (database and research report <a href="../database/2020.html">here</a>)
 
 <h1>Funders</h1>
 

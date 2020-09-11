@@ -260,7 +260,7 @@
 .database-tabcontent__row {
   display: flex;
   margin: .25rem 0;
-  max-width: 60%;
+  max-width: 75%;
 
   @include gutters();
 }
@@ -424,6 +424,7 @@
 .database-summary__legend {
   margin: 2em 0;
   display: flex;
+  max-width: 95%;
 
   > :first-child {
     flex: 0 0 10%;
