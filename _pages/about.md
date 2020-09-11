@@ -43,11 +43,3 @@ This project is part of the European Climate Initiative (EUKI) of the German Fed
 <strong>Contact</strong>: For any queries, please contact Susanna Arus, Project Coordinator at <a href="mailto:susanna.arus@frankbold.org">susanna.arus@frankbold.org</a>
 
 <strong>Newsletter:</strong> You can register for our <a class="link" href="http://eepurl.com/dJPBjQ">newsletter here</a> to receive updates on the project.
-
-<h1>Context</h1>
-
-Since 2018, large companies and financial corporations are required to disclose information necessary for understanding their societal and environmental risks and impacts. The NFRD failed to specify what concrete information must be disclosed, severely undermining the legislation’s objective to increase the relevance, consistency and comparability of corporate sustainability data. 
-
-Sustainability reporting is indispensable for companies’ strategic planning as well as to support the implementation of the sustainable finance agenda in the EU, as investors and financial actors need high quality and comparable data to inform their decisions and engagement with companies. Similarly, civil society and public authorities need access to this information to assess and monitor compliance and corporate responsibility.
-
-<img src="{% asset posts/2001-diagram @path %}" alt="">
