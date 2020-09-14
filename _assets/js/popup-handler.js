@@ -100,7 +100,6 @@
         REPORT_URL = href
         widget.style.opacity = null;
         widget.style.transform = null;
-        Array.from(widget.children).forEach(a => (a.style = null))
       }
     }
   }
