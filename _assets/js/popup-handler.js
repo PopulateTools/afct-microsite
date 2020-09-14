@@ -25,26 +25,30 @@
 
   // https://javascript.info/cookie
   function getCookie(name) {
-    let matches = document.cookie.match(new RegExp(
-      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
+    let matches = document.cookie.match(
+      new RegExp(
+        "(?:^|; )" +
+          name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
+          "=([^;]*)"
+      )
+    );
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
 
   function setCookie(name, value, options = {}) {
-
     options = {
-      path: '/',
+      path: "/",
       // add other defaults here if necessary
-      ...options
+      ...options,
     };
-  
+
     if (options.expires instanceof Date) {
       options.expires = options.expires.toUTCString();
     }
-  
-    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-  
+
+    let updatedCookie =
+      encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
     for (let optionKey in options) {
       updatedCookie += "; " + optionKey;
       let optionValue = options[optionKey];
@@ -52,56 +56,67 @@
         updatedCookie += "=" + optionValue;
       }
     }
-  
+
     document.cookie = updatedCookie;
   }
 
   function deleteCookie(name) {
     setCookie(name, "", {
-      'max-age': -1
-    })
+      "max-age": -1,
+    });
   }
 
-  let IS_WIDGET_INITIALIZED = false
-  let REPORT_URL = null
-  let widget = null
+  let IS_WIDGET_INITIALIZED = false;
+  let REPORT_URL = null;
+  let widget = null;
 
   observeDOM(document.body, function () {
     widget = document.querySelector("[widgetid^='PopupSignupForm']");
-  
+
     if (widget && !IS_WIDGET_INITIALIZED) {
-      IS_WIDGET_INITIALIZED = true
+      IS_WIDGET_INITIALIZED = true;
       widget.style.opacity = 0;
       widget.style.transform = "translate(-9999px)";
     }
 
     if (!widget && REPORT_URL) {
       window.open(REPORT_URL, "_blank");
-      REPORT_URL = null
+      REPORT_URL = null;
+    }
+
+    // https://talk.jekyllrb.com/t/solved-anyone-made-a-mailchimp-subscribe-pop-up-work-on-click/1706/3
+    if (getCookie("MCPopupClosed") !== undefined) {
+      deleteCookie("MCPopupClosed");
+    }
+
+    if (getCookie("MCPopupSubscribed") !== undefined) {
+      deleteCookie("MCPopupSubscribed");
     }
   });
 
   window.onclick = (e) => {
-    const { dataset: { triggerModal } = {}, href } = e.target
+    const { dataset: { triggerModal } = {}, href } = e.target;
 
     if (triggerModal !== undefined) {
-      // const widget = document.querySelector("[widgetid^='PopupSignupForm']");
-
       // https://talk.jekyllrb.com/t/solved-anyone-made-a-mailchimp-subscribe-pop-up-work-on-click/1706/3
       if (getCookie("MCPopupClosed") !== undefined) {
-        deleteCookie("MCPopupClosed")
+        deleteCookie("MCPopupClosed");
       }
 
       if (getCookie("MCPopupSubscribed") !== undefined) {
-        deleteCookie("MCPopupSubscribed")
+        deleteCookie("MCPopupSubscribed");
       }
 
-      if (widget && (getCookie("MCPopupClosed") !== "yes" || getCookie("MCPopupSubscribed") !== "yes")) {
-        e.preventDefault()
-        REPORT_URL = href
+      if (
+        widget &&
+        (getCookie("MCPopupClosed") !== "yes" ||
+          getCookie("MCPopupSubscribed") !== "yes")
+      ) {
+        e.preventDefault();
+        REPORT_URL = href;
         widget.style.opacity = null;
         widget.style.transform = null;
       }
     }
-  }
+  };
 })();
