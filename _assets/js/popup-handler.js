@@ -64,9 +64,10 @@
 
   let IS_WIDGET_INITIALIZED = false
   let REPORT_URL = null
+  let widget = null
 
   observeDOM(document.body, function () {
-    const widget = document.querySelector("[widgetid^='PopupSignupForm']");
+    widget = document.querySelector("[widgetid^='PopupSignupForm']");
   
     if (widget && !IS_WIDGET_INITIALIZED) {
       IS_WIDGET_INITIALIZED = true
@@ -84,7 +85,7 @@
     const { dataset: { triggerModal } = {}, href } = e.target
 
     if (triggerModal !== undefined) {
-      const widget = document.querySelector("[widgetid^='PopupSignupForm']");
+      // const widget = document.querySelector("[widgetid^='PopupSignupForm']");
 
       // https://talk.jekyllrb.com/t/solved-anyone-made-a-mailchimp-subscribe-pop-up-work-on-click/1706/3
       if (getCookie("MCPopupClosed") !== undefined) {
