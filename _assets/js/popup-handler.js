@@ -98,8 +98,6 @@
     const { dataset: { triggerModal } = {}, href } = e.target;
 
     if (triggerModal !== undefined) {
-      // const widget = document.querySelector("[widgetid^='PopupSignupForm']");
-
       // https://talk.jekyllrb.com/t/solved-anyone-made-a-mailchimp-subscribe-pop-up-work-on-click/1706/3
       if (getCookie("MCPopupClosed") !== undefined) {
         deleteCookie("MCPopupClosed");
