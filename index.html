@@ -31,13 +31,35 @@ description: ""
   </section>
 
   <section>
+    <div class="column">
+      <div class="flex-container left gutter-xxl">
+        <div>
+          <h1 class="hero__h1">EU Research 2019</h1>
+          <p class="hero__subtitle">The largest study on companies sustainability disclosures to date.</p>
+        </div>
+        <div class="hero__box">
+          <p class="hero__p">Assessment of the information disclosed by 1000 European companies on their environmental and societal risks and impacts pursuant to the EU legal requirements.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column mt-xl">
+      <p class="heading__span link fs-16">Explore results</p>
+      <div class="flex-container start no-expand gutter-xl">
+        <a href="/database/2019.html" class="button">EU Database 2019</a>
+        <a href="{% asset '{{ site.url_report2019_pdf }}' @path %}" target="_blank" data-trigger-modal class="button">EU Research Report (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <input type="hidden" name="materiality_matrix" value="{% asset '{{ site.url_materiality_matrix }}' @path %}">
     <div class="column">
       <h1 class="heading__hero with-decorator">General results EUKI Research 2020</h1>
       <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive overview of general and sector-specific results is provided in the Database and Research Report.</p>
 
       <div class="database-container">
-        <section class="database-section database-canvas__fit" data-year="2020" data-summary-table></section>
+        <section class="database-section__margin-xl database-canvas__fit" data-year="2020" data-summary-table></section>
       </div>
 
       <div>
@@ -62,7 +84,7 @@ description: ""
     <div class="column">
       <h1 class="heading__hero with-decorator" style="margin-bottom: 3rem">Research highlights EU Research 2019</h1>
       
-      <div class="database-layout__col-2-3 gutter-xxl database-section">
+      <div class="database-layout__col-2-3 gutter-xxl database-section__margin-xl">
         <h3 class="heading__h1" style="flex-shrink: 1">General transparency</h3>
         <div style="flex-shrink: 1">
           <div class="flex-container gutter-xxl left no-expand database-section__margin-l">
@@ -85,7 +107,7 @@ description: ""
         </div>
       </div>
 
-      <div class="database-section">
+      <div class="database-section__margin-xl">
         <h3 class="heading__h1">Climate</h3>
         <div class="flex-container column stretch database-canvas__fit">
           <div class="flex-container gutter-xxl">
@@ -117,7 +139,7 @@ description: ""
         </div>
       </div>
 
-      <div class="database-layout__col-2-3 gutter-xxl database-section">
+      <div class="database-layout__col-2-3 gutter-xxl database-section__margin-xl">
         <h3 class="heading__h1">Human rights</h3>
         <div style="flex-shrink: 1">
           <div class="flex-container gutter-xxl left no-expand database-section__margin-l">
@@ -134,7 +156,7 @@ description: ""
         </div>
       </div>
 
-      <div class="database-layout__col-2-3 gutter-xxl database-section">
+      <div class="database-layout__col-2-3 gutter-xxl database-section__margin-xl">
         <div>
           <h3 class="heading__h1">Supply chain transparency</h3>
           <span class="heading__span muted fs-16">Data for consumer goods : apparel, food & beverages + other consumption goods</span>
@@ -152,7 +174,7 @@ description: ""
 
   <section class="partners">
     <div class="column">
-      <div class="database-layout__col-2-3 gutter-xxl database-section">
+      <div class="database-layout__col-2-3 gutter-xxl database-section__margin-0">
         <h3 class="heading__h1">Partners</h3>
         <div style="flex-shrink: 1">
           <ul class="section-wrap">
@@ -186,6 +208,7 @@ description: ""
             <li><div class="partner"><img src="{% asset logos/logo-shareaction @path %}" alt=""></div></li>
             <li><div class="partner"><img src="{% asset logos/logo-cdbs @path %}" alt=""></div></li>
             <li><div class="partner"><img src="{% asset logos/logo-globalw @path %}" alt=""></div></li>
+            <li><div class="partner"><img src="{% asset logos/logo-2dii @path %}" alt=""></div></li>
           </ul>
     
           <p class="section-wrap__span">Academic support provided by:</p>
@@ -202,8 +225,7 @@ description: ""
     <div class="column">
       <div class="database-layout__col-2-3 gutter-xxl database-section">
         <div>
-          <h3 class="heading__h1">Transparency</h3>
-          <span class="heading__span muted fs-16">Expert views on the future of corporate sustainability reporting</span>
+          <h3 class="heading__h1">Expert views on the future of corporate sustainability reporting</h3>
         </div>
         <div class="aspect-ratio-16-9" style="flex-shrink: 1">
           <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/videoseries?list=PLwkylO8KA7t6k731Efoea7KKbdQcZQOMb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
