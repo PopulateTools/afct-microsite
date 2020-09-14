@@ -98,6 +98,12 @@
   width: 100%;
 }
 
+.database-section__margin-0 {
+  @extend %section;
+
+  margin: 0;
+}
+
 .database-section__margin-s {
   @extend %section;
 
