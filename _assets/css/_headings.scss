@@ -61,9 +61,18 @@
   font-size: 1rem;
   font-style: normal;
   color: $cLink;
-  min-height: 88px;
   display: flex;
   align-items: flex-end;
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
 }
 
 %heading__span,

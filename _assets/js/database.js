@@ -209,7 +209,6 @@
             });
           }
         }
-
       });
     });
   });
@@ -630,6 +629,22 @@
           }
       });
     };
+
+    // chart title heights
+    const h2 = document.querySelectorAll("h2.database-heading__h2")
+    h2.forEach(element => {
+      const chartsBlock = element.nextElementSibling
+      if (chartsBlock) {
+        // split the charts by gorups of 3 elements
+        const h6Group = chunk(Array.from(chartsBlock.querySelectorAll("[data-charts-container] h6")), 3)
+        if (h6Group.length) {
+          h6Group.forEach(h6 => {
+            const minHeight = Math.max(...h6.map(elem => elem.getBoundingClientRect().height))
+            h6.forEach(elem => (elem.style.minHeight = `${minHeight}px`))
+          })
+        }
+      }
+    })
     
     // Assign behaviour to filters
     fillFilters(data, callback)
@@ -1003,7 +1018,7 @@
     `;
   }
 
-  function getChartsContainerHTML({ text = '&nbsp;', dataPath, subSection, className = '' }) {
+  function getChartsContainerHTML({ text = '', dataPath, subSection, className = '' }) {
     return `
       <h6 class="heading__h6">${text}</h6>
       <div data-charts ${className ? `data-s_1 class="${className}"` : '' }>
@@ -2279,4 +2294,12 @@
       document.body.removeChild(fakeCanvas);
     }, 500);
   }
+
+  function chunk(arr = [], size = 1) {
+    const results = [];
+    while (arr.length) {
+      results.push(arr.splice(0, size));
+    }
+    return results;
+  };
 })();
