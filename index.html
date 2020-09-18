@@ -56,30 +56,77 @@ description: ""
 
   <section>
     <input type="hidden" name="materiality_matrix" value="{% asset '{{ site.url_materiality_matrix }}' @path %}">
-    <div class="column">
-      <h1 class="heading__hero with-decorator">General results EUKI Research 2020</h1>
-      <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive overview of general and sector-specific results is provided in the Database and Research Report.</p>
 
-      <div class="database-container">
-        <section class="database-section__margin-xl database-canvas__fit" data-year="2020" data-summary-table></section>
-      </div>
+    <div class="column mb-l">
+      <label>
+        Select a year: 
+        <select data-select-year>
+          <option value="2020" selected>2020</option>
+          <option value="2019">2019</option>
+        </select>
+      </label>
+    </div>
 
-      <div>
-        <h2 class="heading__h2 with-decorator">Companies analyzed</h2>
-        <div class="database-layout__col-2-3 gutter-xl">
-          <div>
-            <span class="database-heading__span-underline">Sector</span>
-            <div class="database-canvas__fit">
-              <canvas data-path="company.sectors" data-exclude-filter data-absolute data-sort data-bar-thickness="15" data-mirror-y="false"></canvas>
+    <div style="position: relative">
+      <div class="database-spinner" data-spinner><i class="fas fa-spinner fa-3x fa-spin"></i></div>
+
+      <div class="column" data-year="2020">
+        <h1 class="heading__hero with-decorator">General results EUKI Research 2020</h1>
+        <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive overview of general and sector-specific results is provided in the Database and Research Report.</p>
+  
+        <div>
+          <h4 class="heading__h4">Companies analyzed</h2>
+          <div class="database-layout__col-2-3 gutter-xl">
+            <div>
+              <span class="database-heading__span-underline">Sector</span>
+              <div class="database-canvas__fit">
+                <canvas data-path="company.sectors" data-exclude-filter data-absolute data-sort data-bar-thickness="15" data-mirror-y="false"></canvas>
+              </div>
+            </div>
+            <div style="flex-shrink: 1;">
+              <iframe title="cDjdt" aria-label="Europe eu choropleth map" id="datawrapper-chart-cDjdt"
+                src="//datawrapper.dwcdn.net/cDjdt/1/" scrolling="no" frameborder="0"
+                style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+              <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();
+              </script>
             </div>
           </div>
-          <div style="flex-shrink: 1;">
-            <iframe title="cDjdt" aria-label="Europe eu choropleth map" id="datawrapper-chart-cDjdt" src="//datawrapper.dwcdn.net/cDjdt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
-            </script>
+        </div>
+
+        <div class="database-container">
+          <section class="database-section__margin-xl database-canvas__fit" data-summary-table></section>
+        </div>
+      </div>
+  
+      <div class="column" data-year="2019">
+        <h1 class="heading__hero with-decorator">General results EU Research 2019</h1>
+        <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive overview of general and sector-specific results is provided in the Database and Research Report.</p>
+
+        <div>
+          <h4 class="heading__h4">Companies analyzed</h2>
+          <div class="database-layout__col-2-3 gutter-xl">
+            <div>
+              <span class="database-heading__span-underline">Sector</span>
+              <div class="database-canvas__fit">
+                <canvas data-path="company.sectors" data-exclude-filter data-absolute data-sort data-bar-thickness="15" data-mirror-y="false"></canvas>
+              </div>
+            </div>
+            <div style="flex-shrink: 1;">
+              <iframe title="cDjdt" aria-label="Europe eu choropleth map" id="datawrapper-chart-cDjdt"
+                src="//datawrapper.dwcdn.net/cDjdt/1/" scrolling="no" frameborder="0"
+                style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+              <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();
+              </script>
+            </div>
           </div>
+        </div>
+
+        <div class="database-container">
+          <section class="database-section__margin-xl database-canvas__fit" data-summary-table></section>
         </div>
       </div>
     </div>
+
   </section>
 
   <section class="partners">
