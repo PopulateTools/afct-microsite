@@ -1291,8 +1291,8 @@
     chart.height = columnNames.length * (barThickness + 6);
     chart.width = chart.getBoundingClientRect().width
 
-    const less3 = ctx => ctx.dataset.data[ctx.dataIndex] < 3
-    const nextLess3 = ctx => (data[ctx.datasetIndex + 1] || [])[ctx.dataIndex] < 3
+    const lessThan = ctx => ctx.dataset.data[ctx.dataIndex] < 5
+    const nextLessThan = ctx => (data[ctx.datasetIndex + 1] || [])[ctx.dataIndex] < 5
 
     const opts = {
       type: "horizontalBar",
@@ -1355,13 +1355,17 @@
             anchor: "start",
             offset: (context) => {
               if (
+                context.datasetIndex === 1 && lessThan(context) && nextLessThan(context)
+              )
+                return 8;
+              if (
                 context.datasetIndex !== 0 &&
-                (less3(context) || nextLess3(context))
+                (lessThan(context) || nextLessThan(context))
               )
                 return 0;
               if (
                 context.datasetIndex !== 0 &&
-                context.dataset.data[context.dataIndex] < 5
+                context.dataset.data[context.dataIndex] < 6
               )
                 return 2;
               return 8;
@@ -1369,9 +1373,9 @@
             color: (context) => {
               if (
                 (context.datasetIndex === 1 &&
-                  !less3(context) &&
-                  !nextLess3(context)) ||
-                (context.datasetIndex === 2 && less3(context))
+                  !lessThan(context) &&
+                  !nextLessThan(context)) ||
+                (context.datasetIndex === 2 && lessThan(context))
               )
                 return "#3B5360";
               return "#fff";
@@ -1379,7 +1383,7 @@
             align: (context) => {
               if (
                 context.datasetIndex !== 0 &&
-                (less3(context) || nextLess3(context))
+                (lessThan(context) || nextLessThan(context))
               )
                 return "start";
               return "end";
