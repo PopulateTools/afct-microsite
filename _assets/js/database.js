@@ -4,214 +4,10 @@
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
 
-  let reportYear = null;
+  let reportYear = '';
   let materialityMatrixURL = null;
 
-  window.addEventListener("DOMContentLoaded", () => {
-    const { dataset: { year } = {} } = document.querySelector("[data-year]") || {}
-    reportYear = year
-    const reportYearParsed = reportYear === '2020' ? '2020' : ''
-
-    const dictionaryUrl = DEBUG ? `../static_data/mock_dictionary${reportYearParsed}.json` : `https://act-export.frankbold.org/dictionary${reportYearParsed}.json`;
-    const reportsUrl = DEBUG ? `../static_data/mock_reports${reportYearParsed}.json` : `https://act-export.frankbold.org/reports${reportYearParsed}.json`;
-
-    const spinner = document.querySelector("[data-spinner]")
-
-    getJSON(dictionaryUrl, dictionary => {
-      getJSON(reportsUrl, data => {
-        if (spinner) {
-          spinner.style.display = 'none'
-        }
-
-        // Update sector names using the dictionary keys
-        data.forEach(d => {
-          d.company.sectors = d.company.sectors.map(d => dictionary[d]);
-        });
-
-        tree = getTree(data);
-
-        GLOBAL_TREE = tree
-
-        // set url for PDF
-        materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
-
-        // Load sidebar
-        const sidebar = document.querySelector("[data-sidebar]");
-        if (sidebar) {
-
-          sidebar.innerHTML = loadTOC(tree, dictionary);
-  
-          const lis = sidebar.querySelectorAll("li");
-          const submenus = sidebar.querySelectorAll("li ul");
-  
-          // Event delegation to the parent (avoid multiple listeners)
-          sidebar.addEventListener("click", ({ target }) => {
-            const { nextElementSibling: ul } = target
-  
-            // remove all active states, and close all submenus
-            lis.forEach(li => li.classList.remove(activeClass));
-            submenus.forEach(ul => ul.classList.remove(openClass));
-  
-            // set active class for the clicked item
-            target.parentElement.classList.add(activeClass);
-  
-            // open submenu if there is
-            if (ul) {
-              ul.classList.add(openClass)
-            }
-  
-            target.closest("ul").classList.add(openClass)
-  
-            const { hash } = target;
-            if (hash) {
-  
-              // You will tell me why parent section is called "s_2b" and its children s_2, s_3
-              let hash_ = hash
-              if (["#s_2", "#s_3"].includes(hash)) {
-                hash_ = "#s_2b"
-              }
-  
-              renderSection(hash_.slice(1), data, tree, dictionary);
-            }
-          });
-
-          const { hash } = window.location;
-  
-          // Search the anchor-hash who matches with the location-hash
-          const i = hash
-            ? [...lis].findIndex(d => [...d.children].find(d => d.hash === hash))
-            : 0; // If there's no hash, set default one
-  
-          // set active the matching item
-          const currentItem = lis.item(i)
-          currentItem.classList.add(activeClass);
-  
-          const parentLi = currentItem.parentElement.closest("li")
-          if (parentLi) {
-            parentLi.querySelector("ul").classList.add(openClass)
-          }
-          
-          // open submenu if there are
-          const submenu = currentItem.querySelector("ul")
-          if (submenu) {
-            submenu.classList.add(openClass)
-          }
-  
-          const section = hash ? hash.slice(1) : "general";
-          renderSection(section, data, tree, dictionary);
-
-          // download button handler
-          document.addEventListener('click', ({ target }) => {
-            const { previousElementSibling } = target
-            
-            if (previousElementSibling) {
-              const { nodeName } = previousElementSibling
-              
-              // Check if the previous sibling is a canvas
-              if (nodeName && nodeName === "CANVAS") {
-                const { dataset } = previousElementSibling
-    
-                if (dataset) {
-                  downloadCanvas({ dataset, data, dictionary })
-                }
-              }
-            }
-          })
-  
-          // scroll listener
-          document.addEventListener('scroll', (e) => {
-            const submenu = document.querySelector("[data-sidebar] > ul > li > ul.is-open")
-  
-            if (submenu) {
-              const anchors = submenu.querySelectorAll("a")
-              const hashes = [...anchors].map(d => d.hash)
-  
-              hashes.forEach(hash => {
-                const element = document.getElementById(hash.slice(1)).parentElement
-                const { top, height } = element.getBoundingClientRect()
-  
-                if ((top > -300 && top < 300) || (top + height < 300 && top + height > -300)) {
-                  const parentActive = document.querySelector("[data-sidebar] > ul > li.active")
-                  if (parentActive) {
-                    parentActive.classList.remove(activeClass)
-                  }
-  
-                  anchors.forEach(a => a.parentElement.classList.remove(activeClass));
-                  const sidebarAnchor = [...anchors].find(d => d.hash === hash)
-                  sidebarAnchor.parentElement.classList.add(activeClass)
-                }
-              })
-            }
-          })
-        }
-
-        // Load summaryTable
-        const summaryTable = document.querySelector("[data-summary-table]");
-        if (summaryTable) {
-          let template = "";
-          template += getFiltersHTML()
-          template += getGeneralSectionLegendHTML()
-          template += getGeneralSectionChartsHTML()
-
-          summaryTable.innerHTML = template
-
-          const charts = document.querySelectorAll("[data-path]");
-          // render charts
-          renderCharts(charts, data);
-          
-          const staticCharts = document.querySelectorAll("[data-static-path]");
-          renderStaticCharts(staticCharts);
-
-          const tableSelectors = summaryTable.querySelectorAll(
-            "[data-table-selector]"
-          );
-
-          const callback = event => {
-            onFilterSelected(event, () => {
-              const charts = document.querySelectorAll("[data-path]");
-              if (charts.length) {
-                renderCharts(charts, data);
-              }
-            });
-          }
-
-          // Assign behaviour to filters
-          fillFilters(data, callback)
-
-          if (tableSelectors) {
-            tableSelectors.forEach((element, index) => {
-              if (index === 0) {
-                element.classList.add(activeClass);
-              }
-
-              element.addEventListener("click", event => {
-                const { target } = event;
-                const selectedRowType = target.dataset.tableSelector;
-
-                tableSelectors.forEach(e => e.classList.remove(activeClass));
-                target.classList.add(activeClass);
-
-                rowTypes.forEach(element => {
-                  element.style.display = "none";
-                });
-
-                rowTypes.forEach(element => {
-                  if (element.dataset.rowType === selectedRowType) {
-                    element.style.display = "";
-
-                    const charts = element.querySelectorAll("[data-path]");
-                    if (charts.length) {
-                      renderCharts(charts, data);
-                    }
-                  }
-                });
-              });
-            });
-          }
-        }
-      });
-    });
-  });
+  window.addEventListener("DOMContentLoaded", loadData);
 
   closestPolyfill()
 
@@ -355,6 +151,204 @@
   };
 
   // Private functions
+  function loadData() {
+    const containers = document.querySelectorAll("[data-year]")
+    const yearSelector = document.querySelector("[data-select-year]")
+
+    if (yearSelector) {
+      reportYear = yearSelector.value
+
+      if (containers) {
+        containers.forEach((block) =>
+          block.dataset.year !== reportYear
+            ? (block.style.display = "none")
+            : (block.style.display = "block")
+        );
+      }
+    } else {
+      const [{ dataset: { year } = {} } = {}] = containers
+      reportYear = year
+    }
+
+    const reportYearParsed = reportYear === '2020' ? '2020' : ''
+
+    const dictionaryUrl = DEBUG
+      ? `../static_data/mock_dictionary${reportYearParsed}.json`
+      : `https://act-export.frankbold.org/dictionary${reportYearParsed}.json`;
+    const reportsUrl = DEBUG
+      ? `../static_data/mock_reports${reportYearParsed}.json`
+      : `https://act-export.frankbold.org/reports${reportYearParsed}.json`;
+
+    const spinner = document.querySelector("[data-spinner]")
+    if (spinner) {
+      spinner.style.display = 'block'
+    }
+
+    getJSON(dictionaryUrl, dictionary => {
+      getJSON(reportsUrl, data => {
+        if (spinner) {
+          spinner.style.display = 'none'
+        }
+
+        // Update sector names using the dictionary keys
+        data.forEach(d => {
+          d.company.sectors = d.company.sectors.map(d => dictionary[d]);
+        });
+
+        tree = getTree(data);
+
+        GLOBAL_TREE = tree
+
+        // set url for PDF
+        materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
+
+        // Load sidebar
+        const sidebar = document.querySelector("[data-sidebar]");
+        if (sidebar) {
+          sidebar.innerHTML = loadTOC(tree, dictionary);
+  
+          const lis = sidebar.querySelectorAll("li");
+          const submenus = sidebar.querySelectorAll("li ul");
+  
+          // Event delegation to the parent (avoid multiple listeners)
+          sidebar.addEventListener("click", ({ target }) => {
+            const { nextElementSibling: ul } = target
+  
+            // remove all active states, and close all submenus
+            lis.forEach(li => li.classList.remove(activeClass));
+            submenus.forEach(ul => ul.classList.remove(openClass));
+  
+            // set active class for the clicked item
+            target.parentElement.classList.add(activeClass);
+  
+            // open submenu if there is
+            if (ul) {
+              ul.classList.add(openClass)
+            }
+  
+            target.closest("ul").classList.add(openClass)
+  
+            const { hash } = target;
+            if (hash) {
+  
+              // You will tell me why parent section is called "s_2b" and its children s_2, s_3
+              let hash_ = hash
+              if (["#s_2", "#s_3"].includes(hash)) {
+                hash_ = "#s_2b"
+              }
+  
+              renderSection(hash_.slice(1), data, tree, dictionary);
+            }
+          });
+
+          const { hash } = window.location;
+  
+          // Search the anchor-hash who matches with the location-hash
+          const i = hash
+            ? [...lis].findIndex(d => [...d.children].find(d => d.hash === hash))
+            : 0; // If there's no hash, set default one
+  
+          // set active the matching item
+          const currentItem = lis.item(i)
+          currentItem.classList.add(activeClass);
+  
+          const parentLi = currentItem.parentElement.closest("li")
+          if (parentLi) {
+            parentLi.querySelector("ul").classList.add(openClass)
+          }
+          
+          // open submenu if there are
+          const submenu = currentItem.querySelector("ul")
+          if (submenu) {
+            submenu.classList.add(openClass)
+          }
+  
+          const section = hash ? hash.slice(1) : "general";
+          renderSection(section, data, tree, dictionary);
+
+          // download button handler
+          document.addEventListener('click', ({ target }) => {
+            const { previousElementSibling } = target
+            
+            if (previousElementSibling) {
+              const { nodeName } = previousElementSibling
+              
+              // Check if the previous sibling is a canvas
+              if (nodeName && nodeName === "CANVAS") {
+                const { dataset } = previousElementSibling
+    
+                if (dataset) {
+                  downloadCanvas({ dataset, data, dictionary })
+                }
+              }
+            }
+          })
+  
+          // scroll listener
+          document.addEventListener('scroll', (e) => {
+            const submenu = document.querySelector("[data-sidebar] > ul > li > ul.is-open")
+  
+            if (submenu) {
+              const anchors = submenu.querySelectorAll("a")
+              const hashes = [...anchors].map(d => d.hash)
+  
+              hashes.forEach(hash => {
+                const element = document.getElementById(hash.slice(1)).parentElement
+                const { top, height } = element.getBoundingClientRect()
+  
+                if ((top > -300 && top < 300) || (top + height < 300 && top + height > -300)) {
+                  const parentActive = document.querySelector("[data-sidebar] > ul > li.active")
+                  if (parentActive) {
+                    parentActive.classList.remove(activeClass)
+                  }
+  
+                  anchors.forEach(a => a.parentElement.classList.remove(activeClass));
+                  const sidebarAnchor = [...anchors].find(d => d.hash === hash)
+                  sidebarAnchor.parentElement.classList.add(activeClass)
+                }
+              })
+            }
+          })
+        }
+
+        // Load summaryTable
+        const summaryTable = document.querySelector(`[data-year='${reportYear}'] [data-summary-table]`);
+        if (summaryTable) {
+          let template = "";
+          template += getFiltersHTML()
+          template += getGeneralSectionLegendHTML()
+          template += getGeneralSectionChartsHTML()
+
+          summaryTable.innerHTML = template
+
+          const charts = document.querySelectorAll("[data-path]");
+          // render charts
+          renderCharts(charts, data);
+          
+          const staticCharts = document.querySelectorAll("[data-static-path]");
+          renderStaticCharts(staticCharts);
+
+          const callback = event => {
+            onFilterSelected(event, () => {
+              const charts = document.querySelectorAll("[data-path]");
+              if (charts.length) {
+                renderCharts(charts, data);
+              }
+            });
+          }
+
+          // Assign behaviour to filters
+          fillFilters(data, callback)
+
+          const yearSelector = document.querySelector("[data-select-year]")
+          if (yearSelector) {
+            yearSelector.addEventListener("change", loadData)
+          }
+        }
+      });
+    });
+  }
+
   function closestPolyfill() {
     if (!Element.prototype.matches) {
       Element.prototype.matches =
@@ -504,36 +498,6 @@
 
     if (section === "general") {
       content.innerHTML = renderGeneralSection();
-
-      const tableSelectors = content.querySelectorAll("[data-table-selector]");
-      tableSelectors.forEach((element, index) => {
-        if (index === 0) {
-          element.classList.add(activeClass);
-        }
-
-        return element.addEventListener("click", event => {
-          const { target } = event;
-          const selectedRowType = target.dataset.tableSelector;
-
-          tableSelectors.forEach(e => e.classList.remove(activeClass));
-          target.classList.add(activeClass);
-
-          rowTypes.forEach(element => {
-            element.style.display = "none";
-          });
-
-          rowTypes.forEach(element => {
-            if (element.dataset.rowType === selectedRowType) {
-              element.style.display = "";
-
-              const charts = element.querySelectorAll("[data-path]");
-              if (charts.length) {
-                renderCharts(charts, data, dictionary);
-              }
-            }
-          });
-        });
-      });
     } else {
       let renderedTemplate = `<div id="${section}"></div><div class="database-filters">${getFiltersBlock()}</div>`;
 
@@ -1291,8 +1255,8 @@
     chart.height = columnNames.length * (barThickness + 6);
     chart.width = chart.getBoundingClientRect().width
 
-    const less3 = ctx => ctx.dataset.data[ctx.dataIndex] < 3
-    const nextLess3 = ctx => (data[ctx.datasetIndex + 1] || [])[ctx.dataIndex] < 3
+    const lessThan = ctx => ctx.dataset.data[ctx.dataIndex] < 5
+    const nextLessThan = ctx => (data[ctx.datasetIndex + 1] || [])[ctx.dataIndex] < 5
 
     const opts = {
       type: "horizontalBar",
@@ -1355,13 +1319,17 @@
             anchor: "start",
             offset: (context) => {
               if (
+                context.datasetIndex === 1 && lessThan(context) && nextLessThan(context)
+              )
+                return 8;
+              if (
                 context.datasetIndex !== 0 &&
-                (less3(context) || nextLess3(context))
+                (lessThan(context) || nextLessThan(context))
               )
                 return 0;
               if (
                 context.datasetIndex !== 0 &&
-                context.dataset.data[context.dataIndex] < 5
+                context.dataset.data[context.dataIndex] < 6
               )
                 return 2;
               return 8;
@@ -1369,9 +1337,9 @@
             color: (context) => {
               if (
                 (context.datasetIndex === 1 &&
-                  !less3(context) &&
-                  !nextLess3(context)) ||
-                (context.datasetIndex === 2 && less3(context))
+                  !lessThan(context) &&
+                  !nextLessThan(context)) ||
+                (context.datasetIndex === 2 && lessThan(context))
               )
                 return "#3B5360";
               return "#fff";
@@ -1379,7 +1347,7 @@
             align: (context) => {
               if (
                 context.datasetIndex !== 0 &&
-                (less3(context) || nextLess3(context))
+                (lessThan(context) || nextLessThan(context))
               )
                 return "start";
               return "end";
@@ -1878,7 +1846,7 @@
 
     filters.forEach(({ id, placeholder }) => {
       // Run multiselect.js
-      const element = document.multiselect(`#filter-${id}`);
+      const element = document.multiselect(`[data-year='${reportYear}'] #filter-${id}`);
 
       element._items.forEach(({ id: itemId, multiselectElement }) => {
         multiselectElement.setAttribute("data-filter", id)
@@ -1891,7 +1859,7 @@
   }
 
   function fillCountriesFilter(data) {
-    let element = document.getElementById("filter-country");
+    let element = document.querySelector(`[data-year='${reportYear}'] #filter-country`);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
@@ -1913,7 +1881,7 @@
   }
 
   function fillSectorsFilter(data) {
-    let element = document.getElementById("filter-sector");
+    let element = document.querySelector(`[data-year='${reportYear}'] #filter-sector`);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
@@ -1935,7 +1903,7 @@
   }
 
   function fillRevenuesFilter() {
-    let element = document.getElementById("filter-revenues");
+    let element = document.querySelector(`[data-year='${reportYear}'] #filter-revenues`);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
