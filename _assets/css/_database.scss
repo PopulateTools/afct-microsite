@@ -475,3 +475,14 @@
     color: $cDarkBlue;
   }
 }
+
+.database-selector {
+  font-size: $fsXLarge;
+  display: flex;
+  align-items: center;
+
+  select {
+    margin-left: 1em;
+    font-size: $fsLarge;
+  }
+}
