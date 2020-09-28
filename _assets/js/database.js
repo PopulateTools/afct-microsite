@@ -585,15 +585,6 @@
       })
     });
 
-    const callback = event => {
-      onFilterSelected(event, () => {
-          const charts = content.querySelectorAll("[data-path]");
-          if (charts.length) {
-            renderCharts(charts, data, dictionary);
-          }
-      });
-    };
-
     // chart title heights
     const h2 = document.querySelectorAll("h2.database-heading__h2")
     h2.forEach(element => {
@@ -609,6 +600,15 @@
         }
       }
     })
+
+    const callback = event => {
+      onFilterSelected(event, () => {
+          const charts = content.querySelectorAll("[data-path]");
+          if (charts.length) {
+            renderCharts(charts, data, dictionary);
+          }
+      });
+    };
     
     // Assign behaviour to filters
     fillFilters(data, callback)
@@ -1850,9 +1850,9 @@
 
       element._items.forEach(({ id: itemId, multiselectElement }) => {
         multiselectElement.setAttribute("data-filter", id)
-        element.setCheckBoxClick(itemId, callback)
+        element.setCheckBoxClick(itemId, e => { element._hideList(element); callback(e) })
       })
-  
+
       // add the placeholder to the new input field
       document.getElementById(`filter-${id}_input`).setAttribute("placeholder", placeholder)
     })
