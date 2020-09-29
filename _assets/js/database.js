@@ -19,7 +19,6 @@
   );
   const activeClass = "active";
   const openClass = "is-open";
-
   const MAXVALUE = 100;
   const revenueRange0 = 3e8;
   const revenueRange1 = 1e9;
@@ -141,6 +140,54 @@
       ]
     }
   }
+  const MAP = {
+    COLORS: [ "#80ffdb", "#72efdd", "#64dfdf", "#56cfe1", "#48bfe3", "#4ea8de", "#5390d9", "#5e60ce", "#6930c3", "#7400b8" ],
+    DATA: {
+      2019: {
+        GB: 168,
+        FR: 127,
+        DE: 108,
+        IT: 70,
+        ES: 67,
+        PL: 64,
+        SE: 61,
+        NL: 52,
+        FI: 39,
+        DK: 34,
+        BE: 30,
+        AT: 21,
+        LU: 20,
+        IE: 20,
+        GR: 16,
+        SK: 10,
+        RO: 11,
+        PT: 11,
+        HU: 11,
+        CZ: 10,
+        LT: 9,
+        EE: 9,
+        HR: 9,
+        SI: 8,
+        LV: 5,
+        CY: 5,
+        BG: 4,
+        MT: 1,
+      },
+      2020: {
+        BG: 8,
+        HU: 15,
+        CY: 1,
+        CZ: 11,
+        GR: 19,
+        IT: 77,
+        PL: 73,
+        RO: 15,
+        SK: 8,
+        SI: 11,
+        ES: 58
+      },
+    },
+  };
 
   const path = location.pathname.replace(/\//g,'')
   const { country = [], sector = [], revenues = [] } = JSON.parse(localStorage.getItem(`filters-${path}`)) || {}
@@ -345,8 +392,119 @@
             yearSelector.addEventListener("change", loadData)
           }
         }
+
+        const europes = document.querySelectorAll("[data-map]")
+        if (europes.length) {
+          getJSON(`../static_data/europe.json`, topology => europes.forEach(eu => drawMap(topology, eu)))
+        }
       });
     });
+  }
+
+  function drawMap(topology, europe) {
+    europe.innerHTML = "";
+    const container = d3.select(europe).attr("style", "position: relative");
+    const { width } = container.node().getBoundingClientRect();
+    const height = width * 0.5;
+    const map = container
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+    const g = map.append("g");
+    container
+      .append("div")
+      .attr("id", "tooltip")
+      .attr("style", "position: absolute; opacity: 0;");
+
+    const geojson = topojson.feature(topology, topology.objects.europe);
+    const projection = d3.geoConicConformal().fitSize([width, height], geojson);
+    const path = d3.geoPath(projection);
+
+    // populate topojson with displayed data
+    const mapData = geojson.features.reduce((acc, item) => {
+      const value = MAP.DATA[reportYear][item.id];
+      value
+        ? acc.push({ ...item, properties: { ...item.properties, value } })
+        : acc.push(item);
+      return acc;
+    }, []);
+
+    // helpers to set the polygons color
+    const [min, max] = d3.extent(Object.values(MAP.DATA[reportYear]));
+    const colorStep = (max - min) / (MAP.COLORS.length - 1);
+    const color = (value) => MAP.COLORS[Math.floor(value / colorStep)];
+
+    const regions = g.selectAll(".region").data(mapData);
+    regions.exit().remove();
+
+    const regionsEnter = regions.enter().append("path");
+    regions
+      .merge(regionsEnter)
+      .attr("d", path)
+      .attr("class", "region")
+      .attr("fill", ({ properties: { value } = {} }) =>
+        value !== undefined ? color(value) : "#eee"
+      )
+      .on("mousemove", (e, { properties: { NAME = "", value } = {} }) => {
+        if (value !== undefined) {
+          const [left, top] = d3.pointer(e);
+          container.select("#tooltip")
+            .style("opacity", 1)
+            .style("left", `${left + 10}px`)
+            .style("top", `${top + 10}px`)
+            .style("background-color", "#fff")
+            .style("padding", "10px")
+            .style("font-size", "11px")
+            .style("border", "1px solid whitesmoke")
+            .style("box-shadow", "3px 3px 3px rgba(0,0,0,0.1)")
+            .style("z-index", 100)
+            .text(`${NAME} - Companies: ${value}`);
+
+            container.select(e.target).attr("stroke-width", 1).attr("stroke", "#333");
+          e.target.parentNode.appendChild(e.target);
+        }
+      })
+      .on("mouseout", ({ target }) => {
+        container.select("#tooltip").style("opacity", 0);
+        container.select(target).attr("stroke-width", 0);
+        target.parentNode.insertBefore(target, target.parentNode.firstChild);
+      });
+
+    // borders
+    const mesh = topojson.mesh(topology, topology.objects.europe);
+    g.append("path")
+      .datum(mesh)
+      .attr("fill", "none")
+      .attr("stroke", "white")
+      .attr("stroke-linejoin", "round")
+      .attr("d", path);
+
+    // legend
+    const legendGroup = g.append("g");
+    const legend = legendGroup
+      .selectAll(".legend")
+      .data(d3.ticks(min, max, 3).reverse());
+    legend.exit().remove();
+
+    const legendsEnter = legend.enter().append("g");
+    const legendBlock = legend.merge(legendsEnter).attr("class", "legend");
+
+    const itemSize = 15;
+    legendBlock
+      .append("rect")
+      .attr("x", width - 100)
+      .attr("y", (_, i) => (i + 1) * itemSize + (i * itemSize) / 3)
+      .attr("width", itemSize)
+      .attr("height", itemSize)
+      .attr("fill", (d) => color(d));
+
+    legendBlock
+      .append("text")
+      .attr("x", width - 100 + itemSize + 5)
+      .attr("y", (_, i) => (i + 1) * itemSize + (i * itemSize) / 3)
+      .attr("dy", (3 / 4) * itemSize)
+      .attr("font-size", "11px")
+      .text((d) => d);
   }
 
   function closestPolyfill() {
@@ -910,17 +1068,14 @@
   function getCompaniesPerHTML() {
     return `
       <h4 class="heading__h4">Companies included in the research</h4>
-      <div class="database-layout__col-2-3 align-center gutter-l">
+      <div class="database-layout__col-2-3 gutter-l">
         <div>
           <span class="database-heading__span-underline">Sector (absolute numbers)</span>
           <div>
             <canvas data-path="company.sectors" data-exclude-filter data-absolute data-sort></canvas>
           </div>
         </div>
-        <div style="flex-shrink: 1;">
-          <iframe title="cDjdt" aria-label="Europe eu choropleth map" id="datawrapper-chart-cDjdt" src="//datawrapper.dwcdn.net/cDjdt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
-          <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-        </div>
+        <div data-map="${reportYear}"></div>
       </div>
     `;
   }
@@ -2270,4 +2425,15 @@
     }
     return results;
   };
+
+  function nice(number = 0) {
+    const digits = Math.abs(Math.trunc(number)).toString().length - 1
+    let base = Math.pow(10, digits) / 20
+  
+    while (base < 1) {
+      base *= 10
+    }
+  
+    return Math.ceil(number / base) * base
+  }
 })();
