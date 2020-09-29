@@ -56,7 +56,7 @@
         "3": "Description of specific risks"
     },
     "policies": {
-        "text": "Policies and Procedures"
+        "text": "Policies and procedures"
     },
     "policy": {
         "text": "How well is the policy communicated?",
@@ -145,19 +145,23 @@
         "2": "Physical risks are addressed ",
         "3": "Transition to a low-carbon economy risks are addressed",
         "9": "Breakdown of risks by activity or region",
-        "5": "Effects of climate risks\/opportunities on strategy, financial planning, performance",
+        "5": "Effects of risks & opportunities on business model",
         "6": "Clear management approach for the identified risks and impacts",
-        "8": "Climate-related scenarios used for risk assessment including a 1.5\u00b0C\/well below 2\u00b0C scenario"
+        "8": "Risk assessment uses climate-related scenarios incl.1.5\/below 2\u00b0C"
     },
     "l_02_A_01_003_02_fin": {
         "text": "Only for financial companies",
-        "16": "How risk management processes, including internal stress testing, consider climate-related risks",
-        "10": "Amount or percentage of carbon-related assets in each portfolio or exposure of assets to climate risks",
+        "16": "How risk management, incl. internal stress testing, consider climate risks",
+        "10": "Amount or % of carbon assets per portfolio",
         "11": "Degree of alignment of the different portfolios against the Paris Agreement target"
     },
     "l_02_A_01_004_02": {
         "text": "",
         "1": "Data \/ KPI provided for outcomes"
+    },
+    "l_02_A_01_004_02b": {
+        "text": "Only for asset management companies",
+        "2": "Development of the amount of carbon assets against targets"
     },
     "l_02_A_01_005_02": {
         "text": "",
@@ -198,11 +202,10 @@
     "l_02_A_02_003_02": {
         "text": "",
         "1": "States risks for the environment",
-        "2": "Effects of risks & opportunities on the organization\u2019s business model, financial planning or performance",
+        "2": "Effects of risks & opportunities on business model",
         "3": "Clear management approach for the identified risks and impacts",
         "4": "Breakdown of risks by activity or region",
-        "5": "Identification of locations that are critical to value chains, including operations, suppliers and markets",
-        "8": "Identification of locations that are critical to value chains"
+        "5": "Identification of locations critical to value chains"
     },
     "outcomes incl": {
         "text": "",
@@ -224,11 +227,10 @@
     "l_02_A_03_003_02": {
         "text": "",
         "1": "States risks for the environment or human health",
-        "2": "Effects of risks & opportunities on the organization\u2019s business model, financial planning or performance",
+        "2": "Effects of risks & opportunities on business model",
         "3": "Clear management approach for the identified risks and impacts",
         "4": "Breakdown of risks by activity or region",
-        "5": "Identification of locations that are critical to value chains, including operations, suppliers and markets",
-        "8": "Identification of locations that are critical to value chains"
+        "5": "Identification of locations that are critical to value chains"
     },
     "supply_chain": {
         "text": "",
@@ -274,10 +276,10 @@
         "text": "",
         "1": "Includes a clear description of actual impacts",
         "2": "Concrete operations and\/or business partners associated with salient issues and impacts are identified",
-        "3": "Identification of concrete operations\/business partners associated with salient issues\/impacts",
+        "3": "Risks provided for long-term horizons",
         "4": "Breakdown of risks by activity or region",
         "5": "Clear management approach for the identified risks and impacts",
-        "6": "Identification of locations that are critical to value chains, including operations, suppliers and markets"
+        "6": "Identification of locations critical to value chains"
     },
     "l_02_A_05_qoi": {
         "text": "",
@@ -376,7 +378,7 @@
         "text": "GHG emission total Scope 3"
     },
     "id_ai": {
-        "text": "GHG emission intensity Scope 1"
+        "text": "GHG emission intensity"
     },
     "id_an": {
         "text": "Use of water"
@@ -408,6 +410,9 @@
     "s_4": {
         "text": "Accessibility of the information provided"
     },
+    "s_4b": {
+        "text": "Comprehensiveness and clarity of the information disclosed"
+    },
     "s_2b": {
         "text": "2. Strategic perspective"
     },
@@ -436,7 +441,7 @@
         "text": "A.4 Biodiversity and ecosystem conservation"
     },
     "s_B": {
-        "text": "B. General Positive Impacts by products \/ sources of opportunity"
+        "text": "B. General positive impacts by products \/ sources of opportunity"
     },
     "s_B_general": {
         "text": "Strategy\/initiatives for products\/services focusing on sustainable development opportunities"
