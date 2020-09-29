@@ -448,7 +448,8 @@
       .on("mousemove", (e, { properties: { NAME = "", value } = {} }) => {
         if (value !== undefined) {
           const [left, top] = d3.pointer(e);
-          container.select("#tooltip")
+
+          d3.select(`[data-map="${reportYear}"] #tooltip`)
             .style("opacity", 1)
             .style("left", `${left + 10}px`)
             .style("top", `${top + 10}px`)
@@ -460,13 +461,13 @@
             .style("z-index", 100)
             .text(`${NAME} - Companies: ${value}`);
 
-            container.select(e.target).attr("stroke-width", 1).attr("stroke", "#333");
+          d3.select(e.target).attr("stroke-width", 1).attr("stroke", "#333");
           e.target.parentNode.appendChild(e.target);
         }
       })
       .on("mouseout", ({ target }) => {
-        container.select("#tooltip").style("opacity", 0);
-        container.select(target).attr("stroke-width", 0);
+        d3.select(`[data-map="${reportYear}"] #tooltip`).style("opacity", 0);
+        d3.select(target).attr("stroke-width", 0);
         target.parentNode.insertBefore(target, target.parentNode.firstChild);
       });
 
