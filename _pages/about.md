@@ -15,7 +15,7 @@ The Alliance for Corporate Transparency brought together leading civil society o
 
 <strong>Content partners</strong>: Business and Human Rights Resource Centre, Future-Fit Foundation, Transparency International, WWF
 
-<strong>Advisory Group</strong>: ClientEarth, CDP Europe, CORE Coalition, Germanwatch, Shift Project,, Themis Research, Oxfam, ShareAction, SOMO and Climate Disclosure Standards Board,Global Witness and 2 Degrees Initiative Investing.
+<strong>Advisory Group</strong>: ClientEarth, CDP Europe, CORE Coalition, Germanwatch, Shift Project, Themis Research, Oxfam, ShareAction, SOMO and Climate Disclosure Standards Board, Global Witness, 2 Degrees Initiative Investing and Publish What You Pay.
 
 <strong>Academic support provided by</strong>: Cass Business School and Nyenrode Business School
 
