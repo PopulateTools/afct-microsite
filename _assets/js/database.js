@@ -141,7 +141,7 @@
     }
   }
   const MAP = {
-    COLORS: [ "#c5d8d9", "#c3ccca", "#c1bfba", "#bda59b", "#b98c7c", "#b5725d" ],
+    COLORS: [ "#edfbe7", "#87dac0", "#23a9ce", "#0087c3", "#214591" ],
     DATA: {
       2019: {
         GB: 168,
@@ -372,9 +372,6 @@
           const charts = summaryTable.querySelectorAll("[data-path]");
           // render charts
           renderCharts(charts, data);
-          
-          // const staticCharts = summaryTable.querySelectorAll("[data-static-path]");
-          // renderStaticCharts(staticCharts);
 
           const callback = event => {
             onFilterSelected(event, () => {
@@ -951,7 +948,7 @@
         ${getGeneralSectionLegendHTML()}
         ${getGeneralSectionChartsHTML()}
       </section>
-      <section id="general_results-companies-per" class="database-section database-canvas__fit">
+      <section id="general_results-companies-per" class="database-section__margin-xl database-canvas__fit">
         ${getCompaniesPerHTML()}
       </section>
     `;
@@ -2002,6 +1999,7 @@
       { id: "country", placeholder: "Select a country..." },
     ];
 
+    const multiselects = []
     filters.forEach(({ id, placeholder }) => {
       // Run multiselect.js
       const element = document.multiselect(`[data-year='${reportYear}'] #filter-${id}`);
@@ -2013,6 +2011,21 @@
 
       // add the placeholder to the new input field
       document.getElementById(`filter-${id}_input`).setAttribute("placeholder", placeholder)
+
+      multiselects.push(element)
+      const node = document.getElementById(element._getIdentifier())
+      node.addEventListener("click", ({ target }) => {
+        const select = ((target.parentElement || {}).parentElement || {}).previousElementSibling
+        if (select) {
+          multiselects.forEach(x => (x._item !== select) ? x._hideList(x) : x._showList(x));
+        }
+      });
+    })
+
+    document.addEventListener('click', ({ target }) => {
+      if (!multiselects.some(x => x._item.contains(target))) {
+        multiselects.forEach(x => x._hideList(x))
+      }
     })
   }
 
