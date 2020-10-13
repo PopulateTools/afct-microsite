@@ -11,7 +11,7 @@ After gathering input from the members of the Alliance for Corporate Transparenc
 
 The purpose of the “model law” is to advance the debate on the reform of the EU Non-Financial Reporting Directive and the development of European reporting standards.
 
-If you are interested to participate in the discussions, please get in touch with us via: <a href="mailto:joanne.houston@frankbold.org">joanne.houston@frankbold.org</a>. Similarly, you can subscribe to our newsletter to receive updates and relevant information on future events, publications and policy discussions.
+If you are interested to participate in the discussions, please get in touch with us via: <a href="mailto:joanne.houston@frankbold.org">joanne.houston@frankbold.org</a>. Similarly, you can <a href="http://eepurl.com/dJPBjQ" target="_blank">subscribe to our newsletter</a> to receive updates and relevant information on future events, publications and policy discussions.
 
 <h3>Collaboration and partnerships</h3>
 
@@ -40,8 +40,6 @@ May 11, 2020. Co-organised by Frank Bold (coordinator of the Alliance) and the W
 May 15, 2020. Co-organised by Frank Bold (coordinator of the Alliance) and the National Contact Point for OECD Guidelines for Multinational Enterprises 
 - Relevant links: <a href="https://www.youtube.com/watch?v=Qt5mQstGAgo&t=5s" target="_blank">Recording</a> 
 - Speakers: Ludmila Hyklová, Secretariat of the Czech National Contact Point, Filip Gregor and Kristýna Vejvodová (Frank Bold)
-
-<a href="#" data-trigger-modal>Subscribe to our newsletter</a> to receive updates and relevant information on future events, publications and policy discussions. 
 
 <h1>Context</h1>
 

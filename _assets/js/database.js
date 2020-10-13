@@ -114,7 +114,7 @@
     }
   }
   const SUMMARY = {
-    COLORS: ["#b5725d", "#c5d8d9", "#0b2740"],
+    COLORS: [ "#0b2740", "#c5d8d9", "#b5725d" ],
     TOPICS: {
       2019: [
         { index: "A.1", title: "Climate change", parent: "s_A", child: "s_A1" },
@@ -141,7 +141,7 @@
     }
   }
   const MAP = {
-    COLORS: [ "#80ffdb", "#72efdd", "#64dfdf", "#56cfe1", "#48bfe3", "#4ea8de", "#5390d9", "#5e60ce", "#6930c3", "#7400b8" ],
+    COLORS: [ "#c5d8d9", "#c3ccca", "#c1bfba", "#bda59b", "#b98c7c", "#b5725d" ],
     DATA: {
       2019: {
         GB: 168,
@@ -369,16 +369,16 @@
 
           summaryTable.innerHTML = template
 
-          const charts = document.querySelectorAll("[data-path]");
+          const charts = summaryTable.querySelectorAll("[data-path]");
           // render charts
           renderCharts(charts, data);
           
-          const staticCharts = document.querySelectorAll("[data-static-path]");
-          renderStaticCharts(staticCharts);
+          // const staticCharts = summaryTable.querySelectorAll("[data-static-path]");
+          // renderStaticCharts(staticCharts);
 
           const callback = event => {
             onFilterSelected(event, () => {
-              const charts = document.querySelectorAll("[data-path]");
+              const charts = summaryTable.querySelectorAll("[data-path]");
               if (charts.length) {
                 renderCharts(charts, data);
               }
@@ -422,8 +422,9 @@
     const path = d3.geoPath(projection);
 
     // populate topojson with displayed data
+    const { map: mapYear } = europe.dataset
     const mapData = geojson.features.reduce((acc, item) => {
-      const value = MAP.DATA[reportYear][item.id];
+      const value = MAP.DATA[mapYear][item.id];
       value
         ? acc.push({ ...item, properties: { ...item.properties, value } })
         : acc.push(item);
@@ -431,7 +432,7 @@
     }, []);
 
     // helpers to set the polygons color
-    const [min, max] = d3.extent(Object.values(MAP.DATA[reportYear]));
+    const [min, max] = d3.extent(Object.values(MAP.DATA[mapYear]));
     const colorStep = (max - min) / (MAP.COLORS.length - 1);
     const color = (value) => MAP.COLORS[Math.floor(value / colorStep)];
 
@@ -450,7 +451,7 @@
         if (value !== undefined) {
           const [left, top] = d3.pointer(e);
 
-          d3.select(`[data-map="${reportYear}"] #tooltip`)
+          d3.select(`[data-map="${mapYear}"] #tooltip`)
             .style("opacity", 1)
             .style("left", `${left + 10}px`)
             .style("top", `${top + 10}px`)
@@ -467,7 +468,7 @@
         }
       })
       .on("mouseout", ({ target }) => {
-        d3.select(`[data-map="${reportYear}"] #tooltip`).style("opacity", 0);
+        d3.select(`[data-map="${mapYear}"] #tooltip`).style("opacity", 0);
         d3.select(target).attr("stroke-width", 0);
         target.parentNode.insertBefore(target, target.parentNode.firstChild);
       });
@@ -1461,12 +1462,12 @@
               ticks: {
                 fontSize: fontSize,
                 fontStyle: 200,
+                padding: chart.width * (1 / 4) - 40,
                 mirror: true
               },
               afterFit: (scaleInstance) => {
-                const { width = 150 } = chart.getBoundingClientRect(); // enforce minimun label size
-                scaleInstance.width = width * (1 / 4);
-                scaleInstance.options.ticks.padding = width * (1 / 4) - 40
+                scaleInstance.width = chart.width * (1 / 4);
+                // scaleInstance.options.ticks.padding = chart.width * (1 / 4) - 40;
               },
             },
           ],

@@ -13,20 +13,18 @@ description: ""
       <div class="flex-container left gutter-xxl">
         <div>
           <h1 class="hero__h1">EUKI Research 2020</h1>
-          <p class="hero__subtitle">An in-depth study on companies’ climate, environmental and governance reporting.</p>
-        </div>
-        <div>
-          <div class="hero__box">
-            <p class="hero__p">Assessment of the disclosures made by 300 companies from Central, Eastern and Southern Europe as the EU embarks on the reform of the Directive in 2020.</p>
-          </div>
+          <p class="hero__subtitle">Analysis of the <strong>climate, environmental and governance</strong> reporting of
+            300 companies in Central, Eastern and Soutern Europe.</p>
           <div class="column mt-l">
             <p class="heading__span link fs-16">Explore results</p>
             <div class="flex-container start no-expand gutter-xl">
               <a href="/database/2020.html" class="button">EUKI Database 2020</a>
-              <a href="{% asset '{{ site.url_report2020_pdf }}' @path %}" target="_blank" data-trigger-modal class="button">EUKI Research Report (PDF)</a>
+              <a href="{% asset '{{ site.url_report2020_pdf }}' @path %}" target="_blank" data-trigger-modal
+                class="button">EUKI Research Report (PDF)</a>
             </div>
           </div>
         </div>
+        <div data-map="2020"></div>
       </div>
     </div>
   </section>
@@ -36,20 +34,18 @@ description: ""
       <div class="flex-container left gutter-xxl">
         <div>
           <h1 class="hero__h1">EU Research 2019</h1>
-          <p class="hero__subtitle">The largest study on companies sustainability disclosures to date.</p>
-        </div>
-        <div>
-          <div class="hero__box">
-            <p class="hero__p">Assessment of the information disclosed by 1000 European companies on their environmental and societal risks and impacts pursuant to the EU legal requirements.</p>
-          </div>
+          <p class="hero__subtitle">The largest study to date on the information disclosed by 1000 European companies on
+            their <strong>environmental and societal risks and impacts</strong> pursuant to the EU legislation</p>
           <div class="column mt-l">
             <p class="heading__span link fs-16">Explore results</p>
             <div class="flex-container start no-expand gutter-xl">
               <a href="/database/2019.html" class="button">EU Database 2019</a>
-              <a href="{% asset '{{ site.url_report2019_pdf }}' @path %}" target="_blank" data-trigger-modal class="button">EU Research Report (PDF)</a>
+              <a href="{% asset '{{ site.url_report2019_pdf }}' @path %}" target="_blank" data-trigger-modal
+                class="button">EU Research Report (PDF)</a>
             </div>
           </div>
         </div>
+        <div data-map="2019"></div>
       </div>
     </div>
   </section>
@@ -58,8 +54,9 @@ description: ""
     <input type="hidden" name="materiality_matrix" value="{% asset '{{ site.url_materiality_matrix }}' @path %}">
 
     <div class="column mb-l">
-      <label class="database-selector">
-        Select a research / year: 
+      <h1 class="heading__hero with-decorator mb-s"></h1>
+      <label class="database-selector heading__span muted fs-18">
+        Select a research / year:
         <select data-select-year>
           <option value="2020" selected>2020</option>
           <option value="2019">2019</option>
@@ -71,43 +68,19 @@ description: ""
       <div class="database-spinner" data-spinner><i class="fas fa-spinner fa-3x fa-spin"></i></div>
 
       <div class="column" data-year="2020">
-        <h1 class="heading__hero with-decorator">General results EUKI Research 2020</h1>
-        <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive overview of general and sector-specific results is provided in the Database and Research Report.</p>
-  
-        <div>
-          <h4 class="heading__h4">Companies analyzed</h2>
-          <div class="database-layout__col-2-3 gutter-xl">
-            <div>
-              <span class="database-heading__span-underline">Sector</span>
-              <div class="database-canvas__fit">
-                <canvas data-path="company.sectors" data-exclude-filter data-absolute data-sort data-bar-thickness="15" data-mirror-y="false"></canvas>
-              </div>
-            </div>
-            <div data-map="2020"></div>
-          </div>
-        </div>
+        <h1 class="heading__hero">General results EUKI Research 2020</h1>
+        <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive
+          overview of general and sector-specific results is provided in the Database and Research Report.</p>
 
         <div class="database-container">
           <section class="database-section__margin-xl database-canvas__fit" data-summary-table></section>
         </div>
       </div>
-  
-      <div class="column" data-year="2019">
-        <h1 class="heading__hero with-decorator">General results EU Research 2019</h1>
-        <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive overview of general and sector-specific results is provided in the Database and Research Report.</p>
 
-        <div>
-          <h4 class="heading__h4">Companies analyzed</h2>
-          <div class="database-layout__col-2-3 gutter-xl">
-            <div>
-              <span class="database-heading__span-underline">Sector</span>
-              <div class="database-canvas__fit">
-                <canvas data-path="company.sectors" data-exclude-filter data-absolute data-sort data-bar-thickness="15" data-mirror-y="false"></canvas>
-              </div>
-            </div>
-            <div data-map="2019"></div>
-          </div>
-        </div>
+      <div class="column" data-year="2019">
+        <h1 class="heading__hero">General results EU Research 2019</h1>
+        <p class="heading__span muted fs-18">Summary of key findings and results of select criteria. A comprehensive
+          overview of general and sector-specific results is provided in the Database and Research Report.</p>
 
         <div class="database-container">
           <section class="database-section__margin-xl database-canvas__fit" data-summary-table></section>
@@ -118,51 +91,7 @@ description: ""
   </section>
 
   <section class="partners">
-    <div class="column">
-      <h3 class="heading__h1">Partners</h3>
-      <div>
-        <ul class="section-wrap">
-          <li>
-            <span class="section-wrap__span">Project coordinator</span>
-            <div class="partner"><img src="{% asset logos/logo-frankbold @path %}" alt=""></div>
-          </li>
-          <li style="margin-left: 100px">
-            <span class="section-wrap__span">Technical partner</span>
-            <div class="partner"><img src="{% asset logos/logo-sustentia @path %}" alt=""></div>
-          </li>
-        </ul>
-
-        <p class="section-wrap__span">Partners and advisors of the project include</p>
-        <ul class="section-wrap">
-          <li>
-            <div class="partner"><img src="{% asset logos/logo-BHRC @path %}" alt=""></div>
-          </li>
-          <li><div class="partner"><img src="{% asset logos/logo-CORE @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-clientearth @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-futurefit @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-germanwatch @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-oxfam @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-shift @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-ti @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-wwf @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-cdp @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-sei @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-themis @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-somo @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-shareaction @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-cdbs @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-globalw @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-2dii @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-pwyp @path %}" alt=""></div></li>
-        </ul>
-  
-        <p class="section-wrap__span">Academic support provided by:</p>
-        <ul class="section-wrap">
-          <li><div class="partner"><img src="{% asset logos/logo-cass @path %}" alt=""></div></li>
-          <li><div class="partner"><img src="{% asset logos/logo-neynrode @path %}" alt=""></div></li>
-        </ul>
-      </div>
-    </div>
+    {% include partners.html %}
   </section>
 
   <section>
@@ -172,7 +101,9 @@ description: ""
           <h3 class="heading__h1">Expert views on the future of corporate sustainability reporting</h3>
         </div>
         <div class="aspect-ratio-16-9" style="flex-shrink: 1">
-          <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/videoseries?list=PLwkylO8KA7t6k731Efoea7KKbdQcZQOMb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe style="width: 100%; height: 100%"
+            src="https://www.youtube.com/embed/videoseries?list=PLwkylO8KA7t6k731Efoea7KKbdQcZQOMb" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
