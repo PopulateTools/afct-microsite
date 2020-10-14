@@ -141,7 +141,7 @@
     }
   }
   const MAP = {
-    COLORS: [ "#cdf0d5", "#87dac0", "#23a9ce", "#0087c3", "#214591" ],
+    COLORS: [ "#a3e4c0", "#87dac0", "#23a9ce", "#0087c3", "#214591" ],
     DATA: {
       2019: {
         GB: 168,
@@ -1363,7 +1363,7 @@
     new Chart(chart, opts);
   }
 
-  function loadSummaryChart(idOrElement, chartData, options = {}) {
+  function loadSummaryChart(idOrElement, data, options = {}) {
     let chart;
     if (isString(idOrElement)) {
       chart = document.getElementById(idOrElement);
@@ -1371,7 +1371,6 @@
       chart = idOrElement;
     }
 
-    const data = chartData.data;
     const barThickness = options.barThickness || 50;
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
@@ -1690,13 +1689,15 @@
       }
     }
 
-    const transpose = arr => arr.map((_, col) => arr.map(row => row[col]));
-    const unsorted = Object.values(resultByOptions).map(x => Object.keys(x).map(y => decimalRound(100 * x[y] / total[y])))
-    const sorted = transpose(transpose(unsorted).map(x => x.sort((a, b) => b > a)))
+    const transpose = (arr) => arr.map((_, col) => arr.map((row) => row[col]));
+    const unsorted = Object.values(resultByOptions).map((x) =>
+      Object.keys(x).map((y, i) => total[y] ? decimalRound((100 * x[y]) / total[y]) : 0)
+    );
+    const sorted = transpose(
+      transpose(unsorted).map((x, i) => x.sort((a, b) => b > a))
+    );
 
-    return {
-      data: sorted
-    };
+    return sorted;
   }
 
   function decimalRound(num, decimals) {
