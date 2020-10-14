@@ -76,7 +76,7 @@
     if (widget && !IS_WIDGET_INITIALIZED) {
       IS_WIDGET_INITIALIZED = true;
       widget.style.opacity = 0;
-      widget.style.transform = "translate(-9999px)";
+      widget.style.transform = "translate(-9999px, -9999px)";
     }
 
     if (!widget && REPORT_URL) {
