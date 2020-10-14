@@ -114,7 +114,7 @@
     }
   }
   const SUMMARY = {
-    COLORS: [ "#0b2740", "#c5d8d9", "#b5725d" ],
+    COLORS: [ "#b5725d", "#c5d8d9", "#0b2740" ],
     TOPICS: {
       2019: [
         { index: "A.1", title: "Climate change", parent: "s_A", child: "s_A1" },
@@ -972,6 +972,7 @@
 
     const t = title => `<div class="database-summary__legend--title">${title}</div>`
 
+    // Note the order of the colors is upside down
     const items = {
       titles: ["Policies", "Risks", "Outcomes"],
       options: [
@@ -981,7 +982,7 @@
             "Description of specific risks",
             "Outcomes in terms of meeting policy targets",
           ],
-          color: SUMMARY.COLORS[0],
+          color: SUMMARY.COLORS[2],
         },
         {
           titles: [
@@ -997,7 +998,7 @@
             "No risks identification",
             "No description",
           ],
-          color: SUMMARY.COLORS[2],
+          color: SUMMARY.COLORS[0],
         },
       ],
     };
@@ -1374,23 +1375,34 @@
     const barThickness = options.barThickness || 50;
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
+    const dataByValue = data.map(x => x.map(({ value }) => value))
+
     let columnNames = ["Policies", "Risks", "Outcomes"];
     let datasets = [
       {
-        data: data[0],
-        backgroundColor: SUMMARY.COLORS[0],
+        data: dataByValue[0],
+        backgroundColor: ({ dataIndex }) => {
+          const { option } = data[0][dataIndex]
+          return SUMMARY.COLORS[option]
+        },
         barPercentage: 0.9,
         maxBarThickness: barThickness,
       },
       {
-        data: data[1],
-        backgroundColor: SUMMARY.COLORS[1],
+        data: dataByValue[1],
+        backgroundColor: ({ dataIndex }) => {
+          const { option } = data[1][dataIndex]
+          return SUMMARY.COLORS[option]
+        },
         barPercentage: 0.9,
         maxBarThickness: barThickness,
       },
       {
-        data: data[2],
-        backgroundColor: SUMMARY.COLORS[2],
+        data: dataByValue[2],
+        backgroundColor: ({ dataIndex }) => {
+          const { option } = data[2][dataIndex]
+          return SUMMARY.COLORS[option]
+        },
         barPercentage: 0.9,
         maxBarThickness: barThickness,
       },
@@ -1466,7 +1478,6 @@
               },
               afterFit: (scaleInstance) => {
                 scaleInstance.width = chart.width * (1 / 4);
-                // scaleInstance.options.ticks.padding = chart.width * (1 / 4) - 40;
               },
             },
           ],
@@ -1492,12 +1503,8 @@
               return 8;
             },
             color: (context) => {
-              if (
-                (context.datasetIndex === 1 &&
-                  !lessThan(context) &&
-                  !nextLessThan(context)) ||
-                (context.datasetIndex === 2 && lessThan(context))
-              )
+              const { option } = data[context.datasetIndex][context.dataIndex]
+              if (option === 1)
                 return "#3B5360";
               return "#fff";
             },
@@ -1690,11 +1697,11 @@
     }
 
     const transpose = (arr) => arr.map((_, col) => arr.map((row) => row[col]));
-    const unsorted = Object.values(resultByOptions).map((x) =>
-      Object.keys(x).map((y, i) => total[y] ? decimalRound((100 * x[y]) / total[y]) : 0)
+    const unsorted = Object.values(resultByOptions).map((x, i) =>
+      Object.keys(x).map(y => ({ option: i, value: total[y] ? decimalRound((100 * x[y]) / total[y]) : 0 }))
     );
     const sorted = transpose(
-      transpose(unsorted).map((x, i) => x.sort((a, b) => b > a))
+      transpose(unsorted).map(x => x.sort(({ value: a }, { value: b }) => b > a))
     );
 
     return sorted;
