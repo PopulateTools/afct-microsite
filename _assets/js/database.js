@@ -1127,8 +1127,9 @@
     return `
       <h2 class="database-heading__h2 with-decorator database-layout__flex">
         <span>${text}</span>
-        <div class="database-layout__col-3 align-center gutter-l" data-drilldown-container>
+        <div class="database-layout__col-3 align-center gutter-l" style="position: relative" data-drilldown-container>
           <span class="database-tag__title">Comparative results</span>
+          <span class="database-tag__note">(not applicable in combination with filters above)</span>
           <button class="database-tag" data-drilldown="country">By country</button>
           <button class="database-tag" data-drilldown="sector">By sector</button>
           <button class="database-tag" data-drilldown="revenue">By revenue</button>
