@@ -141,7 +141,7 @@
     }
   }
   const MAP = {
-    COLORS: [ "#edfbe7", "#87dac0", "#23a9ce", "#0087c3", "#214591" ],
+    COLORS: [ "#cdf0d5", "#87dac0", "#23a9ce", "#0087c3", "#214591" ],
     DATA: {
       2019: {
         GB: 168,
@@ -977,9 +977,9 @@
       options: [
         {
           titles: [
-            "No information provided",
-            "No risks identification",
-            "No description",
+            "Policy description specifies key issues and objectives",
+            "Description of specific risks",
+            "Outcomes in terms of meeting policy targets",
           ],
           color: SUMMARY.COLORS[0],
         },
@@ -993,9 +993,9 @@
         },
         {
           titles: [
-            "Policy description specifies key issues and objectives",
-            "Description of specific risks",
-            "Outcomes in terms of meeting policy targets",
+            "No information provided",
+            "No risks identification",
+            "No description",
           ],
           color: SUMMARY.COLORS[2],
         },
@@ -1370,6 +1370,7 @@
     }
 
     const data = chartData.data;
+    debugger
     const barThickness = options.barThickness || 50;
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
@@ -1686,8 +1687,12 @@
       }
     }
 
+    const transpose = arr => arr.map((_, col) => arr.map(row => row[col]));
+    const unsorted = Object.values(resultByOptions).map(x => Object.keys(x).map(y => decimalRound(100 * x[y] / total[y])))
+    const sorted = transpose(transpose(unsorted).map(x => x.sort((a, b) => b > a)))
+
     return {
-      data: Object.values(resultByOptions).map(x => Object.keys(x).map(y => decimalRound(100 * x[y] / total[y]))),
+      data: sorted
     };
   }
 
