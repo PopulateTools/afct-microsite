@@ -1294,6 +1294,7 @@
         legend: {
           display: false,
         },
+        events: [],
         scales: {
           xAxes: [
             {
@@ -1371,7 +1372,6 @@
     }
 
     const data = chartData.data;
-    debugger
     const barThickness = options.barThickness || 50;
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
@@ -1428,6 +1428,7 @@
         legend: {
           display: false,
         },
+        events: [],
         layout: {
           padding: {
             left: -10,
@@ -1580,6 +1581,7 @@
           legend: {
             display: false
           },
+          events: [],
           scales: {
             xAxes: [
               {
@@ -1752,7 +1754,7 @@
   }
 
   function percentage(value, total) {
-    if (value === undefined || value === null) {
+    if (value === undefined || value === null || !total) {
       return 0;
     }
     return ((value / total) * 100).toFixed(1);
