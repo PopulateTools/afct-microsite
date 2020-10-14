@@ -977,9 +977,9 @@
       options: [
         {
           titles: [
-            "No information provided",
-            "No risks identification",
-            "No description",
+            "Policy description specifies key issues and objectives",
+            "Description of specific risks",
+            "Outcomes in terms of meeting policy targets",
           ],
           color: SUMMARY.COLORS[0],
         },
@@ -993,9 +993,9 @@
         },
         {
           titles: [
-            "Policy description specifies key issues and objectives",
-            "Description of specific risks",
-            "Outcomes in terms of meeting policy targets",
+            "No information provided",
+            "No risks identification",
+            "No description",
           ],
           color: SUMMARY.COLORS[2],
         },
