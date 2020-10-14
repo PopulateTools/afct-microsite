@@ -322,6 +322,14 @@
   text-align: right;
 }
 
+.database-tag__note {
+  @extend .database-tag__title;
+
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+}
+
 .database-tag {
   border-radius: 2px;
   font-weight: normal;
