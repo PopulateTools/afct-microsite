@@ -1374,7 +1374,6 @@
 
     const barThickness = options.barThickness || 50;
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
-
     const dataByValue = data.map(x => x.map(({ value }) => value))
 
     let columnNames = ["Policies", "Risks", "Outcomes"];
