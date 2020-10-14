@@ -1243,8 +1243,7 @@
     chart.width = chart.getBoundingClientRect().width
 
     const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => {
-      const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
-      return width * (2 / 3)
+      return chart.width * (2 / 3) // enforce minimun label size
     })
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
@@ -1296,6 +1295,14 @@
           display: false,
         },
         events: [],
+        layout: {
+          padding: {
+            left: labelWidth(chart),
+            right: 0,
+            top: 0,
+            bottom: 0,
+          },
+        },
         scales: {
           xAxes: [
             {
@@ -1326,11 +1333,7 @@
                 fontSize: fontSize,
                 fontStyle: 200,
                 mirror: mirrorY,
-              },
-              afterFit: scaleInstance => {
-                const width = labelWidth(chart);
-                scaleInstance.width = width;
-                scaleInstance.options.ticks.padding = width;
+                padding: labelWidth(chart)
               }
             }
           ]
@@ -1441,7 +1444,7 @@
         events: [],
         layout: {
           padding: {
-            left: -10,
+            left: chart.width * (1 / 4) - 50,
             right: 0,
             top: 0,
             bottom: 0,
@@ -1474,10 +1477,7 @@
                 fontStyle: 200,
                 padding: chart.width * (1 / 4) - 40,
                 mirror: true
-              },
-              afterFit: (scaleInstance) => {
-                scaleInstance.width = chart.width * (1 / 4);
-              },
+              }
             },
           ],
         },
@@ -1587,6 +1587,14 @@
             display: false
           },
           events: [],
+          layout: {
+            padding: {
+              left: chart.width * (2 / 3),
+              right: 0,
+              top: 0,
+              bottom: 0,
+            },
+          },
           scales: {
             xAxes: [
               {
@@ -1614,12 +1622,8 @@
                   display: true,
                   fontSize: fontSize,
                   fontStyle: 200,
+                  padding: chart.width * (2 / 3),
                   mirror: true
-                },
-                afterFit: scaleInstance => {
-                  const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
-                  scaleInstance.width = width * (2 / 3);
-                  scaleInstance.options.ticks.padding = width * (2 / 3);
                 }
               }
             ]
