@@ -1377,40 +1377,30 @@
 
     const barThickness = options.barThickness || 50;
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
-    const dataByValue = data.map(x => x.map(({ value }) => value))
 
     let columnNames = ["Policies", "Risks", "Outcomes"];
     let datasets = [
       {
-        data: dataByValue[0],
-        backgroundColor: ({ dataIndex }) => {
-          const { option } = data[0][dataIndex]
-          return SUMMARY.COLORS[option]
-        },
+        data: data[2],
+        backgroundColor: SUMMARY.COLORS[2],
         barPercentage: 0.9,
         maxBarThickness: barThickness,
       },
       {
-        data: dataByValue[1],
-        backgroundColor: ({ dataIndex }) => {
-          const { option } = data[1][dataIndex]
-          return SUMMARY.COLORS[option]
-        },
+        data: data[1],
+        backgroundColor: SUMMARY.COLORS[1],
         barPercentage: 0.9,
         maxBarThickness: barThickness,
       },
       {
-        data: dataByValue[2],
-        backgroundColor: ({ dataIndex }) => {
-          const { option } = data[2][dataIndex]
-          return SUMMARY.COLORS[option]
-        },
+        data: data[0],
+        backgroundColor: SUMMARY.COLORS[0],
         barPercentage: 0.9,
         maxBarThickness: barThickness,
       },
     ];
 
-    const nullIndexes = data.map(d => d.findIndex(f => Number.isNaN(f)))
+    const nullIndexes = data.map(d => d.findIndex(f => f === 0))
     const indexToDelete = nullIndexes.every(d => d > -1 && d === nullIndexes[0]) ? nullIndexes[0] : null;
 
     if (indexToDelete !== null) {
@@ -1424,9 +1414,6 @@
 
     chart.height = columnNames.length * (barThickness + 6);
     chart.width = chart.getBoundingClientRect().width
-
-    const lessThan = ctx => ctx.dataset.data[ctx.dataIndex] < 5
-    const nextLessThan = ctx => (data[ctx.datasetIndex + 1] || [])[ctx.dataIndex] < 5
 
     const opts = {
       type: "horizontalBar",
@@ -1484,37 +1471,13 @@
         plugins: {
           datalabels: {
             anchor: "start",
-            offset: (context) => {
-              if (
-                context.datasetIndex === 1 && lessThan(context) && nextLessThan(context)
-              )
-                return 8;
-              if (
-                context.datasetIndex !== 0 &&
-                (lessThan(context) || nextLessThan(context))
-              )
-                return 0;
-              if (
-                context.datasetIndex !== 0 &&
-                context.dataset.data[context.dataIndex] < 6
-              )
-                return 2;
-              return 8;
-            },
-            color: (context) => {
-              const { option } = data[context.datasetIndex][context.dataIndex]
-              if (option === 1)
+            display: "auto",
+            color: ({ datasetIndex }) => {
+              if (datasetIndex === 1)
                 return "#3B5360";
               return "#fff";
             },
-            align: (context) => {
-              if (
-                context.datasetIndex !== 0 &&
-                (lessThan(context) || nextLessThan(context))
-              )
-                return "start";
-              return "end";
-            },
+            align: "end",
             font: {
               weight: "bold",
             },
@@ -1707,7 +1670,10 @@
       transpose(unsorted).map(x => x.sort(({ value: a }, { value: b }) => b > a))
     );
 
-    return sorted;
+    return Object.values(resultByOptions).map((x, i) =>
+    Object.keys(x).map(y => total[y] ? decimalRound((100 * x[y]) / total[y]) : 0)
+  );
+    // return sorted;
   }
 
   function decimalRound(num, decimals) {
