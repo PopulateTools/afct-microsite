@@ -739,6 +739,9 @@
           }
 
           onDrillDownButtonClick(event, data, dictionary);
+
+          // wrap all canvas with button
+          wrapCanvas()
         });
       })
     });
@@ -917,14 +920,6 @@
 
   function renderCharts(charts, data, dictionary) {
     charts.forEach(element => onChartLoad(element, data, dictionary));
-  }
-
-  function renderStaticCharts(charts) {
-    charts.forEach(chart => {
-      const { staticPath } = chart.dataset
-      const { data, opts } = STATIC_DATA[staticPath]
-      loadHorizontalChart(chart, { data }, opts);
-    })
   }
 
   function renderSpecialCharts(id, data) {
@@ -1180,7 +1175,7 @@
       filter = false
     }
 
-    if (element.dataset.type === "summary") {
+    if (dataset.type === "summary") {
       return loadSummaryChart(
         element,
         summaryChartData(
@@ -1497,8 +1492,7 @@
     new Chart(chart, opts);
   }
 
-  function loadDrillDownChart(container, chartsData, options = {}) {
-    chartsData.forEach((chartDataInfo, index) => {
+  function createDrillDownCanvas(container, chartDataInfo, options = {}) {
       let newChart = document.createElement("div");
 
       newChart.className = "database-layout__flex-column"
@@ -1512,112 +1506,121 @@
       const chart = newChart.querySelector("canvas");
       const chartData = chartDataInfo[1];
 
-      const columnNames = chartData.map(a => wrap(a[0], estimateMaxLengthLabel(chart)));
-      const data = chartData.map(a => parseFloat(a[1]));
+      chart.dataset.path = options.path
+      chart.dataset.dictionary = options.dictionary
+      chart.dataset.drilldown = options.drilldown
+      chart.dataset.subset = options.subset
 
-      const inverseData = data.map(e => MAXVALUE - e + 0.1);
+      loadDrillDownChart(chart, chartData, options)
+  }
 
-      const barThickness = options.barThickness || 20;
-      chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 8)); // force a minimal height
-      chart.width = chart.getBoundingClientRect().width
+  function loadDrillDownChart(chart, chartData, options = {}) {
+    const columnNames = chartData.map(a => wrap(a[0], estimateMaxLengthLabel(chart)));
+    const data = chartData.map(a => parseFloat(a[1]));
 
-      const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
+    const inverseData = data.map(e => MAXVALUE - e + 0.1);
 
-      const opts = {
-        type: "horizontalBar",
-        data: {
-          labels: columnNames,
-          datasets: [
+    const barThickness = options.barThickness || 20;
+    chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 8)); // force a minimal height
+    chart.width = chart.getBoundingClientRect().width
+
+    const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
+
+    const opts = {
+      type: "horizontalBar",
+      data: {
+        labels: columnNames,
+        datasets: [
+          {
+            data: data,
+            backgroundColor: mainColor,
+            barThickness: barThickness,
+            maxBarThickness: barThickness
+          },
+          {
+            data: inverseData,
+            hiddenLabel: true,
+            barThickness: barThickness,
+            maxBarThickness: barThickness
+          }
+        ]
+      },
+      plugins: [ChartDataLabels],
+      options: {
+        responsive: false,
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        },
+        events: [],
+        layout: {
+          padding: {
+            left: chart.width * (2 / 3),
+            right: 0,
+            top: 0,
+            bottom: 0,
+          },
+        },
+        scales: {
+          xAxes: [
             {
-              data: data,
-              backgroundColor: mainColor,
-              barThickness: barThickness,
-              maxBarThickness: barThickness
-            },
+              stacked: true,
+              gridLines: {
+                display: false,
+                drawBorder: false,
+                drawTicks: false
+              },
+              ticks: {
+                display: false,
+                beginAtZero: true,
+                precision: 0,
+                max: MAXVALUE
+              }
+            }
+          ],
+          yAxes: [
             {
-              data: inverseData,
-              hiddenLabel: true,
-              barThickness: barThickness,
-              maxBarThickness: barThickness
+              stacked: true,
+              gridLines: {
+                display: false
+              },
+              ticks: {
+                display: true,
+                fontSize: fontSize,
+                fontStyle: 200,
+                padding: chart.width * (2 / 3),
+                mirror: true
+              }
             }
           ]
         },
-        plugins: [ChartDataLabels],
-        options: {
-          responsive: false,
-          maintainAspectRatio: false,
-          legend: {
-            display: false
-          },
-          events: [],
-          layout: {
-            padding: {
-              left: chart.width * (2 / 3),
-              right: 0,
-              top: 0,
-              bottom: 0,
+        plugins: {
+          datalabels: {
+            anchor: "end",
+            clamp: true,
+            color: context =>
+              context.dataset.data[context.dataIndex] < 50
+                ? "#3B5360"
+                : "#fff",
+            align: context =>
+              context.dataset.data[context.dataIndex] < 50 ? "end" : "start",
+            font: {
+              weight: "bold"
             },
-          },
-          scales: {
-            xAxes: [
-              {
-                stacked: true,
-                gridLines: {
-                  display: false,
-                  drawBorder: false,
-                  drawTicks: false
-                },
-                ticks: {
-                  display: false,
-                  beginAtZero: true,
-                  precision: 0,
-                  max: MAXVALUE
-                }
-              }
-            ],
-            yAxes: [
-              {
-                stacked: true,
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  display: true,
-                  fontSize: fontSize,
-                  fontStyle: 200,
-                  padding: chart.width * (2 / 3),
-                  mirror: true
-                }
-              }
-            ]
-          },
-          plugins: {
-            datalabels: {
-              anchor: "end",
-              clamp: true,
-              color: context =>
-                context.dataset.data[context.dataIndex] < 50
-                  ? "#3B5360"
-                  : "#fff",
-              align: context =>
-                context.dataset.data[context.dataIndex] < 50 ? "end" : "start",
-              font: {
-                weight: "bold"
-              },
-              clip: true,
-              formatter: (value, ctx) => {
-                if (ctx.dataset.hiddenLabel) {
-                  return null;
-                } else {
-                  return value;
-                }
+            clip: true,
+            formatter: (value, ctx) => {
+              if (ctx.dataset.hiddenLabel) {
+                return null;
+              } else {
+                return value;
               }
             }
           }
         }
-      };
-      new Chart(chart, opts);
-    });
+      }
+    };
+
+    new Chart(chart, opts);
   }
 
   function summaryChartData(data, chart) {
@@ -2233,7 +2236,9 @@
           dictionary
         );
 
-        loadDrillDownChart(subchartsContainer, summarizeData);
+        summarizeData.forEach((subchartData, index) =>
+          createDrillDownCanvas(subchartsContainer, subchartData, { path, dictionary: datasetDictionary, drilldown, subset: index })
+        );
       }
     });
   }
@@ -2385,10 +2390,25 @@
     const ctx = fakeCanvas.getContext("2d")
     const scale = 8
 
-    const { special } = dataset
+    const { special, drilldown } = dataset
     if (special) {
       fakeCanvas.id = `${special}-fake`
       renderSpecialCharts(`${special}-fake`, data)
+    } else if (drilldown) {
+      const { path, dictionary: datasetDictionary, subset, ...options } = dataset
+
+      // ask again for the all the data
+      const summarizeData = summarizeDrilldownDataFromPath(
+        data,
+        path,
+        datasetDictionary,
+        drilldown,
+        dictionary
+      );
+
+      // provide only the specific subset of data
+      const subsetData = summarizeData[subset][1]
+      loadDrillDownChart(fakeCanvas, subsetData, options)
     } else {
       for (const key in dataset) {
         if (dataset.hasOwnProperty(key)) {
@@ -2396,7 +2416,6 @@
           fakeCanvas.setAttribute(`data-${key}`, element)
         }
       }
-  
       // Call to render chart on a fake canvas
       onChartLoad(fakeCanvas, data, dictionary)
     }
