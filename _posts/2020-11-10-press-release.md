@@ -2,8 +2,8 @@
 title: New data shows some, yet insufficient progress in companies’ climate and environmental disclosures at a turning point for sustainability reporting in Europe
 date: 2020-11-10 00:00:00 Z
 layout: post
-img: posts/2005-euflag.jpg
-img_listing: posts/2005-euflag_listing.jpg
+img: posts/2011-EUKI-strategy.jpg
+img_listing: posts/2011-EUKI-strategy.jpg
 intro: Only a minority of companies - approximately 30% - provide sufficiently detailed information on their climate policies and risks that allows to understand their development, position, performance and impact
 ---
 
