@@ -1,15 +1,236 @@
 (function() {
-  const DEBUG = true; //(location.origin === "http://0.0.0.0:4000") || false;
+  const DEBUG = (location.origin === "http://0.0.0.0:4000") || false;
 
   // Store it in a global var, instead of passing through functions
   let GLOBAL_TREE = null;
+
+  let reportYear = '';
   let materialityMatrixURL = null;
 
-  window.addEventListener("DOMContentLoaded", () => {
-    const dictionaryUrl = DEBUG ? "../static_data/mock_dictionary.json" : "https://act-export.frankbold.org/dictionary.json";
-    const reportsUrl = DEBUG ? "../static_data/mock_reports.json" : "https://act-export.frankbold.org/reports.json";
+  window.addEventListener("DOMContentLoaded", loadData);
+
+  closestPolyfill()
+
+  Chart.defaults.global.defaultFontSize = 13;
+  Chart.defaults.global.tooltips.enabled = false
+
+  const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
+    "--green"
+  );
+  const activeClass = "active";
+  const openClass = "is-open";
+  const MAXVALUE = 100;
+  const revenueRange0 = 3e8;
+  const revenueRange1 = 1e9;
+  const revenueRange2 = 3e9;
+  const revenueRange3 = 2e10;
+  const countriesPath = "company.country_incorporation";
+  const sectorsPath = "company.sectors";
+  const STATIC_DATA = {
+    "general-transparency-key-issues": {
+      data: [
+        ["No", 52.1],
+        ["Partially", 28.9],
+        ["Fully", 19],
+      ],
+      opts: {
+        labelWidth: () => 50
+      }
+    },
+    "climate-target": {
+      data: [
+        ["Apparel & Textiles", 26.4],
+        ["Consumption", 29.4],
+        ["Energy & Resource Extraction", 36.4],
+        ["Financials", 20.5],
+        ["Food & Beverages", 48.4],
+        ["Health Care", 32.9],
+        ["Hospitality & Recreation", 26.2],
+        ["Infrastructure", 46.1],
+        ["Resource Transformation", 44.3],
+        ["Technology & Communications", 40],
+        ["Transportation", 47.6]
+      ],
+      opts: {
+        labelWidth: () => 0,
+        mirrorY: false
+      }
+    },
+    "company-climate-target": {
+      data: [
+        ["Apparel & Textiles", 9.1],
+        ["Consumption", 4.4],
+        ["Energy & Resource Extraction", 23.5],
+        ["Financials", 10.2],
+        ["Food & Beverages", 20],
+        ["Health Care", 6.8],
+        ["Hospitality & Recreation", 9.5],
+        ["Infrastructure", 17.1],
+        ["Resource Transformation", 13.4],
+        ["Technology & Communications", 20],
+        ["Transportation", 12.48]
+      ],
+      opts: {
+        labelWidth: () => 0,
+        mirrorY: false
+      }
+    },
+    "human-rights": {
+      data: [
+        ["Identified concrete operations and/or business partners associated with salient issues & impacts", 9.7],
+        ["Specific examples and appropriate indicators illustrate each salient issue is being managed effectively", 3.6],
+        ["Board oversight of risks and salient issues", 16],
+        ["Changes in the nature of each salient human rights issue (trend & patterns in impacts) over time", 1.3],
+        ["Actions that company has taken to prevent or mitigate impacts related to each salient issue", 19.4],
+        ["Explicit commitment to provide remedy to harmed people", 6.9],
+        ["Grievance mechanism and its application", 11]
+      ],
+      opts: {
+        labelWidth: chart => {
+          const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
+          return width * 0.6
+        },
+        maxLength: 60,
+        fontSize: 15,
+        mirrorY: false
+      }
+    },
+    "supply-chain": {
+      data: [
+        ["No information on the structure of the supply chain", 67.2],
+        ["General Description of high risk supply chains", 24.7],
+        ["List of suppliers in high-risk supply chains", 1.7],
+        ["List of individual ultimate factories was published + List of individual ultimate factories is available for download", 3.7]
+      ],
+      opts: {
+        labelWidth: chart => {
+          const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
+          return width * 0.6
+        },
+        maxLength: 60,
+        fontSize: 15,
+        mirrorY: false
+      }
+    }
+  }
+  const SUMMARY = {
+    COLORS: [ "#b5725d", "#c5d8d9", "#0b2740" ],
+    TOPICS: {
+      2019: [
+        { index: "A.1", title: "Climate change", parent: "s_A", child: "s_A1" },
+        { index: "A.2", title: "Use of natural resources", parent: "s_A", child: "s_A2" },
+        { index: "A.3", title: "Polluting discharges", parent: "s_A", child: "s_A3" },
+        { index: "A.4", title: "Waste", parent: "s_A", child: "s_A4" },
+        { index: "A.5", title: "Biodiversity and ecosystem conservation", parent: "s_A", child: "s_A5" },
+        { index: "B.1", title: "Employee and workforce matters", parent: "s_B", child: "s_B1" },
+        { index: "C.0", title: "General Human Rights Reporting Criteria", parent: "s_C", child: "s_C0" },
+        { index: "C.1", title: "Supply Chains Management", parent: "s_C", child: "s_C1" },
+        { index: "C.2", title: "Impacts on indigenous and/or local communities rights", parent: "s_C", child: "s_C2" },
+        { index: "C.3", title: "Hight risk areas for Civil & Political rights", parent: "s_C", child: "s_C3" },
+        { index: "C.4", title: "Conflict resources (minerals, timber, etc.)", parent: "s_C", child: "s_C4" },
+        { index: "C.5", title: "Data protection / Digital rights", parent: "s_C", child: "s_C5" },
+        { index: "D.1", title: "Anti-corruption", parent: "s_D", child: "s_D1" },
+        { index: "D.2", title: "Whistleblowing channel", parent: "s_D", child: "s_D2" },
+      ],
+      2020: [
+        { index: "A.1", title: "Climate change", parent: "s_A", child: "s_A1" },
+        { index: "A.2", title: "Use of natural resources", parent: "s_A", child: "s_A2" },
+        { index: "A.3", title: "Polluting discharges", parent: "s_A", child: "s_A3" },
+        { index: "A.4", title: "Biodiversity and ecosystem conservation", parent: "s_A", child: "s_A4" },
+      ]
+    }
+  }
+  const MAP = {
+    COLORS: [ "#a3e4c0", "#87dac0", "#23a9ce", "#0087c3", "#214591" ],
+    DATA: {
+      2019: {
+        GB: 168,
+        FR: 127,
+        DE: 108,
+        IT: 70,
+        ES: 67,
+        PL: 64,
+        SE: 61,
+        NL: 52,
+        FI: 39,
+        DK: 34,
+        BE: 30,
+        AT: 21,
+        LU: 20,
+        IE: 20,
+        GR: 16,
+        SK: 10,
+        RO: 11,
+        PT: 11,
+        HU: 11,
+        CZ: 10,
+        LT: 9,
+        EE: 9,
+        HR: 9,
+        SI: 8,
+        LV: 5,
+        CY: 5,
+        BG: 4,
+        MT: 1,
+      },
+      2020: {
+        BG: 8,
+        HR: 15,
+        CY: 1,
+        CZ: 11,
+        GR: 19,
+        HU: 8,
+        IT: 76,
+        PL: 73,
+        RO: 15,
+        SK: 8,
+        SI: 11,
+        ES: 58
+      },
+    },
+  };
+
+  const path = location.pathname.replace(/\//g,'')
+  const { country = [], sector = [], revenues = [] } = JSON.parse(localStorage.getItem(`filters-${path}`)) || {}
+  const filters = {
+    country,
+    sector,
+    revenues
+  };
+
+  // Private functions
+  function loadData() {
+    const containers = document.querySelectorAll("[data-year]")
+    const yearSelector = document.querySelector("[data-select-year]")
+
+    if (yearSelector) {
+      reportYear = yearSelector.value
+
+      if (containers) {
+        containers.forEach((block) =>
+          block.dataset.year !== reportYear
+            ? (block.style.display = "none")
+            : (block.style.display = "block")
+        );
+      }
+    } else {
+      const [{ dataset: { year } = {} } = {}] = containers
+      reportYear = year
+    }
+
+    const reportYearParsed = reportYear === '2020' ? '2020' : ''
+
+    const dictionaryUrl = DEBUG
+      ? `../static_data/mock_dictionary${reportYearParsed}.json`
+      : `https://act-export.frankbold.org/dictionary${reportYearParsed}.json`;
+    const reportsUrl = DEBUG
+      ? `../static_data/mock_reports${reportYearParsed}.json`
+      : `https://act-export.frankbold.org/reports${reportYearParsed}.json`;
 
     const spinner = document.querySelector("[data-spinner]")
+    if (spinner) {
+      spinner.style.display = 'block'
+    }
 
     getJSON(dictionaryUrl, dictionary => {
       getJSON(reportsUrl, data => {
@@ -28,12 +249,10 @@
 
         // set url for PDF
         materialityMatrixURL = document.querySelector("input[type='hidden'][name='materiality_matrix']").value
-        
+
         // Load sidebar
         const sidebar = document.querySelector("[data-sidebar]");
         if (sidebar) {
-          
-
           sidebar.innerHTML = loadTOC(tree, dictionary);
   
           const lis = sidebar.querySelectorAll("li");
@@ -141,196 +360,153 @@
         }
 
         // Load summaryTable
-        const summaryTable = document.querySelector("[data-summary-table]");
+        const summaryTable = document.querySelector(`[data-year='${reportYear}'] [data-summary-table]`);
         if (summaryTable) {
           let template = "";
           template += getFiltersHTML()
-          template += getTabLinksHTML()
-          template += getTabContentHTML()
-      
-          summaryTable.innerHTML = template
-      
-          const rowTypes = summaryTable.querySelectorAll("[data-row-type]");
-          rowTypes.forEach(element => {
-            if (element.dataset.rowType !== "policies") {
-              element.style.display = "none";
-            }
-          });
+          template += getGeneralSectionLegendHTML()
+          template += getGeneralSectionChartsHTML()
 
-          const charts = document.querySelectorAll("[data-path]");
+          summaryTable.innerHTML = template
+
+          const charts = summaryTable.querySelectorAll("[data-path]");
           // render charts
           renderCharts(charts, data);
-          
-          const staticCharts = document.querySelectorAll("[data-static-path]");
-          renderStaticCharts(staticCharts);
 
-          const tableSelectors = summaryTable.querySelectorAll(
-            "[data-table-selector]"
-          );
-
-          fillCountriesFilter(data);
-          fillSectorsFilter(data);
-          fillRevenuesFilter(data);
+          const callback = event => {
+            onFilterSelected(event, () => {
+              const charts = summaryTable.querySelectorAll("[data-path]");
+              if (charts.length) {
+                renderCharts(charts, data);
+              }
+            });
+          }
 
           // Assign behaviour to filters
-          summaryTable.querySelectorAll("[data-filter]").forEach(element => {
-            return element.addEventListener("input", event => {
-              onFilterSelected(event, () => {
-                const charts = document.querySelectorAll("[data-path]");
-                if (charts.length) {
-                  renderCharts(charts, data);
-                }
-              });
-            });
-          });
+          fillFilters(data, callback)
 
-          if (tableSelectors) {
-            tableSelectors.forEach((element, index) => {
-              if (index === 0) {
-                element.classList.add(activeClass);
-              }
-
-              element.addEventListener("click", event => {
-                const { target } = event;
-                const selectedRowType = target.dataset.tableSelector;
-
-                tableSelectors.forEach(e => e.classList.remove(activeClass));
-                target.classList.add(activeClass);
-
-                rowTypes.forEach(element => {
-                  element.style.display = "none";
-                });
-
-                rowTypes.forEach(element => {
-                  if (element.dataset.rowType === selectedRowType) {
-                    element.style.display = "";
-
-                    const charts = element.querySelectorAll("[data-path]");
-                    if (charts.length) {
-                      renderCharts(charts, data);
-                    }
-                  }
-                });
-              });
-            });
+          const yearSelector = document.querySelector("[data-select-year]")
+          if (yearSelector) {
+            yearSelector.addEventListener("change", loadData)
           }
         }
 
+        const europes = document.querySelectorAll("[data-map]")
+        if (europes.length) {
+          getJSON(`../static_data/europe.json`, topology => europes.forEach(eu => drawMap(topology, eu)))
+        }
       });
     });
-  });
-
-  closestPolyfill()
-
-  Chart.defaults.global.defaultFontSize = 11;
-  Chart.defaults.global.tooltips.enabled = false
-
-  const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
-    "--green"
-  );
-  const activeClass = "active";
-  const openClass = "is-open";
-
-  const MAXVALUE = 100;
-  const revenueRange0 = 3e8;
-  const revenueRange1 = 1e9;
-  const revenueRange2 = 3e9;
-  const revenueRange3 = 2e10;
-  const countriesPath = "company.country_incorporation";
-  const sectorsPath = "company.sectors";
-  const STATIC_DATA = {
-    "general-transparency-key-issues": {
-      data: [
-        ["No", 52.1],
-        ["Partially", 28.9],
-        ["Fully", 19],
-      ],
-      opts: {
-        labelWidth: () => 50
-      }
-    },
-    "climate-target": {
-      data: [
-        ["Apparel & Textiles", 26.4],
-        ["Consumption", 29.4],
-        ["Energy & Resource Extraction", 36.4],
-        ["Financials", 20.5],
-        ["Food & Beverages", 48.4],
-        ["Health Care", 32.9],
-        ["Hospitality & Recreation", 26.2],
-        ["Infrastructure", 46.1],
-        ["Resource Transformation", 44.3],
-        ["Technology & Communications", 40],
-        ["Transportation", 47.6]
-      ],
-      opts: {
-        labelWidth: () => 0
-      }
-    },
-    "company-climate-target": {
-      data: [
-        ["Apparel & Textiles", 9.1],
-        ["Consumption", 4.4],
-        ["Energy & Resource Extraction", 23.5],
-        ["Financials", 10.2],
-        ["Food & Beverages", 20],
-        ["Health Care", 6.8],
-        ["Hospitality & Recreation", 9.5],
-        ["Infrastructure", 17.1],
-        ["Resource Transformation", 13.4],
-        ["Technology & Communications", 20],
-        ["Transportation", 12.48]
-      ],
-      opts: {
-        labelWidth: () => 0
-      }
-    },
-    "human-rights": {
-      data: [
-        ["Identified concrete operations and/or business partners associated with salient issues & impacts", 9.7],
-        ["Specific examples and appropriate indicators illustrate each salient issue is being managed effectively", 3.6],
-        ["Board oversight of risks and salient issues", 16],
-        ["Changes in the nature of each salient human rights issue (trend & patterns in impacts) over time", 1.3],
-        ["Actions that company has taken to prevent or mitigate impacts related to each salient issue", 19.4],
-        ["Explicit commitment to provide remedy to harmed people", 6.9],
-        ["Grievance mechanism and its application", 11]
-      ],
-      opts: {
-        labelWidth: chart => {
-          const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
-          return width * 0.6
-        },
-        maxLength: 60,
-        fontSize: 15
-      }
-    },
-    "supply-chain": {
-      data: [
-        ["No information on the structure of the supply chain", 67.2],
-        ["General Description of high risk supply chains", 24.7],
-        ["List of suppliers in high-risk supply chains", 1.7],
-        ["List of individual ultimate factories was published + List of individual ultimate factories is available for download", 3.7]
-      ],
-      opts: {
-        labelWidth: chart => {
-          const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
-          return width * 0.6
-        },
-        maxLength: 60,
-        fontSize: 15
-      }
-    }
   }
 
-  const path = location.pathname.replace(/\//g,'')
-  const { country = null, sector = null, revenues = null } = JSON.parse(localStorage.getItem(`filters-${path}`)) || {}
-  const filters = {
-    country,
-    sector,
-    revenues
-  };
+  function drawMap(topology, europe) {
+    europe.innerHTML = "";
+    const container = d3.select(europe).attr("style", "position: relative");
+    const { width } = container.node().getBoundingClientRect();
+    const height = width * 0.5;
+    const map = container
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+    const g = map.append("g");
+    container
+      .append("div")
+      .attr("id", "tooltip")
+      .attr("style", "position: absolute; opacity: 0;");
 
-  // Private functions
+    const geojson = topojson.feature(topology, topology.objects.europe);
+    const projection = d3.geoConicConformal().fitSize([width, height], geojson);
+    const path = d3.geoPath(projection);
+
+    // populate topojson with displayed data
+    const { map: mapYear } = europe.dataset
+    const mapData = geojson.features.reduce((acc, item) => {
+      const value = MAP.DATA[mapYear][item.id];
+      value
+        ? acc.push({ ...item, properties: { ...item.properties, value } })
+        : acc.push(item);
+      return acc;
+    }, []);
+
+    // helpers to set the polygons color
+    const [min, max] = d3.extent(Object.values(MAP.DATA[mapYear]));
+    const colorStep = (max - min) / (MAP.COLORS.length - 1);
+    const color = (value) => MAP.COLORS[Math.floor(value / colorStep)];
+
+    const regions = g.selectAll(".region").data(mapData);
+    regions.exit().remove();
+
+    const regionsEnter = regions.enter().append("path");
+    regions
+      .merge(regionsEnter)
+      .attr("d", path)
+      .attr("class", "region")
+      .attr("fill", ({ properties: { value } = {} }) =>
+        value !== undefined ? color(value) : "#eee"
+      )
+      .on("mousemove", (e, { properties: { NAME = "", value } = {} }) => {
+        if (value !== undefined) {
+          const [left, top] = d3.pointer(e);
+
+          d3.select(`[data-map="${mapYear}"] #tooltip`)
+            .style("opacity", 1)
+            .style("left", `${left + 10}px`)
+            .style("top", `${top + 10}px`)
+            .style("background-color", "#fff")
+            .style("padding", "10px")
+            .style("font-size", "11px")
+            .style("border", "1px solid whitesmoke")
+            .style("box-shadow", "3px 3px 3px rgba(0,0,0,0.1)")
+            .style("z-index", 100)
+            .text(`${NAME} - Companies: ${value}`);
+
+          d3.select(e.target).attr("stroke-width", 1).attr("stroke", "#333");
+          e.target.parentNode.appendChild(e.target);
+        }
+      })
+      .on("mouseout", ({ target }) => {
+        d3.select(`[data-map="${mapYear}"] #tooltip`).style("opacity", 0);
+        d3.select(target).attr("stroke-width", 0);
+        target.parentNode.insertBefore(target, target.parentNode.firstChild);
+      });
+
+    // borders
+    const mesh = topojson.mesh(topology, topology.objects.europe);
+    g.append("path")
+      .datum(mesh)
+      .attr("fill", "none")
+      .attr("stroke", "white")
+      .attr("stroke-linejoin", "round")
+      .attr("d", path);
+
+    // legend
+    const legendGroup = g.append("g");
+    const legend = legendGroup
+      .selectAll(".legend")
+      .data(d3.ticks(min, max, 3).reverse());
+    legend.exit().remove();
+
+    const legendsEnter = legend.enter().append("g");
+    const legendBlock = legend.merge(legendsEnter).attr("class", "legend");
+
+    const itemSize = 15;
+    legendBlock
+      .append("rect")
+      .attr("x", width - 100)
+      .attr("y", (_, i) => (i + 1) * itemSize + (i * itemSize) / 3)
+      .attr("width", itemSize)
+      .attr("height", itemSize)
+      .attr("fill", (d) => color(d));
+
+    legendBlock
+      .append("text")
+      .attr("x", width - 100 + itemSize + 5)
+      .attr("y", (_, i) => (i + 1) * itemSize + (i * itemSize) / 3)
+      .attr("dy", (3 / 4) * itemSize)
+      .attr("font-size", "11px")
+      .text((d) => d);
+  }
+
   function closestPolyfill() {
     if (!Element.prototype.matches) {
       Element.prototype.matches =
@@ -383,28 +559,30 @@
 
     let tree = deepmerge.all(part);
 
-    // let tree = deepmerge.all(data)
-
-
     // section C keys are not sorted, we need to sort them
     // in the final tree
-    let sectionC = {};
-    Object.keys(tree["s_C"])
-      .sort()
-      .forEach(key => {
-        sectionC[key] = tree["s_C"][key];
-      });
-    tree["s_C"] = sectionC;
+    if (tree.hasOwnProperty("s_C")) {
+      let sectionC = {};
+      Object.keys(tree["s_C"])
+        .sort()
+        .forEach(key => {
+          sectionC[key] = tree["s_C"][key];
+        });
+      tree["s_C"] = sectionC;
+    }
 
     // section E keys are not sorted, we need to sort them
     // in the final tree
-    let sectionEProducts = {};
-    Object.keys(tree["s_E"]["s_E_products"])
-      .sort()
-      .forEach(key => {
-        sectionEProducts[key] = tree["s_E"]["s_E_products"][key];
-      });
-    tree["s_E"]["s_E_products"] = sectionEProducts;
+    if (tree.hasOwnProperty("s_E") && tree["s_E"].hasOwnProperty("s_E_products")) {
+      let sectionEProducts = {};
+      Object.keys(tree["s_E"]["s_E_products"])
+        .sort()
+        .forEach(key => {
+          sectionEProducts[key] = tree["s_E"]["s_E_products"][key];
+        });
+      tree["s_E"]["s_E_products"] = sectionEProducts;
+    }
+
     return tree;
   }
 
@@ -414,6 +592,7 @@
     const ul = html => `<ul>${html}</ul>`
     const li = html => `<li>${html}</li>`
     const a = (section, text) => `<a href="#${section}">${text}</a>`;
+    const url = (url, text) => `<a href="${url}" target="_blank" data-trigger-modal>${text}</a>`;
 
     result += li(a("general", "General Results"));
 
@@ -432,6 +611,9 @@
         result += li(block)
       }
     });
+
+    const reportURL = document.querySelector(`input[type='hidden'][name='report-${reportYear}']`).value
+    result += li(url(reportURL, "Research Report (PDF)"))
 
     return ul(result);
   }
@@ -474,46 +656,6 @@
 
     if (section === "general") {
       content.innerHTML = renderGeneralSection();
-
-      renderSpecialCharts("chart-summary_companies_per_revenue_range", data)
-      renderSpecialCharts("chart-summary_companies_per_employees", data)
-
-      const rowTypes = content.querySelectorAll("[data-row-type]");
-      rowTypes.forEach(element => {
-        if (element.dataset.rowType !== "policies") {
-          element.style.display = "none";
-        }
-      });
-
-      const tableSelectors = content.querySelectorAll("[data-table-selector]");
-      tableSelectors.forEach((element, index) => {
-        if (index === 0) {
-          element.classList.add(activeClass);
-        }
-
-        return element.addEventListener("click", event => {
-          const { target } = event;
-          const selectedRowType = target.dataset.tableSelector;
-
-          tableSelectors.forEach(e => e.classList.remove(activeClass));
-          target.classList.add(activeClass);
-
-          rowTypes.forEach(element => {
-            element.style.display = "none";
-          });
-
-          rowTypes.forEach(element => {
-            if (element.dataset.rowType === selectedRowType) {
-              element.style.display = "";
-
-              const charts = element.querySelectorAll("[data-path]");
-              if (charts.length) {
-                renderCharts(charts, data, dictionary);
-              }
-            }
-          });
-        });
-      });
     } else {
       let renderedTemplate = `<div id="${section}"></div><div class="database-filters">${getFiltersBlock()}</div>`;
 
@@ -535,7 +677,7 @@
         if (section === "s_2b") {
 
           const template = `
-            <section class="database-section">
+            <section class="database-section database-section__margin-xl">
               <span id="${subSection}" class="database-section__anchor"></span>
               
               ${getDrilldownButtonsHTML({ text: sectionText })}
@@ -547,12 +689,18 @@
 
           renderedTemplate += template;
         } else if (isObject(tree[section][subSection]) && section !== "s_1") {
+          let materiality = '';
+
+          if (reportYear === '2019') {
+            materiality = `<a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>`
+          }
+
           renderedTemplate += `
             <section class="database-section">
               <span id="${subSection}" class="database-section__anchor"></span>
               <h1 class="heading__h1 with-decorator">
                 ${sectionText}
-                <a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>
+                ${materiality}
               </h1>
               ${block}
             </section>
@@ -591,25 +739,40 @@
           }
 
           onDrillDownButtonClick(event, data, dictionary);
+
+          // wrap all canvas with button
+          wrapCanvas()
         });
       })
     });
 
-    fillCountriesFilter(data);
-    fillSectorsFilter(data);
-    fillRevenuesFilter(data);
+    // chart title heights
+    const h2 = document.querySelectorAll("h2.database-heading__h2")
+    h2.forEach(element => {
+      const chartsBlock = element.nextElementSibling
+      if (chartsBlock) {
+        // split the charts by gorups of 3 elements
+        const h6Group = chunk(Array.from(chartsBlock.querySelectorAll("[data-charts-container] h6")), 3)
+        if (h6Group.length) {
+          h6Group.forEach(h6 => {
+            const minHeight = Math.max(...h6.map(elem => elem.getBoundingClientRect().height))
+            h6.forEach(elem => (elem.style.minHeight = `${minHeight}px`))
+          })
+        }
+      }
+    })
 
-    // Assign behaviour to filters
-    content.querySelectorAll("[data-filter]").forEach(element => {
-      return element.addEventListener("input", event => {
-        onFilterSelected(event, () => {
-            const charts = content.querySelectorAll("[data-path]");
-            if (charts.length) {
-              renderCharts(charts, data, dictionary);
-            }
-        });
+    const callback = event => {
+      onFilterSelected(event, () => {
+          const charts = content.querySelectorAll("[data-path]");
+          if (charts.length) {
+            renderCharts(charts, data, dictionary);
+          }
       });
-    });
+    };
+    
+    // Assign behaviour to filters
+    fillFilters(data, callback)
   }
 
   function renderSubsection(tree, section, subSection, data, level, dataPath, dictionary) {
@@ -627,7 +790,7 @@
         const className = "database-layout__col-2-3 gutter-l"
 
         const template = `
-          <section class="database-section">
+          <section class="database-section database-section__margin-xl">
 
             ${getDrilldownButtonsHTML({ text })}
 
@@ -689,7 +852,7 @@
         issueTemplate = `<div class="database-layout__grid-3 gutter-xl">${issueTemplate}</div>`
 
         const template = `
-          <section class="database-section">
+          <section class="database-section database-section__margin-xl">
 
             ${getDrilldownButtonsHTML({ text })}
 
@@ -759,14 +922,6 @@
     charts.forEach(element => onChartLoad(element, data, dictionary));
   }
 
-  function renderStaticCharts(charts) {
-    charts.forEach(chart => {
-      const { staticPath } = chart.dataset
-      const { data, opts } = STATIC_DATA[staticPath]
-      loadHorizontalChart(chart, { data }, opts);
-    })
-  }
-
   function renderSpecialCharts(id, data) {
     let dataFn = null
     if (id.match(/chart-summary_companies_per_revenue_range/)) {
@@ -782,54 +937,157 @@
 
   function renderGeneralSection() {
     return `
-      <section class="database-section database-canvas__fit">
+      <section class="database-section database-section__margin-xl database-canvas__fit">
         <span id="general" class="database-section__anchor"></span>
         ${getFiltersHTML()}
-        ${getTabLinksHTML()}
-        ${getTabContentHTML()}
+        ${getGeneralSectionLegendHTML()}
+        ${getGeneralSectionChartsHTML()}
       </section>
-      <section id="general_results-companies-per" class="database-section database-canvas__fit">
+      <section id="general_results-companies-per" class="database-section__margin-xl database-canvas__fit">
         ${getCompaniesPerHTML()}
       </section>
     `;
   }
 
+  function getGeneralSectionLegendHTML() {
+    const option = (option, color) => `
+      <div class="database-summary__legend--option">
+        <span style="background: ${color}"></span>
+        <span class="database-summary__legend--label">${option}</span>
+      </div>
+    `
+    const o = (titles, color) => {
+      let options = ''
+      for (let i = 0; i < titles.length; i++) {
+        const opt = titles[i];
+        options += option(opt, color)
+      }
+      return `<div class="database-summary__legend--column">${options}</div>`
+    };
+
+    const t = title => `<div class="database-summary__legend--title">${title}</div>`
+
+    // Note the order of the colors is upside down
+    const items = {
+      titles: ["Policies", "Risks", "Outcomes"],
+      options: [
+        {
+          titles: [
+            "Policy description specifies key issues and objectives",
+            "Description of specific risks",
+            "Outcomes in terms of meeting policy targets",
+          ],
+          color: SUMMARY.COLORS[2],
+        },
+        {
+          titles: [
+            "Policy is described or referenced",
+            "Vague risks identification",
+            "Description provided",
+          ],
+          color: SUMMARY.COLORS[1],
+        },
+        {
+          titles: [
+            "No information provided",
+            "No risks identification",
+            "No description",
+          ],
+          color: SUMMARY.COLORS[0],
+        },
+      ],
+    };
+
+    let titles = ''
+    for (let i = 0; i < items.titles.length; i++) {
+      const element = items.titles[i];
+      titles += t(element)
+    }
+
+    let options = ''
+    for (let i = 0; i < items.options.length; i++) {
+      const { titles, color } = items.options[i];
+      options += o(titles, color)
+    }
+
+    return `
+      <div class="database-summary__legend">
+        <div>
+          <div class="database-summary__legend--column">
+            ${titles}
+          </div>
+        </div>
+        <div>${options}</div>
+      </div>
+      <div class="database-tabcontent__label">
+        <span>% percentage of total</span>
+      </div>
+    `
+  }
+
+  function getGeneralSectionChartsHTML() {
+    const template = (index, title, path) => `
+      <div class="database-tabcontent__label">
+        <p><span>${index}</span> ${title}</p>
+      </div>
+      <div class="database-tabcontent__row">
+        <canvas data-path="${path}" data-type="summary"></canvas>
+      </div>
+    `
+
+    // global variable
+    const topics = SUMMARY.TOPICS[reportYear || 2019];
+
+    // different first-level sections
+    const parents = unique(topics.map(({ parent }) => parent))
+
+    let sections = '';
+    for (let i = 0; i < parents.length; i++) {
+      const parent = parents[i];
+
+      if (GLOBAL_TREE.hasOwnProperty(parent)) {
+        const topic = topics.filter(d => d.parent === parent)
+
+        for (let j = 0; j < topic.length; j++) {
+          const { index, title, child } = topic[j];
+          
+          if (GLOBAL_TREE[parent].hasOwnProperty(child)) {
+            sections += template(index, title, `${parent}.${child}`)
+          }
+        }
+      }
+    }
+
+    return sections
+  }
+
   function getCompaniesPerHTML() {
     return `
       <h4 class="heading__h4">Companies included in the research</h4>
-      <div class="database-layout__col-3 gutter-l">
-        <div>
-          <span class="database-heading__span-underline">Country (absolute numbers)</span>
-          <div>
-            <canvas data-path="company.country_incorporation" data-absolute></canvas>
-          </div>
-        </div>
+      <div class="database-layout__col-2-3 gutter-l">
         <div>
           <span class="database-heading__span-underline">Sector (absolute numbers)</span>
           <div>
-            <canvas data-path="company.sectors" data-absolute></canvas>
+            <canvas data-path="company.sectors" data-exclude-filter data-absolute data-sort></canvas>
           </div>
         </div>
-        <div>
-          <span class="database-heading__span-underline">Revenue range</span>
-          <div>
-            <canvas id="chart-summary_companies_per_revenue_range" data-special="chart-summary_companies_per_revenue_range"></canvas>
-          </div>
-          <span class="database-heading__span-underline">Employees</span>
-          <div>
-            <canvas id="chart-summary_companies_per_employees" data-special="chart-summary_companies_per_employees"></canvas>
-          </div>
-        </div>
+        <div data-map="${reportYear}"></div>
       </div>
     `;
   }
 
   function getFiltersHTML() {
+    let materiality = '';
+
+    if (reportYear === '2019') {
+      materiality = `<a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>`
+    }
+
     return `
       <div class="database-layout__flex">
         <h4 class="heading__h4">
           Summary
-          <a href="${materialityMatrixURL}" class="database-heading__h1-link" target="_blank">See materiality matrix</a>
+          ${materiality}
         </h4>
         ${getFiltersBlock()}
       </div>
@@ -840,15 +1098,15 @@
     return `
       <div class="database-layout__col-3 gutter-xl" style="position: relative;">
         <div>
-          <select data-filter="sector" id="filter-sector">
+          <select data-filter="sector" id="filter-sector" multiple>
           </select>
         </div>
         <div>
-          <select data-filter="revenues" id="filter-revenues">
+          <select data-filter="revenues" id="filter-revenues" multiple>
           </select>
         </div>
         <div>
-          <select data-filter="country" id="filter-country">
+          <select data-filter="country" id="filter-country" multiple>
           </select>
         </div>
         <div class="database-filters__info">
@@ -861,195 +1119,13 @@
     `
   }
 
-  function getTabLinksHTML() {
-    const tabs = [
-      {
-        selector: "policies",
-        label: "Policies & Procedures"
-      },
-      {
-        selector: "risks",
-        label: "Risks management"
-      },
-      {
-        selector: "outcomes",
-        label: "Outcomes"
-      }
-    ];
-
-    const template = t =>
-      `<div><button class="database-tablinks" data-table-selector="${t.selector}">${t.label}</button></div>`;
-
-    return `
-      <div class="database-tabs database-layout__col-3 gutter-l">
-        ${tabs.map(t => template(t)).join("")}
-      </div>
-    `;
-  }
-
-  function getTabContentHTML() {
-    return `
-      <ul class="database-tabcontent__table">
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__captions-light"> 
-            <p>% Percentage of total</p>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div>No information provided</div>
-            <div>Policy is described or referenced</div>
-            <div>Policy description specifies key issues and objectives</div>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div>No risks identification</div>
-            <div>Vague risks identification</div>
-            <div>Description of specific risk</div>
-          </div>
-          <div class="database-tabcontent__captions database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div>No description</div>
-            <div>Description provided</div>
-            <div>Outcomes in terms of meeting policy targets</div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__heading"> 
-            <p><span>A</span> Enviroment</p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__label">
-            <p><span>A.1</span> Climate change</p>
-            <p><span>A.2</span> Use of natural resources</p>
-            <p><span>A.3</span> Polluting discharges</p>
-            <p><span>A.4</span> Waste</p>
-            <p><span>A.5</span> Biodiversity and ecosystem conservation</p>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_A" data-option="3"></canvas></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__heading"> 
-            <p><span>B</span> Employee and social matters</p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__label">
-            <p><span>B.1</span> Employee and workforce matters</p>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_B" data-option="3"></canvas></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__heading"> 
-            <p><span>C</span> Human Rights</p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__label">
-            <p><span></span> General Human Rights Reporting Criteria</p>
-            <p><span>C.1</span> Supply Chains Management</p>
-            <p><span>C.2</span> Impacts on indigenous and/or local communities rights</p>
-            <p><span>C.3</span> Hight risk areas for Civil & Political rights</p>
-            <p data-row-type="policies" data-row-type="outcomes"><span>C.4</span> Conflict resources (minerals, timber, etc.)</p>
-            <p><span>C.5</span> Data protection / Digital rights</p>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_C" data-option="3"></canvas></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__heading"> 
-            <p><span>D</span> Anti-corruption & Whistleblowing</p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </li>
-        <li class="database-tabcontent__row">
-          <div class="database-tabcontent__label">
-            <p><span>D.1</span> Anti-corruption</p>
-            <p data-row-type="policies" data-row-type="outcomes"><span>D.2</span> Whistleblowing channel</p>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="policies">
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
-            <div><canvas data-path="policies.policy" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="risks">
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
-            <div><canvas data-path="risks.risk" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
-          </div>
-          <div class="database-layout__col-3 gutter-xl" data-row-type="outcomes">
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="1"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="2"></canvas></div>
-            <div><canvas data-path="outcomes_wrapper.outcomes" data-type="summary" data-parent="s_D" data-option="3"></canvas></div>
-          </div>
-        </li>
-      </ul>
-    `;
-  }
-
   function getDrilldownButtonsHTML({ text }) {
     return `
       <h2 class="database-heading__h2 with-decorator database-layout__flex">
         <span>${text}</span>
-        <div class="database-layout__col-3 align-center gutter-l" data-drilldown-container>
-          <span class="database-tag__title">Filter</span>
+        <div class="database-layout__col-3 align-center gutter-l" style="position: relative" data-drilldown-container>
+          <span class="database-tag__title">Comparative results</span>
+          <span class="database-tag__note">(not applicable in combination with filters above)</span>
           <button class="database-tag" data-drilldown="country">By country</button>
           <button class="database-tag" data-drilldown="sector">By sector</button>
           <button class="database-tag" data-drilldown="revenue">By revenue</button>
@@ -1058,7 +1134,7 @@
     `;
   }
 
-  function getChartsContainerHTML({ text = '&nbsp;', dataPath, subSection, className = '' }) {
+  function getChartsContainerHTML({ text = '', dataPath, subSection, className = '' }) {
     return `
       <h6 class="heading__h6">${text}</h6>
       <div data-charts ${className ? `data-s_1 class="${className}"` : '' }>
@@ -1086,19 +1162,25 @@
       opts.barThickness = Number(dataset.barThickness)
     }
 
+    if (dataset.mirrorX !== undefined) {
+      opts.mirrorX = dataset.mirrorY === '' || dataset.mirrorX === 'true'
+    }
+
+    if (dataset.mirrorY !== undefined) {
+      opts.mirrorY = dataset.mirrorY === '' || dataset.mirrorY === 'true'
+    }
+
     let filter = true
     if (dataset.excludeFilter !== undefined) {
       filter = false
     }
 
-    if (element.dataset.type === "summary") {
+    if (dataset.type === "summary") {
       return loadSummaryChart(
         element,
         summaryChartData(
           filter ? filterData(data) : data,
-          dataset.path,
-          dataset.parent,
-          dataset.option
+          dataset.path
         ),
         opts
       );
@@ -1148,13 +1230,15 @@
     const maxValue = options.absolute ? Math.max(...data) : MAXVALUE
     const inverseData = data.map(e => maxValue - e);
 
-    const barThickness = options.barThickness || 30;
-    chart.height = columnNames.length * (barThickness + 20);
+    const barThickness = options.barThickness || 40;
+    const mirrorX = options.mirrorX !== undefined ? options.mirrorX : false;
+    const mirrorY = options.mirrorY !== undefined ? options.mirrorY : true;
+
+    chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 20)); // force a minimal height
     chart.width = chart.getBoundingClientRect().width
 
     const labelWidth = options.labelWidth !== undefined ? options.labelWidth : (chart => {
-      const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
-      return width * (2 / 3)
+      return chart.width * (2 / 3) // enforce minimun label size
     })
     const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
@@ -1205,6 +1289,15 @@
         legend: {
           display: false,
         },
+        events: [],
+        layout: {
+          padding: {
+            left: labelWidth(chart),
+            right: 0,
+            top: 0,
+            bottom: 0,
+          },
+        },
         scales: {
           xAxes: [
             {
@@ -1220,6 +1313,7 @@
                 beginAtZero: false,
                 precision: 0,
                 max: maxValue,
+                mirror: mirrorX,
                 callback: value => `${value} %`
               }
             }
@@ -1232,10 +1326,9 @@
               },
               ticks: {
                 fontSize: fontSize,
-                fontStyle: 200
-              },
-              afterFit: scaleInstance => {
-                scaleInstance.width = labelWidth(chart);
+                fontStyle: 200,
+                mirror: mirrorY,
+                padding: labelWidth(chart)
               }
             }
           ]
@@ -1269,7 +1362,7 @@
     new Chart(chart, opts);
   }
 
-  function loadSummaryChart(idOrElement, chartData, options = {}) {
+  function loadSummaryChart(idOrElement, data, options = {}) {
     let chart;
     if (isString(idOrElement)) {
       chart = document.getElementById(idOrElement);
@@ -1277,15 +1370,163 @@
       chart = idOrElement;
     }
 
-    const columnNames = chartData.data.map(a => a[0].slice(3));
-    const data = chartData.data.map(a => parseFloat(a[1]));
-    const inverseData = data.map(e => MAXVALUE - e + 0.1);
+    const barThickness = options.barThickness || 50;
+    const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
 
-    let barThickness = options.barThickness || 30;
+    let columnNames = ["Policies", "Risks", "Outcomes"];
+    let datasets = [
+      {
+        data: data[2],
+        backgroundColor: SUMMARY.COLORS[2],
+        barPercentage: 0.9,
+        maxBarThickness: barThickness,
+      },
+      {
+        data: data[1],
+        backgroundColor: SUMMARY.COLORS[1],
+        barPercentage: 0.9,
+        maxBarThickness: barThickness,
+      },
+      {
+        data: data[0],
+        backgroundColor: SUMMARY.COLORS[0],
+        barPercentage: 0.9,
+        maxBarThickness: barThickness,
+      },
+    ];
+
+    const nullIndexes = data.map(d => d.findIndex(f => f === 0))
+    const indexToDelete = nullIndexes.every(d => d > -1 && d === nullIndexes[0]) ? nullIndexes[0] : null;
+
+    if (indexToDelete !== null) {
+      columnNames.splice(indexToDelete, 1)
+      datasets.map(d => {
+        const { data } = d
+        data.splice(indexToDelete, 1)
+        return { ...d, data }
+      })
+    }
+
     chart.height = columnNames.length * (barThickness + 6);
     chart.width = chart.getBoundingClientRect().width
 
-    let opts = {
+    const opts = {
+      type: "horizontalBar",
+      data: {
+        labels: columnNames,
+        datasets,
+      },
+      plugins: [ChartDataLabels],
+      options: {
+        responsive: false,
+        maintainAspectRatio: false,
+        legend: {
+          display: false,
+        },
+        events: [],
+        layout: {
+          padding: {
+            left: chart.width * (1 / 4) - 50,
+            right: 0,
+            top: 0,
+            bottom: 0,
+          },
+        },
+        scales: {
+          xAxes: [
+            {
+              stacked: true,
+              gridLines: {
+                drawBorder: false,
+                drawTicks: false,
+              },
+              ticks: {
+                display: false,
+                beginAtZero: false,
+                precision: 0,
+                max: MAXVALUE,
+              },
+            },
+          ],
+          yAxes: [
+            {
+              stacked: true,
+              gridLines: {
+                display: false,
+              },
+              ticks: {
+                fontSize: fontSize,
+                fontStyle: 200,
+                padding: chart.width * (1 / 4) - 40,
+                mirror: true
+              }
+            },
+          ],
+        },
+        plugins: {
+          datalabels: {
+            anchor: "start",
+            display: "auto",
+            color: ({ datasetIndex }) => {
+              if (datasetIndex === 1)
+                return "#3B5360";
+              return "#fff";
+            },
+            align: "end",
+            font: {
+              weight: "bold",
+            },
+            clip: true,
+            formatter: (value, ctx) => {
+              if (ctx.dataset.hiddenLabel) {
+                return null;
+              } else {
+                return value;
+              }
+            },
+          },
+        },
+      },
+    };
+
+    new Chart(chart, opts);
+  }
+
+  function createDrillDownCanvas(container, chartDataInfo, options = {}) {
+      let newChart = document.createElement("div");
+
+      newChart.className = "database-layout__flex-column"
+      newChart.innerHTML = `
+        <span class="heading__span thick muted">${chartDataInfo[0] || "-"}</span>
+        <canvas></canvas>
+      `;
+
+      container.appendChild(newChart);
+
+      const chart = newChart.querySelector("canvas");
+      const chartData = chartDataInfo[1];
+
+      chart.dataset.path = options.path
+      chart.dataset.dictionary = options.dictionary
+      chart.dataset.drilldown = options.drilldown
+      chart.dataset.subset = options.subset
+
+      loadDrillDownChart(chart, chartData, options)
+  }
+
+  function loadDrillDownChart(chart, chartData, options = {}) {
+    const columnNames = chartData.map(a => wrap(a[0], estimateMaxLengthLabel(chart)));
+    const data = chartData.map(a => parseFloat(a[1]));
+
+    const inverseData = data.map(e => MAXVALUE - e + 0.1);
+
+    const barThickness = options.barThickness || 20;
+    chart.height = Math.max(2.25 * barThickness, columnNames.length * (barThickness + 8)); // force a minimal height
+    chart.width = chart.getBoundingClientRect().width
+
+    const fontSize = options.fontSize || Chart.defaults.global.defaultFontSize
+
+    const opts = {
       type: "horizontalBar",
       data: {
         labels: columnNames,
@@ -1311,25 +1552,27 @@
         legend: {
           display: false
         },
+        events: [],
         layout: {
           padding: {
-            left: -10,
+            left: chart.width * (2 / 3),
             right: 0,
             top: 0,
-            bottom: 0
-          }
+            bottom: 0,
+          },
         },
         scales: {
           xAxes: [
             {
               stacked: true,
               gridLines: {
+                display: false,
                 drawBorder: false,
                 drawTicks: false
               },
               ticks: {
                 display: false,
-                beginAtZero: false,
+                beginAtZero: true,
                 precision: 0,
                 max: MAXVALUE
               }
@@ -1342,7 +1585,11 @@
                 display: false
               },
               ticks: {
-                display: false
+                display: true,
+                fontSize: fontSize,
+                fontStyle: 200,
+                padding: chart.width * (2 / 3),
+                mirror: true
               }
             }
           ]
@@ -1350,10 +1597,11 @@
         plugins: {
           datalabels: {
             anchor: "end",
-            offset: context =>
-              context.dataset.data[context.dataIndex] < 50 ? 0 : 10,
+            clamp: true,
             color: context =>
-              context.dataset.data[context.dataIndex] < 50 ? "#3B5360" : "#fff",
+              context.dataset.data[context.dataIndex] < 50
+                ? "#3B5360"
+                : "#fff",
             align: context =>
               context.dataset.data[context.dataIndex] < 50 ? "end" : "start",
             font: {
@@ -1375,162 +1623,65 @@
     new Chart(chart, opts);
   }
 
-  function loadDrillDownChart(container, chartsData, options = {}) {
-    chartsData.forEach((chartDataInfo, index) => {
-      let newChart = document.createElement("div");
-
-      newChart.className = "database-layout__flex-column"
-      newChart.innerHTML = `
-        <span class="heading__span muted">${chartDataInfo[0] || "-"}</span>
-        <canvas></canvas>
-      `;
-
-      container.appendChild(newChart);
-
-      const chart = newChart.querySelector("canvas");
-      const chartData = chartDataInfo[1];
-
-      const columnNames = chartData.map(a => wrap(a[0], estimateMaxLengthLabel(chart)));
-      const data = chartData.map(a => parseFloat(a[1]));
-
-      const inverseData = data.map(e => MAXVALUE - e + 0.1);
-
-      const barThickness = options.barThickness || 20;
-      chart.height = columnNames.length * (barThickness + 8);
-      chart.width = chart.getBoundingClientRect().width
-
-      const opts = {
-        type: "horizontalBar",
-        data: {
-          labels: columnNames,
-          datasets: [
-            {
-              data: data,
-              backgroundColor: mainColor,
-              barThickness: barThickness,
-              maxBarThickness: barThickness
-            },
-            {
-              data: inverseData,
-              hiddenLabel: true,
-              barThickness: barThickness,
-              maxBarThickness: barThickness
-            }
-          ]
-        },
-        plugins: [ChartDataLabels],
-        options: {
-          responsive: false,
-          maintainAspectRatio: false,
-          legend: {
-            display: false
-          },
-          scales: {
-            xAxes: [
-              {
-                stacked: true,
-                gridLines: {
-                  display: false,
-                  drawBorder: false,
-                  drawTicks: false
-                },
-                ticks: {
-                  display: false,
-                  beginAtZero: true,
-                  precision: 0,
-                  max: MAXVALUE
-                }
-              }
-            ],
-            yAxes: [
-              {
-                stacked: true,
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  display: true
-                },
-                afterFit: scaleInstance => {
-                  const { width = 150 } = chart.getBoundingClientRect() // enforce minimun label size
-                  scaleInstance.width = width * (2 / 3);
-                }
-              }
-            ]
-          },
-          plugins: {
-            datalabels: {
-              anchor: "end",
-              clamp: true,
-              color: context =>
-                context.dataset.data[context.dataIndex] < 50
-                  ? "#3B5360"
-                  : "#fff",
-              align: context =>
-                context.dataset.data[context.dataIndex] < 50 ? "end" : "start",
-              font: {
-                weight: "bold"
-              },
-              clip: true,
-              formatter: (value, ctx) => {
-                if (ctx.dataset.hiddenLabel) {
-                  return null;
-                } else {
-                  return value;
-                }
-              }
-            }
-          }
-        }
-      };
-      new Chart(chart, opts);
-    });
-  }
-
-  function summaryChartData(data, path, parent, option, dictionary) {
-    let result = {};
+  function summaryChartData(data, chart) {
+    // Differenciate the possible options
+    let resultByOptions = { 1: {}, 2: {}, 3: {}};
     let total = {};
 
-    filterData(data).forEach(company => {
-      Object.keys(GLOBAL_TREE[parent]).forEach(question => {
-        // Exceptions
-        if (
-          (path === "risks.risk" && parent === "s_D" && question === "s_D2") ||
-          (path === "risks.risk" && parent === "s_C" && question === "s_C4") ||
-          (parent === "s_B" && question === "s_B2")
-        ) {
-          return;
-        }
+    const paths = ["policies.policy", "risks.risk", "outcomes_wrapper.outcomes"]
+    const [parent, question] = chart.split(".") || []
+    const element = (GLOBAL_TREE[parent] || {})[question];
 
-        let value = resolve(company[parent][question], path);
+    if (element) {
+      for (let i = 0; i < paths.length; i++) {
+        const path = paths[i];
+        // init counters
+        total[path] = 0
+        resultByOptions[1][path] = 0
+        resultByOptions[2][path] = 0
+        resultByOptions[3][path] = 0
 
-        // This is a dirty hack, but necessary
-        // Sometimes the path of a question has the suffix 2 or 3
-        // Example: policies.policy, policies.policy2 and policies.policy3
-        if (value === undefined || value === null) {
-          value = resolve(company[parent][question], path + "2");
-        }
-        if (value === undefined || value === null) {
-          value = resolve(company[parent][question], path + "3");
-        }
-        if (result[question] === undefined) {
-          result[question] = 0;
-        }
-        if (total[question] === undefined) {
-          total[question] = 0;
-        }
-        if (String(value) === String(option)) {
-          result[question]++;
-        }
+        for (let j = 0; j < data.length; j++) {
+          const company = data[j];
 
-        // Only count the total if the value is present
-        total[question]++;
-      });
-    });
+          let value = resolve(company[parent][question], path);
 
-    return {
-      data: calculatePercentage(result, total, dictionary)
-    };
+          // This is a dirty hack, but necessary
+          // Sometimes the path of a question has the suffix 2 or 3
+          // Example: policies.policy, policies.policy2 and policies.policy3
+          if (value === undefined || value === null) {
+            value = resolve(company[parent][question], path + "2");
+          }
+          if (value === undefined || value === null) {
+            value = resolve(company[parent][question], path + "3");
+          }
+
+          if (value) {
+            // Only count if the value is present
+            resultByOptions[value][path]++;
+            total[path]++;
+          }
+        }
+      }
+    }
+
+    const transpose = (arr) => arr.map((_, col) => arr.map((row) => row[col]));
+    const unsorted = Object.values(resultByOptions).map((x, i) =>
+      Object.keys(x).map(y => ({ option: i, value: total[y] ? decimalRound((100 * x[y]) / total[y]) : 0 }))
+    );
+    const sorted = transpose(
+      transpose(unsorted).map(x => x.sort(({ value: a }, { value: b }) => b > a))
+    );
+
+    return Object.values(resultByOptions).map((x, i) =>
+    Object.keys(x).map(y => total[y] ? decimalRound((100 * x[y]) / total[y]) : 0)
+  );
+    // return sorted;
+  }
+
+  function decimalRound(num, decimals) {
+    const pow = Math.pow(10, decimals || 1)
+    return Math.round((num + Number.EPSILON) * pow) / pow
   }
 
   function resolve(obj, path) {
@@ -1574,6 +1725,7 @@
 
       return element;
     });
+
     if (options.sort) {
       result = result.sort((b, a) => a[1] - b[1]);
     }
@@ -1582,7 +1734,7 @@
   }
 
   function percentage(value, total) {
-    if (value === undefined || value === null) {
+    if (value === undefined || value === null || !total) {
       return 0;
     }
     return ((value / total) * 100).toFixed(1);
@@ -1608,7 +1760,17 @@
     });
 
     // first merge the original data with 0, and then the real object, to be updated
-    const combined = { ...result1, ...result }
+    let combined = { ...result1, ...result }
+
+    // In case of some data values are null/undefined/non-existant, but they do in dictionary
+    if (dictionary && dictionary[dictionaryKey]) {
+      const availableOptions = Object.keys(dictionary[dictionaryKey]).filter(Number);
+      const currentOptions = Object.keys(combined);
+      if (availableOptions.length > currentOptions.length) {
+        const intersection = (a, b) => a.filter((value) => !b.includes(value));
+        combined = intersection(availableOptions, currentOptions).reduce((acc, item) => ({ ...acc, [item]: 0 }), combined)
+      }
+    }
 
     return {
       data: calculatePercentage(combined, total, dictionaryKey, dictionary, options)
@@ -1814,12 +1976,49 @@
     };
   }
 
+  function fillFilters(data, callback) {
+    fillSectorsFilter(data);
+    fillRevenuesFilter(data);
+    fillCountriesFilter(data);
+
+    const filters = [
+      { id: "sector", placeholder: "Select a sector..." },
+      { id: "revenues", placeholder: "Select a revenue..." },
+      { id: "country", placeholder: "Select a country..." },
+    ];
+
+    const multiselects = []
+    filters.forEach(({ id, placeholder }) => {
+      // Run multiselect.js
+      const element = document.multiselect(`[data-year='${reportYear}'] #filter-${id}`);
+
+      element._items.forEach(({ id: itemId, multiselectElement }) => {
+        multiselectElement.setAttribute("data-filter", id)
+        element.setCheckBoxClick(itemId, e => { element._hideList(element); callback(e) })
+      })
+
+      // add the placeholder to the new input field
+      document.getElementById(`filter-${id}_input`).setAttribute("placeholder", placeholder)
+
+      multiselects.push(element)
+      const node = document.getElementById(element._getIdentifier())
+      node.addEventListener("click", ({ target }) => {
+        const select = ((target.parentElement || {}).parentElement || {}).previousElementSibling
+        if (select) {
+          multiselects.forEach(x => (x._item !== select) ? x._hideList(x) : x._showList(x));
+        }
+      });
+    })
+
+    document.addEventListener('click', ({ target }) => {
+      if (!multiselects.some(x => x._item.contains(target))) {
+        multiselects.forEach(x => x._hideList(x))
+      }
+    })
+  }
+
   function fillCountriesFilter(data) {
-    let element = document.getElementById("filter-country");
-    const option = document.createElement("option");
-    option.text = "Select a country";
-    option.value = "";
-    element.appendChild(option);
+    let element = document.querySelector(`[data-year='${reportYear}'] #filter-country`);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
@@ -1832,7 +2031,7 @@
       option.text = country;
       option.value = country;
 
-      if (country === filters.country) {
+      if (filters.country.includes(country)) {
         option.selected = true
       }
 
@@ -1841,11 +2040,7 @@
   }
 
   function fillSectorsFilter(data) {
-    let element = document.getElementById("filter-sector");
-    const option = document.createElement("option");
-    option.text = "Select a sector";
-    option.value = "";
-    element.appendChild(option);
+    let element = document.querySelector(`[data-year='${reportYear}'] #filter-sector`);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
@@ -1858,7 +2053,7 @@
       option.text = sector;
       option.value = sector;
 
-      if (sector === filters.sector) {
+      if (filters.sector.includes(sector)) {
         option.selected = true
       }
 
@@ -1867,11 +2062,7 @@
   }
 
   function fillRevenuesFilter() {
-    let element = document.getElementById("filter-revenues");
-    const option = document.createElement("option");
-    option.text = "Select a revenue range";
-    option.value = "";
-    element.appendChild(option);
+    let element = document.querySelector(`[data-year='${reportYear}'] #filter-revenues`);
 
     const storedFilters = localStorage.getItem(`filters-${path}`)
     if (storedFilters) {
@@ -1884,7 +2075,7 @@
       option.text = range[0];
       option.value = range[1];
 
-      if (range[1] === filters.revenues) {
+      if (filters.revenues.includes(range[1])) {
         option.selected = true
       }
 
@@ -1893,11 +2084,11 @@
   }
 
   function getCountries(data) {
-    return unique(data.map(d => resolve(d, countriesPath))).sort();
+    return unique(data.map(d => resolve(d, countriesPath))).filter(Boolean).sort();
   }
 
   function getSectors(data) {
-    return unique(flatten(data.map(d => resolve(d, sectorsPath)))).sort();
+    return unique(flatten(data.map(d => resolve(d, sectorsPath)))).filter(Boolean).sort();
   }
 
   function unique(array) {
@@ -1946,51 +2137,50 @@
 
     data.forEach(company => {
       if (filters !== undefined) {
-        if (
-          filters.country !== null &&
-          company.company.country_incorporation !== filters.country
-        ) {
+        if (filters.country.length && !filters.country.includes(company.company.country_incorporation)) {
           return;
         }
-        if (
-          filters.sector !== null &&
-          company.company.sectors !== undefined &&
-          !company.company.sectors.includes(filters.sector)
-        ) {
+
+        if (filters.sector.length && company.company.sectors !== undefined && !filters.sector.some(d => company.company.sectors.includes(d))) {
           return;
         }
+
         if (
-          filters.revenues !== null &&
+          filters.revenues.length &&
           company.company.revenues !== undefined
         ) {
-          let revenues = parseFloat(company.company.revenues.replace(/,/g, ""));
-          let range = filters.revenues.split("-").map(d => parseFloat(d));
-          if (!(revenues >= range[0] && revenues <= range[1])) {
+          const revenues = parseFloat(company.company.revenues.replace(/,/g, ""));
+          const ranges = filters.revenues.map(a => a.split("-").map(d => parseFloat(d)))
+
+          if (!ranges.some(([min, max]) => revenues >= min && revenues <= max)) {
             return;
           }
         }
+
         filteredCompanies.push(company);
       } else {
         filteredCompanies.push(company);
       }
     });
+
     return filteredCompanies;
   }
 
   function onFilterSelected(event, callback) {
-    let sel = event.target;
-    let filterType = sel.dataset.filter;
-    let selected = sel.options[sel.selectedIndex].value;
+    const { val, filter } = event.dataset;
+    const arr = filters[filter]
 
-    if (selected === "" || filters[filterType] === selected) {
-      filters[filterType] = null;
-    } else {
-      filters[filterType] = selected;
+    if (arr) {
+      const ix = arr.indexOf(val)
+      
+      ix > -1 ? arr.splice(ix, 1) : arr.push(val);
+      filters[filter] = arr
+  
+      localStorage.setItem(`filters-${path}`, JSON.stringify(filters))
+  
+      callback();
     }
 
-    localStorage.setItem(`filters-${path}`, JSON.stringify(filters))
-
-    callback();
     return true;
   }
 
@@ -2046,7 +2236,9 @@
           dictionary
         );
 
-        loadDrillDownChart(subchartsContainer, summarizeData);
+        summarizeData.forEach((subchartData, index) =>
+          createDrillDownCanvas(subchartsContainer, subchartData, { path, dictionary: datasetDictionary, drilldown, subset: index })
+        );
       }
     });
   }
@@ -2092,26 +2284,28 @@
         const key = array[0];
         const groupBykey = array[1];
 
-        let keys = key;
-        if (!Array.isArray(key)) {
-          keys = [key];
-        }
-        keys.forEach(key => {
-          if (result[key] === undefined) {
-            result[key] = {};
+        if (groupBykey) {
+          let keys = key;
+          if (!Array.isArray(key)) {
+            keys = [key];
           }
-          items.forEach(item => {
-            if (result[key][item] === undefined) {
-              result[key][item] = 0;
+          keys.forEach(key => {
+            if (result[key] === undefined) {
+              result[key] = {};
             }
+            items.forEach(item => {
+              if (result[key][item] === undefined) {
+                result[key][item] = 0;
+              }
+            });
+            result[key][groupBykey]++;
           });
-          result[key][groupBykey]++;
-        });
 
-        if (total[groupBykey] === undefined) {
-          total[groupBykey] = 0;
+          if (total[groupBykey] === undefined) {
+            total[groupBykey] = 0;
+          }
+          total[groupBykey]++;
         }
-        total[groupBykey]++;
       }
     });
 
@@ -2125,6 +2319,7 @@
       ) {
         keyTxt = dictionary[dictionaryKey][question];
       }
+
       return [
         keyTxt,
         calculatePercentage(result[question], total, dictionaryKey, dictionary)
@@ -2195,10 +2390,25 @@
     const ctx = fakeCanvas.getContext("2d")
     const scale = 8
 
-    const { special } = dataset
+    const { special, drilldown } = dataset
     if (special) {
       fakeCanvas.id = `${special}-fake`
       renderSpecialCharts(`${special}-fake`, data)
+    } else if (drilldown) {
+      const { path, dictionary: datasetDictionary, subset, ...options } = dataset
+
+      // ask again for the all the data
+      const summarizeData = summarizeDrilldownDataFromPath(
+        data,
+        path,
+        datasetDictionary,
+        drilldown,
+        dictionary
+      );
+
+      // provide only the specific subset of data
+      const subsetData = summarizeData[subset][1]
+      loadDrillDownChart(fakeCanvas, subsetData, options)
     } else {
       for (const key in dataset) {
         if (dataset.hasOwnProperty(key)) {
@@ -2206,7 +2416,6 @@
           fakeCanvas.setAttribute(`data-${key}`, element)
         }
       }
-  
       // Call to render chart on a fake canvas
       onChartLoad(fakeCanvas, data, dictionary)
     }
@@ -2227,5 +2436,24 @@
       document.body.removeChild(element);
       document.body.removeChild(fakeCanvas);
     }, 500);
+  }
+
+  function chunk(arr = [], size = 1) {
+    const results = [];
+    while (arr.length) {
+      results.push(arr.splice(0, size));
+    }
+    return results;
+  };
+
+  function nice(number = 0) {
+    const digits = Math.abs(Math.trunc(number)).toString().length - 1
+    let base = Math.pow(10, digits) / 20
+  
+    while (base < 1) {
+      base *= 10
+    }
+  
+    return Math.ceil(number / base) * base
   }
 })();

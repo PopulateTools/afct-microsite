@@ -1,0 +1,39 @@
+.multiselect-wrapper {
+  width: auto;
+}
+
+.multiselect-wrapper .multiselect-input {
+  padding-right: 25px !important;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.multiselect-list span {
+  cursor: pointer;
+}
+
+.multiselect-list > span:first-child,
+.multiselect-list > hr {
+  display: none !important;
+}
+
+.multiselect-dropdown-arrow,
+.multiselect-count {
+  top: 50%;
+  margin: 0 !important;
+  left: auto !important;
+  position: absolute;
+}
+
+.multiselect-count {
+  transform: translate(-175%, -50%);
+}
+
+.multiselect-dropdown-arrow {
+  transform: translate(-150%, -50%);
+}
+
+.multiselect-input-div {
+  position: relative;
+  height: 100%;
+}

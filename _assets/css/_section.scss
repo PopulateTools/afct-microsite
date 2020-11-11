@@ -1,5 +1,5 @@
 section {
-  padding: 4em 1em;
+  padding: 2rem 1rem;
 }
 
 .section {
@@ -96,7 +96,7 @@ section.partners {
     color: rgba(0, 0, 0, 0.6);
 
     &:not(:last-child) {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -139,7 +139,8 @@ section.partners {
     &__span {
       @extend %heading__span;
 
-      font-size: 16px;
+      font-size: $fsBig;
+      font-weight: normal;
       color: $cMutedText;
       margin: 0 0 2rem;
       display: block;

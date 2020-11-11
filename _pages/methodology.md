@@ -37,6 +37,7 @@ column-width: single
           <li>Whistleblowing</li>
         </ol>
       </li>
+      <li>In the EUKI research - evaluation of sustainability reporting of 300 companies in Central, Eastern and Southern European companies in 2020 - the methodology focused specifically on Climate Change, Use of Natural Resources, Pollution, and Biodiversity and Ecosystem Conservation.</li>
       <li>For each issue, the methodology provides an assessment of whether the information provided on policies, their outcomes, risks and KPIs (which is the type of information required by the Directive) allow understanding of the individual situation of companies.</li>
       <li>Within these categories  the methodology provides additional qualitative assessment criteria derived from leading reporting standards. For example, in the climate change section, the methodology looks into the alignment of company policies with the goals of the Paris Agreement, of risk descriptions with the Recommendations of the Task Force on Climate-Related Financial Disclosures, and of KPIs with the Greenhouse Gas Protocol methodology. </li>
       <li>Individual sectors are assigned relevant sustainability issues by means of a materiality matrix. Key elements concerning disclosures on climate change, employee and workforce matters, general human rights matters, and anti-corruption matters were examined in each sector.</li>
@@ -89,11 +90,19 @@ column-width: single
   </th>
   <td>
     
+    <strong>2019 EU Research</strong>
+    <p></p>
     <p>The countries included in the scope of the analysis represent the diversity of economic regions in Europe.</p>
 
     <p>The 1000 companies included in the scope of the research have been selected from 11 sectors to ensure the relevance and representativity in the countries and markets assessed. </p>
 
     <p>Similarly, the scope includes some of the biggest companies by market capitalisation as well as other companies from the lower tier falling under the scope of the EU NFR Directive. The logic behind this decision is that even if the largest companies have a bigger effect on society and the planet, smaller companies must also fulfil their obligation to report on sustainability issues to their stakeholders.</p>
+
+    <strong>2020 EUKI Research</strong>
+
+    <p>All 300 companies included in the scope of the research are from Southern, Central and Eastern Europe to provide more in depth information on reporting practices in European regions that are more reliant on carbon-intensive industries and where non-financial reporting is lacking.</p>
+
+    For similar reasons, the companies were selected from 6 most important sectors from the climate change mitigation and adaptation perspective, including in particular Energy and Finance.
 
     <p>All companies received their individual assessment and were invited to provide feedback. Their comments were taken into account if the information provided was correct and followed the methodology designed for the project’s research.</p>
 
@@ -106,7 +115,7 @@ column-width: single
 
     <p>The rationale behind this decision follows the principles of the EU NFR Directive and accompanying guidance, in which it is stated that the information should be easily accessible (i.e. “Cross referencing and signposting should be smart and user-friendly, for instance, by applying a practical rule of maximum one “click” out of the report”)</p>
 
-    <p>The project has assessed the information and reports covering a substantial part of the year 2018. In the majority of EU countries, the corporate reporting period corresponds with the calendar year, but in some other countries the reporting year at a different date. In some countries, the 2018 reports may be published as late as the end of September 2019. Therefore, in order to ensure the comparability of information, the project did not take into account reports from companies who have already published information covering 2019. </p>
+    <p>In the 2019 EU Research the project has assessed the information and reports covering a substantial part of the year 2018. In the majority of EU countries, the corporate reporting period corresponds with the calendar year, but in some other countries the reporting year at a different date. In some countries, the 2018 reports may be published as late as the end of September 2019. Therefore, in order to ensure the comparability of information, the project did not take into account reports from companies who have already published information covering 2019. </p>
 
   </td>
 </tr>
@@ -120,7 +129,9 @@ column-width: single
 
 <p>We would like to thank those companies who have kindly responded to our request for feedback and helped us to correct errors in our assessment of their reports.</p>
 
-<p>Frank Bold and Sustentia take responsibility for any error or inaccuracy in the research and presentation of results. The organisations forming part of the Alliance for Corporate Transparency have engaged in the project on a pro-bono basis contributing to the design of the research methodology and overall strategy. The assessment criteria employed in this research do not intend to represent a definitive or final model of best practices or legislation. They were designed to provide a general overview of how companies in specific sectors reported on some of the most important environmental and social issues. </p>
+<p>Frank Bold and Sustentia take responsibility for any error or inaccuracy in the 2019 EU Research and presentation of results. With regards to the 2020 EUKI Research, Frank Bold Society and Frank Bold Fundacja (Polish branch) implemented the research and take responsibility for any mistakes or omissions.</p>
+
+<p>The assessment criteria employed in this research do not intend to represent a definitive or final model of best practices or legislation. They were designed to provide a general overview of how companies in specific sectors reported on some of the most important environmental and social issues. The organisations forming part of the Alliance for Corporate Transparency have engaged in the project on a pro-bono basis contributing to the design of the research methodology and overall strategy.</p>
 
 <p>For any questions, complaints or suggestions, please contact us at <a href="mailto:susanna.arus@frankbold.org">susanna.arus@frankbold.org</a>.</p>
 
@@ -172,8 +183,33 @@ column-width: single
 </tr>
 <tr>
   <th><strong></strong></th>
-  <th class="month">December - February 2020</th>
-  <td>Analysis of results and drafting research report. Key findings are presented in Brussels. </td>
+  <th class="month">December - January</th>
+  <td>Analysis of results and drafting research report.</td>
+</tr>
+<tr>
+  <th><strong>2020</strong></th>
+  <th class="month">February</th>
+  <td>Key findings from the 2019 EU Research are presented in Brussels</td>
+</tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">February - September</th>
+  <td>Development of specific policy proposals based on the evidence gathered in the research carried out by the Alliance. These proposals are discussed with sustainability leaders from companies and investors. The objective is to build a multi-stakeholder consensus around the reform of the legal framework  and development of standards</td>
+</tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">March - June</th>
+  <td>Review of the research methodology applied to assess 1000 EU companies in 2019. Selection of the criteria to be applied in the 2020 EUKI research, focusing on climate, environmental and governance reporting.</td>
+</tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">September - October</th>
+  <td>Analysis of results and preparation front-end database for the presentation of the 2020 EUKI research</td>
+</tr>
+<tr>
+  <th><strong></strong></th>
+  <th class="month">October - December</th>
+  <td>The results and conclusions from the 2020 EUKI Research are presented in Brussels and countries in Central, Eastern and Southern Europe.</td>
 </tr>
 
 </table>

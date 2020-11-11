@@ -98,6 +98,12 @@
   width: 100%;
 }
 
+.database-section__margin-0 {
+  @extend %section;
+
+  margin: 0;
+}
+
 .database-section__margin-s {
   @extend %section;
 
@@ -108,6 +114,12 @@
   @extend %section;
 
   margin: 0 0 3rem;
+}
+
+.database-section__margin-xl {
+  @extend %section;
+
+  margin: 0 0 5rem;
 }
 
 .database-section__anchor {
@@ -144,10 +156,10 @@
   @extend %layout__flex;
 
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   > span {
-    flex: 0 0 50px;
+    flex: 0 0 auto;
   }
 }
 
@@ -163,6 +175,10 @@
 
   > :last-child {
     flex: 0 0 calc(100% * (2 / 3))
+  }
+
+  &.align-center {
+    align-items: center;
   }
 }
 
@@ -248,13 +264,11 @@
 }
 
 .database-tabcontent__row {
-  @extend %layout-2-3;
-
+  display: flex;
   margin: .25rem 0;
+  width: 85%;
 
-  > :not(:first-child) {
-    flex: 1;
-  }
+  @include gutters();
 }
 
 %database-tabcontent__label,
@@ -304,6 +318,16 @@
   color: $cMutedText;
   opacity: 0.5;
   font-weight: normal;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.database-tag__note {
+  @extend .database-tag__title;
+
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
 }
 
 .database-tag {
@@ -330,6 +354,7 @@
 /* canvas wrapper */
 .database-canvas__wrapper {
   position: relative;
+  width: 100%;
 }
 
 .database-canvas__wrapper:hover > .database-canvas__button {
@@ -373,6 +398,7 @@
 .database-filters__info {
   color: $cBlue;
   cursor: pointer;
+  flex: 0;
 }
 
 .database-filters__info:hover .database-filters__info-text {
@@ -408,4 +434,64 @@
   text-align: center; 
   background: lighten($cBackground, 20%);
   border-radius: 4px;
+}
+
+.database-summary__legend {
+  margin: 2em 0;
+  display: flex;
+  max-width: 95%;
+
+  > :first-child {
+    flex: 0 0 10%;
+    text-align: right;
+    padding-right: 1em;
+    font-weight: bold;
+  }
+
+  > :last-child {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  &--option {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    > :not(:first-child) {
+      margin-left: 8px;
+    }
+
+    > :first-child {
+      flex: 0 0 auto;
+      width: 15px;
+      height: 15px;
+      display: block;
+    }
+  }
+
+  &--title,
+  &--label {
+    font-size: 14px;
+    color: $cDarkBlue;
+  }
+}
+
+.database-selector {
+  font-size: $fsXLarge;
+  display: flex;
+  align-items: center;
+
+  select {
+    margin-left: 1em;
+    font-size: $fsLarge;
+  }
 }

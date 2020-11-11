@@ -27,7 +27,7 @@ collections:
     output: true
   database:
     output: true
-    permalink: /database/
+    permalink: /database/:path.html
 
 # Analytics
 ga_id:
@@ -44,6 +44,10 @@ companies_ict: 34
 # report URLS 2019
 url_report2019: /database/
 url_report2019_pdf: "2019_Research_Report _Alliance_for_Corporate_Transparency.pdf"
+
+# report URLS 2020
+url_report2020: /database/
+url_report2020_pdf: Research_Report_EUKI_2020.pdf
 
 url_materiality_matrix: 2019_Materiality-matrix.pdf
 url_newsletter: http://eepurl.com/dJPBjQ

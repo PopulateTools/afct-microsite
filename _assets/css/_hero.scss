@@ -1,9 +1,39 @@
+.hero__banner {
+  position: relative;
+  color: #FFF;
+  text-align: left;
+  background-color: $cLink;
+  background-size: cover;
+  background-position: 50% 35%;
+  background-blend-mode: multiply;
+
+  @include screen(1250) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  &--title {
+    color: $cBlue;
+    font-weight: 600;
+    font-size: $fsHero;
+    margin: 0 0 1rem;
+  }
+
+  &--subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    width: 60ch;
+    margin: 0;
+    text-shadow: 1px 1px 1px #000;
+  }
+}
+
 .hero__h1 {
   font-family: Muli;
   font-style: normal;
   font-weight: 900;
-  font-size: 64px;
-  line-height: 80px;
+  font-size: $fsHero;
   color: $cDarkBlue;
   margin: 0 0 2rem;
 }
@@ -12,8 +42,7 @@
   font-family: Muli;
   font-style: normal;
   font-weight: 300;
-  font-size: 36px;
-  line-height: 45px;
+  font-size: $fsXLarge;
   color: $cBlue;
   margin: 0;
 }
@@ -21,7 +50,7 @@
 .hero__p {
   font-family: Muli;
   font-style: normal;
-  font-size: 22px;
+  font-size: $fsLarge;
   line-height: 151%;
   color: $cDarkBlue;
   margin: 0;
@@ -37,5 +66,5 @@
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   box-sizing: border-box;
-  padding: 3rem;
+  padding: 2rem;
 }

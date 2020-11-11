@@ -1,0 +1,25 @@
+<div class="database-container" data-year="{{ include.year }}">
+
+  <div class="database-spinner" data-spinner><i class="fas fa-spinner fa-3x fa-spin"></i></div>
+
+  <aside class="database-sidebar">
+
+    <div data-sidebar></div>
+
+  </aside>
+
+  <div class="database-content">
+
+    <div data-content></div>
+    
+  </div>
+  
+</div>
+
+<div class="database-note">
+  <a href="https://act.frankbold.org/report/list?year={{ include.year }}" target="_blank">Database Archive: Companies individual assesments</a>
+</div>
+
+<input type="hidden" name="materiality_matrix" value="{% asset '{{ site.url_materiality_matrix }}' @path %}">
+<input type="hidden" name="report-2019" value="{% asset '{{ site.url_report2019_pdf }}' @path %}">
+<input type="hidden" name="report-2020" value="{% asset '{{ site.url_report2020_pdf }}' @path %}">

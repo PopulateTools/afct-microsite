@@ -1,24 +1,31 @@
 $units: 1px !default;
 
 @mixin screen($res-first, $res-last: $res-first) {
- @if $res-first == $res-last {
-   @media screen and ( max-width: if(unitless($res-first), $res-first*$units, $res-first) ) {
-     @content;
-   }
- } @else if $res-first < $res-last {
-   @media screen and ( min-width: if(unitless($res-first), $res-first*$units, $res-first) ) and ( max-width: if(unitless($res-last), $res-last*$units, $res-last) ) {
-     @content;
-   }
- }
+  @if $res-first == $res-last {
+    @media screen and (max-width: if(unitless($res-first), $res-first*$units, $res-first)) {
+      @content;
+    }
+  } @else if $res-first < $res-last {
+    @media screen and (min-width: if(unitless($res-first), $res-first*$units, $res-first)) and (max-width: if(unitless($res-last), $res-last*$units, $res-last)) {
+      @content;
+    }
+  }
 }
 
 @mixin min-screen($res) {
- @media screen and ( min-width: if(unitless($res), $res*$units, $res) ) {
-   @content;
- }
+  @media screen and (min-width: if(unitless($res), $res*$units, $res)) {
+    @content;
+  }
 }
 
-$sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
+$sizes: (
+  xs: 0.25rem,
+  s: 0.5rem,
+  m: 1rem,
+  l: 1.5rem,
+  xl: 2rem,
+  xxl: 5rem,
+);
 
 @mixin gutters() {
   @each $name, $size in $sizes {
@@ -27,6 +34,28 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
     }
   }
 }
+
+@mixin margins() {
+  $sides: (
+    t: top,
+    r: right,
+    b: bottom,
+    l: left,
+  );
+  @each $name, $size in $sizes {
+    .m-#{$name} {
+      margin: $size !important;
+    }
+
+    @each $abbr, $side in $sides {
+      .m#{$abbr}-#{$name} {
+        margin-#{$side}: $size !important;
+      }
+    }
+  }
+}
+
+@include margins();
 
 @mixin grid($columns: 3) {
   display: flex;
@@ -116,7 +145,7 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
   }
 }
 
-#fix-margin-top-250-on-desktop{
+#fix-margin-top-250-on-desktop {
   margin-top: -250px;
 
   @include screen($wMobile) {
@@ -125,5 +154,5 @@ $sizes: ( xs: .25rem, s: .5rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 5rem );
 }
 
 .aspect-ratio-16-9 {
-  @include aspect-ratio(16, 9)
+  @include aspect-ratio(16, 9);
 }
