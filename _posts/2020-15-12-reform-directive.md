@@ -18,13 +18,13 @@ The complexity of the issue and multiple and varied interests in these developme
 **To address these obstacles and contribute to a meaningful EU process for the standardisation of reporting requirements in favour of comparable, concise and relevant disclosure, the members of the Alliance for Corporate Transparency have combined their expertise and aligned on key priorities for reform of the EU NFR Directive and development of possible future standards.**
  
 **Outline of recommendations developed in further detail in the joint position include**:
-1. Expansion of the scope of the EU Non-Financial Reporting Directive
-2. Alignment with the annual report
-3. Clarification of the double-materiality definition
-4. Integration of reporting requirements on governance and accountability 
-5. Definition of general reporting requirements
-6. Specification of thematic and sector-specific reporting requirements 
-7. Require mandatory assurance
+1. Expansion of the scope of the EU Non-Financial Reporting Directive 
+2. Alignment with the annual report 
+3. Clarification of the double-materiality definition and principles 
+4. Reporting requirements on governance and sustainability integration 
+5. Better definition and connectivity of general reporting requirements in the Directive 
+6. Specification of thematic and sector-specific reporting requirements for climate, natural resources and biodiversity, workforce information, human rights and environmental due diligence, and anti-corruption 
+7. Requirement for mandatory assurance
 
 <a href="{% asset 'Reform_NFRD_Joint_Position_Alliance_for_Corporate_Transparency_final.pdf' @path %}" target="_blank"><strong>Read here the full joint position</strong></a>
 
