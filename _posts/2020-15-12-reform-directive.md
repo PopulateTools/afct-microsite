@@ -26,7 +26,7 @@ The complexity of the issue and multiple and varied interests in these developme
 6. Specification of thematic and sector-specific reporting requirements 
 7. Require mandatory assurance
 
-<a href="{% asset 'Reform_NFRD_Joint_Position_Alliance_for_Corporate_Transparency_final.pdf' @path %}" target="_blank">Read here the full joint position</a>
+<a href="{% asset 'Reform_NFRD_Joint_Position_Alliance_for_Corporate_Transparency_final.pdf' @path %}" target="_blank"><strong>Read here the full joint position</strong></a>
 
 These proposals have been discussed and developed as part of the Alliance for Corporate Transparency, including the input and support from the following organisations:
 
