@@ -6,7 +6,7 @@ img: posts/1905-paper.jpg
 intro: The Alliance for Corporate Transparency published its initial results on February 2019 after having analysed the information disclosed by 105 companies from the Energy, ICT and Healthcare sectors. The project will now expand its research to cover 1000 companies from all industrial sectors.
 ---
 
-The work of the Alliance for Corporate Transparency research and activities have been covered or mentioned in the following articles:
+The work of the Alliance for Corporate Transparency has been covered or mentioned in the following articles:
 
 -   Reuters: [Sustainability disclosures by European companies generally poor: study](https://www.reuters.com/article/us-climate-change-europe-companies-data/sustainability-disclosures-by-european-companies-generally-poor-study-idUSKBN20B0CJ)
     -   Published in: [New York Times](https://www.nytimes.com/reuters/2020/02/17/us/17reuters-climate-change-europe-companies-data.html), [Business Insider](https://www.businessinsider.com/sustainability-disclosures-by-european-companies-generally-poor-study-2020-2?r=US&IR=T), [Japan Times](https://www.japantimes.co.jp/news/2020/02/17/business/sustainability-european-companies-poor/#.XkvblhNKifQ), [Thomson Reuters Foundation News](https://news.trust.org/item/20200217042446-vkv8t)
