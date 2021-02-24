@@ -1,0 +1,36 @@
+# config.yml
+baseurl: https://test-cms-netlify-jekyll.netlify.app
+backend:
+  name: git-gateway
+  local_backend: true
+  branch: master
+media_folder: _assets/img/posts
+public_folder: posts
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Intro', name: 'intro', widget: 'markdown', required: false }
+      - { label: "Image", name: "img", widget: "image", required: false}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'pages'
+    folder: '_pages/'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+publish_mode: editorial_workflow
+
+
