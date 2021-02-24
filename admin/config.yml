@@ -2,6 +2,7 @@
 baseurl: https://test-cms-netlify-jekyll.netlify.app
 backend:
   name: git-gateway
+  repo: PopulateTools/afct-microsite
   local_backend: true
   branch: master
 media_folder: _assets/img/posts
