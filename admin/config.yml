@@ -1,5 +1,4 @@
 # config.yml
-baseurl: https://test-cms-netlify-jekyll.netlify.app
 backend:
   name: git-gateway
   repo: PopulateTools/afct-microsite
@@ -14,7 +13,7 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -27,7 +26,7 @@ collections:
     folder: '_pages/'
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
