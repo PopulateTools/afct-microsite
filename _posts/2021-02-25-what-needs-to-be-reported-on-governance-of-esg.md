@@ -9,6 +9,7 @@ intro: "*Written by Frank Bold as the second article of the series of monthly
   changes expected in the EU Non-Financial Reporting Directive reform proposal.
   Views included in this article do not necessarily represent the opinion of
   other members in the Alliance.*"
+img: posts/1901-brussels.jpg
 ---
 **Content outline**
 
