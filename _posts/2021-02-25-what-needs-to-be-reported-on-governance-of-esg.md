@@ -48,9 +48,7 @@ Directors’ associations, business organisations and [investors](https://www.ip
 \
 As the Alliance for Corporate Transparency research on corporate sustainability reporting shows, **the problem is that sustainability information is often invisible to corporate decision makers, which makes it impossible for companies to make fully strategic decisions**. Furthermore, from the point of view of investors and lenders, sustainability information is of little value if it is not clear how it is used by the company and reflected in strategy. Larry Fink, founder and CEO of BlackRock (the world’s largest asset manager), in his notorious annual letter to CEOs,  is directly asking companies in their portfolio to “disclose a plan for how their business model will be compatible with a net zero economy. We are asking you to disclose how this plan is incorporated into your long-term strategy and reviewed by your board of directors”
 
-![](posts/2001-diagram.png)
-
-
+![diagram](posts/2001-diagram.png "Diagram: Central role of reporting for sustainable corporate governance and sustainable finance.")
 
 **Diagram**: Central role of reporting for sustainable corporate governance and sustainable finance.
 
