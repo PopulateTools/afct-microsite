@@ -46,12 +46,12 @@ Both the [European Green Deal](https://ec.europa.eu/info/strategy/priorities-201
 
     <div>
       <strong>Key elements of European Sustainable Finance reform agenda (source: <a href="https://ec.europa.eu/transparency/regexpert/index.cfm?do=groupDetail.groupMeetingDoc&docid=35651">EC</a>)</strong>
-      <a href="{% asset 'posts/2101-sfap_source-ec-squashed.jpg' @path %}">{% asset 'posts/2101-sfap_source-ec-squashed.jpg' %}</a>
+      <a href="{% asset 'posts/2101-SFAP_source EC-squashed.jpg' @path %}">{% asset 'posts/2101-SFAP_source EC-squashed.jpg' %}</a>
     </div>
 
     <div>
       <strong>Where will the money come from? (source: <a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal/actions-being-taken-eu_en">EC</a>)</strong>
-      <a href="{% asset 'posts/2101-investing_graph_source-ec.jpg' @path %}">{% asset 'posts/2101-investing_graph_source-ec.jpg' %}</a>
+      <a href="{% asset 'posts/2101-Investing_graph_source-EC.jpg' @path %}">{% asset 'posts/2101-Investing_graph_source-EC.jpg' %}</a>
     </div>
     
   </div>
@@ -105,7 +105,7 @@ _“Aligning capital to sustainable business practices is at the heart of the EU
 
 **_Calendar legal reform and implementation in 2021_**
 
-<a href="{% asset 'posts/2101-legislative-timeline-frank-bold.png' @path %}">{% asset 'posts/2101-legislative-timeline-frank-bold.png' %}</a>
+<a href="{% asset 'posts/2101-Legislative-timeline-Frank-Bold.png' @path %}">{% asset 'posts/2101-Legislative-timeline-Frank-Bold.png' %}</a>
 
 
 ## 10 expected key points of reform proposal this March
