@@ -2,8 +2,8 @@
 title: "Countdown for the reform that will overhaul companies’ sustainability reporting obligations in Europe"
 date: 2021-01-29 00:00:00 Z
 layout: post
-img: /assets/posts/2101-cover.jpg
-img_listing: /assets/posts/2101-cover.jpg
+img: /assets/2101-cover.jpg
+img_listing: /assets/2101-cover.jpg
 intro: The European Union will take major action in 2021 to expand its leading position on sustainable finance, in order to strategically redirect private and public money to sustainable activities. Such realignment of investments will be critical to meet the Union’s 2030 targets agreed in Paris and deliver on the growth strategy set in the European Green Deal that aims to tackle the existential threat to Europe and the world that climate change represents, and achieve zero-net emissions of greenhouse gases by 2050 and decouple economic growth from resource use.
 ---
 

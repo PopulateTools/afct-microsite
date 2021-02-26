@@ -2,7 +2,7 @@
 title: Launch event for the project’s research gathers key actors to discuss future reform of EU legislation
 date: 2020-03-19 00:00:00 Z
 layout: post
-img: /assets/posts/2003-cover.jpg
+img: /assets/2003-cover.jpg
 intro: The Alliance for Corporate Transparency hosted a high-level event in Brussels on February 17 to present the conclusions of the largest research to date on corporate sustainability reporting. The project analysed the information disclosed by 1000 European companies on their environmental and societal risks and impacts, pursuant to the requirements introduced by the EU Non-Financial Reporting Directive. 
 ---
 

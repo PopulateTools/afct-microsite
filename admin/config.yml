@@ -4,8 +4,8 @@ backend:
   repo: PopulateTools/afct-microsite
   branch: netlify-cms
 local_backend: true
-media_folder: _assets/img/posts
-public_folder: /assets/posts
+media_folder: /assets
+public_folder: /assets
 collections:
   - name: 'blog'
     label: 'Blog'

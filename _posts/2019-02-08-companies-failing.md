@@ -2,7 +2,7 @@
 title: Companies failing to report meaningful information about their impacts on society and the environment
 date: 2019-02-08
 layout: post
-img: /assets/posts/1902-crystal.jpg
+img: /assets/1902-crystal.jpg
 intro: The Alliance for Corporate Transparency project has analysed how European companies disclose information necessary for understanding their impact on society and the environment, as required by the EU Non-financial Reporting Directive.
 ---
 
