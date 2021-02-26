@@ -94,3 +94,7 @@ Progress report about meeting the targets and challenges, signed off by the Boar
    An evaluation of the expertise available to the Board to monitor the implementation and review the content of the company’s sustainability strategy. Such expertise should be proportionate to the complexity of the challenges facing the company, and can be ensured by Board Members with relevant subject matter expertise or through an advisory committee composed of independent experts and managers. 
    ………………………………………………………………………………………..
    This is the second article of Frank Bold’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021. The January briefing outlined upcoming policy developments for this year,  including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Look out for our March topic on the connection between the Non-financial reporting directive, the Taxonomy and the Sustainable Finance Disclosure Regulation.
+
+
+
+![](/assets/screenshot-2021-02-24-at-15.11.48.png)
