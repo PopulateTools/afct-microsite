@@ -2,8 +2,8 @@
 title: The time is ripe for EU policy reforms and standards on corporate sustainability reporting
 date: 2020-05-26 00:00:00 Z
 layout: post
-img: posts/2005-euflag.jpg
-img_listing: posts/2005-euflag_listing.jpg
+img: /assets/2005-euflag.jpg
+img_listing: /assets/2005-euflag_listing.jpg
 intro: Following the presentation of the Green Deal last December, the EU Commission initiated the reform of the EU Non-Financial Reporting Directive (NFRD) with the objective to improve quality, consistency, comparability, as well as accessibility of critical information on sustainability disclosed by companies.
 ---
 

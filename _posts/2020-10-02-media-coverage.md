@@ -2,7 +2,7 @@
 title: Media and policy impacts
 date: 2020-10-02 00:00:00 Z
 layout: post
-img: posts/1905-paper.jpg
+img: /assets/1905-paper.jpg
 intro: The Alliance for Corporate Transparency published its initial results on February 2019 after having analysed the information disclosed by 105 companies from the Energy, ICT and Healthcare sectors. The project will now expand its research to cover 1000 companies from all industrial sectors.
 ---
 
