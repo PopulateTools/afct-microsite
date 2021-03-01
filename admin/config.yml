@@ -2,7 +2,7 @@
 backend:
   name: git-gateway
   repo: PopulateTools/afct-microsite
-  branch: netlify-cms
+  branch: staging
 local_backend: true
 media_folder: /assets
 public_folder: /assets
