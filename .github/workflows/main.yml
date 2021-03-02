@@ -1,4 +1,4 @@
-name: Jekyll buidl and deploy to FTP
+name: Jekyll build and deploy to FTP
 
 on:
   push:

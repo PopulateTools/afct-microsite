@@ -2,6 +2,8 @@
 backend:
   name: git-gateway
   repo: PopulateTools/afct-microsite
+  identity_url: 'https://aftc-staging.netlify.app/.netlify/identity'
+  gateway_url: 'https://aftc-staging.netlify.app/.netlify/git'
   branch: staging
 local_backend: true
 media_folder: /assets
