@@ -2,8 +2,8 @@
 title: "Countdown for the reform that will overhaul companies’ sustainability reporting obligations in Europe"
 date: 2021-01-29 00:00:00 Z
 layout: post
-img: posts/2101-cover.jpg
-img_listing: posts/2101-cover.jpg
+img: /assets/2101-cover.jpg
+img_listing: /assets/2101-cover.jpg
 intro: The European Union will take major action in 2021 to expand its leading position on sustainable finance, in order to strategically redirect private and public money to sustainable activities. Such realignment of investments will be critical to meet the Union’s 2030 targets agreed in Paris and deliver on the growth strategy set in the European Green Deal that aims to tackle the existential threat to Europe and the world that climate change represents, and achieve zero-net emissions of greenhouse gases by 2050 and decouple economic growth from resource use.
 ---
 
@@ -46,12 +46,12 @@ Both the [European Green Deal](https://ec.europa.eu/info/strategy/priorities-201
 
     <div>
       <strong>Key elements of European Sustainable Finance reform agenda (source: <a href="https://ec.europa.eu/transparency/regexpert/index.cfm?do=groupDetail.groupMeetingDoc&docid=35651">EC</a>)</strong>
-      <a href="{% asset 'posts/2101-SFAP_source EC-squashed.jpg' @path %}">{% asset 'posts/2101-SFAP_source EC-squashed.jpg' %}</a>
+      <a href="/assets/2101-SFAP_source EC-squashed.jpg"><img src="/assets/2101-SFAP_source EC-squashed.jpg"></a>
     </div>
 
     <div>
       <strong>Where will the money come from? (source: <a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal/actions-being-taken-eu_en">EC</a>)</strong>
-      <a href="{% asset 'posts/2101-Investing_graph_source-EC.jpg' @path %}">{% asset 'posts/2101-Investing_graph_source-EC.jpg' %}</a>
+      <a href="/assets/2101-Investing_graph_source-EC.jpg"><img src="/assets/2101-Investing_graph_source-EC.jpg"></a>
     </div>
     
   </div>
@@ -105,8 +105,9 @@ _“Aligning capital to sustainable business practices is at the heart of the EU
 
 **_Calendar legal reform and implementation in 2021_**
 
-<a href="{% asset 'posts/2101-Legislative-timeline-Frank-Bold.png' @path %}">{% asset 'posts/2101-Legislative-timeline-Frank-Bold.png' %}</a>
-
+<a href="/assets/2101-Legislative-timeline-Frank-Bold.png">
+    <img src="/assets/2101-Legislative-timeline-Frank-Bold.png">
+</a>
 
 ## 10 expected key points of reform proposal this March
 

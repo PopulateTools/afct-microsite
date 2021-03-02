@@ -5,6 +5,7 @@ gem "jekyll"
 gem "jekyll-seo-tag"
 gem "jekyll-sitemap"
 gem "jekyll-assets"
+gem "sprockets", "~> 3.7"
 # gem 'jekyll-multiple-languages-plugin'
 
 gem "rake"
