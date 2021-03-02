@@ -4,7 +4,7 @@ backend:
   repo: PopulateTools/afct-microsite
   identity_url: 'https://aftc-staging.netlify.app/.netlify/identity'
   gateway_url: 'https://aftc-staging.netlify.app/.netlify/git'
-  branch: staging
+  branch: master
 local_backend: true
 media_folder: /assets
 public_folder: /assets
