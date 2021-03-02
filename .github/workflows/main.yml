@@ -15,6 +15,9 @@ jobs:
     - name: delete robots
       run: |
         sudo rm ./_site/robots.txt
+    - name: create sync state
+      run: |
+        sudo touch .ftp-deploy-sync-state.json
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
