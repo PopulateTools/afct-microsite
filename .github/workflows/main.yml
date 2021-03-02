@@ -1,0 +1,33 @@
+name: Jekyll build and deploy to FTP
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+  web-deploy:
+    needs: build
+    runs-on: 'ubuntu-latest'
+    steps:
+    - name: 🚚 Get latest code
+          uses: actions/checkout@v2.3.2
+
+        - name: 📂 Sync files
+          uses: SamKirkland/FTP-Deploy-Action@4.0.0
+          with:
+            server: # todo replace with urls
+            username: ${{ secrets.username }}
+            password: ${{ secrets.password }}
+            port: 1234 # todo replace with your web hosts ftps port, default value 21
+            local-dir: ./_site/
+
+
