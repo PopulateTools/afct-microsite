@@ -19,15 +19,12 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
     - name: 🚚 Get latest code
-          uses: actions/checkout@v2.3.2
+      uses: actions/checkout@v2.3.2
 
-        - name: 📂 Sync files
-          uses: SamKirkland/FTP-Deploy-Action@4.0.0
-          with:
-            server: # todo replace with urls
-            username: ${{ secrets.username }}
-            password: ${{ secrets.password }}
-            port: 1234 # todo replace with your web hosts ftps port, default value 21
-            local-dir: ./_site/
-
-
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ secrets.ftp_server }}
+        username: ${{ secrets.username }}
+        password: ${{ secrets.password }}
+        local-dir: ./_site/
