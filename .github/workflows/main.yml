@@ -12,8 +12,9 @@ jobs:
       uses: actions/checkout@v2
     - name: Build
       uses: tidalmigrations/jekyll-build-action@master
-    - name: push code to master
-      run: rm ~/_site/robots.txt
+    - name: delete robots
+      run: |
+        sudo rm ./_site/robots.txt
   web-deploy:
     needs: build
     runs-on: 'ubuntu-latest'
