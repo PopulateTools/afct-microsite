@@ -17,7 +17,7 @@ jobs:
         sudo rm ./_site/robots.txt
     - name: create sync state
       run: |
-        sudo touch .ftp-deploy-sync-state.json
+        sudo touch ./_site/.ftp-deploy-sync-state.json
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
@@ -25,3 +25,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         local-dir: ./_site/
+        state-name: ../.ftp-deploy-sync-state.json
