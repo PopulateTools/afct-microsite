@@ -18,9 +18,7 @@ img: ""
 In 2021, the European Commission will present two intertwined legislative proposals aiming to foster integration of sustainability in corporate strategies. The first one, [the reform of the EU Non-Financial Reporting Directive](https://ec.europa.eu/info/business-economy-euro/company-reporting-and-auditing/company-reporting/non-financial-reporting_en) (NFRD), aims to ensure **transparency on companies’ sustainability performance** to improve corporate accountability and enable sustainable finance (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)). The second one, the [sustainable corporate governance](https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12548-Sustainable-corporate-governance) initiative, will clarify corporate obligations to **identify, prevent and mitigate severe human rights and environmental impacts, and Board oversight over sustainability** risks, strategy and targets.
 Such a combination of transparency and governance incentives, together with the push of responsible investors, will reinforce the market pressure for companies to elevate the consideration of sustainability among managerial and Board priorities, whilst granting companies considerable flexibility in how they do this.
 
->
 > EU Commissioner for Justice Didier Reynders explained the second initiative to be launched this year, during a recent event organised by Frank Bold and CDSB, by stating that  *“Environmental degradation and climate change are creating risks to businesses and their supply chains. The transition creates big opportunities and companies that are ahead in the game will benefit most. We want to ensure that corporate decision-making changes to a sustainability mindset at all levels. “* 
-
 
 Access to the right data is the key for companies and their Boards to consider material sustainability risks and opportunities in their strategic decision-making, including those linked to the transformation of the European economy towards a low-carbon model.
 
@@ -34,22 +32,22 @@ In the second part, we provide an overview of the three areas of information on 
 2. **Determination of relevant risks and salient issues (double materiality).**
 3. **Organisation and integration of sustainability in governance.**
 
-
-
 ##### The importance of governance in sustainability: the reason behind the EU Commission’s proposals
-
 
 Directors’ associations, business organisations and [investors](https://www.ipe.com/ecs-sustainable-governance-play-asset-owners-wary-of-potential-snags/10050702.article), increasingly recognise the urgency of the climate crisis and the need to fully integrate sustainability and respect for human rights in companies’ business models and risk management. The sustainability crisis and the challenge of ensuring recovery from the CoViD-19 crisis are of an unprecedented scale and urgency, as highlighted by Commissioner Reynders who also stressed that “companies that are ahead in the game will benefit most”. According to an estimate from the European Commission, at least half a trillion euros of additional investments per year will need to be redirected from business-as-usual to sustainable activities. The risks and opportunities linked to the realignment of finance and markets are therefore equally unprecedented. 
 The need for effective governance and oversight from the company’s most senior governing body and integration of sustainability is proportionate to the challenges facing companies. This is particularly relevant where risks and impacts are connected to the company’s business model, as this will in turn require major changes to the strategy and financial planning. 
 
->
 > The International Corporate Governance Network (ICGN) is currently updating their global governance principles, and as George Dallas (its Policy Director) highlighted at an event this February, there will be a *“big emphasis on the themes of trying to have boards become understanding of not only how ESG factors impact them, but on how their company impacts society in a broader context (...) this, in turn, leads to the need for good information and metrics to guide both executives, board directors, as well as give investors clues in terms of where opportunities and risks might lie.”*
 
-As the Alliance for Corporate Transparency research on corporate sustainability reporting shows, the problem is that sustainability information is often invisible to corporate decision makers, which makes it impossible for companies to make fully strategic decisions. Furthermore, from the point of view of investors and lenders, sustainability information is of little value if it is not clear how it is used by the company and reflected in strategy. Larry Fink, founder and CEO of BlackRock (the world’s largest asset manager), in his notorious annual letter to CEOs,  is directly asking companies in their portfolio to “disclose a plan for how their business model will be compatible with a net zero economy. We are asking you to disclose how this plan is incorporated into your long-term strategy and reviewed by your board of directors”
+As the Alliance for Corporate Transparency research on corporate sustainability reporting shows, the problem is that sustainability information is often invisible to corporate decision makers, which makes it impossible for companies to make fully strategic decisions. Furthermore, from the point of view of investors and lenders, sustainability information is of little value if it is not clear how it is used by the company and reflected in strategy. 
 
-![](/assets/2001-diagram.png)
+> Larry Fink, founder and CEO of BlackRock (the world’s largest asset manager), in his notorious annual letter to CEOs,  is directly asking companies in their portfolio to *“disclose a plan for how their business model will be compatible with a net zero economy. We are asking you to disclose how this plan is incorporated into your long-term strategy and reviewed by your board of directors”*
+>
+> Along similar lines, Rients Abma, executive director of Eumedion, an organisation that represents the interests of institutional investors with investments in Dutch listed companies also stresses that *“Sustainability risks and opportunities will impact the company’s ability to create long-term value and to promote the company’s long-term sustainable success. Consequently, proper and knowledgeable Board oversight on these subjects and meaningful reporting on the execution of that duty are extremely important for institutional investors”.*
 
-**Diagram**: Central role of reporting for sustainable corporate governance and sustainable finance.
+![](/assets/diagram-reporting-strategy-and-governance-framework-for-sustainable-finance_frank-bold.png "Diagram: Reporting, strategy and governance framework for sustainable finance")
+
+**Diagram**: Reporting, strategy and governance framework for sustainable finance
 
 The need for a strategic approach to climate change and human rights 
 With respect to climate change risks, it is paramount that energy producers, manufacturers with high greenhouse gas emission intensity, and banks and investors urgently chart their long-term transition plans to survive - and ideally thrive on - the major market changes just beyond the horizon. A recent study by CDP showed for example that European companies had identified €1.22 trillion in new low carbon business opportunities, such as through higher demand for electric vehicles and green infrastructure. The value of these opportunities is more than six times the investment cost of €192 billion. Yet, Alliance for Corporate Transparency found out in its 2020 research of 300 European companies that less than 17% explain business opportunities related to sustainability challenges. 
