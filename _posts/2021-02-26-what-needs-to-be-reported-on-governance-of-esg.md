@@ -2,13 +2,11 @@
 layout: post
 title: What needs to be reported on Governance (of ESG)
 date: 2021-02-26T09:15:24.161Z
-intro: Written by Frank Bold as the second article of the series of monthly
-  briefings on sustainability reporting in 2021. The first one outlined upcoming
-  policy developments for this year including 10 key changes expected in the EU
-  Non-Financial Reporting Directive reform proposal. Views included in this
-  article do not necessarily represent the opinion of other members in the
-  Alliance.
-img: /assets/image4.png
+intro: In 2021, the European Commission will present two intertwined legislative
+  proposals aiming to foster integration of sustainability in corporate
+  strategies. The reform of the EU Non-Financial Reporting Directive and the
+  sustainable corporate governance initiative.
+img: ""
 ---
 *Written by Frank Bold as the second article of the series of monthly briefings on sustainability reporting in 2021. The first one outlined upcoming policy developments for this year including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
 
