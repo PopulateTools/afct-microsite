@@ -89,18 +89,65 @@ Reporting on the governance related matters concerning sustainability is address
 
 In reaction to these problems, the reform of the EU Non-Financial Reporting Directive (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)) will aim to help companies by clarifying which information should be reported on governance and integration of sustainability in corporate strategy. The European Project Task Force on Non-Financial Reporting Standards under the [EFRAG](https://www.efrag.org/) has recommended in its final advice to the European Commission that **future EU reporting standards** should include a standard on “Strategy”, to be structured under three components: a) Overall business strategy b) Material sustainability risks, threats & opportunities and c) Sustainability governance & organisation. This overarching standard should be then supported by topical standards, for example on climate-related information, addressing Implementation (policies and actions) and Performance measurement (achievements and progress measured by KPIs). 
 
-![]()
+![](/assets/diagram-proposed-reporting-areas-by-the-project-task-force-on-eu-standards.jpg "Diagram: \"Proposed reporting areas by the Project Task Force on EU Standards\" (source EFRAG) ")
+
+**Diagram: "Proposed reporting areas by the Project Task Force on EU Standards" ([source EFRAG](https://www.efrag.org/Assets/Download?assetUrl=/sites/webpublishing/SiteAssets/PTF-NFRS%2520Outreach%2520Document%2520final.pdf))**
+
+## Three essentials for disclosure on governance matters
+
+In the three areas of Strategic and Governance-related information, there are several categories of information which are critical for the success of a company’s sustainability strategy and reporting, are already expected by leading reporting standards and large investors, and will become increasingly important for companies at the top of value chains:
+
+##### 1. Business Strategy and Board oversight
+
+The law provides board members with wide discretion to consider sustainability when making decisions on behalf of the company. In this regard, the following information is critical to understand how a company integrates sustainability at strategic level, and for Boards to have access to relevant data:
+
+* **Board-approved strategy to address salient sustainability issues, including specification** of:
+* 1. High-level measurable targets relevant for the prevention or mitigation of risks and impacts for each salient issue identified by the company 
+  2. Financial resources approved for the implementation of the strategy
+* **Revisions to the company's business model, strategy and financial planning** 
+* **Progress report about meeting the targets and challenges, signed off by the Board**
+
+##### 2. Double materiality determination and due diligence
+
+Integration of sustainability in business strategy rests on a good understanding of which sustainability issues are material. The EU NFRD builds on the ‘double materiality’ perspective, which provides directions to companies on how to identify issues which either:
+
+1. already have or may lead in the future to financial risks and impacts for the business; or
+2. represent the areas in which the company is causes, contributes to, or is directly linked by business relationships to severe impacts on people or the environment across its value chain *(the determination of such issues is the first step of the process of human rights and environmental due diligence, which is supported by robust guidance and which will be covered in detail in one of our next articles)*
+
+In this regard, key information is the following:
+
+* **A description of the process and principles applied by the company to determine its material issues**, including information on how affected stakeholders were consulted (according to human rights due diligence, companies should engage specifically with people who are at risk of harm due to how a company does business, rather than general categories of stakeholders such as customers, communities, etc. The need for engagement is proportionate to the risk and severity of the harm) 
+* **A description of sustainability issues determined by this process alongside an explanation of why the issues are deemed material** from either the financial or impact perspectives
+* **Details of the company’s exposure to risks or involvement in impacts** for these issues.
+
+Currently, a majority of companies report on issues which are not relevant from neither the financial nor the impact perspective, and provide no information on the materiality determination process. Typically, companies fill their reports with information on philanthropy, volunteering, and other CSR activities which are additional, rather than linked to their business. Companies’ reports often suggest that topics covered are selected because the company perceives them as being expected by their stakeholders, but fail to explain whether those topics are in any way material.
+
+
+
+
+
+
 
 
 
-![](/assets/image2.png)
+![](/assets/image2.png "The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information")
 
-Sustainability governance and organisation:
+Diagram:  The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information. ([source EC](https://ec.europa.eu/finance/docs/policy/190618-climate-related-information-reporting-guidelines_en.pdf))
+
+##### 3. Sustainability governance and organisation:
+
 The extent to which sustainability considerations are integrated across a company’s governance tools underlines its ability to reflect them in business decisions. To ensure and demonstrate to investors that sustainability is integrated, leading international standards such as the TCFD highlight three priorities:
-A description of how the determination of sustainability issues based on a double materiality approach is integrated in the broader enterprise risk management system. Companies need to demonstrate that these systems not only reflect sustainability risks to the company itself, but also risks it poses to affected stakeholders.
-An explanation of how a company’s sustainability targets and KPIs are integrated in the performance incentives of the management of the company.\
-An evaluation of the expertise available to the Board to monitor the implementation and review the content of the company’s sustainability strategy. Such expertise should be proportionate to the complexity of the challenges facing the company, and can be ensured by Board Members with relevant subject matter expertise or through an advisory committee composed of independent experts and managers. 
-………………………………………………………………………………………..
-This is the second article of Frank Bold’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021. The January briefing outlined upcoming policy developments for this year,  including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Look out for our March topic on the connection between the Non-financial reporting directive, the Taxonomy and the Sustainable Finance Disclosure Regulation.
 
-![](/assets/screenshot-2021-02-24-at-15.11.48.png)
+* **A description of how the determination of sustainability issues based on a double materiality approach is integrated in the broader enterprise risk management system**. Companies need to demonstrate that these systems not only reflect sustainability risks to the company itself, but also risks it poses to affected stakeholders.
+* **An explanation of how a company’s sustainability targets and KPIs are integrated in the performance incentives** of the management of the company.  
+* **An evaluation of the expertise available to the Board to monitor the implementation and review the content of the company’s sustainability strategy.** Such expertise should be proportionate to the complexity of the challenges facing the company, and can be ensured by Board Members with relevant subject matter expertise or through an advisory committee composed of independent experts and managers.
+
+
+  ………………………………………………………………………………………..
+
+
+  ![](/assets/fbsociety-logo.png)
+
+  *This is the second article of Frank Bold’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021. [The January briefing](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for this year,  including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Look out for our March topic on the connection between the Non-financial reporting directive, the Taxonomy and the Sustainable Finance Disclosure Regulation.*
+
+![]()
