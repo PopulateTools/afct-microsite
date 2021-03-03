@@ -18,7 +18,7 @@ img: ""
 Content outline
 
 <ul>
-<li><a href="##the-importance-of-governance-in-sustainability:-the-reason-behind-the-EU-Commission’s-proposals">The importance of governance in sustainability: the reason behind the EU Commission’s proposals </a></li>
+<li><a href="#the-importance-of-governance-in-sustainability:-the-reason-behind-the-EU-Commission’s-proposals">The importance of governance in sustainability: the reason behind the EU Commission’s proposals </a></li>
 </ul>
 
 </div>
@@ -40,7 +40,7 @@ In the second part, we provide an overview of the three areas of information on 
 2. **Determination of relevant risks and salient issues (double materiality).**
 3. **Organisation and integration of sustainability in governance.**
 
-## The importance of governance in sustainability: the reason behind the EU Commission’s proposals
+# The importance of governance in sustainability: the reason behind the EU Commission’s proposals
 
 Directors’ associations, business organisations and [investors](https://www.ipe.com/ecs-sustainable-governance-play-asset-owners-wary-of-potential-snags/10050702.article), increasingly recognise the urgency of the climate crisis and the need to fully integrate sustainability and respect for human rights in companies’ business models and risk management. The sustainability crisis and the challenge of ensuring recovery from the CoViD-19 crisis are of an unprecedented scale and urgency, as highlighted by Commissioner Reynders who also stressed that *“companies that are ahead in the game will benefit most*”. According to an estimate from the European Commission, **at least half a trillion euros of additional investments per year will need to be redirected from business-as-usual to sustainable activities.** The risks and opportunities linked to the realignment of finance and markets are therefore equally unprecedented. 
 
