@@ -99,7 +99,7 @@ In reaction to these problems, the reform of the EU Non-Financial Reporting Dire
 
 In the three areas of Strategic and Governance-related information, there are several categories of information which are critical for the success of a company’s sustainability strategy and reporting, are already expected by leading reporting standards and large investors, and will become increasingly important for companies at the top of value chains:
 
-##### 1. Business Strategy and Board oversight
+#### 1. Business Strategy and Board oversight
 
 The law provides board members with wide discretion to consider sustainability when making decisions on behalf of the company. In this regard, the following information is critical to understand how a company integrates sustainability at strategic level, and for Boards to have access to relevant data:
 
@@ -109,7 +109,7 @@ The law provides board members with wide discretion to consider sustainability w
 * **Revisions to the company's business model, strategy and financial planning** 
 * **Progress report about meeting the targets and challenges, signed off by the Board**
 
-##### 2. Double materiality determination and due diligence
+#### 2. Double materiality determination and due diligence
 
 Integration of sustainability in business strategy rests on a good understanding of which sustainability issues are material. The EU NFRD builds on the ‘double materiality’ perspective, which provides directions to companies on how to identify issues which either:
 
@@ -126,17 +126,13 @@ Currently, a majority of companies report on issues which are not relevant from 
 
 
 
-
-
-
-
 
 
 ![](/assets/double-materiality-diagram.png "The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information")
 
 Diagram:  The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information. ([source EC](https://ec.europa.eu/finance/docs/policy/190618-climate-related-information-reporting-guidelines_en.pdf))
 
-##### 3. Sustainability governance and organisation:
+#### 3. Sustainability governance and organisation:
 
 The extent to which sustainability considerations are integrated across a company’s governance tools underlines its ability to reflect them in business decisions. To ensure and demonstrate to investors that sustainability is integrated, leading international standards such as the TCFD highlight three priorities:
 
