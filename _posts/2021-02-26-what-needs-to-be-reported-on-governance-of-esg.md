@@ -15,10 +15,17 @@ img: ""
 ---
 *Written by Frank Bold as the second article of the series of monthly briefings on sustainability reporting in 2021. The first one outlined upcoming policy developments for this year including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
 
-> [The importance of governance in sustainability: the reason behind the EU Commission proposals](https://docs.google.com/document/d/1dk3XbHhG_wmZ6AYg6AZxyfAaiwjlBZ_D/edit#heading=h.30j0zll)
-> [The need for a strategic approach to climate change and human rights](https://docs.google.com/document/d/1dk3XbHhG_wmZ6AYg6AZxyfAaiwjlBZ_D/edit#heading=h.1fob9te)
-> [How can companies better report the 'G' in ESG](https://docs.google.com/document/d/1dk3XbHhG_wmZ6AYg6AZxyfAaiwjlBZ_D/edit#heading=h.2et92p0)
-> [Three essentials for disclosure on governance matters](https://docs.google.com/document/d/1dk3XbHhG_wmZ6AYg6AZxyfAaiwjlBZ_D/edit#heading=h.tyjcwt)
+Content outline
+
+<ul>
+  <li><a href="#what-changes-will-this-reform-bring-and-which-topics-can-we-expect-to-be-the-main-discussion-points-this-year-in-the-eu">What changes will this reform bring and which topics can we expect to be the main discussion points this year in the EU?</a></li>
+  <li><a href="#why-is-the-reform-needed">Why is the reform needed?</a></li>
+  <li><a href="#multiple-players-in-a-high-stakes-game">Multiple players in a high stakes game</a></li>
+  <li><a href="#10-expected-key-points-of-reform-proposal-this-march">10 expected key points of reform proposal this March</a></li>
+  <li><a href="#dont-miss-the-train">Don’t miss the train</a></li>
+</ul>
+
+</div>
 
 In 2021, the European Commission will present two intertwined legislative proposals aiming to foster integration of sustainability in corporate strategies. The first one, [the reform of the EU Non-Financial Reporting Directive](https://ec.europa.eu/info/business-economy-euro/company-reporting-and-auditing/company-reporting/non-financial-reporting_en) (NFRD), aims to ensure **transparency on companies’ sustainability performance** to improve corporate accountability and enable sustainable finance (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)). The second one, the [sustainable corporate governance](https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12548-Sustainable-corporate-governance) initiative, will clarify corporate obligations to **identify, prevent and mitigate severe human rights and environmental impacts, and Board oversight over sustainability** risks, strategy and targets.
 Such a combination of transparency and governance incentives, together with the push of responsible investors, will reinforce the market pressure for companies to elevate the consideration of sustainability among managerial and Board priorities, whilst granting companies considerable flexibility in how they do this.
