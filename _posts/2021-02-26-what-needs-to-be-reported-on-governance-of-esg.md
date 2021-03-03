@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What needs to be reported on Governance (of ESG)
-date: 2021-02-26T09:15:24.161Z
+date: 2021-03-04T09:15:24.161Z
 intro: Written by Frank Bold as the second article of the series of monthly
   briefings on sustainability reporting in 2021. The first one outlined upcoming
   policy developments for this year including 10 key changes expected in the EU
