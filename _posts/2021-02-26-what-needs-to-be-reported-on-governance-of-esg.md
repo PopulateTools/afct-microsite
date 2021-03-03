@@ -130,7 +130,7 @@ Currently, a majority of companies report on issues which are not relevant from 
 
 
 
-![](/assets/image2.png "The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information")
+![](/assets/double-materiality-diagram.png "The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information")
 
 Diagram:  The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information. ([source EC](https://ec.europa.eu/finance/docs/policy/190618-climate-related-information-reporting-guidelines_en.pdf))
 
@@ -143,7 +143,7 @@ The extent to which sustainability considerations are integrated across a compan
 * **An evaluation of the expertise available to the Board to monitor the implementation and review the content of the company’s sustainability strategy.** Such expertise should be proportionate to the complexity of the challenges facing the company, and can be ensured by Board Members with relevant subject matter expertise or through an advisory committee composed of independent experts and managers.
 
 
-  ………………………………………………………………………………………..
+  ………………………………………………………………………………………...............................................................................................................
 
 
   ![](/assets/fbsociety-logo.png)
