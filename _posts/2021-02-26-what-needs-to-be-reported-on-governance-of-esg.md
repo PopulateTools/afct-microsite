@@ -21,8 +21,6 @@ Content outline
 <li><a href="#the-importance-of-governance-in-sustainability:-the-reason-behind-the-EU-Commission’s-proposals">The importance of governance in sustainability: the reason behind the EU Commission’s proposals </a></li>
 </ul>
 
-</div>
-
 In 2021, the European Commission will present two intertwined legislative proposals aiming to foster integration of sustainability in corporate strategies. The first one, [the reform of the EU Non-Financial Reporting Directive](https://ec.europa.eu/info/business-economy-euro/company-reporting-and-auditing/company-reporting/non-financial-reporting_en) (NFRD), aims to ensure **transparency on companies’ sustainability performance** to improve corporate accountability and enable sustainable finance (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)). The second one, the [sustainable corporate governance](https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12548-Sustainable-corporate-governance) initiative, will clarify corporate obligations to **identify, prevent and mitigate severe human rights and environmental impacts, and Board oversight over sustainability** risks, strategy and targets.
 Such a combination of transparency and governance incentives, together with the push of responsible investors, will reinforce the market pressure for companies to elevate the consideration of sustainability among managerial and Board priorities, whilst granting companies considerable flexibility in how they do this.
 
