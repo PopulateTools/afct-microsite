@@ -133,15 +133,17 @@ In this regard, key information is the following:
 Currently, a majority of companies report on issues which are not relevant from neither the financial nor the impact perspective, and provide no information on the materiality determination process. Typically, companies fill their reports with information on philanthropy, volunteering, and other CSR activities which are additional, rather than linked to their business. Companies’ reports often suggest that topics covered are selected because the company perceives them as being expected by their stakeholders, but fail to explain whether those topics are in any way material.\
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
-  <div style="width: 10%; display: inline-block; vertical-align: top; padding: 10px;">
+  <div style="width: 15%; display: inline-block; vertical-align: top; padding: 10px;">
     <span style="display: block; font-weight: bold;">Explanation box:</span>
     <span style="font-style: italic;">The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information.</span>
 
 <span>See the visual in <b>here(<a href="https://ec.europa.eu/finance/docs/policy/190618-climate-related-information-reporting-guidelines_en.pdf">source EC</a>)</b> </span>
 
   </div>
-  <div style="width:88%; display: inline-block;">
-    <img style="max-width: 100%;" src="/assets/double-materiality-diagram.png">
+  <div style="width:82%; display: inline-block;">
+<a href="/assets/double-materiality-diagram.png">
+<img style="max-width: 100%;" src="/assets/double-materiality-diagram.png">
+</a>
   </div>
 </div>
 
