@@ -73,12 +73,20 @@ As the Alliance for Corporate Transparency research on corporate sustainability 
 
 *\*banks and insurers fall in the scope of the NFRD (they are both preparers and users), and of the SFDR (as far as their investment activities are concerned)*
 
-**Additional information:**
-
-Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.
-
-* [Full recording](https://bit.ly/2NQIT6g) “Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points [here ](https://www.cdsb.net/what-you-need-know/1160/starting-top-why-non-financial-reporting-needs-strong-corporate-governance)
-* **[Policy recommendations](http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf)** on Sustainable Corporate Governance by Frank Bold
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+  <p style="font-weight: bold;">Additional information:</p>
+  <p>Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.</p>
+  <ul>
+    <li>
+    <span><a style="font-weight: bold" href="https://bit.ly/2NQIT6g">Full recording </a>“Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points</span>
+    </li>
+    <li>
+      <span>
+      <a style="font-weight: bold" href="http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf">Policy recommendations</a> on Sustainable Corporate Governance by Frank Bold
+      </span>
+    </li>
+  </ul>
+</div>
 
 <h1 id="the-need-for-a-strategic">The need for a strategic approach to climate change and human rights</h1>
 
@@ -102,7 +110,7 @@ Reporting on the governance related matters concerning sustainability is address
 
 In reaction to these problems, the reform of the EU Non-Financial Reporting Directive (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)) will aim to help companies by clarifying which information should be reported on governance and integration of sustainability in corporate strategy. The European Project Task Force on Non-Financial Reporting Standards under the [EFRAG](https://www.efrag.org/) has recommended in its final advice to the European Commission that **future EU reporting standards** should include a standard on “Strategy”, to be structured under three components: a) Overall business strategy b) Material sustainability risks, threats & opportunities and c) Sustainability governance & organisation. This overarching standard should be then supported by topical standards, for example on climate-related information, addressing Implementation (policies and actions) and Performance measurement (achievements and progress measured by KPIs). 
 
-![](/assets/diagram-proposed-reporting-areas-by-the-project-task-force-on-eu-standards.jpg "Diagram: \\\\\\\\\\"Proposed reporting areas by the Project Task Force on EU Standards\\\\\\\\\\" (source EFRAG) ")
+![](/assets/diagram-proposed-reporting-areas-by-the-project-task-force-on-eu-standards.jpg "Diagram: \\\\\\\\\\\"Proposed reporting areas by the Project Task Force on EU Standards\\\\\\\\\\\" (source EFRAG) ")
 
 **Diagram: "Proposed reporting areas by the Project Task Force on EU Standards" ([source EFRAG](https://www.efrag.org/Assets/Download?assetUrl=/sites/webpublishing/SiteAssets/PTF-NFRS%2520Outreach%2520Document%2520final.pdf))**
 
