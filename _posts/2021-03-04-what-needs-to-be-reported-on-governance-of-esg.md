@@ -65,9 +65,11 @@ As the Alliance for Corporate Transparency research on corporate sustainability 
 >
 > Along similar lines, Rients Abma, executive director of Eumedion, an organisation that represents the interests of institutional investors with investments in Dutch listed companies also stresses that *“Sustainability risks and opportunities will impact the company’s ability to create long-term value and to promote the company’s long-term sustainable success. Consequently, proper and knowledgeable Board oversight on these subjects and meaningful reporting on the execution of that duty are extremely important for institutional investors”.*
 
-<a href="/assets/2103-diagram-reporting-strategy-and-governance-framework_frank-bold.png">
-    <img src="/assets/2103-diagram-reporting-strategy-and-governance-framework_frank-bold.png">
+<a href="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
+    <img src="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
 </a>
+
+
 
 **Diagram**: Reporting, strategy and governance framework for sustainable finance
 
