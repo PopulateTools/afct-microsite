@@ -67,6 +67,9 @@ As the Alliance for Corporate Transparency research on corporate sustainability 
 
 ![](/assets/diagram-reporting-strategy-and-governance-framework-for-sustainable-finance_frank-bold.png "Diagram: Reporting, strategy and governance framework for sustainable finance")
 
+<a href="/assets/diagram-reporting-strategy-and-governance-framework-for-sustainable-finance_frank-bold.png">
+</a>
+
 **Diagram**: Reporting, strategy and governance framework for sustainable finance
 
 *\*banks and insurers fall in the scope of the NFRD (they are both preparers and users), and of the SFDR (as far as their investment activities are concerned)*
@@ -100,7 +103,7 @@ Reporting on the governance related matters concerning sustainability is address
 
 In reaction to these problems, the reform of the EU Non-Financial Reporting Directive (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)) will aim to help companies by clarifying which information should be reported on governance and integration of sustainability in corporate strategy. The European Project Task Force on Non-Financial Reporting Standards under the [EFRAG](https://www.efrag.org/) has recommended in its final advice to the European Commission that **future EU reporting standards** should include a standard on “Strategy”, to be structured under three components: a) Overall business strategy b) Material sustainability risks, threats & opportunities and c) Sustainability governance & organisation. This overarching standard should be then supported by topical standards, for example on climate-related information, addressing Implementation (policies and actions) and Performance measurement (achievements and progress measured by KPIs). 
 
-![](/assets/diagram-proposed-reporting-areas-by-the-project-task-force-on-eu-standards.jpg "Diagram: \\\\\\\"Proposed reporting areas by the Project Task Force on EU Standards\\\\\\\" (source EFRAG) ")
+![](/assets/diagram-proposed-reporting-areas-by-the-project-task-force-on-eu-standards.jpg "Diagram: \\\\\\\\\\"Proposed reporting areas by the Project Task Force on EU Standards\\\\\\\\\\" (source EFRAG) ")
 
 **Diagram: "Proposed reporting areas by the Project Task Force on EU Standards" ([source EFRAG](https://www.efrag.org/Assets/Download?assetUrl=/sites/webpublishing/SiteAssets/PTF-NFRS%2520Outreach%2520Document%2520final.pdf))**
 
