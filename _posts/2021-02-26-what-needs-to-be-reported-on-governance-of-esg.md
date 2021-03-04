@@ -73,12 +73,12 @@ As the Alliance for Corporate Transparency research on corporate sustainability 
 
 *\*banks and insurers fall in the scope of the NFRD (they are both preparers and users), and of the SFDR (as far as their investment activities are concerned)*
 
-> Additional information:
->
-> Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.
->
-> * [Full recording](https://bit.ly/2NQIT6g) “Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points [here ](https://www.cdsb.net/what-you-need-know/1160/starting-top-why-non-financial-reporting-needs-strong-corporate-governance)
-> * **[Policy recommendations](http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf)** on Sustainable Corporate Governance by Frank Bold
+**Additional information:**
+
+Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.
+
+* [Full recording](https://bit.ly/2NQIT6g) “Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points [here ](https://www.cdsb.net/what-you-need-know/1160/starting-top-why-non-financial-reporting-needs-strong-corporate-governance)
+* **[Policy recommendations](http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf)** on Sustainable Corporate Governance by Frank Bold
 
 <h1 id="the-need-for-a-strategic">The need for a strategic approach to climate change and human rights</h1>
 
