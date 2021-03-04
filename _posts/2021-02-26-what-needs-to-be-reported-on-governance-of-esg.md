@@ -15,11 +15,23 @@ img: ""
 ---
 *Written by Frank Bold as the second article of the series of monthly briefings on sustainability reporting in 2021. The first one outlined upcoming policy developments for this year including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
 
-Content outline
-
-<ul>
-<li><a href="#the-importance-of-governance-in-sustainability:-the-reason-behind-the-EU-Commission’s-proposals">The importance of governance in sustainability: the reason behind the EU Commission’s proposals </a></li>
-</ul>
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+  <span>Content Outline</span>
+  <ul>
+    <li>
+      <a href="#the-importance-of-governance">The importance of governance in sustainability: the reason behind the EU Commission’s proposals </a>
+    </li>
+    <li>
+      <a href="#the-need-for-a-strategic">The need for a strategic approach to climate change and human rights</a>
+    </li>
+    <li>
+      <a href="#how-can-companies-better">How can companies better report the 'G' in ESG</a>
+    </li>
+    <li>
+      <a href="#three-essentials-for-disclosure">Three essentials for disclosure on governance matters</a>
+    </li>
+  </ul>
+</div>
 
 In 2021, the European Commission will present two intertwined legislative proposals aiming to foster integration of sustainability in corporate strategies. The first one, [the reform of the EU Non-Financial Reporting Directive](https://ec.europa.eu/info/business-economy-euro/company-reporting-and-auditing/company-reporting/non-financial-reporting_en) (NFRD), aims to ensure **transparency on companies’ sustainability performance** to improve corporate accountability and enable sustainable finance (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)). The second one, the [sustainable corporate governance](https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12548-Sustainable-corporate-governance) initiative, will clarify corporate obligations to **identify, prevent and mitigate severe human rights and environmental impacts, and Board oversight over sustainability** risks, strategy and targets.
 Such a combination of transparency and governance incentives, together with the push of responsible investors, will reinforce the market pressure for companies to elevate the consideration of sustainability among managerial and Board priorities, whilst granting companies considerable flexibility in how they do this.
@@ -38,7 +50,7 @@ In the second part, we provide an overview of the three areas of information on 
 2. **Determination of relevant risks and salient issues (double materiality).**
 3. **Organisation and integration of sustainability in governance.**
 
-# The importance of governance in sustainability: the reason behind the EU Commission’s proposals
+<h1 id="the-importance-of-governance">The importance of governance in sustainability: the reason behind the EU Commission’s proposals</h1>
 
 Directors’ associations, business organisations and [investors](https://www.ipe.com/ecs-sustainable-governance-play-asset-owners-wary-of-potential-snags/10050702.article), increasingly recognise the urgency of the climate crisis and the need to fully integrate sustainability and respect for human rights in companies’ business models and risk management. The sustainability crisis and the challenge of ensuring recovery from the CoViD-19 crisis are of an unprecedented scale and urgency, as highlighted by Commissioner Reynders who also stressed that *“companies that are ahead in the game will benefit most*”. According to an estimate from the European Commission, **at least half a trillion euros of additional investments per year will need to be redirected from business-as-usual to sustainable activities.** The risks and opportunities linked to the realignment of finance and markets are therefore equally unprecedented. 
 
@@ -65,7 +77,7 @@ As the Alliance for Corporate Transparency research on corporate sustainability 
 > * [Full recording](https://bit.ly/2NQIT6g) “Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points [here ](https://www.cdsb.net/what-you-need-know/1160/starting-top-why-non-financial-reporting-needs-strong-corporate-governance)
 > * **[Policy recommendations](http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf)** on Sustainable Corporate Governance by Frank Bold
 
-## The need for a strategic approach to climate change and human rights 
+<h1 id="the-need-for-a-strategic">The need for a strategic approach to climate change and human rights</h1>
 
 With respect to climate change risks, it is paramount **that energy producers, manufacturers with high greenhouse gas emission intensity, and banks and investors urgently chart their long-term transition plans to survive - and ideally thrive on - the major market changes just beyond the horizon**. A recent [study by CDP](https://www.cdp.net/en/articles/climate/european-companies-invest-124-billion-in-low-carbon) showed for example that European companies had identified €1.22 trillion in new low carbon business opportunities, such as through higher demand for electric vehicles and green infrastructure. The value of these opportunities is more than six times the investment cost of €192 billion. Yet, Alliance for Corporate Transparency found out in its [2020 research](https://www.allianceforcorporatetransparency.org/database/2020.html) of 300 European companies that less than 17% explain business opportunities related to sustainability challenges. 
 
@@ -79,7 +91,7 @@ A critical step for companies to prevent or mitigate sustainability risks and im
 >
 > John Ruggie, author of the United Nations Guiding Principles on Business and Human Rights, [has recently explained](https://youtu.be/45ViVRjnxCE?t=698) the connection with human rights due diligence as follows: "By making HRDD mandatory, with penalties for non-compliance as the EC intends, it becomes a legal responsibility not only for management but also for Board oversight." In this context, investors as well as leading reporting frameworks, increasingly expect transparency on Board oversight over due diligence and materiality determination processes and how the results of these processes are reflected in the company’s strategy as a whole.
 
-## How can companies better report the 'G' in ESG
+<h1 id="how-can-companies-better">How can companies better report the 'G' in ESG</h1>
 
 Reporting on the governance related matters concerning sustainability is addressed by leading reporting standards, including [GRI](https://www.globalreporting.org/), [SASB](https://www.sasb.org/) and [CDSB](https://www.cdsb.net/), as well as in the benchmarks developed by the [World Benchmarking Alliance](https://www.worldbenchmarkingalliance.org/). The Recommendations of the Task Force on Climate Related Financial Disclosures, the standard for climate reporting endorsed by the international investors community as well as by the European Commission, includes board-level governance of an organisation’s climate risks and opportunities as one of the four main areas for disclosure. Similarly, the UN Guiding Principles on Business and Human Rights require the involvement of the most senior level of a company’s governance in discussing its salient human rights challenges, policies and targets, and in tracking progress. 
 
@@ -87,11 +99,11 @@ Reporting on the governance related matters concerning sustainability is address
 
 In reaction to these problems, the reform of the EU Non-Financial Reporting Directive (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)) will aim to help companies by clarifying which information should be reported on governance and integration of sustainability in corporate strategy. The European Project Task Force on Non-Financial Reporting Standards under the [EFRAG](https://www.efrag.org/) has recommended in its final advice to the European Commission that **future EU reporting standards** should include a standard on “Strategy”, to be structured under three components: a) Overall business strategy b) Material sustainability risks, threats & opportunities and c) Sustainability governance & organisation. This overarching standard should be then supported by topical standards, for example on climate-related information, addressing Implementation (policies and actions) and Performance measurement (achievements and progress measured by KPIs). 
 
-![](/assets/diagram-proposed-reporting-areas-by-the-project-task-force-on-eu-standards.jpg "Diagram: \\\\\"Proposed reporting areas by the Project Task Force on EU Standards\\\\\" (source EFRAG) ")
+![](/assets/diagram-proposed-reporting-areas-by-the-project-task-force-on-eu-standards.jpg "Diagram: \\\\\\\"Proposed reporting areas by the Project Task Force on EU Standards\\\\\\\" (source EFRAG) ")
 
 **Diagram: "Proposed reporting areas by the Project Task Force on EU Standards" ([source EFRAG](https://www.efrag.org/Assets/Download?assetUrl=/sites/webpublishing/SiteAssets/PTF-NFRS%2520Outreach%2520Document%2520final.pdf))**
 
-## Three essentials for disclosure on governance matters
+<h1 id="three-essentials-for-disclosure">Three essentials for disclosure on governance matters</h1>
 
 In the three areas of Strategic and Governance-related information, there are several categories of information which are critical for the success of a company’s sustainability strategy and reporting, are already expected by leading reporting standards and large investors, and will become increasingly important for companies at the top of value chains:
 
@@ -118,11 +130,20 @@ In this regard, key information is the following:
 * **A description of sustainability issues determined by this process alongside an explanation of why the issues are deemed material** from either the financial or impact perspectives
 * **Details of the company’s exposure to risks or involvement in impacts** for these issues.
 
-Currently, a majority of companies report on issues which are not relevant from neither the financial nor the impact perspective, and provide no information on the materiality determination process. Typically, companies fill their reports with information on philanthropy, volunteering, and other CSR activities which are additional, rather than linked to their business. Companies’ reports often suggest that topics covered are selected because the company perceives them as being expected by their stakeholders, but fail to explain whether those topics are in any way material.
+Currently, a majority of companies report on issues which are not relevant from neither the financial nor the impact perspective, and provide no information on the materiality determination process. Typically, companies fill their reports with information on philanthropy, volunteering, and other CSR activities which are additional, rather than linked to their business. Companies’ reports often suggest that topics covered are selected because the company perceives them as being expected by their stakeholders, but fail to explain whether those topics are in any way material.\
 
-![](/assets/double-materiality-diagram.png "The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information")
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+  <div style="width: 10%; display: inline-block; vertical-align: top; padding: 10px;">
+    <span style="display: block; font-weight: bold;">Explanation box:</span>
+    <span style="font-style: italic;">The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information.</span>
 
-Diagram:  The double materiality perspective of the Non-Financial Reporting Directive in the context of reporting climate-related information. ([source EC](https://ec.europa.eu/finance/docs/policy/190618-climate-related-information-reporting-guidelines_en.pdf))
+<span>See the visual in <b>here(<a href="https://ec.europa.eu/finance/docs/policy/190618-climate-related-information-reporting-guidelines_en.pdf">source EC</a>)</b> </span>
+
+  </div>
+  <div style="width:88%; display: inline-block;">
+    <img style="max-width: 100%;" src="/assets/double-materiality-diagram.png">
+  </div>
+</div>
 
 #### 3. Sustainability governance and organisation:
 
@@ -132,10 +153,4 @@ The extent to which sustainability considerations are integrated across a compan
 * **An explanation of how a company’s sustainability targets and KPIs are integrated in the performance incentives** of the management of the company.  
 * **An evaluation of the expertise available to the Board to monitor the implementation and review the content of the company’s sustainability strategy.** Such expertise should be proportionate to the complexity of the challenges facing the company, and can be ensured by Board Members with relevant subject matter expertise or through an advisory committee composed of independent experts and managers.
 
-  ………………………………………………………………………………………...............................................................................................................
-
-  ![](/assets/fbsociety-logo.png)
-
-  *This is the second article of Frank Bold’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021. [The January briefing](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for this year,  including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Look out for our March topic on the connection between the Non-financial reporting directive, the Taxonomy and the Sustainable Finance Disclosure Regulation.*
-
-![]()
+<hr></hr><p><a href="https://en.frankbold.org/" style="max-width: 200px; display: block; margin-left: -29px; margin-bottom: -29px;"><img src="/assets/logos/logo-frankbold.png"></a></p><span style="font-style: italic;">This is the second article of <u>Frank Bold’s</u> series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021.<a href="https://www.allianceforcorporatetransparency.org/news/countdown-reform.html">The January briefing</a> outlined upcoming policy developments for this year,  including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Look out for our March topic on the connection between the Non-financial reporting directive, the Taxonomy and the Sustainable Finance Disclosure Regulation.</span><hr></hr><div class="center"><a class="link" target="_blank" href="http://eepurl.com/dJPBjQ">Subscribe to our newsletter</a> to receive updates on the project.</div>
