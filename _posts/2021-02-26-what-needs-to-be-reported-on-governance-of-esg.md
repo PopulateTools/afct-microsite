@@ -155,6 +155,6 @@ The extent to which sustainability considerations are integrated across a compan
 * **An explanation of how a company’s sustainability targets and KPIs are integrated in the performance incentives** of the management of the company.  
 * **An evaluation of the expertise available to the Board to monitor the implementation and review the content of the company’s sustainability strategy.** Such expertise should be proportionate to the complexity of the challenges facing the company, and can be ensured by Board Members with relevant subject matter expertise or through an advisory committee composed of independent experts and managers.
 
-<hr></hr>
+<hr>
 
 <a href="https://en.frankbold.org/" style="max-width: 200px; display: block; margin-left: -29px; margin-bottom: -29px;"><img src="/assets/logos/logo-frankbold.png"></a><span style="font-style: italic;">This is the second article of <u>Frank Bold’s</u> series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021.<a href="https://www.allianceforcorporatetransparency.org/news/countdown-reform.html">The January briefing</a> outlined upcoming policy developments for this year,  including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Look out for our March topic on the connection between the Non-financial reporting directive, the Taxonomy and the Sustainable Finance Disclosure Regulation.</span>
