@@ -23,7 +23,7 @@ EU standards play a critical role in this regard. The recommendations of the Pro
 
 Below, we provide an overview and reflections on the most important recommendations for the success of the work of the future EU Standard Setter (ESS). 
 
-### 1. Quality criteria to be followed by the ESS and reporting entities
+### **1. Quality criteria to be followed by the ESS and reporting entities**
 
 The PTF outlines a set of characteristics that should guide the development of EU standards (1); both the ESS and individual entities should ensure that information is **relevant**, conveys a **faithful representation** of reality, is comparable, **understandable** and **reliable** (2).
 
