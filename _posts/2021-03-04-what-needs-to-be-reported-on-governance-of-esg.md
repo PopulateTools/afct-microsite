@@ -69,8 +69,6 @@ As the Alliance for Corporate Transparency research on corporate sustainability 
     <img src="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
 </a>
 
-
-
 **Diagram**: Reporting, strategy and governance framework for sustainable finance
 
 *\*banks and insurers fall in the scope of the NFRD (they are both preparers and users), and of the SFDR (as far as their investment activities are concerned)*
@@ -110,11 +108,13 @@ Reporting on the governance related matters concerning sustainability is address
 
 **The EU Non-Financial Reporting Directive requires companies to disclose strategic information, but it fails to provide clear guidance on how to determine which information is material and how to select relevant data and metrics** from existing sustainability reporting initiatives and standards, which together include over 5000 highly divergent KPIs. This, combined with proprietary questionnaires of rating agencies, investors and buyers in the supply chain, makes it very difficult for companies to approach reporting and sustainability from a strategic perspective. 
 
-In reaction to these problems, the reform of the EU Non-Financial Reporting Directive (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)) will aim to help companies by clarifying which information should be reported on governance and integration of sustainability in corporate strategy. The European Project Task Force on Non-Financial Reporting Standards under the [EFRAG](https://www.efrag.org/) has recommended in its final advice to the European Commission that **future EU reporting standards** should include a standard on “Strategy”, to be structured under three components: a) Overall business strategy b) Material sustainability risks, threats & opportunities and c) Sustainability governance & organisation. This overarching standard should be then supported by topical standards, for example on climate-related information, addressing Implementation (policies and actions) and Performance measurement (achievements and progress measured by KPIs). 
+In reaction to these problems, the reform of the EU Non-Financial Reporting Directive (see our previous article [here](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html)) will aim to help companies by clarifying which information should be reported on governance and integration of sustainability in corporate strategy. The European Project Task Force on Non-Financial Reporting Standards under the [EFRAG](https://www.efrag.org/) has recommended in its [final advice ](https://ec.europa.eu/info/sites/info/files/business_economy_euro/banking_and_finance/documents/210308-report-efrag-sustainability-reporting-standard-setting_en.pdf)to the European Commission that **future EU reporting standards** should include a standard on “Strategy”, to be structured under three components: a) Overall business strategy b) Material sustainability risks, threats & opportunities and c) Sustainability governance & organisation. This overarching standard should be then supported by topical standards, for example on climate-related information, addressing Implementation (policies and actions) and Performance measurement (achievements and progress measured by KPIs). 
+
+( Detailed analysis and public reaction from the Alliance for Corporate Transparency on the recommendations included in the final report published by EFRAG's PTF on non-financial reporting standards can be found **[here](https://www.allianceforcorporatetransparency.org/news/future-eu-sustainability-standards-ngos-welcome-the-final-recommendations-of-efrag-s-project-task-force-for-the-european-commission.html)**)
 
 ![](/assets/diagram-proposed-reporting-areas-by-the-project-task-force-on-eu-standards.jpg "Proposed reporting areas by the Project Task Force on EU Standards (source EFRAG) ")
 
-**Diagram: "Proposed reporting areas by the Project Task Force on EU Standards" ([source EFRAG](https://www.efrag.org/Assets/Download?assetUrl=/sites/webpublishing/SiteAssets/PTF-NFRS%2520Outreach%2520Document%2520final.pdf))**
+**Diagram: "Proposed reporting areas by the Project Task Force on EU Standards" (source [EFRAG](https://ec.europa.eu/info/sites/info/files/business_economy_euro/banking_and_finance/documents/210308-report-efrag-sustainability-reporting-standard-setting_en.pdf))**
 
 <h1 id="three-essentials-for-disclosure">Three essentials for disclosure on governance matters</h1>
 
