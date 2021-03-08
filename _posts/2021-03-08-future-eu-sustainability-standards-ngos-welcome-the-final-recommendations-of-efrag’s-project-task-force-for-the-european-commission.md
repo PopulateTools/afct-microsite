@@ -48,8 +48,6 @@ The PTF recommends adopting a **three-level reporting approach** (8)**, which in
 1. Sector agnostic disclosures: These should be based on guidance provided in the reformed EU NFR Directive, based on double-materiality; 
 2. Sector-specific disclosures: For issues that do not apply cross-sectorally, the EU Standard-Setter should provide thematic clarifications for specific reporting requirements relevant for given sectors. These should be based on a recognised classification of sectors (e.g. NACE)(9); 
 3. Guidance for entity-specific disclosures: The ESS should provide guidance for the definition of entity-specific disclosures, based on double-materiality. 
-
-
 4. ### Value chain
 
 The PTF makes several important recommendations on how the standards should approach risks and impacts in value chains. Firstly, it recognises that **a material topic may manifest at different levels in different entities’ scope of operations and/or value chain**, and thus the standards need to ensure that disclosures reflect information that is sufficiently specific to the level at which the material matter arises (10). Secondly, to ensure relevance and granularity, it highlights **the need for sector-specific standards to address certain widespread impacts in value chains**, as they tend to be clearly linked with certain sectors and levels (11). Thirdly, it recommends that the sequence in which the ESS develops standards should reflect the **urgent need to improve reporting on the most severe impacts and significant dependencies** connected to a reporting entity’s operations and value chains, regardless of its level of control or influence over them (12). 
@@ -77,3 +75,40 @@ Likewise, instead of “S”, standards could be developed by focusing on the ca
 The PTF also identifies “G” (governance) as a reporting topic, including subtopics such as governance, business & ethics, management of the quality of relationships with stakeholders, etc. While we agree on their relevance, we view these as a natural extension of the cross-topical reporting area defined as ‘strategy’ in the report’s section “Three Reporting Areas”, rather than a reporting topic as such.
 
 Overall, we understand the PTF’s focus on the ESG classification of topics, yet we would advise a more nuanced approach that more adequately reflects the nature and interconnectivity of relevant impacts and risks faced by companies; and which we believe would not contradict the PTF’s recommendations, but rather fits into the already robust system described in the report.
+
+<hr>
+
+</a><span style="font-style: italic;">
+
+(1) PTF Report, Proposal #14, p.66.
+
+(2) PTF Report, Section ‘Qualitative characteristics of sustainability information’, p.64..
+
+(3) PTF Report, Proposal #15, p.67.
+
+(4) PTF Report, Section ‘Focus on certain specificities of sustainability information’, p.66. 
+
+(5) PTF Report, Proposal #22, 76.
+
+(6) PTF Report, Proposal #22, p.76
+
+(7) PTF Report, Section ‘Additional focus on certain aspects of the entity-level double materiality assessment process’, p.80
+
+(8) PTF Report, Proposal #24, p.79
+
+\
+(9) PTF Report, Proposal #12, p.59
+
+(10)
+
+(11)
+
+(12)
+
+(13)
+
+(14)
+
+(15)      
+
+</span>
