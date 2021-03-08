@@ -23,7 +23,7 @@ EU standards play a critical role in this regard. The recommendations of the Pro
 
 Below, we provide an overview and reflections on the most important recommendations for the success of the work of the future EU Standard Setter (ESS). 
 
-1. ### **Quality criteria to be followed by the ESS and reporting entities**
+### **1. Quality criteria to be followed by the ESS and reporting entities**
 
 The PTF outlines a set of characteristics that should guide the development of EU standards (1); both the ESS and individual entities should ensure that information is **relevant**, conveys a **faithful representation** of reality, is comparable, **understandable** and **reliable** (2).
 
@@ -31,7 +31,7 @@ Moreover, the PTF identifies a set of criteria against which the quality of sele
 
 As found by the Alliance for Corporate Transparency, the quality of information currently reported by companies is not sufficient to ensure access to relevant information and lacks relevance, which is why adhering to the above recommendations in the development of the standards will be crucial to advance sustainability reporting. 
 
-2. ### Double-materiality application 
+### 2. Double-materiality application 
 
 Companies should assess the materiality of individual topics by analysing (a) severe impacts on people and the planet and (b) financial risks to the company. **While these two perspectives interact (impact and financial risk perspectives), their assessment should be carried out in their own right, and individually for each topic** (5). This is essential given the different nature of separate themes. For example, while for impacts on people and the environment, materiality is intrinsically based on the existence of adverse impacts or the risks of such impacts, and on assessing their severity through due diligence, for climate change, a company may face major financial risks and opportunities even if its impacts on climate change are not significant. 
 
@@ -41,18 +41,19 @@ Companies should assess the materiality of individual topics by analysing (a) se
 
 As highlighted in the PTF report, the European standards should also reflect **the interconnected dynamic nature of materiality**, in particular the pre-financial quality of the information on impacts. The standards should ensure that companies are attuned to the fact that a topic which is usually considered from an impact perspective, can quickly become financially material due to a range of social, regulatory and environmental forces.
 
-3. ### Levels of reporting and standards setting 
+### 3. Levels of reporting and standards setting 
 
 The PTF recommends adopting a **three-level reporting approach** (8)**, which in our view allows to strike a balance between relevance and comparability of disclosure:** 
 
 1. Sector agnostic disclosures: These should be based on guidance provided in the reformed EU NFR Directive, based on double-materiality; 
 2. Sector-specific disclosures: For issues that do not apply cross-sectorally, the EU Standard-Setter should provide thematic clarifications for specific reporting requirements relevant for given sectors. These should be based on a recognised classification of sectors (e.g. NACE)(9); 
 3. Guidance for entity-specific disclosures: The ESS should provide guidance for the definition of entity-specific disclosures, based on double-materiality. 
-4. ### Value chain
+
+### 4. Value chain
 
 The PTF makes several important recommendations on how the standards should approach risks and impacts in value chains. Firstly, it recognises that **a material topic may manifest at different levels in different entities’ scope of operations and/or value chain**, and thus the standards need to ensure that disclosures reflect information that is sufficiently specific to the level at which the material matter arises (10). Secondly, to ensure relevance and granularity, it highlights **the need for sector-specific standards to address certain widespread impacts in value chains**, as they tend to be clearly linked with certain sectors and levels (11). Thirdly, it recommends that the sequence in which the ESS develops standards should reflect the **urgent need to improve reporting on the most severe impacts and significant dependencies** connected to a reporting entity’s operations and value chains, regardless of its level of control or influence over them (12). 
 
-5. ### Forward-looking information 
+### 5. Forward-looking information 
 
 Meeting the goals of the EU Green Deal will [require](https://ec.europa.eu/commission/commissioners/2019-2024/mcguinness/announcements/keynote-address-launch-climate-disclosure-standards-board-report-state-eu-environmental-disclosures_en) additional investments of at least half a trillion euros per year. **Access to information on forward-looking targets and company transition plans is critical to redirect capital flows towards sustainable investments**. However, as shown by the Alliance for Corporate Transparency, such information is missing from company reports; only 13.9% of companies report on the alignment of their climate targets with a science-based methodology or public objectives, expressed in the Paris Agreement, to limit global warming to well below 2°C, and 6.6% report on climate-related scenarios as required by the TCFD recommendations. 
 
@@ -60,13 +61,13 @@ In this regard, the PTF recommends that the European standards should encourage 
 
 Such information is essential to provide interested stakeholders with a true insight into a company’s performance and management of impacts and risks, able to soundly inform decision-making. 
 
-6. ### Priorities & Roadmap 
+### 6. Priorities & Roadmap 
 
 In alignment with the Alliance for Corporate Transparency [joint position](https://www.allianceforcorporatetransparency.org/assets/Reform_NFRD_Joint_Position_Alliance_for_Corporate_Transparency_final-49dd752b7c4b60a78445a7552004d2d3a3bced19ad48c3072961f9b1eccad53a.pdf), **the PTF stresses the importance for the EU NFR Directive to provide guidance on priorities for the development of EU standards** (14). Setting such priorities is a political decision, and as such should be a responsibility of EU policymakers, rather than the ESS. **Level 1 legislation should define a set of core disclosures and priorities to focus on, which in turn should be specified by bespoke sector-sensitive reporting standards at Level 2.**
 
 Given the urgency of particular issues, there are themes which should be prioritised (15), especially for high-risk sectors; examples include climate change, human rights and environmental due diligence, and impacts on people and the environment of high-risk industries along the supply chain (e.g. for the Apparel and Textile sector). Importantly, within each theme, the selection of core mandatory standards (to be selected based on the quality criteria previously discussed) should be lean, to avoid excessively long lists of irrelevant indicators.
 
-7. ### Complementary recommendations on areas for improvement 
+### 7. Complementary recommendations on areas for improvement 
 
 The current categorisation of topics is one of the PTF recommendations we believe might require a more nuanced approach. Categorising topics under the ESG nomenclature can be confusing; certain issues fall under different categories (e.g. often the case for human rights and environmental due diligence). As such, in the case of components E (environment) and S (social), we would advise a more nuanced definition of topics. This is for example already done in the case of “E”, as reflected in the PTF’s suggestion to distinguish between six environmental areas, in alignment with the EU Taxonomy: climate change, water & marine resources, biodiversity & ecosystems, circular economy, pollution. 
 
@@ -77,8 +78,6 @@ The PTF also identifies “G” (governance) as a reporting topic, including sub
 Overall, we understand the PTF’s focus on the ESG classification of topics, yet we would advise a more nuanced approach that more adequately reflects the nature and interconnectivity of relevant impacts and risks faced by companies; and which we believe would not contradict the PTF’s recommendations, but rather fits into the already robust system described in the report.
 
 <hr>
-
-</a><span style="font-style: italic;">
 
 (1) PTF Report, Proposal #14, p.66.
 
@@ -109,5 +108,3 @@ Overall, we understand the PTF’s focus on the ESG classification of topics, ye
 (14) PTF Report, Section ‘Sector-agnostic, sector-specific and entity-specific material disclosures’, pp.77-79
 
 (15) PTF Report, Proposals #44 and #46, p.112 and p.114
-
-</span>
