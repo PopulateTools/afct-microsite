@@ -96,19 +96,18 @@ Overall, we understand the PTF’s focus on the ESG classification of topics, ye
 
 (8) PTF Report, Proposal #24, p.79
 
-\
 (9) PTF Report, Proposal #12, p.59
 
-(10)
+(10) PTF Report, Proposal #20, p.73
 
-(11)
+(11) PTF Report, Section ‘Ensuring that disclosures are applied at the most relevant level(s) in the entity’s controlled operations and/or value chain’, pp.72-73; Proposal #20, p.73
 
-(12)
+(12) PTF Report, Proposal #21, p.74
 
-(13)
+(13) PTF Report, Proposal #18, p. 70
 
-(14)
+(14) PTF Report, Section ‘Sector-agnostic, sector-specific and entity-specific material disclosures’, pp.77-79
 
-(15)      
+(15) PTF Report, Proposals #44 and #46, p.112 and p.114
 
 </span>
