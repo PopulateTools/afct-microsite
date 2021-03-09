@@ -85,6 +85,12 @@ As the Alliance for Corporate Transparency research on corporate sustainability 
       <a style="font-weight: bold" href="http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf">Policy recommendations</a> on Sustainable Corporate Governance by Frank Bold
       </span>
     </li>
+
+<li>
+      <span>
+      <a style="font-weight: bold" href="https://themoderncorporation.wordpress.com/call-to-action-on-sustainable-corporate-governance/">Open letter </a> "Call to Action on Sustainable Corporate Governance” by leaders in business, investment and financial institutions, and academia
+      </span>
+    </li>
   </ul>
 </div>
 
