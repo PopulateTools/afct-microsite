@@ -1,14 +1,22 @@
 ---
-title: "Countdown for the reform that will overhaul companies’ sustainability reporting obligations in Europe"
-date: 2021-01-29 00:00:00 Z
 layout: post
+title: Countdown for the reform that will overhaul companies’ sustainability
+  reporting obligations in Europe
+date: 2021-01-29 00:00:00 Z
+intro: The European Union will take major action in 2021 to expand its leading
+  position on sustainable finance, in order to strategically redirect private
+  and public money to sustainable activities. Such realignment of investments
+  will be critical to meet the Union’s 2030 targets agreed in Paris and deliver
+  on the growth strategy set in the European Green Deal that aims to tackle the
+  existential threat to Europe and the world that climate change represents, and
+  achieve zero-net emissions of greenhouse gases by 2050 and decouple economic
+  growth from resource use.
 img: /assets/2101-cover.jpg
 img_listing: /assets/2101-cover.jpg
-intro: The European Union will take major action in 2021 to expand its leading position on sustainable finance, in order to strategically redirect private and public money to sustainable activities. Such realignment of investments will be critical to meet the Union’s 2030 targets agreed in Paris and deliver on the growth strategy set in the European Green Deal that aims to tackle the existential threat to Europe and the world that climate change represents, and achieve zero-net emissions of greenhouse gases by 2050 and decouple economic growth from resource use.
 ---
+![](/assets/timeline-nfrd-sfdr-taxonomy-standards-2-.png)
 
-_Written by [Frank Bold](http://en.frankbold.org/) as the first article of the series of monthly briefings on sustainability reporting and related themes provided throughout 2021. Views included in this article do not necessarily represent the opinion of other members in the Alliance._
-
+*Written by [Frank Bold](http://en.frankbold.org/) as the first article of the series of monthly briefings on sustainability reporting and related themes provided throughout 2021. Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
 
 <div style="border: 1px solid #DFDFDF; padding: 1.5em 1.5em 0 1.5em; font-size: .9rem;">
 
@@ -32,7 +40,7 @@ The EU Non-Financial Reporting Directive introduced in 2018 obligations for larg
 
 Below, we outline ten key issues that will be addressed in the reform. Critically, the reform will extend the scope of the law. Currently, the Directive applies to approximately 5 thousand companies, which may be extended to an additional range of at least 35 thousand large companies, up to 100 thousand businesses if high-risk medium-sized companies are included, in EU-27. 
 
-## What changes will this reform bring and which topics can we expect to be the main discussion points this year in the EU? 
+## What changes will this reform bring and which topics can we expect to be the main discussion points this year in the EU?
 
 For those not familiar with the Brussels-policy train, the revision of this legislation was included in the [Sustainable Finance Action Plan](https://ec.europa.eu/info/publications/sustainable-finance-renewed-strategy_en) and received overwhelming support from all stakeholders in the [public consultation](https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12129-Revision-of-Non-Financial-Reporting-Directive/public-consultation) organised by the European Commission last year: 82 % of business, investors and civil society organisations called for mandatory reporting obligations and the clarification of the legal framework. Similarly, [EFRAG](https://www.efrag.org/) (an advisory body to the EU institutions) was tasked with developing preparatory work for the creation of EU standards, which would represent a landmark step in global standardisation. 
 
@@ -42,22 +50,7 @@ Both the [European Green Deal](https://ec.europa.eu/info/strategy/priorities-201
 
 * The EU Commission will follow up on the Action Plan on financing sustainable growth with a renewed sustainable finance strategy set to be published in March 2021 alongside with the NFRD reform proposal. This roadmap will determine the next steps that the EU Commission will take in order to support the transition to a sustainable economy and will likely include: further work on integrating sustainability criteria in financial markets (i.e green bonds, digitalisation, retail investors, banking prudential regulation, asset and pension funds management, accounting standards and sustainability definitions in financial products and rating agencies). The renewed strategy is also expected to take into account the work that DG Justice is leading on sustainable corporate governance.
 
-  <div style="margin: 2em 0; display: grid; grid-template-columns: 42% 57%; column-gap: 25px;">
-
-    <div>
-      <strong>Key elements of European Sustainable Finance reform agenda (source: <a href="https://ec.europa.eu/transparency/regexpert/index.cfm?do=groupDetail.groupMeetingDoc&docid=35651">EC</a>)</strong>
-      <a href="/assets/2101-SFAP_source EC-squashed.jpg"><img src="/assets/2101-SFAP_source EC-squashed.jpg"></a>
-    </div>
-
-    <div>
-      <strong>Where will the money come from? (source: <a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal/actions-being-taken-eu_en">EC</a>)</strong>
-      <a href="/assets/2101-Investing_graph_source-EC.jpg"><img src="/assets/2101-Investing_graph_source-EC.jpg"></a>
-    </div>
-    
-  </div>
-
 </div>
-
 
 ## Why is the reform needed?
 
@@ -73,7 +66,7 @@ The [assessment](https://www.allianceforcorporatetransparency.org/database/2019.
 
 In November 2020 [Alliance for Corporate Transparency](http://www.allianceforcorporatetransparency.org/) published a [new report](https://www.allianceforcorporatetransparency.org/assets/Research_Report_EUKI_2020-f0461cf90efa334f7ccdd9fac439c2c5029275c73a466be620860df9d6929439.pdf) focusing on the newest environmental disclosures of 300 companies from Central, Eastern and Southern Europe from sectors significantly exposed to climate risks, which showed some, yet insufficient progress. For example, 16% of the analysed companies framed their climate targets with respect to the goals of the Paris Agreement, while 8.9% consider risks over relevant time horizons.
 
-**_Visual resume of key findings available [here](https://www.allianceforcorporatetransparency.org/assets/Key_findings-15a7511a8224dd5b0310b07edfc96e6ac35710e0336498fa22f5a0dac9e47298.pdf)_**
+***Visual resume of key findings available [here](https://www.allianceforcorporatetransparency.org/assets/Key_findings-15a7511a8224dd5b0310b07edfc96e6ac35710e0336498fa22f5a0dac9e47298.pdf)***
 
 Other studies too point to similar conclusions and confirm a wide evidence-based research case for the revision, such as the one carried out by [CDSB](https://www.cdsb.net/nfrd2020); while 68% of the companies assessed by CDSB include some reference to the recommendations of the Task Force on Climate-related Financial Disclosures (TCFD), only 18% provide details on their resilience to different climate scenarios, and an even lower 4% disclose climate risks over short, medium and long-term time horizons. Public institutions such as the [German Environmental Agency](https://www.fair-finance-institute.de/wp-content/uploads/2021/01/CSR-Eval-Praesentation_BMU-Fachtagung_2020-12-18_final.pdf) have also published targeted research highlighting shortcomings in corporate reporting practices. The latter for example observes that while 83% of the companies included in its study cover climate in their reports, less than half disclose a climate target (45%); percentages fall further when looking into more detailed criteria, such as alignment of policies with long-term climate targets (17%), or reporting on risks (19%). Studies by consultants and accounting firms, while being more optimistically framed, also acknowledge these conceptual problems. For example, a global study by [KPMG](https://home.kpmg/xx/en/home/insights/2020/11/the-time-has-come-survey-of-sustainability-reporting.html) documented that reporting on UN Sustainable Development Goals is increasing; however, this remains highly unbalanced (86% companies report on positive SDG impacts only, without mentioning the negatives) and is typically disconnected from business goals. 
 
@@ -82,28 +75,28 @@ Even if there is timid but promising progress, with leading companies showing th
 The European Securities and Markets Authority (ESMA) also noted the persistent problems concerning the lack of quantitative disclosure, objective targets, and descriptions of human rights due diligence and climate risks. ESMA advised companies in [its latest statement on common enforcement priorities](https://www.esma.europa.eu/sites/default/files/library/esma32-63-1041_public_statement_on_the_european_common_enforcement_priorities_2020.pdf) to disclose risks and uncertainties as well as measures and targets linked to climate change in all relevant time horizons.
 
 ## Multiple players in a high stakes game
- 
+
 The complexity of the issue as well as the multiple and varied interests in these developments could severely undermine the successful outcome of the reform. **The legislation is an opportunity to simplify the reporting landscape and assist companies in focusing on the right data**. 
 
 Companies struggle to meet the multiple and sometimes confusing external expectations they face and that they themselves want to support (climate change targets, SDGs, sustainable investment), but need help in order to translate them in practical terms. The European framework can provide clarity to pull these different expectations together and provide more certainty for those in business to apply them. Equally, however, in case it fails to set clear minimum standards, it may just reinforce the competition between private reporting initiatives and rating agencies. The multiplicity of these standards - dubbed Alphabet soup as a reference to the wide range of standards, guidances and frameworks currently out there, which combined exceed 5000 KPIs - and investors’ own ESG methodologies place excessive burdens on companies, and obscures which information truly provides useful insights to companies, investors and other stakeholders. 
 
 Last year alone, the biggest five reporting initiatives, Big Four accounting firms ([WEF paper](https://www.responsible-investor.com/articles/comment-waiter-there-is-a-fly-in-my-esg-alphabet-soup)), as well as the [IFRS](http://ifrs.org) Foundation and numerous smaller initiatives reacted to the EU plans by proposing their own platforms to drive the process of standardisation or to provide the content for the EU standards. The problem is, as put by the European Commission, that no existing voluntary standard meets the needs of the EU NFRD. And simply combining these standards would merely cement the status quo - that is an excessively complicated system, which would do little in terms of bringing clarity and simplicity.
 
-Giulia Genuardi, Head of Sustainability Planning at ENEL [describes the situation as follows](http://en.frankbold.org/sites/default/files/publikace/summary_of_discussions_are_companies_in_southern_europe_ready_for_the_european_green_deal.pdf):  _“In the current stage, we have an alphabet soup, while at the same time, we have a big ambition: a structured approach to corporate sustainability reporting framework, enhancing existing standards and the role of qualitative information. Corporate reporting should be based on two pillars on an equal footing: Financial Reporting and Sustainability Reporting and one enabler: digital interconnection between pillars.”_
+Giulia Genuardi, Head of Sustainability Planning at ENEL [describes the situation as follows](http://en.frankbold.org/sites/default/files/publikace/summary_of_discussions_are_companies_in_southern_europe_ready_for_the_european_green_deal.pdf):  *“In the current stage, we have an alphabet soup, while at the same time, we have a big ambition: a structured approach to corporate sustainability reporting framework, enhancing existing standards and the role of qualitative information. Corporate reporting should be based on two pillars on an equal footing: Financial Reporting and Sustainability Reporting and one enabler: digital interconnection between pillars.”*
 
-Rahel Damamme, Stakeholder Engagement & Sustainability Prospective Manager from Decathlon shares her perspective and hands-on experience from reporting preparation: _“There’s a lack of actual consensus and worldwide acceptance on methodologies which negatively affects the implementation time and effort finally spent on defining the most relevant ones. We hope to see a playing field with common definitions on sustainability reporting and a unitary sustainability reporting framework -  a common standardised language on what is expected in terms of today's reporting answering readers' needs on how we make progress, on how we improve our impacts and on how our company will contribute forward to a sustainable future.”_
+Rahel Damamme, Stakeholder Engagement & Sustainability Prospective Manager from Decathlon shares her perspective and hands-on experience from reporting preparation: *“There’s a lack of actual consensus and worldwide acceptance on methodologies which negatively affects the implementation time and effort finally spent on defining the most relevant ones. We hope to see a playing field with common definitions on sustainability reporting and a unitary sustainability reporting framework -  a common standardised language on what is expected in terms of today's reporting answering readers' needs on how we make progress, on how we improve our impacts and on how our company will contribute forward to a sustainable future.”*
 
-As expressed recently by Carlos Tornero, expert journalist at Responsible Investor, _“we tend to think that this area (standard-setting) is technical, but it is actually quite political and there are a lot of interests at stake … This is the equivalent of the seduction dance in the animal kingdom”_
+As expressed recently by Carlos Tornero, expert journalist at Responsible Investor, *“we tend to think that this area (standard-setting) is technical, but it is actually quite political and there are a lot of interests at stake … This is the equivalent of the seduction dance in the animal kingdom”*
 
 However, not all those interests have to be contradictory as seen in the public statements of key global players in the reporting landscape, demonstrating that the European role is indispensable and that EU leadership is needed:
 
-_“The EU is rapidly advancing the non-financial reporting agenda. And there is momentum within business (...) At the same time, business, standard setters, policy makers and civil society need to work together to quickly drive global alignment on standards.”_ [Robert E. Moritz](https://www.linkedin.com/in/robertemoritz/), Global Chairman PricewaterhouseCoopers Int. at PwC
+*“The EU is rapidly advancing the non-financial reporting agenda. And there is momentum within business (...) At the same time, business, standard setters, policy makers and civil society need to work together to quickly drive global alignment on standards.”* [Robert E. Moritz](https://www.linkedin.com/in/robertemoritz/), Global Chairman PricewaterhouseCoopers Int. at PwC
 
-_“I believe that Europe is in a very good position to act to accelerate the process. Being at the global table and shaping the outcome, acting as the first mover and adopter, will put Europe in a great leadership position.” [Veronica Poole, partner at Deloitte](https://blogs.deloitte.co.uk/assurance/2020/03/moving-towards-a-global-vision-for-connected-standard-setting.html), global [IFRS](https://www.ifrs.org/) leader and head of corporate reporting.”_
+*“I believe that Europe is in a very good position to act to accelerate the process. Being at the global table and shaping the outcome, acting as the first mover and adopter, will put Europe in a great leadership position.” [Veronica Poole, partner at Deloitte](https://blogs.deloitte.co.uk/assurance/2020/03/moving-towards-a-global-vision-for-connected-standard-setting.html), global [IFRS](https://www.ifrs.org/) leader and head of corporate reporting.”*
 
-_“Aligning capital to sustainable business practices is at the heart of the EU’s Green Deal. The European Commission has recognized that comprehensive and reliable sustainability reporting by companies is the foundation for a sustainable economy.  The process ahead of us, leading to the timely adoption of a much-improved EU disclosure system, will be intense and requires collaboration with established standard setters. GRI looks forward to cooperating with all stakeholders to reach a European solution with a global reach.”_ as stated in [GRI’s contribution to EU public consultation](https://www.sustainability-reports.com/gri-ready-to-support-european-reporting-standards-on-sustainability-impacts/).
+*“Aligning capital to sustainable business practices is at the heart of the EU’s Green Deal. The European Commission has recognized that comprehensive and reliable sustainability reporting by companies is the foundation for a sustainable economy.  The process ahead of us, leading to the timely adoption of a much-improved EU disclosure system, will be intense and requires collaboration with established standard setters. GRI looks forward to cooperating with all stakeholders to reach a European solution with a global reach.”* as stated in [GRI’s contribution to EU public consultation](https://www.sustainability-reports.com/gri-ready-to-support-european-reporting-standards-on-sustainability-impacts/).
 
-**_Calendar legal reform and implementation in 2021_**
+***Calendar legal reform and implementation in 2021***
 
 <a href="/assets/2101-Legislative-timeline-Frank-Bold.png">
     <img src="/assets/2101-Legislative-timeline-Frank-Bold.png">
@@ -117,13 +110,11 @@ The key changes that are expected in the European Commission's proposal concern 
 
 The 10 most important topics that will likely be addressed are the following. Two of them concern scope, four issues are connected to the first set of mandatory reporting standards and the rest concern specific themes as described below.
 
-
 **Expansion of the scope:**
-
 
 <p>1. Very likely, the NFRD scope will be extended to include all large companies (both those with assets listed on stock exchanges and private); following the example of Denmark, Greece, Spain and Sweden, which have already adopted such an <a href="https://www.accountancyeurope.eu/wp-content/uploads/NFR-Publication-3-May-revision.pdf">extended scope</a>. This change would increase the number of companies obliged to report to more than <a href="https://ec.europa.eu/eurostat/databrowser/view/tin00145/default/table?lang=en">41 000 companies in EU-27</a> that employ 250 persons and more (for illustration, 0.2% of all EU enterprises)</p>
 
-<p>2. In addition, there is an ongoing debate on small or medium enterprises that have high impact or high risks, such as energy producers or importers of high-risk commodities, to be included in the scope of the new obligations with reporting requirements being proportionate to their size and impact and thus avoiding a “one size fits all” approach. The European Parliament included a <a href="https://www.europarl.europa.eu/doceo/document/TA-9-2020-0372_EN.html">request</a> to the EU Commission to consider this, and investor groups such as <a href="https://www.efama.org/">EFAMA</a> and <a href="https://www.iigcc.org/">IIGCC</a> together with accounting bodies and NGOs published in summer that _“Whether companies have a significant impact on the environment and society does not depend on their size or legal status, neither are investments limited to assets listed on stock exchanges”_ (see joint statement <a href="http://en.frankbold.org/sites/default/files/zpravodaj/joint-statement-on-the-nfrd-revision.pdf">here</a>). With an estimated proportion of 20 - 30 % of companies in high risk sectors, this means an additional 41 000 - 62 000 medium-sized companies in EU-27 falling under the scope. (0.2%-0.3% of all EU enterprises)</p>
+<p>2. In addition, there is an ongoing debate on small or medium enterprises that have high impact or high risks, such as energy producers or importers of high-risk commodities, to be included in the scope of the new obligations with reporting requirements being proportionate to their size and impact and thus avoiding a “one size fits all” approach. The European Parliament included a <a href="https://www.europarl.europa.eu/doceo/document/TA-9-2020-0372_EN.html">request</a> to the EU Commission to consider this, and investor groups such as <a href="https://www.efama.org/">EFAMA</a> and <a href="https://www.iigcc.org/">IIGCC</a> together with accounting bodies and NGOs published in summer that \\_“Whether companies have a significant impact on the environment and society does not depend on their size or legal status, neither are investments limited to assets listed on stock exchanges”\\_ (see joint statement <a href="http://en.frankbold.org/sites/default/files/zpravodaj/joint-statement-on-the-nfrd-revision.pdf">here</a>). With an estimated proportion of 20 - 30 % of companies in high risk sectors, this means an additional 41 000 - 62 000 medium-sized companies in EU-27 falling under the scope. (0.2%-0.3% of all EU enterprises)</p>
 
 **Mandatory reporting standards**
 
@@ -159,10 +150,6 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-_This is the first article of [Frank Bold](http://en.frankbold.org/)’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021. Look out for our February topic on the connection between non-financial reporting and sustainable corporate governance. You can also attend a webinar organized by Frank Bold and CDSB on the same theme 9th February (9.30h - 11h CET). Register [here](https://us02web.zoom.us/webinar/register/6216098639617/WN_mqjng3xoSe-U1jPY78Vg_w)._
+*This is the first article of [Frank Bold](http://en.frankbold.org/)’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021. Look out for our February topic on the connection between non-financial reporting and sustainable corporate governance. You can also attend a webinar organized by Frank Bold and CDSB on the same theme 9th February (9.30h - 11h CET). Register [here](https://us02web.zoom.us/webinar/register/6216098639617/WN_mqjng3xoSe-U1jPY78Vg_w).*
 
-_Views included in this article do not necessarily represent the opinion of other members in the Alliance._
-
-
-
-
+*Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
