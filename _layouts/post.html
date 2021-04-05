@@ -17,6 +17,16 @@ layout: default
 
       <h1>{{ page.title }}</h1>
 
+      {% if page.categories.size > 0 %}
+        <div class="post-blog-categories">
+            {% for tag in page.categories %}
+            <div class="post-blog-categories-element">
+              <a href="/news/categories/#{{ tag | slugify | remove: ',' }}">#{{ tag | remove: ',' }}</a>
+            </div>
+            {% endfor %}
+        </div>
+      {% endif %}
+
       {{ content }}
 
       <div class="line-separator"></div>

@@ -28,6 +28,16 @@ collections:
   database:
     output: true
     permalink: /database/:path.html
+  category:
+      output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
 
 # Analytics
 ga_id:

@@ -2,7 +2,7 @@
 title: The European Commission responds to NGO statement on corporate sustainability reporting
 date: 2019-04-09
 layout: post
-img: /assets/1904-Dombrovskis.jpg
+img: /assets/1904-dombrovskis.jpg
 intro: Valdis Dombrovskis, Vice President of the European Commission replied this March to a statement signed by 27 leading NGOs calling on EU policy-makers to clarify the legal framework for company disclosures on Environmental, Social and Governance (ESG) issues.
 ---
 

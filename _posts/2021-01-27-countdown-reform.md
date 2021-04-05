@@ -13,6 +13,7 @@ intro: The European Union will take major action in 2021 to expand its leading
   growth from resource use.
 img: /assets/2101-cover.jpg
 img_listing: /assets/2101-cover.jpg
+categories: others, monthlyarticle
 ---
 ![](/assets/timeline-nfrd-sfdr-taxonomy-standards-2-.png)
 
