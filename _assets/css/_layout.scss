@@ -130,6 +130,36 @@ section.color-negative {
   .post:hover {
     opacity: .8;
   }
+  .post-categories-date {
+    margin: 1rem 0 0;
+  }
+  .post-categories-title {
+    margin-top: 1em;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.post-blog-categories-element {
+  background-color: #5890AB;
+  border-radius: 4px;
+  padding: .25rem .5rem;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: #46748a;
+  }
+  a {
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+.post-categories {
+  padding: 0 1rem;
+  text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 h1,

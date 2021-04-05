@@ -12,7 +12,7 @@ intro: "Following the presentation of the Green Deal, the European Commission
   recommendations. "
 img: /assets/2103-ptf__markus-spiske.jpg
 img_listing: /assets/2103-ptf_markus-spiske-list.jpg
-categories: monthly
+categories: monthlyarticle
 ---
 Following the presentation of the [Green Deal](https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en), the European Commission [confirmed](https://ec.europa.eu/commission/presscorner/detail/en/SPEECH_20_139) the EU’s ambition to reform the EU Non-Financial Reporting (NFR) Directive and develop accompanying EU standards. EFRAG was subsequently mandated to set up a Project Task Force (PTF) to advise the European Commission on the ideal content and structure of such standards. Six months after the selection of its members, the PTF has published its final recommendations. **The Alliance for Corporate Transparency welcomes and supports the PTF’s work and - at least in principle - its final advice to the European Commission.**  
 

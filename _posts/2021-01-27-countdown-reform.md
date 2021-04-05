@@ -5,6 +5,7 @@ layout: post
 img: /assets/2101-cover.jpg
 img_listing: /assets/2101-cover.jpg
 intro: The European Union will take major action in 2021 to expand its leading position on sustainable finance, in order to strategically redirect private and public money to sustainable activities. Such realignment of investments will be critical to meet the Union’s 2030 targets agreed in Paris and deliver on the growth strategy set in the European Green Deal that aims to tackle the existential threat to Europe and the world that climate change represents, and achieve zero-net emissions of greenhouse gases by 2050 and decouple economic growth from resource use.
+categories: others, monthlyarticle
 ---
 
 _Written by [Frank Bold](http://en.frankbold.org/) as the first article of the series of monthly briefings on sustainability reporting and related themes provided throughout 2021. Views included in this article do not necessarily represent the opinion of other members in the Alliance._
