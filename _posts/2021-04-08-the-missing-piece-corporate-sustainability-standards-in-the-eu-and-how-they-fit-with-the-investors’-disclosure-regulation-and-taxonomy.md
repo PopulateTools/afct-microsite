@@ -116,7 +116,43 @@ The key findings are that the picture can be completed by adding:
 * an assessment of minimum social standards in relation to the company’s supply chain 
 * specification of meaningful disclosures of adverse human rights and environmental impacts
 
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
+  <p style="font-weight: bold;">Additional information:</p>
+
+  <p>Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.</p>
+
+  <ul>
+
+    <li>
+
+    <span><a style="font-weight: bold" href="https://bit.ly/2NQIT6g">Full recording </a>“Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points</span>
+
+    </li>
+
+    <li>
+
+      <span>
+
+      <a style="font-weight: bold" href="http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf">Policy recommendations</a> on Sustainable Corporate Governance by Frank Bold
+
+      </span>
+
+    </li>
+
+<li>
+
+      <span>
+
+      <a style="font-weight: bold" href="https://themoderncorporation.wordpress.com/call-to-action-on-sustainable-corporate-governance/">Open letter </a> "Call to Action on Sustainable Corporate Governance” by leaders in business, investment and financial institutions, and academia
+
+      </span>
+
+    </li>
+
+  </ul>
+
+</div>
 
 <hr>
 
