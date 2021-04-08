@@ -37,7 +37,7 @@ To mobilise sustainable finance for the transformation of the European economy, 
 The strategy to achieve transparency on sustainability impacts relies on the following three pillars:
 
 * The Non-Financial Reporting Directive ([NFRD](https://ec.europa.eu/info/business-economy-euro/company-reporting-and-auditing/company-reporting/non-financial-reporting_en)) covers companies obligations to report key sustainability data on risks and impacts. 
-* The Sustainable Finance Disclosure Regulation ([SFDR](https://eur-lex.europa.eu/eli/reg/2019/2088/oj)) defines disclosure obligations for investors to show how they factor sustainability risks in their decisions and how they report their strategy, objectives and impacts to end beneficiaries
+* The Sustainable Finance Disclosure Regulation ([SFDR](https://eur-lex.europa.eu/eli/reg/2019/2088/oj)) defines disclosure obligations for investors to show how they factor sustainability risks in their decisions and how they report their strategy, objectives and impacts to end beneficiaries.
 * The Taxonomy Regulation classifies sustainable activities (and specifies criteria and reporting requirements) for the purpose of sustainable finance. 
 
 **This article addresses three questions: How do these instruments fit together? What needs to be reported and by whom? What are the gaps that the upcoming reform of the NFRD will have to close?**
@@ -128,8 +128,8 @@ margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
 *[The first briefing](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for this year, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal.* 
 
-*[The second one](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG)*
+*[The second one](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG).*
 
-*Look out for next month’s topic on Climate Transition Plans & Science-Based Targets*
+*Look out for next month’s topic on Climate Transition Plans & Science-Based Targets.*
 
 *Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
