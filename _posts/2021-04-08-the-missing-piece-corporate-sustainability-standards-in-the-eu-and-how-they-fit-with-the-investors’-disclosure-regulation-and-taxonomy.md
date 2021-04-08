@@ -48,7 +48,7 @@ The strategy to achieve transparency on sustainability impacts relies on the fol
     <img src="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
 </a>
 
-# What needs to be reported by whom and what is currently missing
+<h1 id="What-needs-to-be-reported-by-whom-and-what-is-currently-missing">What needs to be reported by whom and what is currently missing</h1>
 
 The SFDR applies to all financial market participants, primarily institutional investors, including banks and insurers’ investment activities. The NFRD applies to listed companies, as well as banks and insurers’ own activities - they are both preparers and users of sustainability information (read our [first article](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) to learn about expected changes in the personal scope of the NFRD this year). The reporting requirements outlined in the Taxonomy and addressing sustainable activities will apply to both groups, and will become the standard for sustainable lending and investment, irrespective of the recipient entity’s size.
 
@@ -97,7 +97,7 @@ The reform of the NFRD and development of NFR (EU sustainability reporting) stan
 
    *“Many companies, especially SMEs and those not supported by international parent companies, don't have a clear picture of what is expected from them regarding sustainability data. The common problem is that disclosed data often is not standardized and thus not comparable. That is why standards and clear guidelines are essential,”* concludes Sara Foršek, Sustainability officer, Raiffeisenbank Austria d.d. 
 
-# Conclusion
+<h1 id="Conclusion">Conclusion</h1>
 
 The NFR standards are of critical importance to bridge these gaps and thus secure that data is comparable and meaningful, to alleviate companies’ administrative burden, and ensure that smaller businesses are not shut out from access to sustainable finance.
 
