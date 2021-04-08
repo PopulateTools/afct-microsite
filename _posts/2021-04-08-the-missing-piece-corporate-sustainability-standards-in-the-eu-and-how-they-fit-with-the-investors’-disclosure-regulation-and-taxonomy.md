@@ -124,7 +124,7 @@ The key findings are that the picture can be completed by adding:
     </li>
     <li>
       <span>
-      <a style="font-weight: bold" href="https://www.allianceforcorporatetransparency.org/news/future-eu-sustainability-standards-ngos-welcome-the-final-recommendations-of-efrag-s-project-task-force-for-the-european-commission.html">Public Reaction</a> and analysis of the Alliance for Corporate Transparency on the recommendations included in the final report of EFRAG’s project task force on non-financial reporting standards.
+      <a style="font-weight: bold" href="https://www.allianceforcorporatetransparency.org/news/future-eu-sustainability-standards-ngos-welcome-the-final-recommendations-of-efrag-s-project-task-force-for-the-european-commission.html">Public Reaction and analysis</a> of the Alliance for Corporate Transparency on the recommendations included in the final report of EFRAG’s project task force on non-financial reporting standards.
       </span>
     </li>
   </ul>
