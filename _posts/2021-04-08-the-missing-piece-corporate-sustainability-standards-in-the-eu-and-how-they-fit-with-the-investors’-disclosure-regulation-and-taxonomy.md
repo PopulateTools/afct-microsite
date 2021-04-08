@@ -44,7 +44,7 @@ The strategy to achieve transparency on sustainability impacts relies on the fol
 
 ![Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution here.](/assets/fb_diagram_reporting__b.png "Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution here.")
 
-<a href="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
+[](assets/2104-timeline-nfrd-sfdr-taxonomy-standards.png)<a href="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
     <img src="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
 </a>
 
