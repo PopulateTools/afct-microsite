@@ -12,7 +12,8 @@ intro: "To mobilise sustainable finance for the transformation of the European
   Corporate Governance initiative). Second, transparency on both positive and
   negative impacts on sustainability by companies as well as providers of
   capital. "
-img: /assets/march_foto.jpg
+img: /assets/zac-ong-afybtlpd2ok-unsplash-2.jpg
+img_listing: /assets/zac-ong-afybtlpd2ok-unsplash-4.jpg
 ---
 *Third article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. [The first one](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for 2021, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. [The second one](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
@@ -26,7 +27,7 @@ The strategy to achieve transparency on sustainability impacts relies on the fol
 
 **This article addresses three questions: How do these instruments fit together? What needs to be reported and by whom? What are the gaps that the upcoming reform of the NFRD will have to close?**
 
-![Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution here.](/assets/fb_diagram_reporting__b.png)
+![Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution here.](/assets/fb_diagram_reporting__b.png "Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution here.")
 
 # What needs to be reported by whom and what is currently missing
 
@@ -40,16 +41,20 @@ The draft SFDR standards list concrete adverse impact indicators which should be
 
 The adoption of such EU standards is one of the key objectives of the legislative revision of the NFRD, which is to take place this year (read our [first article](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) to learn about expected changes). Another aim of the reform is to ensure that all large and ideally all high-risk companies are included, and not left out of the capital flows that are being mobilised to finance the sustainable transformation and innovation. 
 
-![Visual timeline: Standards development, see it in extended full resolution here. ](/assets/timeline-nfrd-sfdr-taxonomy-standards.png)
+![Visual timeline: Standards development, see it in extended full resolution here. ](/assets/timeline-nfrd-sfdr-taxonomy-standards.png "Visual timeline: Standards development, see it in extended full resolution here. ")
 
 **The SFDR and Taxonomy rely on the NFR standards to clarify KPIs, quality criteria and methodologies in four critical areas:**
 
 1. **Minimum criteria for disclosure of companies’ decarbonisation objectives and financial risks related to climate change vis-a-vis the goals of the Paris Agreement.** 
 
    The SFDR requires these to be considered by investors, but it does not specify the quality criteria for disclosure allowing for such an assessment, e.g. timeline and intermediary objectives, scenarios and alignment with Science-Based methodology.
+
+
 2. **Methodologies for calculating the impacts by the investee companies**, for example with respect to Scope 3 (that is, indirect) GHG emissions, from which the investors should calculate their own investment-related indicators as provided in the SFDR standards.
 
    SFDR standards specify only the formula for linking impact indicators to the value of their investments, e.g. with respect to their carbon footprint of their investments, but not for the calculation of the companies’ impact indicators. Currently, many companies that claim to be reporting Scope 3 GHG emissions do so only in a ‘limited’ way, that is, excluding the vast majority of emissions from the presented total.
+
+
 3. **What should be disclosed on the company’s due diligence as a minimum safeguard** ensuring that *sustainable activities* and *financial products* are not connected to severe adverse impacts across the value chains - a condition required by both the SFDR and Taxonomy.
 
    The SFDR and Taxonomy merely specify that the due diligence processes should be aligned with the international standards, such as the OECD Guidelines, but don’t clarify what needs to be disclosed at a minimum to give an indication of the quality of a company’s due diligence.
@@ -60,6 +65,8 @@ The adoption of such EU standards is one of the key objectives of the legislativ
 4. **Basic set of social indicators and quality criteria addressing relevance, reliability and measurability that both standardised and entity-specific indicators must meet.** The SFDR standards outline several additional indicators of adverse human rights impact for companies to choose from, which don’t meet such basic criteria, and whose blind application would lead to meaningless disclosures and administrative burden. 
 
    Such KPIs, which the NFR standards must put into context, include whether a company has a policy against trafficking, number of incidents of severe human rights impacts, and % of operations and suppliers at risks of child and forced labour.
+
+
 
 # What are the risks and opportunities for businesses in this reform? 
 
@@ -77,6 +84,8 @@ The reform of the NFRD and development of NFR (EU sustainability reporting) stan
    The banks that have already started to realign their strategies around financing the economic transition have also complained about the need for data from SMEs, as they form most of their clients. Without a legislative mandate and clear standards it will be very difficult for SMEs to report such data. 
 
    *“The NFRD should help our clients’ transition. This is not just about big corporates and listed companies - sustainability data should be required from any company, including SMEs. Big corporates need to assess their supply chain, and the availability of data is critical for that,”* [explained](https://youtu.be/BMfQfvYwQgg?t=4670) Ricardo Laiseca, Head of Global Sustainability Office at BBVA
+
+
 3. **Chaotic environment and barriers for SMEs:** The current framework of voluntary reporting standards, diverse requirements of individual investors, sustainability rating agencies and buyer companies, and conflicting recommendations of consultants, creates excessive administrative burden for companies. As found by the [EU Project Task Force on EU standards](https://www.efrag.org/News/Project-449/Progress-report-published-for-project-on-preparatory-work-for-the-elaboration-of-possible-EU-non-financial-reporting-standards), the number of KPIs suggested by existing reporting initiatives exceeds 5000. Listed companies complain about being bombarded with never ending series of requests and forms, and having their sustainability performance rated simultaneously [among the top as well as the worst by various benchmarks](https://www.wsj.com/articles/is-tesla-or-exxon-more-sustainable-it-depends-whom-you-ask-1537199931). Dubbed ‘an alphabet soup’, this context makes it difficult for companies to decide which data to focus on. It also discourages companies’ management to take sustainability data seriously in a business context.  This is even more so a problem for smaller companies, some of which need to start their sustainability reporting from scratch; a legislative mandate and clear standards are therefore needed to guide them towards meaningful and effective reporting.
 
    *“Many companies, especially SMEs and those not supported by international parent companies, don't have a clear picture of what is expected from them regarding sustainability data. The common problem is that disclosed data often is not standardized and thus not comparable. That is why standards and clear guidelines are essential,”* concludes Sara Foršek, Sustainability officer, Raiffeisenbank Austria d.d. 
