@@ -46,7 +46,7 @@ The strategy to achieve transparency on sustainability impacts relies on the fol
     <img src="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
 </a>
 
-Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution [here]("/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png").
+Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png).
 
 <h1 id="What-needs-to-be-reported-by-whom-and-what-is-currently-missing">What needs to be reported by whom and what is currently missing</h1>
 
@@ -60,7 +60,9 @@ The draft SFDR standards list concrete adverse impact indicators which should be
 
 The adoption of such EU standards is one of the key objectives of the legislative revision of the NFRD, which is to take place this year (read our [first article](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) to learn about expected changes). Another aim of the reform is to ensure that all large and ideally all high-risk companies are included, and not left out of the capital flows that are being mobilised to finance the sustainable transformation and innovation. 
 
-![Visual timeline: Standards development, see it in extended full resolution here. ](/assets/timeline-nfrd-sfdr-taxonomy-standards.png "Visual timeline: Standards development, see it in extended full resolution here. ")
+![Visual timeline: Standards development](/assets/timeline-nfrd-sfdr-taxonomy-standards.png "Visual timeline: Standards development")
+
+Visual timeline: Standards development, see it in full resolution [here](allianceforcorporatetransparency.org/assets/2104-timeline-nfrd-sfdr-taxonomy-standards.png)
 
 **The SFDR and Taxonomy rely on the NFR standards to clarify KPIs, quality criteria and methodologies in four critical areas:**
 
