@@ -62,7 +62,7 @@ The adoption of such EU standards is one of the key objectives of the legislativ
 
 ![Visual timeline: Standards development](/assets/timeline-nfrd-sfdr-taxonomy-standards.png "Visual timeline: Standards development")
 
-Visual timeline: Standards development, see it in full resolution [here](allianceforcorporatetransparency.org/assets/2104-timeline-nfrd-sfdr-taxonomy-standards.png)
+Visual timeline: Standards development, see it in full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2104-timeline-nfrd-sfdr-taxonomy-standards.png)
 
 **The SFDR and Taxonomy rely on the NFR standards to clarify KPIs, quality criteria and methodologies in four critical areas:**
 
