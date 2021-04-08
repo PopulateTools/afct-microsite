@@ -117,40 +117,30 @@ The key findings are that the picture can be completed by adding:
 * specification of meaningful disclosures of adverse human rights and environmental impacts
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
-
-  <p style="font-weight: bold;">Additional information:</p>
-
-  <ul>
-
-    <li>
-
-    <span><a style="font-weight: bold" href="https://drive.google.com/file/d/1ULM-h1093wdbvtpngFBbOz2lvdnftOUO/view">Integrated overview </a>of the KPIs and narrative disclosure requirements of the NFRD, SFDR and Taxonomy in a coherent framework.</span>
-
-    </li>
-
-    <li>
-
-      <span>
-
-      <a style="font-weight: bold" href="http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf">Policy recommendations</a> on Sustainable Corporate Governance by Frank Bold
-
-      </span>
-
-    </li>
+  <p style="font-weight: bold;">Additional information:</p>
+  <ul>
+    <li>
+    <span><a style="font-weight: bold" href="https://drive.google.com/file/d/1ULM-h1093wdbvtpngFBbOz2lvdnftOUO/view">Integrated overview </a>of the KPIs and narrative disclosure requirements of the NFRD, SFDR and Taxonomy in a coherent framework.</span>
+    </li>
+    <li>
+      <span>
+      <a style="font-weight: bold" href="https://www.allianceforcorporatetransparency.org/news/future-eu-sustainability-standards-ngos-welcome-the-final-recommendations-of-efrag-s-project-task-force-for-the-european-commission.html">Public Reaction</a> and analysis of the Alliance for Corporate Transparency on the recommendations included in the final report of EFRAG’s project task force on non-financial reporting standards.
+      </span>
+    </li>
 
 <li>
-
-      <span>
-
-      <a style="font-weight: bold" href="https://themoderncorporation.wordpress.com/call-to-action-on-sustainable-corporate-governance/">Open letter </a> "Call to Action on Sustainable Corporate Governance” by leaders in business, investment and financial institutions, and academia
-
-      </span>
-
-    </li>
-
-  </ul>
-
+      <span>
+      <a style="font-weight: bold" href="https://themoderncorporation.wordpress.com/call-to-action-on-sustainable-corporate-governance/">Open letter </a> "Call to Action on Sustainable Corporate Governance” by leaders in business, investment and financial institutions, and academia
+      </span>
+    </li>
+  </ul>
 </div>
+
+
+
+    
+
+
 
 <hr>
 
