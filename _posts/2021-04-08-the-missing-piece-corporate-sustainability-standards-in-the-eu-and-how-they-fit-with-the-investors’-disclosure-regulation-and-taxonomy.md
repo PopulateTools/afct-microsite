@@ -113,3 +113,9 @@ The key findings are that the picture can be completed by adding:
 * details on how to assess whether a company’s targets, timeline and KPIs are in alignment with Paris and SDG goals
 * an assessment of minimum social standards in relation to the company’s supply chain 
 * specification of meaningful disclosures of adverse human rights and environmental impacts
+
+<a href="https://en.frankbold.org/" style="max-width: 200px; display: block; margin-left: -29px; margin-bottom: -29px;"><img src="/assets/logos/logo-frankbold.png"></a><span style="font-style: italic;">This is the third article of <u>Frank Bold’s</u> series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021.<a href="https://www.allianceforcorporatetransparency.org/news/countdown-reform.html">The first briefing</a> outlined upcoming policy developments for this year,  including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. 
+
+<a href="https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html">The second one</a>focused on reporting on governance (G of ESG)
+
+Look out for our next topic on Climate Transition Plans & Science-Based Targets </span>
