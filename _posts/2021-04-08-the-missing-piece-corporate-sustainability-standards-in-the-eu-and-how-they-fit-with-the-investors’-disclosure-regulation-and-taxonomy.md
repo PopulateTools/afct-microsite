@@ -124,6 +124,10 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-*This is the first article of [Frank Bold](http://en.frankbold.org/)’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021. Look out for our February topic on the connection between non-financial reporting and sustainable corporate governance. You can also attend a webinar organized by Frank Bold and CDSB on the same theme 9th February (9.30h - 11h CET). Register [here](https://us02web.zoom.us/webinar/register/6216098639617/WN_mqjng3xoSe-U1jPY78Vg_w).*
+*This is the third article of [Frank Bold](http://en.frankbold.org/)’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021. [The first briefing](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for this year, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal.* 
+
+*[The second one](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG)*
+
+*Look out for next month’s topic on Climate Transition Plans & Science-Based Targets*
 
 *Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
