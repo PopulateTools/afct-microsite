@@ -13,7 +13,7 @@ intro: "To mobilise sustainable finance for the transformation of the European
   negative impacts on sustainability by companies as well as providers of
   capital. "
 img: /assets/puzzle1.jpg
-img_listing: /assets/puzzle2.jpg
+img_listing: /assets/puzzle4.jpg
 ---
 *Third article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. [The first one](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for 2021, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. [The second one](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
