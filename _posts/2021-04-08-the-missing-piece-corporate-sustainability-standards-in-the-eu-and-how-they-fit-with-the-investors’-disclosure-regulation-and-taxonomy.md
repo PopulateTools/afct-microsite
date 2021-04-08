@@ -120,13 +120,11 @@ The key findings are that the picture can be completed by adding:
 
   <p style="font-weight: bold;">Additional information:</p>
 
-  <p>Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.</p>
-
   <ul>
 
     <li>
 
-    <span><a style="font-weight: bold" href="https://bit.ly/2NQIT6g">Full recording </a>“Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points</span>
+    <span><a style="font-weight: bold" href="https://drive.google.com/file/d/1ULM-h1093wdbvtpngFBbOz2lvdnftOUO/view">Integrated overview </a>of the KPIs and narrative disclosure requirements of the NFRD, SFDR and Taxonomy in a coherent framework.</span>
 
     </li>
 
