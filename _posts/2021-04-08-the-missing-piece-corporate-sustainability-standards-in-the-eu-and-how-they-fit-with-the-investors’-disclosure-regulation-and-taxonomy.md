@@ -120,7 +120,7 @@ The key findings are that the picture can be completed by adding:
   <p style="font-weight: bold;">Additional information:</p>
   <ul>
     <li>
-    <span><a style="font-weight: bold" href="https://drive.google.com/file/d/1ULM-h1093wdbvtpngFBbOz2lvdnftOUO/view">Integrated overview </a>of the KPIs and narrative disclosure requirements of the NFRD, SFDR and Taxonomy in a coherent framework.</span>
+    <span><a style="font-weight: bold" href="http://en.frankbold.org/sites/default/files/publikace/sustainability_reporting_guidance_frank_bold.pdf">Integrated overview </a>of the KPIs and narrative disclosure requirements of the NFRD, SFDR and Taxonomy in a coherent framework.</span>
     </li>
     <li>
       <span>
