@@ -75,7 +75,7 @@ The adoption of such EU standards is one of the key objectives of the legislativ
 
    Such KPIs, which the NFR standards must put into context, include whether a company has a policy against trafficking, number of incidents of severe human rights impacts, and % of operations and suppliers at risks of child and forced labour.
 
-# What are the risks and opportunities for businesses in this reform? 
+<h1 id="What-needs-to-be-reported-by-whom-and-what-is-currently-missing">What needs to be reported by whom and what is currently missing</h1>
 
 The reform of the NFRD and development of NFR (EU sustainability reporting) standards are necessary to complete the system for several reasons:
 
