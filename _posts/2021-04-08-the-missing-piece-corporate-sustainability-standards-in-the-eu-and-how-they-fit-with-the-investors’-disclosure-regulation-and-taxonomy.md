@@ -21,17 +21,13 @@ img_listing: /assets/zac-ong-afybtlpd2ok-unsplash-4.jpg
   <span>Content Outline</span>
   <ul>
     <li>
-      <a href="#"What needs to be reported by whom and what is currently missing</a>
+      <a href="#"What needs to be reported by whom and what is currently missing>What needs to be reported by whom and what is currently missing</a>
     </li>
     <li>
-      <a href="#the-need-for-a-strategic">The need for a strategic approach to climate change and human rights</a>
+      <a href="#What are the risks and opportunities for businesses in this reform?">What are the risks and opportunities for businesses in this reform?</a>
     </li>
     <li>
-      <a href="#how-can-companies-better">How can companies better report the 'G' in ESG</a>
-    </li>
-    <li>
-      <a href="#three-essentials-for-disclosure">Three essentials for disclosure on governance matters</a>
-    </li>
+      <a href="#Conclusion">Conclusion</a>
   </ul>
 </div>
 
