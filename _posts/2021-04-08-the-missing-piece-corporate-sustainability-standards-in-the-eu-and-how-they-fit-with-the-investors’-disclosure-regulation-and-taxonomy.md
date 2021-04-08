@@ -42,7 +42,7 @@ The strategy to achieve transparency on sustainability impacts relies on the fol
 
 **This article addresses three questions: How do these instruments fit together? What needs to be reported and by whom? What are the gaps that the upcoming reform of the NFRD will have to close?**
 
-[](assets/2104-timeline-nfrd-sfdr-taxonomy-standards.png)<a href="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
+[](assets/2104-timeline-nfrd-sfdr-taxonomy-standards.png)<a href="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png" target="_blank">
     <img src="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
 </a>
 
