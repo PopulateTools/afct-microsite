@@ -116,6 +116,8 @@ The key findings are that the picture can be completed by adding:
 * an assessment of minimum social standards in relation to the company’s supply chain 
 * specification of meaningful disclosures of adverse human rights and environmental impacts
 
+
+
 <hr>
 
 <a href="https://en.frankbold.org/" style="
