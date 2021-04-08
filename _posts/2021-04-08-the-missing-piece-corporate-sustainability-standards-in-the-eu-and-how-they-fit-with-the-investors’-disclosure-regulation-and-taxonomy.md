@@ -27,9 +27,8 @@ img_listing: /assets/zac-ong-afybtlpd2ok-unsplash-4.jpg
       <a href="#What-are-the-risks-and-opportunities-for-businesses-in-this-reform?">What are the risks and opportunities for businesses in this reform?</a>
     </li>
     <li>
-      <a href="#Conclusion">Conclusion</a>
-
-</li>
+       <a href="#Conclusion">Conclusion</a>
+    </li>
   </ul>
 </div>
 
