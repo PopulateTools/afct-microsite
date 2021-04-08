@@ -44,6 +44,10 @@ The strategy to achieve transparency on sustainability impacts relies on the fol
 
 ![Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution here.](/assets/fb_diagram_reporting__b.png "Diagram: Information flows (SFDR, NFRD, Taxonomy), full resolution here.")
 
+<a href="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
+    <img src="/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png">
+</a>
+
 # What needs to be reported by whom and what is currently missing
 
 The SFDR applies to all financial market participants, primarily institutional investors, including banks and insurers’ investment activities. The NFRD applies to listed companies, as well as banks and insurers’ own activities - they are both preparers and users of sustainability information (read our [first article](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) to learn about expected changes in the personal scope of the NFRD this year). The reporting requirements outlined in the Taxonomy and addressing sustainable activities will apply to both groups, and will become the standard for sustainable lending and investment, irrespective of the recipient entity’s size.
