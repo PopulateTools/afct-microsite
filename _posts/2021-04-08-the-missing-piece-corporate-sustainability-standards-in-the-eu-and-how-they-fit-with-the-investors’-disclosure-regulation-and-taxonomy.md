@@ -2,7 +2,7 @@
 layout: post
 title: "The missing piece: corporate sustainability standards in the EU and how
   they fit with the investors’ disclosure regulation and taxonomy"
-date: 2021-04-08T04:09:27.305Z
+date: 2021-04-13T09:51:43.230Z
 intro: "To mobilise sustainable finance for the transformation of the European
   economy, the EU strategy rests on two complementary lines of action aimed at
   covering the gap of additional investments needed to meet the EU’s climate
