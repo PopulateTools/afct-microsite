@@ -21,7 +21,7 @@ layout: default
         <div class="post-blog-categories">
             {% for tag in page.categories %}
             <div class="post-blog-categories-element">
-              <a href="/news/categories/#{{ tag | slugify | remove: ',' }}">#{{ tag | remove: ',' }}</a>
+              <a href="/news/categories/#{{ tag | slugify | remove: ',' }}">#{{ tag | remove: ',' | replace: "-", "" }}</a>
             </div>
             {% endfor %}
         </div>
