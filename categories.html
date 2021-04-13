@@ -25,7 +25,7 @@ permalink: "/news/categories/"
         {% endfor %}
 
         {% for category in categories %}
-            <h1 class="post-categories" id="{{ category | slugify | remove: ',' }}">{{ category | remove: ',' }}</h1>
+            <h1 class="post-categories" id="{{ category | slugify | remove: ',' }}">{{ category | remove: ',' | replace: "-", " " }}</h1>
             <section class="post-list-compact">
              {% for post in site.posts %}
                  {% if post.categories contains category %}
