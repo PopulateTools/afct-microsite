@@ -2,7 +2,7 @@
 layout: post
 title: "Future EU sustainability standards: NGOs welcome the final
   recommendations of EFRAG’s Project Task Force for the European Commission "
-categories: policy
+categories: Articles
 date: 2021-03-08T13:04:15.642Z
 intro: "Following the presentation of the Green Deal, the European Commission
   confirmed the EU’s ambition to reform the EU Non-Financial Reporting (NFR)
