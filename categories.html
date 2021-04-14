@@ -15,9 +15,6 @@ permalink: "/news/categories/"
         {% assign categories = "" %}
         {% for category in rawtags %}
             {% if category != "" %}
-                {% if categories == "" %}
-                    {% assign categories = category | split:'|' %}
-                {% endif %}
                 {% unless categories contains category %}
                     {% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
                 {% endunless %}
