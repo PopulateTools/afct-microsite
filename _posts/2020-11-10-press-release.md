@@ -3,7 +3,7 @@ layout: post
 title: New data shows some, yet insufficient progress in companies’ climate and
   environmental disclosures at a turning point for sustainability reporting in
   Europe
-categories: policy
+categories: research
 date: 2020-11-10 00:00:00 Z
 intro: Only a minority of companies - approximately 30% - provide sufficiently
   detailed information on their climate policies and risks that allows to
