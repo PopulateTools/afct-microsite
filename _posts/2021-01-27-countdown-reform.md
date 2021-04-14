@@ -2,7 +2,7 @@
 layout: post
 title: Countdown for the reform that will overhaul companies’ sustainability
   reporting obligations in Europe
-categories: monthly-article
+categories: monthly-articles
 date: 2021-02-01T00:00:00.000Z
 intro: The European Union will take major action in 2021 to expand its leading
   position on sustainable finance, in order to strategically redirect private
