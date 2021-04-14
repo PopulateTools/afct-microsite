@@ -1,9 +1,17 @@
 ---
-title: Landmark research on 1000 European companies shows troubling poor quality of reporting on sustainability issues
-date: 2020-02-17 00:00:00 Z
 layout: post
+title: Landmark research on 1000 European companies shows troubling poor quality
+  of reporting on sustainability issues
+categories: research
+date: 2020-02-17 00:00:00 Z
+intro: The Alliance for Corporate Transparency, a collaborative initiative
+  launched by Frank Bold, analysed the information that companies disclosed on
+  their environmental and societal risks and impacts following the requirements
+  introduced by the EU Non-Financial Reporting Directive. The research arrives
+  at the same time that the EU Commission initiates the process to reform the
+  law and after Executive Vice President Vadis Dombrovskis announced plans to
+  create EU standards for corporate sustainability reporting.
 img: /assets/2002-island.jpg
-intro: The Alliance for Corporate Transparency, a collaborative initiative launched by Frank Bold, analysed the information that companies disclosed on their environmental and societal risks and impacts following the requirements introduced by the EU Non-Financial Reporting Directive. The research arrives at the same time that the EU Commission initiates the process to reform the law and after Executive Vice President Vadis Dombrovskis announced plans to create EU standards for corporate sustainability reporting. 
 ---
 
 The [Alliance for Corporate Transparency](http://www.allianceforcorporatetransparency.org/), a collaborative initiative launched by Frank Bold, analysed the information that companies disclosed on their environmental and societal risks and impacts following the requirements introduced by the EU Non-Financial Reporting Directive. The research arrives at the same time that the EU Commission initiates the process to reform the law and after Executive Vice President Vadis Dombrovskis announced plans to create EU standards for corporate sustainability reporting. 
