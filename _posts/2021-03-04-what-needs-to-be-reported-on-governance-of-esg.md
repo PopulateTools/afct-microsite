@@ -13,7 +13,6 @@ intro: In 2021, the European Commission will present two intertwined legislative
   risks, strategy and targets.
 img: /assets/2103-governance_article_february_tim-j-.jpg
 img_listing: /assets/2103-governance_article_february-tim-j-list.jpg
-categories: monthly-articles
 ---
 *Written by Frank Bold as the second article of the series of monthly briefings on sustainability reporting in 2021. The first one outlined upcoming policy developments for this year including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal. Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
 

@@ -2,9 +2,9 @@
 backend:
   name: git-gateway
   repo: PopulateTools/afct-microsite
-  identity_url: 'https://staging.allianceforcorporatetransparency.org/.netlify/identity'
-  gateway_url: 'https://staging.allianceforcorporatetransparency.org/.netlify/git'
-  branch: staging
+  identity_url: 'https://afct-preview.netlify.app/.netlify/identity'
+  gateway_url: 'https://afct-preview.netlify.app/.netlify/git'
+  branch: master
 media_folder: /assets
 public_folder: /assets
 collections:
