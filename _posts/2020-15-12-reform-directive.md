@@ -3,7 +3,7 @@ layout: post
 title: "Changing the rules of the game: leading NGOs and the European Parliament
   call for mandatory reporting obligations and standards for companies on
   sustainability issues"
-categories: Policy
+categories: policy
 date: 2020-12-15 00:00:00 Z
 intro: EU Commissioner for Financial Services Mairead McGuinness clearly stated
   this December that “the rules of the game must be transformed to fully
