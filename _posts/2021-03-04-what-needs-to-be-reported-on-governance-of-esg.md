@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What needs to be reported on Governance (of ESG)
+categories: monthly-articles
 date: 2021-03-08T11:57:03.421Z
 intro: In 2021, the European Commission will present two intertwined legislative
   proposals aiming to foster integration of sustainability in corporate

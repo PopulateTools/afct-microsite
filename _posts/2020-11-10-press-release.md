@@ -1,10 +1,15 @@
 ---
-title: New data shows some, yet insufficient progress in companies’ climate and environmental disclosures at a turning point for sustainability reporting in Europe
-date: 2020-11-10 00:00:00 Z
 layout: post
+title: New data shows some, yet insufficient progress in companies’ climate and
+  environmental disclosures at a turning point for sustainability reporting in
+  Europe
+categories: research
+date: 2020-11-10 00:00:00 Z
+intro: Only a minority of companies - approximately 30% - provide sufficiently
+  detailed information on their climate policies and risks that allows to
+  understand their development, position, performance and impact
 img: /assets/2011-euki-strategy.jpg
 img_listing: /assets/2011-euki-strategy.jpg
-intro: Only a minority of companies - approximately 30% - provide sufficiently detailed information on their climate policies and risks that allows to understand their development, position, performance and impact
 ---
 
 Similar to financial accounting, improving sustainability reporting is essential for better corporate management of pitfalls and opportunities in a fast-changing world. Focusing on relevant and meaningful disclosures is key to produce high quality and decision-useful reporting for companies and investors alike. The information that companies publish on their risks and impacts connected to climate change and broader sustainability matters is the main tool for investors, banks and financial market participants to understand the activities and strategies of the businesses they invest in.  
