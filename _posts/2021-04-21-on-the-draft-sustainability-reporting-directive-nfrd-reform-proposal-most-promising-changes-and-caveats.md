@@ -6,7 +6,8 @@ date: 2021-04-21T12:21:16.299Z
 intro: The proposal presents several major improvements which are essential to
   help companies focus and report on meaningful information and channel finance
   to activities and projects needed to meet the objectives of the European Green
-  Deal and make the European economy sustainable
+  Deal and make the European economy sustainable. However, the proposal falls
+  short on several important points.
 img: /assets/skyscraper.jpg
 img_listing: /assets/skyscraper1.jpg
 ---
