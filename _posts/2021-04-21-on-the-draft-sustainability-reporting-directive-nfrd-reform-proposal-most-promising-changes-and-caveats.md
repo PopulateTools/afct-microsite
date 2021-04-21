@@ -3,6 +3,10 @@ layout: post
 title: "On the draft Sustainability Reporting Directive (NFRD reform)
   proposal:  most promising changes and caveats"
 date: 2021-04-21T12:21:16.299Z
+intro: The proposal presents several major improvements which are essential to
+  help companies focus and report on meaningful information and channel finance
+  to activities and projects needed to meet the objectives of the European Green
+  Deal and make the European economy sustainable
 img: /assets/skyscraper.jpg
 img_listing: /assets/skyscraper1.jpg
 ---
