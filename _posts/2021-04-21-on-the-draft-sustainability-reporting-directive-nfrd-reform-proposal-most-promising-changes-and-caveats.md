@@ -61,4 +61,4 @@ The proposal presents several major improvements which are essential to help com
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
-  <p>For specific evidence supporting the need to define reporting obligations and develop mandatory standards, please see the research implemented by the Alliance for Corporate Transparency on the ESG disclosures of 1000 EU companies in 2019 as well as the latest study on 300 companies reporting on climate and environmental issues.</p>
+  <p><a style="font-weight: bold" href="https://www.allianceforcorporatetransparency.org>For specific evidence</a> supporting the need to define reporting obligations and develop mandatory standards, please see the research implemented by the Alliance for Corporate Transparency on the ESG disclosures of 1000 EU companies in 2019 as well as the latest study on 300 companies reporting on climate and environmental issues.</p>
