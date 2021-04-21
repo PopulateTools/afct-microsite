@@ -3,6 +3,8 @@ layout: post
 title: "On the draft Sustainability Reporting Directive (NFRD reform)
   proposal:  most promising changes and caveats"
 date: 2021-04-21T12:21:16.299Z
+img: /assets/skyscraper.jpg
+img_listing: /assets/skyscraper1.jpg
 ---
 As NGOs working on sustainable corporate transparency and responsibility, we have been [supportive](https://www.allianceforcorporatetransparency.org/news/future-eu-sustainability-standards-ngos-welcome-the-final-recommendations-of-efrag-s-project-task-force-for-the-european-commission.html) of the EU Commission’s plans to reform the EU Non-Financial Reporting Directive (NFRD) and the development of  mandatory European sustainability standards. 
 
