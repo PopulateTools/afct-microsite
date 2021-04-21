@@ -34,7 +34,7 @@ However, the proposal falls short on several important points, which significant
 
 **The experts working in the undersigned NGOs state:**
 
-![](/assets/2104-logos.png)
+![](/assets/2021-04-21.png)
 
 *“This long-awaited reform reflects the vast amount of evidence pointing to the need to strengthen the reporting obligations and specification of mandatory standards for companies to be able to close the ESG data gap in the Sustainable Finance plan. This is necessary to enable investors and banks to channel their investments to truly sustainable activities, guide companies to focus on data that matters for their business, and ensure transparency on how companies linked to severe adverse impacts address such impacts.”* **Filip Gregor, Head of Responsible Companies at Frank Bold** 
 
