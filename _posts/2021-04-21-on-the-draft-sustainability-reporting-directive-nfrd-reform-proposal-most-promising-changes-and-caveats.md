@@ -2,9 +2,15 @@
 layout: post
 title: "On the draft Sustainability Reporting Directive (NFRD reform)
   proposal:  most promising changes and caveats"
+categories: policy
 date: 2021-04-21T12:21:16.299Z
-img: /assets/2104-skyscraper.jpg
-img_listing: /assets/2104-skyscraper-list.jpg
+intro: The proposal presents several major improvements which are essential to
+  help companies focus and report on meaningful information and channel finance
+  to activities and projects needed to meet the objectives of the European Green
+  Deal and make the European economy sustainable. However, the proposal falls
+  short on several important points.
+img: /assets/skyscraper.jpg
+img_listing: /assets/skyscraper1.jpg
 ---
 As NGOs working on sustainable corporate transparency and responsibility, we have been [supportive](https://www.allianceforcorporatetransparency.org/news/future-eu-sustainability-standards-ngos-welcome-the-final-recommendations-of-efrag-s-project-task-force-for-the-european-commission.html) of the EU Commission’s plans to reform the EU Non-Financial Reporting Directive (NFRD) and the development of  mandatory European sustainability standards. 
 
@@ -28,7 +34,7 @@ However, the proposal falls short on several important points, which significant
 
 **The experts working in the undersigned NGOs state:**
 
-![](/assets/2104-logos.png)
+![]()
 
 *“This long-awaited reform reflects the vast amount of evidence pointing to the need to strengthen the reporting obligations and specification of mandatory standards for companies to be able to close the ESG data gap in the Sustainable Finance plan. This is necessary to enable investors and banks to channel their investments to truly sustainable activities, guide companies to focus on data that matters for their business, and ensure transparency on how companies linked to severe adverse impacts address such impacts.”* **Filip Gregor, Head of Responsible Companies at Frank Bold** 
 
@@ -47,15 +53,3 @@ However, the proposal falls short on several important points, which significant
 *“ShareAction welcomes the Commission’s ambition to strengthen the sustainability reporting obligations, that ensure legislative consistency with the Disclosure Regulation. Investors need stronger ESG data in order to consider the impacts linked to their investments and to reorient capital flows towards sustainable activities. We are concerned about the current exclusion of non-listed SME’s. A company’s impact on sustainability factors and the financial materiality of sustainability factors on the company do not depend on the company’s listing on stock exchanges. All companies that significantly impact the environment or society as a result of their operations need to be included.”*  **Maria van der Heide, Head of EU policy, ShareAction**
 
 *“For the financial market to unleash its transformative potential for the real economy, effective regulation and incentives are needed. This includes in particular binding reporting and fiduciary duty obligations for the entire supply chain in line with the 1.5°C limit of the Paris Agreement and with human rights obligations. Germany and EU regulators need to ensure that the information reported by companies is clear enough for interested stakeholders to understand how businesses identify and manage their impacts on environmental and social impacts."* **Christoph Bals, Policy Director, Germanwatch**
-
-<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
-
-  <p>For specific evidence supporting the need to define reporting obligations and develop mandatory standards, please see the research implemented by the [Alliance for Corporate Transparency](https://www.allianceforcorporatetransparency.org/) on the ESG disclosures of 1000 EU companies in 2019 as well as the latest study on 300 companies reporting on climate and environmental issues.</p>
-
-      </span>
-
-    </li>
-
-  </ul>
-
-</div>
