@@ -58,10 +58,4 @@ However, the proposal falls short on several important points, which significant
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
-  <p>For specific evidence supporting the need to define reporting obligations and develop mandatory standards, please see the research implemented by the [](https://www.allianceforcorporatetransparency.org/)href="https://www.allianceforcorporatetransparency.org">[](https://www.allianceforcorporatetransparency.org/)Alliance for Corporate Transparency</a> on the ESG disclosures of 1000 EU companies in 2019 as well as the latest study on 300 companies reporting on climate and environmental issues.</p></span>
-
-</li>
-
-</ul>
-
-</div>
+  <p>For specific evidence supporting the need to define reporting obligations and develop mandatory standards, please see the research implemented by the [](https://www.allianceforcorporatetransparency.org/)Alliance for Corporate Transparency on the ESG disclosures of 1000 EU companies in 2019 as well as the latest study on 300 companies reporting on climate and environmental issues.</p>
