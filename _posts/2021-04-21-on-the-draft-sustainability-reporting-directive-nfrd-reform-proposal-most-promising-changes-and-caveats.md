@@ -18,7 +18,7 @@ The European Commission has presented its legislative proposal for a Directive a
 
 The proposal presents several major improvements which are essential to help companies focus and report on meaningful information and channel finance to activities and projects needed to meet the objectives of the European Green Deal and make the European economy sustainable. 
 
-**The three most positive developments include:**
+**The most positive developments include:**
 
 1. **The extension of the scope of the Directive to include all large companies**, which is important for the success of the sustainable finance strategy, because a vast majority of large European companies are not publicly traded but rely instead on bank financing; and for public accountability, because both private and publicly-traded companies may have severe impacts on people and the environment. 
 2. **A requirement to develop European generic and sector specific mandatory sustainability reporting standards.** This is essential to ensure relevance, clarity and comparability of disclosed information and to address the specificities of high-risk sectors.
