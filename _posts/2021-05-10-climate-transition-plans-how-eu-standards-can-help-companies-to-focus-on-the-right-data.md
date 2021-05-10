@@ -106,7 +106,7 @@ In this sense, Lene Bjørn Serpa, Head of Corporate Sustainability at Maersk (gl
 
 Second, companies need to carry out an analysis of climate-related risks and opportunities. This provides the context in which they can consider and justify the investments in the transition. The framework for such reporting is provided by the [Task Force on Climate Related Financial Disclosures](https://www.fsb-tcfd.org/) (TCFD), whose recommendations were globally endorsed and provide a basis for the development of European standards.
 
-### 2. Climate-related risks, opportunities and governance
+<h3 id="climate-related-risks">2. Climate related risks, opportunities and governance</h3>
 
 **Understanding climate-related risks and opportunities is essential for a company’s ability to define a meaningful strategy.** It allows calculating the costs of inaction, prioritise the right investments, and attract capital in favour of their low-carbon transition.
 
@@ -129,7 +129,7 @@ The analysis should be supported by quantitative financial estimations for the i
 
 <!--StartFragment-->
 
-## Key issues that the EU climate reporting standard needs to address to help companies in this regard
+<h2 id="key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</h2>
 
 This is a pivotal moment for Europe and its companies, as we stand on the verge of transitioning to a low-carbon and resilient economy. The challenges and opportunities as well as the scope and speed of the change are unprecedented.
 
