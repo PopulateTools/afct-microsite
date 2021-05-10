@@ -15,15 +15,39 @@ img_listing: /assets/2105_windmills_small.jpg
 ---
 *Fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://bit.ly/3uUQvoN). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
-Outline of the article: 
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
-[Critical information for climate transition](https://docs.google.com/document/d/1sQo_uJB_su1JoqMSuMvK2fF0hBHKDgjfGzzvrULRmoM/edit?ts=6098ef39#heading=h.4zph9dwibx0)
+  <span>Outline of the article</span>
 
-[Climate change transition plan](https://docs.google.com/document/d/1sQo_uJB_su1JoqMSuMvK2fF0hBHKDgjfGzzvrULRmoM/edit?ts=6098ef39#heading=h.2uf6c3g8h3ya)
+  <ul>
 
-[Climate-related risks, opportunities and governance](https://docs.google.com/document/d/1sQo_uJB_su1JoqMSuMvK2fF0hBHKDgjfGzzvrULRmoM/edit?ts=6098ef39#heading=h.bxmtorh3o40e)
+    <li>
 
-[Key issues that the EU climate reporting standard needs to address](https://docs.google.com/document/d/1sQo_uJB_su1JoqMSuMvK2fF0hBHKDgjfGzzvrULRmoM/edit?ts=6098ef39#heading=h.mr8fblpvlpj4)
+      <a href="#critical-information-for-climate-transition">Critical information for climate transition</a>
+
+    </li>
+
+    <li>
+
+      <a href="#climate-change-transition-plan">Climate change transition plan</a>
+
+    </li>
+
+    <li>
+
+      <a href="#climate-related-risks">Climate related risks, opportunities and governance</a>
+
+    </li>
+
+    <li>
+
+      <a href="#key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</a>
+
+    </li>
+
+  </ul>
+
+</div>
 
 Climate change is a critical issue that no company can afford to ignore. The Paris Agreement and the Intergovernmental Panel on Climate Change are clear: decisive action is needed to reduce greenhouse gas emissions and ensure climate-resilient economies. The European Green Deal outlines plans for such decisive action with the objective to make Europe a carbon-neutral continent by 2050.
 
