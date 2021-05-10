@@ -4,13 +4,17 @@ title: "Climate transition plans: How EU standards can help companies to focus
   on the right data"
 categories: "#monthlyarticles"
 date: 2021-05-10T14:56:54.328Z
-intro: Fourth article by Frank Bold as part of the series of monthly briefings
-  on sustainability reporting in 2021. The previous articles can be found here.
-  Views included in this article do not necessarily represent the opinion of
-  other members of the Alliance.
-img: /assets/2105_renewables.jpg
+intro: "Climate change is a critical issue that no company can afford to ignore.
+  The Paris Agreement and the Intergovernmental Panel on Climate Change are
+  clear: decisive action is needed to reduce greenhouse gas emissions and ensure
+  climate-resilient economies. The European Green Deal outlines plans for such
+  decisive action with the objective to make Europe a carbon-neutral continent
+  by 2050."
+img: /assets/2105_windmills.jpg
 img_listing: /assets/2105_renewables_small.jpg
 ---
+*Fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://bit.ly/3uUQvoN). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+
 Outline of the article: 
 
 [Critical information for climate transition](https://docs.google.com/document/d/1sQo_uJB_su1JoqMSuMvK2fF0hBHKDgjfGzzvrULRmoM/edit?ts=6098ef39#heading=h.4zph9dwibx0)
