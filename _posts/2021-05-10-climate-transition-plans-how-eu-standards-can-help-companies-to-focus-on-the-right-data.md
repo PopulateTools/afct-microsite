@@ -29,7 +29,7 @@ img_listing: /assets/2105_windmills_small.jpg
 
     <li>
 
-      <a href="#climate-change-transition-plan">1. Climate change transition plan</a>
+      <a href="#climate-change-transition-plan">Climate change transition plan</a>
 
     </li>
 
