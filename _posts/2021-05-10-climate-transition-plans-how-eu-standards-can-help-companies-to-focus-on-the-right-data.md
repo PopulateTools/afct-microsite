@@ -29,7 +29,7 @@ img_listing: /assets/2105_windmills_small.jpg
 
     <li>
 
-      <a href="#climate-change-transition-plan">Climate change transition plan</a>
+      <a href="#climate-change-transition-plan">1. Climate change transition plan</a>
 
     </li>
 
@@ -70,7 +70,7 @@ The EU Sustainable Finance Disclosure Regulation ([SFDR](https://eur-lex.europa.
 
 This information falls in two main categories, both addressing a company's business model: climate change transition plans, and the analysis of climate risks and opportunities. The current legislation - the Non-Financial Reporting Directive - provides some guidance to companies, but leaves many details unaddressed. Below, we explain what information and data count as key for meaningful reporting.
 
-<h3 id="climate-change-transition-plan">Climate change transition plan</h3>
+<h3 id="climate-change-transition-plan">1. Climate change transition plan</h3>
 
 **Climate change transition plans are a shorthand for companies’ strategies to contribute to and thrive in a transition towards a net-zero economy.** Net-zero refers to the goal of achieving no net emissions of greenhouse gases. The European Green Deal - the European Commission’s flagship initiative for economic growth and transformation - has set this goal for 2050. The plan should set out the pathway of how ‘net zero’ will be achieved and contributed to by the company - with review points along the way, to ensure it meets its objective.
 
