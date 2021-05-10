@@ -123,11 +123,19 @@ The key factors companies need to focus on in their analysis and disclosure are 
 * **Opportunities** connected to climate change mitigation and adaptation needs, that is how the company’s business strategy, products and services can harness the transition. The Business Commission for Sustainable Development reported that meeting the UN Sustainable Development Goals (SDGs), would create market opportunities of EUR 10 trillion per year by 2030.
 * Integration of the assessment of climate risks and opportunities in the **governance** of the company, which is critical for the company’s ability to consider the need for major changes to its business model and strategy. It represents an important proxy reflecting the company’s seriousness and maturity in terms of managing risks and opportunities, and integrating them in the company’s overall strategy. Details on how to advance governance-related disclosures can be found in our previous article ‘[What needs to be reported on Governance (of ESG)](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html)’.
 
-The analysis should be supported by quantitative financial estimations for the issues that can be predicted, such as the costs of carbon emissions or emission allowances, or the growth of the market for sustainable products or services.
+The analysis should be supported by quantitative financial estimations for the issues that can be predicted, such as the costs of carbon emissions or emission allowances, or the growth of the market for sustainable products or services.<!--StartFragment-->
 
-<!--EndFragment-->
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
-<!--StartFragment-->
+  <p>The need for a complex analysis is particularly high for banks and institutional investors. Energy companies, likewise, need to have absolute clarity on the implications of public policies for their business model, however such an analysis is fairly straightforward. Companies that do not have high-impact, but are dependent on supply chains in vulnerable regions, should use tools for the geomodelling of physical risks. Companies that do not face any obvious risks, need to at least give a thought to the rising prices of energy, and to the opportunities concerning products and services that their sector may provide to enable climate change mitigation. A good starting point is the 2021 edition of [SASB’s Climate Risk Technical Bulletin](https://www.sasb.org/wp-content/uploads/2021/04/Climate-Bulletin-Press-Release-Final.pdf), showing how climate risks and opportunities manifest in unique ways across 77 industries. Two further frameworks which some companies are using to assist them are the Science-based Targets initiative and the Transition Pathways Initiative.</p>
+
+</span>
+
+    </li>
+
+  </ul>
+
+</div>
 
 <h2 id="key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</h2>
 
