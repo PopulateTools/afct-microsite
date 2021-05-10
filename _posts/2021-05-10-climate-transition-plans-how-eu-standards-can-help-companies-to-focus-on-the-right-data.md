@@ -66,7 +66,9 @@ The main elements that companies, investors, insurers and banks need to consider
   * Energy: Consumption and/or production from renewables; overall consumption and efficiency (in high-consumption sectors)
   * Share of turnover and CAPEX associated with Taxonomy-aligned activities substantially contributing to climate change mitigation and adaptation
 
-![]()
+![Examples of key strategies of companies’ climate transition plans. ](/assets/2105_fb_climate-trans-plans.png "Examples of key strategies of companies’ climate transition plans. ")
+
+**[See this extended table](https://drive.google.com/file/d/1cBEhBDH58e6yHS4-zLa64-GvZV2-HJv0/view?usp=sharing)** for more examples. (?)
 
 To be able to develop a climate transition plan, companies need to carry out two assessments.
 
@@ -105,7 +107,7 @@ This is a pivotal moment for Europe and its companies, as we stand on the verge 
 
 However, as found by the [research](https://www.allianceforcorporatetransparency.org/database/2019.html) of the Alliance for Corporate Transparency on 1000 company reports, companies struggle with analysing climate risks and opportunities and providing the right data about their climate transition plans. Same conclusions were reached by Climate Action 100+ companies’ assessment (consult the graph and box below for more details).
 
-![]()
+![Companies Assessment Results by Indicator](/assets/2105_company-assessment-results-by-indicator.jpg "Companies Assessment Results by Indicator")
 
 tabulka
 
