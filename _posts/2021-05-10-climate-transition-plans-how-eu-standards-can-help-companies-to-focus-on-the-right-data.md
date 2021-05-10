@@ -8,6 +8,8 @@ intro: Fourth article by Frank Bold as part of the series of monthly briefings
   on sustainability reporting in 2021. The previous articles can be found here.
   Views included in this article do not necessarily represent the opinion of
   other members of the Alliance.
+img: /assets/2105_renewables.jpg
+img_listing: /assets/2105_renewables_small.jpg
 ---
 Outline of the article: 
 
@@ -26,8 +28,6 @@ This transition will bring about risks and opportunities of unprecedented scale 
 It is becoming essential for companies’ success - and survival - to align their business models to a net-zero future. <!--StartFragment-->
 
 To be able to do it, companies’ need to develop comprehensive climate transition plans that address core aspects of their business strategy. And companies increasingly do so as Paul Polman, former CEO of Unilever [pointed out](https://fortune.com/2021/04/11/greenwashing-esg-businesses-corporations-climate-change/): *“The proliferation of corporate decarbonization plans and sustainability initiatives has now reached an impressive crescendo.”* But at the same time he adds: *“Regrettably, the same can also be said of greenwashing (...) So far, corporate ESG data has been lacking in quality, consistency, and comparability, which makes it difficult for asset managers to determine where to direct investments.”* 
-
-<!--StartFragment-->
 
 As the [EU Sustainable Finance Strategy](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance_en) aims at channelling an additional 500 billion EUR of private investments each year into sustainable business activities, companies need to focus on and report the right data to be able to harness this opportunity. To help them to do so, the EU is replacing its legislation on ‘non-financial reporting’ with a new [Corporate Sustainability Reporting Directive](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html) (CSRD), which will be supported by reporting standards. Companies will get clarity from these standards on how to report on their climate transition towards a net-zero economy, how to conduct scenario analysis, and on the key metrics to assess risks, opportunities, performance and impacts.
 
