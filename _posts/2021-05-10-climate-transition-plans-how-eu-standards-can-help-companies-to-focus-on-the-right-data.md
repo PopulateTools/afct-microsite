@@ -53,9 +53,7 @@ Climate change is a critical issue that no company can afford to ignore. The Par
 
 This transition will bring about risks and opportunities of unprecedented scale and speed in all sectors of the economy. As the President of the European Central Bank Christine Lagarde [puts it](https://www.ecb.europa.eu/press/key/date/2021/html/ecb.sp210506~4ec98730ee.en.html) “we need to transform our economies as structural changes speed up around us”.
 
-It is becoming essential for companies’ success - and survival - to align their business models to a net-zero future. <!--StartFragment-->
-
-To be able to do it, companies’ need to develop comprehensive climate transition plans that address core aspects of their business strategy. And companies increasingly do so as Paul Polman, former CEO of Unilever [pointed out](https://fortune.com/2021/04/11/greenwashing-esg-businesses-corporations-climate-change/): *“The proliferation of corporate decarbonization plans and sustainability initiatives has now reached an impressive crescendo.”* But at the same time he adds: *“Regrettably, the same can also be said of greenwashing (...) So far, corporate ESG data has been lacking in quality, consistency, and comparability, which makes it difficult for asset managers to determine where to direct investments.”* 
+It is becoming essential for companies’ success - and survival - to align their business models to a net-zero future. To be able to do it, companies’ need to develop comprehensive climate transition plans that address core aspects of their business strategy. And companies increasingly do so as Paul Polman, former CEO of Unilever [pointed out](https://fortune.com/2021/04/11/greenwashing-esg-businesses-corporations-climate-change/): *“The proliferation of corporate decarbonization plans and sustainability initiatives has now reached an impressive crescendo.”* But at the same time he adds: *“Regrettably, the same can also be said of greenwashing (...) So far, corporate ESG data has been lacking in quality, consistency, and comparability, which makes it difficult for asset managers to determine where to direct investments.”* 
 
 As the [EU Sustainable Finance Strategy](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance_en) aims at channelling an additional 500 billion EUR of private investments each year into sustainable business activities, companies need to focus on and report the right data to be able to harness this opportunity. To help them to do so, the EU is replacing its legislation on ‘non-financial reporting’ with a new [Corporate Sustainability Reporting Directive](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html) (CSRD), which will be supported by reporting standards. Companies will get clarity from these standards on how to report on their climate transition towards a net-zero economy, how to conduct scenario analysis, and on the key metrics to assess risks, opportunities, performance and impacts.
 
@@ -164,15 +162,7 @@ There is no doubt that we are moving towards a situation where all companies hav
 
 <hr>
 
-<a href="https://en.frankbold.org/" style="
-
-max-width: 200px;
-
-display: block;
-
-margin-left: -29px;
-
-margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
+<a href="https://en.frankbold.org/" style="max-width: 200px; display: block; margin-left: -29px; margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
 
 *This is the fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021.* 
 
