@@ -129,12 +129,6 @@ The analysis should be supported by quantitative financial estimations for the i
 
   <p>The need for a complex analysis is particularly high for banks and institutional investors. Energy companies, likewise, need to have absolute clarity on the implications of public policies for their business model, however such an analysis is fairly straightforward. Companies that do not have high-impact, but are dependent on supply chains in vulnerable regions, should use tools for the geomodelling of physical risks. Companies that do not face any obvious risks, need to at least give a thought to the rising prices of energy, and to the opportunities concerning products and services that their sector may provide to enable climate change mitigation. A good starting point is the 2021 edition of [SASB’s Climate Risk Technical Bulletin](https://www.sasb.org/wp-content/uploads/2021/04/Climate-Bulletin-Press-Release-Final.pdf), showing how climate risks and opportunities manifest in unique ways across 77 industries. Two further frameworks which some companies are using to assist them are the Science-based Targets initiative and the Transition Pathways Initiative.</p>
 
-</span>
-
-    </li>
-
-  </ul>
-
 </div>
 
 <h2 id="key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</h2>
