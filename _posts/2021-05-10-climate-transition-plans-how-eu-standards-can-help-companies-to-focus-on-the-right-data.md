@@ -11,7 +11,7 @@ intro: "Climate change is a critical issue that no company can afford to ignore.
   decisive action with the objective to make Europe a carbon-neutral continent
   by 2050."
 img: /assets/2105_windmills.jpg
-img_listing: /assets/2105_renewables_small.jpg
+img_listing: /assets/2105_windmills_small.jpg
 ---
 *Fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://bit.ly/3uUQvoN). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
