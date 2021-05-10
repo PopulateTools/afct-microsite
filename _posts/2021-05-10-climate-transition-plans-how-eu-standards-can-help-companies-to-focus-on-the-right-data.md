@@ -139,9 +139,13 @@ However, as found by the [research](https://www.allianceforcorporatetransparency
 
 ![Companies Assessment Results by Indicator](/assets/2105_company-assessment-results-by-indicator.jpg "Companies Assessment Results by Indicator")
 
-tabulka
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
-<!--StartFragment-->
+  <p>GRAPH: Assessment of 159 companies, accounting for over 80 percent of corporate industrial greenhouse gas emissions, by the Climate Action 100+ investor coalition, the world’s largest investor engagement initiative on climate change; source.</p>
+
+ <p>The data shows that while more than a half of the assessed companies has some level of net-zero ambition, less than 10 % has a specific decarbonization strategy and not a single company provides sufficient details on capital allocation to support such a strategy.  The study of the Alliance for Corporate Transparency on the climate reporting of 300 Southern European and CEE companies from high risk industries demonstrates similar low levels of specificity; less than 16 % of companies have a science-based target. Forward-looking information on companies’ strategic targets and progress is disclosed by less than 10% of companies for climate transition plans.</p>
+
+</div>
 
 To be able to identify and report relevant and comparable data, companies will need clarity on key reporting elements, methodologies to be followed, and sectoral specifications for indicators. This is even more so important as investors and banks are realigning their strategies to support the transition to a sustainable economy, within the framework provided by the SFDR and Taxonomy criteria, which will enter into force on 1st January 2022. 
 
