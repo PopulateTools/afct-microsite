@@ -162,6 +162,18 @@ Companies can consult leading international standards provided by SASB, GRI and 
 
 There is no doubt that we are moving towards a situation where all companies have climate transition plans, for reasons of regulation, investor demand and quite simply of good business. However, the challenge for companies - demonstrated by the research - is that current uncertainties are making it difficult for today’s corporate sustainability reporting to be sufficiently forward-looking, detailed and aligned with the Paris targets - to meet the imperatives of climate change itself. In this article, we have given some detail of what are the key components of a climate transition plan and have identified the four specific areas for European Standards to bring the necessary clarity for the future. This can help companies navigate the next stage of their transition now. There is quite literally no time to delay.
 
+<hr>
+
+<a href="https://en.frankbold.org/" style="
+
+max-width: 200px;
+
+display: block;
+
+margin-left: -29px;
+
+margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
+
 *This is the fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021.* 
 
 *The [first article](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for 2021, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal, while [the second](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG).* 
