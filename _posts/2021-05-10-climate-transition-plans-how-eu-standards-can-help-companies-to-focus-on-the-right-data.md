@@ -64,13 +64,13 @@ This article addresses two questions: 
 1. *What information is critical for companies  to consider in the context of their climate transition plans?*
 2. *What are the key issues that the EU climate reporting standard needs to address to help companies in this regard?*
 
-## Critical information for climate transition 
+<h2 id="critical-information-for-climate-transition">Critical information for climate transition</h2>
 
 The EU Sustainable Finance Disclosure Regulation ([SFDR](https://eur-lex.europa.eu/eli/reg/2019/2088/oj)) and the EU taxonomy already outline the main information investors will need to disclose and gather from companies, as of January 2022. (More details about this [in our previous article](https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html)). If investors have to provide this information, it follows that they will ask companies to provide it too. 
 
 This information falls in two main categories, both addressing a company's business model: climate change transition plans, and the analysis of climate risks and opportunities. The current legislation - the Non-Financial Reporting Directive - provides some guidance to companies, but leaves many details unaddressed. Below, we explain what information and data count as key for meaningful reporting.
 
-### 1. Climate change transition plan
+<h3 id="climate-change-transition-plan">Climate change transition plan</h3>
 
 **Climate change transition plans are a shorthand for companies’ strategies to contribute to and thrive in a transition towards a net-zero economy.** Net-zero refers to the goal of achieving no net emissions of greenhouse gases. The European Green Deal - the European Commission’s flagship initiative for economic growth and transformation - has set this goal for 2050. The plan should set out the pathway of how ‘net zero’ will be achieved and contributed to by the company - with review points along the way, to ensure it meets its objective.
 
