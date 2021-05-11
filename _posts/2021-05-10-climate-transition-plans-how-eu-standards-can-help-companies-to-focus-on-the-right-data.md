@@ -3,7 +3,7 @@ layout: post
 title: "Climate transition plans: How EU standards can help companies to focus
   on the right data"
 categories: monthlyarticles
-date: 2021-05-10T14:56:54.328Z
+date: 2021-05-11T09:55:44.858Z
 intro: "Climate change is a critical issue that no company can afford to ignore.
   The Paris Agreement and the Intergovernmental Panel on Climate Change are
   clear: decisive action is needed to reduce greenhouse gas emissions and ensure
@@ -94,7 +94,7 @@ The main elements that companies, investors, insurers and banks need to consider
 
 ![Examples of key strategies of companies’ climate transition plans. ](/assets/2105_fb_climate-trans-plans.png "Examples of key strategies of companies’ climate transition plans. ")
 
-**[See this extended table](<[https://www.allianceforcorporatetransparency.org/](https://www.allianceforcorporatetransparency.org/assets/companies-climate-transition-plans-table_frank-bold.pdf>)** for more detailed examples. 
+***[See this extended table](https://www.allianceforcorporatetransparency.org/assets/companies-climate-transition-plans-table_frank-bold.pdf)** for more detailed examples.* 
 
 To be able to develop a climate transition plan, companies need to carry out two assessments.
 
