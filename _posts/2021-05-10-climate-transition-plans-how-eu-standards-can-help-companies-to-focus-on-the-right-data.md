@@ -94,7 +94,7 @@ The main elements that companies, investors, insurers and banks need to consider
 
 ![Examples of key strategies of companies’ climate transition plans. ](/assets/2105_fb_climate-trans-plans.png "Examples of key strategies of companies’ climate transition plans. ")
 
-*``[`See this extended table`](https://www.allianceforcorporatetransparency.org/assets/companies-climate-transition-plans-table_frank-bold.pdf)` for more detailed examples.`* 
+*\*[See this extended table](https://www.allianceforcorporatetransparency.org/assets/companies-climate-transition-plans-table_frank-bold.pdf) [](https://www.allianceforcorporatetransparency.org/assets/companies-climate-transition-plans-table_frank-bold.pdf)for more detailed examples.* 
 
 To be able to develop a climate transition plan, companies need to carry out two assessments.
 
