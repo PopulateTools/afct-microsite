@@ -135,7 +135,7 @@ This is a pivotal moment for Europe and its companies, as we stand on the verge 
 
 However, as found by the [research](https://www.allianceforcorporatetransparency.org/database/2019.html) of the Alliance for Corporate Transparency on 1000 company reports, companies struggle with analysing climate risks and opportunities and providing the right data about their climate transition plans. Same conclusions were reached by Climate Action 100+ companies’ assessment (consult the graph and box below for more details).
 
-![Companies Assessment Results by Indicator](/assets/2105_company-assessment-results-by-indicator.jpg "Companies Assessment Results by Indicator")
+![Companies Assessment Results by Indicator, Climate Action 100 +](/assets/2105_company-assessment-results-by-indicator.jpg "Companies Assessment Results by Indicator, Climate Action 100 +")
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
