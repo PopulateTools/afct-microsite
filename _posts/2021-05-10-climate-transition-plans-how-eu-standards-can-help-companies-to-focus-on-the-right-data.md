@@ -2,7 +2,7 @@
 layout: post
 title: "Climate transition plans: How EU standards can help companies to focus
   on the right data"
-categories: "#monthlyarticles"
+categories: monthlyarticles
 date: 2021-05-10T14:56:54.328Z
 intro: "Climate change is a critical issue that no company can afford to ignore.
   The Paris Agreement and the Intergovernmental Panel on Climate Change are
