@@ -41,7 +41,13 @@ img_listing: /assets/2105_renewables_small.jpg
 
     <li>
 
-      <a href="#key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</a></li></ul></div>
+      <a href="#key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</a>
+
+</li>
+
+  </ul>
+
+</div>
 
 Climate change is a critical issue that no company can afford to ignore. The Paris Agreement and the Intergovernmental Panel on Climate Change are clear: decisive action is needed to reduce greenhouse gas emissions and ensure climate-resilient economies. The European Green Deal outlines plans for such decisive action with the objective to make Europe a carbon-neutral continent by 2050.
 
@@ -53,7 +59,7 @@ As the [EU Sustainable Finance Strategy](https://ec.europa.eu/info/business-econ
 
 This article addresses two questions: 
 
-1. *What information is critical for companies  to consider in the context of their climate transition plans?*
+1. *What information is critical for companies to consider in the context of their climate transition plans?*
 2. *What are the key issues that the EU climate reporting standard needs to address to help companies in this regard?*
 
 <h2 id="critical-information-for-climate-transition">Critical information for climate transition</h2>
@@ -88,7 +94,7 @@ The main elements that companies, investors, insurers and banks need to consider
 
 ![Examples of key strategies of companies’ climate transition plans. ](/assets/2105_fb_climate-trans-plans.png "Examples of key strategies of companies’ climate transition plans. ")
 
-**[See this extended table](https://drive.google.com/file/d/1cBEhBDH58e6yHS4-zLa64-GvZV2-HJv0/view?usp=sharing)** for more examples. (?)
+**[See this extended table](<[https://www.allianceforcorporatetransparency.org/](https://www.allianceforcorporatetransparency.org/assets/companies-climate-transition-plans-table_frank-bold.pdf>)** for more detailed examples. 
 
 To be able to develop a climate transition plan, companies need to carry out two assessments.
 
