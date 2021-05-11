@@ -41,9 +41,7 @@ img_listing: /assets/2105_renewables_small.jpg
 
     <li>
 
-      <a href="#key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</a>
-
-    </li>
+      <a href="#key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</a></li>
 
   </ul>
 
