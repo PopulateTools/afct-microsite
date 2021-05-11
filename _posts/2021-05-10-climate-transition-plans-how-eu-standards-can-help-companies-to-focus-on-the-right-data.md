@@ -41,11 +41,7 @@ img_listing: /assets/2105_renewables_small.jpg
 
     <li>
 
-      <a href="#key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</a></li>
-
-  </ul>
-
-</div>
+      <a href="#key-issues-that-the-EU-climate-reporting">Key issues that the EU climate reporting standard needs to address</a></li></ul></div>
 
 Climate change is a critical issue that no company can afford to ignore. The Paris Agreement and the Intergovernmental Panel on Climate Change are clear: decisive action is needed to reduce greenhouse gas emissions and ensure climate-resilient economies. The European Green Deal outlines plans for such decisive action with the objective to make Europe a carbon-neutral continent by 2050.
 
