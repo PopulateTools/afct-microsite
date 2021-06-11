@@ -9,6 +9,8 @@ intro: Small businesses are the lifeblood of our economy. They are the biggest
   sustainable and low carbon economy. The transition is already underway. It is
   essential that SMEs are not left behind and are considered adequately in the
   discussions.
+img: /assets/zsun-fu-1fg5guxi2bu-unsplash.jpg
+img_listing: /assets/2106-tree-and-buildings-1-.jpg
 ---
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
@@ -50,7 +52,7 @@ Small businesses are the lifeblood of our economy. They are the biggest source o
 
 The European Commission is already proposing a new framework to simplify and better focus disclosure of sustainability data with the presentation of the Corporate Sustainability Reporting Directive (CSRD). The reform should be adopted in law in early 2022 and enter into force in 2023.
 
-![Adoption of the CSRD and the EU Sustainability Reporting Standards.]( "Adoption of the CSRD and the EU Sustainability Reporting Standards.")
+![Adoption of the CSRD and the EU Sustainability Reporting Standards.](/assets/timeline_csrd__a-1-.png "Adoption of the CSRD and the EU Sustainability Reporting Standards.")
 
 \**Adoption of the CSRD and the EU Sustainability Reporting Standards, see it full resolution [here](https://drive.google.com/file/d/1MQcUjpwMZc4zX8qBYKnDgerOpqSAG0uS/view?usp=sharing)*
 
