@@ -9,8 +9,8 @@ intro: Small businesses are the lifeblood of our economy. They are the biggest
   sustainable and low carbon economy. The transition is already underway. It is
   essential that SMEs are not left behind and are considered adequately in the
   discussions.
-img: /assets/zsun-fu-1fg5guxi2bu-unsplash.jpg
-img_listing: /assets/2106-tree-and-buildings-1-.jpg
+img: /assets/2106-tree-and-buildings-header.jpg
+img_listing: /assets/2106-tree-and-buildings-list.jpg
 ---
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
@@ -38,9 +38,9 @@ img_listing: /assets/2106-tree-and-buildings-1-.jpg
 
     <li>
 
-\    <a href="#conclusion">Conclusion</a>
+\    <a href="#conclusion>Conclusion</a> 
 
-       </li>
+    <li>
 
   </ul>
 
@@ -150,18 +150,10 @@ For every small business owner across Europe today, it is important to recognise
 
 
 
-(1) In practice, and taking account of how the NFRD has been transposed in different Member States, approximately 11 700 companies were subject to the reporting requirements of the NFRD in the EU-28. This figure takes account of how Member States have transposed the Directive. Not taking account of national transposition, about 2 000 companies are [under scope of the NFRD](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN).
+(1) *In practice, and taking account of how the NFRD has been transposed in different Member States, approximately 11 700 companies were subject to the reporting requirements of the NFRD in the EU-28. This figure takes account of how Member States have transposed the Directive. Not taking account of national transposition, about 2 000 companies are [under scope of the NFRD](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN).*
 
 
 
 <hr>
 
-<a href="https://en.frankbold.org/" style="
-
-max-width: 200px;
-
-display: block;
-
-margin-left: -29px;
-
-margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
+<a href="https://en.frankbold.org/" style="max-width: 200px;display: block;margin-left: -29px;margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
