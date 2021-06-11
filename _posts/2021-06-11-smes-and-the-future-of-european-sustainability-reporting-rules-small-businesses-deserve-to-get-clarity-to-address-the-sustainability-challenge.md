@@ -132,9 +132,9 @@ The European Union’s new Corporate Sustainability Reporting Directive has reco
 
 For every small business owner across Europe today, it is important to recognise how many of your fellow SMEs are adopting these practices and are succeeding by doing so. You have won the argument that new EU requirements must be proportionate to your ability to meet them – but it is time to add your own voice to ensure all small businesses can be included, to secure your own place in a sustainable future.
 
-**(1)** In practice, and taking account of how the NFRD has been transposed in different Member States, approximately 11 700 companies were subject to the reporting requirements of the NFRD in the EU-28. This figure takes account of how Member States have transposed the Directive. Not taking account of national transposition, about 2 000 companies are [under scope of the NFRD](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN).
-
 <hr>
+
+**(1)** *In practice, and taking account of how the NFRD has been transposed in different Member States, approximately 11 700 companies were subject to the reporting requirements of the NFRD in the EU-28. This figure takes account of how Member States have transposed the Directive. Not taking account of national transposition, about 2 000 companies are [under scope of the NFRD](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN).*
 
 <a href="https://en.frankbold.org/" style="
 max-width: 200px;
