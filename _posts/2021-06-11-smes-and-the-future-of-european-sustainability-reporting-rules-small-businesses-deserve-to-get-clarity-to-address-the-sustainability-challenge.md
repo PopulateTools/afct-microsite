@@ -12,6 +12,8 @@ intro: Small businesses are the lifeblood of our economy. They are the biggest
 img: /assets/2106-tree-and-buildings-header.jpg
 img_listing: /assets/2106-tree-and-buildings-list.jpg
 ---
+*Fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
   <span>Content Outline</span>
@@ -136,4 +138,18 @@ For every small business owner across Europe today, it is important to recognise
 
 **(1)** In practice, and taking account of how the NFRD has been transposed in different Member States, approximately 11 700 companies were subject to the reporting requirements of the NFRD in the EU-28. This figure takes account of how Member States have transposed the Directive. Not taking account of national transposition, about 2 000 companies are [under scope of the NFRD](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN).
 
-<hr><a href="https://en.frankbold.org/" style="max-width: 200px;display: block;margin-left: -29px;margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
+<hr>
+
+<a href="https://en.frankbold.org/" style="
+max-width: 200px;
+display: block;
+margin-left: -29px;
+margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
+
+*This is the fifth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021.* 
+
+*The [first article](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for 2021, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal, while [the second](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG).* 
+
+*[The third article](https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html) highlighted the role of EU standards in ensuring comparable and meaningful data, [the fourth](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html) focused on climate transition.*
+
+*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
