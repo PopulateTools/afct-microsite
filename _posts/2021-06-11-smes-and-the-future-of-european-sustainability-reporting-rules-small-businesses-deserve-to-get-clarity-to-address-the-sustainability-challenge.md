@@ -40,7 +40,9 @@ img_listing: /assets/2106-tree-and-buildings-list.jpg
 
 \    <a href="#conclusion>Conclusion</a> 
 
-    <li>
+  </span>
+
+    </li>
 
   </ul>
 
