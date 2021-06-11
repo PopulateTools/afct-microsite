@@ -44,15 +44,17 @@ intro: Small businesses are the lifeblood of our economy. They are the biggest
 
 </div>
 
-
-
 Small businesses are the lifeblood of our economy. They are the biggest source of innovation, employment and represent growth opportunities towards a sustainable and low carbon economy. The transition is already underway. It is essential that SMEs are not left behind and are considered adequately in the discussions. 
 
 **Until now, SMEs have largely been left out from sustainability reporting.** However, this will change dramatically. European banks and investors, as well as companies at the top of value chains, are rapidly realigning their strategies to avoid risks posed by the climate transition. SMEs form the majority of their clients and suppliers. It is important that small businesses understand the implications of such changes, and the role they can play in this debate, to ensure a positive contribution.
 
 The European Commission is already proposing a new framework to simplify and better focus disclosure of sustainability data with the presentation of the Corporate Sustainability Reporting Directive (CSRD). The reform should be adopted in law in early 2022 and enter into force in 2023.
 
-![]()
+![Adoption of the CSRD and the EU Sustainability Reporting Standards.]( "Adoption of the CSRD and the EU Sustainability Reporting Standards.")
+
+*Adoption of the CSRD and the EU Sustainability Reporting Standards, see it full resolution [here](https://drive.google.com/file/d/1MQcUjpwMZc4zX8qBYKnDgerOpqSAG0uS/view?usp=sharing)*
+
+
 
 Meanwhile, the EU taxonomy, which will provide a framework to realign investments and loans to support sustainable activities will become applicable already in 2022 (estimated need of additional   500 billion EUR annually to achieve the Green Deal objectives). The public Covid-recovery programmes will also be focused on sustainable transformation determined by these tools.
 
@@ -74,7 +76,29 @@ An example of a smaller company that has sustainability deeply integrated in its
 
 **See Frank Bold’s overview of Veja’s sustainability reporting [in detail here](https://drive.google.com/file/d/1YM_vv5VZxYWDn6Rgk0O11p-AFul5zS6H/view?usp=sharing).** 
 
-**INFOBOX**
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
+  <p style="font-weight: bold;">Infobox: SMEs in the EU - green business opportunities and access to finance</p>
+
+  <p>Together, SMEs make up over 99% of all enterprises in the EU. They account for over two-thirds of total employment and contribute about 56% of the total turnover in the EU.</p>
+
+<ul>
+
+   <p style="font-weight: bold;">Only 3 % of EU start-ups go on scale up, but they are Europe's job creation champions.</p>
+
+<ul>
+
+   <p>While young SMEs that scale up represent just a tiny minority of all start-ups, they offer a key source of radical and disruptive innovations and disproportionately create jobs in the market. For example, while on average only 4% of micro-sized start-ups grow in this way, they contribute to the creation of between 22% (The Netherlands) and 53% (France) of jobs in their category.</p>
+
+<ul>
+
+ <p>There is evidence that lack of access to appropriate external finance can act <a href="https://ec.europa.eu/environment/integration/research/newsalert/pdf/eco_innovations_in_sme_FB22_en.pdf">a barrier to growth and innovation in SMEs</a>. Even more so in green business opportunities, more than a quarter of SMEs that have undertaken activities related to the circular economy claimed difficulties accessing finance in the <a href="https://eco.nomia.pt/contents/documentacao/kh0216459enn-002.pdf">Eurobarometer survey</a>.</p>
+
+        </span>
+
+  </ul>
+
+</div>
 
 <h1 id="the-cost-of-excluding">The cost of excluding SMEs</h1>
 
@@ -125,3 +149,21 @@ A tipping point has now been reached from an older approach of simply exempting 
 The European Union’s new Corporate Sustainability Reporting Directive has recognised these arguments, involving small business for the first time, but ensuring that only simplified standards would apply to SMEs. Following the reasons outlined in this article, it is right to argue that the interest of small business would be better served by extending the scope of the Directive and providing them with certainty vis-a-vis larger companies by laying down safeguards and clear simplified standards. 
 
 For every small business owner across Europe today, it is important to recognise how many of your fellow SMEs are adopting these practices and are succeeding by doing so. You have won the argument that new EU requirements must be proportionate to your ability to meet them – but it is time to add your own voice to ensure all small businesses can be included, to secure your own place in a sustainable future.
+
+
+
+(1) In practice, and taking account of how the NFRD has been transposed in different Member States, approximately 11 700 companies were subject to the reporting requirements of the NFRD in the EU-28. This figure takes account of how Member States have transposed the Directive. Not taking account of national transposition, about 2 000 companies are [under scope of the NFRD](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN).
+
+
+
+<hr>
+
+<a href="https://en.frankbold.org/" style="
+
+max-width: 200px;
+
+display: block;
+
+margin-left: -29px;
+
+margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
