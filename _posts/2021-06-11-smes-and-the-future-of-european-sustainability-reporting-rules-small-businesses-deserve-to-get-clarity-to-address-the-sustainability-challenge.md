@@ -34,12 +34,6 @@ img_listing: /assets/2106-tree-and-buildings-list.jpg
 
       <a href="#how-can-the_EU">How can the EU standardisation of corporate sustainability reporting help reduce the burden</a> 
 
-\    </li>
-
-    <li>
-
-\    <a href="#conclusion>Conclusion</a> 
-
   </span>
 
     </li>
