@@ -9,8 +9,8 @@ intro: Small businesses are the lifeblood of our economy. They are the biggest
   sustainable and low carbon economy. The transition is already underway. It is
   essential that SMEs are not left behind and are considered adequately in the
   discussions.
-img: /assets/2106-tree-and-buildings-header.jpg
-img_listing: /assets/2106-tree-and-buildings-list.jpg
+img: /assets/2106-people-office.jpg
+img_listing: /assets/2106-people-list.jpg
 ---
 *Fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
