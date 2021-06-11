@@ -2,7 +2,7 @@
 layout: post
 title: SMEs and the future of European sustainability reporting rules - Small
   businesses deserve to get clarity to address the sustainability challenge
-categories: "#monthlyarticles"
+categories: "#monthly-articles"
 date: 2021-06-11T06:03:30.987Z
 intro: Small businesses are the lifeblood of our economy. They are the biggest
   source of innovation, employment and represent growth opportunities towards a
