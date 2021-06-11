@@ -80,7 +80,7 @@ See Frank Bold’s overview of Veja’s sustainability reporting **[in detail he
 
  <p>There is evidence that lack of access to appropriate external finance can act as <a href="https://ec.europa.eu/environment/integration/research/newsalert/pdf/eco_innovations_in_sme_FB22_en.pdf">a barrier to growth and innovation in SMEs</a>. Even more so in green business opportunities, more than a quarter of SMEs that have undertaken activities related to the circular economy claimed difficulties accessing finance in the <a href="https://eco.nomia.pt/contents/documentacao/kh0216459enn-002.pdf">Eurobarometer survey</a>.</p>
 
-<p>Source: <a href="https://ec.europa.eu/environment/integration/research/newsalert/pdf/eco_innovations_in_sme_FB22_en.pdf">[Eco-innovation in SMEs, Future Brief 22, European Commission, DG Environment](https://ec.europa.eu/environment/integration/research/newsalert/pdf/eco_innovations_in_sme_FB22_en.pdf)</a></p>
+<p>Source:<a href="https://ec.europa.eu/environment/integration/research/newsalert/pdf/eco_innovations_in_sme_FB22_en.pdf">Eco-innovation in SMEs, Future Brief 22, European Commission, DG Environment</a></p>
 
 </div>
 
