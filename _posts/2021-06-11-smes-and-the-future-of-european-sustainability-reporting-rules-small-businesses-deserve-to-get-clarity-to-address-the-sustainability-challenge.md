@@ -102,7 +102,7 @@ An example of a smaller company that has sustainability deeply integrated in its
 
 <h1 id="the-cost-of-excluding">The cost of excluding SMEs</h1>
 
-The recent European proposals already seek to involve small businesses for the first time. Previously, the EU Non-Financial Reporting Directive applied only to large listed companies, banks and insurers with more than 500 employees, thus [limiting its impact to 2000 companies EU-wide](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN) (1). With the new draft on the table, reporting obligations will involve SMEs listed on stock exchanges, as well as all large companies (both private and listed) as is already the case in Denmark, Greece, Iceland, Spain and Sweden (an analysis of the key changes proposed in the reform presented in April 2021 can be found [here](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html)). 
+The recent European proposals already seek to involve small businesses for the first time. Previously, the EU Non-Financial Reporting Directive applied only to large listed companies, banks and insurers with more than 500 employees, thus [limiting its impact to 2000 companies EU-wide](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN) **(1)**. With the new draft on the table, reporting obligations will involve SMEs listed on stock exchanges, as well as all large companies (both private and listed) as is already the case in Denmark, Greece, Iceland, Spain and Sweden (an analysis of the key changes proposed in the reform presented in April 2021 can be found [here](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html)). 
 
 But is this sufficient to properly involve small businesses within our economy?
 
@@ -150,8 +150,6 @@ The European Union’s new Corporate Sustainability Reporting Directive has reco
 
 For every small business owner across Europe today, it is important to recognise how many of your fellow SMEs are adopting these practices and are succeeding by doing so. You have won the argument that new EU requirements must be proportionate to your ability to meet them – but it is time to add your own voice to ensure all small businesses can be included, to secure your own place in a sustainable future.
 
-(1) *In practice, and taking account of how the NFRD has been transposed in different Member States, approximately 11 700 companies were subject to the reporting requirements of the NFRD in the EU-28. This figure takes account of how Member States have transposed the Directive. Not taking account of national transposition, about 2 000 companies are [under scope of the NFRD](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN).*
+**(1)** In practice, and taking account of how the NFRD has been transposed in different Member States, approximately 11 700 companies were subject to the reporting requirements of the NFRD in the EU-28. This figure takes account of how Member States have transposed the Directive. Not taking account of national transposition, about 2 000 companies are [under scope of the NFRD](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN).
 
-<hr>
-
-<a href="https://en.frankbold.org/" style="max-width: 200px;display: block;margin-left: -29px;margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
+<hr><a href="https://en.frankbold.org/" style="max-width: 200px;display: block;margin-left: -29px;margin-bottom: -29px;"><img src=”/assets/logos/logo-frankbold.png”></a>
