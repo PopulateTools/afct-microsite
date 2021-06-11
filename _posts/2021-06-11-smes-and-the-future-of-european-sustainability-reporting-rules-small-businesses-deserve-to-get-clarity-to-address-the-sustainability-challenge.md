@@ -70,7 +70,7 @@ Many SMEs do already embrace sustainability opportunities. Such outstanding busi
 
 An example of a smaller company that has sustainability deeply integrated in its business model is French footwear and accessories brand Veja. They work directly with the communities they source from, use cotton grown with regenerative practices, and also recycle and repair sport shoes. “When Veja considers next steps for improving its social and environmental footprint, it thinks of impacts first, economics and profitability second,” [says its co-founder Sébastien Kopp](https://www.voguebusiness.com/sustainability/inside-vejas-direct-supplier-model-and-repairs-push). The company is profitable, and has been since its 2004 launch.  It now employs a team of 200, that in 2020 brought in $120 million in annual sales, up from $78.5 million in 2019. They also “believe the only way to defeat blind spots is to calculate everything and release everything” so they are disclosing data on their [emissions' footprint including scope 3 emissions](https://project.veja-store.com/en/single/emissions) and are highly [transparent](https://project.veja-store.com/en/single/transparency/) about commodities and rights of employees in their supply chains. 
 
-See Frank Bold’s overview of Veja’s sustainability reporting** [in detail here](https://drive.google.com/file/d/1YM_vv5VZxYWDn6Rgk0O11p-AFul5zS6H/view?usp=sharing).** 
+See Frank Bold’s overview of Veja’s sustainability reporting [in detail here](https://drive.google.com/file/d/1YM_vv5VZxYWDn6Rgk0O11p-AFul5zS6H/view?usp=sharing).
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
