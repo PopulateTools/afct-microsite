@@ -82,10 +82,6 @@ An example of a smaller company that has sustainability deeply integrated in its
 
  <p>There is evidence that lack of access to appropriate external finance can act <a href="https://ec.europa.eu/environment/integration/research/newsalert/pdf/eco_innovations_in_sme_FB22_en.pdf">a barrier to growth and innovation in SMEs</a>. Even more so in green business opportunities, more than a quarter of SMEs that have undertaken activities related to the circular economy claimed difficulties accessing finance in the <a href="https://eco.nomia.pt/contents/documentacao/kh0216459enn-002.pdf">Eurobarometer survey</a>.</p>
 
-  </li>
-
-  </ul>
-
 </div>
 
 <h1 id="the-cost-of-excluding">The cost of excluding SMEs</h1>
