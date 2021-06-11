@@ -38,7 +38,7 @@ img_listing: /assets/2106-tree-and-buildings-1-.jpg
 
     <li>
 
-      <a href="#conclusion">Conclusion</a>
+\    <a href="#conclusion">Conclusion</a>
 
        </li>
 
@@ -82,7 +82,7 @@ An example of a smaller company that has sustainability deeply integrated in its
 
   <p>Together, SMEs make up over 99% of all enterprises in the EU. They account for over two-thirds of total employment and contribute about 56% of the total turnover in the EU.</p>
 
-</li>
+  </li>
 
    <p style="font-weight: bold;">Only 3 % of EU start-ups go on scale up, but they are Europe's job creation champions.</p>
 
@@ -94,17 +94,13 @@ An example of a smaller company that has sustainability deeply integrated in its
 
  <p>There is evidence that lack of access to appropriate external finance can act <a href="https://ec.europa.eu/environment/integration/research/newsalert/pdf/eco_innovations_in_sme_FB22_en.pdf">a barrier to growth and innovation in SMEs</a>. Even more so in green business opportunities, more than a quarter of SMEs that have undertaken activities related to the circular economy claimed difficulties accessing finance in the <a href="https://eco.nomia.pt/contents/documentacao/kh0216459enn-002.pdf">Eurobarometer survey</a>.</p>
 
-</span>
-
     </li>
-
-  </ul>
 
 </div>
 
 <h1 id="the-cost-of-excluding">The cost of excluding SMEs</h1>
 
-The recent European proposals already seek to involve small businesses for the first time. Previously, the EU Non-Financial Reporting Directive applied only to large listed companies, banks and insurers with more than 500 employees, thus [limiting its impact to 2000 companies EU-wide](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN) (1). With the new draft on the table, reporting obligations will involve SMEs listed on stock markets, as well as all large companies (both private and listed) as is already the case in Denmark, Greece, Iceland, Spain and Sweden (an analysis of the key changes proposed in the reform presented in April 2021 can be found [here](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html)). 
+The recent European proposals already seek to involve small businesses for the first time. Previously, the EU Non-Financial Reporting Directive applied only to large listed companies, banks and insurers with more than 500 employees, thus [limiting its impact to 2000 companies EU-wide](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN) (1). With the new draft on the table, reporting obligations will involve SMEs listed on stock exchanges, as well as all large companies (both private and listed) as is already the case in Denmark, Greece, Iceland, Spain and Sweden (an analysis of the key changes proposed in the reform presented in April 2021 can be found [here](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html)). 
 
 But is this sufficient to properly involve small businesses within our economy?
 
