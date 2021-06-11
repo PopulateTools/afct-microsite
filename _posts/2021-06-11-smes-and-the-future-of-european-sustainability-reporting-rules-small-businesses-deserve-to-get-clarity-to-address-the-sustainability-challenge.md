@@ -78,19 +78,27 @@ An example of a smaller company that has sustainability deeply integrated in its
 
   <p>Together, SMEs make up over 99% of all enterprises in the EU. They account for over two-thirds of total employment and contribute about 56% of the total turnover in the EU.</p>
 
-  </li>
+ <ul>
+
+    <li>
 
    <p style="font-weight: bold;">Only 3 % of EU start-ups go on scale up, but they are Europe's job creation champions.</p>
 
  </li>
 
+    <li>
+
    <p>While young SMEs that scale up represent just a tiny minority of all start-ups, they offer a key source of radical and disruptive innovations and disproportionately create jobs in the market. For example, while on average only 4% of micro-sized start-ups grow in this way, they contribute to the creation of between 22% (The Netherlands) and 53% (France) of jobs in their category.</p>
 
  </li>
 
+    <li>
+
  <p>There is evidence that lack of access to appropriate external finance can act <a href="https://ec.europa.eu/environment/integration/research/newsalert/pdf/eco_innovations_in_sme_FB22_en.pdf">a barrier to growth and innovation in SMEs</a>. Even more so in green business opportunities, more than a quarter of SMEs that have undertaken activities related to the circular economy claimed difficulties accessing finance in the <a href="https://eco.nomia.pt/contents/documentacao/kh0216459enn-002.pdf">Eurobarometer survey</a>.</p>
 
-    </li>
+  </li>
+
+  </ul>
 
 </div>
 
