@@ -10,9 +10,39 @@ intro: Small businesses are the lifeblood of our economy. They are the biggest
   essential that SMEs are not left behind and are considered adequately in the
   discussions.
 ---
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
+  <span>Content Outline</span>
 
-**Content outline**
+  <ul>
+
+    <li>
+
+      <a href="#the-SME-case">The SME case for Transparency</a>
+
+    </li>
+
+    <li>
+
+      <a href="#the-cost-of-excluding">The cost of excluding SMEs</a>
+
+    </li>
+
+    <li>
+
+      <a href="#how-can-the_EU">How can the EU standardisation of corporate sustainability reporting help reduce the burden</a> 
+
+\    </li>
+
+    <li>
+
+   <a href="#conclusion">Conclusion</a>
+
+       </li>
+
+  </ul>
+
+</div>
 
 
 
@@ -32,9 +62,7 @@ The EU initiatives are meant to bring down costs and other barriers facing compa
 
 **This article explains what the stakes are for SMEs, how they can engage with upcoming changes and developments in legislation, and how policymakers can also help them.**
 
-#### The SME case for Transparency
-
-<!--StartFragment-->
+<h1 id="the-SME-case">The SME case for Transparency</h1>
 
 Economic transformation brings unparalleled market opportunities, and it is vital for SMEs to be able to harness them. The Business Commission for Sustainable Development reported that meeting the UN Sustainable Development Goals (SDGs), would create [market opportunities of EUR 10 trillion](https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/EXEC.SUM_SG-Roadmap-Financing-SDGs-July-2019.pdf) per year by 2030. Similarly, as shown by a [CDP study from 2020](https://6fefcbb86e61af1b2fc4-c70d8ead6ced550b4d987d7c03fcdd1d.ssl.cf3.rackcdn.com/cms/reports/documents/000/004/958/original/Doubling_down_Europe's_low_carbon_investment_opportunity.pdf?1586852291), the value of **low carbon opportunities** such as higher demand for electric vehicles and green infrastructure identified by 882 European companies reached €1.22 trillion, which was **more than six times higher** than the investment cost of €192 billion.
 
@@ -48,15 +76,7 @@ An example of a smaller company that has sustainability deeply integrated in its
 
 **INFOBOX**
 
-<!--StartFragment-->
-
-
-
-
-
-#### The cost of excluding SMEs
-
-<!--EndFragment-->
+<h1 id="the-cost-of-excluding">The cost of excluding SMEs</h1>
 
 The recent European proposals already seek to involve small businesses for the first time. Previously, the EU Non-Financial Reporting Directive applied only to large listed companies, banks and insurers with more than 500 employees, thus [limiting its impact to 2000 companies EU-wide](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0081&from=EN) (1). With the new draft on the table, reporting obligations will involve SMEs listed on stock markets, as well as all large companies (both private and listed) as is already the case in Denmark, Greece, Iceland, Spain and Sweden (an analysis of the key changes proposed in the reform presented in April 2021 can be found [here](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html)). 
 
@@ -73,9 +93,7 @@ Meanwhile, there are many SMEs who find themselves in sectors facing major techn
 
 Any divergence of rules between listed and non-listed companies also risks adding another barrier to small businesses seeking to expand - companies who are considering raising capital by listing their shares or bonds on stock exchanges. It is important to avoid introducing such disincentives - both for SMEs themselves and for the operation of our capital markets.
 
- 
-
-#### How can the EU standardisation of corporate sustainability reporting help reduce the burden for SMEs: simplified standards for SMEs 
+<h1 id="how-can-the_EU">How can the EU standardisation of corporate sustainability reporting help reduce the burden</h1>
 
 Data by the [Global Reporting Initiative](https://database.globalreporting.org/search/) (the most widely used amongst the many voluntary reporting standards) shows that only 10-15% of companies using their standards are SMEs. This is understandable, given the complexity of existing reporting frameworks - which combined propose over 5000 KPIs - and competing demands for data from customers and financial institutions. All of this makes sustainability data gathering extremely challenging and costly for SMEs with limited financial and human resources for such overheads.
 
@@ -100,9 +118,7 @@ To achieve this goal, the standards should specify essential sustainability indi
 
 However, due to their non-binding status, standards alone will not be sufficient to provide safeguards against such externalisation of costs of reporting by large companies. Such safeguards can be only achieved if the standards are supported by a legislative mandate for SMEs, clarifying their reporting obligations vis-a-vis the obligations of large companies.
 
- 
-
-#### Conclusion 
+<h1 id="conclusion">Conclusion</h1>
 
 A tipping point has now been reached from an older approach of simply exempting small business from sustainability reporting rules, to one today which recognises the positive advantages of ensuring SMEs are not left behind. Small business cannot avoid the major forces transforming our economies towards a low carbon future - and needs to embrace them or risk disappearing altogether. The cost of sustainability reporting is seen to pay itself back to the company by up to six times. Sustainability data is already essential for companies to benefit from a sharply rising proportion of all investment funds, including Covid recovery finance around the world. Without relevant sustainability reporting, small businesses find themselves at a competitive disadvantage, missing new market opportunities, and being prevented from accessing resources for development of new technological solutions. Only by becoming part of the sustainability transition, will SMEs be the source of sustainable growth for the future.
 
