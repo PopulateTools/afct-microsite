@@ -50,7 +50,7 @@ The European Commission is already proposing a new framework to simplify and bet
 
 ![Adoption of the CSRD and the EU Sustainability Reporting Standards.](/assets/timeline_csrd__a-1-.png "Adoption of the CSRD and the EU Sustainability Reporting Standards.")
 
-\**Adoption of the CSRD and the EU Sustainability Reporting Standards, see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/timeline_csrd__a-1-.png)*
+\**Adoption of the CSRD and the EU Sustainability Reporting Standards, see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2106-timeline_csrd__a.png)*
 
 Meanwhile, the EU taxonomy, which will provide a framework to realign investments and loans to support sustainable activities will become applicable already in 2022 (estimated need of additional   500 billion EUR annually to achieve the Green Deal objectives). The public Covid-recovery programmes will also be focused on sustainable transformation determined by these tools.
 
