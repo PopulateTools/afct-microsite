@@ -12,7 +12,7 @@ intro: Small businesses are the lifeblood of our economy. They are the biggest
 img: /assets/2106-people-office.jpg
 img_listing: /assets/2106-people-list.jpg
 ---
-*Fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+*Fifth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
