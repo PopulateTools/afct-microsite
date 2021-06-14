@@ -12,7 +12,7 @@ intro: Small businesses are the lifeblood of our economy. They are the biggest
 img: /assets/2106-people-office.jpg
 img_listing: /assets/2106-people-list.jpg
 ---
-*Fourth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+*Fifth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
@@ -149,5 +149,7 @@ margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 *The [first article](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for 2021, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal, while [the second](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG).* 
 
 *[The third article](https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html) highlighted the role of EU standards in ensuring comparable and meaningful data, [the fourth](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html) focused on climate transition plans reporting.*
+
+*The next article will focus on reporting of social data - S of ESG. You can also join an event that we are organising on a similar matter 1st July (14h - 16.30h CET). Register [here](https://survey.alchemer.com/s3/6361979/The-S-in-ESG).* 
 
 *Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
