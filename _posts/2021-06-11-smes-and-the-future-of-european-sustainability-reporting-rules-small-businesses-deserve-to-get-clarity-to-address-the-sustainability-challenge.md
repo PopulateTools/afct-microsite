@@ -38,6 +38,12 @@ img_listing: /assets/2106-people-list.jpg
 
     </li>
 
+    <li>
+
+      <a href="#interview">Interview with Spanish SME A&B Innovative Solutions</a> 
+
+    </li>
+
   </ul>
 
 </div>
@@ -133,6 +139,57 @@ A tipping point has now been reached from an older approach of simply exempting 
 The European Union’s new Corporate Sustainability Reporting Directive has recognised these arguments, involving small business for the first time, but ensuring that only simplified standards would apply to SMEs. Following the reasons outlined in this article, it is right to argue that the interest of small business would be better served by extending the scope of the Directive and providing them with certainty vis-a-vis larger companies by laying down safeguards and clear simplified standards. 
 
 For every small business owner across Europe today, it is important to recognise how many of your fellow SMEs are adopting these practices and are succeeding by doing so. You have won the argument that new EU requirements must be proportionate to your ability to meet them – but it is time to add your own voice to ensure all small businesses can be included, to secure your own place in a sustainable future.
+
+<h1 id="interview">Interview with Spanish SME A&B Innovative Solutions</h1>
+
+**Interview with Isabel Acevedo, Production Manager at Spanish SME [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/) with a focus on Biotechnology and Green Chemistry.**
+
+![Isabel Acevedo, Production Manager at Spanish SME A&B Innovative Solutions](/assets/2106-isabel_acevedo.jpg "Isabel Acevedo, Production Manager at Spanish SME A&B Innovative Solutions")
+
+**Is sustainability an important issue for you personally and your company - and in which ways?**
+
+Sustainability for us is the only way we understand businesses. A&B was born in 2001 to provide solutions based on product stewardship, Biotechnology and Green Chemistry in substitution of hazardous traditional products. Since then, the chemical sector has deeply changed with new regulations such as REACH, CLP, Biocides. The application of these regulations has led to more knowledge of toxicological and ecotoxicological behaviour of chemicals and transfer of more of this information along the supply chain. Also, due to these changes, high risk chemicals were detected and substituted. Since 2001 we have been working hard looking for new alternatives of our raw materials in our formulas and products. We consider environmental and safety factors in the phase of design of our products in addition to other economical or technical factors.
+
+ **We integrate Ecolabel requirements and the study of the environmental and safety impact in the life cycle of our products in our management system under Ecolabel Decisions and ISO 14006 Standard.**
+
+And there is no way back. In 2020 the Commission published the [Chemicals Strategy for Sustainability](https://ec.europa.eu/environment/strategy/chemicals-strategy_en) towards a toxic-free environment according to The European Green Deal where the EU was set on a course to become a sustainable climate neutral and circular economy by 2050. This is the great and exciting challenge we must face.
+
+**Has your company been able to take any actions to make itself more sustainable, and what have these been?**
+
+We are always thinking about how we can reduce our environmental impact. For example, in 2021 we have installed a photovoltaic system to take steps to become more energetically independent using renewable energy.
+
+**Do you publicly commit to sustainability on your website, in your reporting or in other ways - and how do you do this?**
+
+Our Statement of intents is set in a document called [Sustainability Commitment Policy](https://www.ab-laboratorios.com/datos/AB_Politica_Compromiso_Desarrollo_Sostenible_2020.pdf). In this document different environmental, quality, social and safety issues are integrated. We also inform about how our activity contributes to achieve the SDGs. Also, we inform about our environmental behaviour on our sustainability report.
+
+We understand communication as part of our responsibility. We try to inform downstream along our supply chain about environmental and safety data in order to ensure that our products are transported, used and disposed of the way they were designed for.
+
+In addition, we take part in meetings and conferences with different stakeholders such as customers, suppliers, competitors, society in general to share our good practises and try to be an inspiration to others.
+
+**Are you concerned about your ability to meet sustainability requirements from banks, investors or larger companies who you supply and why?**
+
+Up to date we have not been concerned because our standards have most of the time been higher than what we were required. We have met Ecolabel and Ecodesign standards, and we have been certified by third parties in these requirements. We have always considered as an asset these extra requirements from other costumers to improve our system.
+
+**What would enable you to undertake more sustainability actions in the company in the future?**
+
+Being a small company, we are in need of a bigger framework that would make us have a stronger impact on our stakeholders. We work in different working groups with other public and private agents like Alianza Alavesa de Desarrollo Sostenible, Izaite, Ihobe, Euskalit, etc. This let us move forward and raise our game in the actions we take to be more sustainable.
+
+We think that Public Administrations have a lot of responsibility on this. They can lead the sustainability policies in areas such as Green Public Procurement, tax benefits, new regulations with different strategies for sustainability. All this would enable us to undertake more sustainability actions.
+
+**Are you satisfied that the European Union has said any requirements for reporting on sustainability will be simplified for small businesses?**
+
+Standards on reporting were usually difficult to meet for small businesses due to the complexity of the structure and the lack of resources we usually have. Any simplification and clear guidance is always welcome and makes us be more competitive against the bigger companies.
+
+**Do you see yourself and your company being able to operate in ten years time, in an economy based on a low carbon model? How can you achieve this?** 
+
+Yes, we can see us in ten years in a low carbon model world. We have laid the basis to achieve this during the last 20 years and always look for creating products that meet with the requirement of a new greener model of businesses and economy and with the stricter regulations and customer requirements such as low VOC products, biocides or substitution of hazardous chemicals. We think that the key factor to achieve our sustainability goals is to integrate them in the highest policies and strategies of the organizations.
+
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+  <p>Spain SME A&B Innovative Solutions focus on Biotechnology and Green Chemistry with two commercial brands, A&B for professional users and Befree home for household users.  The company employs 34 people and brought in 6 million EUR in sales in 2020. Aitor Pérez Acero, Product Stewardship Responsible, also contributed to the interview.</p>
+
+</div>
+
+
 
 <hr>
 
