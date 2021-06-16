@@ -40,7 +40,13 @@ img_listing: /assets/2106-people-list.jpg
 
     <li>
 
-      <a href="#interview">Interview with Spanish SME A&B Innovative Solutions</a> 
+      <a href="#conclusion">Conclusion</a>
+
+    </li>
+
+    <li>
+
+      <a href="#interview">Interview with Spanish SME A&B Innovative Solutions</a>
 
     </li>
 
@@ -143,8 +149,6 @@ For every small business owner across Europe today, it is important to recognise
 <h1 id="interview">Interview with Spanish SME A&B Innovative Solutions</h1>
 
 **Interview with Isabel Acevedo, Production Manager at Spanish SME [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/) with a focus on Biotechnology and Green Chemistry.**
-
-![Isabel Acevedo, Production Manager at Spanish SME A&B Innovative Solutions](/assets/2106-isabel_acevedo2.jpg "Isabel Acevedo, Production Manager at Spanish SME A&B Innovative Solutions")
 
 **Is sustainability an important issue for you personally and your company - and in which ways?**
 
