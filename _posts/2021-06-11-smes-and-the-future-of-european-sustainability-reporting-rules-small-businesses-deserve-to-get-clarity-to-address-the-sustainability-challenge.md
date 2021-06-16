@@ -129,9 +129,9 @@ To achieve this goal, the standards should specify essential sustainability indi
 
 * greenhouse gas emissions, 
 * energy intensity, 
-* information concerning activities and use of resources linked to heightened risks of impacts on climate, biodiversity and deforestation 
-* clear guidance for reporting on climate transition plans and sustainable activities
-* human rights due diligence
+* information concerning activities and use of resources linked to heightened risks of impacts on climate, biodiversity and deforestation, 
+* clear guidance for reporting on climate transition plans and sustainable activities,
+* human rights due diligence,
 * meaningful workforce indicators (large companies often require a plethora of social data and confirmations on compliance with fundamental labor rights from their suppliers, but the requested information is often of questionable value).
 
 **SME standards are indispensable to ensure proportionality of reporting requirements to contain the risk that companies at the top of supply chains will simply pass on the costs and data gathering requirements concerning the deeper level of the supply chain to their next-in-line suppliers.** 
