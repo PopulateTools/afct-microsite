@@ -154,7 +154,7 @@ For every small business owner across Europe today, it is important to recognise
 
 Sustainability for us is the only way we understand businesses. A&B was born in 2001 to provide solutions based on product stewardship, Biotechnology and Green Chemistry in substitution of hazardous traditional products. Since then, the chemical sector has deeply changed with new regulations such as REACH, CLP, Biocides. The application of these regulations has led to more knowledge of toxicological and ecotoxicological behaviour of chemicals and transfer of more of this information along the supply chain. Also, due to these changes, high risk chemicals were detected and substituted. Since 2001 we have been working hard looking for new alternatives of our raw materials in our formulas and products. We consider environmental and safety factors in the phase of design of our products in addition to other economical or technical factors.
 
- **We integrate Ecolabel requirements and the study of the environmental and safety impact in the life cycle of our products in our management system under Ecolabel Decisions and ISO 14006 Standard.**
+We integrate Ecolabel requirements and the study of the environmental and safety impact in the life cycle of our products in our management system under Ecolabel Decisions and ISO 14006 Standard.
 
 And there is no way back. In 2020 the Commission published the [Chemicals Strategy for Sustainability](https://ec.europa.eu/environment/strategy/chemicals-strategy_en) towards a toxic-free environment according to The European Green Deal where the EU was set on a course to become a sustainable climate neutral and circular economy by 2050. This is the great and exciting challenge we must face.
 
