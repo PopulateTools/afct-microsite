@@ -148,7 +148,9 @@ For every small business owner across Europe today, it is important to recognise
 
 <h1 id="interview">Interview with Spanish SME A&B Innovative Solutions</h1>
 
-**Interview with Isabel Acevedo, Production Manager at Spanish SME [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/) with a focus on Biotechnology and Green Chemistry.**
+**“The key factor to achieve our sustainability goals is to integrate them in the highest policies and strategies of the organization”**
+
+Interview with Isabel Acevedo, Production Manager at Spanish SME [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/) with a focus on Biotechnology and Green Chemistry.
 
 **Is sustainability an important issue for you personally and your company - and in which ways?**
 
