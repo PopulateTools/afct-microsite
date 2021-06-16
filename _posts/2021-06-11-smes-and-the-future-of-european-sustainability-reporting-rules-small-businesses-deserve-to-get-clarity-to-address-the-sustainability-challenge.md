@@ -144,7 +144,7 @@ For every small business owner across Europe today, it is important to recognise
 
 **Interview with Isabel Acevedo, Production Manager at Spanish SME [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/) with a focus on Biotechnology and Green Chemistry.**
 
-![Isabel Acevedo, Production Manager at Spanish SME A&B Innovative Solutions](/assets/2106-isabel_acevedo.jpg "Isabel Acevedo, Production Manager at Spanish SME A&B Innovative Solutions")
+![Isabel Acevedo, Production Manager at Spanish SME A&B Innovative Solutions](/assets/2106-isabel_acevedo1.jpg "Isabel Acevedo, Production Manager at Spanish SME A&B Innovative Solutions")
 
 **Is sustainability an important issue for you personally and your company - and in which ways?**
 
@@ -188,8 +188,6 @@ Yes, we can see us in ten years in a low carbon model world. We have laid the ba
   <p>Spain SME A&B Innovative Solutions focus on Biotechnology and Green Chemistry with two commercial brands, A&B for professional users and Befree home for household users.  The company employs 34 people and brought in 6 million EUR in sales in 2020. Aitor Pérez Acero, Product Stewardship Responsible, also contributed to the interview.</p>
 
 </div>
-
-
 
 <hr>
 
