@@ -3,7 +3,7 @@ layout: post
 title: SMEs and the future of European sustainability reporting rules - Small
   businesses deserve to get clarity to address the sustainability challenge
 categories: monthly-articles
-date: 2021-06-14T06:07:08.104Z
+date: 2021-06-18T05:35:52.904Z
 intro: Small businesses are the lifeblood of our economy. They are the biggest
   source of innovation, employment and represent growth opportunities towards a
   sustainable and low carbon economy. The transition is already underway. It is
@@ -148,7 +148,7 @@ For every small business owner across Europe today, it is important to recognise
 
 <h1 id="interview">Interview with Spanish SME A&B Innovative Solutions</h1>
 
-#### **“The key factor to achieve our sustainability goals is to integrate them in the highest policies and strategies of the organization”**
+### **“The key factor to achieve our sustainability goals is to integrate them in the highest policies and strategies of the organization”**
 
 To complement the article with practical aspects from SMEs' perspective, we interviewed Isabel Acevedo, Production Manager at Spanish SME [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/), focusing on Biotechnology and Green Chemistry. 
 
