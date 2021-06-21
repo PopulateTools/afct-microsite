@@ -150,7 +150,7 @@ For every small business owner across Europe today, it is important to recognise
 
 ### **“The key factor to achieve our sustainability goals is to integrate them in the highest policies and strategies of the organization”**
 
-To complement the article with practical aspects from SMEs' perspective, we interviewed Isabel Acevedo, Production Manager at Spanish SME [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/), focusing on Biotechnology and Green Chemistry. 
+To complement the article, we interviewed Isabel Acevedo from [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/), a Spanish SME supplying biotech products for cleaning and maintenance. With just over 30 employees, the company welcomes the proposal for new simplified EU sustainability standards for small businesses, highlighting their relevance to compete more effectively with larger businesses. Read the article to find out how A&B Innovative Solutions reports sustainability-related information.
 
 **Is sustainability an important issue for you personally and your company - and in which ways?**
 
