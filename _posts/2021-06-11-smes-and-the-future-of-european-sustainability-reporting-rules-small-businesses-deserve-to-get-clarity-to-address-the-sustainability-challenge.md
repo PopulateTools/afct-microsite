@@ -148,7 +148,9 @@ For every small business owner across Europe today, it is important to recognise
 
 <h1 id="interview">Interview with Spanish SME A&B Innovative Solutions</h1>
 
-### **“The key factor to achieve our sustainability goals is to integrate them in the highest policies and strategies of the organization”**
+### **“The key factor to achieve our sustainability goals is to integrate them in the highest policies and strategies of the organization”**\
+\
+<img src="/assets/2106-isabel_acevedo1.jpg" style="float: left;width: 130px;height: 130px;padding-right: 20px;" alt="Isabel Acevedo from A&amp;B Innovative Solutions, a Spanish SME supplying biotech products for cleaning and maintenance" title="Isabel Acevedo from A&amp;B Innovative Solutions, a Spanish SME supplying biotech products for cleaning and maintenance">
 
 To complement the article, we interviewed Isabel Acevedo from [A&B Innovative Solutions](https://ab-innovativesolutions.com/en/), a Spanish SME supplying biotech products for cleaning and maintenance. With just over 30 employees, the company welcomes the proposal for new simplified EU sustainability standards for small businesses, highlighting their relevance to compete more effectively with larger businesses. Read the article to find out how A&B Innovative Solutions reports sustainability-related information.
 
