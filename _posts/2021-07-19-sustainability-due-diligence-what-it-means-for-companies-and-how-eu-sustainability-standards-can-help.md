@@ -43,6 +43,12 @@ img_listing: /assets/2107_tree_building_list.jpg
 
     </li>
 
+    <li>
+
+      <a href="#conclusion">Conclusion</a>
+
+    </li>
+
   </ul>
 
 </div>
@@ -77,7 +83,7 @@ img_listing: /assets/2107_tree_building_list.jpg
 
 <h1 id="what-can">What can policymakers do to ensure the Corporate Sustainability Reporting Directive provides clarity and certainty?</h1>
 
-
+<h1 id="conclusion">Conclusion</h1>
 
 <a href="https://en.frankbold.org/" style="
 max-width: 200px;
