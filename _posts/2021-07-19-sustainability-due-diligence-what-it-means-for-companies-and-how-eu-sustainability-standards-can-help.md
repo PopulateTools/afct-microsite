@@ -73,13 +73,13 @@ img_listing: /assets/2107_tree_building_list.jpg
 
 ![Source: 2020 Results of the Corporate Human Rights Benchmark ](/assets/2107_2020-results-chrb.png "Source: 2020 Results of the Corporate Human Rights Benchmark ")
 
-*\*Source: [2020 Results of the Corporate Human Rights Benchmark](https://www.ohchr.org/Documents/Issues/Business/Slides.pdf), see it full resolution here*
+*\*Source: [2020 Results of the Corporate Human Rights Benchmark](https://www.ohchr.org/Documents/Issues/Business/Slides.pdf), see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2107_2020-results-chrb.png).*
 
 <h1 id="right-response">Right response for Europe</h1>
 
 ![Alliance for Corporate Transparency 1000 companies research results](/assets/2107_datawrapper_reporting-of-key-human-rights-data.png "Alliance for Corporate Transparency 1000 companies research results")
 
-*\*See the full database of Alliance for Corporate Transparency 1000 companies research results [for more details](https://www.allianceforcorporatetransparency.org/database/2019.html#s_C)*
+*\*See the full database of Alliance for Corporate Transparency 1000 companies research results [for more details](https://www.allianceforcorporatetransparency.org/database/2019.html#s_C).*
 
 <h1 id="what-can">What can policymakers do to ensure the Corporate Sustainability Reporting Directive provides clarity and certainty?</h1>
 
