@@ -69,14 +69,28 @@ img_listing: /assets/2107_tree_building_list.jpg
 
 *\*Source: [2020 Results of the Corporate Human Rights Benchmark](https://www.ohchr.org/Documents/Issues/Business/Slides.pdf), see it full resolution here*
 
-
-
 <h1 id="right-response">Right response for Europe</h1>
 
 ![Alliance for Corporate Transparency 1000 companies research results](/assets/2107_datawrapper_reporting-of-key-human-rights-data.png "Alliance for Corporate Transparency 1000 companies research results")
 
 *\*See the full database of Alliance for Corporate Transparency 1000 companies research results [for more details](https://www.allianceforcorporatetransparency.org/database/2019.html#s_C)*
 
-
-
 <h1 id="what-can">What can policymakers do to ensure the Corporate Sustainability Reporting Directive provides clarity and certainty?</h1>
+
+
+
+<a href="https://en.frankbold.org/" style="
+max-width: 200px;
+display: block;
+margin-left: -29px;
+margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
+
+*This is the sixth article by Frank Bold as part of the series of monthly briefings on sustainability reporting in 2021.* 
+
+*The [first article](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for 2021, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal, while [the second](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html) focused on reporting on governance (G of ESG).* 
+
+*[The third article](https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html) highlighted the role of EU standards in ensuring comparable and meaningful data, [the fourth](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html) focused on climate transition plans reporting.*
+
+*The next article will focus on...* 
+
+*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
