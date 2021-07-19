@@ -47,27 +47,35 @@ img_listing: /assets/2107_tree_building_list.jpg
 
 </div>
 
-
-
 <h1 id="due-diligence">Due diligence in simple terms</h1>
 
 ![Source: OECD, Due diligence guidance](/assets/2107_due_diligence.png "Source: OECD, Due diligence guidance")
 
 *\*[Source: OECD, Due diligence guidance](https://www.oecdguidelines.nl/oecd-guidelines/due-diligence-guidances) (see the detailed explanation of individual stages [here](https://www.oecdguidelines.nl/oecd-guidelines/due-diligence-guidances))* 
 
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
+  <p style="font-weight: bold;">Shell case: huge breakthrough for mandatory due diligence and corporate accountability</p>
 
-<!--EndFragment-->
+ <p>The <a href="https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBDHA:2021:5339">verdict</a> handed down in May 2021 in the climate case filed by <a href="https://en.milieudefensie.nl/">Milieudefensie</a> in 2019 against Royal Dutch Shell (Shell) has rightly been called historic: Shell must reduce its CO2 emissions by net 45% by 2030 (compared with 2019) regardless of the actions or policies of the Dutch government. But the ruling is historic for other reasons as well: the court based its verdict to a large extent on two soft law standards – the <a href="https://www.ohchr.org/documents/publications/guidingprinciplesbusinesshr_en.pdf">United Nations Guiding Principles on Business and Human Rights</a> (UNGPs) and <a href="https://www.oecd.org/daf/inv/mne/48004323.pdf">OECD Guidelines for Multinational Enterprises</a> (OECD Guidelines). In addition, it asserts that companies have an individual responsibility to combat climate change throughout their value chains, and it very clearly links climate change to human rights. This means the judgment is likely to play an important role in the realisation of mandatory due diligence legislation.</p>
 
+<p>Source: Centre for Research on Multinational Corporations (SOMO)</p>
 
-
-
+</div>
 
 <h1 id="good-for">Good for business</h1>
+
+![Source: 2020 Results of the Corporate Human Rights Benchmark ](/assets/2107_2020-results-chrb.png "Source: 2020 Results of the Corporate Human Rights Benchmark ")
+
+*\*Source: [2020 Results of the Corporate Human Rights Benchmark](https://www.ohchr.org/Documents/Issues/Business/Slides.pdf), see it full resolution here*
 
 
 
 <h1 id="right-response">Right response for Europe</h1>
+
+![Alliance for Corporate Transparency 1000 companies research results](/assets/2107_datawrapper_reporting-of-key-human-rights-data.png "Alliance for Corporate Transparency 1000 companies research results")
+
+*\*See the full database of Alliance for Corporate Transparency 1000 companies research results [for more details](https://www.allianceforcorporatetransparency.org/database/2019.html#s_C)*
 
 
 
