@@ -57,13 +57,13 @@ Human rights and environmental impacts in European companies’ global value cha
 
 With these initiatives, the EU aims to redirect private and public funds to support the transformation towards a sustainable economy. However, business activities won’t meet sustainability requirements if their value chains remain linked to impacts such as deforestation, forced or child labour. 
 
-The tool which can help companies overcome these challenges and qualify for sustainable financing is ‘due diligence’.
+The tool which can help companies overcome these challenges, ensure to protect people and planet  and increase access for sustainable financing is ‘due diligence’.
 
 Human rights and environmental due diligence is a concept developed by the UN 10 years ago and supported by robust OECD guidance, aimed at helping companies to identify and address their impacts on people and the planet. Since then, it has been universally endorsed by sustainability leaders among companies and investors, reporting frameworks, governments as well as the EU itself, thus making it increasingly important for business. 
 
 However, companies can struggle to get a grasp on what they are supposed to do and disclose, due to the proportionate nature of this concept, lack of clarity in law and diverging investors’ demands. 
 
-The European Union’s [new Corporate Sustainability Reporting Directive](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html) (CSRD), currently being discussed, will greatly contribute to address this challenge and satisfy the need for information on companies’ plans, actions and results by investors. Such clarity is also important for companies to avoid risks to their reputation and financial consequences. 
+The European Union’s [new Corporate Sustainability Reporting Directive](https://www.allianceforcorporatetransparency.org/news/on-the-draft-sustainability-reporting-directive-nfrd-reform-proposal-most-promising-changes-and-caveats.html) (CSRD), currently being discussed, will greatly contribute to address this challenge and will help satisfy the need for information on companies’ plans, actions and results by investors and broader society. Such clarity is also important for companies to avoid risks to their reputation and financial consequences. 
 
 The European Commission will propose new legislation on corporate due diligence in Autumn. However, in the meantime, the CSRD and the development of accompanying sustainability standards will play an important role in contributing to due diligence by defining related disclosure elements. 
 
@@ -75,7 +75,7 @@ In this regard and specifically looking into reporting, due diligence helps comp
 
 <h1 id="due-diligence">Due diligence in simple terms</h1>
 
-**Due diligence describes the actions taken by a company to both identify and act on actual and potential risks to people and to the environment, not simply within its own operations but in its supply chain and in the services it uses.**
+**Due diligence describes the actions taken by a company to identify, analyse and act on actual and potential risks to people and to the environment, not simply within its own operations but in its supply chain and in the services it uses.**
 
 **It is connected to business risk management - but starts with understanding risks to people and to the environment.**
 
@@ -87,6 +87,7 @@ It is built on proportionality - the right conduct depends on the severity of th
 
    1. whether the company causes or contributes to the impact (then it must cease the contribution) or it is only directly linked to the impact by a business relationship (then it must seek to prevent or mitigate the impact)
    2. the extent of its leverage in addressing the impact
+   3. whether there has been harm, in which case the company must provide for or cooperate in remediation to victims (UNGPs 15)
 4. Companies should track effectiveness of its response and account for it
 
 Diagram: OECD Guidelines describe the due diligence process in six stages.
@@ -109,7 +110,7 @@ Leading garment companies are also already analysing the impact of their purchas
 
 The impacts in the supply chain, however, are often beyond the company's direct control. In such cases, **the key consideration is what actions would maximise the positive outcomes for people or the environment** and whether the company has exercised its best effort.
 
-**From a reporting perspective, companies thus need to be able to demonstrate** that they know which risks and impacts they have or could potentially have on human rights and the environment in their value chains, that they are not contributing to any such impacts through their own actions and policies, and that they are exercising the best effort to maximise positive outcomes with regard to impacts to which they are connected, but over which they don’t have control.
+**From a reporting perspective, companies thus need to be able to demonstrate** that they know which risks and impacts they have or could potentially have on human rights and the environment in their value chains, that they are not contributing to any such impacts through their own actions and policies, and that they are exercising the best effort to maximise positive outcomes with regard to impacts to which they are connected, but over which they don’t have control. In cases where the company has caused or contributed to harm, companies are obliged by the concept of due diligence to enable remediation, and must thereby also report on the details of such remediation processes and efforts.  
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
@@ -168,11 +169,8 @@ The increased obligations of financial actors raise the pressure on companies to
 To overcome the challenges that companies and investors are facing in this area, such a standard should specify the following key elements of due diligence disclosures:
 
 1. **How to report on the identification and assessment of impacts**, in a way that takes into account that companies’ exposure to risks of such impacts varies greatly
-
 2. **What should be described about the identified impacts**, regarding business context and relationships involved in the impact, affected people and their engagement
-
 3. Criteria for reporting on **the effect of the company’s policies** and actions on the impacts 
-
 4. **Sectoral specifications for human rights and environmental issues and KPIs**, which companies should assess and report on, in order to better focus, simplify and standardise the information (e.g. high-risk commodities in food & beverage; working conditions in the supply chain in apparel, end-users and consumers’ privacy in ICT, communities’ pollution and access to water in extractives)
 
 <h1 id="conclusion">Conclusion</h1>
@@ -183,7 +181,7 @@ In this article, we have shown that current moves in Europe and internationally 
 
 We have highlighted how the current debate on an EU Corporate Sustainability Reporting Directive is critical to ensure the right disclosure requirements for due diligence by the company and must be complementary with the European Commission’s own forthcoming initiative on mandatory due diligence. We have also identified the ways in which European Sustainability Reporting Standards, accompanying the Directive, can assist due diligence. These can be the tool helping companies to understand how they can identify potential risks and adverse impacts, which sectors might be chosen for more specific standards, and how the company’s own actions in response can be assessed and then reported. 
 
-With a widely accepted framework for due diligence, the responsibility for environmental and human rights harms will not be able to be pushed on to the company unreasonably, but enable all companies to understand and take proper responsibility for the social and environmental impacts of their business.
+With a widely accepted framework for due diligence, the responsibility for environmental and human rights should not be pushed down the value chain unreasonably, but enable all companies to understand and take proper responsibility for the social and environmental impacts of their business.
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
