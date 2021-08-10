@@ -137,7 +137,7 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-*This is the third article of [Frank Bold](http://en.frankbold.org/)’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021.* 
+*This is the third article of [Frank Bold](http://en.frankbold.org/)’s series of monthly briefings focusing on sustainability reporting in various contexts that we will be publishing here throughout 2021.* *The article was originally published on 13th April 2021 and updated in August 2021.*
 
 *[The first briefing](https://www.allianceforcorporatetransparency.org/news/countdown-reform.html) outlined upcoming policy developments for this year, including 10 key changes expected in the EU Non-Financial Reporting Directive reform proposal.* 
 
