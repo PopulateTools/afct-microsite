@@ -45,7 +45,7 @@ The strategy to achieve transparency on sustainability impacts relies on the fol
 
 ![Information flows (SFDR, CSRD, Taxonomy)](/assets/2103_update_fb_diagram_reporting.png "Information flows (SFDR, CSRD, Taxonomy)")
 
-Diagram: Information flows (SFDR, CSRD, Taxonomy), full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2103-diagram-reporting-strategy-and-governance_frank-bold.png).
+Diagram: Information flows (SFDR, CSRD, Taxonomy), full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2103_update_fb_diagram_reporting.png).
 
 <h1 id="What-needs-to-be-reported-by-whom-and-what-is-currently-missing">What needs to be reported by whom and what is currently missing</h1>
 
