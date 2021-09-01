@@ -15,7 +15,7 @@ The Alliance for Corporate Transparency brought together leading civil society o
 
 <strong>Content partners</strong>: Business and Human Rights Resource Centre, Future-Fit Foundation, Transparency International, WWF
 
-<strong>Advisory Group</strong>: ClientEarth, CDP Europe, CORE Coalition, Germanwatch, Shift Project, Themis Research, Oxfam, ShareAction, SOMO and Climate Disclosure Standards Board, Global Witness, 2 Degrees Initiative Investing and Publish What You Pay.
+<strong>Advisory Group</strong>: ClientEarth, CDP Europe, CORE Coalition, Germanwatch, Shift Project, Themis Research, Oxfam, ShareAction, SOMO and Climate Disclosure Standards Board, Global Witness, 2 Degrees Initiative Investing, Publish What You Pay, Transport & Environment and Economy for the Common Good.
 
 <strong>Academic support provided by</strong>: Cass Business School and Nyenrode Business School
 
@@ -27,14 +27,14 @@ Frank Bold and Sustentia take responsibility for any error or inaccuracy in the 
 
 <strong>Test partners</strong>: Novo Nordisk, SAP, Vodafone and Repsol engaged in constructive discussions concerning the assessment criteria and the initial tests performed in the first round of research in 2018 - this collaboration was carried out completely pro-bono.
 
-The Alliance for Corporate Transparency has carried out the following studies: 
+The Alliance for Corporate Transparency has carried out the following studies:
 - Initial research on 105 companies in 2018 (research report [here](http://www.allianceforcorporatetransparency.org/assets/2018_Research_Report_Alliance_Corporate_Transparency-66d0af6a05f153119e7cffe6df2f11b094affe9aaf4b13ae14db04e395c54a84.pdf))
 - Research 2019 on 1000 European companies (database and research report <a href="../database/2019.html">here</a>)
 - EUKI research 2020 on 300 companies in Central, Eastern and Southern Europe (database and research report <a href="../database/2020.html">here</a>)
 
 <h1>Funders</h1>
 
-Friends Provident Foundation, Joseph Rowntree Charitable Trust, Sigrid Rausing Trust, Charles Leopold Mayer Foundation, Wallace Global Fund, Laudes Foundation
+Friends Provident Foundation, Joseph Rowntree Charitable Trust, Sigrid Rausing Trust, Charles Leopold Mayer Foundation, Wallace Global Fund, Laudes Foundation and European Climate Foundation
 
 This project is part of the European Climate Initiative (EUKI) of the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMU).
 
