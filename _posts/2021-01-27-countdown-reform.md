@@ -2,7 +2,8 @@
 layout: post
 title: Countdown for the reform that will overhaul companies’ sustainability
   reporting obligations in Europe
-date: 2021-01-29 00:00:00 Z
+categories: monthly-articles
+date: 2021-02-01T00:00:00.000Z
 intro: The European Union will take major action in 2021 to expand its leading
   position on sustainable finance, in order to strategically redirect private
   and public money to sustainable activities. Such realignment of investments
@@ -13,10 +14,7 @@ intro: The European Union will take major action in 2021 to expand its leading
   growth from resource use.
 img: /assets/2101-cover.jpg
 img_listing: /assets/2101-cover.jpg
-categories: others, monthlyarticle
 ---
-![](/assets/timeline-nfrd-sfdr-taxonomy-standards-2-.png)
-
 *Written by [Frank Bold](http://en.frankbold.org/) as the first article of the series of monthly briefings on sustainability reporting and related themes provided throughout 2021. Views included in this article do not necessarily represent the opinion of other members in the Alliance.*
 
 <div style="border: 1px solid #DFDFDF; padding: 1.5em 1.5em 0 1.5em; font-size: .9rem;">
@@ -115,7 +113,7 @@ The 10 most important topics that will likely be addressed are the following. Tw
 
 <p>1. Very likely, the NFRD scope will be extended to include all large companies (both those with assets listed on stock exchanges and private); following the example of Denmark, Greece, Spain and Sweden, which have already adopted such an <a href="https://www.accountancyeurope.eu/wp-content/uploads/NFR-Publication-3-May-revision.pdf">extended scope</a>. This change would increase the number of companies obliged to report to more than <a href="https://ec.europa.eu/eurostat/databrowser/view/tin00145/default/table?lang=en">41 000 companies in EU-27</a> that employ 250 persons and more (for illustration, 0.2% of all EU enterprises)</p>
 
-<p>2. In addition, there is an ongoing debate on small or medium enterprises that have high impact or high risks, such as energy producers or importers of high-risk commodities, to be included in the scope of the new obligations with reporting requirements being proportionate to their size and impact and thus avoiding a “one size fits all” approach. The European Parliament included a <a href="https://www.europarl.europa.eu/doceo/document/TA-9-2020-0372_EN.html">request</a> to the EU Commission to consider this, and investor groups such as <a href="https://www.efama.org/">EFAMA</a> and <a href="https://www.iigcc.org/">IIGCC</a> together with accounting bodies and NGOs published in summer that \\_“Whether companies have a significant impact on the environment and society does not depend on their size or legal status, neither are investments limited to assets listed on stock exchanges”\\_ (see joint statement <a href="http://en.frankbold.org/sites/default/files/zpravodaj/joint-statement-on-the-nfrd-revision.pdf">here</a>). With an estimated proportion of 20 - 30 % of companies in high risk sectors, this means an additional 41 000 - 62 000 medium-sized companies in EU-27 falling under the scope. (0.2%-0.3% of all EU enterprises)</p>
+<p>2. In addition, there is an ongoing debate on small or medium enterprises that have high impact or high risks, such as energy producers or importers of high-risk commodities, to be included in the scope of the new obligations with reporting requirements being proportionate to their size and impact and thus avoiding a “one size fits all” approach. The European Parliament included a <a href="https://www.europarl.europa.eu/doceo/document/TA-9-2020-0372_EN.html">request</a> to the EU Commission to consider this, and investor groups such as <a href="https://www.efama.org/">EFAMA</a> and <a href="https://www.iigcc.org/">IIGCC</a> together with accounting bodies and NGOs published in summer that \_“Whether companies have a significant impact on the environment and society does not depend on their size or legal status, neither are investments limited to assets listed on stock exchanges”\_ (see joint statement <a href="http://en.frankbold.org/sites/default/files/zpravodaj/joint-statement-on-the-nfrd-revision.pdf">here</a>). With an estimated proportion of 20 - 30 % of companies in high risk sectors, this means an additional 41 000 - 62 000 medium-sized companies in EU-27 falling under the scope. (0.2%-0.3% of all EU enterprises)</p>
 
 **Mandatory reporting standards**
 
