@@ -5,9 +5,13 @@ $space: 2rem;
 $padding-y: 1rem;
 
 .carousel-cell {
+  width: calc(100% - #{$space});
 
-  width: calc((100% - #{3 * $space}) / 3);
-  height: calc(2 * $padding-y + $font-size * $line-height * $lines-to-show);
+  @include min-screen($wDesktop) {
+    width: calc((100% - (3 * #{$space})) / 3);
+  }
+
+  height: calc(2 * #{$padding-y} + #{$font-size} * #{$line-height} * #{$lines-to-show});
 
   &:not(:last-child) {
     margin-right: $space;
