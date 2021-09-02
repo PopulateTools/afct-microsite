@@ -1,5 +1,5 @@
 .carousel-cell {
-  $space: 4rem;
+  $space: 2rem;
 
   width: calc((100% - #{3 * $space}) / 3);
 
@@ -32,17 +32,36 @@
   h4 {
     margin: 0;
     flex: 0 0 50%;
+    font-weight: normal;
+
+    // https://codepen.io/martinwolf/pen/qlFdp
+    $font-size: $fsMedium;
+    $line-height: 1.3;
+    $lines-to-show: 6;
+
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    height: $font-size * $line-height * $lines-to-show; /* Fallback for non-webkit */
+    margin: 0 auto;
+    font-size: $font-size;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
-.flickity-prev-next-button {
-  &.previous {
-    left: -10px;
-    transform: translate(-100%, -50%);
-  }
+@include min-screen($wDesktop) {
+  .flickity-prev-next-button {
+    &.previous {
+      left: -10px;
+      transform: translate(-100%, -50%);
+    }
 
-  &.next {
-    right: -10px;
-    transform: translate(100%, -50%);
+    &.next {
+      right: -10px;
+      transform: translate(100%, -50%);
+    }
   }
 }
