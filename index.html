@@ -10,6 +10,26 @@ description: ""
 
   <section>
     <div class="column">
+      <h1 class="hero__h1">Latest News</h1>
+      <div class="main-carousel" data-flickity='{ "contain": true, "pageDots": false, "groupCells": "100%", "wrapAround": false }'>
+        {% for post in site.posts %}
+          <div class="carousel-cell">
+            <a class="carousel-item" href="{{ post.url }}">
+              <img src="{{ post.img }}" alt="{{ post.title }}" title="{{ post.title }}">
+              <h4>{{ post.title }}</h4>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="small">
+    <div class="column decorator"></div>
+  </section>
+
+  <section>
+    <div class="column">
       <div class="flex-container gutter-xxl">
         <div>
           <h1 class="hero__h1">EUKI Research 2020</h1>
