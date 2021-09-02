@@ -1,7 +1,7 @@
 .carousel-cell {
   $space: 4rem;
 
-  width: calc((100% - #{$space}) / 3);
+  width: calc((100% - #{3 * $space}) / 3);
 
   @include aspect-ratio(2, 1);
 
@@ -17,6 +17,7 @@
   height: 100%;
   box-sizing: border-box;
   text-decoration: none;
+  white-space: break-spaces;
 
   > *:not(:last-child) {
     margin-right: 1rem;
@@ -24,7 +25,7 @@
 
   img {
     object-fit: cover;
-    width: 100%;
+    width: 50%;
     flex: 0 0 50%;
   }
 
