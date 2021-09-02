@@ -1,5 +1,9 @@
 section {
   padding: 2rem 1rem;
+
+  &.py-0 {
+    padding: 0 1rem;
+  }
 }
 
 .section {

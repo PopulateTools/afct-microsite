@@ -16,11 +16,17 @@ description: ""
           <div class="carousel-cell">
             <a class="carousel-item" href="{{ post.url }}">
               <img src="{{ post.img }}" alt="{{ post.title }}" title="{{ post.title }}">
-              <h4>{{ post.title | truncate: 95 }}</h4>
+              <h4>{{ post.title }}</h4>
             </a>
           </div>
         {% endfor %}
       </div>
+    </div>
+  </section>
+
+  <section class="py-0">
+    <div class="column">
+      <h1 class="heading__hero with-decorator mb-0"></h1>
     </div>
   </section>
 
