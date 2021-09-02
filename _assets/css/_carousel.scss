@@ -7,7 +7,7 @@ $padding-y: 1rem;
 .carousel-cell {
   width: calc(100% - #{$space});
 
-  @include min-screen($wDesktop) {
+  @include min-screen($wMobile) {
     width: calc((100% - (3 * #{$space})) / 3);
   }
 
