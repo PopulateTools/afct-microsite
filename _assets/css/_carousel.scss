@@ -2,7 +2,6 @@ $font-size: $fsMedium;
 $line-height: 1.3;
 $lines-to-show: 6;
 $space: 2rem;
-$padding-y: 1rem;
 
 .carousel-cell {
   width: calc(100% - #{$space});
@@ -11,7 +10,7 @@ $padding-y: 1rem;
     width: calc((100% - (3 * #{$space})) / 3);
   }
 
-  height: calc(2 * #{$padding-y} + #{$font-size} * #{$line-height} * #{$lines-to-show});
+  height: $font-size * $line-height * $lines-to-show;
 
   &:not(:last-child) {
     margin-right: $space;
@@ -20,7 +19,6 @@ $padding-y: 1rem;
 
 .carousel-item {
   display: flex;
-  padding: $padding-y 0;
   width: 100%;
   height: 100%;
   box-sizing: border-box;

@@ -108,3 +108,16 @@
 
   font-size: 48px;
 }
+
+.decorator {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 0;
+    background-color: $cDecorator;
+  }
+}
