@@ -20,6 +20,8 @@ intro: "﻿As the European Union considers the new draft Corporate Sustainabilit
   performance and higher financial return. Not only does this provide a forceful
   case for passing the new EU legislation, but it concludes that a ‘tipping
   point’ has been reached whereby the ‘business case’ has been won. "
+img: /assets/2109_hands_header.jpg
+img_listing: /assets/2109_hands_list.jpg
 ---
 *Seventh article by Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
