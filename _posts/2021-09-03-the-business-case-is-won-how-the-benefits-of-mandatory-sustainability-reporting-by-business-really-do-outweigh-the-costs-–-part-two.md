@@ -135,7 +135,7 @@ There is now widespread recognition that sustainability is crucial to better ris
 
 ![KPMG survey graphics](/assets/2109_kpmg_survey_graphics.png "KPMG survey graphics")
 
-*\*Source: KPMG 2020 survey. See it in full resolution here.*
+*\*Source: KPMG 2020 survey. See it in full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_kpmg_survey_graphics.png).*
 
 **Another [KPMG survey](https://assets.kpmg/content/dam/kpmg/pdf/2016/05/KPMGSurvey_of_CR%20Reporting_2015.pdf) of business in Germany, found that 75% of the costs of sustainability reporting would be incurred by the companies in any case (the ‘business as usual calculation’) and that the benefits of the reporting exceeded the costs by four times, generating a EUR 750 million gain per year for German business overall.** In 13 out of 15 future scenarios analysed, sustainability reporting beat ‘break even’ to provide positive benefits to the company. 
 
@@ -253,8 +253,6 @@ However, in the past, such a ‘business case’ has not always been well receiv
 What has been argued above is that the urgency of sustainability challenges, a ‘wave’ of corroborating evidence about the economic benefits of sustainability and new economic models recognising the dynamic nature of the transition to a sustainable economy - all create a new context in which business is now able to give broad support to these initiatives.
 
 Perhaps we will not need to discuss ‘the business case’ in future years? The argument has been won. Case closed.
-
-
 
 **Sources:**
 
