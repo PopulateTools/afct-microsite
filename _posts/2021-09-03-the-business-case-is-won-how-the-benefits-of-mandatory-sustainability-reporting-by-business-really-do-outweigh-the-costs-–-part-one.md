@@ -91,7 +91,7 @@ The proposal for companies to publish sustainability information in the manageme
 
 ![Average incremental costs by type of report](/assets/2109_graph-5.15.png "Average incremental costs by type of report")
 
-*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution here.*
+*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_graph-5.15.png).*
 
 The EU’s ‘double materiality’ definition (impact on the company and on stakeholders) is already shown to be adopted by 40% of companies, enshrining the concept of sustainability impact in business risk management and paving the way for this understanding to be adopted in other jurisdictions.
 
@@ -109,7 +109,7 @@ The benefits of sustainability reporting have been amplified with the rapid rise
 
 ![EU policy timeline](/assets/2109_eu-policy-timeline.png "EU policy timeline")
 
-*\*See it full resolution here.*
+*\*Detailed timeline of related EU legislation, see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_eu-policy-timeline.png).*
 
 Indeed, the explosion of **demand for sustainability information from different actors is shown to be the true future cost to business, inevitable unless a more widely accepted set of standards is established**, allowing the existing ‘fragmented’ landscape of reporting demands to ‘converge’. 
 
