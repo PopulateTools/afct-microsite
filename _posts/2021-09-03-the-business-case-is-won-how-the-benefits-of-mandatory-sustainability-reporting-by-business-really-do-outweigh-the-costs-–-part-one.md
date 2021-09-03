@@ -63,8 +63,6 @@ intro: "﻿As the European Union considers the new draft Corporate Sustainabilit
 
 </div>
 
-
-
 As the European Union considers the new draft Corporate Sustainability Reporting Directive and associated sustainability standards, striking new evidence shows that the proposed legislation saves rather than costs money for business. In this two-part article, we analyse what this means for the ‘business case’ for companies to pursue sustainability and to report against this.  In Part One, we present the new evidence, showing that not only the additional costs of the new legislation are “negligible” for companies but that it will actually lead to an average cost saving up to EUR 41,700 per company each year in streamlining requests for sustainability information to the business from other sources. In Part Two, we analyse why existing standard costs models have overstated the cost of business sustainability and understated its benefits, and present broader evidence which is now seen as overwhelmingly proving the link between better corporate sustainability performance and higher financial return. Not only does this provide a forceful case for passing the new EU legislation, but it concludes that a ‘tipping point’ has been reached whereby the ‘business case’ has been won.
 
 The EU’s new [draft](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0189) Corporate Sustainability Reporting Directive (CSRD) seeks to extend the number of companies covered across Europe four-fold in comparison to existing rules and is [instrumental](https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html) in leveraging the opportunities for companies derived from the EU sustainable finance strategy and Green Deal.
@@ -166,3 +164,15 @@ The consequence is that there is a huge opportunity for the EU Parliament and Co
 What is equally clear, in addition, is that the new evidence has had a similarly persuasive impact directly on business opinion too. This is shown in the widespread company support for the new legislative proposal.
 
 For individual businesses, the balance of the equation has changed.
+
+<a href="https://en.frankbold.org/" style="
+max-width: 200px;
+display: block;
+margin-left: -29px;
+margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
+
+*This is the seventh article by Richard Howitt,* *Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The second part of this article can be found here. It demonstrates a ‘wave’ of evidence which complements and reinforces the European findings. [](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)*
+
+*The previous articles covered various topics such as [reporting on governance (G of ESG)](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html), [climate transition plans](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html), [SMEs´ reporting](https://www.allianceforcorporatetransparency.org/news/smes-and-the-future-of-european-sustainability-reporting-rules-small-businesses-deserve-to-get-clarity-to-address-the-sustainability-challenge.html) or [sustainability due diligence](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html). All the articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). [Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*  
+
+*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
