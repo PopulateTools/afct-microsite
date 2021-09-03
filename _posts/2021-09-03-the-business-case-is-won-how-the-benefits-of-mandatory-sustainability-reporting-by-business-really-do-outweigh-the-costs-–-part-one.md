@@ -81,7 +81,7 @@ The additional or incremental cost is calculated to be just 0.005% of turnover o
 
 ![Incremental costs as a share of turnover by sector and size (%)](/assets/2109_graph-5.11.png "Incremental costs as a share of turnover by sector and size (%)")
 
-*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution here.*
+*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution [here](https://allianceforthecorporatetransparency.org/assets/2109_graph-5.11.png).*
 
 As independent assurance of sustainability reporting is a new aspect of the CSRD, it is interesting that three-quarters of companies who already seek assurance under the NFRD - widespread in France, Belgium, Italy and Spain, - pay no additional cost to their existing auditors for doing so. For those that do pay, the average cost is just EUR 5,000.
 
@@ -173,7 +173,7 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-*This is the seventh article by Richard Howitt,* *Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The second part of this article can be found here. It demonstrates a ‘wave’ of evidence which complements and reinforces the European findings. [](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)*
+*This is the seventh article by Richard Howitt,* *Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The second part of this article can be found here. It demonstrates a ‘wave’ of evidence which complements and reinforces the European findings.* [](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)
 
 *The previous articles covered various topics such as [reporting on governance (G of ESG)](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html), [climate transition plans](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html), [SMEs´ reporting](https://www.allianceforcorporatetransparency.org/news/smes-and-the-future-of-european-sustainability-reporting-rules-small-businesses-deserve-to-get-clarity-to-address-the-sustainability-challenge.html) or [sustainability due diligence](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html). All the articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). [Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*  
 
