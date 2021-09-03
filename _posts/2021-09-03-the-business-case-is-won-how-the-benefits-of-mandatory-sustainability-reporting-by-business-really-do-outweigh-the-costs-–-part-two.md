@@ -208,8 +208,6 @@ There is also now recognised to be a [link](https://onlinelibrary.wiley.com/doi/
   </ul>
 </div>
 
-<h1 id="System-benefits">System benefits</h1>
-
 Business must prepare for such changes in the very near future. **Sustainability cannot be marginalised any longer, but will now be understood to be central to the strategic challenges for the business overall.** 
 
 In pure economic terms too, conventional financial accounting is now accepted as failing to address the importance of intangible assets in the valuation of the company. Covering elements such as brand, reputation, knowledge, research capacity and data, leading financial services company [Ocean Tomo now assesses](https://www.visualcapitalist.com/the-soaring-value-of-intangible-assets-in-the-sp-500/) these to represent 90% of the value of the largest listed companies.
@@ -224,4 +222,86 @@ At the same time, experimental methodologies for calculating social and environm
 
 Long-standing calls for the convergence of conflicting sustainability reporting frameworks have also now made significant progress, generating action from regulators - led by the European Union’s CSRD and sustainability reporting standards - to make this seem possible for the first time.  
 
+<h1 id="System-benefits">System benefits</h1>
+
+Perhaps most of all, the arguments about externalities, which used to be about companies allegedly avoiding social and environmental costs so that they are borne by society in general, have suddenly been reversed. 
+
+In the new era, growing markets for sustainable products and services and lower costs for sustainable production methods are not created by individual companies in isolation, but by a combination of actions by multiple businesses, which fundamentally change cost-benefit calculations from the outside. This is the scale of the sustainability transition in the system directly impacting on the business.  
+
+Finance is the new externality.
+
+The speed with which digital technologies have spread, how the volume of new investment has shifted from fossil fuels to renewable energy or the expansion of LED lighting, were not predicted in advance but have become today’s reality.  
+
+Ground-breaking new improvements in battery charging, the successful development of the hydrogen fuel cell or the development of mass meat substitutes, could all be similar innovations which quickly alter economic assumptions in the very near future.
+
+The [London Business School](https://www.london.edu/think/how-great-companies-deliver-both-purpose-and-profit) has called this the ‘pie-growing mentality’, the idea that sustainability transition for the company grows market opportunity for businesses overall. 
+
+Therefore, static cost-benefit analysis techniques are being replaced by more dynamic and transformative models for financial performance amongst business thinkers, recognising that innovation in sustainable products and services, the rapid growth of new markets, the potential for being left responsible for stranded assets and possibilities for step-change reductions in the costs of production, must be factored in to business planning and decision-making. 
+
+**This makes it clear that sustainability is indeed an investment not a cost.** 
+
+One key piece of evidence which demonstrates this shift of thinking within business, is shown by successive [Reuters’ Responsible Business Trends Reports](https://www.reutersevents.com/sustainability/whitepapers/responsible-business-trends-report-2017), which have found that 54% of companies attribute sustainability to be a revenue driver, compared to 21% who do not. 
+
+This underlines that business has now been convinced by what has now become a wealth of statistical evidence, which takes the theoretical benefits that come from sustainability reporting and which has now succeeded in putting hard numbers to prove the argument. 
+
 <h1 id="closing-arguments ">Sustainability case: closing arguments</h1>
+
+These articles started by showing that research undertaken by and on behalf of the European Commission has made an indisputable case that the benefits of its new Corporate Sustainability Directive and associated standards for sustainability reporting, achieve a clear business benefit over the costs entailed. 
+
+However, in the past, such a ‘business case’ has not always been well received by business itself.
+
+What has been argued above is that the urgency of sustainability challenges, a ‘wave’ of corroborating evidence about the economic benefits of sustainability and new economic models recognising the dynamic nature of the transition to a sustainable economy - all create a new context in which business is now able to give broad support to these initiatives.
+
+Perhaps we will not need to discuss ‘the business case’ in future years? The argument has been won. Case closed.
+
+
+
+**Sources:**
+
+1. ESG & Corporate Financial Performance: Mapping the global landscape, Deutsche Asset Management and the University of Hamburg, December 2015.
+2. Strategy & Quant: Cracking the ESG Code, Nordea Equity Research, September 5 2017.
+3. From the stockholder to the stakeholder: How sustainability can drive financial outperformance, Smith School of Enterprise and the Environment at the University of Oxford and Arabesque Asset Management, 2015.
+4. Sustainability: The Future of Investing, BlackRock Investment Institute, December 2020.
+5. Corporate Sustainability: First Evidence on Materiality, Mozaffar Khan, George Serafeim, and Aaron Yoon, HBS, 2015.
+6. “Sustainability and profitability can co-exist. Here’s how,” CP Gurnani, World Economic Forum, January 7, 2020.
+7.  Sustainability Pays, Natural Capital Solutions, May 2012.
+8. The Comprehensive Business Case for Sustainability, [Tensie Whelan](https://hbr.org/search?term=tensie%20whelan) and [Carly Fink](https://hbr.org/search?term=carly%20fink), Harvard Business Review, October 21 2016. 
+9. The Business Case for Corporate Investment in ESG Practices, Matteo Tonello and Thomas Singer, The Conference Board, July 2015.
+10. Cote d’Ivoire Cocoa: Survey of Rainforest Alliance Certified Farms, Committee on Sustainability Assessment, June 2012.
+11. The Climate has Changed, We Mean Business, 2014.
+12. Raising the stakes on corporate responsibility, The RepTrak Company, October 25, 2018.
+13. Danish firms want regulatory rewards for Climate Action, Anna Fenger Schefte, FORESIGHT Climate & Energy magazine, June 2020.
+14. Leading the social enterprise—Reinvent with a human focus, Erica Volini, Jeff Schwartz and Indranil Roy, Deloitte 2019 Global Human Capital Trends, April 2019.
+15. Integrated Sustainability Reporting – Quantifying the economical benefits of being sustainable, Marko Lange, SAP Community, March 31 2015.
+16. The value of value creation, Marc Goedhart and [Tim Koller](https://www.mckinsey.com/our-people/tim-koller),[ McKinsey Quarterly](https://www.mckinsey.com/quarterly/overview) June 16, 2020. 
+17. Integrated Profit & Loss Statement - Annual Results and Assumptions, Lafarge Holcim, 2019. 
+18. The time has come, KPMG Survey of Sustainability Reporting 2020, December 2020.
+19. "Added value? - An investigation of the benefits and costs of climate reporting by German companies ”, KPMG supported by the German Ministry for the Environment, (2015).
+20. Strategy presentation’s effect on stock prices, Whittington, Richard; Yakis-Douglas, Basak; Ahn, Kwangwon, Australian Institute of Company Directors, 2016.
+21. The Economic Significance of Long-Term Plans, [Sakis Kotsantonis](https://onlinelibrary.wiley.com/action/doSearch?ContribAuthorStored=Kotsantonis%2C+Sakis), [Christina Rehnberg](https://onlinelibrary.wiley.com/action/doSearch?ContribAuthorStored=Rehnberg%2C+Christina), [George Serafeim](https://onlinelibrary.wiley.com/action/doSearch?ContribAuthorStored=Serafeim%2C+George), [Bronagh Ward](https://onlinelibrary.wiley.com/action/doSearch?ContribAuthorStored=Ward%2C+Bronagh) and [Brian Tomlinson](https://onlinelibrary.wiley.com/action/doSearch?ContribAuthorStored=Tomlinson%2C+Brian), Journal of Applied Corporate Finance, November 2018.
+22. Cheap Talk and Cherry-Picking: What ClimateBert has to say on Corporate Climate Risk Disclosures, [Julia Anna Bingler](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3755443), [Mathias Kraus](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4600300) and [Markus Leippold](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=156365), Social Science Research Network, March 2, 2021.
+23. Save money by having your sustainability report assured, Ryan J. Casey and Jonathan H. Grenier, Journal of Accountancy, April 11, 2018.
+24. Unlock the Inclusive Growth Story of the 21st Century, 2018 Report of the Global Commission on the Economy and Climate, September 2018. 
+25. Final Report, Task Force for Climate-related Financial Disclosure, 2017. 
+26. The costs and benefits of environmental sustainability, Paul Ekins & Dimitri Zenghelis, The sixth UN Global Environment Outlook, April 2019.
+27. 2022 - The growth opportunity of the century: Are you ready for the ESG change? PwC Luxembourg, October 2020.
+28. Spinning gold: The financial returns to stakeholder engagement, [Witold J. Henisz](https://onlinelibrary.wiley.com/action/doSearch?ContribAuthorStored=Henisz%2C+Witold+J), [Sinziana Dorobantu](https://onlinelibrary.wiley.com/action/doSearch?ContribAuthorStored=Dorobantu%2C+Sinziana), [Lite J. Nartey](https://onlinelibrary.wiley.com/action/doSearch?ContribAuthorStored=Nartey%2C+Lite+J), Strategic Management Journal, August 22 2013.
+29. The Inevitable Policy Response, UN Principles for Responsible Investment, March 2021.
+30. The Soaring Value of Intangible Assets in the S&P 500, Aran Ali, Visual Capitalist, November 12 2020.
+31. Joint Statement on Advancements in Value Accounting, The Value Accounting Network, July 14 2021.
+32. Measuring Stakeholder Capitalism: Towards Common Metrics and Consistent Reporting of Sustainable Value Creation, World Economic Forum, September 22 2020.
+33. Sustainability is key for value creation, [Dhananjay Phadnis](https://fidelityinternational.com/editorial/authors/37), Fidelity Sustainable Investment Blog, March 2 2021
+34. How great companies deliver both purpose and profit, Alex Edmans, London Business School, October 31 2019. 
+35. The Responsible Business Trends Report 2017, Reuters Events Sustainable Business, May 30 2017.
+
+<a href="https://en.frankbold.org/" style="
+max-width: 200px;
+display: block;
+margin-left: -29px;
+margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
+
+*This is the eighth article by Richard Howitt,* *Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The first part of this article can be found here. It presents evidence which makes a decisive case that the European Union’s draft Corporate Sustainability Reporting Directive (CSRD) and accompanying European sustainability standards, will generate direct business benefits.*[](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)
+
+*The previous articles covered various topics such as [reporting on governance (G of ESG)](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html), [climate transition plans](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html), [SMEs´ reporting](https://www.allianceforcorporatetransparency.org/news/smes-and-the-future-of-european-sustainability-reporting-rules-small-businesses-deserve-to-get-clarity-to-address-the-sustainability-challenge.html) or [sustainability due diligence](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html). All the articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). [Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*  
+
+*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
