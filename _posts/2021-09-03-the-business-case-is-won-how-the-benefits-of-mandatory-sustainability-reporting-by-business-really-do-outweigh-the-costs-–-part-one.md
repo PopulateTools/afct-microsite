@@ -167,6 +167,14 @@ What is equally clear, in addition, is that the new evidence has had a similarly
 
 For individual businesses, the balance of the equation has changed.
 
+Sources:
+
+\[1] Impact of the legal requirement for reporting on CSR in the Danish Financial Statements Act, Danish Commerce and Companies Agency, 2010.
+
+\[2] Is Sustainability Reporting a Business Strategy for Firm’s Growth? Empirical Study on the Romanian Capital Market, Mihai Carp, Leontina Păvăloaia, Mihai-Bogdan Afrăsinei and Iuliana Eugenia Georgescu, Sustainability Journal, January 2019.
+
+\[3] German companies back Brussels climate mitigation policy, Bundesverband deutscher Banken (Association of German Banks) and the Official Monetary and Financial Institutions Forum (OMFIF), June 17 2021
+
 <a href="https://en.frankbold.org/" style="
 max-width: 200px;
 display: block;
