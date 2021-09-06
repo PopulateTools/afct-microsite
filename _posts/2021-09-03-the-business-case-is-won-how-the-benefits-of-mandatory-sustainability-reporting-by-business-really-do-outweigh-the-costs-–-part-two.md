@@ -197,9 +197,9 @@ There is also now recognised to be a [link](https://onlinelibrary.wiley.com/doi/
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
-  <p style="font-weight: bold;">Additional information:</p>
+  <p style="font-weight: bold;">Read our article on the Sustainable Finance package <a href="https://docs.google.com/document/d/1pelLHe7OvnFiPiBdJPqgb7qIyASH3V0K5tMgQhI7MIQ/edit">here</a>.</p>
 
-  <p>Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.</p>
+<p style="font-weight: bold;">See detailed timeline of related EU legislation <a href="https://drive.google.com/file/d/19PGg0nusy7JxsZY4zYJzyce_YRqNWJjW/view?usp=sharing">here</a>.</p>
 
 </div>
 
