@@ -196,18 +196,41 @@ There is also now recognised to be a [link](https://onlinelibrary.wiley.com/doi/
 **For European businesses, this is not simply a theoretical question, but the concrete pipeline of European Union regulation already projected in the European Green Deal and as part of the European Commission’s most recent Sustainable Finance package.** These include tightening rules for banks, investors and insurers to ensure sustainability requirements from business; extending the ‘taxonomy’ or what is considered to be environmentally sustainable to social issues too; expansion of its Emissions Trading Scheme alongside an expected rise in the price of carbon and strengthening transport, waste, buildings and land use legislation. 
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
-  <ul>
-    <li>
-    <span><a style="font-weight: bold">Read our article on the Sustainable Finance package <a href= "https://docs.google.com/document/d/1pelLHe7OvnFiPiBdJPqgb7qIyASH3V0K5tMgQhI7MIQ/edit">here</a>.</p>  
 
-</span>
-    </li>
-    <li>
-      <span>
-      <a style="font-weight: bold">See detailed timeline of related EU legislation <a href= "https://drive.google.com/file/d/19PGg0nusy7JxsZY4zYJzyce_YRqNWJjW/view?usp=sharing">here</a>.</p>  
-      </span>
-    </li>
-  </ul>
+  <p style="font-weight: bold;">Additional information:</p>
+
+  <p>Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.</p>
+
+  <ul>
+
+    <li>
+
+    <span><a style="font-weight: bold" href="https://bit.ly/2NQIT6g">Full recording </a>“Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points</span>
+
+    </li>
+
+    <li>
+
+      <span>
+
+      <a style="font-weight: bold" href="http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf">Policy recommendations</a> on Sustainable Corporate Governance by Frank Bold
+
+      </span>
+
+    </li>
+
+<li>
+
+      <span>
+
+      <a style="font-weight: bold" href="https://themoderncorporation.wordpress.com/call-to-action-on-sustainable-corporate-governance/">Open letter </a> "Call to Action on Sustainable Corporate Governance” by leaders in business, investment and financial institutions, and academia
+
+      </span>
+
+    </li>
+
+  </ul>
+
 </div>
 
 Business must prepare for such changes in the very near future. **Sustainability cannot be marginalised any longer, but will now be understood to be central to the strategic challenges for the business overall.** 
