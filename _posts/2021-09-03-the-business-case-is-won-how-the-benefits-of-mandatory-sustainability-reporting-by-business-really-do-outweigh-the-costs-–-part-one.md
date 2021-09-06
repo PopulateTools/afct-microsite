@@ -169,8 +169,6 @@ For individual businesses, the balance of the equation has changed.
 
 
 
-
-
 **Sources:**
 
 1. Impact of the legal requirement for reporting on CSR in the Danish Financial Statements Act, Danish Commerce and Companies Agency, 2010.
