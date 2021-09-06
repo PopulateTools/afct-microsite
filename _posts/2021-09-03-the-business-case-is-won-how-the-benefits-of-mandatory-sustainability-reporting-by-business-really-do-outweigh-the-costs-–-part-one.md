@@ -81,7 +81,7 @@ The additional or incremental cost is calculated to be just 0.005% of turnover o
 
 ![Incremental costs as a share of turnover by sector and size (%)](/assets/2109_graph-5.11.png "Incremental costs as a share of turnover by sector and size (%)")
 
-*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution [here](https://allianceforthecorporatetransparency.org/assets/2109_graph-5.11.png).*
+*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_graph-5.11.png).*
 
 As independent assurance of sustainability reporting is a new aspect of the CSRD, it is interesting that three-quarters of companies who already seek assurance under the NFRD - widespread in France, Belgium, Italy and Spain, - pay no additional cost to their existing auditors for doing so. For those that do pay, the average cost is just EUR 5,000.
 
@@ -167,7 +167,9 @@ What is equally clear, in addition, is that the new evidence has had a similarly
 
 For individual businesses, the balance of the equation has changed.
 
-Sources:
+
+
+**Sources:**
 
 1. Impact of the legal requirement for reporting on CSR in the Danish Financial Statements Act, Danish Commerce and Companies Agency, 2010.
 2. Is Sustainability Reporting a Business Strategy for Firm’s Growth? Empirical Study on the Romanian Capital Market, Mihai Carp, Leontina Păvăloaia, Mihai-Bogdan Afrăsinei and Iuliana Eugenia Georgescu, Sustainability Journal, January 2019.
