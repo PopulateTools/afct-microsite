@@ -136,7 +136,7 @@ The evidence shows that this is not just about sustainable performance of the co
 There is now widespread recognition that sustainability is crucial to better risk management. Around half of all companies now report on climate risk in their financial reporting, according to global accountancy firm KPMG’s authoritative biannual [survey of sustainability reporting](https://assets.kpmg/content/dam/kpmg/xx/pdf/2020/11/the-time-has-come.pdf), increasing significantly in the past two years in particular. Larger European companies lead globally in these results, with 60 percent report in line with the recommendations of the Task force for Climate-related Financial Disclosure (TCFD).
 
 <img 
-  src="assets/2109_kpmg_survey_graphics.png" 
+  src="/assets/2109_kpmg_survey_graphics.png" 
   style="width: 307px; height: 502px; padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="KPMG survey graphics"/>
 
 *\*Source: KPMG 2020 survey. See it in full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_kpmg_survey_graphics.png).*
