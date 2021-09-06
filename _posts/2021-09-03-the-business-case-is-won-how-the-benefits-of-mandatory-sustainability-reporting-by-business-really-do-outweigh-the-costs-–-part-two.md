@@ -18,8 +18,10 @@ intro: In our earlier article, new evidence was presented which makes a decisive
   business value creation can be calculated and argue that the ‘business case’
   for companies to act sustainably and to report on their sustainability
   performance, has now been won.
+img: /assets/2109_man-with-skyscraper_header.jpg
+img_listing: /assets/2109_man-with-skyscraper_list.jpg
 ---
-*Eighth article by Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+*By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The previous articles can be found [here](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html). Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
@@ -298,7 +300,7 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-*This is the eighth article by Richard Howitt,* *Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The first part of this article can be found here. It presents evidence which makes a decisive case that the European Union’s draft Corporate Sustainability Reporting Directive (CSRD) and accompanying European sustainability standards, will generate direct business benefits.*[](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)
+*By Richard Howitt,* *Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. The article is a part of the series of monthly briefings on sustainability reporting in 2021. The first part of this article can be found here. It presents evidence which makes a decisive case that the European Union’s draft Corporate Sustainability Reporting Directive (CSRD) and accompanying European sustainability standards, will generate direct business benefits.*[](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)
 
 *The previous articles covered various topics such as [reporting on governance (G of ESG)](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html), [climate transition plans](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html), [SMEs´ reporting](https://www.allianceforcorporatetransparency.org/news/smes-and-the-future-of-european-sustainability-reporting-rules-small-businesses-deserve-to-get-clarity-to-address-the-sustainability-challenge.html) or [sustainability due diligence](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html). All the articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). [Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*  
 
