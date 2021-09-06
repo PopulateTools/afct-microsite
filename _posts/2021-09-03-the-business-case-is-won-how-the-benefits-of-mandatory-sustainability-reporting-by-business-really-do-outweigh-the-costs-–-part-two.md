@@ -201,12 +201,6 @@ There is also now recognised to be a [link](https://onlinelibrary.wiley.com/doi/
 
   <p>Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.</p>
 
-      </span>
-
-    </li>
-
-  </ul>
-
 </div>
 
 Business must prepare for such changes in the very near future. **Sustainability cannot be marginalised any longer, but will now be understood to be central to the strategic challenges for the business overall.** 
