@@ -2,7 +2,7 @@
 layout: post
 title: The business case is won - how the benefits of mandatory sustainability
   reporting by business, really do outweigh the costs – Part Two
-categories: "#monthlyarticle"
+categories: monthly-articles
 date: 2021-09-05T06:33:16.628Z
 intro: In our earlier article, new evidence was presented which makes a decisive
   case that the European Union’s draft Corporate Sustainability Reporting
