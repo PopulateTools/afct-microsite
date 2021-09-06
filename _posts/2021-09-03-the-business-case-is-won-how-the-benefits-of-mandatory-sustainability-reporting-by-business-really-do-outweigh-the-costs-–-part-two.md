@@ -201,30 +201,6 @@ There is also now recognised to be a [link](https://onlinelibrary.wiley.com/doi/
 
   <p>Frank Bold & CDSB recently organized a webinar on how the EU sustainable corporate governance initiative and the reform of the EU Non-Financial Reporting Directive can be focused on helping companies and financial markets to develop and connect sustainability strategies, target setting, transition plans and reporting obligations.</p>
 
-  <ul>
-
-    <li>
-
-    <span><a style="font-weight: bold" href="https://bit.ly/2NQIT6g">Full recording </a>“Sustainable corporate governance and non-financial reporting: finding a pathway to policy coherence” webinar and summary of key points</span>
-
-    </li>
-
-    <li>
-
-      <span>
-
-      <a style="font-weight: bold" href="http://en.frankbold.org/sites/default/files/publikace/sustainable_corporate_governance_frank_bold_recommendations_1.pdf">Policy recommendations</a> on Sustainable Corporate Governance by Frank Bold
-
-      </span>
-
-    </li>
-
-<li>
-
-      <span>
-
-      <a style="font-weight: bold" href="https://themoderncorporation.wordpress.com/call-to-action-on-sustainable-corporate-governance/">Open letter </a> "Call to Action on Sustainable Corporate Governance” by leaders in business, investment and financial institutions, and academia
-
       </span>
 
     </li>
