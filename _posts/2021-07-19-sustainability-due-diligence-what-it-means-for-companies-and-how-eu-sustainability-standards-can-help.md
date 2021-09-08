@@ -94,7 +94,7 @@ Diagram: OECD Guidelines describe the due diligence process in six stages.
 
 ![Source: OECD, Due diligence guidance](/assets/2107_due_diligence.png "Source: OECD, Due diligence guidance")
 
-*\*[Source: OECD, Due diligence guidance](https://www.oecdguidelines.nl/oecd-guidelines/due-diligence-guidances) (see the detailed explanation of individual stages [here](https://www.oecdguidelines.nl/oecd-guidelines/due-diligence-guidances)).* 
+*\*[Source: OECD, Due diligence guidance](https://www.oecdguidelines.nl/oecd-guidelines/due-diligence) (see the detailed explanation of individual stages [here](https://www.oecdguidelines.nl/oecd-guidelines/due-diligence/documents/publication/2021/08/05/flyer-due-diligence-in-6-stages)).* 
 
 **Small businesses, if they are not exposed to high-risk supply chains, can carry out due diligence and report on it in a simple fashion.** They only need to show that they have assessed their value chain and screened for typical risks in their sector.
 
