@@ -79,9 +79,9 @@ The average recurring cost of EUR 30,897 to the company from the legislation is 
 
 The additional or incremental cost is calculated to be just 0.005% of turnover on average for the first year, and is calculated to further reduce in subsequent years, once systems are set in place. Moreover, the studies show that up to a half of this cost would have to be incurred in any case, described as the ‘business as usual’ calculation.
 
-![Incremental costs as a share of turnover by sector and size (%)](/assets/2109_graph-5.11.png "Incremental costs as a share of turnover by sector and size (%)")
+![Incremental costs as a share of turnover by sector and size (%)](/assets/2109_graph_5.11.png "Incremental costs as a share of turnover by sector and size (%)")
 
-*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_graph-5.11.png).*
+*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_graph_5.11.png).*
 
 As independent assurance of sustainability reporting is a new aspect of the CSRD, it is interesting that three-quarters of companies who already seek assurance under the NFRD - widespread in France, Belgium, Italy and Spain, - pay no additional cost to their existing auditors for doing so. For those that do pay, the average cost is just EUR 5,000.
 
@@ -89,9 +89,9 @@ Other aspects of the new CSRD proposal are also seen to limit costs.
 
 The proposal for companies to publish sustainability information in the management report rather than separately, is seen to generate an average saving of EUR 15,000 for the company, compared to publishing a separate sustainability report.
 
-![Average incremental costs by type of report](/assets/2109_graph-5.15.png "Average incremental costs by type of report")
+![Average incremental costs by type of report](/assets/2109_graph_5.15.png "Average incremental costs by type of report")
 
-*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_graph-5.15.png).*
+*\*Source: [CEPS report](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497), see it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2109_graph_5.15.png).*
 
 The EU’s ‘double materiality’ definition (impact on the company and on stakeholders) is already shown to be adopted by 40% of companies, enshrining the concept of sustainability impact in business risk management and paving the way for this understanding to be adopted in other jurisdictions.
 
