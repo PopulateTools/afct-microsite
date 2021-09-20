@@ -11,6 +11,8 @@ intro: "European policymakers are currently discussing the proposal presented
   reporting standards. New research published by Frank Bold on the information
   disclosed by 250 companies on key climate and human rights matters shines
   light on data gaps and positive trends. "
+img: /assets/2109_header_eu_flag.jpg
+img_listing: /assets/2109_eu-flag_list.jpg
 ---
 Since 2018, the previous version of the Directive mandates companies to disclose relevant information concerning both the risks from and impacts on climate and broader environmental matters as well as issues concerning workforce, human rights and anti-corruption. The Alliance for Corporate Transparency has [published landmark studies](https://www.allianceforcorporatetransparency.org/) showing the progress and shortcomings in the implementation of these obligations with the objective of informing the reform taking place this year. 
 
