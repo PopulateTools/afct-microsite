@@ -47,3 +47,9 @@ Frank Bold coordinates the [Alliance for Corporate Transparency](https://www.all
 * In-depth [series of articles on sustainability reporting](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles) published in the Alliance for Corporate Transparency
 
 *Frank Bold takes responsibility for any error or inaccuracy in the research and presentation of results.*
+
+<a href="https://en.frankbold.org/" style="
+max-width: 200px;
+display: block;
+margin-left: -29px;
+margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
