@@ -32,7 +32,7 @@ The data also reveals important gaps between the analysed countries - in most ca
 
 **Key results below.** Further key findings per country can be seen [here](https://www.allianceforcorporatetransparency.org/assets/2109_2021-research_results.pdf). 
 
-![]()
+![Key findings from EUKI 2021 research](/assets/2019_key_findings.png "Key findings from EUKI 2021 research")
 
 According to a [major study](https://op.europa.eu/en/publication-detail/-/publication/1ef8fe0e-98e1-11eb-b85c-01aa75ed71a1/language-en/format-PDF/source-201819497) carried out by CEPS for the EU Commission, there is increased awareness amongst companies on the value and importance of sustainability. Other aspects contributing to this change include the demands of business partners and changing societal preferences. Nonetheless, companies from the survey pointed to the legislation as one major driver for a change in their strategies. The reform of the EU Directive and implementation of EU mandatory sustainability standards is our chance to learn from lessons learned and address remaining gaps. 
 
