@@ -46,10 +46,22 @@ Frank Bold coordinates the [Alliance for Corporate Transparency](https://www.all
 * Frank’s Bold [integrated overview](http://en.frankbold.org/sites/default/files/publikace/sustainability_reporting_guidance_frank_bold_updated.pdf) of upcoming EU legislations requirements “What Data Shall Companies and Investors Report on Sustainability”. 
 * In-depth [series of articles on sustainability reporting](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles) published in the Alliance for Corporate Transparency
 
-*Frank Bold takes responsibility for any error or inaccuracy in the research and presentation of results.*
+</div>
+
+<hr>
+
+**(1)** *Predominantly from Energy & Resource extraction, Financial, Food & Beverages, Infrastructure,Resource transformation and Transportation*
+
+**(2)** *The company is aiming at net-zero GHG emissions by 2050 or claims that the target is aligned with the 1.5°C / well below 2°C objectives of the [Paris Agreement](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) or claims alignment with the [Science-based Targets Methodology](https://sciencebasedtargets.org/business-ambition-for-1-5c#start).*
+
+**(3)** *The analysts evaluated [whether all aspects of the due diligence process are described](http://mneguidelines.oecd.org/OECD-Due-Diligence-Guidance-for-Responsible-Business-Conduct.pdf) but not whether the individual steps meet the existing standards and whether they are focused on the most important issues.*
+
+**(4)** *Scope 3 GHG emissions for Financials cover not only impact of their investment but also other indirect emissions, which are a result of the company’s operations, but not under the company’s direct control (eg. business travel).*
 
 <a href="https://en.frankbold.org/" style="
 max-width: 200px;
 display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
+
+*Frank Bold takes responsibility for any error or inaccuracy in the research and presentation of results.*
