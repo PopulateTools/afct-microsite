@@ -30,7 +30,7 @@ However, **only half of the companies reported climate-related risks, and a vast
 
 The data also reveals important gaps between the analysed countries - in most cases, the Czech Republic and Poland stay below the average values. 
 
-**Key results below.** Further key findings per country can be seen here. 
+**Key results below.** Further key findings per country can be seen [here](https://www.allianceforcorporatetransparency.org/assets/2109_2021-research_results.pdf). 
 
 ![]()
 
@@ -45,7 +45,5 @@ Frank Bold coordinates the [Alliance for Corporate Transparency](https://www.all
 * **Report on the [enforcement activities](https://bit.ly/3DZRBoi)** of supervisory authorities on cases of non-compliance with the EU Non-Financial Reporting Directive.
 * Frank’s Bold [integrated overview](http://en.frankbold.org/sites/default/files/publikace/sustainability_reporting_guidance_frank_bold_updated.pdf) of upcoming EU legislations requirements “What Data Shall Companies and Investors Report on Sustainability”. 
 * In-depth [series of articles on sustainability reporting](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles) published in the Alliance for Corporate Transparency
-
-
 
 *Frank Bold takes responsibility for any error or inaccuracy in the research and presentation of results.*
