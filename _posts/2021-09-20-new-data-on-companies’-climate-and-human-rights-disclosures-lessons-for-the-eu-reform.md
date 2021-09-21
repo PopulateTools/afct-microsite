@@ -3,7 +3,7 @@ layout: post
 title: "New data on companies’ climate and human rights disclosures: lessons for
   the EU reform "
 categories: policy
-date: 2021-09-21T20:57:25.263Z
+date: 2021-09-21T09:05:39.114Z
 intro: "European policymakers are currently discussing the proposal presented
   this April by the EU Commission for a renewed Corporate Sustainability
   Reporting Directive, which will bring about important changes to companies’
