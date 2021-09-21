@@ -9,17 +9,7 @@ intro: "﻿As the European Union considers the new draft Corporate Sustainabilit
   evidence shows that the proposed legislation saves rather than costs money for
   business. In this two-part article, we analyse what this means for the
   ‘business case’ for companies to pursue sustainability and to report against
-  this.  In Part One, we present the new evidence, showing that not only the
-  additional costs of the new legislation are “negligible” for companies but
-  that it will actually lead to an average cost saving up to EUR 41,700 per
-  company each year in streamlining requests for sustainability information to
-  the business from other sources. In Part Two, we analyse why existing standard
-  costs models have overstated the cost of business sustainability and
-  understated its benefits, and present broader evidence which is now seen as
-  overwhelmingly proving the link between better corporate sustainability
-  performance and higher financial return. Not only does this provide a forceful
-  case for passing the new EU legislation, but it concludes that a ‘tipping
-  point’ has been reached whereby the ‘business case’ has been won. "
+  this.  "
 img: /assets/2109_money_header.jpg
 img_listing: /assets/2109_money_list.jpg
 ---
