@@ -49,7 +49,7 @@ Frank Bold coordinates the [Alliance for Corporate Transparency](https://www.all
 * **Research on the sustainability disclosures of 1000 EU companies in 2019:** [research report,](https://www.allianceforcorporatetransparency.org/assets/2019_Research_Report%20_Alliance_for_Corporate_Transparency.pdf) [interactive database](https://www.allianceforcorporatetransparency.org/database/2019.html)
 * **Research on the climate, environmental and governance disclosures of 300 companies in the CEE and Southern Europe (2020):** [research report,](https://www.allianceforcorporatetransparency.org/assets/Research_Report_EUKI_2020.pdf) [interactive database](https://www.allianceforcorporatetransparency.org/database/2020.html)
 * **Report on the [enforcement activities](https://bit.ly/3DZRBoi)** of supervisory authorities on cases of non-compliance with the EU Non-Financial Reporting Directive.
-* Frank’s Bold [integrated overview](http://en.frankbold.org/sites/default/files/publikace/sustainability_reporting_guidance_frank_bold_updated.pdf) of upcoming EU legislations' requirements “What Data Shall Companies and Investors Report on Sustainability”. 
+* Frank’s Bold [integrated overview](https://en.frankbold.org/sites/default/files/publikace/sustainability_reporting_guidance_frank_bold_updated.pdf) of upcoming EU legislations' requirements “What Data Shall Companies and Investors Report on Sustainability”. 
 * In-depth [series of articles on sustainability reporting](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles) published in the Alliance for Corporate Transparency
 
 <hr>
