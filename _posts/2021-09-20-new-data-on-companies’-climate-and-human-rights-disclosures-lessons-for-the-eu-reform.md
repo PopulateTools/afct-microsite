@@ -32,7 +32,7 @@ However, **only half of the companies reported climate-related risks, and a vast
 
 The data also reveals important gaps between the analysed countries - in most cases, the Czech Republic and Poland stay below the average values. 
 
-**Key results below.** Further key findings per country can be seen [here](https://www.allianceforcorporatetransparency.org/assets/2109_2021-research_results.pdf). 
+**Key results below.** Further key findings per country can be seen **[here](https://www.allianceforcorporatetransparency.org/assets/2109_2021-research_results.pdf)**. 
 
 ![Key findings from EUKI 2021 research](/assets/2019_key_findings.png "Key findings from EUKI 2021 research")
 
