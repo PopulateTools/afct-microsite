@@ -48,8 +48,6 @@ Frank Bold coordinates the [Alliance for Corporate Transparency](https://www.all
 * Frank’s Bold [integrated overview](http://en.frankbold.org/sites/default/files/publikace/sustainability_reporting_guidance_frank_bold_updated.pdf) of upcoming EU legislations requirements “What Data Shall Companies and Investors Report on Sustainability”. 
 * In-depth [series of articles on sustainability reporting](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles) published in the Alliance for Corporate Transparency
 
-</div>
-
 <hr>
 
 **(1)** *Predominantly from Energy & Resource extraction, Financial, Food & Beverages, Infrastructure,Resource transformation and Transportation*
