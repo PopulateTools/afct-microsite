@@ -24,11 +24,9 @@ As the EU experiences a tectonic shift in finance and climate policies in suppor
 
 As highlighted in our recent [article](https://bit.ly/2VHtxWc), these standards will alleviate companies’ administrative burden and generate cost savings estimated between 24,200-41,700 EUR for a company each year. The [public consultation](https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12129-Revision-of-Non-Financial-Reporting-Directive/public-consultation_en) conducted by the European Commission also showed that 80% of companies who prepare reports support the establishment of common standards. Besides giving clarity and certainty to companies, the standards will consequently enable them to gain easier access to capital and prepare themselves for a net-zero future.
 
-
-
 ## What does the new research tell us
 
-**The analysis of key climate and human rights disclosures of 250 companies from high risk sectors (1)** in Germany, Spain, Poland, and the Czech Republic **show some promising progress in reporting science-based climate targets (2) and describing companies’ human rights due diligence process (3)**, although still only a minority of companies provide such disclosures. 
+**The analysis of key climate and human rights disclosures of 250 companies from high risk sectors (1)** in Germany, Spain, Poland, and the Czech Republic **shows progress in reporting science-based climate targets (2) and describing companies’ human rights due diligence process (3)**, although still only a minority of companies provide such disclosures. 
 
 Furthermore, **only half of the companies reported climate-related risks, and a vast majority are still lagging behind when it comes to providing more specific climate information as needed by investors**, such as GHG Scope 3 emissions (4), or accounted for different time horizons in their assessment of climate risks. 
 
