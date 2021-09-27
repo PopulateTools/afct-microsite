@@ -61,7 +61,7 @@ img_listing: /assets/2109_man-with-skyscraper_list.jpg
 
     <li>
 
-      <a href="#closing-arguments ">Sustainability case: closing arguments</a>
+      <a href="#closing-arguments">Sustainability case: closing arguments</a>
 
     </li>
 
@@ -235,7 +235,7 @@ One key piece of evidence which demonstrates this shift of thinking within busin
 
 This underlines that business has now been convinced by what has now become a wealth of statistical evidence, which takes the theoretical benefits that come from sustainability reporting and which has now succeeded in putting hard numbers to prove the argument. 
 
-<h1 id="closing-arguments ">Sustainability case: closing arguments</h1>
+<h1 id="closing-arguments">Sustainability case: closing arguments</h1>
 
 These articles started by showing that research undertaken by and on behalf of the European Commission has made an indisputable case that the benefits of its new Corporate Sustainability Directive and associated standards for sustainability reporting, achieve a clear business benefit over the costs entailed. 
 
