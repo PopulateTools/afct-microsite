@@ -245,6 +245,8 @@ What has been argued above is that the urgency of sustainability challenges, a �
 
 Perhaps we will not need to discuss ‘the business case’ in future years? The argument has been won. Case closed.
 
+<hr>
+
 **Sources:**
 
 1. ESG & Corporate Financial Performance: Mapping the global landscape, Deutsche Asset Management and the University of Hamburg, December 2015.
