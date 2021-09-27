@@ -3,7 +3,7 @@ layout: post
 title: The business case is won - how the benefits of mandatory sustainability
   reporting by business, really do outweigh the costs – Part Two
 categories: monthly-articles
-date: 2021-09-05T06:33:16.628Z
+date: 2021-09-27T10:38:41.570Z
 intro: In our earlier article, new evidence was presented which makes a decisive
   case that the European Union’s draft Corporate Sustainability Reporting
   Directive (CSRD) and accompanying European sustainability standards, will
