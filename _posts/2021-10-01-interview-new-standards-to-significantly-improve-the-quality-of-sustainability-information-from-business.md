@@ -16,7 +16,7 @@ intro: An interview with Piotr Biernacki, Vice-President of the Polish
 img: /assets/2109_header_eu_flag.jpg
 img_listing: /assets/2109_eu-flag_list.jpg
 ---
-<img src="/assets/2109_piotrbiernacki.jpg" style="float: left;width: 210x;height: 320px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="Piotr Biernacki Vice-President of the Polish Association of Listed Companies" title="Piotr Biernacki, Vice-President of the Polish Association of Listed Companies" />
+<img src="/assets/2109_piotrbiernacki.jpg" style="float: left;width: 200x;height: 320px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="Piotr Biernacki Vice-President of the Polish Association of Listed Companies" title="Piotr Biernacki, Vice-President of the Polish Association of Listed Companies" />
 
 **An interview with Piotr Biernacki, Vice-President of the Polish Association of Listed Companies and member of the European Financial Reporting Advisory Group (EFRAG) Project Task Force on European Sustainability Reporting Standards.**
 
