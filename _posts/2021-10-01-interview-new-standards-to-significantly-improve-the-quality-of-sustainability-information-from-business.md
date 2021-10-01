@@ -7,11 +7,16 @@ date: 2021-09-30T06:37:38.122Z
 intro: An interview with Piotr Biernacki, Vice-President of the Polish
   Association of Listed Companies and member of the European Financial Reporting
   Advisory Group (EFRAG) Project Task Force on European Sustainability Reporting
-  Standards.
+  Standards. Developments on companies' sustainability reporting are ramping up
+  globally.  As the debate continues on the European Union’s proposed Corporate
+  Sustainability Reporting Directive and associated mandatory standards, Frank
+  Bold talked to Piotr Biernacki, a leading voice from Poland’s business
+  community, on what this reform will bring to companies and the role of EU
+  standards.
 img: /assets/2109_header_eu_flag.jpg
 img_listing: /assets/2109_eu-flag_list.jpg
 ---
-<img src="/assets/2109_piotrbiernacki.jpg" style="float: left;width: 270px;height: 420px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="Piotr Biernacki Vice-President of the Polish Association of Listed Companies" title="Piotr Biernacki, Vice-President of the Polish Association of Listed Companies" />
+<img src="/assets/2109_piotrbiernacki.jpg" style="float: left;width: 200px;height: 350px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="Piotr Biernacki Vice-President of the Polish Association of Listed Companies" title="Piotr Biernacki, Vice-President of the Polish Association of Listed Companies" />
 
 **An interview with Piotr Biernacki, Vice-President of the Polish Association of Listed Companies and member of the European Financial Reporting Advisory Group (EFRAG) Project Task Force on European Sustainability Reporting Standards.**
 
