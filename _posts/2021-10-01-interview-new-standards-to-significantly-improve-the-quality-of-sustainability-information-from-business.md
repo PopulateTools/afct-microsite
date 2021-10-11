@@ -2,7 +2,7 @@
 layout: post
 title: "Interview: New standards to significantly improve the quality of
   sustainability information from business"
-categories: monthly-articles
+categories: interview
 date: 2021-09-30T06:37:38.122Z
 intro: An interview with Piotr Biernacki, Vice-President of the Polish
   Association of Listed Companies and member of the European Financial Reporting
@@ -58,8 +58,6 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-*The article is a part of the series of monthly briefings on sustainability reporting in 2021.* [](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)
+*The article is a part of the series of interviews with sustainability reporting experts in 2021.* [](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)
 
-*The previous articles covered various topics such as [reporting on governance (G of ESG)](https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html), [climate transition plans](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html), [SMEs´ reporting](https://www.allianceforcorporatetransparency.org/news/smes-and-the-future-of-european-sustainability-reporting-rules-small-businesses-deserve-to-get-clarity-to-address-the-sustainability-challenge.html) or [sustainability due diligence](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html). All the articles can be found [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles). [Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*  
-
-*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+*Views included in this article do not necessarily represent the opinion of the members of the Alliance.*
