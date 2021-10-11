@@ -2,7 +2,7 @@
 layout: post
 title: "Interview: New standards to significantly improve the quality of
   sustainability information from business"
-categories: interview
+categories: interviews
 date: 2021-09-30T06:37:38.122Z
 intro: An interview with Piotr Biernacki, Vice-President of the Polish
   Association of Listed Companies and member of the European Financial Reporting
