@@ -22,105 +22,19 @@ permalink: "/news/categories/"
         {% endfor %}
 
         {% for category in categories %}
-          {% if category == "monthly-article" %}
-            <h1 class="post-categories" id="{{ category | slugify | remove: ',' }}">{{ category | remove: ',' | replace: "-", " " }}</h1>
-            <section class="post-list-compact">
-             {% for post in site.posts %}
-                 {% if post.categories contains category %}
-                  <div class="post">
-                    <div class="post-img">
-                      {% if post.img_listing %}
-                        <a href="{{ post.url }}">
-                          <img src="{{ post.img_listing }}">
-                        </a>
-                      {% else %}
-                        <a href="{{ post.url }}">
-                          <img src="{{ post.img }}" alt="{{ post.title }}" title="{{ post.title }}">
-                        </a>
-                      {% endif %}
-                    </div>
-                   <p class="post-date post-categories-date">
-                          {% assign m = post.date | date: "%-m" %}
-                          {{ post.date | date: "%-d" }}
-                          {% case m %}
-                            {% when '1' %}January
-                                {% when '2' %}February
-                                {% when '3' %}March
-                                {% when '4' %}April
-                                {% when '5' %}May
-                                {% when '6' %}June
-                                {% when '7' %}July
-                                {% when '8' %}August
-                                {% when '9' %}September
-                                {% when '10' %}October
-                                {% when '11' %}November
-                                {% when '12' %}December
-                          {% endcase %}
-                          {{ post.date | date: "%Y" }}</p>
-                   <h2 class="post-categories-title">
-                      <a href="{{ post.url | prepend: site.baseurl }}">
-                     {{ post.title }}
-                     </a>
-                    </h2>
-                   <p class="intro">
-                   {{ post.intro }}
-                   </p>
-                  </div>
-                 {% endif %}
-             {% endfor %}
-            </section>
+          {% if category == "monthly-articles" %}
+            {% include card-post.html %}
           {% endif %}
         {% endfor %}
-
         {% for category in categories %}
-            {% if category != "monthly-article" %}
-            <h1 class="post-categories" id="{{ category | slugify | remove: ',' }}">{{ category | remove: ',' | replace: "-", " " }}</h1>
-            <section class="post-list-compact">
-             {% for post in site.posts %}
-                 {% if post.categories contains category %}
-                  <div class="post">
-                    <div class="post-img">
-                      {% if post.img_listing %}
-                        <a href="{{ post.url }}">
-                          <img src="{{ post.img_listing }}">
-                        </a>
-                      {% else %}
-                        <a href="{{ post.url }}">
-                          <img src="{{ post.img }}" alt="{{ post.title }}" title="{{ post.title }}">
-                        </a>
-                      {% endif %}
-                    </div>
-                   <p class="post-date post-categories-date">
-                          {% assign m = post.date | date: "%-m" %}
-                          {{ post.date | date: "%-d" }}
-                          {% case m %}
-                            {% when '1' %}January
-                                {% when '2' %}February
-                                {% when '3' %}March
-                                {% when '4' %}April
-                                {% when '5' %}May
-                                {% when '6' %}June
-                                {% when '7' %}July
-                                {% when '8' %}August
-                                {% when '9' %}September
-                                {% when '10' %}October
-                                {% when '11' %}November
-                                {% when '12' %}December
-                          {% endcase %}
-                          {{ post.date | date: "%Y" }}</p>
-                   <h2 class="post-categories-title">
-                      <a href="{{ post.url | prepend: site.baseurl }}">
-                     {{ post.title }}
-                     </a>
-                    </h2>
-                   <p class="intro">
-                   {{ post.intro }}
-                   </p>
-                  </div>
-                 {% endif %}
-             {% endfor %}
-            </section>
-             {% endif %}
+            {% if category != "interviews" and category != "monthly-articles" %}
+              {% include card-post.html %}
+            {% endif %}
+        {% endfor %}
+        {% for category in categories %}
+            {% if category == "interviews" %}
+              {% include card-post.html %}
+            {% endif %}
         {% endfor %}
   </section>
 </main>
