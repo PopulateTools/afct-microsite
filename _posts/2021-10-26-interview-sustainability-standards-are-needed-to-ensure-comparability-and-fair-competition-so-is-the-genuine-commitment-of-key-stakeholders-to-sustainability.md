@@ -4,7 +4,7 @@ title: "Interview: Sustainability standards are needed to ensure comparability
   and fair competition - so is the genuine commitment of key stakeholders to
   sustainability "
 categories: interviews
-date: 2021-10-27T15:30:24.779Z
+date: 2021-10-27T11:31:29.903Z
 intro: "Banks and investors have a crucial role to play in the EU's sustainable
   finance strategy. To a large extent, it is now their increasing demand for ESG
   data that drives the sustainability shift among companies. What sustainability
