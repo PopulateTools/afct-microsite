@@ -16,7 +16,7 @@ intro: "Banks and investors have a crucial role to play in the EU's sustainable
 img: /assets/2110_header.jpg
 img_listing: /assets/2110_list.jpg
 ---
-<img src="/assets/2110_maria-jose-galvez-cardona.jpg" style="float: left;width: 260px;height: 380px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="maria-jose-galvez-cardona" title="maria-jose-galvez-cardona" />
+<img src="/assets/2110_maria-jose-galvez-cardona.jpg" style="float: left;width: 220px;height: 340px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="maria-jose-galvez-cardona" title="maria-jose-galvez-cardona" />
 
 An interview with Maria José Galvez Cardona, member of board of Directors of Spainsif and ex-Sustainability Manager in Bankia. 
 
