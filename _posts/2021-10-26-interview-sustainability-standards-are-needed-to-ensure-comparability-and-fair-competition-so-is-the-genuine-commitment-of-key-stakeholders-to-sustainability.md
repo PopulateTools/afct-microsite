@@ -18,7 +18,7 @@ img_listing: /assets/2110_list.jpg
 ---
 <img src="/assets/2110_maria-jose-galvez-cardona.jpg" style="float: left;width: 230px;height: 350px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="Isabel Acevedo from A&amp;B Innovative Solutions, a Spanish SME supplying biotech products for cleaning and maintenance" title="Isabel Acevedo from A&amp;B Innovative Solutions, a Spanish SME supplying biotech products for cleaning and maintenance" />
 
-**An interview with Maria José Galvez Cardona, member of board of Directors of Spainsif and ex-Sustainability Manager in Bankia.** 
+An interview with Maria José Galvez Cardona, member of board of Directors of Spainsif and ex-Sustainability Manager in Bankia. 
 
 Banks and investors have a crucial role to play in the EU's sustainable finance strategy. To a large extent, it is now their increasing demand for ESG data that drives the sustainability shift among companies. What sustainability information do banks need to assess loan applications? Which difficulties may SMEs encounter when reporting on sustainability matters? Frank Bold asked Maria Jose Galvez Cardona, member of board of Directors of Spainsif and ex-Sustainability Manager in Bankia, the leading financial group in retail banking in Spain. 
 
