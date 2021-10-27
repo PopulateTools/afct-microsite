@@ -62,7 +62,7 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-*This is the second article by Frank Bold as part of the series of interviews with sustainability experts in 2021.* 
+*This is the second article by Frank Bold as part of the series of interviews with sustainability reporting experts in 2021.* 
 
 *In the [first piece](bit.ly/3oxDX6G), Piotr Biernacki answers what the CSRD and sustainability reporting standards will bring to companies. The following article will provide investor's view on the current corporate reporting landscape and proposed legislative changes*.* [Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*  
 
