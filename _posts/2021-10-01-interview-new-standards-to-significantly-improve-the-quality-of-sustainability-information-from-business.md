@@ -58,6 +58,6 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-*The article is a part of the series of interviews with sustainability reporting experts in 2021.* [](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34)
+*This is the first article by Frank Bold as part of the series of interviews with sustainability reporting experts in 2021.* 
 
 *Views included in this article do not necessarily represent the opinion of the members of the Alliance.*
