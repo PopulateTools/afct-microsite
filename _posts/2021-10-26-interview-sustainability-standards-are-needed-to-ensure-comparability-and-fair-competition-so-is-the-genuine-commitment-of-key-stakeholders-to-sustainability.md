@@ -5,14 +5,11 @@ title: "Interview: Sustainability standards are needed to ensure comparability
   sustainability "
 categories: interviews
 date: 2021-10-27T11:31:29.903Z
-intro: "Banks and investors have a crucial role to play in the EU's sustainable
-  finance strategy. To a large extent, it is now their increasing demand for ESG
-  data that drives the sustainability shift among companies. What sustainability
-  information do banks need to assess loan applications? Which difficulties may
-  SMEs encounter when reporting on sustainability matters? Frank Bold asked
-  Maria Jose Galvez Cardona, member of board of Directors of Spainsif and
-  ex-Sustainability Manager in Bankia, the leading financial group in retail
-  banking in Spain. "
+intro: "What sustainability information do banks need to assess loan
+  applications? Which difficulties may SMEs encounter when reporting on
+  sustainability matters? Frank Bold asked Maria Jose Galvez Cardona, member of
+  board of Directors of Spainsif and ex-Sustainability Manager in Bankia, the
+  leading financial group in retail banking in Spain. "
 img: /assets/2110_header.jpg
 img_listing: /assets/2110_list.jpg
 ---
