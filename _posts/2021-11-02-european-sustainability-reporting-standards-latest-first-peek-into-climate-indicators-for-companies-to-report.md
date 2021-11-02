@@ -55,28 +55,18 @@ intro: "In this article, we first provide an overview of the process and
 
 </div>
 
-
-
 <h1 id="Context">Context: key information on the process and calendar</h1>
-
-
 
 <h1 id="Principles">Principles and objectives for the EU climate standard</h1>
 
-
+![](/assets/2111_kpis.png)
 
 <h2 id="Reporting">Reporting on Strategy</h1>
 
-
-
 <h2 id="Implementation">Reporting on Implementation</h1>
-
-
 
 <h2 id="KPIs">Reporting on Performance measurement (KPIs)</h1>
 
-![]()
-
-
+![](/assets/2111_kpis1.png)
 
 <h1 id="Future">Future development of the climate standard: what’s next?</h1>
