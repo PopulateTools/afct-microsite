@@ -11,7 +11,7 @@ intro: "Ingo Speich, Head of Sustainability & Corporate Governance at Deka
 img: /assets/2111_wind_mills_header.jpg
 img_listing: /assets/2111_wind_mills_list.jpg
 ---
-<img src="/assets/2111_speich_ingo.jpg" style="float: left;width: 310px;height: 310px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="speich_ingo" title="speich_ingo" />
+<img src="/assets/2111_speich_ingo.jpg" style="float: left;width: 300px;height: 300px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="speich_ingo" title="speich_ingo" />
 
 **Ingo Speich, Head of Sustainability & Corporate Governance at Deka Investment** points to the current lack of comparable sustainability data from companies and highlights the importance of social, human rights and governance matters.  
 
