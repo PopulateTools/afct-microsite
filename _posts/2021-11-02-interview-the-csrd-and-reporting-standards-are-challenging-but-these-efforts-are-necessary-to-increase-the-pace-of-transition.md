@@ -3,7 +3,7 @@ layout: post
 title: "Interview: The CSRD and reporting standards are challenging, but these
   efforts are necessary to increase the pace of transition"
 categories: interviews
-date: 2021-11-02T15:36:11.657Z
+date: 2021-11-03T07:03:58.666Z
 intro: "Ingo Speich, Head of Sustainability & Corporate Governance at Deka
   Investment points to the current lack of comparable sustainability data from
   companies and highlights the importance of social, human rights and governance
