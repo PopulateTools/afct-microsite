@@ -137,7 +137,7 @@ The prototype brings these various pieces together into a coherent structure, pr
 
 ![](/assets/2111_kpis.png)
 
-<h2 id="Reporting">Reporting on Strategy</h2>
+<h2 id="Reporting">1) Reporting on Strategy</h2>
 
 The CSRD will define the disclosures required by companies under its scope on their overall strategy. Under the Directive, companies should report such information for all their material sustainability matters taken together, based on their own determination of what is material. 
 
@@ -229,7 +229,7 @@ The climate prototype addresses a number of specific climate elements that will 
 
 </div>
 
-<h2 id="Implementation">Reporting on Implementation</h2>
+<h2 id="Implementation">2) Reporting on Implementation</h2>
 
 As is the case for strategy disclosures, the implementation level is also defined in the CSRD directly and its details will be clarified in the upcoming cross-cutting standards. However, unlike the strategy level, companies will report information for each material topic separately. 
 
@@ -329,7 +329,7 @@ At this level, **the climate prototype specifies what should be disclosed about 
 
 </div>
 
-<h2 id="KPIs">Reporting on Performance measurement (KPIs)</h2>
+<h2 id="KPIs">3) Reporting on Performance measurement (KPIs)</h2>
 
 The core of the climate prototype concerns metrics and key performance indicators. **This is the only truly mandatory part of the standard. While companies have discretion as regards their strategy, governance, policies and targets, at the performance measurement level, they will have to gather and disclose the required data.**
 
