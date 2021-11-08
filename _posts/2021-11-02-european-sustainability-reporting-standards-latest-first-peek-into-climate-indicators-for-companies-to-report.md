@@ -467,11 +467,64 @@ Therefore, the climate prototype formulates the required KPIs in a fairly flexib
 
 </li>
 
+  </ul>
+
+</div>
+
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
+<p style="font-weight: bold;">For companies participating in the EU ETS: disclose the range of potential financial effects of the EU ETS allocation plan over the period 2021-2030, including</p>
+
+  <ul>
+
     <li>
 
-<span>For companies participating in the EU ETS: disclose the range of potential financial effects of the EU ETS allocation plan over the period 2021-2030, including</span>
+<span>the number of quotas to be purchased yearly on the market (gap between estimated emissions and free allocations) and</span>
 
  </li>
+
+    <li>
+
+ <span>the estimated yearly cost per ton to be purchased. </span>
+
+</li>
+
+  </ul>
+
+</div>
+
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
+<p style="font-weight: bold;">Proportion of product mix aligned towards climate-related opportunities
+performance, including</p>
+
+  <ul>
+
+    <li>
+
+ <span>description of performance criteria for the listed product categories</span>
+
+ </li>
+
+    <li>
+
+ <span>total amount (m€)</span>
+
+ </li>
+
+    <li>
+
+ <span>% of total turnover</span>
+
+ </li>
+
+    <li>
+
+ <span>2030 target</span>
+
+ </li>
+
+<p>Such climate-related opportunities encompass turnover from products and services demonstrating clear additionality as for instance those generating avoided emissions for customers. By definition, this disclosure is optional. It is based on the most recent TCFD consultation</p>
 
   </ul>
 
