@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "European Sustainability Reporting Standards latest: First peek into
-  climate indicators for companies to report"
+title: First peek into climate indicators for companies to report under the
+  European Sustainability Reporting Standards
 categories: monthly-articles
 date: 2021-11-08T08:32:30.997Z
 intro: "In previous articles, we have analysed the most important changes
