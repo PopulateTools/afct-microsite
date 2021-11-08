@@ -113,23 +113,19 @@ Following the [double materiality principle](https://www.allianceforcorporatetra
 
     <li>
 
-    <span><a href="https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html">Corporate standards are the missing piece</a>to the sustainable finance plan</span>
+    <span><a href="https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html">Corporate standards are the missing piece</a> to the sustainable finance plan</span>
 
     </li>
 
     <li>
 
-      <span><p>Best practice for<a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</p>
+ <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</p>
 
-      </span>
+      </li>
 
-    </li>
+    <li>
 
-<li>
-
-      <span>
-
-      <a style="font-weight: bold" href="https://themoderncorporation.wordpress.com/call-to-action-on-sustainable-corporate-governance/">Open letter </a> "Call to Action on Sustainable Corporate Governance” by leaders in business, investment and financial institutions, and academia
+ <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</p>
 
       </span>
 
