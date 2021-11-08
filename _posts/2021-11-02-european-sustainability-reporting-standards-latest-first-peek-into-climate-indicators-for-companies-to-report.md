@@ -337,7 +337,7 @@ At this level, **the climate prototype specifies what should be disclosed about 
 
 The core of the climate prototype concerns metrics and key performance indicators. **This is the only truly mandatory part of the standard. While companies have discretion as regards their strategy, governance, policies and targets, at the performance measurement level, they will have to gather and disclose the required data.**
 
-The climate prototype is based on existing EU metrics, in particular the proposed metrics corresponding to investors’ disclosure obligations under the [Sustainable Finance Disclosure Regulation,](https://www.eba.europa.eu/sites/default/documents/files/document_library/Publications/Draft%20Technical%20Standards/2021/962778/JC%202021%2003%20-%20Joint%20ESAs%20Final%20Report%20on%20RTS%20under%20SFDR.pdf) and also the EU Taxonomy. It is also aligned with the TCFD, and draws from CDP and GRI standards as well.
+The climate prototype is based on existing EU metrics, in particular the proposed metrics corresponding to investors’ disclosure obligations under the [Sustainable Finance Disclosure Regulation,](https://www.eba.europa.eu/sites/default/documents/files/document_library/Publications/Draft%20Technical%20Standards/2021/962778/JC%202021%2003%20-%20Joint%20ESAs%20Final%20Report%20on%20RTS%20under%20SFDR.pdf) and also the EU Taxonomy **(1)**. It is also aligned with the TCFD, and draws from CDP and GRI standards as well.
 
 #### I) Mandatory data
 
@@ -349,7 +349,7 @@ The climate prototype is based on existing EU metrics, in particular the propose
 
 ► **Share of Green Hydrogen** in the total energy consumption (%)
 
-► **Energy Intensity per activity** (kWh/unit of production) for companies belonging to high GHG-emission sectors, and/or the sectors subject to the EU ETS) 
+► **Energy Intensity per activity** (kWh/unit of production) for companies belonging to high GHG-emission sectors **(2)**, and/or the sectors subject to the EU ETS) 
 
 ► **Disclosure of offices’ energy intensity** for all companies to be aligned with EU green buildings objectives
 
@@ -365,7 +365,7 @@ The climate prototype is based on existing EU metrics, in particular the propose
 
 ► **Scopes 1 & 2 GHG emissions in intensity terms** (tCO2e/production unit)
 
-► **Total GhG emissions Scope 3** (tCO2e) broken down by material categories of Scope 3;
+► **Total GhG emissions Scope 3** (tCO2e) broken down by material categories of Scope 3 **(3)**;
 
 ► **Scope 3 material categories in intensity terms** (tCO2e/production unit) 
 
@@ -555,6 +555,12 @@ While the direction set by the standard prototype is clear, **Frank Bold suggest
 These proposals will ultimately be handed over to a new structure within EFRAG in the first quarter of 2022, which will provide a platform for expert input, Member States’ engagement and public discussion.
 
 Nevertheless, companies should already pay attention to this and the other prototypes expected before the end of the year. This work already gives good indication of the direction of travel, and the timetable remains for companies to start collecting the mandatory data from 2023, so they can be reported in their next annual report.
+
+(1) Art. 8 Taxonomy Regulation requires companies that fall under the Non-Financial Reporting Directive (thus in future CSRD) to disclose the proportion of turnover and CapEx and /OpEx from products and services associated with Taxonomy-aligned activities. The climate prototype therefore places these metrics in the overall structure of disclosure requirements.
+
+(2) “Agriculture and forestry”, Manufacturing”, “Energy” including coal and oil power generation, “Water supply, sewerage, waste management and remediation”, “Transport” including Aviation, “Construction and real estate”, and “Information and Communication (data hosting)”
+
+(3) based on GHG Protocol Corporate Standard, e.g. upstream purchasing, downstream sold products, good transportation, business travel, financial investments if any
 
 <a href="https://en.frankbold.org/" style="
 max-width: 200px;
