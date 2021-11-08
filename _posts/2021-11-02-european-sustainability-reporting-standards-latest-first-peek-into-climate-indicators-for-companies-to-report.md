@@ -275,6 +275,10 @@ At this level, **the climate prototype specifies what should be disclosed about 
 
 <p style="font-weight: bold;">Optional targets on carbon intensity related to specific EU objectives on buildings and logistics </p>
 
+</li>
+
+    <li>
+
  <span>Carbon intensity of the undertaking’s tertiary activities (administration buildings)</span>
 
 </li>
@@ -282,6 +286,34 @@ At this level, **the climate prototype specifies what should be disclosed about 
     <li>
 
  <span>Carbon intensity of the undertaking’s logistics</span>
+
+</li>
+
+<p style="font-weight: bold;">Carbon neutrality / net zero target</p>
+
+</li>
+
+    <li>
+
+ <span>Disclosure of GHG emission reduction targets for 2025 and 2030 (and, if relevant, every 5 years from 2030 to 2050)</span>
+
+</li>
+
+    <li>
+
+ <span>In comparison with the best available 1.5°C climate scenario related to the company’s activity or sector </span>
+
+</li>
+
+    <li>
+
+ <span>If 1.5°C scenarios are not available in comparison with the –55% of GHG reduction in 2030 aligned with EU climate goal </span>
+
+</li>
+
+    <li>
+
+ <span>Presented as a graph showing the evolution over time towards net zero</span>
 
     </li>
 
