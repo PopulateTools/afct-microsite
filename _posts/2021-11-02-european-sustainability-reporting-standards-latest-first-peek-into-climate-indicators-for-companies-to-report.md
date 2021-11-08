@@ -271,8 +271,6 @@ At this level, **the climate prototype specifies what should be disclosed about 
 
  <span>Total GHG emissions Scope 3 based on significant categories in intensity terms (for all companies or only those that are part of high emission sectors)</span>
 
-</li>
-
 <p style="font-weight: bold;">Optional targets on carbon intensity related to specific EU objectives on buildings and logistics </p>
 
 </li>
@@ -286,8 +284,6 @@ At this level, **the climate prototype specifies what should be disclosed about 
     <li>
 
  <span>Carbon intensity of the undertaking’s logistics</span>
-
-</li>
 
 <p style="font-weight: bold;">Carbon neutrality / net zero target</p>
 
