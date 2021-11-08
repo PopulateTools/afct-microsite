@@ -201,7 +201,7 @@ The climate prototype addresses a number of specific climate elements that will 
 
 </li>
 
-<p>In addition, the prototype lists several questions which companies will have to respond with clear data, or they would have to declare that they don’t have this information:</p>
+<p style="font-weight: bold;">In addition, the prototype lists several questions which companies will have to respond with clear data, or they would have to declare that they don’t have this information:</p>
 
     <li>
 
