@@ -155,19 +155,43 @@ The climate prototype addresses a number of specific climate elements that will 
 
     <li>
 
- <span><a href="https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html">Corporate standards are the missing piece</a> to the sustainable finance plan</span>
+ <span>Actual and potential effects of climate-related risks and opportunities on the business model and strategy, including reference to products and services, operations and value chains;</span>
 
     </li>
 
     <li>
 
- <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</span>
+ <span>Resilience of the current business model(s) and strategy to climate-related risks; and whether the resilience was varied by using climate scenarios</span>
 
       </li>
 
     <li>
 
- <span><a href="https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html">Governance of sustainability</a> and double materiality</span>
+ <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
+
+</li>
+
+    <li>
+
+ <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
+
+</li>
+
+    <li>
+
+ <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
+
+</li>
+
+    <li>
+
+ <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
+
+</li>
+
+    <li>
+
+ <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
 
     </li>
 
