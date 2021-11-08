@@ -335,6 +335,106 @@ The core of the climate prototype concerns metrics and key performance indicator
 
 The climate prototype is based on existing EU metrics, in particular the proposed metrics corresponding to investors’ disclosure obligations under the [Sustainable Finance Disclosure Regulation,](https://www.eba.europa.eu/sites/default/documents/files/document_library/Publications/Draft%20Technical%20Standards/2021/962778/JC%202021%2003%20-%20Joint%20ESAs%20Final%20Report%20on%20RTS%20under%20SFDR.pdf) and also the EU Taxonomy. It is also aligned with the TCFD, and draws from CDP and GRI standards as well.
 
-![](/assets/2111_kpis1.png)
+#### I) Mandatory data
+
+###### Energy consumption and mix: 
+
+► **Final Energy Consumption** in MWh, broken down by fuel, consumption of electricity, heat, steam and cooling 
+
+► **Energy Consumption Mix** in MWh and/or %, broken down by Renewable/Non renewable sources
+
+► **Share of Green Hydrogen** in the total energy consumption (%)
+
+► **Energy Intensity per activity** (kWh/unit of production) for companies belonging to high GHG-emission sectors, and/or the sectors subject to the EU ETS) 
+
+► **Disclosure of offices’ energy intensity** for all companies to be aligned with EU green buildings objectives
+
+► **Office energy intensity** (kWh/m2) to provide transparency on alignment with EU green buildings objectives
+
+
+
+###### Greenhouse gas emissions:
+
+►  **Scopes 1 & 2 GHG emissions** in absolute value
+
+* Total carbon emissions Scope 1 (tCO2e)
+* Share capped by regulated emission trading schemes (%)
+* Total carbon emissions Scope 2 (tCO2e, market-based)
+
+► **Scopes 1 & 2 GHG emissions in intensity terms** (tCO2e/production unit)
+
+► **Total GhG emissions Scope 3** (tCO2e) broken down by material categories of Scope 3;
+
+► **Scope 3 material categories in intensity terms** (tCO2e/production unit) 
+
+Reporting on Scope 3 emissions may be a challenging task, but companies will need to provide this data to their investors, banks and insurers, as well as increasingly to public authorities. The prototype therefore aims to provide a common framework and clarity on the methodology.
+
+Accordingly, 
+
+* Scope 3 emissions reporting should cover at least 80% of the total scope 3 emissions of the company, 
+* Assessment of categories of Scope 3 emissions should be carried out in 3 year-intervals
+* The prototype raises a question whether Scope 3 intensity should be reported by all companies (as is the case for other metrics) or only those from high GHG-emissions sectors.
+
+The above data should be visualised in a diagram, which shows the absolute value split by Scope 1, 2 & material categories of Scope 3, and - if relevant - by GHG emissions breakdowns per country, business unit, and market segment of economic activity.
+
+![Example of the diagram from the Climate Prototype](/assets/2111_kpis1.png "Example of the diagram from the Climate Prototype")
+
+*\*Example of the diagram from the Climate Prototype*
+
+#### II) Optional and additional presentations
+
+The prototype outlines several optional disclosures companies may report on, but they must do so separately from main GHG disclosures, and support the data by means of narrative disclosures on methodologies and quality standards applied
+
+► Total GHG Removals (inside the company) (tCO2e)
+
+► Total sold verified carbon offsets (outside the company) (tCO2e)
+
+► Total Purchased Verified Carbon Offsets Emissions (tCO2e)
+
+► Total Scope 3 avoided emissions* thanks to products or services allowing GHG emission reduction for customers (tCO2e)
+
+Finally, the prototype specifies additional forms of presentation for the above data as needed by financial market participants due to their own disclosure obligations on the carbon intensity of their investments, in order to ensure transparency on alignment with EU objectives in the area of finance, buildings and logistics:
+
+► Carbon intensity per revenue: GHG emissions Scopes 1, 2 & significant categories of Scope 3 /M€ Revenues (tCO2e/M€)
+
+► Optional: Carbon intensity of tertiary activities: Offices and business travels GHG emissions/Full-time equivalent (kgCO2e/FTE)
+
+► Optional: Carbon intensity of logistics: GHG emissions from transportation of goods (tCO2e/tons of goods transported)
+
+#### III) Financial Exposure to Physical and Transition Risks; Opportunities 
+
+The final area of metrics concerns the financial data that describes companies’ exposure to climate-related risks and opportunities. These disclosures are recommended by the TCFD, however the actual metrics are not yet fully established. 
+
+Therefore, the climate prototype formulates the required KPIs in a fairly flexible manner, combining narrative requirements with recommendations for quantitative indicators:
+
+**Overview of financial indicators:**
+
+
+
+
 
 <h1 id="Future">Future development of the climate standard: what’s next?</h1>
+
+**With the production of this first paper on an initial climate prototype, the EFRAG Project Task Force has given us key insights into how future EU sustainability reporting standards may look like, as well as confirmation that the scope of disclosure requirements is already largely set by existing EU legislation and consensus on important data expressed in the international reporting standards.**
+
+That being said, as shown by [the research of Alliance for Corporate Transparency](https://www.allianceforcorporatetransparency.org/news/landmark-research.html) on the sustainability disclosures of 1000 large EU companies, very few businesses today report important criteria such as Scope 3 GHG emissions and net-zero targets. This is often due to confusion on the companies´ side around concepts, definitions and understanding of what is relevant. 
+
+Our first reaction to the climate prototype is that the proposal will help lift this confusion which is preventing more comprehensive, relevant and comparable reporting by companies on climate, and it will do so in a way that makes it easier and less costly for companies. **The prototype has three main features:**
+
+1. It clarifies what information is material with respect to climate targets and net-zero ambitions, and in what form such information must be provided when companies decide to adopt and report on targets
+2. It provides a comprehensive structure for presentation of climate-related information to facilitate easy assessment and comparison by investors. However these requirements are inherently flexible because most of them concern transparency of a company's own strategy, assessments of risks and opportunities, and governance. It is ultimately up to the company to decide these matters and up to the market to set the bar. 
+3. It rests on a compact mandatory data set, which is not negotiable, but also not difficult to comply with:
+
+   * How much energy is the company using, and what are the energy sources?
+   * How much direct and indirect greenhouse gas emissions does the company have?
+   * What targets has the company adopted - if any - and what progress is it making?
+
+While the direction set by the standard prototype is clear, **Frank Bold suggests that several critical methodological issues need to be addressed to enable the climate standard to simplify reporting for companies and deliver comparable and meaningful information for users:** 
+
+* A company’s risks, opportunities, impacts as well as transition towards net-zero depend on the company’s context, in particular its assets. The prototype should clarify **which type of information companies should disclose with regards to context** in order to ensure a level-playing field. 
+* Users of information need reliable and comparable data. The standard should address this need, by providing **guidance for the calculation of Scope 3 GHG emissions, definition of net-zero targets, and specifying the best available scenario concerning 1.5°C.** 
+* The standard should also **distinguish between carbon reduction and carbon removal/offset targets**, which is necessary for consideration of a company’s target-setting maturity. 
+
+These proposals will ultimately be handed over to a new structure within EFRAG in the first quarter of 2022, which will provide a platform for expert input, Member States’ engagement and public discussion.
+
+Nevertheless, companies should already pay attention to this and the other prototypes expected before the end of the year. This work already gives good indication of the direction of travel, and the timetable remains for companies to start collecting the mandatory data from 2023, so they can be reported in their next annual report.
