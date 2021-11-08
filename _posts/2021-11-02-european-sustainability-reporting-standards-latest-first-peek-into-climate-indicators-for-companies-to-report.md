@@ -105,7 +105,41 @@ Following the [double materiality principle](https://www.allianceforcorporatetra
 
 **The scope of the prototype is strictly framed by the CSRD proposal and aligned with the KPIs needed by investors in line with the [EU’s Sustainable Finance Disclosure Regulation](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/sustainability-related-disclosure-financial-services-sector_en) and EU sustainable taxonomy.** The proposal indicates how it is based on the existing standards, including in particular the Task Force on Climate-related Financial Disclosure (TCFD), Global Reporting Initiative (GRI) and CDP. 
 
-TABULKA
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
+  <p>Read our earlier articles for a complete picture:</p>
+
+  <ul>
+
+    <li>
+
+    <span><a href="https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html">Corporate standards are the missing piece</a>to the sustainable finance plan</span>
+
+    </li>
+
+    <li>
+
+      <span><p>Best practice for<a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</p>
+
+      </span>
+
+    </li>
+
+
+
+<li>
+
+      <span>
+
+      <a style="font-weight: bold" href="https://themoderncorporation.wordpress.com/call-to-action-on-sustainable-corporate-governance/">Open letter </a> "Call to Action on Sustainable Corporate Governance” by leaders in business, investment and financial institutions, and academia
+
+      </span>
+
+    </li>
+
+  </ul>
+
+</div>
 
 The prototype brings these various pieces together into a coherent structure, presented in three levels:
 
