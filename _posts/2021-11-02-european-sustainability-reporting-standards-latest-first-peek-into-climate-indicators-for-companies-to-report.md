@@ -173,25 +173,55 @@ The climate prototype addresses a number of specific climate elements that will 
 
     <li>
 
- <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
+ <span>How the current business model and strategy cause and drive GHG-emissions and other climate-related impacts in own operations and along the value chain.</span>
 
 </li>
 
     <li>
 
- <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
+ <span>The process for identifying and assessing the adverse and positive impacts on climate change along the value chain.</span>
 
 </li>
 
     <li>
 
- <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
+ <span>The processes for identifying and assessing short-, medium- and long term transition risks and opportunities along the value chain, including a definition of the considered time horizons and scenario analysis, how size and scale of the risks and opportunities are assessed and how principal transition risks and opportunities are selected. Similar information shall be provided for physical risks as well.</span>
 
 </li>
 
     <li>
 
- <span>How climate-related risks and opportunities serve as an input to management’s strategy and decision making.</span>
+ <span>Climate impacts (incl. impacts beyond GHG emissions such as risks (transition and physical) and opportunities;</span>
+
+</li>
+
+    <li>
+
+ <span>Board oversight and the governance structure (including at the level of senior management).</span>
+
+<p> In addition, the prototype lists several questions which companies will have to respond with clear data, or they would have to declare that they don’t have this information:</p>
+
+    <li>
+
+ <span>Describe the plans to ensure that the business model and strategy are compatible with the transition to limiting global warming to 1.5 °C in line with the Paris Agreement (i.e. transition plan).</span>
+
+    </li>
+
+    <li>
+
+ <span>Describe the competencies of board members relating to climate change</span>
+
+      </li>
+
+    <li>
+
+ <span>Number of climate-related decisions taken by the Board in the reporting year as shown in the minutes of the Board meetings</span>
+
+</li>
+
+    <li>
+
+ <span>Remuneration incentives on GHG emission reduction and internal carbon pricing</span>
 
     </li>
 
