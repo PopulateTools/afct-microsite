@@ -199,7 +199,9 @@ The climate prototype addresses a number of specific climate elements that will 
 
  <span>Board oversight and the governance structure (including at the level of senior management).</span>
 
-<p> In addition, the prototype lists several questions which companies will have to respond with clear data, or they would have to declare that they don’t have this information:</p>
+</li>
+
+<p>In addition, the prototype lists several questions which companies will have to respond with clear data, or they would have to declare that they don’t have this information:</p>
 
     <li>
 
@@ -223,11 +225,13 @@ The climate prototype addresses a number of specific climate elements that will 
 
  <span>Remuneration incentives on GHG emission reduction and internal carbon pricing</span>
 
-    </li>
+</li>
 
   </ul>
 
 </div>
+
+
 
 <h2 id="Implementation">Reporting on Implementation</h2>
 
