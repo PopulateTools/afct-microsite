@@ -556,6 +556,8 @@ These proposals will ultimately be handed over to a new structure within EFRAG i
 
 Nevertheless, companies should already pay attention to this and the other prototypes expected before the end of the year. This work already gives good indication of the direction of travel, and the timetable remains for companies to start collecting the mandatory data from 2023, so they can be reported in their next annual report.
 
+<hr>
+
 (1) Art. 8 Taxonomy Regulation requires companies that fall under the Non-Financial Reporting Directive (thus in future CSRD) to disclose the proportion of turnover and CapEx and /OpEx from products and services associated with Taxonomy-aligned activities. The climate prototype therefore places these metrics in the overall structure of disclosure requirements.
 
 (2) “Agriculture and forestry”, Manufacturing”, “Energy” including coal and oil power generation, “Water supply, sewerage, waste management and remediation”, “Transport” including Aviation, “Construction and real estate”, and “Information and Communication (data hosting)”
