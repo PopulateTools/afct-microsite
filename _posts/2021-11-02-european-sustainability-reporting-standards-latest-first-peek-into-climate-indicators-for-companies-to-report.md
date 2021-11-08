@@ -137,6 +137,8 @@ The prototype brings these various pieces together into a coherent structure, pr
 
 ![](/assets/2111_kpis.png)
 
+
+
 <h2 id="Reporting">Reporting on Strategy</h2>
 
 The CSRD will define the disclosures required by companies under its scope on their overall strategy. Under the Directive, companies should report such information for all their material sustainability matters taken together, based on their own determination of what is material. 
@@ -147,7 +149,31 @@ The climate prototype addresses a number of specific climate elements that will 
 
 **Questions on strategy - the level of detail is up to companies’ based on their own arrangements and assessments:**
 
-**TABULKA**
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
+  <ul>
+
+    <li>
+
+ <span><a href="https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html">Corporate standards are the missing piece</a> to the sustainable finance plan</span>
+
+    </li>
+
+    <li>
+
+ <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</span>
+
+      </li>
+
+    <li>
+
+ <span><a href="https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html">Governance of sustainability</a> and double materiality</span>
+
+    </li>
+
+  </ul>
+
+</div>
 
 <h2 id="Implementation">Reporting on Implementation</h2>
 
