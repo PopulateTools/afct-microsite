@@ -119,13 +119,13 @@ Following the [double materiality principle](https://www.allianceforcorporatetra
 
     <li>
 
- <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans
+ <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</span>
 
       </li>
 
     <li>
 
- <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans
+ <span><a href="https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html">Governance of sustainability</a> and double materiality</span>
 
       </span>
 
@@ -134,8 +134,6 @@ Following the [double materiality principle](https://www.allianceforcorporatetra
   </ul>
 
 </div>
-
-
 
 The prototype brings these various pieces together into a coherent structure, presented in three levels:
 
