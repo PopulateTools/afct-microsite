@@ -558,11 +558,11 @@ Nevertheless, companies should already pay attention to this and the other proto
 
 <hr>
 
-(1) Art. 8 Taxonomy Regulation requires companies that fall under the Non-Financial Reporting Directive (thus in future CSRD) to disclose the proportion of turnover and CapEx and /OpEx from products and services associated with Taxonomy-aligned activities. The climate prototype therefore places these metrics in the overall structure of disclosure requirements.
+**(1)** Art. 8 Taxonomy Regulation requires companies that fall under the Non-Financial Reporting Directive (thus in future CSRD) to disclose the proportion of turnover and CapEx and /OpEx from products and services associated with Taxonomy-aligned activities. The climate prototype therefore places these metrics in the overall structure of disclosure requirements.
 
-(2) “Agriculture and forestry”, Manufacturing”, “Energy” including coal and oil power generation, “Water supply, sewerage, waste management and remediation”, “Transport” including Aviation, “Construction and real estate”, and “Information and Communication (data hosting)”
+**(2)** “Agriculture and forestry”, Manufacturing”, “Energy” including coal and oil power generation, “Water supply, sewerage, waste management and remediation”, “Transport” including Aviation, “Construction and real estate”, and “Information and Communication (data hosting)”
 
-(3) based on GHG Protocol Corporate Standard, e.g. upstream purchasing, downstream sold products, good transportation, business travel, financial investments if any
+**(3)** based on GHG Protocol Corporate Standard, e.g. upstream purchasing, downstream sold products, good transportation, business travel, financial investments if any
 
 <a href="https://en.frankbold.org/" style="
 max-width: 200px;
