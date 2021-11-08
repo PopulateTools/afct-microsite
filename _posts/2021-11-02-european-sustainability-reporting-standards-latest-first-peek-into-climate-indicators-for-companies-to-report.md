@@ -35,13 +35,13 @@ img_listing: /assets/2111_list.jpg
 
     <li>
 
-      <a href="#Reporting">1) Reporting on Strategy</a>
+      <a href="#Reporting">1) Reporting on Strategy, Risks, Opportunities and Impacts and Governance</a>
 
     </li>
 
     <li> 
 
-      <a href="#Implementation">2) Reporting on Implementation</a>
+      <a href="#Implementation">2) Reporting on Implementation of Companies’ Strategies</a>
 
    </li>
 
@@ -141,7 +141,7 @@ The prototype brings these various pieces together into a coherent structure, pr
 
 ![](/assets/2111_kpis.png)
 
-<h2 id="Reporting">1) Reporting on Strategy</h2>
+<h2 id="Reporting">1) Reporting on Strategy, Risks, Opportunities and Impacts and Governance</h2>
 
 The CSRD will define the disclosures required by companies under its scope on their overall strategy. Under the Directive, companies should report such information for all their material sustainability matters taken together, based on their own determination of what is material. 
 
@@ -233,7 +233,7 @@ The climate prototype addresses a number of specific climate elements that will 
 
 </div>
 
-<h2 id="Implementation">2) Reporting on Implementation</h2>
+<h2 id="Implementation">2) Reporting on Implementation of Companies’ Strategies</h2>
 
 As is the case for strategy disclosures, the implementation level is also defined in the CSRD directly and its details will be clarified in the upcoming cross-cutting standards. However, unlike the strategy level, companies will report information for each material topic separately. 
 
@@ -341,8 +341,6 @@ The climate prototype is based on existing EU metrics, in particular the propose
 
 #### I) Mandatory data
 
-
-
 *Energy consumption and mix:*
 
 ► **Final Energy Consumption** in MWh, broken down by fuel, consumption of electricity, heat, steam and cooling 
@@ -356,8 +354,6 @@ The climate prototype is based on existing EU metrics, in particular the propose
 ► **Disclosure of offices’ energy intensity** for all companies to be aligned with EU green buildings objectives
 
 ► **Office energy intensity** (kWh/m2) to provide transparency on alignment with EU green buildings objectives
-
-
 
 *Greenhouse gas emissions:*
 
