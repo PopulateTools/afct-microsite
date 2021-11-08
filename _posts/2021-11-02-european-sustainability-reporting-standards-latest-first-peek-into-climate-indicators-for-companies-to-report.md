@@ -3,7 +3,7 @@ layout: post
 title: "European Sustainability Reporting Standards latest: First peek into
   climate indicators for companies to report"
 categories: monthly-articles
-date: 2021-11-02T16:15:28.783Z
+date: 2021-11-08T08:32:30.997Z
 intro: "In this article, we first provide an overview of the process and
   timeline for the development of the European standards as a whole and then
   move on to explore the content of the first prototype standard published in
@@ -113,19 +113,19 @@ Following the [double materiality principle](https://www.allianceforcorporatetra
 
     <li>
 
-    <span><a href="https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html">Corporate standards are the missing piece</a> to the sustainable finance plan</span>
+ <span><a href="https://www.allianceforcorporatetransparency.org/news/the-missing-piece-corporate-sustainability-standards-in-the-eu-and-how-they-fit-with-the-investors-disclosure-regulation-and-taxonomy.html">Corporate standards are the missing piece</a> to the sustainable finance plan</span>
 
     </li>
 
     <li>
 
- <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</p>
+ <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans
 
       </li>
 
     <li>
 
- <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans</p>
+ <span>Best practice for <a href="http://allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html">reporting on climate transition</a> plans
 
       </span>
 
@@ -134,6 +134,8 @@ Following the [double materiality principle](https://www.allianceforcorporatetra
   </ul>
 
 </div>
+
+
 
 The prototype brings these various pieces together into a coherent structure, presented in three levels:
 
