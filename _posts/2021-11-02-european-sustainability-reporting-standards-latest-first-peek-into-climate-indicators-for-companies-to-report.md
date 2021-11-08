@@ -237,13 +237,59 @@ The climate prototype addresses a number of specific climate elements that will 
 
 As is the case for strategy disclosures, the implementation level is also defined in the CSRD directly and its details will be clarified in the upcoming cross-cutting standards. However, unlike the strategy level, companies will report information for each material topic separately. 
 
-The implementation disclosures concern transparency on policies and their general objectives adopted by the company to manage each material topic, including measurable targets, action plans and resources. 
+The implementation disclosures concern transparency on policies and their general objectives adopted by the company to manage each material topic, including measurable **targets, action plans and resources.** 
 
-At this level, the climate prototype specifies what should be disclosed about the company's  climate change mitigation targets. It does not prescribe that companies have to adopt a target - they will be able to report ‘null’ values. The purpose of the standard is to ensure full transparency and comparability, which is currently not the case. As shown by [the latest research](https://www.allianceforcorporatetransparency.org/news/new-data-on-companies-climate-and-human-rights-disclosures-lessons-for-the-eu-reform.html) of the Alliance of Corporate Transparency (September 2021), still only 39 % of 250 analysed corporations obliged to report under the NFRD disclosed their climate targets. Only 28 % claimed the targets to be science-based or aligned with the Paris Agreement goal to limit global warming to 1.5°C or well below 2°C. The message to companies from the prototype is that they will have to report their targets in a unified format, making it much easier for users of the reports to find information and work with it, ensuring such information is based on the same metrics and methodologies, and covers the entirety of companies’ emissions at a particular Scope.
+At this level, **the climate prototype specifies what should be disclosed about the company's  climate change mitigation targets.** It does not prescribe that companies have to adopt a target - they will be able to report ‘null’ values. The purpose of the standard is to ensure full transparency and comparability, which is currently not the case. As shown by [the latest research](https://www.allianceforcorporatetransparency.org/news/new-data-on-companies-climate-and-human-rights-disclosures-lessons-for-the-eu-reform.html) of the Alliance of Corporate Transparency (September 2021), still only 39 % of 250 analysed corporations obliged to report under the NFRD disclosed their climate targets. Only 28 % claimed the targets to be science-based or aligned with the Paris Agreement goal to limit global warming to 1.5°C or well below 2°C. **The message to companies from the prototype is that they will have to report their targets in a unified format, making it much easier for users of the reports to find information and work with it,** ensuring such information is based on the same metrics and methodologies, and covers the entirety of companies’ emissions at a particular Scope.
 
 **Mandatory information on targets - if companies have them:**
 
-**TABULKA**
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
+<p style="font-weight: bold;">Disclosure of targets for 2025 and 2030 (and, if relevant, every 5 years from 2030 to 2050) covering:</p>
+
+  <ul>
+
+    <li>
+
+ <span>Scopes 1 and 2 GHG emissions in absolute value </span>
+
+    </li>
+
+    <li>
+
+ <span>Scopes 1 and 2 GHG emissions in intensity terms</span>
+
+      </li>
+
+    <li>
+
+ <span>Total GHG emissions Scope 3 based on significant categories in absolute value </span>
+
+</li>
+
+    <li>
+
+ <span>Total GHG emissions Scope 3 based on significant categories in intensity terms (for all companies or only those that are part of high emission sectors)</span>
+
+</li>
+
+<p style="font-weight: bold;">Optional targets on carbon intensity related to specific EU objectives on buildings and logistics </p>
+
+ <span>Carbon intensity of the undertaking’s tertiary activities (administration buildings)</span>
+
+</li>
+
+    <li>
+
+ <span>Carbon intensity of the undertaking’s logistics</span>
+
+    </li>
+
+  </ul>
+
+</div>
+
+
 
 <h2 id="KPIs">Reporting on Performance measurement (KPIs)</h2>
 
