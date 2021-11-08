@@ -411,6 +411,72 @@ Therefore, the climate prototype formulates the required KPIs in a fairly flexib
 
 **Overview of financial indicators:**
 
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
+  <ul>
+
+    <li>
+
+ <span> Based on principal physical risks, disclose the potential inherent financial effects (m€) (free definitions and quantification methodologies to assess the range of financial inherent effects) before mitigation actions (i.e. with no financial accounting consequences), including for example the proportion (%) of assets exposed to physical risks and any other indicators deemed relevant.</span>
+
+    </li>
+
+    <li>
+
+ <span>Consistent with the action plan section, disclose the potential costs of adaptation solutions that are put in place or planned to mitigate the physical risks (resulting in residual risks).</span>
+
+      </li>
+
+    <li>
+
+ <span>Describe the potential effects of developments in climate policies, markets, technologies evolutions or reputation perception on future operating profits and costs of capital as well as in terms of social costs (e.g. closure of plants), beyond what is already recognised under financial reporting, in the short, medium and long term.</span>
+
+</li>
+
+    <li>
+
+ <span>Based on the identified principal transition risks, disclose the potential financial effects (m€) (free definitions and quantification methodologies to assess the range of financial inherent effects).</span>
+
+</li>
+
+  </ul>
+
+</div>
+
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
+<p style="font-weight: bold;">Examples include:</p>
+
+  <ul>
+
+    <li>
+
+ <span>future costs of offsets, the proportion (%) or range of assets related to locked-in emissions</span>
+
+    </li>
+
+    <li>
+
+ <span>the range of potential financial effects of the EU ETS allocation plan over the period 2021-2030 (see below),</span>
+
+      </li>
+
+    <li>
+
+ <span>the proportion (%) of turnover related to significant harmful activities that might be at risk.</span>
+
+</li>
+
+    <li>
+
+<span>For companies participating in the EU ETS: disclose the range of potential financial effects of the EU ETS allocation plan over the period 2021-2030, including</span>
+
+ </li>
+
+  </ul>
+
+</div>
+
 <h1 id="Future">Future development of the climate standard: what’s next?</h1>
 
 **With the production of this first paper on an initial climate prototype, the EFRAG Project Task Force has given us key insights into how future EU sustainability reporting standards may look like, as well as confirmation that the scope of disclosure requirements is already largely set by existing EU legislation and consensus on important data expressed in the international reporting standards.**
