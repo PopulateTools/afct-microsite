@@ -31,19 +31,19 @@ intro: "In this article, we first provide an overview of the process and
 
     <li>
 
-      <a href="#Reporting">Reporting on Strategy</a>
+      <a href="#Reporting">1) Reporting on Strategy</a>
 
     </li>
 
     <li> 
 
-      <a href="#Implementation">Reporting on Implementation</a>
+      <a href="#Implementation">2) Reporting on Implementation</a>
 
    </li>
 
     <li>
 
-      <a href="#KPIs">Reporting on Performance measurement (KPIs)</a>
+      <a href="#KPIs">3) Reporting on Performance measurement (KPIs)</a>
 
    </li>
 
@@ -337,8 +337,6 @@ The climate prototype is based on existing EU metrics, in particular the propose
 
 #### I) Mandatory data
 
-
-
 *Energy consumption and mix:*
 
 ► **Final Energy Consumption** in MWh, broken down by fuel, consumption of electricity, heat, steam and cooling 
@@ -352,8 +350,6 @@ The climate prototype is based on existing EU metrics, in particular the propose
 ► **Disclosure of offices’ energy intensity** for all companies to be aligned with EU green buildings objectives
 
 ► **Office energy intensity** (kWh/m2) to provide transparency on alignment with EU green buildings objectives
-
-
 
 *Greenhouse gas emissions:*
 
