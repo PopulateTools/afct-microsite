@@ -127,8 +127,6 @@ Following the [double materiality principle](https://www.allianceforcorporatetra
 
  <span><a href="https://www.allianceforcorporatetransparency.org/news/what-needs-to-be-reported-on-governance-of-esg.html">Governance of sustainability</a> and double materiality</span>
 
-      </span>
-
     </li>
 
   </ul>
