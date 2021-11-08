@@ -137,8 +137,6 @@ The prototype brings these various pieces together into a coherent structure, pr
 
 ![](/assets/2111_kpis.png)
 
-
-
 <h2 id="Reporting">Reporting on Strategy</h2>
 
 The CSRD will define the disclosures required by companies under its scope on their overall strategy. Under the Directive, companies should report such information for all their material sustainability matters taken together, based on their own determination of what is material. 
@@ -231,8 +229,6 @@ The climate prototype addresses a number of specific climate elements that will 
 
 </div>
 
-
-
 <h2 id="Implementation">Reporting on Implementation</h2>
 
 As is the case for strategy disclosures, the implementation level is also defined in the CSRD directly and its details will be clarified in the upcoming cross-cutting standards. However, unlike the strategy level, companies will report information for each material topic separately. 
@@ -271,6 +267,14 @@ At this level, **the climate prototype specifies what should be disclosed about 
 
  <span>Total GHG emissions Scope 3 based on significant categories in intensity terms (for all companies or only those that are part of high emission sectors)</span>
 
+ </li>
+
+  </ul>
+
+</div>
+
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
+
 <p style="font-weight: bold;">Optional targets on carbon intensity related to specific EU objectives on buildings and logistics </p>
 
 </li>
@@ -284,6 +288,14 @@ At this level, **the climate prototype specifies what should be disclosed about 
     <li>
 
  <span>Carbon intensity of the undertaking’s logistics</span>
+
+ </li>
+
+  </ul>
+
+</div>
+
+<div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
 <p style="font-weight: bold;">Carbon neutrality / net zero target</p>
 
@@ -316,8 +328,6 @@ At this level, **the climate prototype specifies what should be disclosed about 
   </ul>
 
 </div>
-
-
 
 <h2 id="KPIs">Reporting on Performance measurement (KPIs)</h2>
 
