@@ -79,7 +79,7 @@ According to the proposals [outlined](https://www.efrag.org/Assets/Download?asse
 
 **After taking over the work of the PTF and fine-tuning the draft standards, the ESS is expected to launch** a consultation (March-June 2022) to gather public feedback, and submit the final technical advice to the EU Commission for the first set of standards. **Starting in 2023, European companies will have to begin gathering and assessing sustainability data in accordance with the European sustainability reporting standards to be agreed.**
 
-![]( "*Timeline for CSRD and EU Sustainability Reporting Standards*")
+![*Timeline for CSRD and EU Sustainability Reporting Standards*](/assets/2111_timeline.png "*Timeline for CSRD and EU Sustainability Reporting Standards*")
 
 *\*Timeline for CSRD and EU Sustainability Reporting Standards*
 
@@ -124,8 +124,6 @@ Following the [double materiality principle](https://www.allianceforcorporatetra
       </span>
 
     </li>
-
-
 
 <li>
 
