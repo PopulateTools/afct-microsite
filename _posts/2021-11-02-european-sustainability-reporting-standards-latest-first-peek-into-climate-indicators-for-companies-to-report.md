@@ -341,7 +341,7 @@ The climate prototype is based on existing EU metrics, in particular the propose
 
 #### I) Mandatory data
 
-*Energy consumption and mix:*
+#### *Energy consumption and mix:*
 
 ► **Final Energy Consumption** in MWh, broken down by fuel, consumption of electricity, heat, steam and cooling 
 
@@ -355,7 +355,7 @@ The climate prototype is based on existing EU metrics, in particular the propose
 
 ► **Office energy intensity** (kWh/m2) to provide transparency on alignment with EU green buildings objectives
 
-*Greenhouse gas emissions:*
+#### *Greenhouse gas emissions:*
 
 ►  **Scopes 1 & 2 GHG emissions** in absolute value
 
