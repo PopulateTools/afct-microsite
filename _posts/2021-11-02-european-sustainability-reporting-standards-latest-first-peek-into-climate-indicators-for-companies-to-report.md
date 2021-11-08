@@ -4,10 +4,12 @@ title: "European Sustainability Reporting Standards latest: First peek into
   climate indicators for companies to report"
 categories: monthly-articles
 date: 2021-11-08T08:32:30.997Z
-intro: "In this article, we first provide an overview of the process and
-  timeline for the development of the European standards as a whole and then
-  move on to explore the content of the first prototype standard published in
-  October on climate reporting. "
+intro: "In previous articles, we have analysed the most important changes
+  included in the EU proposal for a Corporate Sustainability Reporting Directive
+  (CSRD), and presented mounting evidence around the benefits of this reform for
+  business, investors, policy-makers and civil society. The most significant
+  novelty is the development of mandatory standards that will accompany the
+  legislation. "
 img: /assets/2111_header.jpg
 img_listing: /assets/2111_list.jpg
 ---
