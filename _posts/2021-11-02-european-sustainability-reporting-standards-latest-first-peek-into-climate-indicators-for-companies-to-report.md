@@ -8,6 +8,8 @@ intro: "In this article, we first provide an overview of the process and
   timeline for the development of the European standards as a whole and then
   move on to explore the content of the first prototype standard published in
   October on climate reporting. "
+img: /assets/2111_header.jpg
+img_listing: /assets/2111_list.jpg
 ---
 *Written by Frank Bold as part of the [series of monthly articles](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles) on sustainability reporting in 2021. Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
 
