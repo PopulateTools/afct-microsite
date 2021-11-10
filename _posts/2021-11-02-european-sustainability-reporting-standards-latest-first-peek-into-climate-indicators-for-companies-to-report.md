@@ -379,7 +379,7 @@ Accordingly, 
 
 The above data should be visualised in a diagram, which shows the absolute value split by Scope 1, 2 & material categories of Scope 3, and - if relevant - by GHG emissions breakdowns per country, business unit, and market segment of economic activity.
 
-![Example of the diagram from the Climate Prototype](/assets/2111_kpis1.png "Example of the diagram from the Climate Prototype")
+![Example of the diagram from the Climate Prototype](/assets/2111_kpis1_resized.png "Example of the diagram from the Climate Prototype")
 
 *\*Example of the diagram from the Climate Prototype*
 
