@@ -87,7 +87,7 @@ According to the proposals [outlined](https://www.efrag.org/Assets/Download?asse
 
 *\*Timeline for CSRD and EU Sustainability Reporting Standards. See it in full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2111_timeline.png).*
 
-**The initiative for the European Union to produce Sustainability Reporting Standards has been widely welcomed, in parallel with international discussions about [global standards](https://www.ifrs.org/projects/work-plan/sustainability-reporting/).** The International Sustainability Standards Board (ISSB) was [officially](https://docs.google.com/spreadsheets/d/1OI72am0jHtDSZ6wmtF2BTevHv4I_Y1BjBFE0w5ch9P8/edit?usp=sharing) launched on 3rd November, at COP26 to deliver such global standards. 
+**The initiative for the European Union to produce Sustainability Reporting Standards has been widely welcomed, in parallel with international discussions about [global standards](https://www.ifrs.org/projects/work-plan/sustainability-reporting/).** The International Sustainability Standards Board (ISSB) was [officially](https://www.ifrs.org/news-and-events/news/2021/11/ifrs-foundation-announces-issb-consolidation-with-cdsb-vrf-publication-of-prototypes/) launched on 3rd November, at COP26 to deliver such global standards. 
 
 In this context, European active leadership is seen as necessary to maintain the ambition and momentum for the transition to business sustainability, as well as meeting the specific needs stemming from the EU legislative framework on sustainable finance and the European Green Deal.
 
