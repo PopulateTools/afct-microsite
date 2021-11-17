@@ -36,3 +36,15 @@ This is certainly one of the biggest challenges and there is also a need for a f
 The new CSRD presents an opportunity to raise the quality, accessibility and standardization of sustainability reporting. Disclosure requirements will include reporting on the extent to which companies’ activities contribute to the environmental objectives of the EU Taxonomy. Another noteworthy requirement of CSR is the requirement for obtaining external assurance on the reported information. The CSRD also has a broader scope than the existing Non-Financial Reporting Directive, which requires disclosures primarily from listed European companies. Under CSRD, also large (non-listed) European organizations and their subsidiaries will be in scope. 
 
 Enhancing corporate disclosures is a very positive step, but this is only one piece of the puzzle - as it has become evident under the EU Sustainable Finance agenda and the EU Green Deal. Having access to high-quality sustainability data will bring more transparency to the market on the sustainability performance of companies. In combination with the reporting requirements for investors under SFDR and the EU Taxonomy, the EU Sustainable Finance Plan is enabling the  flow of capital towards sustainable activities.
+
+<a href="https://en.frankbold.org/" style="
+max-width: 200px;
+display: block;
+margin-left: -29px;
+margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
+
+*This is the fourth article by Frank Bold as part of the series of interviews with sustainability reporting experts in 2021.* 
+
+*In the [first piece](bit.ly/3oxDX6G), Piotr Biernacki answers what the CSRD and sustainability reporting standards will bring to companies. The[ second article](https://www.allianceforcorporatetransparency.org/news/interview-sustainability-standards-are-needed-to-ensure-comparability-and-fair-competition-so-is-the-genuine-commitment-of-key-stakeholders-to-sustainability.html) is with Maria José Galvez Cardona on the need of comparable ESG data.* *[Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*
+
+*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
