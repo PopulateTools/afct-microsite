@@ -4,7 +4,7 @@ title: "Interview: The actions being pursued under the EU sustainable finance
   agenda and the EU Green Deal are a good example of how policies can promote
   the transition to a sustainable economy"
 categories: interviews
-date: 2021-11-17T05:55:27.903Z
+date: 2021-11-17T06:33:52.743Z
 intro: "Frank Bold interviewed Cristina Cedillo, Senior Engagement Specialist at
   global asset manager Robeco with EUR 200 billion assets under management and
   the member of Investor Alliance for Human Rights. "
