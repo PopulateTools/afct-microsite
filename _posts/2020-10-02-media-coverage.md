@@ -111,28 +111,22 @@ The work of the Alliance for Corporate Transparency has been covered or mentione
 * Valori [“Questioni sociali e ambientali. Le aziende non raccontano abbastanza”](https://valori.it/questioni-sociali-e-ambientali-le-aziende-non-raccontano-abbastanza/)
 * Social Investor “[La élite del ‘reporting’ financiero se alía para crear un modelo único de información ESG](https://www.socialinvestor.es/regulacion/la-elite-del-reporting-financiero-se-une-para-crear-un-modelo-unico-de-informacion-esg/)”
 * El Confidencial [“Cuán verde es su inversión verde? Von der Leyen se lo indica”](https://blogs.elconfidencial.com/mundo/las-fronteras-de-la-desigualdad/2021-05-11/inversion-sostenible-taxonomia-verde-comision-europea_3073239/)
-* ElPeriodico: [Susanna Arús: la centinela europea](https://www.elperiodico.com/es/mas-emprendedores/20200128/susanna-arus-la-centinela-europea-7824386)
-* [Diario Responsable: Las empresas españolas muestran los mejores resultados en la presentación de informes vinculados al clima](https://diarioresponsable.com/noticias/30286-las-empresas-espanolas-muestran-los-mejores-resultados-en-la-presentacion-de-informes-vinculados-al-clima)
-* Odpowiedzialny Inwestor (Polish): [Raportowanie danych niefinansowych – nowe wymogi unijne](http://odpowiedzialny-inwestor.pl/2021/04/01/raportowanie-danych-niefinansowych-nowe-wymogi-unijne/?fbclid=IwAR2Ra5gNCwrG5aN-WIR98Lzfl_hsmzdGSdEQjNLK5cM9gELEx_pBii4Wj_4) 
-
-  Enviweb (Czech): [Analýza 250 evropských korporací: Přístup českým firem k udržitelnosti se mírně zlepšuje, zaostávají ale v reportování klíčových ESG dat](http://www.enviweb.cz/120215)
-
-  Asociace společenské odpovědnosti: [Přístup českých firem k udržitelnosti se mírně zlepšuje, zaostávají ale v reportování klíčových ESG dat](https://www.spolecenskaodpovednost.cz/pristup-ceskych-firem-k-udrzitelnosti-se-mirne-zlepsuje-zaostavaji-ale-v-reportovani-klicovych-esg-dat/)
-
-  EURACTIV: [Investice přestávají být jen o zisku. Ty ohleduplné ke klimatu mají oporu v evropské legislativě](https://euractiv.cz/section/ekonomika/news/investice-prestavaji-byt-jen-o-zisku-ty-ohleduplne-ke-klimatu-maji-oporu-v-evropske-legislative/)
-
-  Magazín Reportér: [Tři písmenka, která převrátí byznys naruby](https://reportermagazin.cz/a/p5e9r/tri-pismenka-kteraprevrati-byznys-naruby)
-
-  Hospodářské noviny:
-
-  * [Zkratka, která svlékne firmy donaha](https://media.monitora.cz/pdf-preview/10791/617188291-4e3f9afe2e550cdfb041/?_ga=2.253110089.1346944681.1635259752-2036566229.1627884897)
-  * [Slovníček udržitelných pojmů: Co je CSR, ESG nebo greenwashing](https://media.monitora.cz/pdf-preview/10791/528413334-0f9d0057b1c420107476/?_ga=2.26946877.1805284103.1631688801-2036566229.1627884897)
-
-  ESG investice:
+* Odpowiedzialny Inwestor (Polish): [Raportowanie danych niefinansowych – nowe wymogi unijne](http://odpowiedzialny-inwestor.pl/2021/04/01/raportowanie-danych-niefinansowych-nowe-wymogi-unijne/?fbclid=IwAR2Ra5gNCwrG5aN-WIR98Lzfl_hsmzdGSdEQjNLK5cM9gELEx_pBii4Wj_4)
+* Enviweb (Czech): [Analýza 250 evropských korporací: Přístup českým firem k udržitelnosti se mírně zlepšuje, zaostávají ale v reportování klíčových ESG dat](http://www.enviweb.cz/120215)
+* Asociace společenské odpovědnosti: [Přístup českých firem k udržitelnosti se mírně zlepšuje, zaostávají ale v reportování klíčových ESG dat](https://www.spolecenskaodpovednost.cz/pristup-ceskych-firem-k-udrzitelnosti-se-mirne-zlepsuje-zaostavaji-ale-v-reportovani-klicovych-esg-dat/)
+* Magazín Reportér: [Tři písmenka, která převrátí byznys naruby](https://reportermagazin.cz/a/p5e9r/tri-pismenka-kteraprevrati-byznys-naruby)
+* EURACTIV: [Investice přestávají být jen o zisku. Ty ohleduplné ke klimatu mají oporu v evropské legislativě](https://euractiv.cz/section/ekonomika/news/investice-prestavaji-byt-jen-o-zisku-ty-ohleduplne-ke-klimatu-maji-oporu-v-evropske-legislative/)
+* ESG investice:
 
   * [Jak souvisí unijní standardy s taxonomií a povinnostmi investorů?](https://www.esg-investice.cz/jak-souvisi-unijni-standardy-s-taxonomii-a-povinnostmi-investoru/)
   * [Jak mohou standardy pro reporting pomoct firmám s přechodem na klimaticky neutrální ekonomiku](https://www.esg-investice.cz/jak-mohou-standardy-pro-reporting-pomoci-firmam-s-prechodem-na-klimaticky-neutralni-ekonomiku/)
   * [Firmy potřebují jasný návod, aby zvládly přechod na udržitelnost](https://www.esg-investice.cz/firmy-potrebuji-jasny-navod-aby-zvladly-prechod-na-udrzitelnost/?preview=true&_thumbnail_id=16046)
+* Hospodářské noviny:
+
+  * [Zkratka, která svlékne firmy donaha](https://media.monitora.cz/pdf-preview/10791/617188291-4e3f9afe2e550cdfb041/?_ga=2.253110089.1346944681.1635259752-2036566229.1627884897)
+  * [Slovníček udržitelných pojmů: Co je CSR, ESG nebo greenwashing](https://media.monitora.cz/pdf-preview/10791/528413334-0f9d0057b1c420107476/?_ga=2.26946877.1805284103.1631688801-2036566229.1627884897)
+* ElPeriodico: [Susanna Arús: la centinela europea](https://www.elperiodico.com/es/mas-emprendedores/20200128/susanna-arus-la-centinela-europea-7824386)
+* [Diario Responsable: Las empresas españolas muestran los mejores resultados en la presentación de informes vinculados al clima](https://diarioresponsable.com/noticias/30286-las-empresas-espanolas-muestran-los-mejores-resultados-en-la-presentacion-de-informes-vinculados-al-clima)
 * Ágora [“La Alianza por la Transparencia Corporativa presenta un estudio sobre los informes de sostenibilidad”](https://www.agorarsc.org/la-alianza-por-la-transparencia-corporativa-presenta-un-estudio-sobre-los-informes-de-sostenibilidad/)
 * Dagens Nyheter 
 
@@ -140,7 +134,10 @@ The work of the Alliance for Corporate Transparency has been covered or mentione
 * Dagens Industri “[Vanligt att företagen saknar mål och risk](https://www.di.se/hallbart-naringsliv/vanligt-att-foretagen-saknar-mal-och-risk/)”. Source: Aktuell Hållbarhet. 
 * Deloitte IAS plus: [Alliance for Corporate Transparency launches research report on sustainability reporting](https://www.iasplus.com/en/news/2020/02/allianceforcorporatetransparency)
 * Datamaran: [The NFRD update: getting serious about materiality ](https://www.datamaran.com/blog/nfrd-update-getting-serious-about-materiality/?utm_source=hs_email&utm_medium=email&utm_content=83923177&_hsenc=p2ANqtz--Yhgkjz7G6Heq2erK4o3rh_MfIXTcUSmAYRlXehi-beifoe1sDW4_iov-nah1alGaS6Xe8l062_lRpdD3IzognnLDwnIt9LJGhu_GVzy41LuI5tRk&_hsmi=83938927)
-* Business and Human Rights Resource Center: [Landmark report on 1,000 European companies shows the need for human rights due diligence laws](https://www.business-humanrights.org/en/landmark-report-on-1000-european-companies-shows-the-need-for-human-rights-due-diligence-laws)
+* Business and Human Rights Resource Center:
+
+  * [Landmark report on 1,000 European companies shows the need for human rights due diligence laws](https://www.business-humanrights.org/en/landmark-report-on-1000-european-companies-shows-the-need-for-human-rights-due-diligence-laws)
+  * [Alliance for Corporate Transparency launches monthly briefings on sustainability reporting](https://www.business-humanrights.org/en/latest-news/alliance-for-corporate-transparency-launches-monthly-briefings-on-sustainability-reporting/)
 * Ethical Corporation [“CSR Cheat Sheet: Half of companies ‘failing to report action on climate’”](http://www.ethicalcorp.com/csr-cheat-sheet-half-companies-failing-report-action-climate)
 * Harvard Law School Forum on Corporate Governance and Financial Regulation “[Audit: Radical Change on the Horizon?”](https://corpgov.law.harvard.edu/2018/12/18/audit-radical-change-on-the-horizon/)
 * Knowledge CSR [“Analyse der praktischen Umsetzung der Berichtspflicht”](https://www.csr-berichtspflicht.de/blog-dynamic/120-analyse-der-berichtspflicht-umsetzung)
