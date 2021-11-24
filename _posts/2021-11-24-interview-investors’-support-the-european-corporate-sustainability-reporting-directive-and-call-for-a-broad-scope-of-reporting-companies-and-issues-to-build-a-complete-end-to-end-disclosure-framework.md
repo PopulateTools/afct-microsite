@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Interview: Investors’ support the European Corporate Sustainability
+title: "Interview: Investors support the European Corporate Sustainability
   Reporting Directive and call for a broad scope of reporting companies and
   issues to build a complete end-to-end disclosure framework"
 categories: interviews
