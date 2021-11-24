@@ -113,9 +113,9 @@ The work of the Alliance for Corporate Transparency has been covered or mentione
 * El Confidencial [“Cuán verde es su inversión verde? Von der Leyen se lo indica”](https://blogs.elconfidencial.com/mundo/las-fronteras-de-la-desigualdad/2021-05-11/inversion-sostenible-taxonomia-verde-comision-europea_3073239/)
 * ElPeriodico: [Susanna Arús: la centinela europea](https://www.elperiodico.com/es/mas-emprendedores/20200128/susanna-arus-la-centinela-europea-7824386)
 * [Diario Responsable: Las empresas españolas muestran los mejores resultados en la presentación de informes vinculados al clima](https://diarioresponsable.com/noticias/30286-las-empresas-espanolas-muestran-los-mejores-resultados-en-la-presentacion-de-informes-vinculados-al-clima)
-* Odpowiedzialny Inwestor: [Raportowanie danych niefinansowych – nowe wymogi unijne](http://odpowiedzialny-inwestor.pl/2021/04/01/raportowanie-danych-niefinansowych-nowe-wymogi-unijne/?fbclid=IwAR2Ra5gNCwrG5aN-WIR98Lzfl_hsmzdGSdEQjNLK5cM9gELEx_pBii4Wj_4) 
+* Odpowiedzialny Inwestor (Polish): [Raportowanie danych niefinansowych – nowe wymogi unijne](http://odpowiedzialny-inwestor.pl/2021/04/01/raportowanie-danych-niefinansowych-nowe-wymogi-unijne/?fbclid=IwAR2Ra5gNCwrG5aN-WIR98Lzfl_hsmzdGSdEQjNLK5cM9gELEx_pBii4Wj_4) 
 
-  Enviweb: [Analýza 250 evropských korporací: Přístup českým firem k udržitelnosti se mírně zlepšuje, zaostávají ale v reportování klíčových ESG dat](http://www.enviweb.cz/120215)
+  Enviweb (Czech): [Analýza 250 evropských korporací: Přístup českým firem k udržitelnosti se mírně zlepšuje, zaostávají ale v reportování klíčových ESG dat](http://www.enviweb.cz/120215)
 
   Asociace společenské odpovědnosti: [Přístup českých firem k udržitelnosti se mírně zlepšuje, zaostávají ale v reportování klíčových ESG dat](https://www.spolecenskaodpovednost.cz/pristup-ceskych-firem-k-udrzitelnosti-se-mirne-zlepsuje-zaostavaji-ale-v-reportovani-klicovych-esg-dat/)
 
@@ -123,12 +123,12 @@ The work of the Alliance for Corporate Transparency has been covered or mentione
 
   Magazín Reportér: [Tři písmenka, která převrátí byznys naruby](https://reportermagazin.cz/a/p5e9r/tri-pismenka-kteraprevrati-byznys-naruby)
 
-  Hospodářské noviny (print):
+  Hospodářské noviny:
 
   * [Zkratka, která svlékne firmy donaha](https://media.monitora.cz/pdf-preview/10791/617188291-4e3f9afe2e550cdfb041/?_ga=2.253110089.1346944681.1635259752-2036566229.1627884897)
   * [Slovníček udržitelných pojmů: Co je CSR, ESG nebo greenwashing](https://media.monitora.cz/pdf-preview/10791/528413334-0f9d0057b1c420107476/?_ga=2.26946877.1805284103.1631688801-2036566229.1627884897)
 
-  ESG investice (Czech):
+  ESG investice:
 
   * [Jak souvisí unijní standardy s taxonomií a povinnostmi investorů?](https://www.esg-investice.cz/jak-souvisi-unijni-standardy-s-taxonomii-a-povinnostmi-investoru/)
   * [Jak mohou standardy pro reporting pomoct firmám s přechodem na klimaticky neutrální ekonomiku](https://www.esg-investice.cz/jak-mohou-standardy-pro-reporting-pomoci-firmam-s-prechodem-na-klimaticky-neutralni-ekonomiku/)
