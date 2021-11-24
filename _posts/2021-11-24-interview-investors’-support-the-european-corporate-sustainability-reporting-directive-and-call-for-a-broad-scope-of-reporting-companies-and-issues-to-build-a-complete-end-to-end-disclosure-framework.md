@@ -13,7 +13,7 @@ intro: Susanne Draeger, Senior Specialist, Sustainability Reporting at the
 img: /assets/2111_businessmen_header.jpg
 img_listing: /assets/2111_businessmen_list.jpg
 ---
-<img src="/assets/2111_draeger-susanne.png" style="float: left;width: 280px;height: 280px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="draeger-susanne" title="draeger-susanne" />
+<img src="/assets/2111_draeger-susanne.png" style="float: left;width: 300px;height: 300px;padding-right: 15px; padding-bottom: 10px; margin-top: 5px;" alt="draeger-susanne" title="draeger-susanne" />
 
 **Susanne Draeger, Senior Specialist, Sustainability Reporting at the Principles for Responsible Investment (UN-supported investor initiative),** explains what obstacles should be tackled to bring more clarity and transparency on companies’ ESG performance and impact to the market and enable investors to contribute to sustainability goals.
 
