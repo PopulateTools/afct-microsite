@@ -4,7 +4,7 @@ title: "Interview: Investors support the European Corporate Sustainability
   Reporting Directive and call for a broad scope of reporting companies and
   issues to build a complete end-to-end disclosure framework"
 categories: interviews
-date: 2021-11-24T08:17:15.198Z
+date: 2021-11-24T08:39:46.552Z
 intro: Susanne Draeger, Senior Specialist, Sustainability Reporting at the
   Principles for Responsible Investment (UN-supported investor initiative),
   explains what obstacles should be tackled to bring more clarity and
@@ -49,6 +49,6 @@ margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
 *This is the fifth article by Frank Bold as part of the series of interviews with sustainability reporting experts in 2021.* 
 
-*In the [first piece](bit.ly/3oxDX6G), Piotr Biernacki answers what the CSRD and sustainability reporting standards will bring to companies. The[ second article](https://www.allianceforcorporatetransparency.org/news/interview-sustainability-standards-are-needed-to-ensure-comparability-and-fair-competition-so-is-the-genuine-commitment-of-key-stakeholders-to-sustainability.html) is with Maria José Galvez Cardona on the need of comparable ESG data. In the [third interview](https://www.allianceforcorporatetransparency.org/news/interview-the-csrd-and-reporting-standards-are-challenging-but-these-efforts-are-necessary-to-increase-the-pace-of-transition.html), Ingo Speich (Deka Investment) highlights the importance of social, human rights and governance matters.* *[Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*
+*In the [first piece](bit.ly/3oxDX6G), Piotr Biernacki answers what the CSRD and sustainability reporting standards will bring to companies. The[ second article](https://www.allianceforcorporatetransparency.org/news/interview-sustainability-standards-are-needed-to-ensure-comparability-and-fair-competition-so-is-the-genuine-commitment-of-key-stakeholders-to-sustainability.html) is with Maria José Galvez Cardona on the need of comparable ESG data. In the [third interview](https://www.allianceforcorporatetransparency.org/news/interview-the-csrd-and-reporting-standards-are-challenging-but-these-efforts-are-necessary-to-increase-the-pace-of-transition.html), Ingo Speich (Deka Investment) highlights the importance of social, human rights and governance matters.*  *The [fourth piece](https://www.allianceforcorporatetransparency.org/news/interview-the-actions-being-pursued-under-the-eu-sustainable-finance-agenda-and-the-eu-green-deal-are-a-good-example-of-how-policies-can-promote-the-transition-to-a-sustainable-economy.html) is with Cristina Cedillo (Robeco), who provides an investors’ view on the current corporate reporting landscape and proposed legislative changes.* *[Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*
 
 *Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
