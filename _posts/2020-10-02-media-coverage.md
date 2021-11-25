@@ -78,7 +78,10 @@ The work of the Alliance for Corporate Transparency has been covered or mentione
   * “[COVID crisis reinforces need for governments to go green”](https://www.euractiv.com/section/energy-environment/opinion/covid-crisis-reinforces-need-for-governments-to-go-green/) opinion piece by GRI
   * [MEP: EU corporate reporting blueprint should be basis of international rules](https://www.euractiv.com/section/energy-environment/interview/mep-eu-corporate-reporting-blueprint-should-be-basis-of-international-rules/)
 * Ethical Boardroom:[ “Companies: Key players in the fight against corruption](https://ethicalboardroom.com/companies-key-players-in-the-fight-against-corruption/)”
-* Euranet: “[Putting business on a virtuous path | part l](https://euranetplus-inside.eu/putting-business-on-a-virtuous-path-part-i/)” & “[Putting business on a virtuous path | part ll”](https://euranetplus-inside.eu/putting-business-on-a-virtuous-path-part-ii/)
+* Euranet:
+
+  * “[Putting business on a virtuous path | part l](https://euranetplus-inside.eu/putting-business-on-a-virtuous-path-part-i/)”
+  * "[Putting business on a virtuous path | part ll”](https://euranetplus-inside.eu/putting-business-on-a-virtuous-path-part-ii/)
 * Europe Table:
 
   * [CSRD: Nur knapp die Hälfte der deutschen Unternehmen gibt Klimaziele an](https://table.media/europe/news/csrd-nur-knapp-die-haelfte-der-deutschen-unternehmen-gibt-klimaziele-an/)
