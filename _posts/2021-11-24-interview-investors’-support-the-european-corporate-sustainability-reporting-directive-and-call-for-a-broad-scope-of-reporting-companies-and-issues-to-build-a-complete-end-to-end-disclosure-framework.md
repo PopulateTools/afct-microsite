@@ -4,7 +4,7 @@ title: "Interview: Investors support the European Corporate Sustainability
   Reporting Directive and call for a broad scope of reporting companies and
   issues to build a complete end-to-end disclosure framework"
 categories: interviews
-date: 2021-11-24T08:17:15.198Z
+date: 2021-11-24T08:39:46.552Z
 intro: Susanne Draeger, Senior Specialist, Sustainability Reporting at the
   Principles for Responsible Investment (UN-supported investor initiative),
   explains what obstacles should be tackled to bring more clarity and
