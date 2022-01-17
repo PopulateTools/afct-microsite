@@ -11,8 +11,8 @@ intro: "Frank Bold selected some of the worst cases of non-compliance and
   proceedings, lack of clarity on which authorities have a mandate to take
   action, and overall belief that national authorities cannot examine the
   quality of the disclosed information, or even take any measures. "
-img: /assets/2201_hands_header.jpg
-img_listing: /assets/2201_hands_list.jpg
+img: /assets/2201_hall_header.jpg
+img_listing: /assets/2201_hall_list.jpg
 ---
 **Frank Bold selected some of the worst cases of non-compliance and submitted formal requests to the national enforcement authorities to examine these cases and take appropriate action in accordance with their mandate. The resulting [summary report](https://en.frankbold.org/sites/default/files/publikace/enforcement_activities_corporate_sustainability_reporting_summary_research_s.pdf) shows a general lack of transparency in the proceedings, lack of clarity on which authorities have a mandate to take action, and overall belief that national authorities cannot examine the quality of the disclosed information, or even take any measures.  The current proposal to reform this Directive must address these issues as the final text is discussed at the EU Parliament and Council.** 
 
