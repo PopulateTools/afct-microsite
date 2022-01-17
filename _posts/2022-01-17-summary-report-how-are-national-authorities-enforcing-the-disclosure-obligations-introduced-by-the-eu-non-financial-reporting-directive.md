@@ -48,8 +48,6 @@ The following barriers to effective supervision and enforcement by national auth
 
 ![Enforcement summary report](/assets/2201_enforcement_summary.png "Enforcement summary report")
 
-
-
 <a href="https://en.frankbold.org/" style="
 max-width: 200px;
 display: block;
