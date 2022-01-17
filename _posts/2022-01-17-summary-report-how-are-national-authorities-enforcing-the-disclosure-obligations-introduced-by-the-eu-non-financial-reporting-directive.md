@@ -47,3 +47,13 @@ The following barriers to effective supervision and enforcement by national auth
 * There is a general lack of transparency in the proceedings and absence of any procedural rights granted to stakeholders, including in particular the right to receive a response by a certain deadline and right to information on the actions taken by the authorities and their results. In this regard, the new **Corporate Sustainability Reporting Directive should specify the legal mandate for supervision and enforcement**, including the investigative actions and sanctions for specific cases of mis-compliance, as well as procedural rights of stakeholders who submit the complaints.
 
 ![Enforcement summary report](/assets/2201_enforcement_summary.png "Enforcement summary report")
+
+
+
+<a href="https://en.frankbold.org/" style="
+max-width: 200px;
+display: block;
+margin-left: -29px;
+margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
+
+*Written by Frank Bold as part of the [series of monthly articles](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles) on sustainability reporting. The previous articles covered various topics such as [climate transition plans](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html), [SMEs´ reporting](https://www.allianceforcorporatetransparency.org/news/smes-and-the-future-of-european-sustainability-reporting-rules-small-businesses-deserve-to-get-clarity-to-address-the-sustainability-challenge.html), [sustainability due diligence](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html) or the [business benefits of ESG reporting](https://www.allianceforcorporatetransparency.org/news/the-business-case-is-won-how-the-benefits-of-mandatory-sustainability-reporting-by-business-really-do-outweigh-the-costs-part-one.html).*
