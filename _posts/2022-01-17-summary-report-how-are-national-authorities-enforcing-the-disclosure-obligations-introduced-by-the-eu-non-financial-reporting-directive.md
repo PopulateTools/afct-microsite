@@ -36,10 +36,6 @@ Moreover, most member states don’t provide a transparent procedure that allows
 
 <p>See detailed results in the <a href="https://en.frankbold.org/sites/default/files/publikace/enforcement_activities_corporate_sustainability_reporting_summary_research_s.pdf">report</a>.</p>
 
-</li>
-
-  </ul>
-
 </div>
 
 Frank Bold´s research and experience with the enforcement authorities point to the **inconsistent transposition of the EU NFRD resulting in different requirements and conditions for companies in different countries**, and a generally unbalanced approach of enforcement authorities across the EU.
