@@ -2,7 +2,7 @@
 layout: post
 title: "Summary report: How are national authorities enforcing the disclosure
   obligations introduced by the EU Non-Financial Reporting Directive?"
-categories: monthly-articles
+categories: policy
 date: 2022-01-18T06:47:43.369Z
 intro: "Frank Bold selected some of the worst cases of non-compliance and
   submitted formal requests to national enforcement authorities to examine these
@@ -56,6 +56,4 @@ display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
-*Written by Frank Bold as part of the [series of monthly articles](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles) on sustainability reporting. The previous articles covered various topics such as [climate transition plans](https://www.allianceforcorporatetransparency.org/news/climate-transition-plans-how-eu-standards-can-help-companies-to-focus-on-the-right-data.html), [SMEs´ reporting](https://www.allianceforcorporatetransparency.org/news/smes-and-the-future-of-european-sustainability-reporting-rules-small-businesses-deserve-to-get-clarity-to-address-the-sustainability-challenge.html), [sustainability due diligence](https://www.allianceforcorporatetransparency.org/news/sustainability-due-diligence-what-it-means-for-companies-and-how-eu-sustainability-standards-can-help.html) or the [business benefits of ESG reporting](https://www.allianceforcorporatetransparency.org/news/the-business-case-is-won-how-the-benefits-of-mandatory-sustainability-reporting-by-business-really-do-outweigh-the-costs-part-one.html).*
-
-*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+*Frank Bold takes responsibility for any error or inaccuracy in the research and presentation of results.*
