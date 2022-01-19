@@ -46,7 +46,7 @@ The following barriers to effective supervision and enforcement by national auth
 * In most Member States, there is a lack of clarity on which authorities have a mandate to provide supervision and enforcement of corporate sustainability disclosures. This can be rectified through **the creation of an EU-wide database of enforcement authorities.**
 * There is a general lack of transparency in the proceedings and absence of any procedural rights granted to stakeholders, including in particular the right to receive a response by a certain deadline and the right to information on the actions taken by the authorities and their results. In this regard, the new **Corporate Sustainability Reporting Directive should specify the legal mandate for supervision and enforcement**, including the investigative actions and sanctions for specific cases of mis-compliance, as well as procedural rights of stakeholders who submit the complaints.
 
-![Enforcement summary report](/assets/2201_enforcement_summary_1.png "Enforcement summary report")
+![Enforcement summary report](/assets/2201_enforcement_summary_2.png "Enforcement summary report")
 
 **\*Download the report [here](https://en.frankbold.org/sites/default/files/publikace/enforcement_activities_corporate_sustainability_reporting_summary_research_s.pdf).**
 
