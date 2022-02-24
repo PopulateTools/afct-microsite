@@ -69,7 +69,7 @@ The Slovenian and French EU presidencies have been instrumental in getting Membe
 
 However, based on extensive and in-depth [research studies](https://www.allianceforcorporatetransparency.org/) that were followed by specific [policy recommendations](https://en.frankbold.org/sites/default/files/publikace/csrd_analysis_and_recommendations_reform_7.pdf) for the development of the legislative proposal, we are concerned about certain issues included in the common position of 27 EU countries: 
 
-<h1 id="#1">1. Scope</h1>
+<h1 id="1">1. Scope</h1>
 
 The Council has supported the extension proposed by the EU Commission to cover all large companies and listed SMEs, but it excludes SMEs that are not publicly listed, irrespective of whether they operate in high-risk sectors which need to undergo a transformation. This is problematic for multiple reasons: 
 
@@ -77,17 +77,17 @@ The Council has supported the extension proposed by the EU Commission to cover a
 * Investors and asset managers increasingly incorporate and require sustainability information in order to better understand the risks and opportunities that these issues pose to their investments (i.e stranded assets), as well as to better understand the social and environmental impacts of those investments. Similarly, banks need this  information from all companies to analyse their [own risk exposure](https://www.bankingsupervision.europa.eu/press/publications/newsletter/2021/html/ssm.nl210818_5.en.html) and to fulfil their disclosure obligations. Large companies are also requested to gather information on their business activities, relations and supply chains so they will require sustainability information from smaller companies they’re dealing with. 
 * The [Impact Assessment](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52021SC0150&from=EN) accompanying the CSRD proposal clearly determined that the explosion of demand for sustainability information from different actors is shown to be the true future cost to business, inevitable unless a more widely accepted set of standards is established. Including SMEs in high-risk sectors in a proportionate and balanced manner is key to provide certainty and enhance their competitiveness. 
 
-<h1 id="#2">2. Phase-in approach</h1>
+<h1 id="2">2. Phase-in approach</h1>
 
-<h1 id="#3">3. Problematic exemption of subsidiaries</h1>
+<h1 id="3">3. Problematic exemption of subsidiaries</h1>
 
-<h1 id="#4">4. Supply chain information</h1>
+<h1 id="4">4. Supply chain information</h1>
 
-<h1 id="#5">5. Forward-looking disclosures</h1>
+<h1 id="5">5. Forward-looking disclosures</h1>
 
-<h1 id="#6">6. Simplified SME disclosure framework is arbitrarily limited</h1>
+<h1 id="6">6. Simplified SME disclosure framework is arbitrarily limited</h1>
 
-<h1 id="#7">7. Enforcement and penalties scratched</h1>
+<h1 id="7">7. Enforcement and penalties scratched</h1>
 
 <a href="https://en.frankbold.org/" style="
 max-width: 200px;
