@@ -2,7 +2,7 @@
 layout: post
 title: Reaction to the Council’s position on companies’ sustainability reporting
 categories: policy
-date: 2022-02-24T14:52:46.231Z
+date: 2022-03-01T10:10:59.593Z
 intro: "Ministers from EU Member States responsible for the internal market and
   industry are expected to approve this Thursday 24 February the Council’s
   general approach on the EU Corporate Sustainability Reporting Directive (CSRD)
@@ -10,6 +10,8 @@ intro: "Ministers from EU Member States responsible for the internal market and
   set the position for Member States in trilogues, when the Council will
   negotiate with the EU Parliament and the EU Commission on the final text
   before it is officially approved. "
+img: /assets/3_2022_eu_header.jpg
+img_listing: /assets/3_2022_eu_list.jpg
 ---
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
@@ -94,5 +96,3 @@ max-width: 200px;
 display: block;
 margin-left: -29px;
 margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
-
-*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
