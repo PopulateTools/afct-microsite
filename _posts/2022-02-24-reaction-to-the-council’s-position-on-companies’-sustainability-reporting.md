@@ -43,7 +43,7 @@ The exemption for companies that are part of corporate groups is further strengt
 
 The Council added a clause that would allow companies to simply say companies in their supply chain “did not make the necessary information available” when not reporting certain information. The added paragraph (29b 2b) provides a rather confusing and unclear message to companies. 
 
-In line with global standards, the requirement to report on the identification of impacts, the actions taken by the company or the results, does not depend on the transfer of information from suppliers. Even for scope 3 GHG emissions, in the absence of data, companies can estimate this. Furthemore, as gathered by the [Corporate Human Rights Benchmark,](https://assets.worldbenchmarkingalliance.org/app/uploads/2020/11/WBA-2020-CHRB-Key-Findings-Report.pdf) most allegations of forced labour, health and safety or child labour take place in developing countries while companies are mostly based in OECD countries
+In line with global standards, the requirement to report on the identification of impacts, the actions taken by the company or the results, does not depend on the transfer of information from suppliers. Even for scope 3 GHG emissions, in the absence of data, companies can estimate this. Furthemore, as gathered by the [Corporate Human Rights Benchmark,](https://assets.worldbenchmarkingalliance.org/app/uploads/2020/11/WBA-2020-CHRB-Key-Findings-Report.pdf) most allegations of forced labour, health and safety or child labour take place in developing countries while companies are mostly based in OECD countries.
 
 <h1 id="5">5. Forward-looking disclosures</h1>
 
