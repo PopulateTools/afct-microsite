@@ -240,7 +240,7 @@ In the last part of this article, this author suggests ten practical ideas to co
 
 They can be divided into three models: initiatives which engender cooperation between the two processes, those which actually link the governance of the two and those which put them more explicitly on the path to convergence.
 
-## a) A cooperative model 
+## a) A cooperative model
 
 #### 1. Common intellectual property
 
@@ -318,8 +318,6 @@ margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
 *Find all our monthly articles on sustainability reporting here.*
 
-*Sign-up to our newsletter to stay up to date.*\
-\
-*Disclaimer: Frank Bold participates in the EFRAG´s project task force on European Sustainability Reporting Standards.*\
-\
-*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+*Sign-up to our newsletter to stay up to date.*
+
+*Disclaimer: Frank Bold participates in the EFRAG´s project task force on European Sustainability Reporting Standards. Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
