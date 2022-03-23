@@ -68,8 +68,6 @@ img_listing: /assets/2203-list-image.jpg
 
 </div>
 
-
-
 The fragmented patchwork of different ways for companies to report and be held to account on their social and environmental performance are soon to be replaced by widely accepted and endorsed international standards for corporate sustainability.
 
 The European Union [announced](https://ec.europa.eu/commission/presscorner/detail/en/SPEECH_20_139) its decision to develop such standards in January 2020, followed by the International Financial Reporting Standards (IFRS) Foundation [proposing](https://www.ifrs.org/content/dam/ifrs/project/sustainability-reporting/consultation-paper-on-sustainability-reporting.pdf) the development of global standards in October, later in the same year.
@@ -77,8 +75,6 @@ The European Union [announced](https://ec.europa.eu/commission/presscorner/detai
 The question on the lips of policy makers, companies, investors and stakeholder groups is how will these two initiatives inter-relate? Will this represent a new fragmentation or can they be complementary? Will and should they converge into one?
 
 <h1 id="What">What are the key differences of approach?</h1>
-
-<h1 id="dangers">The real dangers of lack of convergence</h1>
 
 As the respective bodies developing the new standards - the European Financial Reporting Advisory Group (EFRAG) and the fledgling International Sustainability Standards Board (ISSB) - establish arrangements for coordination between themselves, the basic differences between the two approaches are clear.
 
@@ -235,3 +231,91 @@ The mantra of the previous [‘Big 5’ international sustainability frameworks 
 Without the United States and without integration, the system risks falling short in both objectives.
 
 Those sceptical of the approach being adopted by either or both of Europe and the ISSB, should perhaps worry a little more about these challenges.
+
+<h1 id="plan">A ten-point plan for better cooperation between European and global sustainability standards</h1>
+
+Rich and constructive debates continue to take place around all these issues, in what remains the early stages of what could be genuinely historic developments.
+
+In the last part of this article, this author suggests ten practical ideas to contribute to the debate, which separately or collectively might assist in securing greater consistency and collaboration between the European and global standard-setting initiatives. 
+
+They can be divided into three models: initiatives which engender cooperation between the two processes, those which actually link the governance of the two and those which put them more explicitly on the path to convergence.
+
+## a) A cooperative model 
+
+#### 1. Common intellectual property
+
+In practice, the mutual sharing of experience, tools and content has begun to be offered, which is welcome. There may be a case to formalise this and to make explicit that the very considerable degree of intellectual property generated in the processes, will be fully shared between the two standard-setting initiatives on a continuing basis.
+
+#### 2. Joint consultations
+
+Although it is reasonably certain that the two standard-setting bodies will be working on different issues at different times, there could be a genuine effort to coordinate both the timing and some of the content of their respective consultations, which are an essential part of standard-setting processes. Spacing between respective consultations would be a minimal requirement, to help generate the best responses. The ISSB could go as far as agreeing to undertake all its consultations within Europe jointly with EFRAG, to demonstrate common intent to the market and enable feedback from European stakeholders to be heard and used by both. The European Union could reference progress in the global standards, alongside all communications and discussions in its own process.
+
+#### 3. An Agreement
+
+The two organisations might quite simply negotiate a high-level agreement to commit to collaboration, to clarify and agree their respective roles. A parallel exists for product standardisation in the [Vienna Agreement](https://www.cencenelec.eu/about-cen/cen-and-iso-cooperation/) between the International Organisation for Standardisation and the European Committee for Standardisation, which works effectively to manage any duplication or conflict.
+
+## b) A governance model 
+
+#### 4. Using the proposed conceptual frameworks to establish a common language
+
+A more ambitious proposal would be to develop the respective conceptual frameworks for both initiatives in close collaboration. To the degree that consistent principles, definitions and objectives can be established within the two frameworks, this would shape alignment between the processes for many years moving ahead. It could be described as producing the ‘common language’ which companies and investors would prefer. A single conceptual framework between the two would be even more ground-breaking, but does not appear possible. The European Union has already produced an early draft in the form of a working paper. However, a common approach to application and interpretation of each set of standards, founded by aligning their respective conceptual frameworks as far as possible, can be realistic.
+
+#### 5. A joint technical coordination mechanism
+
+In practice, most inconsistencies would not be intentional, but the product of the different processes and able to be resolved at the level of technical specialists, to which either side could refer. The ISSB may be cautious about treating Europe differently from its consultations with other jurisdictions in the world. However, given Europe’s advanced timetable and the maturity of its proposals, such a joint mechanism could be a pragmatic solution, which could always be offered to other regions in later years. 
+
+#### 6. A settlement mechanism
+
+A variant of this approach, which was proposed by the [Association of Chartered Certified Accountants](https://www.accaglobal.com/content/dam/ACCA_Global/Technical/consultation-responses/TECH-CDR1949%20IFRS%20Foundation%20consultation%20on%20sustainability%20reporting_ACCA.pdf), would be to establish an independent mechanism for assessing equivalence between the different sets of standards and to be able to resolve disputes between them. Given the governance processes in which they exist, it is difficult to foresee either the European Union or the ISSB agreeing to cede such power. ACCA suggests it would need the weight of an established multilateral organisation such as the OECD, to achieve it. 
+
+#### 7. A double-hatted Board role
+
+A more ambitious proposal again would be to appoint a single Board member for both organisations, who would be given a specific remit to promote coordination between the two. Differences in the governance structure on the European side, may make that more complicated. But the backgrounds and motivations of Board members in both initiatives, will play a decisive role in how far to engage in this and the other coordination ideas suggested
+
+## c) A convergence model 
+
+#### 8. An explicit commitment to convergence
+
+There has been much talk of convergence from both standard-setters and the European Commission has already pledged to work towards this objective. How far and how quickly it can be achieved, remains another open question. However, the very commitment would provide confidence in the market and is likely to have an important influence on all actors within the processes. A key question to the ISSB will be in how far it will move in future to incorporate ‘impact’ into its materiality definition.
+
+#### 9. Adopting the principle of interoperability
+
+This was much discussed in our efforts to align voluntary sustainability frameworks and standard-setters and can be criticised as “having to do both” rather than achieving genuine alignment. The concept of interoperability simply means that standard-setters work for the two sets of standards to be as complementary as possible. Anything which can assist report preparers to avoid unnecessary duplication and to enable single data sets to inform company reporting according to different standards, has a genuine benefit for companies. 
+
+#### 10. A commitment to reciprocity
+
+Perhaps the most sensitive question goes back to who is driving the car? Some have suggested that the ISSB should have the prerogative in developing standards using the ‘enterprise value creation’ lens and that Europe should confine itself to standards based on impact to stakeholders exclusively. The [Institute for Chartered Accountants in England and Wales](https://www.icaew.com/-/media/corporate/files/technical/financial-reporting/non-financial-reporting-ensuring-a-sustainable-global-recovery.ashx) suggested that Europe and other jurisdictions could ‘apply’ to the ISSB to develop a particular standard (including impact standards), and only do so on its own initiative, if the ISSB chose not to do so. 
+
+Given the standards, policies and governance which are arguably unique in the European Union amongst inter-governmental organisations in the world, these ideas are unlikely to be taken up in Brussels and can be questioned in terms of workability in any case. The EU’s own global reach should not be under-estimated, not simply to enforce corporate reporting standards on foreign entities through its trade powers, but in its own global diplomacy with other jurisdictions. This is evidenced by the work of the International Platform on Sustainable Finance established by the European Commission in 2019, and which has already heralded the beginning of efforts to forge common sustainability standards with China.
+
+The ISSB will naturally want to uphold the leadership role on global standards, and the European Union has been quite ready to respect the primacy of the international approach in relation to product standardisation. However, the idea of primacy is likely to inhibit rather than foster collaboration and it may be better for the two standard-setting initiatives instead, to commit to what might be called the principle of ‘reciprocity’. This would go further than the idea of exchange between the two, to represent a concept which would focus on mutual respect, the desire for complementarity at all levels and a commitment to mutually self-supporting actions. The European Union would go as far as suggesting that this is called ‘co-construction’. The ‘reciprocity’ label may be more acceptable to the ISSB, as it would not be suggested there would be equality between the two, but that each would be working hand-in-hand.
+
+To extend the analogy: both would have their hands on the wheel.
+
+<h1 id="Conclusion">Conclusion</h1>
+
+This last idea, as with the others, is highly dependent on the culture which will be created between the two organisations and the key individuals involved. They are offered in a spirit of openness and joint endeavour which will be required. Success is also dependent on the ability of all involved to seize the enormity of the sustainability challenge and to see that the necessity of collective action between many different actors across the spectrum, far outweighs traditional thinking based on institutional rivalries.
+
+From the point of view of companies and investors, let alone wider stakeholders, it remains important to recognise the unprecedentedly fast progress which is being made on sustainability standards, compared to all past similar processes. Perhaps the most important signal to the two standard-setters is to maintain and intensify this momentum in what they are doing.
+
+Similarly, it should be recalled that EFRAG started by looking at 200 different sustainability standards for business at the sectoral, national as well as international level. The International Trade Centre catalogues some 2,500 standards and related initiatives in the field of corporate sustainability and of Responsible Business Conduct. 
+
+If the world manages to simplify this to two or only a handful of major initiatives rather than one, it could be said that the aspiration to clarify the landscape will indeed still have been achieved.
+
+Finally, never forget that the benefit of standards processes comes only in that they are used. It is the ‘acceptance’ of a standard, which is necessary for its existence.
+
+So companies, investors, stakeholders and regulators will assess the new standards for themselves and perhaps will be the ultimate deciders on how and if European and global sustainability standards work together.
+
+I hope they will.
+
+
+
+*By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC.*
+
+*Find all our monthly articles on sustainability reporting here.*
+
+*Sign-up to our newsletter to stay up to date.*\
+\
+*Disclaimer: Frank Bold participates in the EFRAG´s project task force on European Sustainability Reporting Standards.*\
+\
+*Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
