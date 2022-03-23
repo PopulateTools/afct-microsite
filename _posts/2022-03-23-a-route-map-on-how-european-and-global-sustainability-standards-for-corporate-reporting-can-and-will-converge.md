@@ -184,23 +184,47 @@ The Chair of IOSCO has said that ‘impact’ is “highly relevant” to enterp
 
 In the [Climate Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-climate-related-disclosures-prototype.pdf) which was one of the ISSB’s first initiatives, the IOSCO report finds that 28 of 34 metrics in the ‘enterprise value creation’ approach, would have also applied in multi-stakeholder metrics in accordance with the Global Reporting Initiative, (GRI).
 
-<table>\
-  <tr>\
-    <th>Company</th>\
-    <th>Contact</th>\
-    <th>Country</th>\
-  </tr>\
-  <tr>\
-    <td>Alfreds Futterkiste</td>\
-    <td>Maria Anders</td>\
-    <td>Germany</td>\
-  </tr>\
-  <tr>\
-    <td>Centro comercial Moctezuma</td>\
-    <td>Francisco Chang</td>\
-    <td>Mexico</td>\
-  </tr>\
-</table>
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>HTML Table Cellpadding</title>
+   </head>
+	
+   <body>
+      <table border = "1" cellpadding = "5" cellspacing = "5">
+         <tr>
+            <th>ESRS ESRS E1, DR 8, Paragraph 39-41, Disclosure of climate-related targets</th>
+            <th>ISSB Climate Prototype, Metrics and Targets, Paragraph 15, 
+Disclosure of climate-related targets</th>
+         </tr>
+         <tr>
+            <td>Disclosure of GHG emissions reduction targets for Scope 1, 2, and 3,
+
+(a) an explanation of the expected contributions from different decarbonisation levers to the achievement of the target \[...]; 
+
+(b) a presentation of the information over the target period preferably in five years rolling periods and at least including target values for the years 2030 and 2050; 
+
+(c) a presentation of the information over the target period with reference to a 1.5°C climate scenario or, if not available, with reference to the -55% EU GHG emissions reduction target in 2030. It may be presented as a graphical pathway or trajectory
+
+(a) an explanation of \[GHG reduction targets’] alignment with limiting global warming to 1.5°C;
+
+(d) the locked-in GHG emissions from key assets and products, including a discussion about if and how these can jeopardise the achievement of GHG emission reduction targets and drive transition risk, and the plans to manage GHG- and energy-intensive assets and products;</td>
+            <td>\[Is there an equivalent to ESRS Scope 1 , 2 and 3 ilne?]
+
+(c) whether the target is science-based, and if so, whether it has been validated by a third party;
+(d) whether the target was derived using a sectoral decarbonisation approach; 
+
+(b) plans and critical assumptions for legacy assets, including strategies to manage carbon energy- and water-intensive operations, and to decommission carbon- energy- and
+water-intensive assets.</td>
+         </tr>
+         <tr> Both prototypes include corresponding disclosure requirements concerning the objective 
+         </tr>
+      </table>
+   </body>
+	
+</html>
 
 Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in level of ambition.
 
