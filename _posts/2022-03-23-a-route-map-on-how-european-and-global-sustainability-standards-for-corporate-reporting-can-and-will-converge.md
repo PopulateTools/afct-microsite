@@ -220,6 +220,7 @@ water-intensive assets.</td>
          <tr> Both prototypes include corresponding disclosure requirements concerning the objective 
          </tr>
       </table>
+
    </body>
 	
 </html>
@@ -246,7 +247,7 @@ Major players seem to be saying that they do not see a contradiction. 
 
 Indeed, those who argue against perceived competition between EU and global standards, may be missing the point altogether. 
 
-The true lack of convergence may come in U.S. based companies and investors being subject to ESG standards for company reporting, expected to be produced by the Securities and Exchange Commission in the next year. It is likely that these standards will be far narrower in scope, less prescriptive and possibly in conjunction with a non-statutory third party, in comparison to either the ISSB or European sustainability standards.  
+The true lack of convergence may come on the question of  U.S. based companies and investors being subject to ESG standards for company reporting. A draft on climate reporting has been [produced recently](https://www.sec.gov/news/press-release/2022-46) by the U.S. Securities and Exchange Commission and is expected to be agreed later this year. Whilst a major step forward, it differs markedly from the proposed European and global standards. Materiality will continue to be defined with a high degree of company discretion; the draft applies to climate risk only; and there is no provision either for enforcement or for defining reporting standards. 
 
 It should be remembered that an eleven-year exercise from 2002 to try to bring the US generally accepted accounting principles into the International Financial Reporting Standards ultimately failed. This historical divergence between the United States and the rest of the world on financial reporting standards, may simply be replicated when it comes to sustainability. 
 
