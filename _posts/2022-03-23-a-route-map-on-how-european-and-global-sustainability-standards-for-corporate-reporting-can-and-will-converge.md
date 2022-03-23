@@ -184,8 +184,6 @@ The Chair of IOSCO has said that ‘impact’ is “highly relevant” to enterp
 
 In the [Climate Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-climate-related-disclosures-prototype.pdf) which was one of the ISSB’s first initiatives, the IOSCO report finds that 28 of 34 metrics in the ‘enterprise value creation’ approach, would have also applied in multi-stakeholder metrics in accordance with the Global Reporting Initiative, (GRI).
 
-<!DOCTYPE html>
-
 <html>
 
    <head>
