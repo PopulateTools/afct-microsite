@@ -308,7 +308,11 @@ So companies, investors, stakeholders and regulators will assess the new standar
 
 I hope they will.
 
-
+<a href="https://en.frankbold.org/" style="
+max-width: 200px;
+display: block;
+margin-left: -29px;
+margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
 *By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC.*
 
