@@ -189,6 +189,8 @@ A closer look reveals important differences as regards disclosures concerning th
 
 ![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203_tabulka.png "Comparison of climate disclosures in the EU and international reporting standards")
 
+*\*See it full resolution here.*
+
 Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in the level of ambition.
 
 There are still critics who suggest that the goals of sustainable development will never be achieved using a financial materiality lens, and that without reference to the sustainability context - the ecological limits and thresholds for which sustainability is required - these processes can be rendered meaningless.
