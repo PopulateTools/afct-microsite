@@ -185,7 +185,7 @@ A closer look reveals important differences as regards disclosures concerning th
 
 **Table: Comparison of climate disclosures in the EU and international reporting standards**
 
-*\*For the full comparison of the texts, please consult [this detailed document](https://docs.google.com/document/d/1Bef5nqwtmjkOI3eugnP9NW32lUvOosnN-FiX-qlMySE/edit)*
+*\*For the full comparison of the texts, please consult [this detailed document](https://www.allianceforcorporatetransparency.org/assets/2203_comparison-of-climate-disclosures-in-the-eu-and-international-reporting-standards.pdf)*
 
 ![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203_tabulka1.png "Comparison of climate disclosures in the EU and international reporting standards")
 
