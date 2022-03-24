@@ -5,12 +5,9 @@ title: A route-map on how European and global sustainability standards for
 categories: monthly-articles
 date: 2022-03-23T06:41:12.894Z
 intro: The fragmented patchwork of different ways for companies to report and be
-  held to account on their social and environmental performance are soon to be
+  held to account on their social and environmental performance is soon to be
   replaced by widely accepted and endorsed international standards for corporate
-  sustainability. The European Union announced its decision to develop such
-  standards in January 2020, followed by the International Financial Reporting
-  Standards (IFRS) Foundation proposing the development of global standards in
-  October, later in the same year.
+  sustainability.
 img: /assets/2203-john-towner-p-rn-n6miag-unsplash.jpg
 img_listing: /assets/2203-list-image.jpg
 ---
@@ -68,7 +65,7 @@ img_listing: /assets/2203-list-image.jpg
 
 </div>
 
-The fragmented patchwork of different ways for companies to report and be held to account on their social and environmental performance are soon to be replaced by widely accepted and endorsed international standards for corporate sustainability.
+The fragmented patchwork of different ways for companies to report and be held to account on their social and environmental performance is soon to be replaced by widely accepted and endorsed international standards for corporate sustainability.
 
 The European Union [announced](https://ec.europa.eu/commission/presscorner/detail/en/SPEECH_20_139) its decision to develop such standards in January 2020, followed by the International Financial Reporting Standards (IFRS) Foundation [proposing](https://www.ifrs.org/content/dam/ifrs/project/sustainability-reporting/consultation-paper-on-sustainability-reporting.pdf) the development of global standards in October, later in the same year.
 
@@ -78,7 +75,7 @@ The question on the lips of policy makers, companies, investors and stakeholder 
 
 As the respective bodies developing the new standards - the European Financial Reporting Advisory Group (EFRAG) and the fledgling International Sustainability Standards Board (ISSB) - establish arrangements for coordination between themselves, the basic differences between the two approaches are clear.
 
-European standards build on EU policy and legislative programmes including its Green Deal, its taxonomy and investor disclosure requirements for sustainable finance, and will be immediately linked to regulatory requirements, via the EU’s Corporate Sustainability Reporting Directive that will become applicable to over 50 000 largest EU companies .
+European standards build on EU policy and legislative programmes including the Green Deal, its taxonomy and investor disclosure requirements for sustainable finance, and will be immediately linked to regulatory requirements, via the EU’s Corporate Sustainability Reporting Directive that will become applicable to over 50 000 largest EU companies .
 
 The global standards are aimed at all jurisdictions worldwide, intended to be applicable in different cultural, business, legal and regulatory environments and may remain voluntary over an extended period, as the pace of implementation will depend on the discretion of regulators in different countries over time.
 
@@ -98,9 +95,9 @@ As with financial reporting, investors are intended to be the primary users of r
 
 However, these differences should not obscure the fact that both initiatives are a response to the same extensive and persistent demands from business, capital markets and stakeholders for unified standards to enable company sustainability performance to be reported, comparable and rewarded. 
 
-Perhaps it is also the proximity of the developments in response both in Europe and at the global level - astonishingly fast in comparison to the highly measured pace in the world of financial reporting standards - which exposes the catalytic effect which each is having on the other.
+Perhaps it is also the proximity of the developments in response both in Europe and at the global level - astonishingly fast in comparison to the highly measured pace in the world of financial reporting standards - which exposes the catalytic effect that each is having on the other.
 
-In the face of the imperative for the world to move far more rapidly to combat climate change and social instability, the existence of both initiatives might actually be creating a combined effect, which together will help companies transform to the sustainable business models which are essential to humanity.
+In the face of the imperative for the world to move far more rapidly to combat climate change and social instability, the existence of both initiatives might actually be creating a combined effect, which together will help companies transform to the sustainable business models that are essential to humanity.
 
 ![ESG reporting guidelines](/assets/2203_esg-reporting-guidelines.png "ESG reporting guidelines")
 
@@ -110,7 +107,7 @@ In the face of the imperative for the world to move far more rapidly to combat c
 
 At a structural level, the ISSB and EFRAG have quickly begun to establish necessary lines of communication.
 
-The ISSB plans to involve the EU in its multi stakeholder consultative committee, designed to involve representatives from different jurisdictions around the world. 
+The ISSB plans to involve the EU in its multi-stakeholder consultative committee, designed to involve representatives from different jurisdictions around the world. 
 
 The European Union has already held two formal meetings with international sustainability standard-setting initiatives. 
 
@@ -124,7 +121,7 @@ This may all neatly be summed up between the ISSB being firmly in the driving se
 
 The European approach has also committed to assessing the international standards on a continuing basis and to be ready to adapt European standards accordingly. However, this commitment is envisaged to take place only at the end of successive three yearly periods. The proposals for the ISSB are for discussion between jurisdictions, but with no timetable for action in response. 
 
-This suggests the two bodies may remain committed to developing standards within their own distinct governance, and that alignment between the two will only proceed on an ‘ex post’ basis, at perhaps too slower pace to meet industry demands. 
+This suggests the two bodies may remain committed to developing standards within their own distinct governance, and that alignment between the two will only proceed on an ‘ex post’ basis, at perhaps too slow a pace to meet industry demands. 
 
 A different analogy borrowed from the laws of physics, is that objects can repel or attract each other. Let us start with what may be seeking to push the European and global initiatives apart. 
 
@@ -182,50 +179,17 @@ The International Organisation of Security Commissions’ (IOSCO) [Final Report 
 
 The Chair of IOSCO has said that ‘impact’ is “highly relevant” to enterprise value creation and that he believes the differences will fade away. IFRS Trustees have also suggested that the two approaches will converge.
 
-In the [Climate Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-climate-related-disclosures-prototype.pdf) which was one of the ISSB’s first initiatives, the IOSCO report finds that 28 of 34 metrics in the ‘enterprise value creation’ approach, would have also applied in multi-stakeholder metrics in accordance with the Global Reporting Initiative, (GRI).
+In the [Climate Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-climate-related-disclosures-prototype.pdf) which was one of the ISSB’s first initiatives, the IOSCO report finds that 28 of 34 metrics in the ‘enterprise value creation’ approach, would have also applied in multi-stakeholder metrics in accordance with the Global Reporting Initiative, (GRI). The table shows our own comparison of the two, suggesting important differences remain.
 
-<html>
+A closer look reveals important differences as regards disclosures concerning the alignment of climate mitigation targets and transition plans with the goals of the Paris Agreement (1.5°C). It should be noted that both initiatives require disclosures of GHG emissions scope 1, 2, 3 and provide disclosure requirements on climate targets as such. Below, main differences are highlighted.
 
-   <head>
-      <title>HTML Table Cellpadding</title>
-   </head>
-	
-   <body>
-      <table border = "1" cellpadding = "5" cellspacing = "5">
-         <tr>
-            <th>ESRS ESRS E1, DR 8, Paragraph 39-41, Disclosure of climate-related targets</th>
-            <th>ISSB Climate Prototype, Metrics and Targets, Paragraph 15, 
-Disclosure of climate-related targets</th>
-         </tr>
-         <tr>
-            <td>Disclosure of GHG emissions reduction targets for Scope 1, 2, and 3,
+**Table: Comparison of climate disclosures in the EU and international reporting standards** 
 
-(a) an explanation of the expected contributions from different decarbonisation levers to the achievement of the target \[...]; 
+*\*For the full comparison of the texts, please consult [this detailed document](https://docs.google.com/document/d/1Bef5nqwtmjkOI3eugnP9NW32lUvOosnN-FiX-qlMySE/edit)*
 
-(b) a presentation of the information over the target period preferably in five years rolling periods and at least including target values for the years 2030 and 2050; 
+![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203-table.png "Comparison of climate disclosures in the EU and international reporting standards")
 
-(c) a presentation of the information over the target period with reference to a 1.5°C climate scenario or, if not available, with reference to the -55% EU GHG emissions reduction target in 2030. It may be presented as a graphical pathway or trajectory
-
-(a) an explanation of \[GHG reduction targets’] alignment with limiting global warming to 1.5°C;
-
-(d) the locked-in GHG emissions from key assets and products, including a discussion about if and how these can jeopardise the achievement of GHG emission reduction targets and drive transition risk, and the plans to manage GHG- and energy-intensive assets and products;</td>
-            <td>\[Is there an equivalent to ESRS Scope 1 , 2 and 3 ilne?]
-
-(c) whether the target is science-based, and if so, whether it has been validated by a third party;
-(d) whether the target was derived using a sectoral decarbonisation approach; 
-
-(b) plans and critical assumptions for legacy assets, including strategies to manage carbon energy- and water-intensive operations, and to decommission carbon- energy- and
-water-intensive assets.</td>
-         </tr>
-         <tr> Both prototypes include corresponding disclosure requirements concerning the objective 
-         </tr>
-      </table>
-
-   </body>
-	
-</html>
-
-Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in level of ambition.
+Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in the level of ambition.
 
 There are still critics who suggest that the goals of sustainable development will never be achieved using a financial materiality lens, and that without reference to the sustainability context - the ecological limits and thresholds for which sustainability is required - these processes can be rendered meaningless.
 
@@ -327,7 +291,7 @@ Perhaps the most sensitive question goes back to who is driving the car? Some ha
 
 Given the standards, policies and governance which are arguably unique in the European Union amongst inter-governmental organisations in the world, these ideas are unlikely to be taken up in Brussels and can be questioned in terms of workability in any case. The EU’s own global reach should not be under-estimated, not simply to enforce corporate reporting standards on foreign entities through its trade powers, but in its own global diplomacy with other jurisdictions. This is evidenced by the work of the International Platform on Sustainable Finance established by the European Commission in 2019, and which has already heralded the beginning of efforts to forge common sustainability standards with China.
 
-The ISSB will naturally want to uphold the leadership role on global standards, and the European Union has been quite ready to respect the primacy of the international approach in relation to product standardisation. However, the idea of primacy is likely to inhibit rather than foster collaboration and it may be better for the two standard-setting initiatives instead, to commit to what might be called the principle of ‘reciprocity’. This would go further than the idea of exchange between the two, to represent a concept which would focus on mutual respect, the desire for complementarity at all levels and a commitment to mutually self-supporting actions. The European Union would go as far as suggesting that this is called ‘co-construction’. The ‘reciprocity’ label may be more acceptable to the ISSB, as it would not be suggested there would be equality between the two, but that each would be working hand-in-hand.
+The ISSB will naturally want to uphold the leadership role on global standards, and the European Union has been quite ready to respect the primacy of the international approach in relation to product standardisation. However, the idea of primacy is likely to inhibit rather than foster collaboration and it may be better for the two standard-setting initiatives instead, to commit to what might be called the principle of *‘reciprocity’*. This would go further than the idea of exchange between the two, to represent a concept which would focus on mutual respect, the desire for complementarity at all levels and a commitment to mutually self-supporting actions. The European Union would go as far as suggesting that this is called ‘co-construction’. The ‘reciprocity’ label may be more acceptable to the ISSB, as it would not be suggested there would be equality between the two, but that each would be working hand-in-hand.
 
 To extend the analogy: both would have their hands on the wheel.
 
