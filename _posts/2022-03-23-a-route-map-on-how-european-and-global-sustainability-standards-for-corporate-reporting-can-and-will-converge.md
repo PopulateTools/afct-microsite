@@ -183,11 +183,11 @@ In the [Climate Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trw
 
 A closer look reveals important differences as regards disclosures concerning the alignment of climate mitigation targets and transition plans with the goals of the Paris Agreement (1.5°C). It should be noted that both initiatives require disclosures of GHG emissions scope 1, 2, 3 and provide disclosure requirements on climate targets as such. Below, main differences are highlighted.
 
-**Table: Comparison of climate disclosures in the EU and international reporting standards** 
+**Table: Comparison of climate disclosures in the EU and international reporting standards**
 
 *\*For the full comparison of the texts, please consult [this detailed document](https://docs.google.com/document/d/1Bef5nqwtmjkOI3eugnP9NW32lUvOosnN-FiX-qlMySE/edit)*
 
-![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203-table.png "Comparison of climate disclosures in the EU and international reporting standards")
+![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203_tabulka.png "Comparison of climate disclosures in the EU and international reporting standards")
 
 Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in the level of ambition.
 
