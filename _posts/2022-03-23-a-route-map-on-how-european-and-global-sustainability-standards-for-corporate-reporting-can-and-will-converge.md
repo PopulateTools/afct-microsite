@@ -187,7 +187,7 @@ A closer look reveals important differences as regards disclosures concerning th
 
 *\*For the full comparison of the texts, please consult [this detailed document](https://docs.google.com/document/d/1Bef5nqwtmjkOI3eugnP9NW32lUvOosnN-FiX-qlMySE/edit)*
 
-![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203_tabulka.png "Comparison of climate disclosures in the EU and international reporting standards")
+![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203-table.png "Comparison of climate disclosures in the EU and international reporting standards")
 
 *\*See it full resolution here.*
 
