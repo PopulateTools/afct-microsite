@@ -171,7 +171,7 @@ The apparent disparity between regulatory forces behind the two initiatives may 
 
 Regulators as much as investors, may be a force for convergence. 
 
-There may be a mutual interest too in ensuring both initiatives learn from each other. Just as the ISSB is committed to building on previous work of voluntary sustainability reporting frameworks and standard-setters (and has incorporated the former Value Reporting Foundation and Climate Disclosure Standards Board in its infrastructure), it should acknowledge and build on the considerable body of work undertaken in this sphere by the European Union since its first (then) Non-Financial Reporting Directive in 2014 and its decision to move towards establishing specific policies and legislation for sustainable finance in 2018.
+There may be a mutual interest too in ensuring both initiatives learn from each other. Just as the ISSB is committed to building on previous work of voluntary sustainability reporting frameworks and standard-setters (and has incorporated the former Value Reporting Foundation and Climate Disclosure Standards Board in its infrastructure), it should acknowledge and build on the considerable body of work undertaken in this sphere by the European Union since its first (then) Non-Financial Reporting Directive in 2014 and its decision to move towards establishing specific policies and legislation for sustainable finance in 2018. Of the former ‘Big 5’ sustainability frameworks and standard-setters, interestingly the Global Reporting Initiative has remained independent and signed Memoranda of Understanding with both European and global standard-setters. As the leading early pioneer of sustainability reporting, it is understandable that the organisation is reluctant to merge with the initiatives, but it remains to be seen whether this can act as a ‘bridge’ between the two.
 
 Furthermore, recent months have seen growing arguments from proponents of the ISSB that the two different approaches to materiality determination may also converge. 
 
@@ -185,11 +185,11 @@ A closer look reveals important differences as regards disclosures concerning th
 
 **Table: Comparison of climate disclosures in the EU and international reporting standards**
 
-*\*For the full comparison of the texts, please consult this [detailed document](https://www.allianceforcorporatetransparency.org/assets/2203_comparison-of-climate-disclosures-in-the-eu-and-international-reporting-standards.pdf)*
+*\*For the full comparison of the texts, please consult this [detailed document](https://www.allianceforcorporatetransparency.org/assets/2203_detailed-table.pdf)*
 
-![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203_tabulka1.png "Comparison of climate disclosures in the EU and international reporting standards")
+![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203_tabulka.png "Comparison of climate disclosures in the EU and international reporting standards")
 
-*\*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_comparison_table.pdf).*
+*\*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_tabulka.png).*
 
 Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in the level of ambition.
 
