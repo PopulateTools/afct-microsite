@@ -89,7 +89,7 @@ This has been described as the difference between ‘outside in’ and ‘inside
 
 ![Double materiality principle](/assets/2203_double-materiality-graphics-2022-1-.png "Double materiality principle")
 
-*\*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_double-materiality-graphics-2022-1-.png).* 
+*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_double-materiality-graphics-2022-1-.png).* 
 
 As with financial reporting, investors are intended to be the primary users of reports produced under ISSB standards, whereas the European standards seek reports aimed at both investors and a wider range of stakeholder groups. 
 
@@ -101,7 +101,7 @@ In the face of the imperative for the world to move far more rapidly to combat c
 
 ![ESG reporting guidelines](/assets/2203_esg-reporting-guidelines.png "ESG reporting guidelines")
 
-*\*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_esg-reporting-guidelines.png).* 
+*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_esg-reporting-guidelines.png).* 
 
 <h1 id="Lines">Lines of communication</h1>
 
@@ -139,9 +139,9 @@ In essence, this means European sustainability standards would not simply apply 
 
 Meanwhile, the different definitions of determining the materiality in what should be reported by companies between the European and global standards, have been seen by some as the biggest obstacle between the two. 
 
-Companies may be tempted to believe they can ‘cherry pick’ selective standards picked from both initiatives, would fail to understand that this would fail the structured reporting which is required by investors and the comparability favoured by all.  For companies covered by the EU standards, these will be mandatory in any case. 
+Companies may be tempted to believe they can ‘cherry pick’ selective standards picked from both initiatives, would fail to understand that this would fall short of the structured reporting which is required by investors and the comparability favoured by all.  For companies covered by the EU standards, these will be mandatory in any case. 
 
-Interestingly, many investors including the industry-leading UN-supported Principles for Responsible Investment representing nearly 5,000 investors worldwide, [advocate](https://www.unpri.org/download?ac=15754) for sustainability reporting which addresses both the sustainability performance of the company and the financial materiality of its sustainability impacts together,* appearing to favour the European approach.
+Interestingly, many investors including the industry-leading UN-supported Principles for Responsible Investment representing nearly 5,000 investors worldwide, [advocate](https://www.unpri.org/download?ac=15754) for sustainability reporting which addresses both the sustainability performance of the company and the financial materiality of its sustainability impacts together, appearing to favour the European approach.
 
 The umbrella organisation of ESG investors in Europe, has argued that the disclosure of the right information [must be the aim](https://www.responsible-investor.com/the-eu-the-issb-and-the-quest-for-better-sustainability-data-substance-and-materiality-are-more-important-than-international-alignment/), not to be achieved at the expense of the quest for global harmonisation.
 
@@ -153,11 +153,11 @@ Despite these differences, in developments which have been driven by the need fo
 
 The accelerated pace towards standard-setting for corporate sustainability reporting is a result in both the urgency of sustainability challenges and in particular in a huge change in investor opinion in favour of making it happen.
 
-In a survey commissioned while I was at the former International Integrated Reporting Council, no fewer than 82 per cent of investors supported standardised sustainability reporting backed by regulation. *
+In a survey commissioned while I was at the former International Integrated Reporting Council, no fewer than 82 per cent of investors supported standardised sustainability reporting backed by regulation.
 
 ![McKinsey Sustainability Reporting Survey](/assets/2203-sustainabilityreporting-ex11.jpg "McKinsey Sustainability Reporting Survey")
 
-*\*Source: [McKinsey Sustainability Reporting Survey](https://www.mckinsey.com/~/media/mckinsey/business%20functions/sustainability/our%20insights/more%20than%20values%20the%20value%20based%20sustainability%20reporting%20that%20investors%20want/png-sustainabilityreporting-ex1.png). See it ful resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203-sustainabilityreporting-ex11.jpg).* 
+*Source: [McKinsey Sustainability Reporting Survey](https://www.mckinsey.com/~/media/mckinsey/business%20functions/sustainability/our%20insights/more%20than%20values%20the%20value%20based%20sustainability%20reporting%20that%20investors%20want/png-sustainabilityreporting-ex1.png). See it ful resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203-sustainabilityreporting-ex11.jpg).* 
 
 This pressure is not simply for standardisation as a process but will be exerted on both the ISSB and the European Union in finding consistency between each other in achieving it.
 
@@ -171,7 +171,9 @@ The apparent disparity between regulatory forces behind the two initiatives may 
 
 Regulators as much as investors, may be a force for convergence. 
 
-There may be a mutual interest too in ensuring both initiatives learn from each other. Just as the ISSB is committed to building on previous work of voluntary sustainability reporting frameworks and standard-setters (and has incorporated the former Value Reporting Foundation and Climate Disclosure Standards Board in its infrastructure), it should acknowledge and build on the considerable body of work undertaken in this sphere by the European Union since its first (then) Non-Financial Reporting Directive in 2014 and its decision to move towards establishing specific policies and legislation for sustainable finance in 2018. Of the former ‘Big 5’ sustainability frameworks and standard-setters, interestingly the Global Reporting Initiative has remained independent and signed Memoranda of Understanding with both European and global standard-setters. As the leading early pioneer of sustainability reporting, it is understandable that the organisation is reluctant to merge with the initiatives, but it remains to be seen whether this can act as a ‘bridge’ between the two.
+There may be a mutual interest too in ensuring both initiatives learn from each other. Just as the ISSB is committed to building on previous work of voluntary sustainability reporting frameworks and standard-setters (and has incorporated the former Value Reporting Foundation and Climate Disclosure Standards Board in its infrastructure), it should acknowledge and build on the considerable body of work undertaken in this sphere by the European Union since its first (then) Non-Financial Reporting Directive in 2014 and its decision to move towards establishing specific policies and legislation for sustainable finance in 2018.
+
+Of the former ‘Big 5’ sustainability frameworks and standard-setters, interestingly the Global Reporting Initiative has remained independent and signed Memoranda of Understanding with both European and global standard-setters. As the leading early pioneer of sustainability reporting, it is understandable that the organisation is reluctant to merge with the initiatives, but it remains to be seen whether this can act as a ‘bridge’ between the two.
 
 Furthermore, recent months have seen growing arguments from proponents of the ISSB that the two different approaches to materiality determination may also converge. 
 
@@ -187,11 +189,11 @@ A closer look reveals important differences as regards disclosures concerning th
 
 *\*For the full comparison of the texts, please consult this [detailed document](https://www.allianceforcorporatetransparency.org/assets/2203_detailed-table.pdf)*
 
-![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203_tabulka.png "Comparison of climate disclosures in the EU and international reporting standards")
+![Comparison of climate disclosures in the EU and international reporting standards](/assets/comparison-table-issb-v.-eu-2022.png "Comparison of climate disclosures in the EU and international reporting standards")
 
-*\*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_comparison_table.pdf).*
+*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/comparison-table-issb-v.-eu-2022.png).*
 
-Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in the level of ambition.
+Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in the level of ambition. The exposure drafts of each were [published](https://www.ifrs.org/news-and-events/news/2022/03/issb-delivers-proposals-that-create-comprehensive-global-baseline-of-sustainability-disclosures/) at the end of last month.
 
 There are still critics who suggest that the goals of sustainable development will never be achieved using a financial materiality lens, and that without reference to the sustainability context - the ecological limits and thresholds for which sustainability is required - these processes can be rendered meaningless.
 
