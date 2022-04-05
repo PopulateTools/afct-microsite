@@ -323,6 +323,8 @@ margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
 *By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC.*
 
+***The article was originally published at Reuters Sustainable Business.*** 
+
 *Find all our monthly articles on sustainability reporting [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles).*
 
 *[Sign-up](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=113ab4bd34) to our newsletter to stay up to date.*
