@@ -189,7 +189,7 @@ A closer look reveals important differences as regards disclosures concerning th
 
 *\*For the full comparison of the texts, please consult this [detailed document](https://www.allianceforcorporatetransparency.org/assets/2203_detailed-table.pdf)*
 
-![Comparison of climate disclosures in the EU and international reporting standards](/assets/rsz_1comparison_table_issb_v_eu_2022.png "Comparison of climate disclosures in the EU and international reporting standards")
+![Comparison of climate disclosures in the EU and international reporting standards](/assets/rsz_2comparison_table_issb_v_eu_2022.png "Comparison of climate disclosures in the EU and international reporting standards")
 
 *See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/comparison-table-issb-v.-eu-2022.png).*
 
