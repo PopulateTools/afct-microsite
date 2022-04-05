@@ -11,7 +11,7 @@ intro: The fragmented patchwork of different ways for companies to report and be
 img: /assets/2203-john-towner-p-rn-n6miag-unsplash.jpg
 img_listing: /assets/2203-list-image.jpg
 ---
-*By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. Views included in this article do not necessarily represent the opinion of other members of the Alliance.*
+*By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. Views included in this article do not necessarily represent the opinion of other members of the Alliance. The article was originally published at Reuters Sustainable Business.*
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
