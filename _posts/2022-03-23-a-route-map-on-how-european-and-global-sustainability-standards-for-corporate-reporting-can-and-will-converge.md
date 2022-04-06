@@ -191,7 +191,7 @@ A closer look reveals important differences as regards disclosures concerning th
 
 ![Comparison of climate disclosures in the EU and international reporting standards](/assets/2203_table-comparison.png "Comparison of climate disclosures in the EU and international reporting standards")
 
-*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_comparison_table_issb_v_eu_2022.png).*
+*See it full resolution [here](https://www.allianceforcorporatetransparency.org/assets/2203_table-comparison.pdf).*
 
 Analysis of the [ISSB’s General Requirements Prototype](https://www.ifrs.org/content/dam/ifrs/groups/trwg/trwg-general-requirements-prototype.pdf), suggests that much of the content is already covered in the proposed EU standards, with small differences in terminology and architecture and arguably a slight difference in the level of ambition. The exposure drafts of each were [published](https://www.ifrs.org/news-and-events/news/2022/03/issb-delivers-proposals-that-create-comprehensive-global-baseline-of-sustainability-disclosures/) at the end of last month.
 
