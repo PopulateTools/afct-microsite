@@ -3,7 +3,7 @@ layout: post
 title: A route-map on how European and global sustainability standards for
   corporate reporting can and will converge
 categories: monthly-articles
-date: 2022-03-23T06:41:12.894Z
+date: 2022-04-13T15:05:51.030Z
 intro: The fragmented patchwork of different ways for companies to report and be
   held to account on their social and environmental performance is soon to be
   replaced by widely accepted and endorsed international standards for corporate
@@ -11,7 +11,7 @@ intro: The fragmented patchwork of different ways for companies to report and be
 img: /assets/2203-john-towner-p-rn-n6miag-unsplash.jpg
 img_listing: /assets/2203-list-image.jpg
 ---
-\*By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. Views included in this article do not necessarily represent the opinion of other members of the Alliance. The article was originally published at **Reuters Sustainable Business.***
+*By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC. Views included in this article do not necessarily represent the opinion of other members of the Alliance. The article was originally published at **[Reuters Sustainable Business](https://bit.ly/3JEXMjB).***
 
 <div style="border: 1px solid #DFDFDF; padding: 1em; font-size: .9rem;">
 
@@ -323,7 +323,7 @@ margin-bottom: -29px;">{% asset 'logos/logo-frankbold.png' %}</a>
 
 *By Richard Howitt, Strategic advisor on corporate sustainability, Senior Advisor at Frank Bold, formerly MEP and CEO of the IIRC.*
 
-***The article was originally published at Reuters Sustainable Business.*** 
+***The article was originally published at [Reuters Sustainable Business](https://bit.ly/3JEXMjB).*** 
 
 *Find all our monthly articles on sustainability reporting [here](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles).*
 
