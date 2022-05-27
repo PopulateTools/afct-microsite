@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Media and policy impacts
-date: 2022-03-14T07:08:02.692Z
+date: 2022-02-28T07:08:02.692Z
 intro: "The work of the Alliance for Corporate Transparency has been covered or
   mentioned in a variety of media and policy-related publications.
   Representatives of Frank Bold (coordinator of the initiative) also support the
