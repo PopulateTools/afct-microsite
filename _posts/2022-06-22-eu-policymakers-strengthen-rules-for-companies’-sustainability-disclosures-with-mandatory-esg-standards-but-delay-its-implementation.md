@@ -47,7 +47,7 @@ The organisations of the Alliance for Corporate Transparency welcome the above d
 
 *“The CSRD is a landmark achievement for bold corporate disclosure rules that will drive companies to set emissions and nature targets in line with science. Companies disclosing through CDP are well prepared for the requirements of the new CSRD. We have always evolved and adapted our questionnaires in light of emerging new standards, priorities and regulations, and will continue to do so.”*
 
-**In reaction to the dea,l Elisa Peter, Director of Publish What You Say, said:**
+**In reaction to the deal, Elisa Peter, Director of Publish What You Say, said:**
 
 *“We welcome the attention given to high risk sectors by the legislators. A just transition will not be possible without full transparency from oil, gas and mining companies on their extraction projects. The sustainability disclosure rules that will now be developed to implement yesterday’s deal are of vital importance to people, the climate, the environment and good governance in the countries where the oil, gas and minerals are extracted.”*
 
