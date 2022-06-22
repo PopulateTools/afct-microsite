@@ -45,7 +45,7 @@ The organisations of the Alliance for Corporate Transparency welcome the above d
 
 **Mirjam Wolfrum, Director Policy Engagement, CDP Europe said:** 
 
-*“The CSRD is a landmark achievement for bold corporate disclosure rules that will drive companies to set emissions and nature targets in line with science. Companies disclosing through CDP are well prepared for the requirements of the new CSRD. We have always evolved and adapted our questionnaires in light of emerging new standards, priorities and regulations, and will continue to do so.”*
+*“The CSRD is a landmark achievement for bold corporate disclosure rules that will drive companies to set emissions and nature targets in line with science. Companies disclosing through CDP are well prepared for the new requirements. We have always evolved and adapted our questionnaires in light of emerging new standards, priorities and regulations, and will continue to do so.”*
 
 **In reaction to the deal, Elisa Peter, Director of Publish What You Say, said:**
 
