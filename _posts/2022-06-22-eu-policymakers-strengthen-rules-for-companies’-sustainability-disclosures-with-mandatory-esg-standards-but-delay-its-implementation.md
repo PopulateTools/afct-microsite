@@ -45,7 +45,7 @@ The organisations of the Alliance for Corporate Transparency welcome the above d
 
 **Mirjam Wolfrum, Director Policy Engagement, CDP Europe said:** 
 
-*”The CSRD is a landmark achievement for bold corporate disclosure rules that will drive companies to set emissions and nature targets in line with science. Companies disclosing through CDP are well prepared for the requirements of the new CSRD. We have always evolved and adapted our questionnaires in light of emerging new standards, priorities and regulations, and will continue to do so.”*
+*“The CSRD is a landmark achievement for bold corporate disclosure rules that will drive companies to set emissions and nature targets in line with science. Companies disclosing through CDP are well prepared for the requirements of the new CSRD. We have always evolved and adapted our questionnaires in light of emerging new standards, priorities and regulations, and will continue to do so.”*
 
 **In reaction to the dea,l Elisa Peter, Director of Publish What You Say, said:**
 
@@ -53,4 +53,4 @@ The organisations of the Alliance for Corporate Transparency welcome the above d
 
 **On the outcome of the CSRD trilogue negotiations, Isabella Ritter, EU Policy Officer at ShareAction, comments:**
 
-*”The introduction of mandatory and EU-wide sustainability reporting standards will finally give investors comparable and qualitative sustainability data to better consider the impacts of their investments. With the standards covering the full ESG spectrum and following a double materiality approach, investors will be able to reorient capital flows towards more sustainable activities. In particular, companies’ disclosures on transition plans, including GHG emission reduction targets, will provide investors with much-awaited information about the climate ambitions of their investee companies.”*
+*“The introduction of mandatory and EU-wide sustainability reporting standards will finally give investors comparable and qualitative sustainability data to better consider the impacts of their investments. With the standards covering the full ESG spectrum and following a double materiality approach, investors will be able to reorient capital flows towards more sustainable activities. In particular, companies’ disclosures on transition plans, including GHG emission reduction targets, will provide investors with much-awaited information about the climate ambitions of their investee companies.”*
