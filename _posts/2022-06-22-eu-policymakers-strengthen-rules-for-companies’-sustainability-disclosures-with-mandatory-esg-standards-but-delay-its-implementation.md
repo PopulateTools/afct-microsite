@@ -6,11 +6,7 @@ categories: policy
 date: 2022-06-22T11:44:52.083Z
 intro: On Tuesday 21 June, the trilogue negotiations between the European
   Commission, Parliament and Council concluded with an agreement for the EU
-  Corporate Sustainability Reporting Directive (CSRD). The reformed rules will
-  tackle major problems on the quality, consistency and comparability of
-  sustainability information disclosed by companies under existing EU
-  legislation, as evidenced in the studies published by the Alliance for
-  Corporate Transparency.
+  Corporate Sustainability Reporting Directive (CSRD).
 img: /assets/markus-spiske-wiuxlhndclw-unsplash.jpg
 img_listing: /assets/2206_list-image.jpg
 ---
