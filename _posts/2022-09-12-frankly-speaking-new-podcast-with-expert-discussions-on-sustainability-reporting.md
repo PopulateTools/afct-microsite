@@ -19,6 +19,8 @@ Hosted by Richard Howitt, the podcast wil invite  policy makers, businesses, an
 
 An important theme in the podcast is dedicated to sustainability reporting. Upcoming episodes will cover hot topics and key questions surrounding the development of the European Sustainability Reporting Standards, progress at global level,the business experience on  ESG reporting and important corporate responsibility issues such as due diligence. 
 
+![Frankly Speaking](/assets/speakers-4-.png "Frankly Speaking")
+
 ### A peek into the first episodes:
 
 **Development of the draft European Sustainability Reporting Standards:** 
@@ -44,8 +46,6 @@ An important theme in the podcast is dedicated to sustainability reporting. Upco
 **Developments in the field of Green finance around the globe**
 
 * with Marilyn Waite, Climate Finance Fund and Member of the EFRAG’s Sustainability Reporting Board
-
-![Frankly Speaking](/assets/speakers-4-.png "Frankly Speaking")
 
 Richard Howitt, host of the podcast, former Member of the European Parliament and pioneer in the field of corporate disclosure says: 
 
