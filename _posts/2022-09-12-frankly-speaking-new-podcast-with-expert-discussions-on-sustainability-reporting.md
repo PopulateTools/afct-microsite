@@ -45,9 +45,11 @@ An important theme in the podcast is dedicated to sustainability reporting. Upco
 
 * with Marilyn Waite, Climate Finance Fund and Member of the EFRAG’s Sustainability Reporting Board
 
+![Frankly Speaking](/assets/speakers-4-.png "Frankly Speaking")
+
 Richard Howitt, host of the podcast, former Member of the European Parliament and pioneer in the field of corporate disclosure says: 
 
-> *“All who want to see purposeful companies actually make a difference to the social and environmental challenges which we all face, recognise that we will only be able to do so through dialogue, cooperation, ideas and innovation, better understanding of the challenges and by achieving an accountability for all of us, for the contribution we need to make. ‘Frankly Speaking’ hopes to be a forum for all of these. We hope you will join us.”* 
+> ***“All who want to see purposeful companies actually make a difference to the social and environmental challenges which we all face, recognise that we will only be able to do so through dialogue, cooperation, ideas and innovation, better understanding of the challenges and by achieving an accountability for all of us, for the contribution we need to make. ‘Frankly Speaking’ hopes to be a forum for all of these. We hope you will join us.”*** 
 
 Frank Bold is launching its weekly podcast on the 14th of September and will be accessible on Spotify, iTunes, and Google platforms. Follow us on [Twitter](https://twitter.com/purposeofcorp) and subscribe to our [newsletter](https://purposeofcorporation.us10.list-manage.com/subscribe?u=66bafd0ef0d33f5bf8fbe1e87&id=70e69006a7) [](http://eepurl.com/ciwcQD)to receive updates on the podcast.
 
