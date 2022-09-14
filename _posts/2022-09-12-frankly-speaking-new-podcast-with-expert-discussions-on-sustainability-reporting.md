@@ -3,7 +3,7 @@ layout: post
 title: "Frankly Speaking: New podcast with expert discussions on sustainability
   reporting"
 categories: "#monthly-articles"
-date: 2022-09-12T08:19:17.913Z
+date: 2022-09-14T07:50:28.867Z
 intro: "Frank Bold, member and coordinator of the Alliance for Corporate
   Transparency, is launching ‘Frankly Speaking’ - a new podcast discussing the
   latest political, legal, and business developments in the field of
@@ -13,9 +13,9 @@ img_listing: /assets/2209_podcast.jpg
 ---
 *Views expressed in the podcast do not necessarily reflect the opinion of members of the Alliance.* 
 
-**Frank Bold, member and coordinator of the Alliance for Corporate Transparency, is launching ‘Frankly Speaking’ - [a new podcast](https://spoti.fi/3BsVnrf) discussing the latest political, legal, and business developments in the field of sustainability corporate reporting, ESG, and business and human rights.** 
+**Frank Bold, member and coordinator of the Alliance for Corporate Transparency, has launched ‘Frankly Speaking’ - [a new podcast](https://spoti.fi/3BsVnrf) discussing the latest political, legal, and business developments in the field of sustainability corporate reporting, ESG, and business and human rights.** 
 
-Hosted by **Richard Howitt**, the podcast wil invite  policy makers, businesses, and activists committed to corporate responsibility to speak frankly and personally about what moves them to make responsible business the norm and redefine business!
+Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses, and activists committed to corporate responsibility to speak frankly and personally about what moves them to make responsible business the norm and redefine business!
 
 **An important theme in the podcast is dedicated to sustainability reporting.** Upcoming episodes will cover hot topics and key questions surrounding the development of the European Sustainability Reporting Standards, progress at global level,the business experience on  ESG reporting and important corporate responsibility issues such as due diligence. 
 
@@ -52,7 +52,7 @@ Richard Howitt, host of the podcast, former Member of the European Parliament an
 
 > ***“All who want to see purposeful companies actually make a difference to the social and environmental challenges which we all face, recognise that we will only be able to do so through dialogue, cooperation, ideas and innovation, better understanding of the challenges and by achieving an accountability for all of us, for the contribution we need to make. ‘Frankly Speaking’ hopes to be a forum for all of these. We hope you will join us.”*** 
 
-##### A new episode is published every Wednesday and available on:
+#### A new episode is published every Wednesday and available on:
 
 * Spotify: <https://spoti.fi/3BsVnrf>
 * Apple Podcasts: <https://apple.co/3D78OOS>
