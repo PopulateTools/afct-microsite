@@ -26,7 +26,7 @@ Hosted by **Richard Howitt**, the podcast wil invite  policy makers, businesses
 **Development of the draft European Sustainability Reporting Standards:** 
 
 * with Wim Bartels, Senior Sustainability Partner at Deloitte and Member of the EFRAG’s Sustainability Reporting Board. 
-* Listen to the conversation here: <https://spoti.fi/3BsVnrf>
+* Listen to the conversation here: <https://spoti.fi/3BuQxKg>[](https://spoti.fi/3BsVnrf)
 
 **Due diligence in times of war:** 
 
