@@ -52,7 +52,7 @@ Richard Howitt, host of the podcast, former Member of the European Parliament an
 
 > ***“All who want to see purposeful companies actually make a difference to the social and environmental challenges which we all face, recognise that we will only be able to do so through dialogue, cooperation, ideas and innovation, better understanding of the challenges and by achieving an accountability for all of us, for the contribution we need to make. ‘Frankly Speaking’ hopes to be a forum for all of these. We hope you will join us.”*** 
 
-A new episode is published every Wednesday and available on:
+##### A new episode is published every Wednesday and available on:
 
 * Spotify: <https://spoti.fi/3BsVnrf>
 * Apple Podcasts: <https://apple.co/3D78OOS>
