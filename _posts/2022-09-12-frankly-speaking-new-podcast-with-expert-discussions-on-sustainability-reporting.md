@@ -26,11 +26,12 @@ Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses
 **Development of the draft European Sustainability Reporting Standards:** 
 
 * with Wim Bartels, Senior Sustainability Partner at Deloitte and Member of the EFRAG’s Sustainability Reporting Board. 
-* Listen to the conversation here: <https://spoti.fi/3BuQxKg>[](https://spoti.fi/3BsVnrf)
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3Mg0xa3y6iSZXmCZiYB5tM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 **Due diligence in times of war:** 
 
 * with Olena Uvarova (Associate Professor, Yaroslav the Wise National Law University) and Anita Ramasastry (Henry M. Jackson Professor of Law, University of Washington School of Law)
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5aT9qct7FSfI1Mr3fsl83v?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 **Reporting on impacts:**
 
