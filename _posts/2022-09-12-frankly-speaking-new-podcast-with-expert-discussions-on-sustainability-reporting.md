@@ -36,6 +36,7 @@ Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses
 **Reporting on impacts:**
 
 * with Eelco van der Enden, CEO Global Reporting Initiative (GRI)
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3m9dyYZhnQNnSm97xuKQTY?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 **Corporate Sustainability Due Diligence Directive:**
 
