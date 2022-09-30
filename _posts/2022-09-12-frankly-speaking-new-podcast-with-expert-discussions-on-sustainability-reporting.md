@@ -3,7 +3,7 @@ layout: post
 title: "Frankly Speaking: New podcast with expert discussions on sustainability
   reporting"
 categories: "#monthly-articles"
-date: 2022-09-14T07:50:28.867Z
+date: 2022-09-28T07:50:28.867Z
 intro: "Frank Bold, member and coordinator of the Alliance for Corporate
   Transparency, is launching ‘Frankly Speaking’ - a new podcast discussing the
   latest political, legal, and business developments in the field of
@@ -36,6 +36,7 @@ Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses
 **Reporting on impacts:**
 
 * with Eelco van der Enden, CEO Global Reporting Initiative (GRI)
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3m9dyYZhnQNnSm97xuKQTY?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 **Corporate Sustainability Due Diligence Directive:**
 
