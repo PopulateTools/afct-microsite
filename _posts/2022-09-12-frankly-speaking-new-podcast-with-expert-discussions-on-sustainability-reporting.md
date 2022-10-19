@@ -48,9 +48,10 @@ Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses
 * with Rahel Damamme, ESG and Sustainability Reporting Leader at Decathlon
 <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/episode/2flwXwJNUEVK0ynbvIkeUg?utm_source=generator&amp;theme=0" frameborder="0" width="100%" height="152"></iframe>
 
-**Developments in the field of Green finance around the globe**
+**Developments in the field of green finance around the globe**
 
-* with Marilyn Waite, Climate Finance Fund and Member of the EFRAG’s Sustainability Reporting Board
+* with Marilyn Waite, Managing Director of the Climate Finance Fund and Member of the EFRAG’s Administrative Board
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0fvBJgFpOXwXVuWIinHQs9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 Richard Howitt, host of the podcast, former Member of the European Parliament and pioneer in the field of corporate disclosure says: 
 
