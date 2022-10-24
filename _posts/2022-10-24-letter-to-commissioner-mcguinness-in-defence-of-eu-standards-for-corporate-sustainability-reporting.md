@@ -8,6 +8,7 @@ intro: 37 organisations, representing civil society and trade unions, urge the
   European Commissioner to stay committed to the development and adoption of an
   ambitious and urgent framework to improve and standardise corporate disclosure
   on sustainability matters in the EU.
+img: /assets/scott-graham-oqmzwnd3thu-unsplash.jpg
 ---
 Dear Commissioner McGuinness,\
 \
