@@ -10,10 +10,10 @@ intro: 37 organisations, representing civil society and trade unions, urge the
   on sustainability matters in the EU.
 img: /assets/scott-graham-oqmzwnd3thu-unsplash.jpg
 ---
-Dear Commissioner McGuinness,\
-\
-In the last few weeks and months, strong pressure has been directed to the European Commission to slow down the pace and ambition of mandatory EU sustainability reporting standards (ESRS).\
-\
+Dear Commissioner McGuinness,
+
+In the last few weeks and months, strong pressure has been directed to the European Commission to slow down the pace and ambition of mandatory EU sustainability reporting standards (ESRS).
+
 The undersigned 37 organisations, representing civil society and trade unions**, urge the European Commissioner to stay committed to the development and adoption of an ambitious and urgent framework to improve and standardise corporate disclosure on sustainability matters in the EU.** We are writing to decision-makers in order to dispel doubts and critiques that go against the mandate provided by co-legislators in the CSRD (Articles 19a and 29b).
 
 **1. Sustainability risks and impacts are connected: a climate-first approach does not work, including for climate**
