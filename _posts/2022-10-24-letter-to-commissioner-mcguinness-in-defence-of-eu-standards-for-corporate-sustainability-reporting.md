@@ -39,4 +39,10 @@ The undersigned 37 organisations, representing civil society and trade unions**,
 
 **We appeal to the European Commission to uphold the legal mandate agreed in the CSRD and not give in to political pressure and narrow business interests that aim to hinder EU progress in the finalisation of much-awaited EU standards.** The undersigned signatories oppose the prioritisation of certain sustainability matters over others, warn against an arbitrary reduction of disclosure requirements, and support international alignment but not at the cost of lowering EU's sustainability ambitions.
 
+
+
+\[1] See more on the interdependencies between climate and biodiversity in the IPBES-IPCC workshop report: https://www.ipcc.ch/site/assets/uploads/2021/07/IPBES_ IPCC_WR_12_2020.pdf
+
+\[2] The European Central Bank has stated that any international standard should cover all aspects of sustainability. A joint statement by UN institutions, agencies, and associated organisations highlighted the need for *“a holistic and forward-looking approach to sustainability management and disclosure”* Furthermore, a group of Chief Financial Officers urged the ISSB to move quickly to *“move quickly to other topics after climate to capture the interconnectedness of all sustainability topics”*
+
 ![Signatories](/assets/signatories-letter.png "Signatories")
