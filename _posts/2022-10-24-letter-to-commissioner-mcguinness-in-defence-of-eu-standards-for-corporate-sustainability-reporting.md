@@ -11,6 +11,8 @@ intro: 37 organisations, representing civil society and trade unions, urge the
 img: /assets/scott-graham-oqmzwnd3thu-unsplash.jpg
 img_listing: /assets/2210_letter_list.jpg
 ---
+**24 October 2022**
+
 Dear Commissioner McGuinness,
 
 In the last few weeks and months, strong pressure has been directed to the European Commission to slow down the pace and ambition of mandatory EU sustainability reporting standards (ESRS).
