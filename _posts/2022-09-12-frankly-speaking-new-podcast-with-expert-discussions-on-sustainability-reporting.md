@@ -3,7 +3,7 @@ layout: post
 title: "Frankly Speaking: New podcast with expert discussions on sustainability
   reporting"
 categories: "#monthly-articles"
-date: 2022-10-19T04:36:47.964Z
+date: 2022-10-26T09:30:11.272Z
 intro: "Frank Bold, member and coordinator of the Alliance for Corporate
   Transparency, is launching ‘Frankly Speaking’ - a new podcast discussing the
   latest political, legal, and business developments in the field of
