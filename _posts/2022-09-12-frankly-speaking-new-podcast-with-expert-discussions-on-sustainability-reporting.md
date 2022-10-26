@@ -3,7 +3,7 @@ layout: post
 title: "Frankly Speaking: New podcast with expert discussions on sustainability
   reporting"
 categories: "#monthly-articles"
-date: 2022-10-19T04:36:47.964Z
+date: 2022-10-26T09:30:11.272Z
 intro: "Frank Bold, member and coordinator of the Alliance for Corporate
   Transparency, is launching ‘Frankly Speaking’ - a new podcast discussing the
   latest political, legal, and business developments in the field of
@@ -52,6 +52,11 @@ Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses
 
 * with Marilyn Waite, Managing Director of the Climate Finance Fund and Member of the EFRAG’s Administrative Board
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0fvBJgFpOXwXVuWIinHQs9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+**Downstream Due Diligence: Insights from a Multinational Telecoms Company**
+
+* with Théo Jaekel, Business and Human Rights Director at Ericsson
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4EYBryTkbu7CD3jpBnEIFm?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 Richard Howitt, host of the podcast, former Member of the European Parliament and pioneer in the field of corporate disclosure says: 
 
