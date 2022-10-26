@@ -53,6 +53,11 @@ Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses
 * with Marilyn Waite, Managing Director of the Climate Finance Fund and Member of the EFRAG’s Administrative Board
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0fvBJgFpOXwXVuWIinHQs9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
+**Downstream Due Diligence: Insights from a Multinational Telecoms Company**
+
+* with Théo Jaekel, Business and Human Rights Director at Ericsson
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0fvBJgFpOXwXVuWIinHQs9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 Richard Howitt, host of the podcast, former Member of the European Parliament and pioneer in the field of corporate disclosure says: 
 
 > ***“All who want to see purposeful companies actually make a difference to the social and environmental challenges which we all face, recognise that we will only be able to do so through dialogue, cooperation, ideas and innovation, better understanding of the challenges and by achieving an accountability for all of us, for the contribution we need to make. ‘Frankly Speaking’ hopes to be a forum for all of these. We hope you will join us.”*** 
