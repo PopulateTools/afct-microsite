@@ -1,0 +1,57 @@
+---
+layout: post
+title: The EU Parliament confirms new transparency obligations for companies on
+  sustainability and starts the clock for mandatory reporting
+categories: policy
+date: 2022-11-04T10:23:41.426Z
+intro: The EU Commission, on his part, is responsible for adopting the first set
+  of technical standards by June 2023 clarifying disclosure requirements for
+  companies in all sectors, as well as more detailed standards tailored to
+  specific industries in the next two years. Over 30 civil society organisations
+  and trade unions recently raised strong concerns about business and political
+  lobbies working to lower ambition and slow the pace for the adoption of these
+  EU standards.
+---
+Members of the European Parliament voted on November 10 to confirm the [agreement reached earlier this summer](https://www.allianceforcorporatetransparency.org/news/eu-policymakers-strengthen-rules-for-companies-sustainability-disclosures-with-mandatory-esg-standards-but-delay-its-implementation.html) to strengthen companies’ obligations to disclose information on their sustainability risks and impacts, and adopt mandatory EU standards covering Environmental Social and Governance (ESG) matters.
+
+Governments in the 27 Member States now have the responsibility to ensure their national legislation incorporates the changes and prepare companies to start reporting according to the new rules and standards.
+
+The EU Commission, on his part, is responsible for adopting the first set of technical standards by June 2023 clarifying disclosure requirements for companies in all sectors, as well as more detailed standards tailored to specific industries in the next two years. **Over 30 civil society organisations and trade unions recently [raised strong concerns about business and political lobbies](https://www.allianceforcorporatetransparency.org/news/letter-to-commissioner-mcguinness-in-defence-of-eu-standards-for-corporate-sustainability-reporting.html) working to lower ambition and slow the pace for the adoption of these EU standards.**
+
+### **W﻿hy is this important?**
+
+The CSRD sits at the crossroads of the broader EU policy framework and it is instrumental to achieve key goals of the European Green Deal, the EU Climate Law, the Sustainable Finance agenda or the REPower EU plan. The reform is designed to get the bloc on track to fulfil the commitments of the Paris Agreement, reach EU targets for emission reduction and achieve climate neutrality by 2050 as well as fulfil EU commitments on biodiversity or human rights. 
+
+The new rules and EU standards will tackle major problems on the quality, consistency and comparability of sustainability information disclosed by companies as well as root out widespread greenwashing practices. Without adequate and comparable sustainability data, public and private finance won’t be rightly allocated to support a just transition for a net zero carbon economy. 
+
+###  What are the next steps to ensure the success of this reform?
+
+#### **1. Harmonised and prompt CSRD implementation across the EU**
+
+* Following the final vote at the EU Parliament, the CSRD will be published in the Official Journal of the European Union. Member States must make necessary changes to adapt the new obligations in their national frameworks in the next 18 months. 
+* The new rules were initially proposed to enter into effect by 2023 for all large companies in the EU. However, the final agreement reached in June delayed the application date to 2024 for large listed companies with more than 500 employees (scope of previous legislation) and 2025 for other large companies listed and non-listed with more than 250 employees. This will only undermine a level playing field and put some countries and companies at a disadvantage to access sustainable finance flows (i.e over half a trillion expected to be [mobilised](https://ec.europa.eu/commission/presscorner/detail/en/SPEECH_22_6450) in the next few years to reach 2030 goals on climate, pollution or biodiversity). Furthermore, [several countries](https://www.ceps.eu/wp-content/uploads/2021/04/EV0220277ENN.en_.pdf) in the EU have already gone beyond with the transposition of the previous legislation (Denmark included all listed companies and other large companies, Spain lowered the threshold for consolidated reporting to companies with more than 250 employees, Sweden, Romania and France covered all large companies listed and non-listed). 
+* **It is imperative that Member States provide clarity to companies by making the necessary changes before January 2024 (in the next 12 months) and ensure all large companies (listed and non-listed) gather information during the financial year 2024 in order to report in 2025.** 
+
+#### **2. Adoption of comprehensive EU standards in line with the legal mandate** 
+
+* The CSRD commits the EU to adopt encompassing standards covering all sustainability areas (see article 19a and 29b) applicable to all companies complemented by further sector-specific standards to be developed in the next two years. The plans to adopt full-fledged ESG standards have been welcomed by investors, asset managers and civil society, who called for its [immediate application in 2024](https://en.frankbold.org/sites/default/files/zpravodaj/multi-stakeholder_statement_csrd_reform_and_eu_standards_1.pdf) and recommended the [inclusion of SMEs operating in high-risk sectors](https://en.frankbold.org/sites/default/files/publikace/joint_letter_calling_to_broaden_the_scope_of_eu_csrd.pdf) in the scope for mandatory reporting. 
+* EFRAG, a public-private body, is in charge of developing the EU standards following the mandate given by EU legislators in the CSRD, where it is specifically stated that the technical advice must be developed following due process, by a balanced representation of stakeholders (including preparers, investors, civil society and trade unions) and enough public funding should be made available to ensure independence of EFRAG. 
+* The first set of standards must get the approval of EFRAG’s Sustainability Reporting Board by mid-November and submitted to the EU Commission. As mentioned above, the technical advice is prepared by a multi-stakeholder expert group including input of business representatives and financial market players. Undue political pressure by the same organisations to alter the technical advice should be regarded as an affront to due process. These standards will be then presented in the form of a Delegated Act and must have the tacit approval (no majority opposition) from Council and EU Parliament. 
+* **Civil society organisations and trade unions have urged the European Commission to uphold the legal mandate agreed in the CSRD and not give in to political pressure and narrow business interests that aim to hinder EU progress in the finalisation of much-awaited EU standards.** Expert sustainability organisations have [warned the EC](https://www.allianceforcorporatetransparency.org/news/letter-to-commissioner-mcguinness-in-defence-of-eu-standards-for-corporate-sustainability-reporting.html) against the prioritisation of certain sustainability matters over others as well as an arbitrary reduction of disclosure requirements. 
+
+**3. The EU must engage with international developments without lowering EU’s sustainability ambitions**
+
+* As several debates on ESG reporting are taking place this week during COP27 in Egypt, civil society groups have [repeatedly asked](https://en.frankbold.org/sites/default/files/zpravodaj/civil_society_statement_on_the_international_sustainability_standards_board_final3.pdf) the International Sustainability Standards Board to better reflect in global standards the relationship between sustainability risks and impacts \[1], and recognise the interdependence of climate with nature and social issues to ensure a just transition. The EU standards will provide much-needed information from companies' risks and impacts related to ESG matters, in line with the European policy framework. The focus and role of EU institutions and stakeholders should be placed in reviewing and improving global standards, not in hindering EU progress.
+* A [joint statement](https://www.unepfi.org/wordpress/wp-content/uploads/2022/06/UN-Joint-Statement-ISSB-Consultation.pdf) by UN institutions, agencies, and associated organisations highlighted the need for *“a holistic and forward-looking approach to sustainability management and disclosure”* in the development of global standards. Furthermore, a group of over 50 Chief Financial Officers [urged](https://www.ifrs.org/content/dam/ifrs/project/general-sustainability-related-disclosures/exposure-draft-comment-letters/a/a4s-on-behalf-of-cfos-c2234987-221f-4b4a-8380-85c5cf3a41d8/the-cfo-response-to-the-proposed-ifrs-sustainability-disclosure-standards---with-signatories.pdf) the ISSB to move quickly to *“move quickly to other topics after climate to capture the interconnectedness of all sustainability topics”* and recognise that *“investors may need disclosures on broader social and environmental impacts to assess risk and inform investment decisions”.* 
+* Achieving international standardisation and a level playing field is important and in the interest of the EU. Advocates for global alignment can not, in good faith, promote a slower EU pace, lower its ambition or seek to de-prioritise environmental or social disclosures.
+
+For any questions, please contact **[Susanna Arus](mailto:susanna.arus@frankbold.org), Communications and EU Public Affairs at Frank Bold**. Additional background information: 
+
+* [Letter to Commissioner McGuinness](https://www.allianceforcorporatetransparency.org/news/letter-to-commissioner-mcguinness-in-defence-of-eu-standards-for-corporate-sustainability-reporting.html) in defence of EU standards for corporate sustainability reporting
+* Civil society [statement](https://en.frankbold.org/sites/default/files/publikace/civil_society_statement_on_the_international_sustainability_standards_board_final3.pdf) on the International Sustainability Standards Board
+* [Summary results 20129 Alliance research on sustainability disclosures of 1000 EU companies](https://www.allianceforcorporatetransparency.org/news/landmark-research.html) (database [here](https://www.allianceforcorporatetransparency.org/database/2019.html); report [here](https://www.allianceforcorporatetransparency.org/assets/2019_Research_Report%20_Alliance_for_Corporate_Transparency.pdf)) 
+* Expert articles on the development of European and global corporate reporting standards and its relation with sustainable finance and due diligence [can be found here. ](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles)
+
+
+
+###### \[1] In the EU, the basis for corporate sustainability reporting obligations is connected to the impacts that companies have on people and the planet, as well as to the risks and opportunities that companies face from sustainability matters. This is called double materiality and has been embedded in various pieces of EU legislation. The ISSB proposals for global standardisation are based on the effect that sustainability matters have or may have on the financial position and prospects of a company. This is labelled as a single materiality approach.
