@@ -18,7 +18,7 @@ Governments in the 27 Member States now have the responsibility to ensure their 
 
 The EU Commission, on his part, is responsible for adopting the first set of technical standards by June 2023 clarifying disclosure requirements for companies in all sectors, as well as more detailed standards tailored to specific industries in the next two years. Over 30 civil society organisations and trade unions recently [raised strong concerns about business and political lobbies](https://www.allianceforcorporatetransparency.org/news/letter-to-commissioner-mcguinness-in-defence-of-eu-standards-for-corporate-sustainability-reporting.html) working to lower ambition and slow the pace for the adoption of these EU standards.
 
-### **W﻿hy is this important?**
+### W﻿hy is this important?
 
 The CSRD sits at the crossroads of the broader EU policy framework and it is instrumental to achieve key goals of the European Green Deal, the EU Climate Law, the Sustainable Finance agenda or the REPower EU plan. The reform is designed to get the bloc on track to fulfil the commitments of the Paris Agreement, reach EU targets for emission reduction and achieve climate neutrality by 2050 as well as fulfil EU commitments on biodiversity or human rights. 
 
