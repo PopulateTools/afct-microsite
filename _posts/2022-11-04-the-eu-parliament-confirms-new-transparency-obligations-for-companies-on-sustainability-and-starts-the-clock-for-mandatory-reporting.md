@@ -5,11 +5,10 @@ title: The EU Parliament confirms new transparency obligations for companies on
 categories: policy
 date: 2022-11-04T10:23:41.426Z
 intro: Members of the European Parliament voted on November 10 to confirm the
-  [agreement reached earlier this
-  summer](https://www.allianceforcorporatetransparency.org/news/eu-policymakers-strengthen-rules-for-companies-sustainability-disclosures-with-mandatory-esg-standards-but-delay-its-implementation.html)
-  to strengthen companies’ obligations to disclose information on their
-  sustainability risks and impacts, and adopt mandatory EU standards covering
-  Environmental Social and Governance (ESG) matters.
+  agreement reached earlier this summer to strengthen companies’ obligations to
+  disclose information on their sustainability risks and impacts, and adopt
+  mandatory EU standards covering Environmental Social and Governance (ESG)
+  matters.
 img: /assets/guillaume-perigois-0nrkvdda2fw-unsplash-1-.jpg
 img_listing: /assets/22-11-list-image.jpg
 ---
