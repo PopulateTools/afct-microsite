@@ -4,19 +4,20 @@ title: The EU Parliament confirms new transparency obligations for companies on
   sustainability and starts the clock for mandatory reporting
 categories: policy
 date: 2022-11-04T10:23:41.426Z
-intro: The EU Commission, on his part, is responsible for adopting the first set
-  of technical standards by June 2023 clarifying disclosure requirements for
-  companies in all sectors, as well as more detailed standards tailored to
-  specific industries in the next two years. Over 30 civil society organisations
-  and trade unions recently raised strong concerns about business and political
-  lobbies working to lower ambition and slow the pace for the adoption of these
-  EU standards.
+intro: Members of the European Parliament voted on November 10 to confirm the
+  [agreement reached earlier this
+  summer](https://www.allianceforcorporatetransparency.org/news/eu-policymakers-strengthen-rules-for-companies-sustainability-disclosures-with-mandatory-esg-standards-but-delay-its-implementation.html)
+  to strengthen companies’ obligations to disclose information on their
+  sustainability risks and impacts, and adopt mandatory EU standards covering
+  Environmental Social and Governance (ESG) matters.
+img: /assets/guillaume-perigois-0nrkvdda2fw-unsplash-1-.jpg
+img_listing: /assets/22-11-list-image.jpg
 ---
 Members of the European Parliament voted on November 10 to confirm the [agreement reached earlier this summer](https://www.allianceforcorporatetransparency.org/news/eu-policymakers-strengthen-rules-for-companies-sustainability-disclosures-with-mandatory-esg-standards-but-delay-its-implementation.html) to strengthen companies’ obligations to disclose information on their sustainability risks and impacts, and adopt mandatory EU standards covering Environmental Social and Governance (ESG) matters.
 
 Governments in the 27 Member States now have the responsibility to ensure their national legislation incorporates the changes and prepare companies to start reporting according to the new rules and standards.
 
-The EU Commission, on his part, is responsible for adopting the first set of technical standards by June 2023 clarifying disclosure requirements for companies in all sectors, as well as more detailed standards tailored to specific industries in the next two years. **Over 30 civil society organisations and trade unions recently [raised strong concerns about business and political lobbies](https://www.allianceforcorporatetransparency.org/news/letter-to-commissioner-mcguinness-in-defence-of-eu-standards-for-corporate-sustainability-reporting.html) working to lower ambition and slow the pace for the adoption of these EU standards.**
+The EU Commission, on his part, is responsible for adopting the first set of technical standards by June 2023 clarifying disclosure requirements for companies in all sectors, as well as more detailed standards tailored to specific industries in the next two years. Over 30 civil society organisations and trade unions recently [raised strong concerns about business and political lobbies](https://www.allianceforcorporatetransparency.org/news/letter-to-commissioner-mcguinness-in-defence-of-eu-standards-for-corporate-sustainability-reporting.html) working to lower ambition and slow the pace for the adoption of these EU standards.
 
 ### **W﻿hy is this important?**
 
@@ -51,7 +52,5 @@ For any questions, please contact **[Susanna Arus](mailto:susanna.arus@frankbold
 * Civil society [statement](https://en.frankbold.org/sites/default/files/publikace/civil_society_statement_on_the_international_sustainability_standards_board_final3.pdf) on the International Sustainability Standards Board
 * [Summary results 20129 Alliance research on sustainability disclosures of 1000 EU companies](https://www.allianceforcorporatetransparency.org/news/landmark-research.html) (database [here](https://www.allianceforcorporatetransparency.org/database/2019.html); report [here](https://www.allianceforcorporatetransparency.org/assets/2019_Research_Report%20_Alliance_for_Corporate_Transparency.pdf)) 
 * Expert articles on the development of European and global corporate reporting standards and its relation with sustainable finance and due diligence [can be found here. ](https://www.allianceforcorporatetransparency.org/news/categories/#monthly-articles)
-
-
 
 ###### \[1] In the EU, the basis for corporate sustainability reporting obligations is connected to the impacts that companies have on people and the planet, as well as to the risks and opportunities that companies face from sustainability matters. This is called double materiality and has been embedded in various pieces of EU legislation. The ISSB proposals for global standardisation are based on the effect that sustainability matters have or may have on the financial position and prospects of a company. This is labelled as a single materiality approach.
