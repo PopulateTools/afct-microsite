@@ -46,7 +46,7 @@ Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses
 **Sustainability reporting in practice:**
 
 * with Rahel Damamme, ESG and Sustainability Reporting Leader at Decathlon
-<iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/episode/2flwXwJNUEVK0ynbvIkeUg?utm_source=generator&amp;theme=0" frameborder="0" width="100%" height="152"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2flwXwJNUEVK0ynbvIkeUg?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 **Developments in the field of green finance around the globe**
 
@@ -57,6 +57,16 @@ Hosted by **Richard Howitt**, the podcast will invite policy makers, businesses
 
 * with Théo Jaekel, Business and Human Rights Director at Ericsson
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4EYBryTkbu7CD3jpBnEIFm?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+**Implementing Due Diligence in a Medium-Sized Company**
+
+* with Julien Lavarini, Manager of Finance and Responsible Supply Chain at Lorenz Snack-World
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0Q83zizLVU6qP0qVIrkzxI?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+**Sustainability Performance of Financial Institutions**
+
+* with Richard Gardiner, EU Public Policy Lead of the World Benchmarking Alliance
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3WdywBDCevnw0GAEiVgpza?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
 
 Richard Howitt, host of the podcast, former Member of the European Parliament and pioneer in the field of corporate disclosure says: 
 
