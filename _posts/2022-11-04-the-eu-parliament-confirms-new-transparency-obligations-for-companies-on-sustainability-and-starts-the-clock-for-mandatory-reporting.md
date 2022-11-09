@@ -1,12 +1,12 @@
 ---
 layout: post
-title: The EU Parliament confirms new transparency obligations for companies on
-  sustainability and starts the clock for mandatory reporting
+title: The EU Parliament votes to confirm new transparency obligations for
+  companies on sustainability and starts the clock for mandatory reporting
 categories: policy
-date: 2022-11-08T17:29:05.523Z
-intro: Members of the European Parliament voted on November 10 to confirm the
-  agreement reached earlier this summer to strengthen companies’ obligations to
-  disclose information on their sustainability risks and impacts, and adopt
+date: 2022-11-09T08:42:13.439Z
+intro: Members of the European Parliament will vote on November 10 to confirm
+  the agreement reached earlier this summer to strengthen companies’ obligations
+  to disclose information on their sustainability risks and impacts, and adopt
   mandatory EU standards covering Environmental Social and Governance (ESG)
   matters.
 img: /assets/guillaume-perigois-0nrkvdda2fw-unsplash-1-.jpg
