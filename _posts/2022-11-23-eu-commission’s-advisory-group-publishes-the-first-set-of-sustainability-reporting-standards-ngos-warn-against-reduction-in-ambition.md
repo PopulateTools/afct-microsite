@@ -3,7 +3,7 @@ layout: post
 title: EU Commission’s advisory group publishes the first set of sustainability
   reporting standards. NGOs warn against reduction in ambition
 categories: policy
-date: 2022-11-23T12:04:23.287Z
+date: 2022-11-23T12:25:41.338Z
 intro: "Sustainability reporting experts and NGOs welcome the adoption of the EU
   sustainability reporting standards (ESRS) by EFRAG submitted this week to the
   European Commission. Whilst the ambition of the ESRS remains limited in
