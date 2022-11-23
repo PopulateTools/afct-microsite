@@ -10,6 +10,8 @@ intro: "Sustainability reporting experts and NGOs welcome the adoption of the EU
   several areas, they represent a major improvement for companies as well as for
   users of sustainability information and address the biggest problems in
   quality and reliability of corporate reporting. "
+img: /assets/brooke-campbell-rw2-y0nsikq-unsplash.jpg
+img_listing: /assets/brooke-campbell-rw2-y0nsikq-unsplash1.jpg
 ---
 **Sustainability reporting experts and NGOs welcome the adoption of the EU sustainability reporting standards (ESRS) by [EFRAG submitted this week to the European Commission](https://www.efrag.org/Assets/Download?assetUrl=/sites/webpublishing/SiteAssets/final_EFRAG+Draft+Press+Release+.pdf). Whilst the ambition of the ESRS remains limited in several areas, they represent a major improvement for companies as well as for users of sustainability information and address the biggest problems in quality and reliability of corporate reporting.** 
 
