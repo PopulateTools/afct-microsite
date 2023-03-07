@@ -10,7 +10,7 @@ intro: NGOs and civil society groups will only support an ambitious first set of
   alongside 60+ companies and investors worth 651bn USD, and caution against
   making significant changes at this stage, as this would risk discrediting the
   process so far and undoing a good compromise.
-img: /assets/denise-jans-hjmw8fdp-ho-unsplash.jpg
+img: /assets/denise-jans-hjmw8fdp-ho-unsplash1.jpg
 img_listing: /assets/rsz_1denise-jans-hjmw8fdp-ho-unsplash.jpg
 ---
 **NGOs and civil society groups will only support an ambitious first set of sector-agnostic ESRS that closely builds on the EFRAG drafts [adopted](https://www.efrag.org/Assets/Download?assetUrl=/sites/webpublishing/SiteAssets/final_EFRAG+Draft+Press+Release+.pdf) last November. They urge the Commission to follow EFRAG's technical advice alongside [60+ companies and investors worth 651bn USD](https://cdn.cdp.net/cdp-production/comfy/cms/files/files/000/007/147/original/Business_letter_in_support_of_ambitious_ESRS_to_Commissioner_McGuinness_FINAL.pdf), and caution against making significant changes at this stage, as this would risk discrediting the process so far and undoing a good compromise.**
