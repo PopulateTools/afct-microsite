@@ -6,6 +6,8 @@ date: 2023-04-14T14:14:04.847Z
 intro: "Amid current discussions on the shape of the European Sustainability
   Reporting Standards (ESRS), Frank Bold has developed an FAQ to answer the most
   important questions around the ESRS. "
+img: /assets/bulb-gd33d28c79_1920.jpg
+img_listing: /assets/bulb-gd33d28c79_1920.jpg
 ---
 **Amid current discussions on the shape of the European Sustainability Reporting Standards (ESRS), Frank Bold has developed an FAQ to answer the most important questions around the ESRS.** 
 
