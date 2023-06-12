@@ -3,7 +3,7 @@ layout: post
 title: Commission’s proposal undermines transparency rules for corporate
   sustainability reporting
 categories: policy
-date: 2023-06-12T07:53:30.982Z
+date: 2023-06-12T08:04:31.222Z
 intro: Last Friday, the European Commission published for public consultation a
   draft Delegated Act on the first set of European Sustainability Reporting
   Standards. NGOs, civil society groups and investors associations are very
