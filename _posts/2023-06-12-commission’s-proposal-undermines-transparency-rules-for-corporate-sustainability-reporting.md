@@ -2,13 +2,14 @@
 layout: post
 title: Commission’s proposal undermines transparency rules for corporate
   sustainability reporting
-categories: Last Friday, the European Commission published for public
-  consultation a draft Delegated Act on the first set of European Sustainability
-  Reporting Standards. NGOs, civil society groups and investors associations are
-  very concerned with the significant reduction of the ambition compared to
-  EFRAG’s technical advice and urge the Commission to introduce a robust,
-  mandatory and consistent reporting framework and to not allow greenwashing.
+categories: policy
 date: 2023-06-12T08:06:11.345Z
+intro: Last Friday, the European Commission published for public consultation a
+  draft Delegated Act on the first set of European Sustainability Reporting
+  Standards. NGOs, civil society groups and investors associations are very
+  concerned with the significant reduction of the ambition compared to EFRAG’s
+  technical advice and urge the Commission to introduce a robust, mandatory and
+  consistent reporting framework and to not allow greenwashing.
 img: /assets/alexandre-lallemand-pcs3mol14sk-unsplash.jpg
 img_listing: /assets/rsz_alexandre-lallemand-pcs3mol14sk-unsplash.jpg
 ---
