@@ -8,7 +8,7 @@ intro: "EU policy-makers agreed last night to postpone by two years the deadline
   reporting, which was initially set in the EU Corporate Sustainability
   Reporting Directive for June 2024. "
 img: /assets/taras-hrytsak-viefakw-9c0-unsplash.jpg
-img_listing: ""
+img_listing: /assets/taras-hrytsak-viefakw-9c0-unsplash.jpg
 ---
 EFRAG - the technical advisory body preparing the EU draft standards - started working on sector-specific standards in 2022 but paused in Spring 2023 by [direct request](https://ec.europa.eu/commission/presscorner/detail/en/SPEECH_23_1812) of the EU Commission to prioritise other work on the implementation of the first set of sector-agnostic EU standards. 
 
