@@ -44,8 +44,9 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
       - name: Upload ftp
-        uses: sebastianpopp/ftp-action@releases/v2
+        uses: tomato4/ftp-action@v3.0.0
         with:
+          command: "mirror"
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
