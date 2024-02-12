@@ -3,7 +3,10 @@ layout: post
 title: Industries with high sustainability risks and impacts to get EU
   sector-specific standards adopted as soon as ready
 date: 2024-02-12T11:45:23.947Z
-intro: ""
+intro: "EU policy-makers agreed last night to postpone by two years the deadline
+  for the adoption of sector-specific standards for companies sustainability
+  reporting, which was initially set in the EU Corporate Sustainability
+  Reporting Directive for June 2024. "
 img: /assets/taras-hrytsak-viefakw-9c0-unsplash.jpg
 img_listing: /assets/taras-hrytsak-viefakw-9c0-unsplash.jpg
 ---
