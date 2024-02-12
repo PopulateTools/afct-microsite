@@ -3,13 +3,12 @@ layout: post
 title: Industries with high sustainability risks and impacts to get EU
   sector-specific standards adopted as soon as ready
 date: 2024-02-12T11:45:23.947Z
-intro: "EU policy-makers agreed last night to postpone by two years the deadline
-  for the adoption of sector-specific standards for companies sustainability
-  reporting, which was initially set in the EU Corporate Sustainability
-  Reporting Directive for June 2024. "
+intro: ""
 img: /assets/taras-hrytsak-viefakw-9c0-unsplash.jpg
 img_listing: /assets/taras-hrytsak-viefakw-9c0-unsplash.jpg
 ---
+EU policy-makers agreed last night to postpone by two years the deadline for the adoption of sector-specific standards for companies sustainability reporting, which was initially set in the EU Corporate Sustainability Reporting Directive for June 2024. 
+
 EFRAG - the technical advisory body preparing the EU draft standards - started working on sector-specific standards in 2022 but paused in Spring 2023 by [direct request](https://ec.europa.eu/commission/presscorner/detail/en/SPEECH_23_1812) of the EU Commission to prioritise other work on the implementation of the first set of sector-agnostic EU standards. 
 
 Although we regretted this decision, we welcome that Members of the European Parliament and Council negotiators further precised the mandate for the EU Commission to adopt eight of the sustainability standards “as soon as each is ready”, or at the latest by 2026. 
@@ -29,7 +28,5 @@ Partners of the Alliance for Corporate Transparency remain committed to the deve
 > “The Parliament and Council's decision to adopt eight sector standards 'as soon as ready' by 2026 is bittersweet. While it acknowledges the urgency, the 2-year delay inevitably increases the reporting burden for companies, given the sector standards’ pivotal role in implementing the first set of ESRS. We must ensure EFRAG prioritises and promptly publishes these standards to maximise their impact.” Mariana Lopez, Senior Programme Manager, ECOS
 >
 > “The outsized contributions of certain sectors to global challenges including corruption, climate change, and the transition to a green economy mean that investors and citizens should not be made to wait for actionable sustainability data. EFRAG and the European Commission must embrace the mandate they have been given to adopt standards for high risk sectors–including oil and gas, and mining–as soon as each is ready.” Robert Pitman, Senior Governance Officer, Natural Resource Governance Institute
-
-
 
 \* For further information, please contact: susanna.arus@frankbold.org
