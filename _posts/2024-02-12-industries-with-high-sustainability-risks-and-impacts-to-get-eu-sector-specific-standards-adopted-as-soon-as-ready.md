@@ -7,8 +7,8 @@ intro: "EU policy-makers agreed last night to postpone by two years the deadline
   for the adoption of sector-specific standards for companies sustainability
   reporting, which was initially set in the EU Corporate Sustainability
   Reporting Directive for June 2024. "
-img: /assets/taras-hrytsak-viefakw-9c0-unsplash.jpg
-img_listing: /assets/taras-hrytsak-viefakw-9c0-unsplash.jpg
+img: /assets/2210_letter_list.jpg
+img_listing: /assets/scott-graham-oqmzwnd3thu-unsplash.jpg
 ---
 EU policy-makers agreed last night to postpone by two years the deadline for the adoption of sector-specific standards for companies sustainability reporting, which was initially set in the EU Corporate Sustainability Reporting Directive for June 2024. 
 
